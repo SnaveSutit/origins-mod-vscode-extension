@@ -1,0 +1,72 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Origin Layer",
+	"description": "https://origins.readthedocs.io/en/latest/json/origin_layer/",
+	"type": "object",
+	"properties": {
+		"order": {
+			"description": "Specifies the order of this layer in the choose and view origin screen among the other layers.\nSmaller numbers mean it appears before layers with larger numbers.",
+			"type": "integer"
+		},
+		"origins": {
+			"description": "Defines the origins that should be in this layer.\nIdentifier strings and Conditioned Origin objects can be mixed in the same array.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"enabled": {
+			"description": "If set to false, this layer will be unavailable.",
+			"type": "boolean",
+			"default": true
+		},
+		"replace": {
+			"description": "If set to false, the data in this file will be appended to an already existing version of this layer.\nUseful to add custom origins to the default origin layer for example.\nIf set to true, the layer will be replaced and only the origins specified in this file will appear.",
+			"type": "boolean",
+			"default": false
+		},
+		"name": {
+			"description": "The display name of the layer.\nWill show at the top of the GUI saying \"Choose your [name here]\".\nCan be a literal string or a translation key.",
+			"type": "string"
+		},
+		"missing_name": {
+			"description": "The display name of the origin that will show when viewing the origin if no origin has been assigned to this layer.\nCan be a literal string or a translation key.",
+			"type": "string"
+		},
+		"missing_description": {
+			"description": "The description of the origin that will show when viewing the origin if no origin has been assigned to this layer.\nCan be a literal string or a translation key.",
+			"type": "string"
+		},
+		"allow_random": {
+			"description": "If set to true, this layer will show an option for choosing a random origin.",
+			"type": "boolean",
+			"default": false
+		},
+		"allow_random_unchoosable": {
+			"description": "Whether origins which are unchoosable (unchoosable field set to true in the origin file) should be included in the random option.\nCan for example be used to force players to choose a random origin, by setting this to true and making all origins in the layer unchoosable.",
+			"type": "boolean",
+			"default": false
+		},
+		"exclude_random": {
+			"description": "If specified, the origins included in this list will not be picked by the random choice.",
+			"type": "boolean"
+		},
+		"default_origin": {
+			"description": "If set, the origin with this namespace and ID will automatically be chosen for a new player.\nIf an orb of origin is used later on, the player will be able to choose another origin then and the default_origin will not apply.\nCould for example be used to make all players start as human, and then use the orb as a progression item to select an origin.",
+			"type": "string"
+		},
+		"auto_choose": {
+			"description": "If set to true, this layer will automatically pick an origin for the player if only one option is available.\nThis also applies when an orb of origin is used.",
+			"type": "boolean",
+			"default": false
+		},
+		"hidden": {
+			"description": "If set to true, this layer will be hidden from the \"View Origin\" screen.",
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"required": [
+		"origins"
+	]
+}

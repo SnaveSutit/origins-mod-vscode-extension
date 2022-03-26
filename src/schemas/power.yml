@@ -1,0 +1,72 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power
+description: https://origins.readthedocs.io/en/latest/json/power/
+type: object
+properties:
+  type:
+    description: The namespace and ID of the desired Power Type.
+    type: string
+
+  name:
+    description: |-
+      The display name of the power.
+      Can be a literal string or a translation key.
+    type: string
+
+  description:
+    description: |-
+      The description of the power.
+      Can be a literal string or a translation key.
+    type: string
+
+  hidden:
+    description: |-
+      If set to true, this power will not be displayed in the power list of the origin.
+    type: boolean
+    default: false
+
+  condition:
+    description: If set, this power will only be active when the player with this power fulfills the condition.
+    type: string
+
+  loading_priority:
+    description: |-
+      Specifies when this power is loaded.
+      Higher numbers mean it's loaded later, which means it will override those with lower loading priorities which share the same ID.
+    type: integer
+    default: 0
+
+  badges:
+    description: If set, it will display icon(s) after the name of the power.
+    type: array
+    items:
+      type: object
+      description: An Object which displays an icon just after the name of a power in the power list from the Origins GUI.
+      properties:
+        sprite:
+          description: ID of the texture to be displayed as an icon. See the List of sprites for a list of files included by default in the mod.
+          type: string
+
+        text:
+          description: The string to display when you hover over the icon.
+          type: string
+
+allOf:
+  - if:
+      properties:
+        type:
+          const: origins:attribute_modify_transfer
+    then:
+      $ref: ./powerTypes/origins/attribute_modify_transfer.json
+  - if:
+      properties:
+        type:
+          const: origins:attribute
+    then:
+      $ref: ./powerTypes/origins/attribute.json
+  - if:
+      properties:
+        type:
+          const: origins:burn
+    then:
+      $ref: ./powerTypes/origins/burn.json

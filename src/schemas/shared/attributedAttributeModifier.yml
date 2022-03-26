@@ -1,0 +1,27 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Attributed Attribute Modifier
+description: An Object used to specify how a specific attribute should be modified. Basically an Attribute Modifier with an additional attribute field.
+type: object
+required:
+  - attribute
+  - operation
+  - value
+properties:
+  attribute:
+    description: ID of the attribute which will be modified by this modifier.
+    type: string
+
+  operation:
+    description: The operation which will be performed by this modifier.
+    enum:
+      - addition
+      - multiply_base
+      - multiply_total
+
+  value:
+    description: The value with which to apply the operation to the value.
+    type: number
+
+  name:
+    description: A descriptive name for the modifier, describing where it comes from.
+    type: string

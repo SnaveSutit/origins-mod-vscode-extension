@@ -1,0 +1,5 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: dummy
+description: dummy
+type: object
+properties:
