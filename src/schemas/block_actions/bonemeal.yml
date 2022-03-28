@@ -1,0 +1,12 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Block Action
+description: |-
+  Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.
+  Type: 'origins:bonemeal'
+  - Applies bone meal to the target block as if a dispenser or a player used a Bone Meal item to it.
+type: object
+properties:
+  effects:
+    description: Determines if the particle and other visual effects of the bonemeal-ing action should appear.
+    type: boolean
+    default: true

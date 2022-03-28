@@ -5,5 +5,5 @@ description: |-
   Type: 'dummy'
   - does nothing.
 type: object
-requires:
+required:
 properties:

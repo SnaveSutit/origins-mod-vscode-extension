@@ -1,0 +1,77 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Damage Condition",
+	"description": "Damage Condition Types operate on a combination of DamageSource and Float, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a damage_condition object field.",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "The identifier of the damage condition to use",
+			"type": "string"
+		}
+	},
+	"allOf": [
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:amount"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./amount.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:attacker"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./attacker.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:fire"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./fire.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:name"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./name.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:projectile"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./projectile.json"
+			}
+		}
+	]
+}

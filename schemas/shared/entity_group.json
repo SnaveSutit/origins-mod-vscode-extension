@@ -1,0 +1,12 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Group",
+	"description": "The name of an entity group",
+	"enum": [
+		"default",
+		"undead",
+		"arthropod",
+		"illager",
+		"aquatic"
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Bi-entity Action",
+	"description": "Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.\nType: 'origins:add_velocity'\n- Adds or sets the velocity of the target entity, based on the direction from the actor entity to the target entity.",
+	"type": "object",
+	"required": null,
+	"properties": {
+		"x": {
+			"description": "The amount of velocity to add on the x-axis.",
+			"type": "number",
+			"default": 0
+		},
+		"y": {
+			"description": "The amount of velocity to add on the y-axis.",
+			"type": "number",
+			"default": 0
+		},
+		"z": {
+			"description": "The amount of velocity to add on the z-axis.",
+			"type": "number",
+			"default": 0
+		},
+		"space": {
+			"description": "The Space to perform the velocity addition in.",
+			"$ref": "../shared/velocity_space.json"
+		},
+		"client": {
+			"description": "If this is false, the action will not execute on the client.",
+			"type": "boolean",
+			"default": true
+		},
+		"server": {
+			"description": "If this is false, the action will not execute on the server.",
+			"type": "boolean",
+			"default": true
+		},
+		"set": {
+			"description": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it.",
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

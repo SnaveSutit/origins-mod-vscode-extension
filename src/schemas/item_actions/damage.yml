@@ -1,0 +1,17 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: BiEntity Condition
+description: |-
+  Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
+  Type: 'origins:damage'
+  - Damages the item stack with a specified amount.
+type: object
+properties:
+  damage:
+    description: The amount of damage it should do to the item stack.
+    type: integer
+    default: 1
+
+  ignore_unbreaking:
+    description: Determines if this action should ignore the Unbreaking enchantment.
+    type: boolean
+    default: false

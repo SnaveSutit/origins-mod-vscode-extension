@@ -1,0 +1,18 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:exaust'
+  - Applies exhaustion to the player over time.
+type: object
+required:
+  - interval
+  - exhaustion
+properties:
+  interval:
+    description: Duration of ticks to wait between applying exhaustion.
+    type: integer
+
+  exaustion:
+    description: How much exhaustion will be applied each interval.
+    type: number

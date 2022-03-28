@@ -3,7 +3,7 @@
 	"title": "Power Type",
 	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:conditioned_attribute'\n- Applies one or more attribute modifiers; may depend on a condition.",
 	"type": "object",
-	"requires": null,
+	"required": null,
 	"properties": {
 		"modifier": {
 			"description": "If specified, this modifier will be applied to its corresponding attribute.",

@@ -1,0 +1,30 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Block Action",
+	"description": "Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.\nType: 'origins:offset'\n- Executes the provided Block Action Type at the position offset from the current position.",
+	"type": "object",
+	"required": [
+		"action"
+	],
+	"properties": {
+		"action": {
+			"description": "The action to apply with the given offset.",
+			"$ref": "./any.json"
+		},
+		"x": {
+			"description": "How much to offset the position on the x-axis.",
+			"type": "integer",
+			"default": 0
+		},
+		"y": {
+			"description": "How much to offset the position on the y-axis.",
+			"type": "integer",
+			"default": 0
+		},
+		"z": {
+			"description": "How much to offset the position on the z-axis.",
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

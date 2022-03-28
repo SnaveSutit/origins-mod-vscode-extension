@@ -1,0 +1,12 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Velocity Space
+description: https://origins.readthedocs.io/en/latest/misc/extras/space/
+enum:
+  - world
+  - local
+  - local_horizontal
+  - local_horizontal_normalized
+  - velocity
+  - velocity_normalized
+  - velocity_horizontal
+  - velocity_horizontal_normalized

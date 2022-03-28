@@ -5,7 +5,7 @@ description: |-
   Type: 'origins:conditioned_attribute'
   - Applies one or more attribute modifiers; may depend on a condition.
 type: object
-requires:
+required:
 properties:
   modifier:
     description: If specified, this modifier will be applied to its corresponding attribute.

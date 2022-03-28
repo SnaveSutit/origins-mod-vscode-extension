@@ -1,0 +1,40 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Status Effect Instance",
+	"description": "An Object used to define a status effect with duration, amplifier, etc.",
+	"type": "object",
+	"required": [
+		"effect"
+	],
+	"properties": {
+		"effect": {
+			"description": "ID of the status effect.",
+			"type": "string"
+		},
+		"duration": {
+			"description": "Duration of the status effect in ticks.",
+			"type": "integer",
+			"default": 100
+		},
+		"amplifier": {
+			"description": "Amplifier of the status effect.",
+			"type": "integer",
+			"default": 0
+		},
+		"is_ambient": {
+			"description": "Whether the effect counts as an ambient effect.",
+			"type": "boolean",
+			"default": false
+		},
+		"show_particles": {
+			"description": "Whether the status effect will spawn particles on the player.",
+			"type": "boolean",
+			"default": true
+		},
+		"show_icon": {
+			"description": "Whether the status effect will show an icon on the HUD.",
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

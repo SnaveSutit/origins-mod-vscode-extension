@@ -5,5 +5,14 @@ description: |-
   Type: 'origins:cooldown'
   - Provides a cooldown; can be used for providing cooldowns to power types that do not have a built-in cooldown or as a simple timer.
 type: object
-requires:
+required:
+  - cooldown
+  - hud_render
 properties:
+  cooldown:
+    description: Cooldown duration in ticks.
+    type: integer
+
+  hud_render:
+    description: Determines how the cooldown of this power is visualized on the HUD.
+    $ref: ../../shared/hud_render.json

@@ -1,0 +1,15 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "BiEntity Condition",
+	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\nType: 'origins:modify'\n- Applies an item modifier to the item stack.",
+	"type": "object",
+	"required": [
+		"modifier"
+	],
+	"properties": {
+		"modifier": {
+			"description": "The ID of an item modifier.",
+			"type": "string"
+		}
+	}
+}

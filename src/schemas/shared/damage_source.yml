@@ -1,0 +1,35 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Damage Source
+description: An Object used to specify how to deal damage to an entity.
+type: object
+required:
+  - name
+properties:
+  name:
+    description: The name of the damage source. Controls death message as well as other interactions. Consider the List of Damage Source Names when picking a name.
+    $ref: ./damage_source_names.json
+
+  bypasses_armor:
+    description: When true, armor values are not taken into account when calculating the actual damage amount taken.
+    type: boolean
+    default: false
+
+  fire:
+    description: When true, the damage will be considered fire damage.
+    type: boolean
+    default: false
+
+  unblockable:
+    description: When true, the damage will be unblockable (not reduced by resistance effects or protection enchantments).
+    type: boolean
+    default: false
+
+  magic:
+    description: When true, the damage will be considered magic damage.
+    type: boolean
+    default: false
+
+  out_of_world:
+    description: When true, the damage will be considered "out of world" damage, i.e. damage from falling into the void.
+    type: boolean
+    default: false

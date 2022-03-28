@@ -39,7 +39,7 @@
 				"properties": {
 					"sprite": {
 						"description": "ID of the texture to be displayed as an icon. See the List of sprites for a list of files included by default in the mod.",
-						"type": "string"
+						"$ref": "./shared/badge_sprite_location.json"
 					},
 					"text": {
 						"description": "The string to display when you hover over the icon.",
@@ -132,6 +132,198 @@
 			},
 			"then": {
 				"$ref": "./power_types/origins/cooldown.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:creative_flight"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/creative_flight.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:damage_over_time"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/damage_over_time.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:disable_regen"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/disable_regen.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:effect_immunity"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/effect_immunity.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:elytra_flight"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/elytra_flight.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:entity_glow"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/entity_glow.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:entity_group"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/entity_group.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:exaust"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/exaust.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:fire_immunity"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/fire_immunity.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:fire_projectile"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/fire_projectile.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:freeze"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/freeze.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:ignore_water"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/ignore_water.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:inventory"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/inventory.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:invisibility"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/invisibility.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:invulnerablility"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/invulnerablility.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:item_on_item"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/item_on_item.json"
 			}
 		}
 	]

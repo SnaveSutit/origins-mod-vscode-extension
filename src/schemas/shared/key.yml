@@ -1,0 +1,15 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Shape Type
+description: A String used mainly for ray-casting to determine how it will handle blocks.
+type: object
+required:
+  - key
+properties:
+  key:
+    description: A string specifying the keybinding. See Keybindings for possible values.
+    type: string
+
+  continuous:
+    description: Whether the keybinding should only trigger the power on the first tick the key is held down, or, if set to true, continuously on each tick while the key is held.
+    type: boolean
+    default: false
