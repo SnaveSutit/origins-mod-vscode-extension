@@ -1,0 +1,36 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Condition",
+	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:fluid_height'\n- Checks how high a specific fluid is at the entity. A fluid height of 0 means the entity is not touching the fluid.",
+	"type": "object",
+	"required": [
+		"fluid",
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"fluid": {
+			"description": "The namespace and ID of the fluid tag of which the height should be checked. Most important examples: minecraft:water and minecraft:lava.",
+			"type": "string",
+			"anyOf": [
+				{
+					"enum": [
+						"minecraft:water",
+						"minecraft:lava"
+					]
+				},
+				{
+					"type": "string"
+				}
+			]
+		},
+		"comparison": {
+			"description": "How the fluid height should be compared to the specified value.",
+			"$ref": "../shared/comparison.json"
+		},
+		"compare_to": {
+			"description": "Which value the fluid height should be compared to.",
+			"type": "number"
+		}
+	}
+}

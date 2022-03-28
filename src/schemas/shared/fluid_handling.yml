@@ -1,0 +1,8 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Fluid Handling
+description: A String used mainly for ray-casting to determine how it will handle fluids.
+type: string
+enum:
+  - any
+  - none
+  - source_only

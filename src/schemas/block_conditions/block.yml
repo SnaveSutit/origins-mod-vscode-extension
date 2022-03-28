@@ -1,0 +1,13 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Block Condition
+description: |-
+  Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.
+  Type: 'origins:block'
+  - Checks whether the block is a certain block (by ID).
+type: object
+required:
+  - block
+properties:
+  block:
+    description: The namespace and ID of the block that this block needs to be to pass the check.
+    type: string

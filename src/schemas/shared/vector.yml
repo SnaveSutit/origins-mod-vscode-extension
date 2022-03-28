@@ -1,0 +1,18 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Vector
+description: An Object that specifies the X, Y and Z coordinates of a certain point in space.
+type: object
+required:
+  - x
+  - "y"
+  - z
+properties:
+  x:
+    description: The X coordinate of the point.
+    type: number
+  "y":
+    description: The Y coordinate of the point.
+    type: number
+  z:
+    description: The Z coordinate of the point.
+    type: number

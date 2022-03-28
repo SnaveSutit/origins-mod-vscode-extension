@@ -27,7 +27,7 @@ properties:
 
   condition:
     description: If set, this power will only be active when the player with this power fulfills the condition.
-    type: string
+    $ref: ./entity_conditions/any.json
 
   loading_priority:
     description: |-
@@ -57,16 +57,40 @@ allOf:
         type:
           const: origins:attribute_modify_transfer
     then:
-      $ref: ./powerTypes/origins/attribute_modify_transfer.json
+      $ref: ./power_types/origins/attribute_modify_transfer.json
   - if:
       properties:
         type:
           const: origins:attribute
     then:
-      $ref: ./powerTypes/origins/attribute.json
+      $ref: ./power_types/origins/attribute.json
   - if:
       properties:
         type:
           const: origins:burn
     then:
-      $ref: ./powerTypes/origins/burn.json
+      $ref: ./power_types/origins/burn.json
+  - if:
+      properties:
+        type:
+          const: origins:climbing
+    then:
+      $ref: ./power_types/origins/climbing.json
+  - if:
+      properties:
+        type:
+          const: origins:conditioned_attribute
+    then:
+      $ref: ./power_types/origins/conditioned_attribute.json
+  - if:
+      properties:
+        type:
+          const: origins:conditioned_restrict_armor
+    then:
+      $ref: ./power_types/origins/conditioned_restrict_armor.json
+  - if:
+      properties:
+        type:
+          const: origins:cooldown
+    then:
+      $ref: ./power_types/origins/cooldown.json

@@ -1,0 +1,11 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Shape Type",
+	"description": "A String used mainly for ray-casting to determine how it will handle blocks.",
+	"type": "string",
+	"enum": [
+		"collider",
+		"outline",
+		"visual"
+	]
+}

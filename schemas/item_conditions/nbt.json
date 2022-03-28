@@ -1,0 +1,15 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Item Condition",
+	"description": "Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\nType: 'origins:nbt'\n- Checks the item's NBT.",
+	"type": "object",
+	"required": [
+		"nbt"
+	],
+	"properties": {
+		"nbt": {
+			"description": "The NBT data to check for.",
+			"type": "string"
+		}
+	}
+}

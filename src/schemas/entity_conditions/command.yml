@@ -1,0 +1,24 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Condition
+description: |-
+  Entity Condition Types operate on an Entity, which also allows access to the world.
+  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
+  Type: 'origins:command'
+  - Stores the result of the specified command, and compares the stored result to a specified value.
+type: object
+required:
+  - command
+  - comparison
+  - compare_to
+properties:
+  command:
+    description: The command to execute.
+    type: string
+
+  comparison:
+    description: How to compare the stored result of the specified command to the specified value.
+    $ref: ../shared/comparison.json
+
+  compare_to:
+    description: The value to compare the stored result of the specified command to.
+    type: number

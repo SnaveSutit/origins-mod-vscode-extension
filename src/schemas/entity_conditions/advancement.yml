@@ -1,0 +1,14 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Condition
+description: |-
+  Entity Condition Types operate on an Entity, which also allows access to the world.
+  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
+  Type: 'origins:advancement'
+  - Checks whether the entity has completed a specified advancement.
+type: object
+required:
+  - advancement
+properties:
+  advancement:
+    description: The namespace and ID of the advancement the player needs to have completed in order for this condition to evaluate to true.
+    type: string

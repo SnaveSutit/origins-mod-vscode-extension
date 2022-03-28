@@ -1,0 +1,785 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Condition",
+	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "Entity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"type": "string"
+		}
+	},
+	"allOf": [
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:ability"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./ability.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:advancement"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./advancement.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:air"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./air.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:attribute"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./attribute.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:biome"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./biome.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:block_collision"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_collision.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:block_in_radius"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_in_radius.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:brightness"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./brightness.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:climbing"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./climbing.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:command"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./command.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:creative_flying"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./creative_flying.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:daytime"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./daytime.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:dimension"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./dimension.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:distance_from_coordinates"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./distance_from_coordinates.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:elytra_flight_possible"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./elytra_flight_possible.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:enchantment"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./enchantment.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:entity_group"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_group.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:entity_type"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_type.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:equipped_item"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./equipped_item.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:exists"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./exists.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:exposed_to_sky"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./exposed_to_sky.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:exposed_to_sun"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./exposed_to_sun.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:fall_distance"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./fall_distance.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:fall_flying"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./fall_flying.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:fluid_height"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./fluid_height.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:food_level"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./food_level.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:gamemode"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./gamemode.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:health"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./health.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:in_block_anywhere"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./in_block_anywhere.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:in_block"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./in_block.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:in_rain"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./in_rain.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:in_tag"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./in_tag.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:invisible"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./invisible.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:living"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./living.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:moving"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./moving.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:nbt"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./nbt.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:on_block"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./on_block.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:on_fire"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./on_fire.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:origin"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./origin.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:passenger_recursive"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./passenger_recursive.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:passenger"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./passenger.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:power_active"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_active.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:power_type"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_type.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:power"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:predicate"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./predicate.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:raycast"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./raycast.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:relative_health"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./relative_health.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:resource"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./resource.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:riding_recursive"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./riding_recursive.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:riding_root"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./riding_root.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:riding"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./riding.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:saturation_level"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./saturation_level.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:scoreboard"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./scoreboard.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:sneaking"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./sneaking.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:sprinting"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./sprinting.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:status_effect"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./status_effect.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:submerged_in"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./submerged_in.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:swimming"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./swimming.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:tamed"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./tamed.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:time_of_day"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./time_of_day.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:use_effective_tool"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./use_effective_tool.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:using_item"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./using_item.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:xp_levels"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./xp_levels.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:xp_points"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./xp_points.json"
+			}
+		}
+	]
+}

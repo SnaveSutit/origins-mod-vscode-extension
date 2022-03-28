@@ -1,0 +1,13 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: BiEntity Condition
+description: |-
+  Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.
+  Type: 'origins:target_condition'
+  - Checks for an Entity Condition Type on the target entity.
+type: object
+required:
+  - condition
+properties:
+  condition:
+    description: The entity condition type to check for on the target entity.
+    $ref: ../entity_conditions/any.json

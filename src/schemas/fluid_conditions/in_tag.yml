@@ -1,0 +1,13 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Fluid Condition
+description: |-
+  Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.
+  Type: 'origins:in_tag'
+  - Checks whether the fluid is in a specified tag.
+type: object
+required:
+  - tag
+properties:
+  tag:
+    description: ID of the tag which the fluid should be in to pass the check.
+    type: string

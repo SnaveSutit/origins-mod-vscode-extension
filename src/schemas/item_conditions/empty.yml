@@ -1,0 +1,7 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Item Condition
+description: |-
+  Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.
+  Type: 'origins:empty'
+  - Checks if there is no item.
+type: object

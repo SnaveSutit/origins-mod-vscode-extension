@@ -1,0 +1,28 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:conditioned_restrict_armor'
+  - Restricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s); may depend on a condition.
+type: object
+properties:
+  head:
+    description: If specified, items which fulfills this condition cannot be equipped in the head equipment slot.
+    $ref: ../../item_conditions/any.json
+
+  chest:
+    description: If specified, items which fulfills this condition cannot be equipped in the chest equipment slot.
+    $ref: ../../item_conditions/any.json
+
+  legs:
+    description: If specified, items which fulfills this condition cannot be equipped in the legs equipment slot.
+    $ref: ../../item_conditions/any.json
+
+  feet:
+    description: If specified, items which fulfills this condition cannot be equipped in the feet equipment slot.
+    $ref: ../../item_conditions/any.json
+
+  tick_rate:
+    description: The frequency (in ticks) with which to check the condition. Lower values mean the condition changes are detected more quickly, but this comes at a potentially huge performance cost.
+    type: integer
+    default: 80

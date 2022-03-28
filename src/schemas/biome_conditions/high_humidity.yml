@@ -1,0 +1,7 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Biome Condition
+description: |-
+  Biome Condition Types operate on a Biome.
+  Type: 'origins:high_humidity'
+  - Checks whether the biome counts as an area with high humidity.
+type: object

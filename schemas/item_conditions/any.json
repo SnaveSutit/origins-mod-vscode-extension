@@ -1,0 +1,149 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Item Condition",
+	"description": "Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "The identifier of the item condition to use",
+			"type": "string"
+		}
+	},
+	"allOf": [
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:amount"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./amount.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:armor_value"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./armor_value.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:empty"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./empty.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:enchantment"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./enchantment.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:fireproof"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./fireproof.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:food"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./food.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:harvest_level"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./harvest_level.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:ingredient"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./ingredient.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:meat"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./meat.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:nbt"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./nbt.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:smeltable"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./smeltable.json"
+			}
+		}
+	]
+}

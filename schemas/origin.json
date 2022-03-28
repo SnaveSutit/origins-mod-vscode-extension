@@ -10,7 +10,7 @@
 		},
 		"icon": {
 			"description": "The item stack which is displayed as the icon for the origin in the top-left corner of the choose/view origin screen.",
-			"$ref": "./shared/itemStack.json"
+			"$ref": "./shared/item_stack.json"
 		},
 		"unchoosable": {
 			"description": "If set to true, this origin will not show up in any origin layer to choose it, but it will still be able to be set for that layer with a command or via an origin upgrade.",

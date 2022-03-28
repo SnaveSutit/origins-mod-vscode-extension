@@ -1,0 +1,15 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Block Condition",
+	"description": "Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\nType: 'origins:fluid'\n- Checks the fluid state of the current position with a Fluid Condition Type.",
+	"type": "object",
+	"required": [
+		"fluid_condition"
+	],
+	"properties": {
+		"fluid_condition": {
+			"description": "The fluid condition type to check the fluid state at the position.",
+			"$ref": "../fluid_conditions/any.json"
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Ingredient",
+	"description": "An Object specifying a registered item or item tag.\nOr an Array of Objects specifying a registered item or item tag.",
+	"oneOf": [
+		{
+			"$ref": "#/$defs/item"
+		},
+		{
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/item"
+			}
+		}
+	],
+	"$defs": {
+		"item": {
+			"type": "object",
+			"properties": {
+				"item": {
+					"description": "ID of a registered item.",
+					"type": "string"
+				},
+				"tag": {
+					"description": "ID of an item tag. Will be ignored if item is set.",
+					"type": "string"
+				}
+			}
+		}
+	}
+}

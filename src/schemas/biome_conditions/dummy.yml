@@ -1,0 +1,9 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Biome Condition
+description: |-
+  Biome Condition Types operate on a Biome.
+  Type: 'dummy'
+  - does nothing.
+type: object
+required:
+properties:

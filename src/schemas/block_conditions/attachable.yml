@@ -1,0 +1,7 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Block Condition
+description: |-
+  Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.
+  Type: 'origins:attachable'
+  - Checks whether the block is in a place where a supported block can be attached (i.e. checks whether any of the adjacent blocks' sides towards this block position are solid).
+type: object

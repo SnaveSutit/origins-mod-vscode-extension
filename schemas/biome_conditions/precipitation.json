@@ -1,0 +1,19 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Biome Condition",
+	"description": "Biome Condition Types operate on a Biome.\nType: 'origins:precipitation'\n- Checks for the precipitation type of the biome the entity is currently in.",
+	"type": "object",
+	"required": [
+		"precipitation"
+	],
+	"properties": {
+		"precipitation": {
+			"description": "Which precipitation the biome has to have in order to succeed the check. One of none, rain and snow.",
+			"enum": [
+				"none",
+				"rain",
+				"snow"
+			]
+		}
+	}
+}

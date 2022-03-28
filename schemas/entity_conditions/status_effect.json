@@ -1,0 +1,34 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Condition",
+	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:status_effect'\n- Checks whether the entity has a specified status effect with a specified amplifier, and/or duration range.",
+	"type": "object",
+	"required": [
+		"effect"
+	],
+	"properties": {
+		"effect": {
+			"description": "The namespace and ID of the status effect to check for.s"
+		},
+		"min_amplifier": {
+			"description": "The minimum amplifier the status effect should have in order to pass the check.",
+			"type": "integer",
+			"default": 0
+		},
+		"max_amplifier": {
+			"description": "The maximum amplifier the status effect should have in order to pass the check.",
+			"type": "integer",
+			"default": 2147483647
+		},
+		"min_duration": {
+			"description": "The minimum duration in ticks the status effect should have left in order to pass the check.",
+			"type": "integer",
+			"default": 0
+		},
+		"max_duration": {
+			"description": "The maximum duration in ticks the status effect should have left in order to pass the check.",
+			"type": "integer",
+			"default": 2147483647
+		}
+	}
+}
