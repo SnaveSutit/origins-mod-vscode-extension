@@ -1,0 +1,24 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Bi-entity Condition",
+	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\nType: 'origins:if_else'\n- Executes an action only if a condition holds, and optionally executes another action when it doesn't hold.",
+	"type": "object",
+	"required": [
+		"condition",
+		"if_action"
+	],
+	"properties": {
+		"condition": {
+			"description": "A condition based on the type of action.",
+			"$ref": "../item_condition.json"
+		},
+		"if_action": {
+			"description": "The action which is executed when the condition evaluates to true.",
+			"$ref": "../item_action.json"
+		},
+		"else_action": {
+			"description": "If present, this action will be executed when the condition evaluates to false.",
+			"$ref": "../item_action.json"
+		}
+	}
+}

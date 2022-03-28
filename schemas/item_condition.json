@@ -10,6 +10,11 @@
 		"type": {
 			"description": "The identifier of the item condition to use",
 			"type": "string"
+		},
+		"inverted": {
+			"description": "If true, the condition acts inverted.",
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"allOf": [
@@ -143,6 +148,42 @@
 			},
 			"then": {
 				"$ref": "./item_conditions/smeltable.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:and"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_conditions/and.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:constant"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_conditions/constant.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:or"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_conditions/or.json"
 			}
 		}
 	]

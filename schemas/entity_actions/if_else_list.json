@@ -1,0 +1,30 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Action",
+	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:if_else_list'\n- Checks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested If-Else (Meta Action Type).",
+	"type": "object",
+	"required": [
+		"actions"
+	],
+	"properties": {
+		"actions": {
+			"description": "Each object has to have an action Action Type object and a condition Condition Type object.",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"action",
+					"condition"
+				],
+				"properties": {
+					"condition": {
+						"$ref": "../entity_condition.json"
+					},
+					"action": {
+						"$ref": "../entity_action.json"
+					}
+				}
+			}
+		}
+	}
+}

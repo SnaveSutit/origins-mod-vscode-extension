@@ -1,0 +1,18 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Biome Condition",
+	"description": "Biome Condition Types operate on a Biome.\nType: 'origins:or'\n- Checks whether any (one or more) of the provided conditions are fulfilled.",
+	"type": "object",
+	"required": [
+		"conditions"
+	],
+	"properties": {
+		"conditions": {
+			"description": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+			"type": "array",
+			"items": {
+				"$ref": "../biome_action.json"
+			}
+		}
+	}
+}

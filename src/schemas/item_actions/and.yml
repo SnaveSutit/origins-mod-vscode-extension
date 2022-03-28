@@ -1,0 +1,15 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Bi-entity Condition
+description: |-
+  Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
+  Type: 'origins:and'
+  - Executes all provided actions in order.
+type: object
+required:
+  - actions
+properties:
+  actions:
+    description: These actions will be executed one after the other (but in the same tick).
+    type: array
+    items:
+      $ref: ../item_action.json

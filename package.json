@@ -2,7 +2,12 @@
 	"name": "origins-mod-helper",
 	"displayName": "origins-mod-helper",
 	"description": "Adds json schemas and other useful things for origins mod origin development",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"author": {
+		"name": "Titus Evans",
+		"email": "SnaveSutit@gmail.com",
+		"url": "https://discordapp.com/users/213746232923783168"
+	},
 	"engines": {
 		"vscode": "^1.65.0"
 	},
@@ -10,30 +15,45 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:origins-mod-helper.helloWorld"
+		"*"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "origins-mod-helper.helloWorld",
-				"title": "Hello World"
-			}
-		],
 		"jsonValidation": [
 			{
-				"fileMatch": "**/origin_layers/**.json",
+				"fileMatch": [
+					"**/origin_layers/**.json",
+					"**/origin_layers/**.yml"
+				],
 				"url": "./schemas/origin_layers.json"
 			},
 			{
-				"fileMatch": "**/origins/**.json",
+				"fileMatch": [
+					"**/origins/**.json",
+					"**/origins/**.yml"
+				],
 				"url": "./schemas/origin.json"
 			},
 			{
-				"fileMatch": "**/powers/**.json",
+				"fileMatch": [
+					"**/powers/**.json"
+				],
 				"url": "./schemas/power.json"
 			}
-		]
+		],
+		"configurationDefaults": {
+			"yaml.schemas": {
+				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/power.json": [
+					"**/powers/**.yml"
+				],
+				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/origin.json": [
+					"**/origin/**.yml"
+				],
+				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/origin_layers.json": [
+					"**/origin_layers/**.yml"
+				]
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run package",

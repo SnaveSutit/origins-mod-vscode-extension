@@ -1,0 +1,24 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Block Action",
+	"description": "Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.\nType: 'origins:if_else'\n- Executes an action only if a condition holds, and optionally executes another action when it doesn't hold.",
+	"type": "object",
+	"required": [
+		"condition",
+		"if_action"
+	],
+	"properties": {
+		"condition": {
+			"description": "A condition based on the type of action.",
+			"$ref": "../block_condition.json"
+		},
+		"if_action": {
+			"description": "The action which is executed when the condition evaluates to true.",
+			"$ref": "../block_action.json"
+		},
+		"else_action": {
+			"description": "If present, this action will be executed when the condition evaluates to false.",
+			"$ref": "../block_action.json"
+		}
+	}
+}

@@ -10,6 +10,11 @@
 		"type": {
 			"description": "The identifier of the block condition to use",
 			"type": "string"
+		},
+		"inverted": {
+			"description": "If true, the condition acts inverted.",
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"allOf": [
@@ -251,6 +256,42 @@
 			},
 			"then": {
 				"$ref": "./block_conditions/offset.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:and"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_conditions/and.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:constant"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_conditions/constant.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:or"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_conditions/or.json"
 			}
 		}
 	]

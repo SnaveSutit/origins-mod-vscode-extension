@@ -1,0 +1,19 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Bi-entity Action
+description: |-
+  Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.
+  Type: 'origins:delay'
+  - Executes the provided action after a set amount of ticks.
+type: object
+required:
+  - action
+  - ticks
+properties:
+  action:
+    description: The action which will be executed after the delay.
+    $ref: ../bientity_action.json
+
+  ticks:
+    description: The amount of ticks until the action is executed.
+    type: integer
+    minimum: 1

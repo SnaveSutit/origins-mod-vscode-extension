@@ -1,0 +1,30 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Bi-entity Condition",
+	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\nType: 'origins:if_else_list'\n- Checks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested If-Else (Meta Action Type).",
+	"type": "object",
+	"required": [
+		"actions"
+	],
+	"properties": {
+		"actions": {
+			"description": "Each object has to have an action Action Type object and a condition Condition Type object.",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"action",
+					"condition"
+				],
+				"properties": {
+					"condition": {
+						"$ref": "../item_condition.json"
+					},
+					"action": {
+						"$ref": "../item_action.json"
+					}
+				}
+			}
+		}
+	}
+}

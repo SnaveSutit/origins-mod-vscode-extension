@@ -1,0 +1,24 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Bi-entity Action",
+	"description": "Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.\nType: 'origins:if_else'\n- Executes an action only if a condition holds, and optionally executes another action when it doesn't hold.",
+	"type": "object",
+	"required": [
+		"condition",
+		"if_action"
+	],
+	"properties": {
+		"condition": {
+			"description": "A condition based on the type of action.",
+			"$ref": "../bientity_condition.json"
+		},
+		"if_action": {
+			"description": "The action which is executed when the condition evaluates to true.",
+			"$ref": "../bientity_action.json"
+		},
+		"else_action": {
+			"description": "If present, this action will be executed when the condition evaluates to false.",
+			"$ref": "../bientity_action.json"
+		}
+	}
+}

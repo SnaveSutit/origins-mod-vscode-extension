@@ -1,0 +1,18 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Damage Condition",
+	"description": "Damage Condition Types operate on a combination of DamageSource and Float, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a damage_condition object field.\nType: 'origins:and'\n- Checks whether all of the provided conditions are fulfilled.",
+	"type": "object",
+	"required": [
+		"conditions"
+	],
+	"properties": {
+		"conditions": {
+			"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+			"type": "array",
+			"items": {
+				"$ref": "../damage_action.json"
+			}
+		}
+	}
+}

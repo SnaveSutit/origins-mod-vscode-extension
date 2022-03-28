@@ -9,6 +9,11 @@ properties:
     description: The identifier of the fluid condition to use
     type: string
 
+  inverted:
+    description: If true, the condition acts inverted.
+    type: boolean
+    default: false
+
 allOf:
   - if:
       properties:
@@ -28,3 +33,22 @@ allOf:
           const: origins:still
     then:
       $ref: ./fluid_conditions/still.json
+
+  - if:
+      properties:
+        type:
+          const: origins:and
+    then:
+      $ref: ./fluid_conditions/and.json
+  - if:
+      properties:
+        type:
+          const: origins:constant
+    then:
+      $ref: ./fluid_conditions/constant.json
+  - if:
+      properties:
+        type:
+          const: origins:or
+    then:
+      $ref: ./fluid_conditions/or.json

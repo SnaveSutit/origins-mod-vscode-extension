@@ -1,0 +1,7 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Bi-entity Condition
+description: |-
+  Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
+  Type: 'origins:nothing'
+  - Does nothing. Can be used as a backup in case an action is not optional in some place.
+type: object

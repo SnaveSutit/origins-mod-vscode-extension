@@ -1,0 +1,19 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Block Action
+description: |-
+  Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.
+  Type: 'origins:delay'
+  - Executes the provided action after a set amount of ticks.
+type: object
+required:
+  - action
+  - ticks
+properties:
+  action:
+    description: The action which will be executed after the delay.
+    $ref: ../block_action.json
+
+  ticks:
+    description: The amount of ticks until the action is executed.
+    type: integer
+    minimum: 1

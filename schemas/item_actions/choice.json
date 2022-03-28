@@ -1,0 +1,26 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Bi-entity Condition",
+	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\nType: 'origins:choice'\n- Executes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.",
+	"type": "object",
+	"required": [
+		"actions"
+	],
+	"properties": {
+		"actions": {
+			"description": "Each object has to have an element Action and a weight Integer.",
+			"type": "object",
+			"properties": {
+				"element": {
+					"type": "array",
+					"items": {
+						"$ref": "../item_action.json"
+					}
+				},
+				"weight": {
+					"type": "integer"
+				}
+			}
+		}
+	}
+}

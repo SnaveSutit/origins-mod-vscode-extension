@@ -1,0 +1,18 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Bi-entity Action",
+	"description": "Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.\nType: 'origins:and'\n- Executes all provided actions in order.",
+	"type": "object",
+	"required": [
+		"actions"
+	],
+	"properties": {
+		"actions": {
+			"description": "These actions will be executed one after the other (but in the same tick).",
+			"type": "array",
+			"items": {
+				"$ref": "../bientity_action.json"
+			}
+		}
+	}
+}

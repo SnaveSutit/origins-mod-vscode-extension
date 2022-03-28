@@ -1,0 +1,18 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Action",
+	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:and'\n- Executes all provided actions in order.",
+	"type": "object",
+	"required": [
+		"actions"
+	],
+	"properties": {
+		"actions": {
+			"description": "These actions will be executed one after the other (but in the same tick).",
+			"type": "array",
+			"items": {
+				"$ref": "../entity_action.json"
+			}
+		}
+	}
+}

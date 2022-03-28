@@ -1,0 +1,25 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Block Action",
+	"description": "Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.\nType: 'origins:chance'\n- Executes the provided action only with a specific chance.",
+	"type": "object",
+	"required": [
+		"action"
+	],
+	"properties": {
+		"action": {
+			"description": "The action which might be executed.",
+			"$ref": "../block_action.json"
+		},
+		"chance": {
+			"description": "The chance that the action will execute, from 0 to 1. (E.g. 0.1 means 10% chance, 0.95 means 95% chance).",
+			"type": "number",
+			"minimum": 0,
+			"maximum": 1
+		},
+		"fail_action": {
+			"description": "The action to execute if the specified action in the action field is not executed.",
+			"$ref": "../block_action.json"
+		}
+	}
+}

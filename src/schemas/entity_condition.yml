@@ -11,6 +11,11 @@ properties:
     description: Entity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
     type: string
 
+  inverted:
+    description: If true, the condition acts inverted.
+    type: boolean
+    default: false
+
 allOf:
   - if:
       properties:
@@ -396,3 +401,22 @@ allOf:
           const: origins:xp_points
     then:
       $ref: ./entity_conditions/xp_points.json
+
+  - if:
+      properties:
+        type:
+          const: origins:and
+    then:
+      $ref: ./entity_conditions/and.json
+  - if:
+      properties:
+        type:
+          const: origins:constant
+    then:
+      $ref: ./entity_conditions/constant.json
+  - if:
+      properties:
+        type:
+          const: origins:or
+    then:
+      $ref: ./entity_conditions/or.json

@@ -10,6 +10,11 @@
 		"type": {
 			"description": "Biome Condition Types operate on a Biome.",
 			"type": "string"
+		},
+		"inverted": {
+			"description": "If true, the condition acts inverted.",
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"allOf": [
@@ -59,6 +64,42 @@
 			},
 			"then": {
 				"$ref": "./biome_conditions/temperature.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:and"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./biome_conditions/and.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:constant"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./biome_conditions/constant.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:or"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./biome_conditions/or.json"
 			}
 		}
 	]

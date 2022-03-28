@@ -1,0 +1,26 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Block Action",
+	"description": "Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.\nType: 'origins:choice'\n- Executes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.",
+	"type": "object",
+	"required": [
+		"actions"
+	],
+	"properties": {
+		"actions": {
+			"description": "Each object has to have an element Action and a weight Integer.",
+			"type": "object",
+			"properties": {
+				"element": {
+					"type": "array",
+					"items": {
+						"$ref": "../block_action.json"
+					}
+				},
+				"weight": {
+					"type": "integer"
+				}
+			}
+		}
+	}
+}

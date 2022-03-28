@@ -432,6 +432,90 @@
 			"then": {
 				"$ref": "./entity_actions/trigger_cooldown.json"
 			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:and"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/and.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:chance"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/chance.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:choice"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/choice.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:delay"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/delay.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:if_else_list"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/if_else_list.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:if_else"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/if_else.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:nothing"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/nothing.json"
+			}
 		}
 	]
 }

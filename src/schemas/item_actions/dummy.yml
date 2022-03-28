@@ -1,5 +1,5 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: BiEntity Condition
+title: Bi-entity Condition
 description: |-
   Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
   Type: 'dummy'

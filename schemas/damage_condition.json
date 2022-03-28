@@ -10,6 +10,11 @@
 		"type": {
 			"description": "The identifier of the damage condition to use",
 			"type": "string"
+		},
+		"inverted": {
+			"description": "If true, the condition acts inverted.",
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"allOf": [
@@ -71,6 +76,42 @@
 			},
 			"then": {
 				"$ref": "./damage_conditions/projectile.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:and"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/and.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:constant"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/constant.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:or"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/or.json"
 			}
 		}
 	]

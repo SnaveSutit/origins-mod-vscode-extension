@@ -1,0 +1,22 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:if_else'
+  - Executes an action only if a condition holds, and optionally executes another action when it doesn't hold.
+type: object
+required:
+  - condition
+  - if_action
+properties:
+  condition:
+    description: A condition based on the type of action.
+    $ref: ../entity_condition.json
+
+  if_action:
+    description: The action which is executed when the condition evaluates to true.
+    $ref: ../entity_action.json
+
+  else_action:
+    description: If present, this action will be executed when the condition evaluates to false.
+    $ref: ../entity_action.json
