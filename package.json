@@ -8,6 +8,10 @@
 		"email": "SnaveSutit@gmail.com",
 		"url": "https://discordapp.com/users/213746232923783168"
 	},
+	"homepage": "https://github.com/SnaveSutit/origins-mod-json-schemas",
+	"bugs": {
+		"url": "https://github.com/SnaveSutit/origins-mod-json-schemas/issues"
+	},
 	"engines": {
 		"vscode": "^1.65.0"
 	},
