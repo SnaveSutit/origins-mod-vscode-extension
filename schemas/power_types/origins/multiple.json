@@ -5,7 +5,7 @@
 	"type": "object",
 	"patternProperties": {
 		"^(?!type|badges|condition|description|hidden|loading_priority|name)(.+)": {
-			"$ref": "../../entity_condition.json"
+			"$ref": "../../power.json"
 		}
 	}
 }

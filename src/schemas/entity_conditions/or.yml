@@ -13,4 +13,4 @@ properties:
     description: Any of these condition types have to be fulfilled in order for this condition to be fulfilled.
     type: array
     items:
-      $ref: ../entity_action.json
+      $ref: ../entity_condition.json

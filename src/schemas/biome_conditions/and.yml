@@ -12,4 +12,4 @@ properties:
     description: All of these condition types have to be fulfilled in order for this condition to be fulfilled.
     type: array
     items:
-      $ref: ../biome_action.json
+      $ref: ../biome_condition.json
