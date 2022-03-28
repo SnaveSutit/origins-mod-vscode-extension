@@ -102,4 +102,4 @@ dist
 
 # TernJS port file
 .tern-port
-origins-mod-helper-1.0.0.vsix
+*.vsix
