@@ -10,7 +10,7 @@ required:
   - power
 properties:
   power:
-    description: 	The namespace and ID of the power the entity needs to have to pass the check.
+    description: The namespace and ID of the power the entity needs to have to pass the check.
     type: string
 
   source:

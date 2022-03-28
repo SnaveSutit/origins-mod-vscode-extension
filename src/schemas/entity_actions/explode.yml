@@ -1,0 +1,40 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:explode'
+  - Summons an explosion at the position of the entity.
+type: object
+required:
+  - power
+properties:
+  power:
+    description: Determines the power of the explosion.
+    type: number
+
+  destruction_type:
+    description: Determines if the explosion should destroy the terrain, destroy the terrain and drop the loot of the blocks, or none ("destroy", "break" or "none" respectively).
+    type: string
+    enum:
+      - destroy
+      - break
+      - none
+    default: break
+
+  damage_self:
+    description: Determines if the player should take damage from the summoned explosion.
+    type: boolean
+    default: true
+
+  indestructible:
+    description: If specified, the blocks that fulfills the specified block condition type is not destroyed by the summoned explosion.
+    $ref: ../block_condition.json
+
+  destructible:
+    description: If specified, the blocks that fulfills this specified block condition type are the only blocks that are destroyed by the summoned explosion.
+    $ref: ../block_condition.json
+
+  create_fire:
+    description: Determines if the explosion should create fire.
+    type: boolean
+    default: false

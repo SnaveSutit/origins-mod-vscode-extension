@@ -1,0 +1,65 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Biome Condition",
+	"description": "Biome Condition Types operate on a Biome.",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "Biome Condition Types operate on a Biome.",
+			"type": "string"
+		}
+	},
+	"allOf": [
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:category"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./biome_conditions/category.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:high_humidity"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./biome_conditions/high_humidity.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:precipitation"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./biome_conditions/precipitation.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"const": "origins:temperature"
+					}
+				}
+			},
+			"then": {
+				"$ref": "./biome_conditions/temperature.json"
+			}
+		}
+	]
+}

@@ -11,11 +11,11 @@
 		},
 		"bientity_action": {
 			"description": "If specified, this bi-entity action type may be executed on either or both the actor (the entity that has the power) and target (the entities within the specified radius).",
-			"$ref": "../bientity_actions/any.json"
+			"$ref": "../bientity_action.json"
 		},
 		"bientity_condition": {
 			"description": "If specified, only execute the specified bi-entity action if this bi-entity condition type is fulfilled by either or both the 'actor' (the entity that has the power) or 'target' (the entities within the specified radius).",
-			"$ref": "../bientity_conditions/any.json"
+			"$ref": "../bientity_condition.json"
 		},
 		"include_target": {
 			"description": "Determines whether the entity this action was executed on is included in the radius check.",

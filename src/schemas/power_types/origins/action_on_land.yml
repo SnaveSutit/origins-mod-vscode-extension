@@ -1,0 +1,13 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:action_on_land'
+  - Executes an Entity Action Type when the player lands on the ground after being airborne.
+type: object
+required:
+  - entity_action
+properties:
+  entity_action:
+    description: The action to execute on the player.
+    $ref: ../../entity_action.json

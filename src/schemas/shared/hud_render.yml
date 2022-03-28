@@ -19,7 +19,7 @@ properties:
 
   condition:
     description: If set (and should_render is true), the bar will only display when the entity with the power fulfills this condition.
-    $ref: ../entity_conditions/any.json
+    $ref: ../entity_condition.json
 
   inverted:
     description: If set to true, inverts the way the hud render process (it'll look like its value is being decreased).

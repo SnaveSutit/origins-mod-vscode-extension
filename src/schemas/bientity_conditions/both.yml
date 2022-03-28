@@ -10,4 +10,4 @@ required:
 properties:
   condition:
     description: The entity condition type to check on both the actor and target entity.
-    $ref: ../entity_conditions/any.json
+    $ref: ../entity_condition.json

@@ -9,7 +9,7 @@
 	"properties": {
 		"block_action": {
 			"description": "The block action type to execute.",
-			"$ref": "../block_actions/any.json"
+			"$ref": "../block_action.json"
 		}
 	}
 }

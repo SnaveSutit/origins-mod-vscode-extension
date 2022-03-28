@@ -1,0 +1,23 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:play_sound'
+  - Plays a sound event at the entity's position. Currently only works on player entities.
+type: object
+required:
+  - sound
+properties:
+  sound:
+    description: The namespace and ID of the sound to play.
+    type: number
+
+  volume:
+    description: The volume of the sound.
+    type: number
+    default: 1.0
+
+  pitch:
+    description: The pitch of the sound.
+    type: number
+    default: 1.0

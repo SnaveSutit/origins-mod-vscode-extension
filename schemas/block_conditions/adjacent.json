@@ -11,7 +11,7 @@
 	"properties": {
 		"adjacent_condition": {
 			"description": "The block condition that needs to be fulfilled by adjacent blocks to count towards this condition.",
-			"$ref": "./any.json"
+			"$ref": "../block_condition.json"
 		},
 		"comparison": {
 			"description": "How the number of adjacent blocks which fulfill adjacent_condition should be compared to the specified value.",

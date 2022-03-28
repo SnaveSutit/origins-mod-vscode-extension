@@ -1,0 +1,12 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_elytra_flight'\n- Prevents the entity that has the power from flying with either an Elytra item or a power that uses the Elytra Flight (Power Type).",
+	"type": "object",
+	"properties": {
+		"entity_action": {
+			"description": "If specified, execute this entity action type upon preventing the entity that has the power.",
+			"$ref": "../../entity_action.json"
+		}
+	}
+}

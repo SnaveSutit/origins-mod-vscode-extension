@@ -6,19 +6,19 @@
 	"properties": {
 		"head": {
 			"description": "If specified, items which fulfills this condition cannot be equipped in the head equipment slot.",
-			"$ref": "../../item_conditions/any.json"
+			"$ref": "../../item_condition.json"
 		},
 		"chest": {
 			"description": "If specified, items which fulfills this condition cannot be equipped in the chest equipment slot.",
-			"$ref": "../../item_conditions/any.json"
+			"$ref": "../../item_condition.json"
 		},
 		"legs": {
 			"description": "If specified, items which fulfills this condition cannot be equipped in the legs equipment slot.",
-			"$ref": "../../item_conditions/any.json"
+			"$ref": "../../item_condition.json"
 		},
 		"feet": {
 			"description": "If specified, items which fulfills this condition cannot be equipped in the feet equipment slot.",
-			"$ref": "../../item_conditions/any.json"
+			"$ref": "../../item_condition.json"
 		},
 		"tick_rate": {
 			"description": "The frequency (in ticks) with which to check the condition. Lower values mean the condition changes are detected more quickly, but this comes at a potentially huge performance cost.",

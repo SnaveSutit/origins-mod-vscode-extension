@@ -9,7 +9,7 @@
 	"properties": {
 		"block_condition": {
 			"description": "The block condition type to check for on the block that is overlapping with the entity's feet.",
-			"$ref": "../block_conditions/any.json"
+			"$ref": "../block_condition.json"
 		}
 	}
 }

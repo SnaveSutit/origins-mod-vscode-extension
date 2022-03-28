@@ -1,0 +1,22 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_sleep'\n- Prevents sleeping and sends the player a message about why they can't sleep.",
+	"type": "object",
+	"properties": {
+		"block_condition": {
+			"description": "If specified, sleep will only be prevented if this condition is fulfilled by the bed block.",
+			"$ref": "../../block_condition.json"
+		},
+		"message": {
+			"description": "The message that will be shown when sleep is prevented this way. Can be a literal text or a translation key which will be localized using a language file.",
+			"type": "string",
+			"default": "origins.cant_sleep"
+		},
+		"set_spawn_point": {
+			"description": "Determines whether the spawnpoint of the player is set upon right-clicking a bed while being prevented. (similar to what happens when you right-click a bed while it's daytime)",
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

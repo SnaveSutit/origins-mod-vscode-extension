@@ -12,7 +12,7 @@
 	"properties": {
 		"condition": {
 			"description": "The condition to check with the given offset.",
-			"$ref": "./any.json"
+			"$ref": "../entity_condition.json"
 		},
 		"x": {
 			"description": "How much to offset the position on the x-axis.",

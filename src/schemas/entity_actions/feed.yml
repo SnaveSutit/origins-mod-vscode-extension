@@ -1,0 +1,18 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:feed'
+  - Feeds the entity, filling up their hunger bar as if they had eaten a food item with the provided values.
+type: object
+required:
+  - food
+  - saturation
+properties:
+  food:
+    description: The amount of food points to restore.
+    type: integer
+
+  saturation:
+    description: The amount of saturation points to restore.
+    type: number

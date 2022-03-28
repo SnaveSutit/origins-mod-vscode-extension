@@ -33,14 +33,12 @@ properties:
 
   match_bientity_condition:
     description: If specified, the entity condition type will check if this bi-entity condition type is fulfilled by either or both the 'actor' (the entity being checked by the entity condition type) and 'target' (entity that the ray-cast has gone through). If not, the entity will be ignored.
-    $ref: ../bientity_conditions/any.json
+    $ref: ../bientity_condition.json
 
   hit_bientity_condition:
     description: If specified, the entity condition type will check if this bi-entity condition type is fulfilled by either or both the 'actor' (the entity being checked by the entity condition type) and 'target' (the entity that has hit by the ray-cast).
-    $ref: ../bientity_conditions/any.json
+    $ref: ../bientity_condition.json
 
   block_condition:
     description: If specified, the entity condition type will check if the block that was hit by the ray-cast fulfills this block condition type.
-    $ref: ../block_conditions/any.json
-
-
+    $ref: ../block_condition.json

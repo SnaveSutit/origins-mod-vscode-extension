@@ -22,4 +22,3 @@ properties:
   offset_z:
     description: 'By how much of the bounding box size should the box be offset in the Z direction (e.g.: 0 = no offset, 1 = offset of exact depth, 2 = offset of twice the depth of the bounding box)'
     type: number
-

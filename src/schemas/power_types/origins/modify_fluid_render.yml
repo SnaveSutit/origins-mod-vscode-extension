@@ -1,0 +1,21 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:modify_fluid_render'
+  - Modifies how a fluid would look like to the player that has the power.
+type: object
+required:
+  - fluid
+properties:
+  block_condition:
+    description: If specified, only modify how the blocks that fulfills this condition would look like.
+    $ref: ../../block_condition.json
+
+  fluid_condition:
+    description: If specified, only modify how the fluids that fulfills this condition would look like.
+    $ref: ../../fluid_condition.json
+
+  fluid:
+    description: The namespace and ID of the replacement fluid.
+    type: string

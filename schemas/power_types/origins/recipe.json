@@ -1,0 +1,15 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:recipe'\n- Allows a player with this power to craft the defined crafting recipe.",
+	"type": "object",
+	"required": [
+		"recipe"
+	],
+	"properties": {
+		"recipe": {
+			"description": "The recipe to craft, including an id field which can be any arbitrary (but unique) identifier.",
+			"$ref": "../../shared/crafting_recipe.json"
+		}
+	}
+}

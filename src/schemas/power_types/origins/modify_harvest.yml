@@ -1,0 +1,15 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:modify_harvest'
+  - Modifies whether a player is able to harvest a block or not (= receive the block drops).
+type: object
+properties:
+  block_condition:
+    description: If set, the modification will only apply to blocks which satisfy this condition.
+    $ref: ../../block_condition.json
+
+  allow:
+    description: When true, the player will be able to harvest the blocks. When false, the player will not be able to harvest the blocks.
+    type: boolean

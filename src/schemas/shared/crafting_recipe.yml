@@ -1,0 +1,54 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Crafting Recipe
+description: An Object specifying a shapeless or shaped crafting recipe. For some more information, view the page on recipes on the MC wiki.
+type: object
+required:
+  - type
+  - id
+  - result
+properties:
+  type:
+    description: The type of recipe. Either minecraft:crafting_shaped or minecraft:crafting_shapeless. Other recipe types are not supported.
+    anyOf:
+      - enum:
+          - minecraft:crafting_shaped
+          - minecraft:crafting_shapeless
+      - type: string
+
+  id:
+    description: An ID for this recipe. Has to be unique among all recipes, otherwise there will be a conflict.
+
+  result:
+    description: The result of the crafting. Note that vanilla does not support NBT tags in the result.
+
+allOf:
+  - if:
+      properties:
+        type:
+          const: minecraft:crafting_shapeless
+    then:
+      properties:
+        ingredients:
+          description: The items that need to be put in the crafting grid for the recipe.
+          type: array
+          item:
+            $ref: ./ingredient.json
+  - if:
+      properties:
+        type:
+          const: minecraft:crafting_shaped
+    then:
+      properties:
+        pattern:
+          description: Specifies the pattern, with each element representing one row. Use a single character to describe one item. A space means that position is empty.
+          type: array
+          items:
+            type: string
+            pattern: '\S{1,3}'
+
+        key:
+          description: Specifies which character in the pattern corresponds to which Ingredient.
+          type: object
+          patternProperties:
+            '[^ ]':
+              $ref: ./ingredient.json

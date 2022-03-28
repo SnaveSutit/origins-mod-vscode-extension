@@ -1,0 +1,41 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:self_glow'
+  - Makes the entity that has the power glow if certain conditions are met.
+type: object
+properties:
+  entity_condition:
+    description: If specified, only entities that fulfills this condition will see the entity that has the power glow.
+    $ref: ../../entity_condition.json
+
+  bientity_condition:
+    description: If set, only entities which fulfill this bi-entity condition in relation to the entity that has the power will see the entity that has the power glow.
+    $ref: ../../bientity_condition.json
+
+  use_teams:
+    description: Determines whether glowing entities should use their team's color with their glow. If set to false, the entity will instead use the red, green and blue fields within this power type.
+    type: boolean
+    default: true
+
+  red:
+    description: Value by which the red component of the glow will be multiplied.
+    type: number
+    default: 1.0
+    minimum: 0
+    maximum: 1
+
+  green:
+    description: Value by which the green component of the glow will be multiplied.
+    type: number
+    default: 1.0
+    minimum: 0
+    maximum: 1
+
+  blue:
+    description: Value by which the blue component of the glow will be multiplied.
+    type: number
+    default: 1.0
+    minimum: 0
+    maximum: 1

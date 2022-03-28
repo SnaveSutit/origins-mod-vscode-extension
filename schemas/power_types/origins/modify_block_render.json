@@ -1,0 +1,19 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_block_render'\n- Modifies how a block would look like to the entity that has the power.",
+	"type": "object",
+	"required": [
+		"block"
+	],
+	"properties": {
+		"block_condition": {
+			"description": "If specified, only modify how the blocks that fulfill this condition would look like.",
+			"$ref": "../../block_condition.json"
+		},
+		"block": {
+			"description": "The namespace and ID of the replacement block.",
+			"type": "string"
+		}
+	}
+}

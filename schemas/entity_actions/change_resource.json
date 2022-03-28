@@ -1,0 +1,28 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Action",
+	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:change_resource'\n- Changes the value of a power that either uses the Resource power type, or has a built-in cooldown.",
+	"type": "object",
+	"required": [
+		"resource",
+		"change"
+	],
+	"properties": {
+		"resource": {
+			"description": "The namespace and ID of the power that uses the Resource (Power Type) or has a built-in cooldown.",
+			"type": "string"
+		},
+		"change": {
+			"description": "This value will be added to the resource (won't go below min or above max of the Resource (Power Type)).",
+			"type": "integer"
+		},
+		"operation": {
+			"description": "Determines if the action should add or set the value of the resource. Accepts \"add\" or \"set\".",
+			"type": "string",
+			"enum": [
+				"add",
+				"set"
+			]
+		}
+	}
+}

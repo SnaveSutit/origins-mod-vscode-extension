@@ -1,0 +1,11 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:clear_effect'
+  - Removes one specific type of status effect, or all status effects, from a living entity.
+type: object
+properties:
+  effect:
+    description: If specified, the status effect with this namespace and ID will be cleared. If not specified, all status effects will be cleared.
+    type: string

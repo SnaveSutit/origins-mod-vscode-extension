@@ -27,7 +27,7 @@ properties:
 
   condition:
     description: If set, this power will only be active when the player with this power fulfills the condition.
-    $ref: ./entity_conditions/any.json
+    $ref: ./entity_condition.json
 
   loading_priority:
     description: |-
@@ -190,3 +190,450 @@ allOf:
           const: origins:item_on_item
     then:
       $ref: ./power_types/origins/item_on_item.json
+  - if:
+      properties:
+        type:
+          const: origins:keep_inventory
+    then:
+      $ref: ./power_types/origins/keep_inventory.json
+  - if:
+      properties:
+        type:
+          const: origins:launch
+    then:
+      $ref: ./power_types/origins/launch.json
+  - if:
+      properties:
+        type:
+          const: origins:lava_vision
+    then:
+      $ref: ./power_types/origins/lava_vision.json
+  - if:
+      properties:
+        type:
+          const: origins:model_color
+    then:
+      $ref: ./power_types/origins/model_color.json
+  - if:
+      properties:
+        type:
+          const: origins:multiple
+    then:
+      $ref: ./power_types/origins/multiple.json
+  - if:
+      properties:
+        type:
+          const: origins:night_vision
+    then:
+      $ref: ./power_types/origins/night_vision.json
+  - if:
+      properties:
+        type:
+          const: origins:overlay
+    then:
+      $ref: ./power_types/origins/overlay.json
+  - if:
+      properties:
+        type:
+          const: origins:particle
+    then:
+      $ref: ./power_types/origins/particle.json
+  - if:
+      properties:
+        type:
+          const: origins:phasing
+    then:
+      $ref: ./power_types/origins/phasing.json
+  - if:
+      properties:
+        type:
+          const: origins:recipe
+    then:
+      $ref: ./power_types/origins/recipe.json
+  - if:
+      properties:
+        type:
+          const: origins:resource
+    then:
+      $ref: ./power_types/origins/resource.json
+  - if:
+      properties:
+        type:
+          const: origins:restrict_armor
+    then:
+      $ref: ./power_types/origins/restrict_armor.json
+  - if:
+      properties:
+        type:
+          const: origins:self_glow
+    then:
+      $ref: ./power_types/origins/self_glow.json
+  - if:
+      properties:
+        type:
+          const: origins:shader
+    then:
+      $ref: ./power_types/origins/shader.json
+  - if:
+      properties:
+        type:
+          const: origins:shaking
+    then:
+      $ref: ./power_types/origins/shaking.json
+  - if:
+      properties:
+        type:
+          const: origins:simple
+    then:
+      $ref: ./power_types/origins/simple.json
+  - if:
+      properties:
+        type:
+          const: origins:stacking_status_effect
+    then:
+      $ref: ./power_types/origins/stacking_status_effect.json
+  - if:
+      properties:
+        type:
+          const: origins:starting_equipment
+    then:
+      $ref: ./power_types/origins/starting_equipment.json
+  - if:
+      properties:
+        type:
+          const: origins:status_bar_texture
+    then:
+      $ref: ./power_types/origins/status_bar_texture.json
+  - if:
+      properties:
+        type:
+          const: origins:swimming
+    then:
+      $ref: ./power_types/origins/swimming.json
+  - if:
+      properties:
+        type:
+          const: origins:toggle_night_vision
+    then:
+      $ref: ./power_types/origins/toggle_night_vision.json
+  - if:
+      properties:
+        type:
+          const: origins:toggle
+    then:
+      $ref: ./power_types/origins/toggle.json
+  - if:
+      properties:
+        type:
+          const: origins:tooltip
+    then:
+      $ref: ./power_types/origins/tooltip.json
+  - if:
+      properties:
+        type:
+          const: origins:walk_on_fluid
+    then:
+      $ref: ./power_types/origins/walk_on_fluid.json
+
+  - if:
+      properties:
+        type:
+          const: origins:action_on_being_used
+    then:
+      $ref: ./power_types/origins/action_on_being_used.json
+  - if:
+      properties:
+        type:
+          const: origins:action_on_block_break
+    then:
+      $ref: ./power_types/origins/action_on_block_break.json
+  - if:
+      properties:
+        type:
+          const: origins:action_on_block_use
+    then:
+      $ref: ./power_types/origins/action_on_block_use.json
+  - if:
+      properties:
+        type:
+          const: origins:action_on_callback
+    then:
+      $ref: ./power_types/origins/action_on_callback.json
+  - if:
+      properties:
+        type:
+          const: origins:action_on_entity_use
+    then:
+      $ref: ./power_types/origins/action_on_entity_use.json
+  - if:
+      properties:
+        type:
+          const: origins:action_on_hit
+    then:
+      $ref: ./power_types/origins/action_on_hit.json
+  - if:
+      properties:
+        type:
+          const: origins:action_on_land
+    then:
+      $ref: ./power_types/origins/action_on_land.json
+  - if:
+      properties:
+        type:
+          const: origins:action_on_wake_up
+    then:
+      $ref: ./power_types/origins/action_on_wake_up.json
+  - if:
+      properties:
+        type:
+          const: origins:action_over_time
+    then:
+      $ref: ./power_types/origins/action_over_time.json
+  - if:
+      properties:
+        type:
+          const: origins:action_when_damage_taken
+    then:
+      $ref: ./power_types/origins/action_when_damage_taken.json
+  - if:
+      properties:
+        type:
+          const: origins:action_when_hit
+    then:
+      $ref: ./power_types/origins/action_when_hit.json
+  - if:
+      properties:
+        type:
+          const: origins:active_self
+    then:
+      $ref: ./power_types/origins/active_self.json
+  - if:
+      properties:
+        type:
+          const: origins:attacker_action_when_hit
+    then:
+      $ref: ./power_types/origins/attacker_action_when_hit.json
+  - if:
+      properties:
+        type:
+          const: origins:self_action_on_hit
+    then:
+      $ref: ./power_types/origins/self_action_on_hit.json
+  - if:
+      properties:
+        type:
+          const: origins:self_action_on_kill
+    then:
+      $ref: ./power_types/origins/self_action_on_kill.json
+  - if:
+      properties:
+        type:
+          const: origins:self_action_when_hit
+    then:
+      $ref: ./power_types/origins/self_action_when_hit.json
+  - if:
+      properties:
+        type:
+          const: origins:target_action_on_hit
+    then:
+      $ref: ./power_types/origins/target_action_on_hit.json
+
+  - if:
+      properties:
+        type:
+          const: origins:modify_air_speed
+    then:
+      $ref: ./power_types/origins/modify_air_speed.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_block_render
+    then:
+      $ref: ./power_types/origins/modify_block_render.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_break_speed
+    then:
+      $ref: ./power_types/origins/modify_break_speed.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_camera_submersion
+    then:
+      $ref: ./power_types/origins/modify_camera_submersion.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_crafting
+    then:
+      $ref: ./power_types/origins/modify_crafting.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_damage_dealt
+    then:
+      $ref: ./power_types/origins/modify_damage_dealt.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_damage_taken
+    then:
+      $ref: ./power_types/origins/modify_damage_taken.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_exhaustion
+    then:
+      $ref: ./power_types/origins/modify_exhaustion.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_falling
+    then:
+      $ref: ./power_types/origins/modify_falling.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_fluid_render
+    then:
+      $ref: ./power_types/origins/modify_fluid_render.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_food
+    then:
+      $ref: ./power_types/origins/modify_food.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_harvest
+    then:
+      $ref: ./power_types/origins/modify_harvest.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_jump
+    then:
+      $ref: ./power_types/origins/modify_jump.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_lava_speed
+    then:
+      $ref: ./power_types/origins/modify_lava_speed.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_player_spawn
+    then:
+      $ref: ./power_types/origins/modify_player_spawn.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_projectile_damage
+    then:
+      $ref: ./power_types/origins/modify_projectile_damage.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_slipperiness
+    then:
+      $ref: ./power_types/origins/modify_slipperiness.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_status_effect_amplifier
+    then:
+      $ref: ./power_types/origins/modify_status_effect_amplifier.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_status_effect_duration
+    then:
+      $ref: ./power_types/origins/modify_status_effect_duration.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_swim_speed
+    then:
+      $ref: ./power_types/origins/modify_swim_speed.json
+  - if:
+      properties:
+        type:
+          const: origins:modify_xp_gain
+    then:
+      $ref: ./power_types/origins/modify_xp_gain.json
+
+  - if:
+      properties:
+        type:
+          const: origins:prevent_being_used
+    then:
+      $ref: ./power_types/origins/prevent_being_used.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_block_selection
+    then:
+      $ref: ./power_types/origins/prevent_block_selection.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_block_use
+    then:
+      $ref: ./power_types/origins/prevent_block_use.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_death
+    then:
+      $ref: ./power_types/origins/prevent_death.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_elytra_flight
+    then:
+      $ref: ./power_types/origins/prevent_elytra_flight.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_entity_collision
+    then:
+      $ref: ./power_types/origins/prevent_entity_collision.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_entity_render
+    then:
+      $ref: ./power_types/origins/prevent_entity_render.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_entity_use
+    then:
+      $ref: ./power_types/origins/prevent_entity_use.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_feature_render
+    then:
+      $ref: ./power_types/origins/prevent_feature_render.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_game_event
+    then:
+      $ref: ./power_types/origins/prevent_game_event.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_item_use
+    then:
+      $ref: ./power_types/origins/prevent_item_use.json
+  - if:
+      properties:
+        type:
+          const: origins:prevent_sleep
+    then:
+      $ref: ./power_types/origins/prevent_sleep.json

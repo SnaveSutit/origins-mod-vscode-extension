@@ -9,7 +9,7 @@
 	"properties": {
 		"condition": {
 			"description": "The entity condition type to check for on the target entity.",
-			"$ref": "../entity_conditions/any.json"
+			"$ref": "../entity_condition.json"
 		}
 	}
 }

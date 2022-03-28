@@ -37,4 +37,3 @@ properties:
     description: If protection_enchantment is set, this multiplier scales how effective it will be (1.0 = time the onset_delay is increased is the same as with Hydrophobia and Water Protection).
     type: number
     default: 1.0
-

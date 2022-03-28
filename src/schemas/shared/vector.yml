@@ -4,13 +4,13 @@ description: An Object that specifies the X, Y and Z coordinates of a certain po
 type: object
 required:
   - x
-  - "y"
+  - 'y'
   - z
 properties:
   x:
     description: The X coordinate of the point.
     type: number
-  "y":
+  'y':
     description: The Y coordinate of the point.
     type: number
   z:

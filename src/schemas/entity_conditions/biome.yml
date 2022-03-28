@@ -19,5 +19,4 @@ properties:
 
   condition:
     description: If specified, only evaluate the condition to true if the biome the entity is in fulfills the specified biome condition type.
-    $ref: ../biome_conditions/any.json
-
+    $ref: ../biome_condition.json

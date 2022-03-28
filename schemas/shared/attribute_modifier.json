@@ -1,0 +1,28 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Attribute Modifier",
+	"description": "An Object used to specify how an attribute should be modified.",
+	"type": "object",
+	"required": [
+		"operation",
+		"value"
+	],
+	"properties": {
+		"operation": {
+			"description": "The operation which will be performed by this modifier.",
+			"enum": [
+				"addition",
+				"multiply_base",
+				"multiply_total"
+			]
+		},
+		"value": {
+			"description": "The value with which to apply the operation to the value.",
+			"type": "number"
+		},
+		"name": {
+			"description": "A descriptive name for the modifier, describing where it comes from.",
+			"type": "string"
+		}
+	}
+}

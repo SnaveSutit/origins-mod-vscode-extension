@@ -1,0 +1,398 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Condition
+description: |-
+  Entity Condition Types operate on an Entity, which also allows access to the world.
+  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
+type: object
+required:
+  - type
+properties:
+  type:
+    description: Entity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
+    type: string
+
+allOf:
+  - if:
+      properties:
+        type:
+          const: origins:ability
+    then:
+      $ref: ./entity_conditions/ability.json
+  - if:
+      properties:
+        type:
+          const: origins:advancement
+    then:
+      $ref: ./entity_conditions/advancement.json
+  - if:
+      properties:
+        type:
+          const: origins:air
+    then:
+      $ref: ./entity_conditions/air.json
+  - if:
+      properties:
+        type:
+          const: origins:attribute
+    then:
+      $ref: ./entity_conditions/attribute.json
+  - if:
+      properties:
+        type:
+          const: origins:biome
+    then:
+      $ref: ./entity_conditions/biome.json
+  - if:
+      properties:
+        type:
+          const: origins:block_collision
+    then:
+      $ref: ./entity_conditions/block_collision.json
+  - if:
+      properties:
+        type:
+          const: origins:block_in_radius
+    then:
+      $ref: ./entity_conditions/block_in_radius.json
+  - if:
+      properties:
+        type:
+          const: origins:brightness
+    then:
+      $ref: ./entity_conditions/brightness.json
+  - if:
+      properties:
+        type:
+          const: origins:climbing
+    then:
+      $ref: ./entity_conditions/climbing.json
+  - if:
+      properties:
+        type:
+          const: origins:command
+    then:
+      $ref: ./entity_conditions/command.json
+  - if:
+      properties:
+        type:
+          const: origins:creative_flying
+    then:
+      $ref: ./entity_conditions/creative_flying.json
+  - if:
+      properties:
+        type:
+          const: origins:daytime
+    then:
+      $ref: ./entity_conditions/daytime.json
+  - if:
+      properties:
+        type:
+          const: origins:dimension
+    then:
+      $ref: ./entity_conditions/dimension.json
+  - if:
+      properties:
+        type:
+          const: origins:distance_from_coordinates
+    then:
+      $ref: ./entity_conditions/distance_from_coordinates.json
+  - if:
+      properties:
+        type:
+          const: origins:elytra_flight_possible
+    then:
+      $ref: ./entity_conditions/elytra_flight_possible.json
+  - if:
+      properties:
+        type:
+          const: origins:enchantment
+    then:
+      $ref: ./entity_conditions/enchantment.json
+  - if:
+      properties:
+        type:
+          const: origins:entity_group
+    then:
+      $ref: ./entity_conditions/entity_group.json
+  - if:
+      properties:
+        type:
+          const: origins:entity_type
+    then:
+      $ref: ./entity_conditions/entity_type.json
+  - if:
+      properties:
+        type:
+          const: origins:equipped_item
+    then:
+      $ref: ./entity_conditions/equipped_item.json
+  - if:
+      properties:
+        type:
+          const: origins:exists
+    then:
+      $ref: ./entity_conditions/exists.json
+  - if:
+      properties:
+        type:
+          const: origins:exposed_to_sky
+    then:
+      $ref: ./entity_conditions/exposed_to_sky.json
+  - if:
+      properties:
+        type:
+          const: origins:exposed_to_sun
+    then:
+      $ref: ./entity_conditions/exposed_to_sun.json
+  - if:
+      properties:
+        type:
+          const: origins:fall_distance
+    then:
+      $ref: ./entity_conditions/fall_distance.json
+  - if:
+      properties:
+        type:
+          const: origins:fall_flying
+    then:
+      $ref: ./entity_conditions/fall_flying.json
+  - if:
+      properties:
+        type:
+          const: origins:fluid_height
+    then:
+      $ref: ./entity_conditions/fluid_height.json
+  - if:
+      properties:
+        type:
+          const: origins:food_level
+    then:
+      $ref: ./entity_conditions/food_level.json
+  - if:
+      properties:
+        type:
+          const: origins:gamemode
+    then:
+      $ref: ./entity_conditions/gamemode.json
+  - if:
+      properties:
+        type:
+          const: origins:health
+    then:
+      $ref: ./entity_conditions/health.json
+  - if:
+      properties:
+        type:
+          const: origins:in_block_anywhere
+    then:
+      $ref: ./entity_conditions/in_block_anywhere.json
+  - if:
+      properties:
+        type:
+          const: origins:in_block
+    then:
+      $ref: ./entity_conditions/in_block.json
+  - if:
+      properties:
+        type:
+          const: origins:in_rain
+    then:
+      $ref: ./entity_conditions/in_rain.json
+  - if:
+      properties:
+        type:
+          const: origins:in_tag
+    then:
+      $ref: ./entity_conditions/in_tag.json
+  - if:
+      properties:
+        type:
+          const: origins:invisible
+    then:
+      $ref: ./entity_conditions/invisible.json
+  - if:
+      properties:
+        type:
+          const: origins:living
+    then:
+      $ref: ./entity_conditions/living.json
+  - if:
+      properties:
+        type:
+          const: origins:moving
+    then:
+      $ref: ./entity_conditions/moving.json
+  - if:
+      properties:
+        type:
+          const: origins:nbt
+    then:
+      $ref: ./entity_conditions/nbt.json
+  - if:
+      properties:
+        type:
+          const: origins:on_block
+    then:
+      $ref: ./entity_conditions/on_block.json
+  - if:
+      properties:
+        type:
+          const: origins:on_fire
+    then:
+      $ref: ./entity_conditions/on_fire.json
+  - if:
+      properties:
+        type:
+          const: origins:origin
+    then:
+      $ref: ./entity_conditions/origin.json
+  - if:
+      properties:
+        type:
+          const: origins:passenger_recursive
+    then:
+      $ref: ./entity_conditions/passenger_recursive.json
+  - if:
+      properties:
+        type:
+          const: origins:passenger
+    then:
+      $ref: ./entity_conditions/passenger.json
+  - if:
+      properties:
+        type:
+          const: origins:power_active
+    then:
+      $ref: ./entity_conditions/power_active.json
+  - if:
+      properties:
+        type:
+          const: origins:power_type
+    then:
+      $ref: ./entity_conditions/power_type.json
+  - if:
+      properties:
+        type:
+          const: origins:power
+    then:
+      $ref: ./entity_conditions/power.json
+  - if:
+      properties:
+        type:
+          const: origins:predicate
+    then:
+      $ref: ./entity_conditions/predicate.json
+  - if:
+      properties:
+        type:
+          const: origins:raycast
+    then:
+      $ref: ./entity_conditions/raycast.json
+  - if:
+      properties:
+        type:
+          const: origins:relative_health
+    then:
+      $ref: ./entity_conditions/relative_health.json
+  - if:
+      properties:
+        type:
+          const: origins:resource
+    then:
+      $ref: ./entity_conditions/resource.json
+  - if:
+      properties:
+        type:
+          const: origins:riding_recursive
+    then:
+      $ref: ./entity_conditions/riding_recursive.json
+  - if:
+      properties:
+        type:
+          const: origins:riding_root
+    then:
+      $ref: ./entity_conditions/riding_root.json
+  - if:
+      properties:
+        type:
+          const: origins:riding
+    then:
+      $ref: ./entity_conditions/riding.json
+  - if:
+      properties:
+        type:
+          const: origins:saturation_level
+    then:
+      $ref: ./entity_conditions/saturation_level.json
+  - if:
+      properties:
+        type:
+          const: origins:scoreboard
+    then:
+      $ref: ./entity_conditions/scoreboard.json
+  - if:
+      properties:
+        type:
+          const: origins:sneaking
+    then:
+      $ref: ./entity_conditions/sneaking.json
+  - if:
+      properties:
+        type:
+          const: origins:sprinting
+    then:
+      $ref: ./entity_conditions/sprinting.json
+  - if:
+      properties:
+        type:
+          const: origins:status_effect
+    then:
+      $ref: ./entity_conditions/status_effect.json
+  - if:
+      properties:
+        type:
+          const: origins:submerged_in
+    then:
+      $ref: ./entity_conditions/submerged_in.json
+  - if:
+      properties:
+        type:
+          const: origins:swimming
+    then:
+      $ref: ./entity_conditions/swimming.json
+  - if:
+      properties:
+        type:
+          const: origins:tamed
+    then:
+      $ref: ./entity_conditions/tamed.json
+  - if:
+      properties:
+        type:
+          const: origins:time_of_day
+    then:
+      $ref: ./entity_conditions/time_of_day.json
+  - if:
+      properties:
+        type:
+          const: origins:use_effective_tool
+    then:
+      $ref: ./entity_conditions/use_effective_tool.json
+  - if:
+      properties:
+        type:
+          const: origins:using_item
+    then:
+      $ref: ./entity_conditions/using_item.json
+  - if:
+      properties:
+        type:
+          const: origins:xp_levels
+    then:
+      $ref: ./entity_conditions/xp_levels.json
+  - if:
+      properties:
+        type:
+          const: origins:xp_points
+    then:
+      $ref: ./entity_conditions/xp_points.json

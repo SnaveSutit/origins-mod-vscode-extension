@@ -10,4 +10,4 @@ required:
 properties:
   action:
     description: The bi-entity action to execute which will have its 'target' and 'actor' contexts swapped.
-    $ref: ../bientity_actions/any.json
+    $ref: ../bientity_action.json

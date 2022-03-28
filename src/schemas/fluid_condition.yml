@@ -1,0 +1,30 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Fluid Condition
+description: Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.
+type: object
+required:
+  - type
+properties:
+  type:
+    description: The identifier of the fluid condition to use
+    type: string
+
+allOf:
+  - if:
+      properties:
+        type:
+          const: origins:empty
+    then:
+      $ref: ./fluid_conditions/empty.json
+  - if:
+      properties:
+        type:
+          const: origins:in_tag
+    then:
+      $ref: ./fluid_conditions/in_tag.json
+  - if:
+      properties:
+        type:
+          const: origins:still
+    then:
+      $ref: ./fluid_conditions/still.json

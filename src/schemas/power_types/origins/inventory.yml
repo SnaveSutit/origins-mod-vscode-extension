@@ -18,9 +18,8 @@ properties:
 
   drop_on_death_filter:
     description: If this is set, only item stacks matching this condition will be dropped on death.
-    $ref: ../../item_conditions/any.json
+    $ref: ../../item_condition.json
 
   key:
     description: Which active key this power should respond to. If none is specified, this power will use the primary active power key (by default G).
     $ref: ../../shared/key.json
-

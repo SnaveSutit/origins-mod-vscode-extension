@@ -1,0 +1,25 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:prevent_game_event'
+  - Prevents specified game event(s) from being emitted by the entity that has the power.
+type: object
+properties:
+  event:
+    description: If specified, the game event with this namespace and ID will be prevent from being emitted by the entity.
+    type: string
+
+  events:
+    description: If specified, the game events with these namespace and IDs will be prevent from being emitted by the entity.
+    type: array
+    items:
+      type: string
+
+  tag:
+    description: If specified, the game events inside game event tag will be prevented from being emitted by the entity.
+    type: string
+
+  entity_action:
+    description: If specified, this action will be executed on the entity upon preventing game events.
+    $ref: ../../entity_action.json

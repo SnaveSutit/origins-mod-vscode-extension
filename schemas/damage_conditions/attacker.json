@@ -6,7 +6,7 @@
 	"properties": {
 		"entity_condition": {
 			"description": "If set, the attacker entity must fulfill the provided entity condition type in order for this condition to evaluate to true.",
-			"$ref": "../entity_conditions/any.json"
+			"$ref": "../entity_condition.json"
 		}
 	}
 }

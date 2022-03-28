@@ -1,0 +1,20 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Action",
+	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:revoke_power'\n- Revokes a power from the entity from a specified power source.",
+	"type": "object",
+	"required": [
+		"power",
+		"source"
+	],
+	"properties": {
+		"power": {
+			"description": "The namespace and ID of the power to be revoked from the entity.",
+			"type": "string"
+		},
+		"source": {
+			"description": "The namespace and ID of the source of the power.",
+			"type": "string"
+		}
+	}
+}

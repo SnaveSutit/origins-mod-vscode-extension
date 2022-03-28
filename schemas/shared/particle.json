@@ -1,0 +1,22 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Particle",
+	"anyOf": [
+		{
+			"type": "string"
+		},
+		{
+			"type": "object",
+			"properties": {
+				"type": {
+					"description": "The namespace and ID of the particle type.",
+					"type": "string"
+				},
+				"params": {
+					"description": "The additional parameter for the particle type.",
+					"type": "string"
+				}
+			}
+		}
+	]
+}

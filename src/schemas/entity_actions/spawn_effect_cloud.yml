@@ -1,0 +1,32 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:spawn_effect_cloud'
+  - Spawns an area effect cloud (as from a lingering potion) at the position of the entity.
+type: object
+properties:
+  radius:
+    description: The radius of the cloud.
+    type: number
+    default: 3.0
+
+  radius_on_use:
+    description: How much the radius should change when an effect is applied.
+    type: number
+    default: -0.5
+
+  wait_time:
+    description: How many ticks to wait until the cloud takes effect.
+    type: number
+    default: 10
+
+  effect:
+    description: If specified, this status effect will be applied by the cloud to entities inside of it.
+    $ref: ../shared/status_effect_instance.json
+
+  effects:
+    description: If specified, these status effects will be applied by the cloud to entities inside of it.
+    type: array
+    items:
+      $ref: ../shared/status_effect_instance.json

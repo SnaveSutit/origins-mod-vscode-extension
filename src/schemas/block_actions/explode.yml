@@ -35,4 +35,3 @@ properties:
     description: Determines if the explosion should create fire.
     type: boolean
     default: false
-

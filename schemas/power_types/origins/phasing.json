@@ -1,0 +1,36 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:phasing'\n- Allows the entity that has the power to \"phase\" (move) through blocks.",
+	"type": "object",
+	"properties": {
+		"blacklist": {
+			"description": "If set to true, the block_condition field will define which blocks the player can NOT move through.",
+			"type": "boolean",
+			"default": false
+		},
+		"block_condition": {
+			"description": "If specified, the entity will only be able to move through these blocks (or not be able to move through these, depending on what blacklist is set to).",
+			"$ref": "../../block_condition.json"
+		},
+		"render_type": {
+			"description": "Determines how the environment is rendered when \"phasing\" through (moving) blocks. Accepts \"blindness\", \"remove_blocks\" or \"none\".",
+			"type": "string",
+			"enum": [
+				"blindness",
+				"remove_blocks",
+				"none"
+			],
+			"default": "blindness"
+		},
+		"view_distance": {
+			"description": "Determines how far the player can look through walls when \"phasing\" (moving) through blocks when render_type is set to \"blindness\".",
+			"type": "number",
+			"default": 10
+		},
+		"phase_down_condition": {
+			"description": "If specified, the entity will only be able to \"phase\" (move) downwards if this condition is fulfilled.",
+			"$ref": "../../entity_condition.json"
+		}
+	}
+}

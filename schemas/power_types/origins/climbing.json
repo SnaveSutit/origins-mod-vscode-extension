@@ -11,7 +11,7 @@
 		},
 		"hold_condition": {
 			"description": "If specified and allow_holding is true, the entity that has the power will be able to 'hold onto the block' (not affected by gravity) if the entity is sneaking and if this condition is fulfilled.",
-			"$ref": "../../entity_conditions/any.json"
+			"$ref": "../../entity_condition.json"
 		}
 	}
 }

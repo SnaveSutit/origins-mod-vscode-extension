@@ -1,0 +1,24 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins_restrict_armor'\n- Restricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s).",
+	"type": "object",
+	"properties": {
+		"head": {
+			"description": "If specified, items which fulfills this condition cannot be equipped in the head equipment slot.",
+			"$ref": "../../item_condition.json"
+		},
+		"chest": {
+			"description": "If specified, items which fulfills this condition cannot be equipped in the chest equipment slot.",
+			"$ref": "../../item_condition.json"
+		},
+		"legs": {
+			"description": "If specified, items which fulfills this condition cannot be equipped in the legs equipment slot.",
+			"$ref": "../../item_condition.json"
+		},
+		"feet": {
+			"description": "If specified, items which fulfills this condition cannot be equipped in the feet equipment slot.",
+			"$ref": "../../item_condition.json"
+		}
+	}
+}

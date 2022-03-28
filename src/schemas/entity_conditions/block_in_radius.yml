@@ -12,7 +12,7 @@ required:
 properties:
   block_condition:
     description: The block condition type to check for.
-    $ref: ../block_conditions/any.json
+    $ref: ../block_condition.json
 
   radius:
     description: The radius to check the blocks that fulfills the specified block condition type within.

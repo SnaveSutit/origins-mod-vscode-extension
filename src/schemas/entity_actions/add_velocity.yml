@@ -39,4 +39,3 @@ properties:
     description: If this is true, the action will act as a "set" velocity action, overriding the entity's current velocity instead of adding to it.
     type: boolean
     default: false
-

@@ -9,7 +9,7 @@
 	"properties": {
 		"action": {
 			"description": "The action to apply with the given offset.",
-			"$ref": "./any.json"
+			"$ref": "../entity_action.json"
 		},
 		"x": {
 			"description": "How much to offset the position on the x-axis.",

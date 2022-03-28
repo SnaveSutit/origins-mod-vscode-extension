@@ -1,0 +1,13 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:status_bar_texture'
+  - Replaces the status bar textures (health, hunger, air, experience, etc.) with a specified sprite sheet.
+type: object
+required:
+  - texture
+properties:
+  texture:
+    description: "The namespace and ID of the sprite sheet to replace the default one with. Here's what the vanilla sprite sheet looks like: https://raw.githubusercontent.com/misode/mcmeta/6d496b1a91476c4fdd45fdb093d0319141f9c109/assets/minecraft/textures/gui/icons.png"
+    type: string

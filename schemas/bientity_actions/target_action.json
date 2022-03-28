@@ -9,7 +9,7 @@
 	"properties": {
 		"action": {
 			"description": "The entity action type to execute on the target entity.",
-			"$ref": "../entity_actions/any.json"
+			"$ref": "../entity_action.json"
 		}
 	}
 }

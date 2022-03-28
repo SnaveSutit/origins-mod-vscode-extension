@@ -12,7 +12,7 @@ required:
 properties:
   bientity_condition:
     description: If specified, it will check for the entity/entities that fulfills the bi-entity condition.
-    $ref: ../bientity_conditions/any.json
+    $ref: ../bientity_condition.json
 
   comparison:
     description: How the number of entities that are currently riding the entity should be compared to the specified value.

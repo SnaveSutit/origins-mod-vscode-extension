@@ -13,7 +13,7 @@ required:
 properties:
   block_condition:
     description: The block condition type which blocks need to fulfill in order to count for this condition.
-    $ref: ../block_conditions/any.json
+    $ref: ../block_condition.json
 
   comparison:
     description: How the number of blocks which overlap and fulfill block_condition should be compared to the specified value.

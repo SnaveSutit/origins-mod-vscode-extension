@@ -9,7 +9,7 @@ required:
   - property
 properties:
   property:
-    description: "The name of the property that will be modified. Examples are facing or age. See Minecraft Fandom Wiki: https://minecraft.fandom.com/wiki/Block_states#List_of_block_states for possible values."
+    description: 'The name of the property that will be modified. Examples are facing or age. See Minecraft Fandom Wiki: https://minecraft.fandom.com/wiki/Block_states#List_of_block_states for possible values.'
     type: string
 
   operation:

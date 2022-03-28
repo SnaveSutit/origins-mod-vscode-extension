@@ -10,4 +10,4 @@ required:
 properties:
   damage_condition:
     description: Specifies which damage the player will be immune to.
-    $ref: ../../damage_conditions/any.json
+    $ref: ../../damage_condition.json

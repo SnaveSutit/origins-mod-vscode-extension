@@ -6,7 +6,7 @@
 	"properties": {
 		"block_condition": {
 			"description": "If specified, the condition will evaluate to true if the block underneath the entity's feet fulfills the specified block condition type.\nOtherwise, only check if the entity is on the ground.",
-			"$ref": "../block_conditions/any.json"
+			"$ref": "../block_condition.json"
 		}
 	}
 }

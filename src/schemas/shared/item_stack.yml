@@ -3,23 +3,23 @@ title: Item Stack
 description: An Object which defines a new item stack.
 type: object
 properties:
-    item:
-        description: |-
-            ID of a registered item.
-        type: string
+  item:
+    description: |-
+      ID of a registered item.
+    type: string
 
-    amount:
-        description: |-
-            Size of the stack.
-        type: integer
-        default: 1
-        minimum: 1
-        maximum: 64
+  amount:
+    description: |-
+      Size of the stack.
+    type: integer
+    default: 1
+    minimum: 1
+    maximum: 64
 
-    tag:
-        description: |-
-            NBT data of the item.
-        type: string
+  tag:
+    description: |-
+      NBT data of the item.
+    type: string
 
 required:
-    - item
+  - item

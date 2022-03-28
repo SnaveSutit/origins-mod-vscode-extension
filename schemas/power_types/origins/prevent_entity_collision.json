@@ -1,0 +1,12 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_entity_collision'\n- Prevents an entity colliding with the entity who has this power, if all conditions are met.",
+	"type": "object",
+	"properties": {
+		"bientity_condition": {
+			"description": "If specified, collision is only affected as long as both the 'actor' (the entity with the power), and the 'target' fulfill the specified conditions.",
+			"$ref": "../../bientity_condition.json"
+		}
+	}
+}

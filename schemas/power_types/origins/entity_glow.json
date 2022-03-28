@@ -6,11 +6,11 @@
 	"properties": {
 		"entity_condition": {
 			"description": "If specified, only entities which fulfill this condition will glow for the player that has the power.",
-			"$ref": "../../entity_conditions/any.json"
+			"$ref": "../../entity_condition.json"
 		},
 		"bientity_condition": {
 			"description": "If specified, the power will only be active if this condition is fulfilled by either or both the 'actor' (the player that has the power) and 'target' (the entity that would glow) entities.",
-			"$ref": "../../bientity_conditions/any.json"
+			"$ref": "../../bientity_condition.json"
 		},
 		"use_teams": {
 			"description": "Determines whether glowing entities should use their team's color with their glow. If set to false, the entity will instead use the red, green and blue fields within this power type.",

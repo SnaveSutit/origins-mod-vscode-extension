@@ -21,4 +21,3 @@ properties:
   compare_to:
     description: Which value to compare the enchantment level against.
     type: number
-

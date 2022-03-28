@@ -13,6 +13,6 @@ properties:
     description: 'The namespace and ID of the fluid tag that should be checked. Most important examples: minecraft:water and minecraft:lava.'
     anyOf:
       - enum:
-        - minecraft:water
-        - minecraft:lava
+          - minecraft:water
+          - minecraft:lava
       - type: string

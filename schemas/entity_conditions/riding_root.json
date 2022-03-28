@@ -6,7 +6,7 @@
 	"properties": {
 		"bientity_condition": {
 			"description": "If specified, it will only check for the entity/entities that fulfills the bi-entity condition.",
-			"$ref": "../bientity_conditions/any.json"
+			"$ref": "../bientity_condition.json"
 		}
 	}
 }

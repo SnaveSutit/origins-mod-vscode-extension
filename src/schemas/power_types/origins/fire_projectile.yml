@@ -30,7 +30,6 @@ properties:
     description: Determines the interval for firing multiple projectiles consecutively (in ticks). If set to 0, it will fire all the projectiles at the same tick.
     type: integer
 
-
   start_delay:
     description: Determines how long the start of the firing process is delayed (in ticks).
     type: integer

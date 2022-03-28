@@ -31,4 +31,3 @@ properties:
     description: The maximum duration in ticks the status effect should have left in order to pass the check.
     type: integer
     default: 2147483647
-

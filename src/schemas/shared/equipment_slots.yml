@@ -1,0 +1,10 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Equipment Slots
+type: string
+enum:
+  - mainhand
+  - offhand
+  - head
+  - chest
+  - legs
+  - feet

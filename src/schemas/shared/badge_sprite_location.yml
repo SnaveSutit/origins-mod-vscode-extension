@@ -3,9 +3,9 @@ title: Badge sprite location
 description: A string path to the location of a badge texture
 anyOf:
   - enum:
-    - origins:textures/gui/badge/active.png
-    - origins:textures/gui/badge/arrow_up.png
-    - origins:textures/gui/badge/info.png
-    - origins:textures/gui/badge/star.png
-    - origins:textures/gui/badge/toggle.png
+      - origins:textures/gui/badge/active.png
+      - origins:textures/gui/badge/arrow_up.png
+      - origins:textures/gui/badge/info.png
+      - origins:textures/gui/badge/star.png
+      - origins:textures/gui/badge/toggle.png
   - type: string

@@ -1,0 +1,11 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:multiple'\n- Allows for defining more that one power in a single file.",
+	"type": "object",
+	"patternProperties": {
+		"^(?!type|badges|condition|description|hidden|loading_priority|name)(.+)": {
+			"$ref": "../../entity_condition.json"
+		}
+	}
+}

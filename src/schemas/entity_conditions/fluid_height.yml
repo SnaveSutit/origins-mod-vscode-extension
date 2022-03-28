@@ -16,8 +16,8 @@ properties:
     type: string
     anyOf:
       - enum:
-        - minecraft:water
-        - minecraft:lava
+          - minecraft:water
+          - minecraft:lava
       - type: string
 
   comparison:

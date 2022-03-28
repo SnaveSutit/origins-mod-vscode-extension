@@ -19,4 +19,3 @@ $defs:
       tag:
         description: ID of an item tag. Will be ignored if item is set.
         type: string
-

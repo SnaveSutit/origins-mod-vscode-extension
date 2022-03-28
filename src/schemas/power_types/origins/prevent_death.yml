@@ -1,0 +1,15 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:prevent_death'
+  - Prevents death; any damage which would kill the entity that has the power will instead reduce their health to half a heart.
+type: object
+properties:
+  damage_condition:
+    description: If specified, death will only be prevented if the damage dealt to the entity fulfills this condition.
+    $ref: ../../damage_condition.json
+
+  entity_action:
+    description: If specified, this action will be executed on the entity when death is prevented.
+    $ref: ../../entity_action.json

@@ -10,4 +10,4 @@ required:
 properties:
   condition:
     description: The bi-entity condition type to check for.
-    $ref: ../bientity_conditions/any.json
+    $ref: ../bientity_condition.json

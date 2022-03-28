@@ -1,0 +1,26 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:walk_on_fluid'\n- Allows the entity that has the power to walk on fluid.",
+	"type": "object",
+	"required": [
+		"fluid"
+	],
+	"properties": {
+		"fluid": {
+			"description": "The namespace and ID of the fluid tag on which the player should be able to walk onto. Most important examples: minecraft:water and minecraft:lava.",
+			"type": "string",
+			"anyOf": [
+				{
+					"enum": [
+						"minecraft:water",
+						"minecraft:lava"
+					]
+				},
+				{
+					"type": "string"
+				}
+			]
+		}
+	}
+}

@@ -9,7 +9,7 @@
 	"properties": {
 		"fluid_condition": {
 			"description": "The fluid condition type to check the fluid state at the position.",
-			"$ref": "../fluid_conditions/any.json"
+			"$ref": "../fluid_condition.json"
 		}
 	}
 }

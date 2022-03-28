@@ -24,15 +24,21 @@ function compile() {
 		}
 	}
 	recurse('./src/schemas/')
-	console.log('Building Schemas...')
+	console.log('Converting Schemas...')
 	fs.rmSync('./schemas/', { recursive: true, force: true })
 
 	for (const file of files) {
-		const obj = yaml.load(fs.readFileSync(file, 'utf-8'))
+		let obj
+		try {
+			obj = yaml.load(fs.readFileSync(file, 'utf-8'))
+		} catch (err) {
+			console.log(`Failed to read .yml file ${file}.`)
+		}
+		if (!obj) continue
 
 		const outFile = movePath('./src/schemas/', './schemas/', file).replace('.yml', '.json')
 		const outPath = pathjs.parse(outFile)
-		console.log(`${file} -> ${outFile}`)
+		// console.log(`${file} -> ${outFile}`)
 		try {
 			fs.mkdirSync(outPath.dir, { recursive: true })
 		} catch (err) {}

@@ -6,11 +6,11 @@
 	"properties": {
 		"using_item_condition": {
 			"description": "If specified, the specified actions will only execute if this condition is fulfilled by the item that is used to right-click an item.",
-			"$ref": "../../item_conditions/any.json"
+			"$ref": "../../item_condition.json"
 		},
 		"on_item_condition": {
 			"description": "If specified, the specified actions will only execute if this condition is fulfilled by the item that has been right-clicked.",
-			"$ref": "../../item_conditions/any.json"
+			"$ref": "../../item_condition.json"
 		},
 		"result": {
 			"description": "If specified, this item will be given to the player.",
@@ -23,19 +23,19 @@
 		},
 		"using_item_action": {
 			"description": "If specified, this action will be executed on the item that is used to right-click an item.",
-			"$ref": "../../item_actions/any.json"
+			"$ref": "../../item_action.json"
 		},
 		"on_item_action": {
 			"description": "If specified, this action will be executed on the item that has been right-clicked.",
-			"$ref": "../../item_actions/any.json"
+			"$ref": "../../item_action.json"
 		},
 		"result_item_action": {
 			"description": "If specified, this action will be executed on the item that is given to the player.",
-			"$ref": "../../item_actions/any.json"
+			"$ref": "../../item_action.json"
 		},
 		"entity_action": {
 			"description": "If specified, this action will be executed on the player after they used an item on an item.",
-			"$ref": "../../entity_actions/any.json"
+			"$ref": "../../entity_action.json"
 		}
 	}
 }
