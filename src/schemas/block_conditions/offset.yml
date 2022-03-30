@@ -13,16 +13,16 @@ required:
 properties:
   condition:
     description: The condition to check with the given offset.
-    $ref: ../entity_condition.json
+    $ref: ../block_condition.json
 
   x:
     description: How much to offset the position on the x-axis.
-    type: integer
+    type: number
 
   'y':
     description: How much to offset the position on the y-axis.
-    type: integer
+    type: number
 
   z:
     description: How much to offset the position on the z-axis.
-    type: integer
+    type: number
