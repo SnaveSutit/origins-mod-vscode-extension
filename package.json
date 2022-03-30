@@ -2,7 +2,7 @@
 	"name": "origins-mod-helper",
 	"displayName": "origins-mod-helper",
 	"description": "Adds json schemas and other useful things for origins mod origin development",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "SnaveSutit",
 	"author": {
 		"name": "Titus Evans",
@@ -29,21 +29,22 @@
 		"jsonValidation": [
 			{
 				"fileMatch": [
-					"**/origin_layers/**.json",
-					"**/origin_layers/**.yml"
+					"**/origin_layers/**/*.json",
+					"**/origin_layers/**/*.yml"
 				],
 				"url": "./schemas/origin_layers.json"
 			},
 			{
 				"fileMatch": [
-					"**/origins/**.json",
-					"**/origins/**.yml"
+					"**/origins/**/*.json",
+					"**/origins/**/*.yml"
 				],
 				"url": "./schemas/origin.json"
 			},
 			{
 				"fileMatch": [
-					"**/powers/**.json"
+					"**/powers/**/*.json",
+					"**/powers/**/*.yml"
 				],
 				"url": "./schemas/power.json"
 			}
@@ -51,13 +52,13 @@
 		"configurationDefaults": {
 			"yaml.schemas": {
 				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/power.json": [
-					"**/powers/**.yml"
+					"**/powers/**/*.yml"
 				],
 				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/origin.json": [
-					"**/origin/**.yml"
+					"**/origin/**/*.yml"
 				],
 				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/origin_layers.json": [
-					"**/origin_layers/**.yml"
+					"**/origin_layers/**/*.yml"
 				]
 			}
 		}
@@ -66,10 +67,8 @@
 		"vscode:prepublish": "yarn run package",
 		"compile": "webpack",
 		"watch": "webpack --watch",
+		"build": "vsce package -o origins-mod-helper.vsix",
 		"package": "webpack --mode production --devtool hidden-source-map",
-		"compile-tests": "tsc -p . --outDir out",
-		"watch-tests": "tsc -p . -w --outDir out",
-		"pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
 		"lint": "prettier --write .",
 		"test": "node ./out/test/runTest.js"
 	},
