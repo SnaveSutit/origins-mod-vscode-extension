@@ -8,10 +8,10 @@ type: object
 properties:
   feature:
     description: If specified, this feature renderer will not be rendered.
-    type: string
+    $ref: ../../shared/feature_renderer.json
 
   features:
     description: If specified, these feature renderers will not be rendered.
     type: array
     items:
-      type: string
+      $ref: ../../shared/feature_renderer.json
