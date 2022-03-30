@@ -6,5 +6,12 @@ description: |-
   - Allows for defining more that one power in a single file.
 type: object
 patternProperties:
-  '^(?!type|badges|condition|description|hidden|loading_priority|name)(.+)':
-    $ref: ../../power.json
+  ? '^(?!(type|badges|condition|description|hidden|loading_priority|name)$)[a-z\.0-9_\-]+'
+  : $ref: ../../power.json
+    not:
+      properties:
+        type:
+          description: Multiple cannot be used recursively.
+          oneOf:
+            - const: apoli:multiple
+            - const: origins:multiple
