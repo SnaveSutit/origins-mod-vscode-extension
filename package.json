@@ -15,6 +15,7 @@
 	"bugs": {
 		"url": "https://github.com/SnaveSutit/origins-mod-json-schemas/issues"
 	},
+	"icon": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/icon.png",
 	"engines": {
 		"vscode": "^1.65.0"
 	},
