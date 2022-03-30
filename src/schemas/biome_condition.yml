@@ -18,43 +18,57 @@ allOf:
   - if:
       properties:
         type:
-          const: origins:category
+          oneOf:
+            - const: apoli:category
+            - const: origins:category
     then:
       $ref: ./biome_conditions/category.json
   - if:
       properties:
         type:
-          const: origins:high_humidity
+          oneOf:
+            - const: apoli:high_humidity
+            - const: origins:high_humidity
     then:
       $ref: ./biome_conditions/high_humidity.json
   - if:
       properties:
         type:
-          const: origins:precipitation
+          oneOf:
+            - const: apoli:precipitation
+            - const: origins:precipitation
     then:
       $ref: ./biome_conditions/precipitation.json
   - if:
       properties:
         type:
-          const: origins:temperature
+          oneOf:
+            - const: apoli:temperature
+            - const: origins:temperature
     then:
       $ref: ./biome_conditions/temperature.json
 
   - if:
       properties:
         type:
-          const: origins:and
+          oneOf:
+            - const: apoli:and
+            - const: origins:and
     then:
       $ref: ./biome_conditions/and.json
   - if:
       properties:
         type:
-          const: origins:constant
+          oneOf:
+            - const: apoli:constant
+            - const: origins:constant
     then:
       $ref: ./biome_conditions/constant.json
   - if:
       properties:
         type:
-          const: origins:or
+          oneOf:
+            - const: apoli:or
+            - const: origins:or
     then:
       $ref: ./biome_conditions/or.json

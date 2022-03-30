@@ -20,403 +20,537 @@ allOf:
   - if:
       properties:
         type:
-          const: origins:ability
+          oneOf:
+            - const: apoli:ability
+            - const: origins:ability
     then:
       $ref: ./entity_conditions/ability.json
   - if:
       properties:
         type:
-          const: origins:advancement
+          oneOf:
+            - const: apoli:advancement
+            - const: origins:advancement
     then:
       $ref: ./entity_conditions/advancement.json
   - if:
       properties:
         type:
-          const: origins:air
+          oneOf:
+            - const: apoli:air
+            - const: origins:air
     then:
       $ref: ./entity_conditions/air.json
   - if:
       properties:
         type:
-          const: origins:attribute
+          oneOf:
+            - const: apoli:attribute
+            - const: origins:attribute
     then:
       $ref: ./entity_conditions/attribute.json
   - if:
       properties:
         type:
-          const: origins:biome
+          oneOf:
+            - const: apoli:biome
+            - const: origins:biome
     then:
       $ref: ./entity_conditions/biome.json
   - if:
       properties:
         type:
-          const: origins:block_collision
+          oneOf:
+            - const: apoli:block_collision
+            - const: origins:block_collision
     then:
       $ref: ./entity_conditions/block_collision.json
   - if:
       properties:
         type:
-          const: origins:block_in_radius
+          oneOf:
+            - const: apoli:block_in_radius
+            - const: origins:block_in_radius
     then:
       $ref: ./entity_conditions/block_in_radius.json
   - if:
       properties:
         type:
-          const: origins:brightness
+          oneOf:
+            - const: apoli:brightness
+            - const: origins:brightness
     then:
       $ref: ./entity_conditions/brightness.json
   - if:
       properties:
         type:
-          const: origins:climbing
+          oneOf:
+            - const: apoli:climbing
+            - const: origins:climbing
     then:
       $ref: ./entity_conditions/climbing.json
   - if:
       properties:
         type:
-          const: origins:command
+          oneOf:
+            - const: apoli:command
+            - const: origins:command
     then:
       $ref: ./entity_conditions/command.json
   - if:
       properties:
         type:
-          const: origins:creative_flying
+          oneOf:
+            - const: apoli:creative_flying
+            - const: origins:creative_flying
     then:
       $ref: ./entity_conditions/creative_flying.json
   - if:
       properties:
         type:
-          const: origins:daytime
+          oneOf:
+            - const: apoli:daytime
+            - const: origins:daytime
     then:
       $ref: ./entity_conditions/daytime.json
   - if:
       properties:
         type:
-          const: origins:dimension
+          oneOf:
+            - const: apoli:dimension
+            - const: origins:dimension
     then:
       $ref: ./entity_conditions/dimension.json
   - if:
       properties:
         type:
-          const: origins:distance_from_coordinates
+          oneOf:
+            - const: apoli:distance_from_coordinates
+            - const: origins:distance_from_coordinates
     then:
       $ref: ./entity_conditions/distance_from_coordinates.json
   - if:
       properties:
         type:
-          const: origins:elytra_flight_possible
+          oneOf:
+            - const: apoli:elytra_flight_possible
+            - const: origins:elytra_flight_possible
     then:
       $ref: ./entity_conditions/elytra_flight_possible.json
   - if:
       properties:
         type:
-          const: origins:enchantment
+          oneOf:
+            - const: apoli:enchantment
+            - const: origins:enchantment
     then:
       $ref: ./entity_conditions/enchantment.json
   - if:
       properties:
         type:
-          const: origins:entity_group
+          oneOf:
+            - const: apoli:entity_group
+            - const: origins:entity_group
     then:
       $ref: ./entity_conditions/entity_group.json
   - if:
       properties:
         type:
-          const: origins:entity_type
+          oneOf:
+            - const: apoli:entity_type
+            - const: origins:entity_type
     then:
       $ref: ./entity_conditions/entity_type.json
   - if:
       properties:
         type:
-          const: origins:equipped_item
+          oneOf:
+            - const: apoli:equipped_item
+            - const: origins:equipped_item
     then:
       $ref: ./entity_conditions/equipped_item.json
   - if:
       properties:
         type:
-          const: origins:exists
+          oneOf:
+            - const: apoli:exists
+            - const: origins:exists
     then:
       $ref: ./entity_conditions/exists.json
   - if:
       properties:
         type:
-          const: origins:exposed_to_sky
+          oneOf:
+            - const: apoli:exposed_to_sky
+            - const: origins:exposed_to_sky
     then:
       $ref: ./entity_conditions/exposed_to_sky.json
   - if:
       properties:
         type:
-          const: origins:exposed_to_sun
+          oneOf:
+            - const: apoli:exposed_to_sun
+            - const: origins:exposed_to_sun
     then:
       $ref: ./entity_conditions/exposed_to_sun.json
   - if:
       properties:
         type:
-          const: origins:fall_distance
+          oneOf:
+            - const: apoli:fall_distance
+            - const: origins:fall_distance
     then:
       $ref: ./entity_conditions/fall_distance.json
   - if:
       properties:
         type:
-          const: origins:fall_flying
+          oneOf:
+            - const: apoli:fall_flying
+            - const: origins:fall_flying
     then:
       $ref: ./entity_conditions/fall_flying.json
   - if:
       properties:
         type:
-          const: origins:fluid_height
+          oneOf:
+            - const: apoli:fluid_height
+            - const: origins:fluid_height
     then:
       $ref: ./entity_conditions/fluid_height.json
   - if:
       properties:
         type:
-          const: origins:food_level
+          oneOf:
+            - const: apoli:food_level
+            - const: origins:food_level
     then:
       $ref: ./entity_conditions/food_level.json
   - if:
       properties:
         type:
-          const: origins:gamemode
+          oneOf:
+            - const: apoli:gamemode
+            - const: origins:gamemode
     then:
       $ref: ./entity_conditions/gamemode.json
   - if:
       properties:
         type:
-          const: origins:health
+          oneOf:
+            - const: apoli:health
+            - const: origins:health
     then:
       $ref: ./entity_conditions/health.json
   - if:
       properties:
         type:
-          const: origins:in_block_anywhere
+          oneOf:
+            - const: apoli:in_block_anywhere
+            - const: origins:in_block_anywhere
     then:
       $ref: ./entity_conditions/in_block_anywhere.json
   - if:
       properties:
         type:
-          const: origins:in_block
+          oneOf:
+            - const: apoli:in_block
+            - const: origins:in_block
     then:
       $ref: ./entity_conditions/in_block.json
   - if:
       properties:
         type:
-          const: origins:in_rain
+          oneOf:
+            - const: apoli:in_rain
+            - const: origins:in_rain
     then:
       $ref: ./entity_conditions/in_rain.json
   - if:
       properties:
         type:
-          const: origins:in_tag
+          oneOf:
+            - const: apoli:in_tag
+            - const: origins:in_tag
     then:
       $ref: ./entity_conditions/in_tag.json
   - if:
       properties:
         type:
-          const: origins:invisible
+          oneOf:
+            - const: apoli:invisible
+            - const: origins:invisible
     then:
       $ref: ./entity_conditions/invisible.json
   - if:
       properties:
         type:
-          const: origins:living
+          oneOf:
+            - const: apoli:living
+            - const: origins:living
     then:
       $ref: ./entity_conditions/living.json
   - if:
       properties:
         type:
-          const: origins:moving
+          oneOf:
+            - const: apoli:moving
+            - const: origins:moving
     then:
       $ref: ./entity_conditions/moving.json
   - if:
       properties:
         type:
-          const: origins:nbt
+          oneOf:
+            - const: apoli:nbt
+            - const: origins:nbt
     then:
       $ref: ./entity_conditions/nbt.json
   - if:
       properties:
         type:
-          const: origins:on_block
+          oneOf:
+            - const: apoli:on_block
+            - const: origins:on_block
     then:
       $ref: ./entity_conditions/on_block.json
   - if:
       properties:
         type:
-          const: origins:on_fire
+          oneOf:
+            - const: apoli:on_fire
+            - const: origins:on_fire
     then:
       $ref: ./entity_conditions/on_fire.json
   - if:
       properties:
         type:
-          const: origins:origin
+          oneOf:
+            - const: apoli:origin
+            - const: origins:origin
     then:
       $ref: ./entity_conditions/origin.json
   - if:
       properties:
         type:
-          const: origins:passenger_recursive
+          oneOf:
+            - const: apoli:passenger_recursive
+            - const: origins:passenger_recursive
     then:
       $ref: ./entity_conditions/passenger_recursive.json
   - if:
       properties:
         type:
-          const: origins:passenger
+          oneOf:
+            - const: apoli:passenger
+            - const: origins:passenger
     then:
       $ref: ./entity_conditions/passenger.json
   - if:
       properties:
         type:
-          const: origins:power_active
+          oneOf:
+            - const: apoli:power_active
+            - const: origins:power_active
     then:
       $ref: ./entity_conditions/power_active.json
   - if:
       properties:
         type:
-          const: origins:power_type
+          oneOf:
+            - const: apoli:power_type
+            - const: origins:power_type
     then:
       $ref: ./entity_conditions/power_type.json
   - if:
       properties:
         type:
-          const: origins:power
+          oneOf:
+            - const: apoli:power
+            - const: origins:power
     then:
       $ref: ./entity_conditions/power.json
   - if:
       properties:
         type:
-          const: origins:predicate
+          oneOf:
+            - const: apoli:predicate
+            - const: origins:predicate
     then:
       $ref: ./entity_conditions/predicate.json
   - if:
       properties:
         type:
-          const: origins:raycast
+          oneOf:
+            - const: apoli:raycast
+            - const: origins:raycast
     then:
       $ref: ./entity_conditions/raycast.json
   - if:
       properties:
         type:
-          const: origins:relative_health
+          oneOf:
+            - const: apoli:relative_health
+            - const: origins:relative_health
     then:
       $ref: ./entity_conditions/relative_health.json
   - if:
       properties:
         type:
-          const: origins:resource
+          oneOf:
+            - const: apoli:resource
+            - const: origins:resource
     then:
       $ref: ./entity_conditions/resource.json
   - if:
       properties:
         type:
-          const: origins:riding_recursive
+          oneOf:
+            - const: apoli:riding_recursive
+            - const: origins:riding_recursive
     then:
       $ref: ./entity_conditions/riding_recursive.json
   - if:
       properties:
         type:
-          const: origins:riding_root
+          oneOf:
+            - const: apoli:riding_root
+            - const: origins:riding_root
     then:
       $ref: ./entity_conditions/riding_root.json
   - if:
       properties:
         type:
-          const: origins:riding
+          oneOf:
+            - const: apoli:riding
+            - const: origins:riding
     then:
       $ref: ./entity_conditions/riding.json
   - if:
       properties:
         type:
-          const: origins:saturation_level
+          oneOf:
+            - const: apoli:saturation_level
+            - const: origins:saturation_level
     then:
       $ref: ./entity_conditions/saturation_level.json
   - if:
       properties:
         type:
-          const: origins:scoreboard
+          oneOf:
+            - const: apoli:scoreboard
+            - const: origins:scoreboard
     then:
       $ref: ./entity_conditions/scoreboard.json
   - if:
       properties:
         type:
-          const: origins:sneaking
+          oneOf:
+            - const: apoli:sneaking
+            - const: origins:sneaking
     then:
       $ref: ./entity_conditions/sneaking.json
   - if:
       properties:
         type:
-          const: origins:sprinting
+          oneOf:
+            - const: apoli:sprinting
+            - const: origins:sprinting
     then:
       $ref: ./entity_conditions/sprinting.json
   - if:
       properties:
         type:
-          const: origins:status_effect
+          oneOf:
+            - const: apoli:status_effect
+            - const: origins:status_effect
     then:
       $ref: ./entity_conditions/status_effect.json
   - if:
       properties:
         type:
-          const: origins:submerged_in
+          oneOf:
+            - const: apoli:submerged_in
+            - const: origins:submerged_in
     then:
       $ref: ./entity_conditions/submerged_in.json
   - if:
       properties:
         type:
-          const: origins:swimming
+          oneOf:
+            - const: apoli:swimming
+            - const: origins:swimming
     then:
       $ref: ./entity_conditions/swimming.json
   - if:
       properties:
         type:
-          const: origins:tamed
+          oneOf:
+            - const: apoli:tamed
+            - const: origins:tamed
     then:
       $ref: ./entity_conditions/tamed.json
   - if:
       properties:
         type:
-          const: origins:time_of_day
+          oneOf:
+            - const: apoli:time_of_day
+            - const: origins:time_of_day
     then:
       $ref: ./entity_conditions/time_of_day.json
   - if:
       properties:
         type:
-          const: origins:use_effective_tool
+          oneOf:
+            - const: apoli:use_effective_tool
+            - const: origins:use_effective_tool
     then:
       $ref: ./entity_conditions/use_effective_tool.json
   - if:
       properties:
         type:
-          const: origins:using_item
+          oneOf:
+            - const: apoli:using_item
+            - const: origins:using_item
     then:
       $ref: ./entity_conditions/using_item.json
   - if:
       properties:
         type:
-          const: origins:xp_levels
+          oneOf:
+            - const: apoli:xp_levels
+            - const: origins:xp_levels
     then:
       $ref: ./entity_conditions/xp_levels.json
   - if:
       properties:
         type:
-          const: origins:xp_points
+          oneOf:
+            - const: apoli:xp_points
+            - const: origins:xp_points
     then:
       $ref: ./entity_conditions/xp_points.json
 
   - if:
       properties:
         type:
-          const: origins:and
+          oneOf:
+            - const: apoli:and
+            - const: origins:and
     then:
       $ref: ./entity_conditions/and.json
   - if:
       properties:
         type:
-          const: origins:constant
+          oneOf:
+            - const: apoli:constant
+            - const: origins:constant
     then:
       $ref: ./entity_conditions/constant.json
   - if:
       properties:
         type:
-          const: origins:or
+          oneOf:
+            - const: apoli:or
+            - const: origins:or
     then:
       $ref: ./entity_conditions/or.json

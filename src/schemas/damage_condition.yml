@@ -18,49 +18,65 @@ allOf:
   - if:
       properties:
         type:
-          const: origins:amount
+          oneOf:
+            - const: apoli:amount
+            - const: origins:amount
     then:
       $ref: ./damage_conditions/amount.json
   - if:
       properties:
         type:
-          const: origins:attacker
+          oneOf:
+            - const: apoli:attacker
+            - const: origins:attacker
     then:
       $ref: ./damage_conditions/attacker.json
   - if:
       properties:
         type:
-          const: origins:fire
+          oneOf:
+            - const: apoli:fire
+            - const: origins:fire
     then:
       $ref: ./damage_conditions/fire.json
   - if:
       properties:
         type:
-          const: origins:name
+          oneOf:
+            - const: apoli:name
+            - const: origins:name
     then:
       $ref: ./damage_conditions/name.json
   - if:
       properties:
         type:
-          const: origins:projectile
+          oneOf:
+            - const: apoli:projectile
+            - const: origins:projectile
     then:
       $ref: ./damage_conditions/projectile.json
 
   - if:
       properties:
         type:
-          const: origins:and
+          oneOf:
+            - const: apoli:and
+            - const: origins:and
     then:
       $ref: ./damage_conditions/and.json
   - if:
       properties:
         type:
-          const: origins:constant
+          oneOf:
+            - const: apoli:constant
+            - const: origins:constant
     then:
       $ref: ./damage_conditions/constant.json
   - if:
       properties:
         type:
-          const: origins:or
+          oneOf:
+            - const: apoli:or
+            - const: origins:or
     then:
       $ref: ./damage_conditions/or.json

@@ -22,7 +22,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:ability"
+						"oneOf": [
+							{
+								"const": "apoli:ability"
+							},
+							{
+								"const": "origins:ability"
+							}
+						]
 					}
 				}
 			},
@@ -34,7 +41,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:advancement"
+						"oneOf": [
+							{
+								"const": "apoli:advancement"
+							},
+							{
+								"const": "origins:advancement"
+							}
+						]
 					}
 				}
 			},
@@ -46,7 +60,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:air"
+						"oneOf": [
+							{
+								"const": "apoli:air"
+							},
+							{
+								"const": "origins:air"
+							}
+						]
 					}
 				}
 			},
@@ -58,7 +79,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:attribute"
+						"oneOf": [
+							{
+								"const": "apoli:attribute"
+							},
+							{
+								"const": "origins:attribute"
+							}
+						]
 					}
 				}
 			},
@@ -70,7 +98,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:biome"
+						"oneOf": [
+							{
+								"const": "apoli:biome"
+							},
+							{
+								"const": "origins:biome"
+							}
+						]
 					}
 				}
 			},
@@ -82,7 +117,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:block_collision"
+						"oneOf": [
+							{
+								"const": "apoli:block_collision"
+							},
+							{
+								"const": "origins:block_collision"
+							}
+						]
 					}
 				}
 			},
@@ -94,7 +136,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:block_in_radius"
+						"oneOf": [
+							{
+								"const": "apoli:block_in_radius"
+							},
+							{
+								"const": "origins:block_in_radius"
+							}
+						]
 					}
 				}
 			},
@@ -106,7 +155,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:brightness"
+						"oneOf": [
+							{
+								"const": "apoli:brightness"
+							},
+							{
+								"const": "origins:brightness"
+							}
+						]
 					}
 				}
 			},
@@ -118,7 +174,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:climbing"
+						"oneOf": [
+							{
+								"const": "apoli:climbing"
+							},
+							{
+								"const": "origins:climbing"
+							}
+						]
 					}
 				}
 			},
@@ -130,7 +193,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:command"
+						"oneOf": [
+							{
+								"const": "apoli:command"
+							},
+							{
+								"const": "origins:command"
+							}
+						]
 					}
 				}
 			},
@@ -142,7 +212,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:creative_flying"
+						"oneOf": [
+							{
+								"const": "apoli:creative_flying"
+							},
+							{
+								"const": "origins:creative_flying"
+							}
+						]
 					}
 				}
 			},
@@ -154,7 +231,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:daytime"
+						"oneOf": [
+							{
+								"const": "apoli:daytime"
+							},
+							{
+								"const": "origins:daytime"
+							}
+						]
 					}
 				}
 			},
@@ -166,7 +250,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:dimension"
+						"oneOf": [
+							{
+								"const": "apoli:dimension"
+							},
+							{
+								"const": "origins:dimension"
+							}
+						]
 					}
 				}
 			},
@@ -178,7 +269,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:distance_from_coordinates"
+						"oneOf": [
+							{
+								"const": "apoli:distance_from_coordinates"
+							},
+							{
+								"const": "origins:distance_from_coordinates"
+							}
+						]
 					}
 				}
 			},
@@ -190,7 +288,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:elytra_flight_possible"
+						"oneOf": [
+							{
+								"const": "apoli:elytra_flight_possible"
+							},
+							{
+								"const": "origins:elytra_flight_possible"
+							}
+						]
 					}
 				}
 			},
@@ -202,7 +307,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:enchantment"
+						"oneOf": [
+							{
+								"const": "apoli:enchantment"
+							},
+							{
+								"const": "origins:enchantment"
+							}
+						]
 					}
 				}
 			},
@@ -214,7 +326,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:entity_group"
+						"oneOf": [
+							{
+								"const": "apoli:entity_group"
+							},
+							{
+								"const": "origins:entity_group"
+							}
+						]
 					}
 				}
 			},
@@ -226,7 +345,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:entity_type"
+						"oneOf": [
+							{
+								"const": "apoli:entity_type"
+							},
+							{
+								"const": "origins:entity_type"
+							}
+						]
 					}
 				}
 			},
@@ -238,7 +364,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:equipped_item"
+						"oneOf": [
+							{
+								"const": "apoli:equipped_item"
+							},
+							{
+								"const": "origins:equipped_item"
+							}
+						]
 					}
 				}
 			},
@@ -250,7 +383,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:exists"
+						"oneOf": [
+							{
+								"const": "apoli:exists"
+							},
+							{
+								"const": "origins:exists"
+							}
+						]
 					}
 				}
 			},
@@ -262,7 +402,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:exposed_to_sky"
+						"oneOf": [
+							{
+								"const": "apoli:exposed_to_sky"
+							},
+							{
+								"const": "origins:exposed_to_sky"
+							}
+						]
 					}
 				}
 			},
@@ -274,7 +421,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:exposed_to_sun"
+						"oneOf": [
+							{
+								"const": "apoli:exposed_to_sun"
+							},
+							{
+								"const": "origins:exposed_to_sun"
+							}
+						]
 					}
 				}
 			},
@@ -286,7 +440,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:fall_distance"
+						"oneOf": [
+							{
+								"const": "apoli:fall_distance"
+							},
+							{
+								"const": "origins:fall_distance"
+							}
+						]
 					}
 				}
 			},
@@ -298,7 +459,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:fall_flying"
+						"oneOf": [
+							{
+								"const": "apoli:fall_flying"
+							},
+							{
+								"const": "origins:fall_flying"
+							}
+						]
 					}
 				}
 			},
@@ -310,7 +478,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:fluid_height"
+						"oneOf": [
+							{
+								"const": "apoli:fluid_height"
+							},
+							{
+								"const": "origins:fluid_height"
+							}
+						]
 					}
 				}
 			},
@@ -322,7 +497,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:food_level"
+						"oneOf": [
+							{
+								"const": "apoli:food_level"
+							},
+							{
+								"const": "origins:food_level"
+							}
+						]
 					}
 				}
 			},
@@ -334,7 +516,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:gamemode"
+						"oneOf": [
+							{
+								"const": "apoli:gamemode"
+							},
+							{
+								"const": "origins:gamemode"
+							}
+						]
 					}
 				}
 			},
@@ -346,7 +535,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:health"
+						"oneOf": [
+							{
+								"const": "apoli:health"
+							},
+							{
+								"const": "origins:health"
+							}
+						]
 					}
 				}
 			},
@@ -358,7 +554,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:in_block_anywhere"
+						"oneOf": [
+							{
+								"const": "apoli:in_block_anywhere"
+							},
+							{
+								"const": "origins:in_block_anywhere"
+							}
+						]
 					}
 				}
 			},
@@ -370,7 +573,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:in_block"
+						"oneOf": [
+							{
+								"const": "apoli:in_block"
+							},
+							{
+								"const": "origins:in_block"
+							}
+						]
 					}
 				}
 			},
@@ -382,7 +592,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:in_rain"
+						"oneOf": [
+							{
+								"const": "apoli:in_rain"
+							},
+							{
+								"const": "origins:in_rain"
+							}
+						]
 					}
 				}
 			},
@@ -394,7 +611,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:in_tag"
+						"oneOf": [
+							{
+								"const": "apoli:in_tag"
+							},
+							{
+								"const": "origins:in_tag"
+							}
+						]
 					}
 				}
 			},
@@ -406,7 +630,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:invisible"
+						"oneOf": [
+							{
+								"const": "apoli:invisible"
+							},
+							{
+								"const": "origins:invisible"
+							}
+						]
 					}
 				}
 			},
@@ -418,7 +649,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:living"
+						"oneOf": [
+							{
+								"const": "apoli:living"
+							},
+							{
+								"const": "origins:living"
+							}
+						]
 					}
 				}
 			},
@@ -430,7 +668,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:moving"
+						"oneOf": [
+							{
+								"const": "apoli:moving"
+							},
+							{
+								"const": "origins:moving"
+							}
+						]
 					}
 				}
 			},
@@ -442,7 +687,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:nbt"
+						"oneOf": [
+							{
+								"const": "apoli:nbt"
+							},
+							{
+								"const": "origins:nbt"
+							}
+						]
 					}
 				}
 			},
@@ -454,7 +706,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:on_block"
+						"oneOf": [
+							{
+								"const": "apoli:on_block"
+							},
+							{
+								"const": "origins:on_block"
+							}
+						]
 					}
 				}
 			},
@@ -466,7 +725,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:on_fire"
+						"oneOf": [
+							{
+								"const": "apoli:on_fire"
+							},
+							{
+								"const": "origins:on_fire"
+							}
+						]
 					}
 				}
 			},
@@ -478,7 +744,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:origin"
+						"oneOf": [
+							{
+								"const": "apoli:origin"
+							},
+							{
+								"const": "origins:origin"
+							}
+						]
 					}
 				}
 			},
@@ -490,7 +763,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:passenger_recursive"
+						"oneOf": [
+							{
+								"const": "apoli:passenger_recursive"
+							},
+							{
+								"const": "origins:passenger_recursive"
+							}
+						]
 					}
 				}
 			},
@@ -502,7 +782,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:passenger"
+						"oneOf": [
+							{
+								"const": "apoli:passenger"
+							},
+							{
+								"const": "origins:passenger"
+							}
+						]
 					}
 				}
 			},
@@ -514,7 +801,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:power_active"
+						"oneOf": [
+							{
+								"const": "apoli:power_active"
+							},
+							{
+								"const": "origins:power_active"
+							}
+						]
 					}
 				}
 			},
@@ -526,7 +820,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:power_type"
+						"oneOf": [
+							{
+								"const": "apoli:power_type"
+							},
+							{
+								"const": "origins:power_type"
+							}
+						]
 					}
 				}
 			},
@@ -538,7 +839,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:power"
+						"oneOf": [
+							{
+								"const": "apoli:power"
+							},
+							{
+								"const": "origins:power"
+							}
+						]
 					}
 				}
 			},
@@ -550,7 +858,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:predicate"
+						"oneOf": [
+							{
+								"const": "apoli:predicate"
+							},
+							{
+								"const": "origins:predicate"
+							}
+						]
 					}
 				}
 			},
@@ -562,7 +877,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:raycast"
+						"oneOf": [
+							{
+								"const": "apoli:raycast"
+							},
+							{
+								"const": "origins:raycast"
+							}
+						]
 					}
 				}
 			},
@@ -574,7 +896,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:relative_health"
+						"oneOf": [
+							{
+								"const": "apoli:relative_health"
+							},
+							{
+								"const": "origins:relative_health"
+							}
+						]
 					}
 				}
 			},
@@ -586,7 +915,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:resource"
+						"oneOf": [
+							{
+								"const": "apoli:resource"
+							},
+							{
+								"const": "origins:resource"
+							}
+						]
 					}
 				}
 			},
@@ -598,7 +934,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:riding_recursive"
+						"oneOf": [
+							{
+								"const": "apoli:riding_recursive"
+							},
+							{
+								"const": "origins:riding_recursive"
+							}
+						]
 					}
 				}
 			},
@@ -610,7 +953,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:riding_root"
+						"oneOf": [
+							{
+								"const": "apoli:riding_root"
+							},
+							{
+								"const": "origins:riding_root"
+							}
+						]
 					}
 				}
 			},
@@ -622,7 +972,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:riding"
+						"oneOf": [
+							{
+								"const": "apoli:riding"
+							},
+							{
+								"const": "origins:riding"
+							}
+						]
 					}
 				}
 			},
@@ -634,7 +991,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:saturation_level"
+						"oneOf": [
+							{
+								"const": "apoli:saturation_level"
+							},
+							{
+								"const": "origins:saturation_level"
+							}
+						]
 					}
 				}
 			},
@@ -646,7 +1010,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:scoreboard"
+						"oneOf": [
+							{
+								"const": "apoli:scoreboard"
+							},
+							{
+								"const": "origins:scoreboard"
+							}
+						]
 					}
 				}
 			},
@@ -658,7 +1029,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:sneaking"
+						"oneOf": [
+							{
+								"const": "apoli:sneaking"
+							},
+							{
+								"const": "origins:sneaking"
+							}
+						]
 					}
 				}
 			},
@@ -670,7 +1048,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:sprinting"
+						"oneOf": [
+							{
+								"const": "apoli:sprinting"
+							},
+							{
+								"const": "origins:sprinting"
+							}
+						]
 					}
 				}
 			},
@@ -682,7 +1067,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:status_effect"
+						"oneOf": [
+							{
+								"const": "apoli:status_effect"
+							},
+							{
+								"const": "origins:status_effect"
+							}
+						]
 					}
 				}
 			},
@@ -694,7 +1086,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:submerged_in"
+						"oneOf": [
+							{
+								"const": "apoli:submerged_in"
+							},
+							{
+								"const": "origins:submerged_in"
+							}
+						]
 					}
 				}
 			},
@@ -706,7 +1105,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:swimming"
+						"oneOf": [
+							{
+								"const": "apoli:swimming"
+							},
+							{
+								"const": "origins:swimming"
+							}
+						]
 					}
 				}
 			},
@@ -718,7 +1124,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:tamed"
+						"oneOf": [
+							{
+								"const": "apoli:tamed"
+							},
+							{
+								"const": "origins:tamed"
+							}
+						]
 					}
 				}
 			},
@@ -730,7 +1143,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:time_of_day"
+						"oneOf": [
+							{
+								"const": "apoli:time_of_day"
+							},
+							{
+								"const": "origins:time_of_day"
+							}
+						]
 					}
 				}
 			},
@@ -742,7 +1162,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:use_effective_tool"
+						"oneOf": [
+							{
+								"const": "apoli:use_effective_tool"
+							},
+							{
+								"const": "origins:use_effective_tool"
+							}
+						]
 					}
 				}
 			},
@@ -754,7 +1181,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:using_item"
+						"oneOf": [
+							{
+								"const": "apoli:using_item"
+							},
+							{
+								"const": "origins:using_item"
+							}
+						]
 					}
 				}
 			},
@@ -766,7 +1200,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:xp_levels"
+						"oneOf": [
+							{
+								"const": "apoli:xp_levels"
+							},
+							{
+								"const": "origins:xp_levels"
+							}
+						]
 					}
 				}
 			},
@@ -778,7 +1219,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:xp_points"
+						"oneOf": [
+							{
+								"const": "apoli:xp_points"
+							},
+							{
+								"const": "origins:xp_points"
+							}
+						]
 					}
 				}
 			},
@@ -790,7 +1238,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:and"
+						"oneOf": [
+							{
+								"const": "apoli:and"
+							},
+							{
+								"const": "origins:and"
+							}
+						]
 					}
 				}
 			},
@@ -802,7 +1257,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:constant"
+						"oneOf": [
+							{
+								"const": "apoli:constant"
+							},
+							{
+								"const": "origins:constant"
+							}
+						]
 					}
 				}
 			},
@@ -814,7 +1276,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:or"
+						"oneOf": [
+							{
+								"const": "apoli:or"
+							},
+							{
+								"const": "origins:or"
+							}
+						]
 					}
 				}
 			},

@@ -22,7 +22,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:adjacent"
+						"oneOf": [
+							{
+								"const": "apoli:adjacent"
+							},
+							{
+								"const": "origins:adjacent"
+							}
+						]
 					}
 				}
 			},
@@ -34,7 +41,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:attachable"
+						"oneOf": [
+							{
+								"const": "apoli:attachable"
+							},
+							{
+								"const": "origins:attachable"
+							}
+						]
 					}
 				}
 			},
@@ -46,7 +60,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:blast_resistance"
+						"oneOf": [
+							{
+								"const": "apoli:blast_resistance"
+							},
+							{
+								"const": "origins:blast_resistance"
+							}
+						]
 					}
 				}
 			},
@@ -58,7 +79,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:block_state"
+						"oneOf": [
+							{
+								"const": "apoli:block_state"
+							},
+							{
+								"const": "origins:block_state"
+							}
+						]
 					}
 				}
 			},
@@ -70,7 +98,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:block"
+						"oneOf": [
+							{
+								"const": "apoli:block"
+							},
+							{
+								"const": "origins:block"
+							}
+						]
 					}
 				}
 			},
@@ -82,7 +117,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:distance_from_coordinates"
+						"oneOf": [
+							{
+								"const": "apoli:distance_from_coordinates"
+							},
+							{
+								"const": "origins:distance_from_coordinates"
+							}
+						]
 					}
 				}
 			},
@@ -94,7 +136,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:exposed_to_sky"
+						"oneOf": [
+							{
+								"const": "apoli:exposed_to_sky"
+							},
+							{
+								"const": "origins:exposed_to_sky"
+							}
+						]
 					}
 				}
 			},
@@ -106,7 +155,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:fluid"
+						"oneOf": [
+							{
+								"const": "apoli:fluid"
+							},
+							{
+								"const": "origins:fluid"
+							}
+						]
 					}
 				}
 			},
@@ -118,7 +174,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:hardness"
+						"oneOf": [
+							{
+								"const": "apoli:hardness"
+							},
+							{
+								"const": "origins:hardness"
+							}
+						]
 					}
 				}
 			},
@@ -130,7 +193,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:height"
+						"oneOf": [
+							{
+								"const": "apoli:height"
+							},
+							{
+								"const": "origins:height"
+							}
+						]
 					}
 				}
 			},
@@ -142,7 +212,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:in_tag"
+						"oneOf": [
+							{
+								"const": "apoli:in_tag"
+							},
+							{
+								"const": "origins:in_tag"
+							}
+						]
 					}
 				}
 			},
@@ -154,7 +231,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:light_blocking"
+						"oneOf": [
+							{
+								"const": "apoli:light_blocking"
+							},
+							{
+								"const": "origins:light_blocking"
+							}
+						]
 					}
 				}
 			},
@@ -166,7 +250,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:light_level"
+						"oneOf": [
+							{
+								"const": "apoli:light_level"
+							},
+							{
+								"const": "origins:light_level"
+							}
+						]
 					}
 				}
 			},
@@ -178,7 +269,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:material"
+						"oneOf": [
+							{
+								"const": "apoli:material"
+							},
+							{
+								"const": "origins:material"
+							}
+						]
 					}
 				}
 			},
@@ -190,7 +288,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:movement_blocking"
+						"oneOf": [
+							{
+								"const": "apoli:movement_blocking"
+							},
+							{
+								"const": "origins:movement_blocking"
+							}
+						]
 					}
 				}
 			},
@@ -202,7 +307,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:nbt"
+						"oneOf": [
+							{
+								"const": "apoli:nbt"
+							},
+							{
+								"const": "origins:nbt"
+							}
+						]
 					}
 				}
 			},
@@ -214,7 +326,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:replacable"
+						"oneOf": [
+							{
+								"const": "apoli:replacable"
+							},
+							{
+								"const": "origins:replacable"
+							}
+						]
 					}
 				}
 			},
@@ -226,7 +345,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:slipperiness"
+						"oneOf": [
+							{
+								"const": "apoli:slipperiness"
+							},
+							{
+								"const": "origins:slipperiness"
+							}
+						]
 					}
 				}
 			},
@@ -238,7 +364,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:waterloggable"
+						"oneOf": [
+							{
+								"const": "apoli:waterloggable"
+							},
+							{
+								"const": "origins:waterloggable"
+							}
+						]
 					}
 				}
 			},
@@ -250,7 +383,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:offset"
+						"oneOf": [
+							{
+								"const": "apoli:offset"
+							},
+							{
+								"const": "origins:offset"
+							}
+						]
 					}
 				}
 			},
@@ -262,7 +402,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:and"
+						"oneOf": [
+							{
+								"const": "apoli:and"
+							},
+							{
+								"const": "origins:and"
+							}
+						]
 					}
 				}
 			},
@@ -274,7 +421,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:constant"
+						"oneOf": [
+							{
+								"const": "apoli:constant"
+							},
+							{
+								"const": "origins:constant"
+							}
+						]
 					}
 				}
 			},
@@ -286,7 +440,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:or"
+						"oneOf": [
+							{
+								"const": "apoli:or"
+							},
+							{
+								"const": "origins:or"
+							}
+						]
 					}
 				}
 			},

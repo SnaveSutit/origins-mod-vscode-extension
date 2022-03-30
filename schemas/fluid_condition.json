@@ -22,7 +22,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:empty"
+						"oneOf": [
+							{
+								"const": "apoli:empty"
+							},
+							{
+								"const": "origins:empty"
+							}
+						]
 					}
 				}
 			},
@@ -34,7 +41,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:in_tag"
+						"oneOf": [
+							{
+								"const": "apoli:in_tag"
+							},
+							{
+								"const": "origins:in_tag"
+							}
+						]
 					}
 				}
 			},
@@ -46,7 +60,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:still"
+						"oneOf": [
+							{
+								"const": "apoli:still"
+							},
+							{
+								"const": "origins:still"
+							}
+						]
 					}
 				}
 			},
@@ -58,7 +79,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:and"
+						"oneOf": [
+							{
+								"const": "apoli:and"
+							},
+							{
+								"const": "origins:and"
+							}
+						]
 					}
 				}
 			},
@@ -70,7 +98,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:constant"
+						"oneOf": [
+							{
+								"const": "apoli:constant"
+							},
+							{
+								"const": "origins:constant"
+							}
+						]
 					}
 				}
 			},
@@ -82,7 +117,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:or"
+						"oneOf": [
+							{
+								"const": "apoli:or"
+							},
+							{
+								"const": "origins:or"
+							}
+						]
 					}
 				}
 			},

@@ -17,7 +17,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:add_block"
+						"oneOf": [
+							{
+								"const": "apoli:add_block"
+							},
+							{
+								"const": "origins:add_block"
+							}
+						]
 					}
 				}
 			},
@@ -29,7 +36,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:bonemeal"
+						"oneOf": [
+							{
+								"const": "apoli:bonemeal"
+							},
+							{
+								"const": "origins:bonemeal"
+							}
+						]
 					}
 				}
 			},
@@ -41,7 +55,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:execute_command"
+						"oneOf": [
+							{
+								"const": "apoli:execute_command"
+							},
+							{
+								"const": "origins:execute_command"
+							}
+						]
 					}
 				}
 			},
@@ -53,7 +74,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:explode"
+						"oneOf": [
+							{
+								"const": "apoli:explode"
+							},
+							{
+								"const": "origins:explode"
+							}
+						]
 					}
 				}
 			},
@@ -65,7 +93,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_block_state"
+						"oneOf": [
+							{
+								"const": "apoli:modify_block_state"
+							},
+							{
+								"const": "origins:modify_block_state"
+							}
+						]
 					}
 				}
 			},
@@ -77,7 +112,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:set_block"
+						"oneOf": [
+							{
+								"const": "apoli:set_block"
+							},
+							{
+								"const": "origins:set_block"
+							}
+						]
 					}
 				}
 			},
@@ -89,7 +131,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:offset"
+						"oneOf": [
+							{
+								"const": "apoli:offset"
+							},
+							{
+								"const": "origins:offset"
+							}
+						]
 					}
 				}
 			},
@@ -101,7 +150,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:and"
+						"oneOf": [
+							{
+								"const": "apoli:and"
+							},
+							{
+								"const": "origins:and"
+							}
+						]
 					}
 				}
 			},
@@ -113,7 +169,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:chance"
+						"oneOf": [
+							{
+								"const": "apoli:chance"
+							},
+							{
+								"const": "origins:chance"
+							}
+						]
 					}
 				}
 			},
@@ -125,7 +188,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:choice"
+						"oneOf": [
+							{
+								"const": "apoli:choice"
+							},
+							{
+								"const": "origins:choice"
+							}
+						]
 					}
 				}
 			},
@@ -137,7 +207,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:delay"
+						"oneOf": [
+							{
+								"const": "apoli:delay"
+							},
+							{
+								"const": "origins:delay"
+							}
+						]
 					}
 				}
 			},
@@ -149,7 +226,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:if_else_list"
+						"oneOf": [
+							{
+								"const": "apoli:if_else_list"
+							},
+							{
+								"const": "origins:if_else_list"
+							}
+						]
 					}
 				}
 			},
@@ -161,7 +245,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:if_else"
+						"oneOf": [
+							{
+								"const": "apoli:if_else"
+							},
+							{
+								"const": "origins:if_else"
+							}
+						]
 					}
 				}
 			},
@@ -173,7 +264,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:nothing"
+						"oneOf": [
+							{
+								"const": "apoli:nothing"
+							},
+							{
+								"const": "origins:nothing"
+							}
+						]
 					}
 				}
 			},

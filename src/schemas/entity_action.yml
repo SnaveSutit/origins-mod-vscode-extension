@@ -13,253 +13,337 @@ allOf:
   - if:
       properties:
         type:
-          const: origins:add_velocity
+          oneOf:
+            - const: apoli:add_velocity
+            - const: origins:add_velocity
     then:
       $ref: ./entity_actions/add_velocity.json
   - if:
       properties:
         type:
-          const: origins:add_xp
+          oneOf:
+            - const: apoli:add_xp
+            - const: origins:add_xp
     then:
       $ref: ./entity_actions/add_xp.json
   - if:
       properties:
         type:
-          const: origins:apply_effect
+          oneOf:
+            - const: apoli:apply_effect
+            - const: origins:apply_effect
     then:
       $ref: ./entity_actions/apply_effect.json
   - if:
       properties:
         type:
-          const: origins:area_of_effect
+          oneOf:
+            - const: apoli:area_of_effect
+            - const: origins:area_of_effect
     then:
       $ref: ./entity_actions/area_of_effect.json
   - if:
       properties:
         type:
-          const: origins:block_action_at
+          oneOf:
+            - const: apoli:block_action_at
+            - const: origins:block_action_at
     then:
       $ref: ./entity_actions/block_action_at.json
   - if:
       properties:
         type:
-          const: origins:change_resource
+          oneOf:
+            - const: apoli:change_resource
+            - const: origins:change_resource
     then:
       $ref: ./entity_actions/change_resource.json
   - if:
       properties:
         type:
-          const: origins:clear_effect
+          oneOf:
+            - const: apoli:clear_effect
+            - const: origins:clear_effect
     then:
       $ref: ./entity_actions/clear_effect.json
   - if:
       properties:
         type:
-          const: origins:crafting_table
+          oneOf:
+            - const: apoli:crafting_table
+            - const: origins:crafting_table
     then:
       $ref: ./entity_actions/crafting_table.json
   - if:
       properties:
         type:
-          const: origins:damage
+          oneOf:
+            - const: apoli:damage
+            - const: origins:damage
     then:
       $ref: ./entity_actions/damage.json
   - if:
       properties:
         type:
-          const: origins:dismount
+          oneOf:
+            - const: apoli:dismount
+            - const: origins:dismount
     then:
       $ref: ./entity_actions/dismount.json
   - if:
       properties:
         type:
-          const: origins:emit_game_event
+          oneOf:
+            - const: apoli:emit_game_event
+            - const: origins:emit_game_event
     then:
       $ref: ./entity_actions/emit_game_event.json
   - if:
       properties:
         type:
-          const: origins:ender_chest
+          oneOf:
+            - const: apoli:ender_chest
+            - const: origins:ender_chest
     then:
       $ref: ./entity_actions/ender_chest.json
   - if:
       properties:
         type:
-          const: origins:equipped_item_action
+          oneOf:
+            - const: apoli:equipped_item_action
+            - const: origins:equipped_item_action
     then:
       $ref: ./entity_actions/equipped_item_action.json
   - if:
       properties:
         type:
-          const: origins:execute_command
+          oneOf:
+            - const: apoli:execute_command
+            - const: origins:execute_command
     then:
       $ref: ./entity_actions/execute_command.json
   - if:
       properties:
         type:
-          const: origins:exaust
+          oneOf:
+            - const: apoli:exaust
+            - const: origins:exaust
     then:
       $ref: ./entity_actions/exaust.json
   - if:
       properties:
         type:
-          const: origins:explode
+          oneOf:
+            - const: apoli:explode
+            - const: origins:explode
     then:
       $ref: ./entity_actions/explode.json
   - if:
       properties:
         type:
-          const: origins:extinguish
+          oneOf:
+            - const: apoli:extinguish
+            - const: origins:extinguish
     then:
       $ref: ./entity_actions/extinguish.json
   - if:
       properties:
         type:
-          const: origins:feed
+          oneOf:
+            - const: apoli:feed
+            - const: origins:feed
     then:
       $ref: ./entity_actions/feed.json
   - if:
       properties:
         type:
-          const: origins:gain_air
+          oneOf:
+            - const: apoli:gain_air
+            - const: origins:gain_air
     then:
       $ref: ./entity_actions/gain_air.json
   - if:
       properties:
         type:
-          const: origins:give
+          oneOf:
+            - const: apoli:give
+            - const: origins:give
     then:
       $ref: ./entity_actions/give.json
   - if:
       properties:
         type:
-          const: origins:grant_power
+          oneOf:
+            - const: apoli:grant_power
+            - const: origins:grant_power
     then:
       $ref: ./entity_actions/grant_power.json
   - if:
       properties:
         type:
-          const: origins:heal
+          oneOf:
+            - const: apoli:heal
+            - const: origins:heal
     then:
       $ref: ./entity_actions/heal.json
   - if:
       properties:
         type:
-          const: origins:passenger_action
+          oneOf:
+            - const: apoli:passenger_action
+            - const: origins:passenger_action
     then:
       $ref: ./entity_actions/passenger_action.json
   - if:
       properties:
         type:
-          const: origins:play_sound
+          oneOf:
+            - const: apoli:play_sound
+            - const: origins:play_sound
     then:
       $ref: ./entity_actions/play_sound.json
   - if:
       properties:
         type:
-          const: origins:raycast
+          oneOf:
+            - const: apoli:raycast
+            - const: origins:raycast
     then:
       $ref: ./entity_actions/raycast.json
   - if:
       properties:
         type:
-          const: origins:revoke_power
+          oneOf:
+            - const: apoli:revoke_power
+            - const: origins:revoke_power
     then:
       $ref: ./entity_actions/revoke_power.json
   - if:
       properties:
         type:
-          const: origins:riding_action
+          oneOf:
+            - const: apoli:riding_action
+            - const: origins:riding_action
     then:
       $ref: ./entity_actions/riding_action.json
   - if:
       properties:
         type:
-          const: origins:set_fall_distance
+          oneOf:
+            - const: apoli:set_fall_distance
+            - const: origins:set_fall_distance
     then:
       $ref: ./entity_actions/set_fall_distance.json
   - if:
       properties:
         type:
-          const: origins:set_on_fire
+          oneOf:
+            - const: apoli:set_on_fire
+            - const: origins:set_on_fire
     then:
       $ref: ./entity_actions/set_on_fire.json
   - if:
       properties:
         type:
-          const: origins:spawn_effect_cloud
+          oneOf:
+            - const: apoli:spawn_effect_cloud
+            - const: origins:spawn_effect_cloud
     then:
       $ref: ./entity_actions/spawn_effect_cloud.json
   - if:
       properties:
         type:
-          const: origins:spawn_entity
+          oneOf:
+            - const: apoli:spawn_entity
+            - const: origins:spawn_entity
     then:
       $ref: ./entity_actions/spawn_entity.json
   - if:
       properties:
         type:
-          const: origins:spawn_particles
+          oneOf:
+            - const: apoli:spawn_particles
+            - const: origins:spawn_particles
     then:
       $ref: ./entity_actions/spawn_particles.json
   - if:
       properties:
         type:
-          const: origins:swing_hand
+          oneOf:
+            - const: apoli:swing_hand
+            - const: origins:swing_hand
     then:
       $ref: ./entity_actions/swing_hand.json
   - if:
       properties:
         type:
-          const: origins:toggle
+          oneOf:
+            - const: apoli:toggle
+            - const: origins:toggle
     then:
       $ref: ./entity_actions/toggle.json
   - if:
       properties:
         type:
-          const: origins:trigger_cooldown
+          oneOf:
+            - const: apoli:trigger_cooldown
+            - const: origins:trigger_cooldown
     then:
       $ref: ./entity_actions/trigger_cooldown.json
 
   - if:
       properties:
         type:
-          const: origins:and
+          oneOf:
+            - const: apoli:and
+            - const: origins:and
     then:
       $ref: ./entity_actions/and.json
   - if:
       properties:
         type:
-          const: origins:chance
+          oneOf:
+            - const: apoli:chance
+            - const: origins:chance
     then:
       $ref: ./entity_actions/chance.json
   - if:
       properties:
         type:
-          const: origins:choice
+          oneOf:
+            - const: apoli:choice
+            - const: origins:choice
     then:
       $ref: ./entity_actions/choice.json
   - if:
       properties:
         type:
-          const: origins:delay
+          oneOf:
+            - const: apoli:delay
+            - const: origins:delay
     then:
       $ref: ./entity_actions/delay.json
   - if:
       properties:
         type:
-          const: origins:if_else_list
+          oneOf:
+            - const: apoli:if_else_list
+            - const: origins:if_else_list
     then:
       $ref: ./entity_actions/if_else_list.json
   - if:
       properties:
         type:
-          const: origins:if_else
+          oneOf:
+            - const: apoli:if_else
+            - const: origins:if_else
     then:
       $ref: ./entity_actions/if_else.json
   - if:
       properties:
         type:
-          const: origins:nothing
+          oneOf:
+            - const: apoli:nothing
+            - const: origins:nothing
     then:
       $ref: ./entity_actions/nothing.json

@@ -54,7 +54,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:attribute_modify_transfer"
+						"oneOf": [
+							{
+								"const": "apoli:attribute_modify_transfer"
+							},
+							{
+								"const": "origins:attribute_modify_transfer"
+							}
+						]
 					}
 				}
 			},
@@ -66,7 +73,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:attribute"
+						"oneOf": [
+							{
+								"const": "apoli:attribute"
+							},
+							{
+								"const": "origins:attribute"
+							}
+						]
 					}
 				}
 			},
@@ -78,7 +92,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:burn"
+						"oneOf": [
+							{
+								"const": "apoli:burn"
+							},
+							{
+								"const": "origins:burn"
+							}
+						]
 					}
 				}
 			},
@@ -90,7 +111,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:climbing"
+						"oneOf": [
+							{
+								"const": "apoli:climbing"
+							},
+							{
+								"const": "origins:climbing"
+							}
+						]
 					}
 				}
 			},
@@ -102,7 +130,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:conditioned_attribute"
+						"oneOf": [
+							{
+								"const": "apoli:conditioned_attribute"
+							},
+							{
+								"const": "origins:conditioned_attribute"
+							}
+						]
 					}
 				}
 			},
@@ -114,7 +149,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:conditioned_restrict_armor"
+						"oneOf": [
+							{
+								"const": "apoli:conditioned_restrict_armor"
+							},
+							{
+								"const": "origins:conditioned_restrict_armor"
+							}
+						]
 					}
 				}
 			},
@@ -126,7 +168,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:cooldown"
+						"oneOf": [
+							{
+								"const": "apoli:cooldown"
+							},
+							{
+								"const": "origins:cooldown"
+							}
+						]
 					}
 				}
 			},
@@ -138,7 +187,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:creative_flight"
+						"oneOf": [
+							{
+								"const": "apoli:creative_flight"
+							},
+							{
+								"const": "origins:creative_flight"
+							}
+						]
 					}
 				}
 			},
@@ -150,7 +206,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:damage_over_time"
+						"oneOf": [
+							{
+								"const": "apoli:damage_over_time"
+							},
+							{
+								"const": "origins:damage_over_time"
+							}
+						]
 					}
 				}
 			},
@@ -162,7 +225,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:disable_regen"
+						"oneOf": [
+							{
+								"const": "apoli:disable_regen"
+							},
+							{
+								"const": "origins:disable_regen"
+							}
+						]
 					}
 				}
 			},
@@ -174,7 +244,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:effect_immunity"
+						"oneOf": [
+							{
+								"const": "apoli:effect_immunity"
+							},
+							{
+								"const": "origins:effect_immunity"
+							}
+						]
 					}
 				}
 			},
@@ -186,7 +263,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:elytra_flight"
+						"oneOf": [
+							{
+								"const": "apoli:elytra_flight"
+							},
+							{
+								"const": "origins:elytra_flight"
+							}
+						]
 					}
 				}
 			},
@@ -198,7 +282,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:entity_glow"
+						"oneOf": [
+							{
+								"const": "apoli:entity_glow"
+							},
+							{
+								"const": "origins:entity_glow"
+							}
+						]
 					}
 				}
 			},
@@ -210,7 +301,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:entity_group"
+						"oneOf": [
+							{
+								"const": "apoli:entity_group"
+							},
+							{
+								"const": "origins:entity_group"
+							}
+						]
 					}
 				}
 			},
@@ -222,7 +320,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:exaust"
+						"oneOf": [
+							{
+								"const": "apoli:exaust"
+							},
+							{
+								"const": "origins:exaust"
+							}
+						]
 					}
 				}
 			},
@@ -234,7 +339,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:fire_immunity"
+						"oneOf": [
+							{
+								"const": "apoli:fire_immunity"
+							},
+							{
+								"const": "origins:fire_immunity"
+							}
+						]
 					}
 				}
 			},
@@ -246,7 +358,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:fire_projectile"
+						"oneOf": [
+							{
+								"const": "apoli:fire_projectile"
+							},
+							{
+								"const": "origins:fire_projectile"
+							}
+						]
 					}
 				}
 			},
@@ -258,7 +377,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:freeze"
+						"oneOf": [
+							{
+								"const": "apoli:freeze"
+							},
+							{
+								"const": "origins:freeze"
+							}
+						]
 					}
 				}
 			},
@@ -270,7 +396,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:ignore_water"
+						"oneOf": [
+							{
+								"const": "apoli:ignore_water"
+							},
+							{
+								"const": "origins:ignore_water"
+							}
+						]
 					}
 				}
 			},
@@ -282,7 +415,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:inventory"
+						"oneOf": [
+							{
+								"const": "apoli:inventory"
+							},
+							{
+								"const": "origins:inventory"
+							}
+						]
 					}
 				}
 			},
@@ -294,7 +434,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:invisibility"
+						"oneOf": [
+							{
+								"const": "apoli:invisibility"
+							},
+							{
+								"const": "origins:invisibility"
+							}
+						]
 					}
 				}
 			},
@@ -306,7 +453,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:invulnerablility"
+						"oneOf": [
+							{
+								"const": "apoli:invulnerablility"
+							},
+							{
+								"const": "origins:invulnerablility"
+							}
+						]
 					}
 				}
 			},
@@ -318,7 +472,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:item_on_item"
+						"oneOf": [
+							{
+								"const": "apoli:item_on_item"
+							},
+							{
+								"const": "origins:item_on_item"
+							}
+						]
 					}
 				}
 			},
@@ -330,7 +491,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:keep_inventory"
+						"oneOf": [
+							{
+								"const": "apoli:keep_inventory"
+							},
+							{
+								"const": "origins:keep_inventory"
+							}
+						]
 					}
 				}
 			},
@@ -342,7 +510,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:launch"
+						"oneOf": [
+							{
+								"const": "apoli:launch"
+							},
+							{
+								"const": "origins:launch"
+							}
+						]
 					}
 				}
 			},
@@ -354,7 +529,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:lava_vision"
+						"oneOf": [
+							{
+								"const": "apoli:lava_vision"
+							},
+							{
+								"const": "origins:lava_vision"
+							}
+						]
 					}
 				}
 			},
@@ -366,7 +548,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:model_color"
+						"oneOf": [
+							{
+								"const": "apoli:model_color"
+							},
+							{
+								"const": "origins:model_color"
+							}
+						]
 					}
 				}
 			},
@@ -378,7 +567,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:multiple"
+						"oneOf": [
+							{
+								"const": "apoli:multiple"
+							},
+							{
+								"const": "origins:multiple"
+							}
+						]
 					}
 				}
 			},
@@ -390,7 +586,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:night_vision"
+						"oneOf": [
+							{
+								"const": "apoli:night_vision"
+							},
+							{
+								"const": "origins:night_vision"
+							}
+						]
 					}
 				}
 			},
@@ -402,7 +605,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:overlay"
+						"oneOf": [
+							{
+								"const": "apoli:overlay"
+							},
+							{
+								"const": "origins:overlay"
+							}
+						]
 					}
 				}
 			},
@@ -414,7 +624,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:particle"
+						"oneOf": [
+							{
+								"const": "apoli:particle"
+							},
+							{
+								"const": "origins:particle"
+							}
+						]
 					}
 				}
 			},
@@ -426,7 +643,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:phasing"
+						"oneOf": [
+							{
+								"const": "apoli:phasing"
+							},
+							{
+								"const": "origins:phasing"
+							}
+						]
 					}
 				}
 			},
@@ -438,7 +662,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:recipe"
+						"oneOf": [
+							{
+								"const": "apoli:recipe"
+							},
+							{
+								"const": "origins:recipe"
+							}
+						]
 					}
 				}
 			},
@@ -450,7 +681,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:resource"
+						"oneOf": [
+							{
+								"const": "apoli:resource"
+							},
+							{
+								"const": "origins:resource"
+							}
+						]
 					}
 				}
 			},
@@ -462,7 +700,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:restrict_armor"
+						"oneOf": [
+							{
+								"const": "apoli:restrict_armor"
+							},
+							{
+								"const": "origins:restrict_armor"
+							}
+						]
 					}
 				}
 			},
@@ -474,7 +719,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:self_glow"
+						"oneOf": [
+							{
+								"const": "apoli:self_glow"
+							},
+							{
+								"const": "origins:self_glow"
+							}
+						]
 					}
 				}
 			},
@@ -486,7 +738,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:shader"
+						"oneOf": [
+							{
+								"const": "apoli:shader"
+							},
+							{
+								"const": "origins:shader"
+							}
+						]
 					}
 				}
 			},
@@ -498,7 +757,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:shaking"
+						"oneOf": [
+							{
+								"const": "apoli:shaking"
+							},
+							{
+								"const": "origins:shaking"
+							}
+						]
 					}
 				}
 			},
@@ -510,7 +776,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:simple"
+						"oneOf": [
+							{
+								"const": "apoli:simple"
+							},
+							{
+								"const": "origins:simple"
+							}
+						]
 					}
 				}
 			},
@@ -522,7 +795,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:stacking_status_effect"
+						"oneOf": [
+							{
+								"const": "apoli:stacking_status_effect"
+							},
+							{
+								"const": "origins:stacking_status_effect"
+							}
+						]
 					}
 				}
 			},
@@ -534,7 +814,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:starting_equipment"
+						"oneOf": [
+							{
+								"const": "apoli:starting_equipment"
+							},
+							{
+								"const": "origins:starting_equipment"
+							}
+						]
 					}
 				}
 			},
@@ -546,7 +833,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:status_bar_texture"
+						"oneOf": [
+							{
+								"const": "apoli:status_bar_texture"
+							},
+							{
+								"const": "origins:status_bar_texture"
+							}
+						]
 					}
 				}
 			},
@@ -558,7 +852,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:swimming"
+						"oneOf": [
+							{
+								"const": "apoli:swimming"
+							},
+							{
+								"const": "origins:swimming"
+							}
+						]
 					}
 				}
 			},
@@ -570,7 +871,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:toggle_night_vision"
+						"oneOf": [
+							{
+								"const": "apoli:toggle_night_vision"
+							},
+							{
+								"const": "origins:toggle_night_vision"
+							}
+						]
 					}
 				}
 			},
@@ -582,7 +890,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:toggle"
+						"oneOf": [
+							{
+								"const": "apoli:toggle"
+							},
+							{
+								"const": "origins:toggle"
+							}
+						]
 					}
 				}
 			},
@@ -594,7 +909,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:tooltip"
+						"oneOf": [
+							{
+								"const": "apoli:tooltip"
+							},
+							{
+								"const": "origins:tooltip"
+							}
+						]
 					}
 				}
 			},
@@ -606,7 +928,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:walk_on_fluid"
+						"oneOf": [
+							{
+								"const": "apoli:walk_on_fluid"
+							},
+							{
+								"const": "origins:walk_on_fluid"
+							}
+						]
 					}
 				}
 			},
@@ -618,7 +947,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_on_being_used"
+						"oneOf": [
+							{
+								"const": "apoli:action_on_being_used"
+							},
+							{
+								"const": "origins:action_on_being_used"
+							}
+						]
 					}
 				}
 			},
@@ -630,7 +966,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_on_block_break"
+						"oneOf": [
+							{
+								"const": "apoli:action_on_block_break"
+							},
+							{
+								"const": "origins:action_on_block_break"
+							}
+						]
 					}
 				}
 			},
@@ -642,7 +985,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_on_block_use"
+						"oneOf": [
+							{
+								"const": "apoli:action_on_block_use"
+							},
+							{
+								"const": "origins:action_on_block_use"
+							}
+						]
 					}
 				}
 			},
@@ -654,7 +1004,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_on_callback"
+						"oneOf": [
+							{
+								"const": "apoli:action_on_callback"
+							},
+							{
+								"const": "origins:action_on_callback"
+							}
+						]
 					}
 				}
 			},
@@ -666,7 +1023,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_on_entity_use"
+						"oneOf": [
+							{
+								"const": "apoli:action_on_entity_use"
+							},
+							{
+								"const": "origins:action_on_entity_use"
+							}
+						]
 					}
 				}
 			},
@@ -678,7 +1042,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_on_hit"
+						"oneOf": [
+							{
+								"const": "apoli:action_on_hit"
+							},
+							{
+								"const": "origins:action_on_hit"
+							}
+						]
 					}
 				}
 			},
@@ -690,7 +1061,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_on_land"
+						"oneOf": [
+							{
+								"const": "apoli:action_on_land"
+							},
+							{
+								"const": "origins:action_on_land"
+							}
+						]
 					}
 				}
 			},
@@ -702,7 +1080,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_on_wake_up"
+						"oneOf": [
+							{
+								"const": "apoli:action_on_wake_up"
+							},
+							{
+								"const": "origins:action_on_wake_up"
+							}
+						]
 					}
 				}
 			},
@@ -714,7 +1099,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_over_time"
+						"oneOf": [
+							{
+								"const": "apoli:action_over_time"
+							},
+							{
+								"const": "origins:action_over_time"
+							}
+						]
 					}
 				}
 			},
@@ -726,7 +1118,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_when_damage_taken"
+						"oneOf": [
+							{
+								"const": "apoli:action_when_damage_taken"
+							},
+							{
+								"const": "origins:action_when_damage_taken"
+							}
+						]
 					}
 				}
 			},
@@ -738,7 +1137,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:action_when_hit"
+						"oneOf": [
+							{
+								"const": "apoli:action_when_hit"
+							},
+							{
+								"const": "origins:action_when_hit"
+							}
+						]
 					}
 				}
 			},
@@ -750,7 +1156,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:active_self"
+						"oneOf": [
+							{
+								"const": "apoli:active_self"
+							},
+							{
+								"const": "origins:active_self"
+							}
+						]
 					}
 				}
 			},
@@ -762,7 +1175,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:attacker_action_when_hit"
+						"oneOf": [
+							{
+								"const": "apoli:attacker_action_when_hit"
+							},
+							{
+								"const": "origins:attacker_action_when_hit"
+							}
+						]
 					}
 				}
 			},
@@ -774,7 +1194,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:self_action_on_hit"
+						"oneOf": [
+							{
+								"const": "apoli:self_action_on_hit"
+							},
+							{
+								"const": "origins:self_action_on_hit"
+							}
+						]
 					}
 				}
 			},
@@ -786,7 +1213,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:self_action_on_kill"
+						"oneOf": [
+							{
+								"const": "apoli:self_action_on_kill"
+							},
+							{
+								"const": "origins:self_action_on_kill"
+							}
+						]
 					}
 				}
 			},
@@ -798,7 +1232,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:self_action_when_hit"
+						"oneOf": [
+							{
+								"const": "apoli:self_action_when_hit"
+							},
+							{
+								"const": "origins:self_action_when_hit"
+							}
+						]
 					}
 				}
 			},
@@ -810,7 +1251,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:target_action_on_hit"
+						"oneOf": [
+							{
+								"const": "apoli:target_action_on_hit"
+							},
+							{
+								"const": "origins:target_action_on_hit"
+							}
+						]
 					}
 				}
 			},
@@ -822,7 +1270,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_air_speed"
+						"oneOf": [
+							{
+								"const": "apoli:modify_air_speed"
+							},
+							{
+								"const": "origins:modify_air_speed"
+							}
+						]
 					}
 				}
 			},
@@ -834,7 +1289,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_block_render"
+						"oneOf": [
+							{
+								"const": "apoli:modify_block_render"
+							},
+							{
+								"const": "origins:modify_block_render"
+							}
+						]
 					}
 				}
 			},
@@ -846,7 +1308,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_break_speed"
+						"oneOf": [
+							{
+								"const": "apoli:modify_break_speed"
+							},
+							{
+								"const": "origins:modify_break_speed"
+							}
+						]
 					}
 				}
 			},
@@ -858,7 +1327,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_camera_submersion"
+						"oneOf": [
+							{
+								"const": "apoli:modify_camera_submersion"
+							},
+							{
+								"const": "origins:modify_camera_submersion"
+							}
+						]
 					}
 				}
 			},
@@ -870,7 +1346,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_crafting"
+						"oneOf": [
+							{
+								"const": "apoli:modify_crafting"
+							},
+							{
+								"const": "origins:modify_crafting"
+							}
+						]
 					}
 				}
 			},
@@ -882,7 +1365,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_damage_dealt"
+						"oneOf": [
+							{
+								"const": "apoli:modify_damage_dealt"
+							},
+							{
+								"const": "origins:modify_damage_dealt"
+							}
+						]
 					}
 				}
 			},
@@ -894,7 +1384,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_damage_taken"
+						"oneOf": [
+							{
+								"const": "apoli:modify_damage_taken"
+							},
+							{
+								"const": "origins:modify_damage_taken"
+							}
+						]
 					}
 				}
 			},
@@ -906,7 +1403,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_exhaustion"
+						"oneOf": [
+							{
+								"const": "apoli:modify_exhaustion"
+							},
+							{
+								"const": "origins:modify_exhaustion"
+							}
+						]
 					}
 				}
 			},
@@ -918,7 +1422,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_falling"
+						"oneOf": [
+							{
+								"const": "apoli:modify_falling"
+							},
+							{
+								"const": "origins:modify_falling"
+							}
+						]
 					}
 				}
 			},
@@ -930,7 +1441,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_fluid_render"
+						"oneOf": [
+							{
+								"const": "apoli:modify_fluid_render"
+							},
+							{
+								"const": "origins:modify_fluid_render"
+							}
+						]
 					}
 				}
 			},
@@ -942,7 +1460,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_food"
+						"oneOf": [
+							{
+								"const": "apoli:modify_food"
+							},
+							{
+								"const": "origins:modify_food"
+							}
+						]
 					}
 				}
 			},
@@ -954,7 +1479,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_harvest"
+						"oneOf": [
+							{
+								"const": "apoli:modify_harvest"
+							},
+							{
+								"const": "origins:modify_harvest"
+							}
+						]
 					}
 				}
 			},
@@ -966,7 +1498,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_jump"
+						"oneOf": [
+							{
+								"const": "apoli:modify_jump"
+							},
+							{
+								"const": "origins:modify_jump"
+							}
+						]
 					}
 				}
 			},
@@ -978,7 +1517,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_lava_speed"
+						"oneOf": [
+							{
+								"const": "apoli:modify_lava_speed"
+							},
+							{
+								"const": "origins:modify_lava_speed"
+							}
+						]
 					}
 				}
 			},
@@ -990,7 +1536,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_player_spawn"
+						"oneOf": [
+							{
+								"const": "apoli:modify_player_spawn"
+							},
+							{
+								"const": "origins:modify_player_spawn"
+							}
+						]
 					}
 				}
 			},
@@ -1002,7 +1555,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_projectile_damage"
+						"oneOf": [
+							{
+								"const": "apoli:modify_projectile_damage"
+							},
+							{
+								"const": "origins:modify_projectile_damage"
+							}
+						]
 					}
 				}
 			},
@@ -1014,7 +1574,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_slipperiness"
+						"oneOf": [
+							{
+								"const": "apoli:modify_slipperiness"
+							},
+							{
+								"const": "origins:modify_slipperiness"
+							}
+						]
 					}
 				}
 			},
@@ -1026,7 +1593,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_status_effect_amplifier"
+						"oneOf": [
+							{
+								"const": "apoli:modify_status_effect_amplifier"
+							},
+							{
+								"const": "origins:modify_status_effect_amplifier"
+							}
+						]
 					}
 				}
 			},
@@ -1038,7 +1612,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_status_effect_duration"
+						"oneOf": [
+							{
+								"const": "apoli:modify_status_effect_duration"
+							},
+							{
+								"const": "origins:modify_status_effect_duration"
+							}
+						]
 					}
 				}
 			},
@@ -1050,7 +1631,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_swim_speed"
+						"oneOf": [
+							{
+								"const": "apoli:modify_swim_speed"
+							},
+							{
+								"const": "origins:modify_swim_speed"
+							}
+						]
 					}
 				}
 			},
@@ -1062,7 +1650,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:modify_xp_gain"
+						"oneOf": [
+							{
+								"const": "apoli:modify_xp_gain"
+							},
+							{
+								"const": "origins:modify_xp_gain"
+							}
+						]
 					}
 				}
 			},
@@ -1074,7 +1669,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_being_used"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_being_used"
+							},
+							{
+								"const": "origins:prevent_being_used"
+							}
+						]
 					}
 				}
 			},
@@ -1086,7 +1688,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_block_selection"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_block_selection"
+							},
+							{
+								"const": "origins:prevent_block_selection"
+							}
+						]
 					}
 				}
 			},
@@ -1098,7 +1707,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_block_use"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_block_use"
+							},
+							{
+								"const": "origins:prevent_block_use"
+							}
+						]
 					}
 				}
 			},
@@ -1110,7 +1726,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_death"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_death"
+							},
+							{
+								"const": "origins:prevent_death"
+							}
+						]
 					}
 				}
 			},
@@ -1122,7 +1745,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_elytra_flight"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_elytra_flight"
+							},
+							{
+								"const": "origins:prevent_elytra_flight"
+							}
+						]
 					}
 				}
 			},
@@ -1134,7 +1764,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_entity_collision"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_entity_collision"
+							},
+							{
+								"const": "origins:prevent_entity_collision"
+							}
+						]
 					}
 				}
 			},
@@ -1146,7 +1783,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_entity_render"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_entity_render"
+							},
+							{
+								"const": "origins:prevent_entity_render"
+							}
+						]
 					}
 				}
 			},
@@ -1158,7 +1802,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_entity_use"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_entity_use"
+							},
+							{
+								"const": "origins:prevent_entity_use"
+							}
+						]
 					}
 				}
 			},
@@ -1170,7 +1821,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_feature_render"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_feature_render"
+							},
+							{
+								"const": "origins:prevent_feature_render"
+							}
+						]
 					}
 				}
 			},
@@ -1182,7 +1840,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_game_event"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_game_event"
+							},
+							{
+								"const": "origins:prevent_game_event"
+							}
+						]
 					}
 				}
 			},
@@ -1194,7 +1859,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_item_use"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_item_use"
+							},
+							{
+								"const": "origins:prevent_item_use"
+							}
+						]
 					}
 				}
 			},
@@ -1206,7 +1878,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:prevent_sleep"
+						"oneOf": [
+							{
+								"const": "apoli:prevent_sleep"
+							},
+							{
+								"const": "origins:prevent_sleep"
+							}
+						]
 					}
 				}
 			},

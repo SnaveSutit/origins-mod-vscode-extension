@@ -22,7 +22,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:category"
+						"oneOf": [
+							{
+								"const": "apoli:category"
+							},
+							{
+								"const": "origins:category"
+							}
+						]
 					}
 				}
 			},
@@ -34,7 +41,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:high_humidity"
+						"oneOf": [
+							{
+								"const": "apoli:high_humidity"
+							},
+							{
+								"const": "origins:high_humidity"
+							}
+						]
 					}
 				}
 			},
@@ -46,7 +60,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:precipitation"
+						"oneOf": [
+							{
+								"const": "apoli:precipitation"
+							},
+							{
+								"const": "origins:precipitation"
+							}
+						]
 					}
 				}
 			},
@@ -58,7 +79,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:temperature"
+						"oneOf": [
+							{
+								"const": "apoli:temperature"
+							},
+							{
+								"const": "origins:temperature"
+							}
+						]
 					}
 				}
 			},
@@ -70,7 +98,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:and"
+						"oneOf": [
+							{
+								"const": "apoli:and"
+							},
+							{
+								"const": "origins:and"
+							}
+						]
 					}
 				}
 			},
@@ -82,7 +117,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:constant"
+						"oneOf": [
+							{
+								"const": "apoli:constant"
+							},
+							{
+								"const": "origins:constant"
+							}
+						]
 					}
 				}
 			},
@@ -94,7 +136,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:or"
+						"oneOf": [
+							{
+								"const": "apoli:or"
+							},
+							{
+								"const": "origins:or"
+							}
+						]
 					}
 				}
 			},

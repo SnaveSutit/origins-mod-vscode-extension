@@ -13,92 +13,122 @@ allOf:
   - if:
       properties:
         type:
-          const: origins:add_velocity
+          oneOf:
+            - const: apoli:add_velocity
+            - const: origins:add_velocity
     then:
       $ref: ./bientity_actions/add_velocity.json
   - if:
       properties:
         type:
-          const: origins:damage
+          oneOf:
+            - const: apoli:damage
+            - const: origins:damage
     then:
       $ref: ./bientity_actions/damage.json
   - if:
       properties:
         type:
-          const: origins:mount
+          oneOf:
+            - const: apoli:mount
+            - const: origins:mount
     then:
       $ref: ./bientity_actions/mount.json
   - if:
       properties:
         type:
-          const: origins:set_in_love
+          oneOf:
+            - const: apoli:set_in_love
+            - const: origins:set_in_love
     then:
       $ref: ./bientity_actions/set_in_love.json
   - if:
       properties:
         type:
-          const: origins:tame
+          oneOf:
+            - const: apoli:tame
+            - const: origins:tame
     then:
       $ref: ./bientity_actions/tame.json
 
   - if:
       properties:
         type:
-          const: origins:actor_action
+          oneOf:
+            - const: apoli:actor_action
+            - const: origins:actor_action
     then:
       $ref: ./bientity_actions/actor_action.json
   - if:
       properties:
         type:
-          const: origins:invert
+          oneOf:
+            - const: apoli:invert
+            - const: origins:invert
     then:
       $ref: ./bientity_actions/invert.json
   - if:
       properties:
         type:
-          const: origins:target_action
+          oneOf:
+            - const: apoli:target_action
+            - const: origins:target_action
     then:
       $ref: ./bientity_actions/target_action.json
 
   - if:
       properties:
         type:
-          const: origins:and
+          oneOf:
+            - const: apoli:and
+            - const: origins:and
     then:
       $ref: ./bientity_actions/and.json
   - if:
       properties:
         type:
-          const: origins:chance
+          oneOf:
+            - const: apoli:chance
+            - const: origins:chance
     then:
       $ref: ./bientity_actions/chance.json
   - if:
       properties:
         type:
-          const: origins:choice
+          oneOf:
+            - const: apoli:choice
+            - const: origins:choice
     then:
       $ref: ./bientity_actions/choice.json
   - if:
       properties:
         type:
-          const: origins:delay
+          oneOf:
+            - const: apoli:delay
+            - const: origins:delay
     then:
       $ref: ./bientity_actions/delay.json
   - if:
       properties:
         type:
-          const: origins:if_else_list
+          oneOf:
+            - const: apoli:if_else_list
+            - const: origins:if_else_list
     then:
       $ref: ./bientity_actions/if_else_list.json
   - if:
       properties:
         type:
-          const: origins:if_else
+          oneOf:
+            - const: apoli:if_else
+            - const: origins:if_else
     then:
       $ref: ./bientity_actions/if_else.json
   - if:
       properties:
         type:
-          const: origins:nothing
+          oneOf:
+            - const: apoli:nothing
+            - const: origins:nothing
     then:
       $ref: ./bientity_actions/nothing.json

@@ -18,110 +18,146 @@ allOf:
   - if:
       properties:
         type:
-          const: origins:attack_target
+          oneOf:
+            - const: apoli:attack_target
+            - const: origins:attack_target
     then:
       $ref: ./bientity_conditions/attack_target.json
   - if:
       properties:
         type:
-          const: origins:attacker
+          oneOf:
+            - const: apoli:attacker
+            - const: origins:attacker
     then:
       $ref: ./bientity_conditions/attacker.json
   - if:
       properties:
         type:
-          const: origins:can_see
+          oneOf:
+            - const: apoli:can_see
+            - const: origins:can_see
     then:
       $ref: ./bientity_conditions/can_see.json
   - if:
       properties:
         type:
-          const: origins:distance
+          oneOf:
+            - const: apoli:distance
+            - const: origins:distance
     then:
       $ref: ./bientity_conditions/distance.json
   - if:
       properties:
         type:
-          const: origins:owner
+          oneOf:
+            - const: apoli:owner
+            - const: origins:owner
     then:
       $ref: ./bientity_conditions/owner.json
   - if:
       properties:
         type:
-          const: origins:relative_rotation
+          oneOf:
+            - const: apoli:relative_rotation
+            - const: origins:relative_rotation
     then:
       $ref: ./bientity_conditions/relative_rotation.json
   - if:
       properties:
         type:
-          const: origins:riding_recursive
+          oneOf:
+            - const: apoli:riding_recursive
+            - const: origins:riding_recursive
     then:
       $ref: ./bientity_conditions/riding_recursive.json
   - if:
       properties:
         type:
-          const: origins:riding_root
+          oneOf:
+            - const: apoli:riding_root
+            - const: origins:riding_root
     then:
       $ref: ./bientity_conditions/riding_root.json
   - if:
       properties:
         type:
-          const: origins:riding
+          oneOf:
+            - const: apoli:riding
+            - const: origins:riding
     then:
       $ref: ./bientity_conditions/riding.json
 
   - if:
       properties:
         type:
-          const: origins:actor_condition
+          oneOf:
+            - const: apoli:actor_condition
+            - const: origins:actor_condition
     then:
       $ref: ./bientity_conditions/actor_condition.json
   - if:
       properties:
         type:
-          const: origins:both
+          oneOf:
+            - const: apoli:both
+            - const: origins:both
     then:
       $ref: ./bientity_conditions/both.json
   - if:
       properties:
         type:
-          const: origins:either
+          oneOf:
+            - const: apoli:either
+            - const: origins:either
     then:
       $ref: ./bientity_conditions/either.json
   - if:
       properties:
         type:
-          const: origins:invert
+          oneOf:
+            - const: apoli:invert
+            - const: origins:invert
     then:
       $ref: ./bientity_conditions/invert.json
   - if:
       properties:
         type:
-          const: origins:target_condition
+          oneOf:
+            - const: apoli:target_condition
+            - const: origins:target_condition
     then:
       $ref: ./bientity_conditions/target_condition.json
   - if:
       properties:
         type:
-          const: origins:undirected
+          oneOf:
+            - const: apoli:undirected
+            - const: origins:undirected
     then:
       $ref: ./bientity_conditions/undirected.json
 
   - if:
       properties:
         type:
-          const: origins:and
+          oneOf:
+            - const: apoli:and
+            - const: origins:and
     then:
       $ref: ./bientity_conditions/and.json
   - if:
       properties:
         type:
-          const: origins:constant
+          oneOf:
+            - const: apoli:constant
+            - const: origins:constant
     then:
       $ref: ./bientity_conditions/constant.json
   - if:
       properties:
         type:
-          const: origins:or
+          oneOf:
+            - const: apoli:or
+            - const: origins:or
     then:
       $ref: ./bientity_conditions/or.json

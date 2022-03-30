@@ -17,7 +17,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:add_velocity"
+						"oneOf": [
+							{
+								"const": "apoli:add_velocity"
+							},
+							{
+								"const": "origins:add_velocity"
+							}
+						]
 					}
 				}
 			},
@@ -29,7 +36,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:add_xp"
+						"oneOf": [
+							{
+								"const": "apoli:add_xp"
+							},
+							{
+								"const": "origins:add_xp"
+							}
+						]
 					}
 				}
 			},
@@ -41,7 +55,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:apply_effect"
+						"oneOf": [
+							{
+								"const": "apoli:apply_effect"
+							},
+							{
+								"const": "origins:apply_effect"
+							}
+						]
 					}
 				}
 			},
@@ -53,7 +74,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:area_of_effect"
+						"oneOf": [
+							{
+								"const": "apoli:area_of_effect"
+							},
+							{
+								"const": "origins:area_of_effect"
+							}
+						]
 					}
 				}
 			},
@@ -65,7 +93,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:block_action_at"
+						"oneOf": [
+							{
+								"const": "apoli:block_action_at"
+							},
+							{
+								"const": "origins:block_action_at"
+							}
+						]
 					}
 				}
 			},
@@ -77,7 +112,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:change_resource"
+						"oneOf": [
+							{
+								"const": "apoli:change_resource"
+							},
+							{
+								"const": "origins:change_resource"
+							}
+						]
 					}
 				}
 			},
@@ -89,7 +131,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:clear_effect"
+						"oneOf": [
+							{
+								"const": "apoli:clear_effect"
+							},
+							{
+								"const": "origins:clear_effect"
+							}
+						]
 					}
 				}
 			},
@@ -101,7 +150,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:crafting_table"
+						"oneOf": [
+							{
+								"const": "apoli:crafting_table"
+							},
+							{
+								"const": "origins:crafting_table"
+							}
+						]
 					}
 				}
 			},
@@ -113,7 +169,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:damage"
+						"oneOf": [
+							{
+								"const": "apoli:damage"
+							},
+							{
+								"const": "origins:damage"
+							}
+						]
 					}
 				}
 			},
@@ -125,7 +188,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:dismount"
+						"oneOf": [
+							{
+								"const": "apoli:dismount"
+							},
+							{
+								"const": "origins:dismount"
+							}
+						]
 					}
 				}
 			},
@@ -137,7 +207,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:emit_game_event"
+						"oneOf": [
+							{
+								"const": "apoli:emit_game_event"
+							},
+							{
+								"const": "origins:emit_game_event"
+							}
+						]
 					}
 				}
 			},
@@ -149,7 +226,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:ender_chest"
+						"oneOf": [
+							{
+								"const": "apoli:ender_chest"
+							},
+							{
+								"const": "origins:ender_chest"
+							}
+						]
 					}
 				}
 			},
@@ -161,7 +245,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:equipped_item_action"
+						"oneOf": [
+							{
+								"const": "apoli:equipped_item_action"
+							},
+							{
+								"const": "origins:equipped_item_action"
+							}
+						]
 					}
 				}
 			},
@@ -173,7 +264,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:execute_command"
+						"oneOf": [
+							{
+								"const": "apoli:execute_command"
+							},
+							{
+								"const": "origins:execute_command"
+							}
+						]
 					}
 				}
 			},
@@ -185,7 +283,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:exaust"
+						"oneOf": [
+							{
+								"const": "apoli:exaust"
+							},
+							{
+								"const": "origins:exaust"
+							}
+						]
 					}
 				}
 			},
@@ -197,7 +302,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:explode"
+						"oneOf": [
+							{
+								"const": "apoli:explode"
+							},
+							{
+								"const": "origins:explode"
+							}
+						]
 					}
 				}
 			},
@@ -209,7 +321,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:extinguish"
+						"oneOf": [
+							{
+								"const": "apoli:extinguish"
+							},
+							{
+								"const": "origins:extinguish"
+							}
+						]
 					}
 				}
 			},
@@ -221,7 +340,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:feed"
+						"oneOf": [
+							{
+								"const": "apoli:feed"
+							},
+							{
+								"const": "origins:feed"
+							}
+						]
 					}
 				}
 			},
@@ -233,7 +359,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:gain_air"
+						"oneOf": [
+							{
+								"const": "apoli:gain_air"
+							},
+							{
+								"const": "origins:gain_air"
+							}
+						]
 					}
 				}
 			},
@@ -245,7 +378,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:give"
+						"oneOf": [
+							{
+								"const": "apoli:give"
+							},
+							{
+								"const": "origins:give"
+							}
+						]
 					}
 				}
 			},
@@ -257,7 +397,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:grant_power"
+						"oneOf": [
+							{
+								"const": "apoli:grant_power"
+							},
+							{
+								"const": "origins:grant_power"
+							}
+						]
 					}
 				}
 			},
@@ -269,7 +416,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:heal"
+						"oneOf": [
+							{
+								"const": "apoli:heal"
+							},
+							{
+								"const": "origins:heal"
+							}
+						]
 					}
 				}
 			},
@@ -281,7 +435,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:passenger_action"
+						"oneOf": [
+							{
+								"const": "apoli:passenger_action"
+							},
+							{
+								"const": "origins:passenger_action"
+							}
+						]
 					}
 				}
 			},
@@ -293,7 +454,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:play_sound"
+						"oneOf": [
+							{
+								"const": "apoli:play_sound"
+							},
+							{
+								"const": "origins:play_sound"
+							}
+						]
 					}
 				}
 			},
@@ -305,7 +473,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:raycast"
+						"oneOf": [
+							{
+								"const": "apoli:raycast"
+							},
+							{
+								"const": "origins:raycast"
+							}
+						]
 					}
 				}
 			},
@@ -317,7 +492,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:revoke_power"
+						"oneOf": [
+							{
+								"const": "apoli:revoke_power"
+							},
+							{
+								"const": "origins:revoke_power"
+							}
+						]
 					}
 				}
 			},
@@ -329,7 +511,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:riding_action"
+						"oneOf": [
+							{
+								"const": "apoli:riding_action"
+							},
+							{
+								"const": "origins:riding_action"
+							}
+						]
 					}
 				}
 			},
@@ -341,7 +530,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:set_fall_distance"
+						"oneOf": [
+							{
+								"const": "apoli:set_fall_distance"
+							},
+							{
+								"const": "origins:set_fall_distance"
+							}
+						]
 					}
 				}
 			},
@@ -353,7 +549,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:set_on_fire"
+						"oneOf": [
+							{
+								"const": "apoli:set_on_fire"
+							},
+							{
+								"const": "origins:set_on_fire"
+							}
+						]
 					}
 				}
 			},
@@ -365,7 +568,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:spawn_effect_cloud"
+						"oneOf": [
+							{
+								"const": "apoli:spawn_effect_cloud"
+							},
+							{
+								"const": "origins:spawn_effect_cloud"
+							}
+						]
 					}
 				}
 			},
@@ -377,7 +587,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:spawn_entity"
+						"oneOf": [
+							{
+								"const": "apoli:spawn_entity"
+							},
+							{
+								"const": "origins:spawn_entity"
+							}
+						]
 					}
 				}
 			},
@@ -389,7 +606,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:spawn_particles"
+						"oneOf": [
+							{
+								"const": "apoli:spawn_particles"
+							},
+							{
+								"const": "origins:spawn_particles"
+							}
+						]
 					}
 				}
 			},
@@ -401,7 +625,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:swing_hand"
+						"oneOf": [
+							{
+								"const": "apoli:swing_hand"
+							},
+							{
+								"const": "origins:swing_hand"
+							}
+						]
 					}
 				}
 			},
@@ -413,7 +644,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:toggle"
+						"oneOf": [
+							{
+								"const": "apoli:toggle"
+							},
+							{
+								"const": "origins:toggle"
+							}
+						]
 					}
 				}
 			},
@@ -425,7 +663,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:trigger_cooldown"
+						"oneOf": [
+							{
+								"const": "apoli:trigger_cooldown"
+							},
+							{
+								"const": "origins:trigger_cooldown"
+							}
+						]
 					}
 				}
 			},
@@ -437,7 +682,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:and"
+						"oneOf": [
+							{
+								"const": "apoli:and"
+							},
+							{
+								"const": "origins:and"
+							}
+						]
 					}
 				}
 			},
@@ -449,7 +701,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:chance"
+						"oneOf": [
+							{
+								"const": "apoli:chance"
+							},
+							{
+								"const": "origins:chance"
+							}
+						]
 					}
 				}
 			},
@@ -461,7 +720,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:choice"
+						"oneOf": [
+							{
+								"const": "apoli:choice"
+							},
+							{
+								"const": "origins:choice"
+							}
+						]
 					}
 				}
 			},
@@ -473,7 +739,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:delay"
+						"oneOf": [
+							{
+								"const": "apoli:delay"
+							},
+							{
+								"const": "origins:delay"
+							}
+						]
 					}
 				}
 			},
@@ -485,7 +758,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:if_else_list"
+						"oneOf": [
+							{
+								"const": "apoli:if_else_list"
+							},
+							{
+								"const": "origins:if_else_list"
+							}
+						]
 					}
 				}
 			},
@@ -497,7 +777,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:if_else"
+						"oneOf": [
+							{
+								"const": "apoli:if_else"
+							},
+							{
+								"const": "origins:if_else"
+							}
+						]
 					}
 				}
 			},
@@ -509,7 +796,14 @@
 			"if": {
 				"properties": {
 					"type": {
-						"const": "origins:nothing"
+						"oneOf": [
+							{
+								"const": "apoli:nothing"
+							},
+							{
+								"const": "origins:nothing"
+							}
+						]
 					}
 				}
 			},

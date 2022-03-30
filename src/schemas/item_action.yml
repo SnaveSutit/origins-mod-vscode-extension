@@ -13,61 +13,81 @@ allOf:
   - if:
       properties:
         type:
-          const: origins:consume
+          oneOf:
+            - const: apoli:consume
+            - const: origins:consume
     then:
       $ref: ./item_actions/consume.json
   - if:
       properties:
         type:
-          const: origins:damage
+          oneOf:
+            - const: apoli:damage
+            - const: origins:damage
     then:
       $ref: ./item_actions/damage.json
   - if:
       properties:
         type:
-          const: origins:modify
+          oneOf:
+            - const: apoli:modify
+            - const: origins:modify
     then:
       $ref: ./item_actions/modify.json
 
   - if:
       properties:
         type:
-          const: origins:and
+          oneOf:
+            - const: apoli:and
+            - const: origins:and
     then:
       $ref: ./item_actions/and.json
   - if:
       properties:
         type:
-          const: origins:chance
+          oneOf:
+            - const: apoli:chance
+            - const: origins:chance
     then:
       $ref: ./item_actions/chance.json
   - if:
       properties:
         type:
-          const: origins:choice
+          oneOf:
+            - const: apoli:choice
+            - const: origins:choice
     then:
       $ref: ./item_actions/choice.json
   - if:
       properties:
         type:
-          const: origins:delay
+          oneOf:
+            - const: apoli:delay
+            - const: origins:delay
     then:
       $ref: ./item_actions/delay.json
   - if:
       properties:
         type:
-          const: origins:if_else_list
+          oneOf:
+            - const: apoli:if_else_list
+            - const: origins:if_else_list
     then:
       $ref: ./item_actions/if_else_list.json
   - if:
       properties:
         type:
-          const: origins:if_else
+          oneOf:
+            - const: apoli:if_else
+            - const: origins:if_else
     then:
       $ref: ./item_actions/if_else.json
   - if:
       properties:
         type:
-          const: origins:nothing
+          oneOf:
+            - const: apoli:nothing
+            - const: origins:nothing
     then:
       $ref: ./item_actions/nothing.json

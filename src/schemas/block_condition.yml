@@ -18,139 +18,185 @@ allOf:
   - if:
       properties:
         type:
-          const: origins:adjacent
+          oneOf:
+            - const: apoli:adjacent
+            - const: origins:adjacent
     then:
       $ref: ./block_conditions/adjacent.json
   - if:
       properties:
         type:
-          const: origins:attachable
+          oneOf:
+            - const: apoli:attachable
+            - const: origins:attachable
     then:
       $ref: ./block_conditions/attachable.json
   - if:
       properties:
         type:
-          const: origins:blast_resistance
+          oneOf:
+            - const: apoli:blast_resistance
+            - const: origins:blast_resistance
     then:
       $ref: ./block_conditions/blast_resistance.json
   - if:
       properties:
         type:
-          const: origins:block_state
+          oneOf:
+            - const: apoli:block_state
+            - const: origins:block_state
     then:
       $ref: ./block_conditions/block_state.json
   - if:
       properties:
         type:
-          const: origins:block
+          oneOf:
+            - const: apoli:block
+            - const: origins:block
     then:
       $ref: ./block_conditions/block.json
   - if:
       properties:
         type:
-          const: origins:distance_from_coordinates
+          oneOf:
+            - const: apoli:distance_from_coordinates
+            - const: origins:distance_from_coordinates
     then:
       $ref: ./block_conditions/distance_from_coordinates.json
   - if:
       properties:
         type:
-          const: origins:exposed_to_sky
+          oneOf:
+            - const: apoli:exposed_to_sky
+            - const: origins:exposed_to_sky
     then:
       $ref: ./block_conditions/exposed_to_sky.json
   - if:
       properties:
         type:
-          const: origins:fluid
+          oneOf:
+            - const: apoli:fluid
+            - const: origins:fluid
     then:
       $ref: ./block_conditions/fluid.json
   - if:
       properties:
         type:
-          const: origins:hardness
+          oneOf:
+            - const: apoli:hardness
+            - const: origins:hardness
     then:
       $ref: ./block_conditions/hardness.json
   - if:
       properties:
         type:
-          const: origins:height
+          oneOf:
+            - const: apoli:height
+            - const: origins:height
     then:
       $ref: ./block_conditions/height.json
   - if:
       properties:
         type:
-          const: origins:in_tag
+          oneOf:
+            - const: apoli:in_tag
+            - const: origins:in_tag
     then:
       $ref: ./block_conditions/in_tag.json
   - if:
       properties:
         type:
-          const: origins:light_blocking
+          oneOf:
+            - const: apoli:light_blocking
+            - const: origins:light_blocking
     then:
       $ref: ./block_conditions/light_blocking.json
   - if:
       properties:
         type:
-          const: origins:light_level
+          oneOf:
+            - const: apoli:light_level
+            - const: origins:light_level
     then:
       $ref: ./block_conditions/light_level.json
   - if:
       properties:
         type:
-          const: origins:material
+          oneOf:
+            - const: apoli:material
+            - const: origins:material
     then:
       $ref: ./block_conditions/material.json
   - if:
       properties:
         type:
-          const: origins:movement_blocking
+          oneOf:
+            - const: apoli:movement_blocking
+            - const: origins:movement_blocking
     then:
       $ref: ./block_conditions/movement_blocking.json
   - if:
       properties:
         type:
-          const: origins:nbt
+          oneOf:
+            - const: apoli:nbt
+            - const: origins:nbt
     then:
       $ref: ./block_conditions/nbt.json
   - if:
       properties:
         type:
-          const: origins:replacable
+          oneOf:
+            - const: apoli:replacable
+            - const: origins:replacable
     then:
       $ref: ./block_conditions/replacable.json
   - if:
       properties:
         type:
-          const: origins:slipperiness
+          oneOf:
+            - const: apoli:slipperiness
+            - const: origins:slipperiness
     then:
       $ref: ./block_conditions/slipperiness.json
   - if:
       properties:
         type:
-          const: origins:waterloggable
+          oneOf:
+            - const: apoli:waterloggable
+            - const: origins:waterloggable
     then:
       $ref: ./block_conditions/waterloggable.json
   - if:
       properties:
         type:
-          const: origins:offset
+          oneOf:
+            - const: apoli:offset
+            - const: origins:offset
     then:
       $ref: ./block_conditions/offset.json
 
   - if:
       properties:
         type:
-          const: origins:and
+          oneOf:
+            - const: apoli:and
+            - const: origins:and
     then:
       $ref: ./block_conditions/and.json
   - if:
       properties:
         type:
-          const: origins:constant
+          oneOf:
+            - const: apoli:constant
+            - const: origins:constant
     then:
       $ref: ./block_conditions/constant.json
   - if:
       properties:
         type:
-          const: origins:or
+          oneOf:
+            - const: apoli:or
+            - const: origins:or
     then:
       $ref: ./block_conditions/or.json
