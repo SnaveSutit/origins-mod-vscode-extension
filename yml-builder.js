@@ -49,8 +49,14 @@ function compile() {
 }
 
 function main() {
+	compile()
+
+	if (process.argv.find(v => v === '--once')) process.exit()
+
+	console.log('Watching for changes...')
 	const watcher = chokidar.watch('./src/schemas/').on('change', () => {
 		compile()
+		console.log('Watching for changes...')
 	})
 }
 
