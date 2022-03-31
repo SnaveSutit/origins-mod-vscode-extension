@@ -15,9 +15,7 @@ properties:
       type: object
       properties:
         element:
-          type: array
-          items:
-            $ref: ../entity_action.json
+          $ref: ../entity_action.json
 
         weight:
           type: integer

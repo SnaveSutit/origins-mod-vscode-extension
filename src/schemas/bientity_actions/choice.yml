@@ -15,9 +15,7 @@ properties:
       type: object
       properties:
         element:
-          type: array
-          items:
-            $ref: ../bientity_action.json
+          $ref: ../bientity_action.json
 
         weight:
           type: integer

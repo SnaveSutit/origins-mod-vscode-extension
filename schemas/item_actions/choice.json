@@ -14,10 +14,7 @@
 				"type": "object",
 				"properties": {
 					"element": {
-						"type": "array",
-						"items": {
-							"$ref": "../item_action.json"
-						}
+						"$ref": "../item_action.json"
 					},
 					"weight": {
 						"type": "integer"
