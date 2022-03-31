@@ -6,11 +6,11 @@ description: |-
   - Spawns another entity at the position of the target entity.
 type: object
 required:
-  - entiy_type
+  - entity_type
 properties:
   entity_type:
     description: The namespace and ID of the entity type that will be spawned.
-    type: integer
+    type: string
 
   tag:
     description: If specified, this NBT data will be applied to the entity that will be spawned.

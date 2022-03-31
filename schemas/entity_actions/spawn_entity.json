@@ -4,12 +4,12 @@
 	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:spawn_entity'\n- Spawns another entity at the position of the target entity.",
 	"type": "object",
 	"required": [
-		"entiy_type"
+		"entity_type"
 	],
 	"properties": {
 		"entity_type": {
 			"description": "The namespace and ID of the entity type that will be spawned.",
-			"type": "integer"
+			"type": "string"
 		},
 		"tag": {
 			"description": "If specified, this NBT data will be applied to the entity that will be spawned.",
