@@ -12,7 +12,8 @@ properties:
 
   execute_chosen_when_orb:
     description: When this is false, the entity_action_chosen will not be executed when the player changes their origin with an orb, but only when the player chooses an origin for the first time or their origin was reset to origins:empty via a command.
-    $ref: ../../entity_action.json
+    type: boolean
+    default: true
 
   entity_action_lost:
     description: If specified, this action will be executed on the player when the power is lost.
