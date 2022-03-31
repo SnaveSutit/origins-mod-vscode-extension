@@ -17,7 +17,7 @@
 			"description": "The maximum number of stacks.",
 			"type": "integer"
 		},
-		"duration_per_tick": {
+		"duration_per_stack": {
 			"description": "Determines the duration of the specified status effect(s) for each stack.",
 			"type": "integer"
 		},

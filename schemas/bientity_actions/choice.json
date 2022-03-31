@@ -9,16 +9,19 @@
 	"properties": {
 		"actions": {
 			"description": "Each object has to have an element Action and a weight Integer.",
-			"type": "object",
-			"properties": {
-				"element": {
-					"type": "array",
-					"items": {
-						"$ref": "../bientity_action.json"
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"element": {
+						"type": "array",
+						"items": {
+							"$ref": "../bientity_action.json"
+						}
+					},
+					"weight": {
+						"type": "integer"
 					}
-				},
-				"weight": {
-					"type": "integer"
 				}
 			}
 		}
