@@ -7,9 +7,6 @@ description: |-
 type: object
 required:
   - condition
-  - x
-  - 'y'
-  - z
 properties:
   condition:
     description: The condition to check with the given offset.
