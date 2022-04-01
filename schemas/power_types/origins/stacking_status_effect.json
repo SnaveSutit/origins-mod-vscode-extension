@@ -6,7 +6,7 @@
 	"required": [
 		"min_stacks",
 		"max_stacks",
-		"duration_per_tick"
+		"duration_per_stack"
 	],
 	"properties": {
 		"min_stacks": {
