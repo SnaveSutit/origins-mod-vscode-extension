@@ -225,10 +225,10 @@ allOf:
       properties:
         type:
           oneOf:
-            - const: apoli:invulnerablility
-            - const: origins:invulnerablility
+            - const: apoli:invulnerability
+            - const: origins:invulnerability
     then:
-      $ref: ./power_types/origins/invulnerablility.json
+      $ref: ./power_types/origins/invulnerability.json
   - if:
       properties:
         type:
