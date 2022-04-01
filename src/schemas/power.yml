@@ -169,10 +169,10 @@ allOf:
       properties:
         type:
           oneOf:
-            - const: apoli:exaust
-            - const: origins:exaust
+            - const: apoli:exhaust
+            - const: origins:exhaust
     then:
-      $ref: ./power_types/origins/exaust.json
+      $ref: ./power_types/origins/exhaust.json
   - if:
       properties:
         type:
