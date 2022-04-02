@@ -3,7 +3,7 @@
 	"icon": "icon.png",
 	"displayName": "origins-mod-helper",
 	"description": "Adds json schemas and other useful things for origins mod origin development",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"publisher": "snavesutit",
 	"author": {
 		"name": "Titus Evans",
@@ -74,10 +74,10 @@
 		"package": "node ./yml-builder.js --once && webpack --mode production --devtool hidden-source-map",
 		"lint": "prettier --write .",
 		"test": "node ./out/test/runTest.js",
-		"commit": "git commit --all -m \"Publish Package\" && git push",
-		"publish_patch": "yarn package && yarn version --new-version patch && yarn commit && vsce publish",
-		"publish_minor": "yarn package && yarn version --new-version minor && yarn commit && vsce publish",
-		"publish_major": "yarn package && yarn version --new-version major && yarn commit && vsce publish"
+		"version_patch": "yarn version --new-version patch",
+		"version_minor": "yarn version --new-version minor",
+		"version_major": "yarn version --new-version major",
+		"publish": "yarn package && vsce publish"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.2.0",
