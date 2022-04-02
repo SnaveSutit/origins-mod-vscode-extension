@@ -126,10 +126,10 @@ allOf:
       properties:
         type:
           oneOf:
-            - const: apoli:exaust
-            - const: origins:exaust
+            - const: apoli:exhaust
+            - const: origins:exhaust
     then:
-      $ref: ./entity_actions/exaust.json
+      $ref: ./entity_actions/exhaust.json
   - if:
       properties:
         type:

@@ -285,17 +285,17 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:exaust"
+								"const": "apoli:exhaust"
 							},
 							{
-								"const": "origins:exaust"
+								"const": "origins:exhaust"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./entity_actions/exaust.json"
+				"$ref": "./entity_actions/exhaust.json"
 			}
 		},
 		{
