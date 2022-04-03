@@ -5,8 +5,6 @@ description: |-
   Type: 'origins:consume'
   - Removes a provided amount of items from the item stack.
 type: object
-required:
-  - amount
 properties:
   amount:
     description: The amount of items to remove.

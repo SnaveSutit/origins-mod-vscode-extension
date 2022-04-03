@@ -3,9 +3,6 @@
 	"title": "Bi-entity Condition",
 	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\nType: 'origins:consume'\n- Removes a provided amount of items from the item stack.",
 	"type": "object",
-	"required": [
-		"amount"
-	],
 	"properties": {
 		"amount": {
 			"description": "The amount of items to remove.",
