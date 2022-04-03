@@ -1,12 +1,10 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Bi-entity Condition
+title: Item Action
 description: |-
   Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
   Type: 'origins:consume'
   - Removes a provided amount of items from the item stack.
 type: object
-required:
-  - amount
 properties:
   amount:
     description: The amount of items to remove.
