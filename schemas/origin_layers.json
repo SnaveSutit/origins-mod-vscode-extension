@@ -12,7 +12,14 @@
 			"description": "Defines the origins that should be in this layer.\nIdentifier strings and Conditioned Origin objects can be mixed in the same array.",
 			"type": "array",
 			"items": {
-				"type": "string"
+				"oneOf": [
+					{
+						"type": "string"
+					},
+					{
+						"$ref": "./shared/conditioned_origin.json" 
+					}
+				]
 			}
 		},
 		"enabled": {

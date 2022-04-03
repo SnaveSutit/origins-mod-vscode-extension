@@ -1,0 +1,17 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Attribute Modifier
+description: An Object used to specify how an attribute should be modified.
+type: object
+required:
+  - condition
+  - origins
+properties:
+  condition:
+    description: The entity condition that the player needs to fulfill to get access to the origins specified here.
+    $ref: ../entity_condition.json
+
+  origins:
+    description: The value with which to apply the operation to the value.
+    type: array
+    item:
+      type: string

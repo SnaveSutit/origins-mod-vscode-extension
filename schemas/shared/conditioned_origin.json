@@ -1,0 +1,23 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Conditioned Origin",
+	"description": "An Object used to specify origins in a Layer JSON which only show up conditionally.",
+	"type": "object",
+	"required": [
+		"condition",
+		"origins"
+	],
+	"properties": {
+		"condition": {
+			"description": "The entity condition that the player needs to fulfill to get access to the origins specified here.",
+			"$ref": "../entity_condition.json"
+		},
+		"origins": {
+			"description": "Then namespace and IDs of the origins which should become available when the condition is fulfilled.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}
