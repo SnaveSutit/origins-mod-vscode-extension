@@ -13,12 +13,8 @@
 		},
 		"destruction_type": {
 			"description": "Determines if the explosion should destroy the terrain, destroy the terrain and drop the loot of the blocks, or none (\"destroy\", \"break\" or \"none\" respectively).",
-			"type": "string",
-			"enum": [
-				"destroy",
-				"break",
-				"none"
-			]
+			"$ref": "../shared/destruction_types.json",
+			"default": "break"
 		},
 		"damage_self": {
 			"description": "Determines if the exploding block should be affected by the summoned explosion.",
