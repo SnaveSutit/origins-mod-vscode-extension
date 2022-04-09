@@ -1,8 +1,13 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Shape Type
-description: A String used mainly for ray-casting to determine how it will handle blocks.
+description: A string used mainly for ray-casting to determine how it will handle blocks.
 type: string
-enum:
-  - collider
-  - outline
-  - visual
+anyOf:
+  - const: collider
+    description: The ray will only stop at blocks that cannot be walked through.
+
+  - const: outline
+    description: The ray will take the shape of the block into account, only stopping if the ray has hit a face of the block.
+
+  - const: visual
+    description: The ray will only stop at blocks that are not see-through.

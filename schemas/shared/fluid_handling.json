@@ -1,11 +1,20 @@
 {
 	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
 	"title": "Fluid Handling",
-	"description": "A String used mainly for ray-casting to determine how it will handle fluids.",
+	"description": "A string used mainly for ray-casting to determine how it will handle fluids.",
 	"type": "string",
-	"enum": [
-		"any",
-		"none",
-		"source_only"
+	"anyOf": [
+		{
+			"const": "any",
+			"description": "The ray will stop at both flowing and source fluids."
+		},
+		{
+			"const": "none",
+			"description": "The ray will not stop at both flowing and source fluids."
+		},
+		{
+			"const": "source_only",
+			"description": "The ray will only stop at source fluids."
+		}
 	]
 }
