@@ -10,13 +10,27 @@
 		},
 		"text": {
 			"description": "If specified, apply this string as a tooltip.",
-			"type": "string"
+			"oneOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "object"
+				}
+			]
 		},
 		"texts": {
 			"description": "If specified, apply these strings as a tooltip.",
 			"type": "array",
 			"items": {
-				"type": "string"
+				"oneOf": [
+					{
+						"type": "string"
+					},
+					{
+						"type": "object"
+					}
+				]
 			}
 		}
 	}

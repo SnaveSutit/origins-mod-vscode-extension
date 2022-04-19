@@ -1063,6 +1063,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:action_on_item_use"
+							},
+							{
+								"const": "origins:action_on_item_use"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./power_types/origins/action_on_item_use.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:action_on_land"
 							},
 							{
