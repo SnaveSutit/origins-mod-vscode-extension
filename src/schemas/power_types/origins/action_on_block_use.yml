@@ -44,4 +44,4 @@ properties:
 
   action_result:
     description: Determines the result of the 'use' action.
-    $ref: ../../entity_action.json
+    $ref: ../../shared/action_result.json
