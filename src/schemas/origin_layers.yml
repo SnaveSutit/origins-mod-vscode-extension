@@ -75,9 +75,10 @@ properties:
     default: false
 
   exclude_random:
-    description: |-
-      If specified, the origins included in this list will not be picked by the random choice.
-    type: boolean
+    description: If specified, the origins included in this list will not be picked by the random choice.
+    type: array
+    items:
+      type: string
 
   default_origin:
     description: |-
