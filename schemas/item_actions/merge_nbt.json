@@ -1,0 +1,15 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Bi-entity Condition",
+	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\nType: 'origins:merge_nbt'\n- Merges the specified NBT to the item's NBT.",
+	"type": "object",
+	"required": [
+		"nbt"
+	],
+	"properties": {
+		"nbt": {
+			"description": "The NBT to merge to the item's NBT.",
+			"type": "string"
+		}
+	}
+}

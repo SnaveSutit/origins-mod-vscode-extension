@@ -209,6 +209,44 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:drop_inventory"
+							},
+							{
+								"const": "origins:drop_inventory"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/drop_inventory.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:dummy"
+							},
+							{
+								"const": "origins:dummy"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/dummy.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:emit_game_event"
 							},
 							{
@@ -437,6 +475,82 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:modify_death_ticks"
+							},
+							{
+								"const": "origins:modify_death_ticks"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/modify_death_ticks.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:modify_inventory"
+							},
+							{
+								"const": "origins:modify_inventory"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/modify_inventory.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:modify_resource"
+							},
+							{
+								"const": "origins:modify_resource"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/modify_resource.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:modify_stat"
+							},
+							{
+								"const": "origins:modify_stat"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/modify_stat.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:passenger_action"
 							},
 							{
@@ -486,6 +600,25 @@
 			},
 			"then": {
 				"$ref": "./entity_actions/raycast.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:replace_inventory"
+							},
+							{
+								"const": "origins:replace_inventory"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/replace_inventory.json"
 			}
 		},
 		{
@@ -760,25 +893,6 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:if_else_list"
-							},
-							{
-								"const": "origins:if_else_list"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./entity_actions/if_else_list.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
 								"const": "apoli:if_else"
 							},
 							{
@@ -798,17 +912,36 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:nothing"
+								"const": "apoli:if_else_list"
 							},
 							{
-								"const": "origins:nothing"
+								"const": "origins:if_else_list"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./entity_actions/nothing.json"
+				"$ref": "./entity_actions/if_else_list.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:side"
+							},
+							{
+								"const": "origins:side"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_actions/side.json"
 			}
 		}
 	]

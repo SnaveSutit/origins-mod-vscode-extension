@@ -62,6 +62,44 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:dummy"
+							},
+							{
+								"const": "origins:dummy"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_conditions/dummy.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:durability"
+							},
+							{
+								"const": "origins:durability"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_conditions/durability.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:empty"
 							},
 							{
@@ -176,6 +214,44 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:is_damageable"
+							},
+							{
+								"const": "origins:is_damageable"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_conditions/is_damageable.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:is_equippable"
+							},
+							{
+								"const": "origins:is_equippable"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_conditions/is_equippable.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:meat"
 							},
 							{
@@ -206,6 +282,25 @@
 			},
 			"then": {
 				"$ref": "./item_conditions/nbt.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:relative_durability"
+							},
+							{
+								"const": "origins:relative_durability"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_conditions/relative_durability.json"
 			}
 		},
 		{

@@ -195,6 +195,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:collided_horizontally"
+							},
+							{
+								"const": "origins:collided_horizontally"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_conditions/collided_horizontally.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:command"
 							},
 							{
@@ -282,6 +301,25 @@
 			},
 			"then": {
 				"$ref": "./entity_conditions/distance_from_coordinates.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:dummy"
+							},
+							{
+								"const": "origins:dummy"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_conditions/dummy.json"
 			}
 		},
 		{
@@ -556,17 +594,17 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:in_block_anywhere"
+								"const": "apoli:invisible"
 							},
 							{
-								"const": "origins:in_block_anywhere"
+								"const": "origins:invisible"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./entity_conditions/in_block_anywhere.json"
+				"$ref": "./entity_conditions/invisible.json"
 			}
 		},
 		{
@@ -586,6 +624,25 @@
 			},
 			"then": {
 				"$ref": "./entity_conditions/in_block.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:in_block_anywhere"
+							},
+							{
+								"const": "origins:in_block_anywhere"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_conditions/in_block_anywhere.json"
 			}
 		},
 		{
@@ -624,25 +681,6 @@
 			},
 			"then": {
 				"$ref": "./entity_conditions/in_tag.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:invisible"
-							},
-							{
-								"const": "origins:invisible"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./entity_conditions/invisible.json"
 			}
 		},
 		{
@@ -765,6 +803,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:passenger"
+							},
+							{
+								"const": "origins:passenger"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_conditions/passenger.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:passenger_recursive"
 							},
 							{
@@ -784,17 +841,17 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:passenger"
+								"const": "apoli:power"
 							},
 							{
-								"const": "origins:passenger"
+								"const": "origins:power"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./entity_conditions/passenger.json"
+				"$ref": "./entity_conditions/power.json"
 			}
 		},
 		{
@@ -833,25 +890,6 @@
 			},
 			"then": {
 				"$ref": "./entity_conditions/power_type.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:power"
-							},
-							{
-								"const": "origins:power"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./entity_conditions/power.json"
 			}
 		},
 		{
@@ -936,6 +974,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:riding"
+							},
+							{
+								"const": "origins:riding"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./entity_conditions/riding.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:riding_recursive"
 							},
 							{
@@ -966,25 +1023,6 @@
 			},
 			"then": {
 				"$ref": "./entity_conditions/riding_root.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:riding"
-							},
-							{
-								"const": "origins:riding"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./entity_conditions/riding.json"
 			}
 		},
 		{

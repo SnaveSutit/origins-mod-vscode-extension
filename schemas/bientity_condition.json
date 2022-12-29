@@ -24,17 +24,17 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:attack_target"
+								"const": "apoli:actor_condition"
 							},
 							{
-								"const": "origins:attack_target"
+								"const": "origins:actor_condition"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./bientity_conditions/attack_target.json"
+				"$ref": "./bientity_conditions/actor_condition.json"
 			}
 		},
 		{
@@ -54,6 +54,44 @@
 			},
 			"then": {
 				"$ref": "./bientity_conditions/attacker.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:attack_target"
+							},
+							{
+								"const": "origins:attack_target"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_conditions/attack_target.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:both"
+							},
+							{
+								"const": "origins:both"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_conditions/both.json"
 			}
 		},
 		{
@@ -100,131 +138,17 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:owner"
+								"const": "apoli:dummy"
 							},
 							{
-								"const": "origins:owner"
+								"const": "origins:dummy"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./bientity_conditions/owner.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:relative_rotation"
-							},
-							{
-								"const": "origins:relative_rotation"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/relative_rotation.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:riding_recursive"
-							},
-							{
-								"const": "origins:riding_recursive"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/riding_recursive.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:riding_root"
-							},
-							{
-								"const": "origins:riding_root"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/riding_root.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:riding"
-							},
-							{
-								"const": "origins:riding"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/riding.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:actor_condition"
-							},
-							{
-								"const": "origins:actor_condition"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/actor_condition.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:both"
-							},
-							{
-								"const": "origins:both"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/both.json"
+				"$ref": "./bientity_conditions/dummy.json"
 			}
 		},
 		{
@@ -263,6 +187,101 @@
 			},
 			"then": {
 				"$ref": "./bientity_conditions/invert.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:owner"
+							},
+							{
+								"const": "origins:owner"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_conditions/owner.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:relative_rotation"
+							},
+							{
+								"const": "origins:relative_rotation"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_conditions/relative_rotation.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:riding"
+							},
+							{
+								"const": "origins:riding"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_conditions/riding.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:riding_recursive"
+							},
+							{
+								"const": "origins:riding_recursive"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_conditions/riding_recursive.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:riding_root"
+							},
+							{
+								"const": "origins:riding_root"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_conditions/riding_root.json"
 			}
 		},
 		{

@@ -19,6 +19,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:actor_action"
+							},
+							{
+								"const": "origins:actor_action"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_actions/actor_action.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:add_velocity"
 							},
 							{
@@ -49,6 +68,44 @@
 			},
 			"then": {
 				"$ref": "./bientity_actions/damage.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:dummy"
+							},
+							{
+								"const": "origins:dummy"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_actions/dummy.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:invert"
+							},
+							{
+								"const": "origins:invert"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_actions/invert.json"
 			}
 		},
 		{
@@ -106,44 +163,6 @@
 			},
 			"then": {
 				"$ref": "./bientity_actions/tame.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:actor_action"
-							},
-							{
-								"const": "origins:actor_action"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_actions/actor_action.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:invert"
-							},
-							{
-								"const": "origins:invert"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_actions/invert.json"
 			}
 		},
 		{
@@ -247,25 +266,6 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:if_else_list"
-							},
-							{
-								"const": "origins:if_else_list"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_actions/if_else_list.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
 								"const": "apoli:if_else"
 							},
 							{
@@ -285,17 +285,36 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:nothing"
+								"const": "apoli:if_else_list"
 							},
 							{
-								"const": "origins:nothing"
+								"const": "origins:if_else_list"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./bientity_actions/nothing.json"
+				"$ref": "./bientity_actions/if_else_list.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:side"
+							},
+							{
+								"const": "origins:side"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./bientity_actions/side.json"
 			}
 		}
 	]

@@ -57,6 +57,44 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:dummy"
+							},
+							{
+								"const": "origins:dummy"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_actions/dummy.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:merge_nbt"
+							},
+							{
+								"const": "origins:merge_nbt"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_actions/merge_nbt.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:modify"
 							},
 							{
@@ -68,6 +106,25 @@
 			},
 			"then": {
 				"$ref": "./item_actions/modify.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:remove_enchantment"
+							},
+							{
+								"const": "origins:remove_enchantment"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_actions/remove_enchantment.json"
 			}
 		},
 		{
@@ -152,25 +209,6 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:if_else_list"
-							},
-							{
-								"const": "origins:if_else_list"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./item_actions/if_else_list.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
 								"const": "apoli:if_else"
 							},
 							{
@@ -190,17 +228,36 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:nothing"
+								"const": "apoli:if_else_list"
 							},
 							{
-								"const": "origins:nothing"
+								"const": "origins:if_else_list"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./item_actions/nothing.json"
+				"$ref": "./item_actions/if_else_list.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:side"
+							},
+							{
+								"const": "origins:side"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_actions/side.json"
 			}
 		}
 	]

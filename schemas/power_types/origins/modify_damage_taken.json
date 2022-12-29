@@ -38,6 +38,14 @@
 		"attacker_action": {
 			"description": "If specified, this action will be executed on the entity/entities that has been hit whenever the modifier(s) is applied.",
 			"$ref": "../../entity_action.json"
+		},
+		"apply_armor_condition": {
+			"description": "If specified, armor will only be applied to the damage taken if this condition is fulfilled by the 'target' entity.",
+			"$ref": "../../entity_condition.json"
+		},
+		"damage_armor_condition": {
+			"description": "If specified, worn armor will only be damaged if this condition is fulfilled by the 'target' entity.",
+			"$ref": "../../entity_condition.json"
 		}
 	}
 }

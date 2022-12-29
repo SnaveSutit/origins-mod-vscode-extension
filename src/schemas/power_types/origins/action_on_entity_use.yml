@@ -37,3 +37,8 @@ properties:
   action_result:
     description: Determines the result of the 'use' action.
     $ref: ../../shared/action_result.json
+
+  priority:
+    description: Determines the execution priority of the power.
+    type: integer
+    default: 0

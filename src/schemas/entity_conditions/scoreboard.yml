@@ -22,3 +22,7 @@ properties:
   compare_to:
     description: The value to compare the objective's value to.
     type: number
+
+  name:
+    description: If specified, the condition will check for the score of this score holder.
+    type: string

@@ -1,0 +1,28 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:modify_velocity'
+  - Modifies all velocity in a specified axis.
+type: object
+required:
+  - axis
+properties:
+  axis:
+    description: Used to specify the axes affected by this modifier.
+    type: array
+    items:
+      oneOf:
+        - x
+        - 'y'
+        - z
+
+  modifier:
+    description: Modifies all velocity in a specified axis.
+    $ref: ../../shared/attribute_modifier.json
+
+  modifiers:
+    description: If specified, these modifiers will apply to the specified axes.
+    type: array
+    items:
+      $ref: ../../shared/attribute_modifier.json

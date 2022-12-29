@@ -1,0 +1,57 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_grindstone'\n- Modifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.",
+	"type": "object",
+	"required": [
+		"result_type"
+	],
+	"properties": {
+		"result_type": {
+			"description": "Determines whether to not change the initial item stack (\"unchanged\"), replace it with the item stack specified in the result_stack field (\"specified\"), replace it with the item stack from the top input slot of a Grindstone block (\"from_top\") or replace it with the item stack from the bottom input slot of a Grindstone block (\"from_bottom\").",
+			"default": "unchanged",
+			"oneOf": [
+				"unchanged",
+				"specified",
+				"from_top",
+				"from_bottom"
+			]
+		},
+		"entity_action": {
+			"description": "If specified, this action will be executed on the player upon taking the item stack from the result slot of a Grindstone.",
+			"$ref": "../../entity_action.json"
+		},
+		"block_action": {
+			"description": "If specified, this action will be executed on the Grindstone block upon taking the item stack from the result slot of the said Grindstone block.",
+			"$ref": "../../block_action.json"
+		},
+		"item_action": {
+			"description": "If specified, this action will be executed on the result item stack.",
+			"$ref": "../../item_action.json"
+		},
+		"item_action_after_grinding": {
+			"description": "If specified, this action will be executed on the result item stack after the grinding process.",
+			"$ref": "../../item_action.json"
+		},
+		"top_condition": {
+			"description": "If specified, the specified actions will only be executed if the item stack from the top input slot of the Grindstone fulfills this condition.",
+			"$ref": "../../item_condition.json"
+		},
+		"bottom_condition": {
+			"description": "If specified, the specified actions will only be executed if the item stack from the bottom input slot of the Grindstone fulfills this condition.",
+			"$ref": "../../item_condition.json"
+		},
+		"output_condition": {
+			"description": "If specified, the specified actions will only be executed if the item stack from the output/result slot of the Grindstone fulfills this condition.",
+			"$ref": "../../item_condition.json"
+		},
+		"result_stack": {
+			"description": "If specified, this item stack will be used as a replacement only if the result_type field has a value of \"specified\".",
+			"$ref": "../../shared/item_stack.json"
+		},
+		"xp_modifier": {
+			"description": "If specified, this modifier will be applied to the value of the experience received from removing an enchantment from an item stack.",
+			"$ref": "../../shared/attribute_modifier.json"
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:replace_loot_table'\n- Replaces a loot table with another loot table.",
+	"type": "object",
+	"required": [
+		"replace"
+	],
+	"properties": {
+		"replace": {
+			"description": "An object with \"key\": \"value\" pairs that determine which loot table (\"key\") will be replaced with a new loot table (\"value\").",
+			"type": "object",
+			"patternProperties": {
+				".+": {
+					"type": "string"
+				}
+			}
+		},
+		"bientity_condition": {
+			"description": "If specified, the loot tables will only be replaced if this condition is fulfilled by either or both 'actor' and 'target' entities.",
+			"$ref": "../../bientity_condition.json"
+		},
+		"block_condition": {
+			"description": "If specified, the loot tables will only be replaced if the block at the context of the loot tables fulfill this condition.",
+			"$ref": "../../block_condition.json"
+		},
+		"item_condition": {
+			"description": "If specified, the loot tables will only be replaced if the item in the context of the loot tables fulfill this condition.",
+			"$ref": "../../item_condition.json"
+		},
+		"priority": {
+			"description": "Determines the application priority of the power.",
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

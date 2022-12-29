@@ -1,0 +1,17 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:modify_insomnia_ticks'
+  - Modifies the value used for calculating when a Phantom will spawn for a player.
+type: object
+properties:
+  modifier:
+    description: If specified, this modifier will be applied to the value.
+    $ref: ../../shared/attribute_modifier.json
+
+  modifiers:
+    description: If specified, these modifiers will be applied to the value.
+    type: array
+    items:
+      $ref: ../../shared/attribute_modifier.json

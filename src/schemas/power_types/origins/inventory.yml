@@ -23,3 +23,12 @@ properties:
   key:
     description: Which active key this power should respond to. If none is specified, this power will use the primary active power key (by default G).
     $ref: ../../shared/key.json
+
+  recoverable:
+    description: Determines if the content of the inventory should be dropped upon losing the power.
+    type: boolean
+    default: true
+
+  container_type:
+    description: Determines what type of container the inventory will be similar to.
+    $ref: ../../shared/container_type.json

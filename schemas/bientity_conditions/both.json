@@ -1,7 +1,7 @@
 {
 	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Bi-entity Condition",
-	"description": "Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.\nType: 'origins:both'\n- Checks for an entity condition on both the actor and target entities.",
+	"title": "Meta Bi-entity Condition Both",
+	"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:both'\n- Checks for an entity condition on both the actor and target entities.",
 	"type": "object",
 	"required": [
 		"condition"

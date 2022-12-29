@@ -62,6 +62,63 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:bypasses_armor"
+							},
+							{
+								"const": "origins:bypasses_armor"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/bypasses_armor.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:dummy"
+							},
+							{
+								"const": "origins:dummy"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/dummy.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:explosive"
+							},
+							{
+								"const": "origins:explosive"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/explosive.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:fire"
 							},
 							{
@@ -73,6 +130,25 @@
 			},
 			"then": {
 				"$ref": "./damage_conditions/fire.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:from_falling"
+							},
+							{
+								"const": "origins:from_falling"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/from_falling.json"
 			}
 		},
 		{
@@ -100,6 +176,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:out_of_world"
+							},
+							{
+								"const": "origins:out_of_world"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/out_of_world.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:projectile"
 							},
 							{
@@ -111,6 +206,25 @@
 			},
 			"then": {
 				"$ref": "./damage_conditions/projectile.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:unblockable"
+							},
+							{
+								"const": "origins:unblockable"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./damage_conditions/unblockable.json"
 			}
 		},
 		{

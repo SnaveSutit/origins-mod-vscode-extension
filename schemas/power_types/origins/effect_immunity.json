@@ -14,6 +14,11 @@
 			"items": {
 				"type": "string"
 			}
+		},
+		"inverted": {
+			"description": "Determines whether to make the entity immune to the status effect(s) that aren't specified.",
+			"type": "boolean",
+			"default": false
 		}
 	}
 }

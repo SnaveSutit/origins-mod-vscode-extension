@@ -321,6 +321,14 @@ allOf:
       properties:
         type:
           oneOf:
+            - const: apoli:replace_loot_table
+            - const: origins:replace_loot_table
+    then:
+      $ref: ./power_types/origins/replace_loot_table.json
+  - if:
+      properties:
+        type:
+          oneOf:
             - const: apoli:resource
             - const: origins:resource
     then:
@@ -583,6 +591,16 @@ allOf:
             - const: origins:modify_air_speed
     then:
       $ref: ./power_types/origins/modify_air_speed.json
+
+  - if:
+      properties:
+        type:
+          oneOf:
+            - const: apoli:modify_attribute
+            - const: origins:modify_attribute
+    then:
+      $ref: ./power_types/origins/modify_attribute.json
+
   - if:
       properties:
         type:
@@ -667,10 +685,34 @@ allOf:
       properties:
         type:
           oneOf:
+            - const: apoli:modify_grindstone
+            - const: origins:modify_grindstone
+    then:
+      $ref: ./power_types/origins/modify_grindstone.json
+  - if:
+      properties:
+        type:
+          oneOf:
             - const: apoli:modify_harvest
             - const: origins:modify_harvest
     then:
       $ref: ./power_types/origins/modify_harvest.json
+  - if:
+      properties:
+        type:
+          oneOf:
+            - const: apoli:modify_healing
+            - const: origins:modify_healing
+    then:
+      $ref: ./power_types/origins/modify_healing.json
+  - if:
+      properties:
+        type:
+          oneOf:
+            - const: apoli:modify_insomnia_ticks
+            - const: origins:modify_insomnia_ticks
+    then:
+      $ref: ./power_types/origins/modify_insomnia_ticks.json
   - if:
       properties:
         type:
@@ -735,6 +777,14 @@ allOf:
             - const: origins:modify_swim_speed
     then:
       $ref: ./power_types/origins/modify_swim_speed.json
+  - if:
+      properties:
+        type:
+          oneOf:
+            - const: apoli:modify_velocity
+            - const: origins:modify_velocity
+    then:
+      $ref: ./power_types/origins/modify_velocity.json
   - if:
       properties:
         type:
@@ -840,3 +890,11 @@ allOf:
             - const: origins:prevent_sleep
     then:
       $ref: ./power_types/origins/prevent_sleep.json
+  - if:
+      properties:
+        type:
+          oneOf:
+            - const: apoli:prevent_sprinting
+            - const: origins:prevent_sprinting
+    then:
+      $ref: ./power_types/origins/prevent_sprinting.json

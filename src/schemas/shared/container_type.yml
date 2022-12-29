@@ -1,0 +1,11 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Attribute Identifier
+description: The namespace and ID of an attribute
+anyOf:
+  - enum:
+      - chest
+      - hopper
+      - dropper
+      - dispenser
+      - double_chest
+  - type: string

@@ -1,0 +1,26 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Bi-entity Condition
+description: |-
+  Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
+  Type: 'origins:remove_enchantment'
+  - Removes certain enchantments from the item.
+type: object
+properties:
+  enchantment:
+    description: If specified, this enchantment will be removed from the item.
+    type: string
+
+  enchantments:
+    description: If specified, these enchantments will be removed from the item.
+    type: array
+    items:
+      type: string
+
+  levels:
+    description: If specified, only the enchantments that has the specified level will be removed from the item.
+    type: integer
+
+  reset_repair_cost:
+    description: Determines whether the 'repair cost' of the item should be reset.
+    type: boolean
+    default: false

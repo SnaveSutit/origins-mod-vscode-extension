@@ -57,6 +57,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:dummy"
+							},
+							{
+								"const": "origins:dummy"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_actions/dummy.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:execute_command"
 							},
 							{
@@ -114,25 +133,6 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:set_block"
-							},
-							{
-								"const": "origins:set_block"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./block_actions/set_block.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
 								"const": "apoli:offset"
 							},
 							{
@@ -144,6 +144,25 @@
 			},
 			"then": {
 				"$ref": "./block_actions/offset.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:set_block"
+							},
+							{
+								"const": "origins:set_block"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_actions/set_block.json"
 			}
 		},
 		{
@@ -228,25 +247,6 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:if_else_list"
-							},
-							{
-								"const": "origins:if_else_list"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./block_actions/if_else_list.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
 								"const": "apoli:if_else"
 							},
 							{
@@ -266,17 +266,36 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:nothing"
+								"const": "apoli:if_else_list"
 							},
 							{
-								"const": "origins:nothing"
+								"const": "origins:if_else_list"
 							}
 						]
 					}
 				}
 			},
 			"then": {
-				"$ref": "./block_actions/nothing.json"
+				"$ref": "./block_actions/if_else_list.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:side"
+							},
+							{
+								"const": "origins:side"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_actions/side.json"
 			}
 		}
 	]

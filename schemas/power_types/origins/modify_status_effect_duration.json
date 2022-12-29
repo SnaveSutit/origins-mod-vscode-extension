@@ -3,18 +3,28 @@
 	"title": "Power Type",
 	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_status_effect_duration'\n- Modifies the duration of the specified status effect upon receiving the specified status effect.",
 	"type": "object",
-	"required": [
-		"status_effect",
-		"modifier"
-	],
 	"properties": {
 		"status_effect": {
-			"description": "The namespace and ID of the status effect that will have its duration modified.",
+			"description": "If specified, only this status effect will have its duration modified upon being received.",
 			"type": "string"
 		},
+		"status_effects": {
+			"description": "If specified, only these status effects will have its duration modified upon being received.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
 		"modifier": {
-			"description": "The modifier to apply to the duration of the specified status effect.",
+			"description": "If specified, this modifier will be applied to the duration of the specified status effect(s).",
 			"$ref": "../../shared/attribute_modifier.json"
+		},
+		"modifiers": {
+			"description": "If specified, these modifiers will be applied to the duration of the specified status effect(s).",
+			"type": "array",
+			"items": {
+				"$ref": "../../shared/attribute_modifier.json"
+			}
 		}
 	}
 }

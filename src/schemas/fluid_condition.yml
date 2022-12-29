@@ -15,52 +15,5 @@ properties:
     default: false
 
 allOf:
-  - if:
-      properties:
-        type:
-          oneOf:
-            - const: apoli:empty
-            - const: origins:empty
-    then:
-      $ref: ./fluid_conditions/empty.json
-  - if:
-      properties:
-        type:
-          oneOf:
-            - const: apoli:in_tag
-            - const: origins:in_tag
-    then:
-      $ref: ./fluid_conditions/in_tag.json
-  - if:
-      properties:
-        type:
-          oneOf:
-            - const: apoli:still
-            - const: origins:still
-    then:
-      $ref: ./fluid_conditions/still.json
-
-  - if:
-      properties:
-        type:
-          oneOf:
-            - const: apoli:and
-            - const: origins:and
-    then:
-      $ref: ./fluid_conditions/and.json
-  - if:
-      properties:
-        type:
-          oneOf:
-            - const: apoli:constant
-            - const: origins:constant
-    then:
-      $ref: ./fluid_conditions/constant.json
-  - if:
-      properties:
-        type:
-          oneOf:
-            - const: apoli:or
-            - const: origins:or
-    then:
-      $ref: ./fluid_conditions/or.json
+  - INCLUDE: ./src/schemas/fluid_conditions/
+  - INCLUDE_META_CONDITIONS

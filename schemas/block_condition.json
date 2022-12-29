@@ -81,25 +81,6 @@
 					"type": {
 						"oneOf": [
 							{
-								"const": "apoli:block_state"
-							},
-							{
-								"const": "origins:block_state"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./block_conditions/block_state.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
 								"const": "apoli:block"
 							},
 							{
@@ -119,6 +100,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:block_state"
+							},
+							{
+								"const": "origins:block_state"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_conditions/block_state.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:distance_from_coordinates"
 							},
 							{
@@ -130,6 +130,25 @@
 			},
 			"then": {
 				"$ref": "./block_conditions/distance_from_coordinates.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
+								"const": "apoli:dummy"
+							},
+							{
+								"const": "origins:dummy"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_conditions/dummy.json"
 			}
 		},
 		{
@@ -328,6 +347,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:offset"
+							},
+							{
+								"const": "origins:offset"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./block_conditions/offset.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:replacable"
 							},
 							{
@@ -377,25 +415,6 @@
 			},
 			"then": {
 				"$ref": "./block_conditions/waterloggable.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:offset"
-							},
-							{
-								"const": "origins:offset"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./block_conditions/offset.json"
 			}
 		},
 		{
