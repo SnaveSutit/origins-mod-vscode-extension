@@ -69,7 +69,10 @@
 		},
 		"exclude_random": {
 			"description": "If specified, the origins included in this list will not be picked by the random choice.",
-			"type": "boolean"
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
 		},
 		"default_origin": {
 			"description": "If set, the origin with this namespace and ID will automatically be chosen for a new player.\nIf an orb of origin is used later on, the player will be able to choose another origin then and the default_origin will not apply.\nCould for example be used to make all players start as human, and then use the orb as a progression item to select an origin.",
