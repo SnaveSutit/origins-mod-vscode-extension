@@ -247,6 +247,25 @@
 					"type": {
 						"oneOf": [
 							{
+								"const": "apoli:nothing"
+							},
+							{
+								"const": "origins:nothing"
+							}
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "./item_actions/nothing.json"
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"oneOf": [
+							{
 								"const": "apoli:side"
 							},
 							{
