@@ -1,0 +1,38 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:stacking_status_effect'
+  - Provides a system where the entity that has the power gains/loses a stack per specified interval if the power is active or inactive respectively. If the stack count is greater than 0, the specified status effect(s) will be applied to the entity.
+type: object
+required:
+  - min_stacks
+  - max_stacks
+  - duration_per_stack
+properties:
+  min_stacks:
+    description: The minimum number of stacks. Negative numbers are allowed.
+    type: integer
+
+  max_stacks:
+    description: The maximum number of stacks.
+    type: integer
+
+  duration_per_stack:
+    description: Determines the duration of the specified status effect(s) for each stack.
+    type: integer
+
+  tick_rate:
+    description: Determines how fast the power will gain/lose stacks in ticks.
+    type: integer
+    default: 10
+
+  effect:
+    description: If specified, this status effect will be applied on the entity that has the power.
+    $ref: ../../types/status_effect_instance.json
+
+  effects:
+    description: If specified, these status effects will be applied on the entity that has the power.
+    type: array
+    items:
+      $ref: ../../types/status_effect_instance.json

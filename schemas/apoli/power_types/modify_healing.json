@@ -1,0 +1,19 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_healing'\n- Modifies the amount of health you get from all sources of healing (e.g natural regen, instant health effect, regeneration effect)",
+	"type": "object",
+	"properties": {
+		"modifier": {
+			"description": "If specified, this modifier will be applied to your healing bonus.",
+			"$ref": "../../types/attribute_modifier.json"
+		},
+		"modifiers": {
+			"description": "If specified, these modifiers will be applied to your healing bonus.",
+			"type": "array",
+			"items": {
+				"$ref": "../../types/attribute_modifier.json"
+			}
+		}
+	}
+}

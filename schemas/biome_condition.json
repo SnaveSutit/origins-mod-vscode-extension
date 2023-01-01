@@ -19,156 +19,206 @@
 	},
 	"allOf": [
 		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:category"
-							},
-							{
-								"const": "origins:category"
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:category"
+									},
+									{
+										"const": "origins:category"
+									}
+								]
 							}
-						]
+						}
+					},
+					"then": {
+						"$ref": "apoli/biome_conditions/category.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:dummy"
+									},
+									{
+										"const": "origins:dummy"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/biome_conditions/dummy.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:high_humidity"
+									},
+									{
+										"const": "origins:high_humidity"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/biome_conditions/high_humidity.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:precipitation"
+									},
+									{
+										"const": "origins:precipitation"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/biome_conditions/precipitation.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:temperature"
+									},
+									{
+										"const": "origins:temperature"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/biome_conditions/temperature.json"
 					}
 				}
-			},
-			"then": {
-				"$ref": "./biome_conditions/category.json"
-			}
+			]
 		},
 		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:dummy"
-							},
-							{
-								"const": "origins:dummy"
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:and"
+									},
+									{
+										"const": "origins:and"
+									}
+								]
 							}
-						]
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:and'\n- Checks whether all of the provided conditions are fulfilled.",
+						"type": "object",
+						"required": [
+							"conditions"
+						],
+						"properties": {
+							"conditions": {
+								"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+								"type": "array",
+								"items": {
+									"$ref": "./biome_condition.json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:constant"
+									},
+									{
+										"const": "origins:constant"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:constant'\n- Provides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.",
+						"type": "object",
+						"required": [
+							"value"
+						],
+						"properties": {
+							"value": {
+								"description": "If true, the condition is always fulfilled. If false, the condition is never fulfilled.",
+								"type": "boolean"
+							}
+						}
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:or"
+									},
+									{
+										"const": "origins:or"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:or'\n- Checks whether any (one or more) of the provided conditions are fulfilled.",
+						"type": "object",
+						"required": [
+							"conditions"
+						],
+						"properties": {
+							"conditions": {
+								"description": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+								"type": "array",
+								"items": {
+									"$ref": "./biome_condition.json"
+								}
+							}
+						}
 					}
 				}
-			},
-			"then": {
-				"$ref": "./biome_conditions/dummy.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:high_humidity"
-							},
-							{
-								"const": "origins:high_humidity"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./biome_conditions/high_humidity.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:precipitation"
-							},
-							{
-								"const": "origins:precipitation"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./biome_conditions/precipitation.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:temperature"
-							},
-							{
-								"const": "origins:temperature"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./biome_conditions/temperature.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:and"
-							},
-							{
-								"const": "origins:and"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./biome_conditions/and.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:constant"
-							},
-							{
-								"const": "origins:constant"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./biome_conditions/constant.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:or"
-							},
-							{
-								"const": "origins:or"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./biome_conditions/or.json"
-			}
+			]
 		}
 	]
 }

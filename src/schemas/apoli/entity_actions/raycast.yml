@@ -1,0 +1,77 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:raycast'
+  - Casts a ray to the direction where the entity is looking.
+type: object
+required:
+  - distance
+properties:
+  distance:
+    description: Determines the maximum distance the ray-cast will travel.
+    type: number
+
+  block:
+    description: Determines whether the ray-cast should include blocks.
+    type: boolean
+    default: true
+
+  entity:
+    description: Determines whether the ray-cast should include entities.
+    type: boolean
+    default: true
+
+  shape_type:
+    description: Determines how the ray-cast will handle blocks.
+    $ref: ../../types/shape_type.json
+
+  fluid_handling:
+    description: Determines how the ray-cast will handle fluids.
+    $ref: ../../types/fluid_handling.json
+
+  bientity_condition:
+    description: If specified, the specified bi-entity action type will only be executed if the specified bi-entity condition type is fulfilled by either or both the 'actor' (the entity that has the power) or 'target' (the entity that was hit by the ray-cast).
+    $ref: ../../bientity_condition.json
+
+  bientity_action:
+    description: If specified, this bi-entity action type will be executed on either or both the 'actor' (the entity that has the power) or 'target' (the entity that was hit by the ray-cast).
+    $ref: ../../bientity_action.json
+
+  block_action:
+    description: If specified, this block action type will be executed on the block the ray-cast has hit.
+    $ref: ../../block_action.json
+
+  before_action:
+    description: If specified, execute this entity action type before casting a ray.
+    $ref: ../../entity_action.json
+
+  hit_action:
+    description: If specified, execute this entity action type if the ray-cast has hit an entity/block.
+    $ref: ../../entity_action.json
+
+  miss_action:
+    description: If specified, execute this entity action type if the ray-cast did not hit an entity/block.
+    $ref: ../../entity_action.json
+
+  command_at_hit:
+    description: The command to execute upon the block/entity the raycast has hit.
+    type: string
+
+  command_hit_offset:
+    description: Determines the offset of the command specified in the command_at_hit field.
+    type: number
+
+  command_along_ray:
+    description: The command to execute for each step of the ray-cast.
+    type: string
+
+  command_step:
+    description: Determines the size of the step of the ray-cast.
+    type: number
+    default: 1.0
+
+  command_along_ray_only_on_hit:
+    description: Determines if the command specified in the command_along_ray field should be executed only if the ray-cast has hit a block/entity.
+    type: boolean
+    default: false

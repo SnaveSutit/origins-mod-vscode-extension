@@ -1,0 +1,45 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Condition",
+	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:raycast'\n- Casts a ray to the direction where the entity is looking.",
+	"type": "object",
+	"required": [
+		"distance"
+	],
+	"properties": {
+		"distance": {
+			"description": "Determines the maximum distance the ray-cast will travel.",
+			"type": "number"
+		},
+		"block": {
+			"description": "Determines whether the ray-cast should include blocks.",
+			"type": "boolean",
+			"default": true
+		},
+		"entity": {
+			"description": "Determines whether the ray-cast should include entities.",
+			"type": "boolean",
+			"default": true
+		},
+		"shape_type": {
+			"description": "Determines how the ray-cast will handle blocks.",
+			"$ref": "../../types/shape_type.json"
+		},
+		"fluid_handling": {
+			"description": "Determines how the ray-cast will handle fluids.",
+			"$ref": "../../types/fluid_handling.json"
+		},
+		"match_bientity_condition": {
+			"description": "If specified, the entity condition type will check if this bi-entity condition type is fulfilled by either or both the 'actor' (the entity being checked by the entity condition type) and 'target' (entity that the ray-cast has gone through). If not, the entity will be ignored.",
+			"$ref": "../../bientity_condition.json"
+		},
+		"hit_bientity_condition": {
+			"description": "If specified, the entity condition type will check if this bi-entity condition type is fulfilled by either or both the 'actor' (the entity being checked by the entity condition type) and 'target' (the entity that has hit by the ray-cast).",
+			"$ref": "../../bientity_condition.json"
+		},
+		"block_condition": {
+			"description": "If specified, the entity condition type will check if the block that was hit by the ray-cast fulfills this block condition type.",
+			"$ref": "../../block_condition.json"
+		}
+	}
+}

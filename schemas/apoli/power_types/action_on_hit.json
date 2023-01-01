@@ -1,0 +1,32 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:action_on_hit'\n- Executes a Bi-entity Action Type when the entity that has the power has hit another entity.",
+	"type": "object",
+	"required": [
+		"bientity_action"
+	],
+	"properties": {
+		"bientity_action": {
+			"description": "The action to be executed on either or both 'actor' (the entity that has the power) and 'target' (the entity/entities that's been hit) entities.",
+			"$ref": "../../bientity_action.json"
+		},
+		"damage_condition": {
+			"description": "If specified, the action will only execute when this condition holds for the damage that was dealt by the 'actor' (the entity that has the power) entity.",
+			"$ref": "../../damage_condition.json"
+		},
+		"cooldown": {
+			"description": "Interval of ticks this power needs to recharge before the power can be triggered again.",
+			"type": "integer",
+			"default": 1
+		},
+		"hud_render": {
+			"description": "Determines how the cooldown of this power is visualized on the HUD.",
+			"$ref": "../../types/hud_render.json"
+		},
+		"bientity_condition": {
+			"description": "If specified, the action will only execute when this condition is fulfilled by either or both 'actor' (the entity that has the power) and 'target' (the entity/entities that's been hit) entities.",
+			"$ref": "../../bientity_condition.json"
+		}
+	}
+}

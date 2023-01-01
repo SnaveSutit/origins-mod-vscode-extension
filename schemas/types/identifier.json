@@ -1,0 +1,6 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Identifier",
+	"type": "string",
+	"pattern": "^[^:]+:[^:]+$"
+}

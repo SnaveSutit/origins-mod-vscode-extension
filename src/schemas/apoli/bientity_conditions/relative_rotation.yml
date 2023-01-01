@@ -1,0 +1,45 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Bi-entity Condition
+description: |-
+  Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.
+  Type: 'origins:relative_rotation'
+  - Compares the rotation angle of the 'actor' to the 'target'.
+type: object
+required:
+  - comparison
+  - compare_to
+properties:
+  axies:
+    description: The axes to get the angle values to calculate, and compare to.
+    type: array
+    default:
+      - x
+      - 'y'
+      - z
+    items:
+      enum:
+        - x
+        - 'y'
+        - z
+
+  actor_rotation:
+    description: Determines the initial point of the rotation for the actor. Accepts "head" or "body".
+    type: string
+    enum:
+      - head
+      - body
+
+  target_rotation:
+    description: Determines the initial point of the rotation for the target. Accepts "head" or "body".
+    type: string
+    enum:
+      - head
+      - body
+
+  comparison:
+    description: Determines how the calculated angle value will be compared to the specified value.
+    $ref: ../../types/comparison.json
+
+  compare_to:
+    description: The value to compare the calculated angle value to.
+    type: number

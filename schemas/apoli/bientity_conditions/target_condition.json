@@ -1,0 +1,15 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Meta Bi-entity Condition Target Condition",
+	"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:target_condition'\n- Checks for an Entity Condition Type on the target entity.",
+	"type": "object",
+	"required": [
+		"condition"
+	],
+	"properties": {
+		"condition": {
+			"description": "The entity condition type to check for on the target entity.",
+			"$ref": "../../entity_condition.json"
+		}
+	}
+}

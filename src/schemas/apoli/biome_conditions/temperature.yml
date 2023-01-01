@@ -1,0 +1,18 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Biome Condition
+description: |-
+  Biome Condition Types operate on a Biome.
+  Type: 'origins:temperature'
+  - Checks for the temperature of the biome the entity is currently in.
+type: object
+required:
+  - comparison
+  - compare_to
+properties:
+  comparison:
+    description: How the temperature should be compared to the specified value.
+    $ref: ../../types/comparison.json
+
+  compare_to:
+    description: Which value the temperature should be compared to.
+    type: number

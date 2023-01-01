@@ -1,0 +1,6 @@
+# This file just makes sure the schema builder includes files that aren't specifically $IMPORTed by other files. Like Types!
+$DONT_EXPORT: true
+allOf:
+  - $IMPORT:
+      path: './src/schemas/types/'
+      format: include

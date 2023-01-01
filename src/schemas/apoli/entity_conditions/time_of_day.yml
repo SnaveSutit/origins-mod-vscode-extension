@@ -1,0 +1,19 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Condition
+description: |-
+  Entity Condition Types operate on an Entity, which also allows access to the world.
+  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
+  Type: 'origins:time_of_day'
+  - Checks the current day time ticks of the world.
+type: object
+required:
+  - comparison
+  - compare_to
+properties:
+  comparison:
+    description: How the current day time ticks of the world should be compared to the specified value.
+    $ref: ../../types/comparison.json
+
+  compare_to:
+    description: The value to compare the current day time ticks of the world to.
+    type: integer

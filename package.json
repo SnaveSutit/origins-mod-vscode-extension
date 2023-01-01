@@ -23,7 +23,9 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onStartupFinished"
+		"workspaceContains:**/powers/**/*.json",
+		"workspaceContains:**/origins/**/*.json",
+		"workspaceContains:**/origin_layers/**/*.json"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -69,9 +71,9 @@
 		"compile": "webpack",
 		"watch": "webpack --watch",
 		"build": "vsce package -o origins-mod-helper.vsix",
-		"yml": "node ./yml-builder.js",
+		"yml": "node ./tools/schema_builder.js",
 		"go": "yarn install",
-		"package": "node ./yml-builder.js --once && webpack --mode production --devtool hidden-source-map",
+		"package": "node ./tools/schema_builder.js --once && webpack --mode production --devtool hidden-source-map",
 		"lint": "prettier --write .",
 		"test": "node ./out/test/runTest.js",
 		"version_patch": "yarn version --new-version patch",
@@ -81,6 +83,7 @@
 	},
 	"devDependencies": {
 		"@types/glob": "^7.2.0",
+		"@types/js-yaml": "^4.0.5",
 		"@types/mocha": "^9.1.0",
 		"@types/node": "14.x",
 		"@types/vscode": "^1.65.0",
@@ -89,6 +92,7 @@
 		"glob": "^7.2.0",
 		"js-yaml": "^4.1.0",
 		"mocha": "^9.2.2",
+		"node-fetch": "^3.3.0",
 		"prettier": "^2.5.1",
 		"ts-loader": "^9.2.8",
 		"typescript": "^4.5.5",

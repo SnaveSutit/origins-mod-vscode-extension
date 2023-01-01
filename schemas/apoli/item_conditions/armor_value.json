@@ -1,0 +1,20 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Item Condition",
+	"description": "Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\nType: 'origins:armor_value'\n- Checks whether the item has a certain armor value. Non-armor items are considered as having an armor value of 0.",
+	"type": "object",
+	"required": [
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"comparison": {
+			"description": "How to compare the item's armor value to the specified value.",
+			"$ref": "../../types/comparison.json"
+		},
+		"compare_to": {
+			"description": "Which value to compare the item's armor value to.",
+			"type": "number"
+		}
+	}
+}

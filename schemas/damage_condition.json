@@ -19,270 +19,320 @@
 	},
 	"allOf": [
 		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:amount"
-							},
-							{
-								"const": "origins:amount"
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:amount"
+									},
+									{
+										"const": "origins:amount"
+									}
+								]
 							}
-						]
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/amount.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:attacker"
+									},
+									{
+										"const": "origins:attacker"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/attacker.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:bypasses_armor"
+									},
+									{
+										"const": "origins:bypasses_armor"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/bypasses_armor.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:dummy"
+									},
+									{
+										"const": "origins:dummy"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/dummy.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:explosive"
+									},
+									{
+										"const": "origins:explosive"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/explosive.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:fire"
+									},
+									{
+										"const": "origins:fire"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/fire.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:from_falling"
+									},
+									{
+										"const": "origins:from_falling"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/from_falling.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:name"
+									},
+									{
+										"const": "origins:name"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/name.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:out_of_world"
+									},
+									{
+										"const": "origins:out_of_world"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/out_of_world.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:projectile"
+									},
+									{
+										"const": "origins:projectile"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/projectile.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:unblockable"
+									},
+									{
+										"const": "origins:unblockable"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/damage_conditions/unblockable.json"
 					}
 				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/amount.json"
-			}
+			]
 		},
 		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:attacker"
-							},
-							{
-								"const": "origins:attacker"
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:and"
+									},
+									{
+										"const": "origins:and"
+									}
+								]
 							}
-						]
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:and'\n- Checks whether all of the provided conditions are fulfilled.",
+						"type": "object",
+						"required": [
+							"conditions"
+						],
+						"properties": {
+							"conditions": {
+								"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+								"type": "array",
+								"items": {
+									"$ref": "./damage_condition.json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:constant"
+									},
+									{
+										"const": "origins:constant"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:constant'\n- Provides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.",
+						"type": "object",
+						"required": [
+							"value"
+						],
+						"properties": {
+							"value": {
+								"description": "If true, the condition is always fulfilled. If false, the condition is never fulfilled.",
+								"type": "boolean"
+							}
+						}
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:or"
+									},
+									{
+										"const": "origins:or"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:or'\n- Checks whether any (one or more) of the provided conditions are fulfilled.",
+						"type": "object",
+						"required": [
+							"conditions"
+						],
+						"properties": {
+							"conditions": {
+								"description": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+								"type": "array",
+								"items": {
+									"$ref": "./damage_condition.json"
+								}
+							}
+						}
 					}
 				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/attacker.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:bypasses_armor"
-							},
-							{
-								"const": "origins:bypasses_armor"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/bypasses_armor.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:dummy"
-							},
-							{
-								"const": "origins:dummy"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/dummy.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:explosive"
-							},
-							{
-								"const": "origins:explosive"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/explosive.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:fire"
-							},
-							{
-								"const": "origins:fire"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/fire.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:from_falling"
-							},
-							{
-								"const": "origins:from_falling"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/from_falling.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:name"
-							},
-							{
-								"const": "origins:name"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/name.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:out_of_world"
-							},
-							{
-								"const": "origins:out_of_world"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/out_of_world.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:projectile"
-							},
-							{
-								"const": "origins:projectile"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/projectile.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:unblockable"
-							},
-							{
-								"const": "origins:unblockable"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/unblockable.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:and"
-							},
-							{
-								"const": "origins:and"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/and.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:constant"
-							},
-							{
-								"const": "origins:constant"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/constant.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:or"
-							},
-							{
-								"const": "origins:or"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./damage_conditions/or.json"
-			}
+			]
 		}
 	]
 }

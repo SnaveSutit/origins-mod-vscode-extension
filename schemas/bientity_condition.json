@@ -19,365 +19,415 @@
 	},
 	"allOf": [
 		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:actor_condition"
-							},
-							{
-								"const": "origins:actor_condition"
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:actor_condition"
+									},
+									{
+										"const": "origins:actor_condition"
+									}
+								]
 							}
-						]
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/actor_condition.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:attacker"
+									},
+									{
+										"const": "origins:attacker"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/attacker.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:attack_target"
+									},
+									{
+										"const": "origins:attack_target"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/attack_target.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:both"
+									},
+									{
+										"const": "origins:both"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/both.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:can_see"
+									},
+									{
+										"const": "origins:can_see"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/can_see.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:distance"
+									},
+									{
+										"const": "origins:distance"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/distance.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:dummy"
+									},
+									{
+										"const": "origins:dummy"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/dummy.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:either"
+									},
+									{
+										"const": "origins:either"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/either.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:invert"
+									},
+									{
+										"const": "origins:invert"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/invert.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:owner"
+									},
+									{
+										"const": "origins:owner"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/owner.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:relative_rotation"
+									},
+									{
+										"const": "origins:relative_rotation"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/relative_rotation.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:riding"
+									},
+									{
+										"const": "origins:riding"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/riding.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:riding_recursive"
+									},
+									{
+										"const": "origins:riding_recursive"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/riding_recursive.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:riding_root"
+									},
+									{
+										"const": "origins:riding_root"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/riding_root.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:target_condition"
+									},
+									{
+										"const": "origins:target_condition"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/target_condition.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:undirected"
+									},
+									{
+										"const": "origins:undirected"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/bientity_conditions/undirected.json"
 					}
 				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/actor_condition.json"
-			}
+			]
 		},
 		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:attacker"
-							},
-							{
-								"const": "origins:attacker"
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:and"
+									},
+									{
+										"const": "origins:and"
+									}
+								]
 							}
-						]
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:and'\n- Checks whether all of the provided conditions are fulfilled.",
+						"type": "object",
+						"required": [
+							"conditions"
+						],
+						"properties": {
+							"conditions": {
+								"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+								"type": "array",
+								"items": {
+									"$ref": "./bientity_condition.json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:constant"
+									},
+									{
+										"const": "origins:constant"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:constant'\n- Provides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.",
+						"type": "object",
+						"required": [
+							"value"
+						],
+						"properties": {
+							"value": {
+								"description": "If true, the condition is always fulfilled. If false, the condition is never fulfilled.",
+								"type": "boolean"
+							}
+						}
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:or"
+									},
+									{
+										"const": "origins:or"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:or'\n- Checks whether any (one or more) of the provided conditions are fulfilled.",
+						"type": "object",
+						"required": [
+							"conditions"
+						],
+						"properties": {
+							"conditions": {
+								"description": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+								"type": "array",
+								"items": {
+									"$ref": "./bientity_condition.json"
+								}
+							}
+						}
 					}
 				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/attacker.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:attack_target"
-							},
-							{
-								"const": "origins:attack_target"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/attack_target.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:both"
-							},
-							{
-								"const": "origins:both"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/both.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:can_see"
-							},
-							{
-								"const": "origins:can_see"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/can_see.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:distance"
-							},
-							{
-								"const": "origins:distance"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/distance.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:dummy"
-							},
-							{
-								"const": "origins:dummy"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/dummy.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:either"
-							},
-							{
-								"const": "origins:either"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/either.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:invert"
-							},
-							{
-								"const": "origins:invert"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/invert.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:owner"
-							},
-							{
-								"const": "origins:owner"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/owner.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:relative_rotation"
-							},
-							{
-								"const": "origins:relative_rotation"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/relative_rotation.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:riding"
-							},
-							{
-								"const": "origins:riding"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/riding.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:riding_recursive"
-							},
-							{
-								"const": "origins:riding_recursive"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/riding_recursive.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:riding_root"
-							},
-							{
-								"const": "origins:riding_root"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/riding_root.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:target_condition"
-							},
-							{
-								"const": "origins:target_condition"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/target_condition.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:undirected"
-							},
-							{
-								"const": "origins:undirected"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/undirected.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:and"
-							},
-							{
-								"const": "origins:and"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/and.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:constant"
-							},
-							{
-								"const": "origins:constant"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/constant.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:or"
-							},
-							{
-								"const": "origins:or"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./bientity_conditions/or.json"
-			}
+			]
 		}
 	]
 }

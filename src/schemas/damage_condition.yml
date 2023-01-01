@@ -15,5 +15,27 @@ properties:
     default: false
 
 allOf:
-  - INCLUDE: ./src/schemas/damage_conditions/
-  - INCLUDE_META_CONDITIONS
+  - $IMPORT:
+      a: true
+      path: ./src/schemas/apoli/damage_conditions/
+      format: allOfIfThen
+      condition:
+        properties:
+          type:
+            oneOf:
+              - const: 'apoli:$schemaName'
+              - const: 'origins:$schemaName'
+
+  - $IMPORT:
+      b: true
+      path: ./src/schemas/apoli/meta_conditions/
+      format: allOfIfThenUnique
+      replace:
+        actionType: damage_condition
+        conditionType: damage_condition
+      condition:
+        properties:
+          type:
+            oneOf:
+              - const: 'apoli:$schemaName'
+              - const: 'origins:$schemaName'

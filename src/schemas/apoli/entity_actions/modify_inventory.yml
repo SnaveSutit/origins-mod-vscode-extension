@@ -1,0 +1,39 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:modify_inventory'
+  - Modifies the items from either the entity's inventory or a power that uses the Inventory (Power Type).
+type: object
+required:
+  - inventory_type
+properties:
+  inventory_type:
+    description: Determines whether to modify the items in the inventory of the entity or the inventory of a power present in the entity.
+    $ref: ../../types/inventory_type.json
+
+  entity_action:
+    description: If specified, this action will be executed on the entity before the items are modified.
+    $ref: ../../entity_action.json
+
+  item_action:
+    description: If specified, this action will be executed on the affected items.
+    $ref: ../../item_action.json
+
+  item_condition:
+    description: If specified, only items which fulfill this condition will be affected by specified action.
+    $ref: ../../item_condition.json
+
+  slot:
+    description: If specified, only items in the designated slot will be modified.
+    $ref: ../../types/item_slot.json
+
+  slots:
+    description: If specified, only items in the designated slots will be modified.
+    type: array
+    items:
+      $ref: ../../types/item_slot.json
+
+  power:
+    description: If specified, the items in the inventory of this power will be modified instead of the items in the entity's inventory if inventory_type is set to `"power"`.
+    $ref: ../../types/identifier.json

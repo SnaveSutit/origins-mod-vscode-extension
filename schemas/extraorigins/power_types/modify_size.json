@@ -1,0 +1,61 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'extraorigins:modify_size'\n- Changes the entity's scale. Allows conditions.",
+	"type": "object",
+	"required": [
+		"scale"
+	],
+	"properties": {
+		"scale_types": {
+			"description": "An Array of Scale Type Identifiers. Defaults to extraorigins:modify_size which contains width, height, drop size, and visibility.",
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"enum": [
+							"pehkui:attack",
+							"pehkui:attack_speed",
+							"pehkui:base",
+							"pehkui:block_reach",
+							"pehkui:defense",
+							"pehkui:drops",
+							"pehkui:entity_reach",
+							"pehkui:explosions",
+							"pehkui:eye_height",
+							"pehkui:falling",
+							"pehkui:flight",
+							"pehkui:health",
+							"pehkui:height",
+							"pehkui:held_item",
+							"pehkui:hitbox_height",
+							"pehkui:hitbox_width",
+							"pehkui:interaction_box_height",
+							"pehkui:interaction_box_width",
+							"pehkui:invalid",
+							"pehkui:jump_height",
+							"pehkui:knockback",
+							"pehkui:mining_speed",
+							"pehkui:model_height",
+							"pehkui:model_width",
+							"pehkui:reach",
+							"pehkui:step_height",
+							"pehkui:third_person",
+							"pehkui:view_bobbing",
+							"pehkui:visibility",
+							"pehkui:width",
+							"extraorigins:modify_size"
+						]
+					},
+					{
+						"$ref": "../../types/identifier.json"
+					}
+				]
+			}
+		},
+		"scale": {
+			"description": "A Float",
+			"type": "number"
+		}
+	}
+}

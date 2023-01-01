@@ -10,5 +10,27 @@ properties:
     type: string
 
 allOf:
-  - INCLUDE: ./src/schemas/bientity_actions/
-  - INCLUDE_META_ACTIONS
+  - $IMPORT:
+      a: true
+      path: ./src/schemas/apoli/bientity_actions/
+      format: allOfIfThen
+      condition:
+        properties:
+          type:
+            oneOf:
+              - const: 'apoli:$schemaName'
+              - const: 'origins:$schemaName'
+
+  - $IMPORT:
+      b: true
+      path: ./src/schemas/apoli/meta_actions/
+      format: allOfIfThenUnique
+      replace:
+        actionType: bientity_action
+        conditionType: bientity_condition
+      condition:
+        properties:
+          type:
+            oneOf:
+              - const: 'apoli:$schemaName'
+              - const: 'origins:$schemaName'

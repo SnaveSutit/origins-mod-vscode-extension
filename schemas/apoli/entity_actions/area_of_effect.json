@@ -1,0 +1,26 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Entity Action",
+	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:area_of_effect'\n- Executes a Bi-entity Action within a specified radius.",
+	"type": "object",
+	"properties": {
+		"radius": {
+			"description": "Determines the radius of the area.",
+			"type": "number",
+			"default": 16
+		},
+		"bientity_action": {
+			"description": "If specified, this bi-entity action type may be executed on either or both the actor (the entity that has the power) and target (the entities within the specified radius).",
+			"$ref": "../../bientity_action.json"
+		},
+		"bientity_condition": {
+			"description": "If specified, only execute the specified bi-entity action if this bi-entity condition type is fulfilled by either or both the 'actor' (the entity that has the power) or 'target' (the entities within the specified radius).",
+			"$ref": "../../bientity_condition.json"
+		},
+		"include_target": {
+			"description": "Determines whether the entity this action was executed on is included in the radius check.",
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

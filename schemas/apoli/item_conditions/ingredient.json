@@ -1,0 +1,15 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Item Condition",
+	"description": "Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\nType: 'origins:ingredient'\n- Checks whether the item matches a specified recipe ingredient. Essentially, checking either for the item ID or whether the item is in a specified tag.",
+	"type": "object",
+	"required": [
+		"ingredient"
+	],
+	"properties": {
+		"ingredient": {
+			"description": "The ingredient this item must match to pass the check.",
+			"$ref": "../../types/ingredient.json"
+		}
+	}
+}

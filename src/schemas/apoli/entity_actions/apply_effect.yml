@@ -1,0 +1,17 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Action
+description: |-
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+  Type: 'origins:apply_effect'
+  - Adds one or more status effects to the living entity. Does not have an effect on non-living entities.
+type: object
+properties:
+  effect:
+    description: If set, this status effect will be applied by this action.
+    $ref: ../../types/status_effect_instance.json
+
+  effects:
+    description: If set, these status effects will be applied by this action.
+    type: array
+    items:
+      $ref: ../../types/status_effect_instance.json

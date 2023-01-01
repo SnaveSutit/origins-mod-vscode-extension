@@ -1,0 +1,19 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Entity Condition
+description: |-
+  Entity Condition Types operate on an Entity, which also allows access to the world.
+  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
+  Type: 'origins:food_level'
+  - Checks the entity's food level (chicken legs / hunger meter / whatever you wanna call it). The food level is in the range of 0 to 20.
+type: object
+required:
+  - comparison
+  - compare_to
+properties:
+  comparison:
+    description: How the food level should be compared to the specified value.
+    $ref: ../../types/comparison.json
+
+  compare_to:
+    description: Which value the food level should be compared to.
+    type: number

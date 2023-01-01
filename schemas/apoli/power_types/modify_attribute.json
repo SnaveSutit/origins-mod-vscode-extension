@@ -1,0 +1,26 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_attribute'\n- Modifies an attribute using Attribute Modifiers.",
+	"type": "object",
+	"required": [
+		"attribute"
+	],
+	"properties": {
+		"attribute": {
+			"description": "The namespace and ID of the attribute to apply the modifier(s) to.",
+			"$ref": "../../types/attributes.json"
+		},
+		"modifier": {
+			"description": "If specified, this modifier will be applied to the specified attribute.",
+			"$ref": "../../types/attribute_modifier.json"
+		},
+		"modifiers": {
+			"description": "If specified, these modifiers will be applied to the specified attribute.",
+			"type": "array",
+			"items": {
+				"$ref": "../../types/attribute_modifier.json"
+			}
+		}
+	}
+}

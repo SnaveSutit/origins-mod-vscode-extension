@@ -1,0 +1,48 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:action_on_block_use'\n- Executes a Block Action Type and/or Item Action Types when the player that has the power \"uses\" (right-clicks) a block.",
+	"type": "object",
+	"properties": {
+		"entity_action": {
+			"description": "If specified, this entity action type will be executed if all conditions are met.",
+			"$ref": "../../entity_action.json"
+		},
+		"block_action": {
+			"description": "If specified, the used block will run this action if all conditions are met.",
+			"$ref": "../../block_action.json"
+		},
+		"block_condition": {
+			"description": "If specified, only execute the specified actions if this condition is fulfilled by the used block.",
+			"$ref": "../../block_condition.json"
+		},
+		"item_condition": {
+			"description": "If specified, only execute the specified actions if this condition is fulfilled by the item in the 'actor' (the player that has the power) entity's specified hand(s) determined by the hands string field.",
+			"$ref": "../../item_condition.json"
+		},
+		"directions": {
+			"description": "If specified, only execute the specified actions if you used the specified face of the block.",
+			"$ref": "../../types/directions.json"
+		},
+		"hands": {
+			"description": "Determines if the power should be activated if the player used the specified hand(s).",
+			"$ref": "../../types/hands.json"
+		},
+		"result_stack": {
+			"description": "If specified, gives the item to the 'actor' (the player that has the power) entity.",
+			"$ref": "../../types/item_stack.json"
+		},
+		"held_item_action": {
+			"description": "If specified, this action will be executed on the item used for right-clicking the 'target' entity in the specified hand(s) determined by the hands string field.",
+			"$ref": "../../item_action.json"
+		},
+		"result_item_action": {
+			"description": "If specified, this action will be executed on the item that is given to the 'actor' (the player that has the power) entity.",
+			"$ref": "../../item_action.json"
+		},
+		"action_result": {
+			"description": "Determines the result of the 'use' action.",
+			"$ref": "../../types/action_result.json"
+		}
+	}
+}

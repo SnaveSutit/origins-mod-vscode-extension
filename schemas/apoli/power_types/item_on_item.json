@@ -1,0 +1,41 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"title": "Power Type",
+	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:item_on_item'\n- Executes an Entity Action Type or Item Action Types when the player uses an item on an item, similar to how you would put items in a bundle.",
+	"type": "object",
+	"properties": {
+		"using_item_condition": {
+			"description": "If specified, the specified actions will only execute if this condition is fulfilled by the item that is used to right-click an item.",
+			"$ref": "../../item_condition.json"
+		},
+		"on_item_condition": {
+			"description": "If specified, the specified actions will only execute if this condition is fulfilled by the item that has been right-clicked.",
+			"$ref": "../../item_condition.json"
+		},
+		"result": {
+			"description": "If specified, this item will be given to the player.",
+			"$ref": "../../types/item_stack.json"
+		},
+		"result_from_on_stack": {
+			"description": "Determines how many items based on the on_item stack will be given as a result for using an item on an item. Mostly to be used in conjunction with result_item_action.",
+			"type": "integer",
+			"default": 0
+		},
+		"using_item_action": {
+			"description": "If specified, this action will be executed on the item that is used to right-click an item.",
+			"$ref": "../../item_action.json"
+		},
+		"on_item_action": {
+			"description": "If specified, this action will be executed on the item that has been right-clicked.",
+			"$ref": "../../item_action.json"
+		},
+		"result_item_action": {
+			"description": "If specified, this action will be executed on the item that is given to the player.",
+			"$ref": "../../item_action.json"
+		},
+		"entity_action": {
+			"description": "If specified, this action will be executed on the player after they used an item on an item.",
+			"$ref": "../../entity_action.json"
+		}
+	}
+}

@@ -1,0 +1,53 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:modify_food'
+  - Executes an Entity Action Type and modifies the food and saturation level gain of a food item when a player that has the power eats food item.
+type: object
+properties:
+  item_condition:
+    description: If specified, the specified actions and modifier(s) will only apply to food items that fulfills this condition.
+    $ref: ../../item_condition.json
+
+  item_action:
+    description: If specified, this item action type will be executed on the remaining item stacks that was consumed.
+    $ref: ../../item_action.json
+
+  replace_stack:
+    description: If specified, this item stack will replace the item stack that was consumed after consuming it.
+    $ref: ../../types/item_stack.json
+
+  food_modifier:
+    description: If specified, this modifier will apply to the food amount gained by eating a food item.
+    $ref: ../../types/attribute_modifier.json
+
+  food_modifiers:
+    description: If specified, these modifiers will apply to the food amount gained by eating a food item.
+    type: array
+    items:
+      $ref: ../../types/attribute_modifier.json
+
+  saturation_modifier:
+    description: If specified, this modifier will apply to the saturation amount gained by eating a food item.
+    $ref: ../../types/attribute_modifier.json
+
+  saturation_modifiers:
+    description: If specified, these modifiers will apply to the saturation amount gained by eating a food item.
+    type: array
+    items:
+      $ref: ../../types/attribute_modifier.json
+
+  entity_action:
+    description: If specified, this action will be executed on the player that has ate a food item.
+    $ref: ../../entity_action.json
+
+  always_edible:
+    description: Determines whether a food item can be eaten regardless of the player's hunger bar being full.
+    type: boolean
+    default: false
+
+  prevent_effects:
+    description: If set to true, prevent status effects from being applied.
+    type: boolean
+    default: false

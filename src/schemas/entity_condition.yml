@@ -17,5 +17,27 @@ properties:
     default: false
 
 allOf:
-  - INCLUDE: ./src/schemas/entity_conditions/
-  - INCLUDE_META_CONDITIONS
+  - $IMPORT:
+      a: true
+      path: ./src/schemas/apoli/entity_conditions/
+      format: allOfIfThen
+      condition:
+        properties:
+          type:
+            oneOf:
+              - const: 'apoli:$schemaName'
+              - const: 'origins:$schemaName'
+
+  - $IMPORT:
+      b: true
+      path: ./src/schemas/apoli/meta_conditions/
+      format: allOfIfThenUnique
+      replace:
+        actionType: entity_condition
+        conditionType: entity_condition
+      condition:
+        properties:
+          type:
+            oneOf:
+              - const: 'apoli:$schemaName'
+              - const: 'origins:$schemaName'

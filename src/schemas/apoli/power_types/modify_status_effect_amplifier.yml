@@ -1,0 +1,27 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Power Type
+description: |-
+  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
+  Type: 'origins:modify_status_effect_amplifier'
+  - Modifies the amplifier of the specified status effect upon receiving the specified status effect.
+type: object
+properties:
+  status_effect:
+    description: The namespace and ID of the status effect that will have its amplifier modified.
+    type: string
+
+  status_effects:
+    description: If specified, only these status effect(s) will have its amplifier modified upon being received.
+    type: array
+    items:
+      type: string
+
+  modifier:
+    description: The modifier to apply to the amplifier of the specified status effect.
+    $ref: ../../types/attribute_modifier.json
+
+  modifiers:
+    description: If specified, these modifiers will be applied to the amplifier of the specified status effect(s).
+    type: array
+    items:
+      $ref: ../../types/attribute_modifier.json

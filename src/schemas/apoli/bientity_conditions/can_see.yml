@@ -1,0 +1,17 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Bi-entity Condition
+description: |-
+  Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.
+  Type: 'origins:can_see'
+  - Checks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.
+type: object
+properties:
+  shape_type:
+    description: Determines how the ray-cast will handle blocks.
+    $ref: ../../types/shape_type.json
+    default: visual
+
+  fluid_handling:
+    description: Determines how the ray-cast will handle fluids.
+    $ref: ../../types/fluid_handling.json
+    default: none

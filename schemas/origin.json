@@ -12,7 +12,7 @@
 			"description": "The item stack which is displayed as the icon for the origin in the top-left corner of the choose/view origin screen.",
 			"oneOf": [
 				{
-					"$ref": "./shared/item_stack.json"
+					"$ref": "./types/item_stack.json"
 				},
 				{
 					"type": "string"

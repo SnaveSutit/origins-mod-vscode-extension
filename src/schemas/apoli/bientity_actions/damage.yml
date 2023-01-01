@@ -1,0 +1,18 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Bi-entity Action
+description: |-
+  Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.
+  Type: 'origins:damage'
+  - Applies damage to the target entity as if the actor entity has attacked it.
+type: object
+required:
+  - amount
+  - source
+properties:
+  amount:
+    description: The amount of damage to deal.
+    type: number
+
+  source:
+    description: The damage source to be used. Controls e.g. the death message, invulnerabilities (e.g. towards fire), or whether armor is taken into account.
+    $ref: ../../types/damage_source.json

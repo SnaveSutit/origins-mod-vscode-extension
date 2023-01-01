@@ -19,137 +19,187 @@
 	},
 	"allOf": [
 		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:dummy"
-							},
-							{
-								"const": "origins:dummy"
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:dummy"
+									},
+									{
+										"const": "origins:dummy"
+									}
+								]
 							}
-						]
+						}
+					},
+					"then": {
+						"$ref": "apoli/fluid_conditions/dummy.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:empty"
+									},
+									{
+										"const": "origins:empty"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/fluid_conditions/empty.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:in_tag"
+									},
+									{
+										"const": "origins:in_tag"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/fluid_conditions/in_tag.json"
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:still"
+									},
+									{
+										"const": "origins:still"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "apoli/fluid_conditions/still.json"
 					}
 				}
-			},
-			"then": {
-				"$ref": "./fluid_conditions/dummy.json"
-			}
+			]
 		},
 		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:empty"
-							},
-							{
-								"const": "origins:empty"
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:and"
+									},
+									{
+										"const": "origins:and"
+									}
+								]
 							}
-						]
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:and'\n- Checks whether all of the provided conditions are fulfilled.",
+						"type": "object",
+						"required": [
+							"conditions"
+						],
+						"properties": {
+							"conditions": {
+								"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+								"type": "array",
+								"items": {
+									"$ref": "./fluid_condition.json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:constant"
+									},
+									{
+										"const": "origins:constant"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:constant'\n- Provides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.",
+						"type": "object",
+						"required": [
+							"value"
+						],
+						"properties": {
+							"value": {
+								"description": "If true, the condition is always fulfilled. If false, the condition is never fulfilled.",
+								"type": "boolean"
+							}
+						}
+					}
+				},
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "apoli:or"
+									},
+									{
+										"const": "origins:or"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+						"title": "Item Condition",
+						"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:or'\n- Checks whether any (one or more) of the provided conditions are fulfilled.",
+						"type": "object",
+						"required": [
+							"conditions"
+						],
+						"properties": {
+							"conditions": {
+								"description": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+								"type": "array",
+								"items": {
+									"$ref": "./fluid_condition.json"
+								}
+							}
+						}
 					}
 				}
-			},
-			"then": {
-				"$ref": "./fluid_conditions/empty.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:in_tag"
-							},
-							{
-								"const": "origins:in_tag"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./fluid_conditions/in_tag.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:still"
-							},
-							{
-								"const": "origins:still"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./fluid_conditions/still.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:and"
-							},
-							{
-								"const": "origins:and"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./fluid_conditions/and.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:constant"
-							},
-							{
-								"const": "origins:constant"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./fluid_conditions/constant.json"
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"type": {
-						"oneOf": [
-							{
-								"const": "apoli:or"
-							},
-							{
-								"const": "origins:or"
-							}
-						]
-					}
-				}
-			},
-			"then": {
-				"$ref": "./fluid_conditions/or.json"
-			}
+			]
 		}
 	]
 }
