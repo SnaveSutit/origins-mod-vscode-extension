@@ -523,6 +523,24 @@
 					}
 				}
 			]
+		},
+		{
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": [
+								{
+									"const": "extraorigins:fertilizable"
+								}
+							]
+						}
+					},
+					"then": {
+						"$ref": "extraorigins/block_conditions/fertilizable.json"
+					}
+				}
+			]
 		}
 	]
 }

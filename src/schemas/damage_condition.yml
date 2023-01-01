@@ -39,3 +39,12 @@ allOf:
             oneOf:
               - const: 'apoli:$schemaName'
               - const: 'origins:$schemaName'
+
+  - $IMPORT:
+      a: true
+      path: ./src/schemas/extraorigins/damage_conditions/
+      format: allOfIfThen
+      condition:
+        properties:
+          type:
+            - const: 'extraorigins:$schemaName'
