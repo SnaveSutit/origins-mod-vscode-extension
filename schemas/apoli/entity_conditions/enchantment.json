@@ -11,7 +11,7 @@
 	"properties": {
 		"enchantment": {
 			"description": "The namespace and ID of the enchantment of interest.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"calculation": {
 			"description": "Which number to compare - either the sum of levels of this enchantment on all of the player's equipment, or the max level of this enchantment on any of the player's equipment.",

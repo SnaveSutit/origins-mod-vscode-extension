@@ -10,7 +10,7 @@ required:
 properties:
   shader:
     description: Specifies the location of the shader resource file to use.
-    type: string
+    $ref: ../../types/identifier.json
 
   toggleable:
     description: Determines if the applied shader can be toggled.

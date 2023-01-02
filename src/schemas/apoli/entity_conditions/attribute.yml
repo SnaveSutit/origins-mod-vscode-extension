@@ -13,7 +13,7 @@ required:
 properties:
   attribute:
     description: 'ID of the attribute of which the value should be checked. See Minecraft Fandom Wiki: Attribute (Attributes) for a list of vanilla attributes that can be checked for.'
-    type: string
+    $ref: ../../types/identifier.json
 
   comparison:
     description: How to compare the attribute's value to the specified value.

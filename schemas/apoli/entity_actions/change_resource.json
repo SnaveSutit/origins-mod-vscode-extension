@@ -10,7 +10,7 @@
 	"properties": {
 		"resource": {
 			"description": "The namespace and ID of the power that uses the Resource (Power Type) or has a built-in cooldown.",
-			"type": "string"
+			"$ref": "../../types/resource_identifier.json"
 		},
 		"change": {
 			"description": "This value will be added to the resource (won't go below min or above max of the Resource (Power Type)).",

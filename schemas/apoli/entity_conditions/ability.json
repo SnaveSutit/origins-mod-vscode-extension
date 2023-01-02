@@ -9,7 +9,7 @@
 	"properties": {
 		"ability": {
 			"description": "The namespace and ID of the ability to check for.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

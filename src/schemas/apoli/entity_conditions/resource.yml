@@ -13,7 +13,7 @@ required:
 properties:
   resource:
     description: The namespace and ID of a power that will be evaluated.
-    type: string
+    $ref: ../../types/resource_identifier.json
 
   comparison:
     description: How the value of the power that will be evaluated should be compared to the specified value.

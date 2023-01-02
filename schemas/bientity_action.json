@@ -8,8 +8,8 @@
 	],
 	"properties": {
 		"type": {
-			"description": "The ID of the item action to use",
-			"type": "string"
+			"description": "The ID of the Bi-entity Action",
+			"$ref": "./types/identifier.json"
 		}
 	},
 	"allOf": [

@@ -10,4 +10,4 @@ required:
 properties:
   power:
     description: The namespace and ID of the power that will be triggered.
-    type: string
+    $ref: ../../types/identifier.json

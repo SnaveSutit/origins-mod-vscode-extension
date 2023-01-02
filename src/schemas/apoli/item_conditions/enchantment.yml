@@ -12,7 +12,7 @@ required:
 properties:
   enchantment:
     description: ID of the enchantment of interest, e.g. minecraft:protection.
-    type: string
+    $ref: ../../types/identifier.json
 
   comparison:
     description: How to compare the enchantment level the specified value.

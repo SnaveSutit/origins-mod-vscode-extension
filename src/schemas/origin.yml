@@ -6,12 +6,14 @@ properties:
   powers:
     description: The namespace and IDs of the powers this origin should have.
     type: array
+    items:
+      $ref: ./types/identifier.json
 
   icon:
     description: The item stack which is displayed as the icon for the origin in the top-left corner of the choose/view origin screen.
     oneOf:
       - $ref: './types/item_stack.json'
-      - type: string
+      - $ref: ./types/identifier.json
 
   unchoosable:
     description: If set to true, this origin will not show up in any origin layer to choose it, but it will still be able to be set for that layer with a command or via an origin upgrade.
@@ -51,11 +53,11 @@ properties:
       properties:
         condition:
           description: The namespace and ID of an advancement which should trigger this upgrade.
-          type: string
+          $ref: ./types/identifier.json
 
         origin:
           description: The namespace and ID of an origin the origin with this upgrade should upgrade to.
-          type: string
+          $ref: ./types/identifier.json
 
         announcement:
           description: |-

@@ -10,4 +10,4 @@ anyOf:
       - origins:textures/gui/community/spiderkolo/resource_bar_points_01.png
       - origins:textures/gui/community/huang/resource_bar_01.png
       - origins:textures/gui/community/huang/resource_bar_02.png
-  - type: string
+  - $ref: ./identifier.json

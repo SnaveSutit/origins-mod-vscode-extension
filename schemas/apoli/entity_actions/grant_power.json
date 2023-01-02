@@ -10,11 +10,11 @@
 	"properties": {
 		"power": {
 			"description": "The namespace and ID of the power to be granted to the entity.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"source": {
 			"description": "The namespace and ID of the source of the granted power.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

@@ -16,7 +16,6 @@ properties:
     type: array
     items:
       oneOf:
-        - type: string
         - type: object
           properties:
             condition:
@@ -26,7 +25,9 @@ properties:
               description: Then namespace and IDs of the origins which should become available when the condition is fulfilled.
               type: array
               items:
-                type: string
+                $ref: ./types/identifier.json
+
+        - $ref: ./types/identifier.json
 
   enabled:
     description: |-
@@ -85,7 +86,7 @@ properties:
       If set, the origin with this namespace and ID will automatically be chosen for a new player.
       If an orb of origin is used later on, the player will be able to choose another origin then and the default_origin will not apply.
       Could for example be used to make all players start as human, and then use the orb as a progression item to select an origin.
-    type: string
+    $ref: ./types/identifier.json
 
   auto_choose:
     description: |-

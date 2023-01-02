@@ -8,4 +8,4 @@ type: object
 properties:
   projectile:
     description: If set, the check will only pass if the projectile was of an entity type with the specified namespace and ID.
-    type: string
+    $ref: ../../types/identifier.json

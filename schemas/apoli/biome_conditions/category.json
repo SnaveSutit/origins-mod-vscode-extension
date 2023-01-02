@@ -9,7 +9,34 @@
 	"properties": {
 		"category": {
 			"description": "Which category the biome must be in order to succeed the check. See List of Biome Categories for possible values.",
-			"type": "string"
+			"oneOf": [
+				{
+					"enum": [
+						"beach",
+						"desert",
+						"extreme_hills",
+						"forest",
+						"icy",
+						"jungle",
+						"mesa",
+						"mountain",
+						"mushroom",
+						"nether",
+						"none",
+						"ocean",
+						"plains",
+						"river",
+						"savanna",
+						"swamp",
+						"taiga",
+						"the_end",
+						"underground"
+					]
+				},
+				{
+					"type": "string"
+				}
+			]
 		}
 	}
 }

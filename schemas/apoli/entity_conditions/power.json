@@ -9,11 +9,11 @@
 	"properties": {
 		"power": {
 			"description": "The namespace and ID of the power the entity needs to have to pass the check.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"source": {
 			"description": "The namespace and ID of the source of the power.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

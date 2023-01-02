@@ -10,11 +10,11 @@
 	"properties": {
 		"power": {
 			"description": "The namespace and ID of the power to be revoked from the entity.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"source": {
 			"description": "The namespace and ID of the source of the power.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

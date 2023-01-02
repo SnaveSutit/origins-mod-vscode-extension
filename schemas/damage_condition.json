@@ -8,8 +8,8 @@
 	],
 	"properties": {
 		"type": {
-			"description": "The identifier of the damage condition to use",
-			"type": "string"
+			"description": "The ID of the Damage Condition",
+			"$ref": "./types/identifier.json"
 		},
 		"inverted": {
 			"description": "If true, the condition acts inverted.",

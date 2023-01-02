@@ -9,7 +9,7 @@ required:
 properties:
   attribute:
     description: ID of the attribute which will be modified by this modifier.
-    type: string
+    $ref: ./identifier.json
 
   operation:
     description: The operation which will be performed by this modifier.

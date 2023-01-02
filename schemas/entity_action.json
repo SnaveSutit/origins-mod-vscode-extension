@@ -8,8 +8,8 @@
 	],
 	"properties": {
 		"type": {
-			"description": "The ID of the item action to use",
-			"type": "string"
+			"description": "The ID of the Entity Action",
+			"$ref": "./types/identifier.json"
 		}
 	},
 	"allOf": [
@@ -1116,6 +1116,26 @@
 								]
 							}
 						}
+					}
+				}
+			]
+		},
+		{
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							"type": {
+								"oneOf": [
+									{
+										"const": "skillful:add_skill_points"
+									}
+								]
+							}
+						}
+					},
+					"then": {
+						"$ref": "skillful/entity_actions/add_skill_points.json"
 					}
 				}
 			]

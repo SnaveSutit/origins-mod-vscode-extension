@@ -11,7 +11,7 @@
 	"properties": {
 		"entity_type": {
 			"description": "The ID of the entity type that will be fired.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"cooldown": {
 			"description": "Interval of ticks this power needs to recharge before the power can be triggered again.",
@@ -43,7 +43,7 @@
 		},
 		"sound": {
 			"description": "If set, the sound with this ID will be played when the power is used.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"tag": {
 			"description": "NBT data of the entity.",

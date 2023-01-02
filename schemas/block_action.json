@@ -1,6 +1,6 @@
 {
 	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Biome Action",
+	"title": "Block Condition",
 	"description": "Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.",
 	"type": "object",
 	"required": [
@@ -8,8 +8,8 @@
 	],
 	"properties": {
 		"type": {
-			"description": "The identifier of the block condition to use",
-			"type": "string"
+			"description": "The ID of the Block Condition",
+			"$ref": "./types/identifier.json"
 		}
 	},
 	"allOf": [

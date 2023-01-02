@@ -8,13 +8,13 @@ type: object
 properties:
   status_effect:
     description: If specified, only this status effect will have its duration modified upon being received.
-    type: string
+    $ref: ../../types/identifier.json
 
   status_effects:
     description: If specified, only these status effects will have its duration modified upon being received.
     type: array
     items:
-      type: string
+      $ref: ../../types/identifier.json
 
   modifier:
     description: If specified, this modifier will be applied to the duration of the specified status effect(s).

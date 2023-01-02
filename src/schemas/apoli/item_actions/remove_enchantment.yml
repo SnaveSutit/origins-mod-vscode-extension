@@ -8,13 +8,13 @@ type: object
 properties:
   enchantment:
     description: If specified, this enchantment will be removed from the item.
-    type: string
+    $ref: ../../types/identifier.json
 
   enchantments:
     description: If specified, these enchantments will be removed from the item.
     type: array
     items:
-      type: string
+      $ref: ../../types/identifier.json
 
   levels:
     description: If specified, only the enchantments that has the specified level will be removed from the item.

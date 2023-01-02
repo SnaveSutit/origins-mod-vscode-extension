@@ -14,7 +14,7 @@
 		},
 		"resource": {
 			"description": "This power will have its value modified; as long as the power is using the Resource (Power Type) or the Cooldown (Power Type).",
-			"type": "string"
+			"$ref": "../../types/resource_identifier.json"
 		}
 	}
 }

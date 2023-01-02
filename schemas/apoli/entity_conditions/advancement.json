@@ -9,7 +9,7 @@
 	"properties": {
 		"advancement": {
 			"description": "The namespace and ID of the advancement the player needs to have completed in order for this condition to evaluate to true.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

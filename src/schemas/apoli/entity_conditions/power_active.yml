@@ -11,4 +11,4 @@ required:
 properties:
   power:
     description: The namespace and ID of the power which will be checked for being active.
-    type: string
+    $ref: ../../types/identifier.json

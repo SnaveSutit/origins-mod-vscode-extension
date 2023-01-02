@@ -13,11 +13,11 @@ properties:
     description: |-
       The ID of the class to transfer the value of an attribute modifier to.
       See Value Modifying Power Classes for possible values.
-    type: string
+    $ref: ../../types/identifier.json
 
   attribute:
     description: The namespace and ID of the attribute to get the value from.
-    type: string
+    $ref: ../../types/identifier.json
 
   multiplier:
     description: Determines the multiplier for the value.

@@ -8,4 +8,4 @@ anyOf:
       - origins:textures/gui/badge/info.png
       - origins:textures/gui/badge/star.png
       - origins:textures/gui/badge/toggle.png
-  - type: string
+  - $ref: ./identifier.json

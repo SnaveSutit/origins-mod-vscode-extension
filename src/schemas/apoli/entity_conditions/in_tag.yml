@@ -11,4 +11,4 @@ required:
 properties:
   tag:
     description: The namespace and ID of the entity type tag the entity type needs to be in to pass the check.
-    type: string
+    $ref: ../../types/identifier.json

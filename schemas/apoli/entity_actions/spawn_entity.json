@@ -9,7 +9,7 @@
 	"properties": {
 		"entity_type": {
 			"description": "The namespace and ID of the entity type that will be spawned.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"tag": {
 			"description": "If specified, this NBT data will be applied to the entity that will be spawned.",

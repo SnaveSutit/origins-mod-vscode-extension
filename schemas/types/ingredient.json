@@ -19,11 +19,11 @@
 			"properties": {
 				"item": {
 					"description": "ID of a registered item.",
-					"type": "string"
+					"$ref": "./identifier.json"
 				},
 				"tag": {
 					"description": "ID of an item tag. Will be ignored if item is set.",
-					"type": "string"
+					"$ref": "./identifier.json"
 				}
 			}
 		}

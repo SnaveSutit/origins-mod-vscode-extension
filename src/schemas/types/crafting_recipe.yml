@@ -13,10 +13,11 @@ properties:
       - enum:
           - minecraft:crafting_shaped
           - minecraft:crafting_shapeless
-      - type: string
+      - $ref: ./identifier.json
 
   id:
     description: An ID for this recipe. Has to be unique among all recipes, otherwise there will be a conflict.
+    $ref: ./identifier.json
 
   result:
     description: The result of the crafting. Note that vanilla does not support NBT tags in the result.

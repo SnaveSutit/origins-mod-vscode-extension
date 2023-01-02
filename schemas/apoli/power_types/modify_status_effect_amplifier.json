@@ -6,13 +6,13 @@
 	"properties": {
 		"status_effect": {
 			"description": "The namespace and ID of the status effect that will have its amplifier modified.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"status_effects": {
 			"description": "If specified, only these status effect(s) will have its amplifier modified upon being received.",
 			"type": "array",
 			"items": {
-				"type": "string"
+				"$ref": "../../types/identifier.json"
 			}
 		},
 		"modifier": {

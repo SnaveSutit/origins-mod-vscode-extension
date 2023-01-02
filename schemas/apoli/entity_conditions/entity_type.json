@@ -9,7 +9,7 @@
 	"properties": {
 		"entity_type": {
 			"description": "The namespace and ID of the entity type the entity needs to have to pass the check.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

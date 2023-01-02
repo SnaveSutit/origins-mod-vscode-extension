@@ -10,4 +10,4 @@ required:
 properties:
   modifier:
     description: The ID of an item modifier.
-    type: string
+    $ref: ../../types/identifier.json

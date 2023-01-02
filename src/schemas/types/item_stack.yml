@@ -6,7 +6,7 @@ properties:
   item:
     description: |-
       ID of a registered item.
-    type: string
+    $ref: ./identifier.json
 
   amount:
     description: |-

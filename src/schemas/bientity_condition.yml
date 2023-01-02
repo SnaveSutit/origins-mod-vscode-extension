@@ -6,8 +6,8 @@ required:
   - type
 properties:
   type:
-    description: 'Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.'
-    type: string
+    description: The ID of the Bi-entity Condition
+    $ref: ./types/identifier.json
 
   inverted:
     description: If true, the condition acts inverted.

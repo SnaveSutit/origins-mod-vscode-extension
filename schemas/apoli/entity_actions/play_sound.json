@@ -9,7 +9,7 @@
 	"properties": {
 		"sound": {
 			"description": "The namespace and ID of the sound to play.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"volume": {
 			"description": "The volume of the sound.",

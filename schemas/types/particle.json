@@ -3,20 +3,23 @@
 	"title": "Particle",
 	"anyOf": [
 		{
-			"type": "string"
-		},
-		{
 			"type": "object",
+			"required": [
+				"type"
+			],
 			"properties": {
 				"type": {
 					"description": "The namespace and ID of the particle type.",
-					"type": "string"
+					"$ref": "./identifier.json"
 				},
 				"params": {
 					"description": "The additional parameter for the particle type.",
 					"type": "string"
 				}
 			}
+		},
+		{
+			"$ref": "./identifier.json"
 		}
 	]
 }

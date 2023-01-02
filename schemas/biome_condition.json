@@ -8,8 +8,8 @@
 	],
 	"properties": {
 		"type": {
-			"description": "Biome Condition Types operate on a Biome.",
-			"type": "string"
+			"description": "The ID of the Biome Condition",
+			"$ref": "./types/identifier.json"
 		},
 		"inverted": {
 			"description": "If true, the condition acts inverted.",

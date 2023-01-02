@@ -8,4 +8,4 @@ type: object
 properties:
   effect:
     description: If specified, the status effect with this namespace and ID will be cleared. If not specified, all status effects will be cleared.
-    type: string
+    $ref: ../../types/identifier.json

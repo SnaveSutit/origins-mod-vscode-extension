@@ -6,7 +6,10 @@
 	"properties": {
 		"powers": {
 			"description": "The namespace and IDs of the powers this origin should have.",
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "./types/identifier.json"
+			}
 		},
 		"icon": {
 			"description": "The item stack which is displayed as the icon for the origin in the top-left corner of the choose/view origin screen.",
@@ -15,7 +18,7 @@
 					"$ref": "./types/item_stack.json"
 				},
 				{
-					"type": "string"
+					"$ref": "./types/identifier.json"
 				}
 			]
 		},
@@ -56,11 +59,11 @@
 				"properties": {
 					"condition": {
 						"description": "The namespace and ID of an advancement which should trigger this upgrade.",
-						"type": "string"
+						"$ref": "./types/identifier.json"
 					},
 					"origin": {
 						"description": "The namespace and ID of an origin the origin with this upgrade should upgrade to.",
-						"type": "string"
+						"$ref": "./types/identifier.json"
 					},
 					"announcement": {
 						"description": "A text which will show up in the local chat of the player in a pretty color.\nIf none is specified, there won't be a message.",

@@ -11,4 +11,4 @@ required:
 properties:
   predicate:
     description: The namespace and ID of the predicate the entity needs to pass.
-    type: string
+    $ref: ../../types/identifier.json

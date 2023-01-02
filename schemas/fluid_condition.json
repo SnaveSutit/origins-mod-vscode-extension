@@ -8,8 +8,8 @@
 	],
 	"properties": {
 		"type": {
-			"description": "The identifier of the fluid condition to use",
-			"type": "string"
+			"description": "The ID of the Fluid Condition to use",
+			"$ref": "./types/identifier.json"
 		},
 		"inverted": {
 			"description": "If true, the condition acts inverted.",

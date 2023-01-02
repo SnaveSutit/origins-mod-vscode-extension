@@ -1,13 +1,17 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Particle
 anyOf:
-  - type: string
   - type: object
+    required:
+      - type
     properties:
       type:
         description: The namespace and ID of the particle type.
-        type: string
+        $ref: ./identifier.json
 
+      # TODO: Add mappings for each particle's additional parameters
       params:
         description: The additional parameter for the particle type.
         type: string
+
+  - $ref: ./identifier.json

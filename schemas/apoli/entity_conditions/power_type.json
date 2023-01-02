@@ -9,7 +9,7 @@
 	"properties": {
 		"power_type": {
 			"description": "The namespace and ID of the Power Type of a power the entity has.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

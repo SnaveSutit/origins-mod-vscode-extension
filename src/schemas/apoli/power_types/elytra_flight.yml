@@ -14,4 +14,4 @@ properties:
 
   texture_location:
     description: If specified, this will be the texture used by the Elytra granted by this power.
-    type: string
+    $ref: ../../types/identifier.json

@@ -6,13 +6,13 @@
 	"properties": {
 		"status_effect": {
 			"description": "If specified, only this status effect will have its duration modified upon being received.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"status_effects": {
 			"description": "If specified, only these status effects will have its duration modified upon being received.",
 			"type": "array",
 			"items": {
-				"type": "string"
+				"$ref": "../../types/identifier.json"
 			}
 		},
 		"modifier": {

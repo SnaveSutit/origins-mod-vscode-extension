@@ -9,7 +9,7 @@
 	"properties": {
 		"tag": {
 			"description": "ID of the tag which the fluid should be in to pass the check.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

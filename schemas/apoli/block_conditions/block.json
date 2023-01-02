@@ -9,7 +9,7 @@
 	"properties": {
 		"block": {
 			"description": "The namespace and ID of the block that this block needs to be to pass the check.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

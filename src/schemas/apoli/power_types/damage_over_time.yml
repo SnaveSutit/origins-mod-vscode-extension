@@ -31,7 +31,7 @@ properties:
 
   protection_enchantment:
     description: If set, the total amount of levels of this enchantment will be counted on the player's armor to increase the onset_delay.
-    type: string
+    $ref: ../../types/identifier.json
 
   protection_effectiveness:
     description: If protection_enchantment is set, this multiplier scales how effective it will be (1.0 = time the onset_delay is increased is the same as with Hydrophobia and Water Protection).

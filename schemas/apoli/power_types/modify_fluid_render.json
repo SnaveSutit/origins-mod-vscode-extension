@@ -17,7 +17,7 @@
 		},
 		"fluid": {
 			"description": "The namespace and ID of the replacement fluid.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

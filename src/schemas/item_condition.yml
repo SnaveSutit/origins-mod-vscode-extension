@@ -6,8 +6,8 @@ required:
   - type
 properties:
   type:
-    description: The identifier of the item condition to use
-    type: string
+    description: The ID of the Item Condition to use
+    $ref: ./types/identifier.json
 
   inverted:
     description: If true, the condition acts inverted.

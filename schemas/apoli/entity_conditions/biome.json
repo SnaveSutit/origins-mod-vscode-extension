@@ -6,13 +6,13 @@
 	"properties": {
 		"biome": {
 			"description": "If specified, only evaluate the condition to true if the biome the entity is in matches the specified namespace and ID.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"biomes": {
 			"description": "If specified, only evaluate the condition to true if the biome the entity is in matches one of the specified namespace and IDs.",
 			"type": "array",
 			"items": {
-				"type": "string"
+				"$ref": "../../types/identifier.json"
 			}
 		},
 		"condition": {

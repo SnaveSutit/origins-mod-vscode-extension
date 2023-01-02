@@ -12,8 +12,8 @@ properties:
     description: 'An object with "key": "value" pairs that determine which loot table ("key") will be replaced with a new loot table ("value").'
     type: object
     patternProperties:
-      '.+':
-        type: string
+      '^[^:]+:[^:]+$':
+        $ref: ../../types/identifier.json
 
   bientity_condition:
     description: If specified, the loot tables will only be replaced if this condition is fulfilled by either or both 'actor' and 'target' entities.

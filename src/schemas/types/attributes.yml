@@ -3,15 +3,15 @@ title: Attribute Identifier
 description: The namespace and ID of an attribute
 anyOf:
   - enum:
-      - generic.armor
-      - generic.armor_toughness
-      - generic.attack_damage
-      - generic.attack_knockback
-      - generic.attack_speed
-      - generic.flying_speed
-      - generic.follow_range
-      - generic.knockback_resistance
-      - generic.luck
-      - generic.max_health
-      - generic.movement_speed
-  - type: string
+      - minecraft:generic.armor
+      - minecraft:generic.armor_toughness
+      - minecraft:generic.attack_damage
+      - minecraft:generic.attack_knockback
+      - minecraft:generic.attack_speed
+      - minecraft:generic.flying_speed
+      - minecraft:generic.follow_range
+      - minecraft:generic.knockback_resistance
+      - minecraft:generic.luck
+      - minecraft:generic.max_health
+      - minecraft:generic.movement_speed
+  - $ref: ./identifier.json

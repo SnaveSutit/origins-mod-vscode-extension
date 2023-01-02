@@ -14,9 +14,6 @@
 			"items": {
 				"oneOf": [
 					{
-						"type": "string"
-					},
-					{
 						"type": "object",
 						"properties": {
 							"condition": {
@@ -27,10 +24,13 @@
 								"description": "Then namespace and IDs of the origins which should become available when the condition is fulfilled.",
 								"type": "array",
 								"items": {
-									"type": "string"
+									"$ref": "./types/identifier.json"
 								}
 							}
 						}
+					},
+					{
+						"$ref": "./types/identifier.json"
 					}
 				]
 			}
@@ -76,7 +76,7 @@
 		},
 		"default_origin": {
 			"description": "If set, the origin with this namespace and ID will automatically be chosen for a new player.\nIf an orb of origin is used later on, the player will be able to choose another origin then and the default_origin will not apply.\nCould for example be used to make all players start as human, and then use the orb as a progression item to select an origin.",
-			"type": "string"
+			"$ref": "./types/identifier.json"
 		},
 		"auto_choose": {
 			"description": "If set to true, this layer will automatically pick an origin for the player if only one option is available.\nThis also applies when an orb of origin is used.",

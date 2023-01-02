@@ -24,7 +24,7 @@ properties:
 
   sound:
     description: If specified, the sound event with this namespace and ID will be played when the power is triggered.
-    type: string
+    $ref: ../../types/identifier.json
 
   key:
     description: Which active key this power should respond to.

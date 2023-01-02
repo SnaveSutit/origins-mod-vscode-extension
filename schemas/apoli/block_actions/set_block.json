@@ -9,7 +9,7 @@
 	"properties": {
 		"block": {
 			"description": "The namespace and ID of the block to place.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		}
 	}
 }

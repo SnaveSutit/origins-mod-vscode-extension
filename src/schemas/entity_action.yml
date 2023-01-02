@@ -6,8 +6,8 @@ required:
   - type
 properties:
   type:
-    description: The ID of the item action to use
-    type: string
+    description: The ID of the Entity Action
+    $ref: ./types/identifier.json
 
 allOf:
   - $IMPORT:
@@ -34,3 +34,13 @@ allOf:
             oneOf:
               - const: 'apoli:$schemaName'
               - const: 'origins:$schemaName'
+
+  - $IMPORT:
+      a: true
+      path: ./src/schemas/skillful/entity_actions/
+      format: allOfIfThen
+      condition:
+        properties:
+          type:
+            oneOf:
+              - const: 'skillful:$schemaName'

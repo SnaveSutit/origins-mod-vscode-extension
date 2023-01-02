@@ -23,45 +23,67 @@
 		"Other"
 	],
 	"activationEvents": [
-		"workspaceContains:**/powers/**/*.json",
-		"workspaceContains:**/origins/**/*.json",
-		"workspaceContains:**/origin_layers/**/*.json"
+		"workspaceContains:**/data/*/powers/**/*.json",
+		"workspaceContains:**/data/*/origins/**/*.json",
+		"workspaceContains:**/data/*/origin_layers/**/*.json",
+		"workspaceContains:**/data/*/skill_trees/**/*.json",
+		"workspaceContains:**/data/*/keybindings/**/*.json"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"jsonValidation": [
 			{
 				"fileMatch": [
-					"**/origin_layers/**/*.json",
-					"**/origin_layers/**/*.yml"
+					"**/data/*/origin_layers/**/*.json",
+					"**/data/*/origin_layers/**/*.yml"
 				],
 				"url": "./schemas/origin_layers.json"
 			},
 			{
 				"fileMatch": [
-					"**/origins/**/*.json",
-					"**/origins/**/*.yml"
+					"**/data/*/origins/**/*.json",
+					"**/data/*/origins/**/*.yml"
 				],
 				"url": "./schemas/origin.json"
 			},
 			{
 				"fileMatch": [
-					"**/powers/**/*.json",
-					"**/powers/**/*.yml"
+					"**/data/*/powers/**/*.json",
+					"**/data/*/powers/**/*.yml"
 				],
 				"url": "./schemas/power.json"
+			},
+			{
+				"fileMatch": [
+					"**/data/*/skill_trees/**/*.json",
+					"**/data/*/skill_trees/**/*.yml"
+				],
+				"url": "./schemas/skill_tree.json"
+			},
+			{
+				"fileMatch": [
+					"**/data/*/keybindings/**/*.json",
+					"**/data/*/keybindings/**/*.yml"
+				],
+				"url": "./schemas/keybinding.json"
 			}
 		],
 		"configurationDefaults": {
 			"yaml.schemas": {
+				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/skill_tree.json": [
+					"**/data/*/skill_trees/**/*.yml"
+				],
 				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/power.json": [
-					"**/powers/**/*.yml"
+					"**/data/*/powers/**/*.yml"
 				],
 				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/origin.json": [
-					"**/origin/**/*.yml"
+					"**/data/*/origin/**/*.yml"
 				],
 				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/origin_layers.json": [
-					"**/origin_layers/**/*.yml"
+					"**/data/*/origin_layers/**/*.yml"
+				],
+				"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/keybinding.json": [
+					"**/data/*/keybindings/**/*.yml"
 				]
 			}
 		}

@@ -16,4 +16,4 @@ properties:
           - minecraft:overworld
           - minecraft:the_nether
           - minecraft:the_end
-      - type: string
+      - $ref: ../../types/identifier.json

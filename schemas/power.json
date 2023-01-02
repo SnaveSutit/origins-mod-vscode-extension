@@ -6,7 +6,7 @@
 	"properties": {
 		"type": {
 			"description": "The namespace and ID of the desired Power Type.",
-			"type": "string"
+			"$ref": "./types/identifier.json"
 		},
 		"name": {
 			"description": "The display name of the power.\nCan be a literal string or a translation key.",
@@ -45,6 +45,33 @@
 						"description": "The string to display when you hover over the icon.",
 						"type": "string"
 					}
+				}
+			}
+		},
+		"skill": {
+			"type": "object",
+			"description": "Defines the skill that unlocks this power when purchased. (Requires Skillful mod)",
+			"properties": {
+				"icon": {
+					"description": "The item which is displayed as the icon for the skill widget.",
+					"$ref": "./types/item_stack.json"
+				},
+				"parent": {
+					"description": "The skill identifier that will be the parent of this widget.",
+					"$ref": "./types/identifier.json"
+				},
+				"background": {
+					"description": "The ID of the texture that will be the background of the skill tree.",
+					"$ref": "./types/identifier.json"
+				},
+				"condition": {
+					"description": "Makes it so that the player can only buy the skill if they meet this condition.",
+					"$ref": "./entity_condition.json"
+				},
+				"cost": {
+					"description": "The amount of points that the player needs in order to purchase this skill.",
+					"type": "integer",
+					"default": 1
 				}
 			}
 		}

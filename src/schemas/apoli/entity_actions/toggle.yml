@@ -10,4 +10,4 @@ required:
 properties:
   power:
     description: The namespace and ID of the power that uses the Toggle (Power Type).
-    type: string
+    $ref: ../../types/identifier.json

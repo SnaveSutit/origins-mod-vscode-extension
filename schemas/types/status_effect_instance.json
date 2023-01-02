@@ -9,7 +9,7 @@
 	"properties": {
 		"effect": {
 			"description": "ID of the status effect.",
-			"type": "string"
+			"$ref": "./identifier.json"
 		},
 		"duration": {
 			"description": "Duration of the status effect in ticks.",

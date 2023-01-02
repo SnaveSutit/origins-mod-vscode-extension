@@ -11,8 +11,8 @@ required:
 properties:
   origin:
     description: The namespace and ID of the origin the player needs to have to pass the check.
-    type: string
+    $ref: ../../types/identifier.json
 
   layer:
     description: If specified, only evaluate the condition to true if the origin is from the specified origin layer.
-    type: string
+    $ref: ../../types/identifier.json

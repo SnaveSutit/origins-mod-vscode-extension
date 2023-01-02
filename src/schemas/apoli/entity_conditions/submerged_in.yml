@@ -15,4 +15,4 @@ properties:
       - enum:
           - minecraft:water
           - minecraft:lava
-      - type: string
+      - $ref: ../../types/identifier.json

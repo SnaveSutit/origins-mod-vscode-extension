@@ -12,7 +12,7 @@ required:
 properties:
   texture:
     description: The namespace and ID of the texture to use as an overlay.
-    type: string
+    $ref: ../../types/identifier.json
 
   strength:
     description: If the "texture" draw mode is used, it determines the alpha (transparency) value of the texture. If the "nausea" draw mode is used, it determines the value of how the texture is stretched (1.0 = screen size).

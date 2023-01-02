@@ -6,18 +6,18 @@
 	"properties": {
 		"event": {
 			"description": "If specified, the game event with this namespace and ID will be prevent from being emitted by the entity.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"events": {
 			"description": "If specified, the game events with these namespace and IDs will be prevent from being emitted by the entity.",
 			"type": "array",
 			"items": {
-				"type": "string"
+				"$ref": "../../types/identifier.json"
 			}
 		},
 		"tag": {
 			"description": "If specified, the game events inside game event tag will be prevented from being emitted by the entity.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"entity_action": {
 			"description": "If specified, this action will be executed on the entity upon preventing game events.",

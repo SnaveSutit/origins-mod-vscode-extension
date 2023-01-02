@@ -9,15 +9,15 @@
 	"properties": {
 		"dimension": {
 			"description": "The namespace and ID of the dimension the player should spawn in.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"biome": {
 			"description": "If specified, the player will only spawn in the biome that matches the specified namespace and ID.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"structure": {
 			"description": "If specified, the player will only spawn in the specified namespace and ID of the structure. The structure needs to generate in the specified dimension.",
-			"type": "string"
+			"$ref": "../../types/identifier.json"
 		},
 		"spawn_strategy": {
 			"description": "Determines whether the player should spawn near the world spawnpoint (0, 0) of the dimension (\"center\") or near the coordinates of the Overworld spawnpoint (whilst considering the value of the dimension_distance_multiplier field) (\"default\").",
