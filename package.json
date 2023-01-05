@@ -3,7 +3,7 @@
 	"icon": "icon.png",
 	"displayName": "origins-mod-helper",
 	"description": "Adds json schemas and other useful things for origins mod origin development",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"publisher": "snavesutit",
 	"author": {
 		"name": "Titus Evans",
