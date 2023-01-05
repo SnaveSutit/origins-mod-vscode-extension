@@ -30,9 +30,9 @@ then:
         condition:
           properties:
             type:
-              oneOf:
-                - const: 'apoli:$schemaName'
-                - const: 'origins:$schemaName'
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
 
     - $IMPORT:
         path: ./src/schemas/apoli/meta_actions/
@@ -43,9 +43,9 @@ then:
         condition:
           properties:
             type:
-              oneOf:
-                - const: 'apoli:$schemaName'
-                - const: 'origins:$schemaName'
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
 
     - $IMPORT:
         path: ./src/schemas/eggolib/meta_actions/
@@ -56,4 +56,4 @@ then:
         condition:
           properties:
             type:
-              - const: 'eggolib:$schemaName'
+              const: eggolib:$schemaName

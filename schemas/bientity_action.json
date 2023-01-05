@@ -30,13 +30,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:actor_action"
-								},
-								{
-									"const": "origins:actor_action"
-								}
+							"enum": [
+								"apoli:actor_action",
+								"origins:actor_action"
 							]
 						}
 					}
@@ -49,13 +45,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:add_velocity"
-								},
-								{
-									"const": "origins:add_velocity"
-								}
+							"enum": [
+								"apoli:add_velocity",
+								"origins:add_velocity"
 							]
 						}
 					}
@@ -68,13 +60,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:damage"
-								},
-								{
-									"const": "origins:damage"
-								}
+							"enum": [
+								"apoli:damage",
+								"origins:damage"
 							]
 						}
 					}
@@ -87,13 +75,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:invert"
-								},
-								{
-									"const": "origins:invert"
-								}
+							"enum": [
+								"apoli:invert",
+								"origins:invert"
 							]
 						}
 					}
@@ -106,13 +90,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:mount"
-								},
-								{
-									"const": "origins:mount"
-								}
+							"enum": [
+								"apoli:mount",
+								"origins:mount"
 							]
 						}
 					}
@@ -125,13 +105,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:set_in_love"
-								},
-								{
-									"const": "origins:set_in_love"
-								}
+							"enum": [
+								"apoli:set_in_love",
+								"origins:set_in_love"
 							]
 						}
 					}
@@ -144,13 +120,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:tame"
-								},
-								{
-									"const": "origins:tame"
-								}
+							"enum": [
+								"apoli:tame",
+								"origins:tame"
 							]
 						}
 					}
@@ -163,13 +135,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:target_action"
-								},
-								{
-									"const": "origins:target_action"
-								}
+							"enum": [
+								"apoli:target_action",
+								"origins:target_action"
 							]
 						}
 					}
@@ -182,13 +150,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:and"
-								},
-								{
-									"const": "origins:and"
-								}
+							"enum": [
+								"apoli:and",
+								"origins:and"
 							]
 						}
 					}
@@ -225,13 +189,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:chance"
-								},
-								{
-									"const": "origins:chance"
-								}
+							"enum": [
+								"apoli:chance",
+								"origins:chance"
 							]
 						}
 					}
@@ -275,13 +235,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:choice"
-								},
-								{
-									"const": "origins:choice"
-								}
+							"enum": [
+								"apoli:choice",
+								"origins:choice"
 							]
 						}
 					}
@@ -326,13 +282,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:delay"
-								},
-								{
-									"const": "origins:delay"
-								}
+							"enum": [
+								"apoli:delay",
+								"origins:delay"
 							]
 						}
 					}
@@ -372,13 +324,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:if_else"
-								},
-								{
-									"const": "origins:if_else"
-								}
+							"enum": [
+								"apoli:if_else",
+								"origins:if_else"
 							]
 						}
 					}
@@ -421,13 +369,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:if_else_list"
-								},
-								{
-									"const": "origins:if_else_list"
-								}
+							"enum": [
+								"apoli:if_else_list",
+								"origins:if_else_list"
 							]
 						}
 					}
@@ -476,13 +420,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:nothing"
-								},
-								{
-									"const": "origins:nothing"
-								}
+							"enum": [
+								"apoli:nothing",
+								"origins:nothing"
 							]
 						}
 					}
@@ -511,13 +451,9 @@
 				"if": {
 					"properties": {
 						"type": {
-							"oneOf": [
-								{
-									"const": "apoli:side"
-								},
-								{
-									"const": "origins:side"
-								}
+							"enum": [
+								"apoli:side",
+								"origins:side"
 							]
 						}
 					}
@@ -557,11 +493,9 @@
 			{
 				"if": {
 					"properties": {
-						"type": [
-							{
-								"const": "eggolib:loop"
-							}
-						]
+						"type": {
+							"const": "eggolib:loop"
+						}
 					}
 				},
 				"then": {
