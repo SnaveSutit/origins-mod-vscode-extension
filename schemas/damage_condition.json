@@ -293,11 +293,9 @@
 			{
 				"if": {
 					"properties": {
-						"type": [
-							{
-								"const": "eggolib:chance"
-							}
-						]
+						"type": {
+							"const": "eggolib:chance"
+						}
 					}
 				},
 				"then": {
@@ -330,11 +328,9 @@
 			{
 				"if": {
 					"properties": {
-						"type": [
-							{
-								"const": "extraorigins:crossbow_arrow"
-							}
-						]
+						"type": {
+							"const": "extraorigins:crossbow_arrow"
+						}
 					}
 				},
 				"then": {
@@ -344,11 +340,9 @@
 			{
 				"if": {
 					"properties": {
-						"type": [
-							{
-								"const": "eggolib:projectile"
-							}
-						]
+						"type": {
+							"const": "eggolib:projectile"
+						}
 					}
 				},
 				"then": {

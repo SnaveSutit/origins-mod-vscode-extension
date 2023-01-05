@@ -56,7 +56,7 @@ then:
         condition:
           properties:
             type:
-              - const: eggolib:$schemaName
+              const: eggolib:$schemaName
 
     - $IMPORT:
         path: ./src/schemas/extraorigins/damage_conditions/
@@ -64,7 +64,7 @@ then:
         condition:
           properties:
             type:
-              - const: extraorigins:$schemaName
+              const: extraorigins:$schemaName
 
     - $IMPORT:
         path: ./src/schemas/eggolib/damage_conditions/
@@ -72,4 +72,4 @@ then:
         condition:
           properties:
             type:
-              - const: eggolib:$schemaName
+              const: eggolib:$schemaName
