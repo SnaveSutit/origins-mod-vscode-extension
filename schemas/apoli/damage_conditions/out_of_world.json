@@ -1,8 +1,17 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Damage Condition",
-	"description": "Damage Condition Types operate on a combination of DamageSource and Float, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a damage_condition object field.\nType: origins:out_of_world\n- Checks whether the damage source is out of world.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\damage_conditions\\out_of_world.json",
 	"type": "object",
-	"required": null,
-	"properties": null
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "apoli:out_of_world\nChecks whether the damage source is out of world.\nDamage Condition Types operate on a combination of DamageSource and Float, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a damage_condition object field.",
+			"markdownDescription": "### `apoli:out_of_world`\nChecks whether the damage source is out of world.\n## Damage Condition Type\nDamage Condition Types operate on a combination of DamageSource and Float, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a damage_condition object field.\n\n[Damage Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/damage_Condition_types/)",
+			"enum": [
+				"apoli:out_of_world",
+				"origins:out_of_world"
+			]
+		}
+	}
 }

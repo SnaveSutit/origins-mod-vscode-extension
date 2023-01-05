@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:time_of_day'\n- Checks the current day time ticks of the world.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\time_of_day.json",
 	"type": "object",
 	"required": [
+		"type",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:time_of_day\nChecks the current day time ticks of the world.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:time_of_day`\nChecks the current day time ticks of the world.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:time_of_day",
+				"origins:time_of_day"
+			]
+		},
 		"comparison": {
 			"description": "How the current day time ticks of the world should be compared to the specified value.",
 			"$ref": "../../types/comparison.json"

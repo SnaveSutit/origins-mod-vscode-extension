@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Bi-entity Condition
-description: |-
-  Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
-  Type: 'origins:merge_nbt'
-  - Merges the specified NBT to the item's NBT.
 type: object
 required:
+  - type
   - nbt
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Merges the specified NBT to the item's NBT.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Merges the specified NBT to the item's NBT.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   nbt:
     description: The NBT to merge to the item's NBT.
     type: string

@@ -1,0 +1,27 @@
+{
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\entity_conditions\\in_screen.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "eggolib:in_screen\nChecks if the player has any or specific screen open.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `eggolib:in_screen`\nChecks if the player has any or specific screen open.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"const": "eggolib:in_screen"
+		},
+		"screen": {
+			"description": "If specified, the condition will evaluate to true if the player's current screen matches this screen. See In-Game Screen Class (Class Data Registry) for possible values.",
+			"markdownDescription": "If specified, the condition will evaluate to true if the player's current screen matches this screen.\n\nSee [In-Game Screen Class (Class Data Registry)](https://eggolib.github.io/1.3.x/misc/class_data_registries/in-game_screen_class/) for possible values.",
+			"$ref": "../../types/screen_type.json"
+		},
+		"screens": {
+			"description": "If specified, the condition will evaluate to true if the player's current screen matches any of these screens. See In-Game Screen Class (Class Data Registry) for possible values.",
+			"markdownDescription": "If specified, the condition will evaluate to true if the player's current screen matches any of these screens.\n\nSee [In-Game Screen Class (Class Data Registry)](https://eggolib.github.io/1.3.x/misc/class_data_registries/in-game_screen_class/) for possible values.",
+			"type": "array",
+			"items": {
+				"$ref": "../../types/screen_type.json"
+			}
+		}
+	}
+}

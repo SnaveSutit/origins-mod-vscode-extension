@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Meta Bi-entity Action Target Action
-description: |-
-  Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.
-  Type: 'origins:target_action'
-  - Executes an Entity Action Type on the target entity.
 type: object
 required:
+  - type
   - action
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes an Entity Action Type on the target entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes an Entity Action Type on the target entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   action:
     description: The entity action type to execute on the target entity.
     $ref: ../../entity_action.json

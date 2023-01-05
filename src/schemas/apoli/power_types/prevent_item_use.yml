@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:prevent_item_use'
-  - Prevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Prevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Prevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   item_condition:
     description: If specified, only items that fulfills this condition will be prevented from being used.
     $ref: ../../item_condition.json

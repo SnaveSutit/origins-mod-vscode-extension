@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Block Action",
-	"description": "Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.\nType: 'origins:explode'\n- Summons an explosion at the position of the block.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_actions\\explode.json",
 	"type": "object",
 	"required": [
+		"type",
 		"power"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:explode\nSummons an explosion at the position of the block.\nBlock Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.",
+			"markdownDescription": "### `apoli:explode`\nSummons an explosion at the position of the block.\n## Block Action Type\nBlock Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.\n\n[Block Action Types Documentation](https://origins.readthedocs.io/en/latest/types/block_action_types/)",
+			"enum": [
+				"apoli:explode",
+				"origins:explode"
+			]
+		},
 		"power": {
 			"description": "Determines the power of the explosion.",
 			"type": "number"

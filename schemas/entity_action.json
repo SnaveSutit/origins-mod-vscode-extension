@@ -1,1144 +1,1191 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Action",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\entity_action.json",
+	"title": "Entity Action Type",
 	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+	"markdownDescription": "## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
 	"type": "object",
 	"required": [
 		"type"
 	],
 	"properties": {
 		"type": {
-			"description": "The ID of the Entity Action",
 			"$ref": "./types/identifier.json"
 		}
 	},
-	"allOf": [
-		{
-			"allOf": [
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:add_velocity"
-									},
-									{
-										"const": "origins:add_velocity"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/add_velocity.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:add_xp"
-									},
-									{
-										"const": "origins:add_xp"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/add_xp.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:apply_effect"
-									},
-									{
-										"const": "origins:apply_effect"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/apply_effect.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:area_of_effect"
-									},
-									{
-										"const": "origins:area_of_effect"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/area_of_effect.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:block_action_at"
-									},
-									{
-										"const": "origins:block_action_at"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/block_action_at.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:change_resource"
-									},
-									{
-										"const": "origins:change_resource"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/change_resource.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:clear_effect"
-									},
-									{
-										"const": "origins:clear_effect"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/clear_effect.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:crafting_table"
-									},
-									{
-										"const": "origins:crafting_table"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/crafting_table.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:damage"
-									},
-									{
-										"const": "origins:damage"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/damage.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:dismount"
-									},
-									{
-										"const": "origins:dismount"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/dismount.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:drop_inventory"
-									},
-									{
-										"const": "origins:drop_inventory"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/drop_inventory.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:dummy"
-									},
-									{
-										"const": "origins:dummy"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/dummy.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:emit_game_event"
-									},
-									{
-										"const": "origins:emit_game_event"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/emit_game_event.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:ender_chest"
-									},
-									{
-										"const": "origins:ender_chest"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/ender_chest.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:equipped_item_action"
-									},
-									{
-										"const": "origins:equipped_item_action"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/equipped_item_action.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:execute_command"
-									},
-									{
-										"const": "origins:execute_command"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/execute_command.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:exhaust"
-									},
-									{
-										"const": "origins:exhaust"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/exhaust.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:explode"
-									},
-									{
-										"const": "origins:explode"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/explode.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:extinguish"
-									},
-									{
-										"const": "origins:extinguish"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/extinguish.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:feed"
-									},
-									{
-										"const": "origins:feed"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/feed.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:gain_air"
-									},
-									{
-										"const": "origins:gain_air"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/gain_air.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:give"
-									},
-									{
-										"const": "origins:give"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/give.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:grant_power"
-									},
-									{
-										"const": "origins:grant_power"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/grant_power.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:heal"
-									},
-									{
-										"const": "origins:heal"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/heal.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:modify_death_ticks"
-									},
-									{
-										"const": "origins:modify_death_ticks"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/modify_death_ticks.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:modify_inventory"
-									},
-									{
-										"const": "origins:modify_inventory"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/modify_inventory.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:modify_resource"
-									},
-									{
-										"const": "origins:modify_resource"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/modify_resource.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:modify_stat"
-									},
-									{
-										"const": "origins:modify_stat"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/modify_stat.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:passenger_action"
-									},
-									{
-										"const": "origins:passenger_action"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/passenger_action.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:play_sound"
-									},
-									{
-										"const": "origins:play_sound"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/play_sound.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:raycast"
-									},
-									{
-										"const": "origins:raycast"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/raycast.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:replace_inventory"
-									},
-									{
-										"const": "origins:replace_inventory"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/replace_inventory.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:revoke_power"
-									},
-									{
-										"const": "origins:revoke_power"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/revoke_power.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:riding_action"
-									},
-									{
-										"const": "origins:riding_action"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/riding_action.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:set_fall_distance"
-									},
-									{
-										"const": "origins:set_fall_distance"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/set_fall_distance.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:set_on_fire"
-									},
-									{
-										"const": "origins:set_on_fire"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/set_on_fire.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:spawn_effect_cloud"
-									},
-									{
-										"const": "origins:spawn_effect_cloud"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/spawn_effect_cloud.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:spawn_entity"
-									},
-									{
-										"const": "origins:spawn_entity"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/spawn_entity.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:spawn_particles"
-									},
-									{
-										"const": "origins:spawn_particles"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/spawn_particles.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:swing_hand"
-									},
-									{
-										"const": "origins:swing_hand"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/swing_hand.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:toggle"
-									},
-									{
-										"const": "origins:toggle"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/toggle.json"
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:trigger_cooldown"
-									},
-									{
-										"const": "origins:trigger_cooldown"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$ref": "apoli/entity_actions/trigger_cooldown.json"
-					}
-				}
-			]
+	"if": {
+		"required": [
+			"type"
+		]
+	},
+	"then": {
+		"properties": {
+			"inverted": {
+				"description": "If true, the condition acts inverted.",
+				"type": "boolean",
+				"default": false
+			}
 		},
-		{
-			"allOf": [
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:and"
-									},
-									{
-										"const": "origins:and"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-						"title": "Meta Action And",
-						"description": "Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.\nType: 'origins:and'\n- Executes all provided actions in order.",
-						"type": "object",
-						"required": [
-							"actions"
-						],
-						"properties": {
-							"actions": {
-								"description": "These actions will be executed one after the other (but in the same tick).",
-								"type": "array",
-								"items": {
-									"$ref": "./entity_action.json"
-								}
-							}
+		"allOf": [
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:add_velocity",
+								"origins:add_velocity"
+							]
 						}
 					}
 				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:chance"
-									},
-									{
-										"const": "origins:chance"
-									}
-								]
-							}
+				"then": {
+					"$ref": "apoli/entity_actions/add_velocity.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:add_xp",
+								"origins:add_xp"
+							]
 						}
-					},
-					"then": {
-						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-						"title": "Meta Action Chance",
-						"description": "Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.\nType: 'origins:chance'\n- Executes the provided action only with a specific chance.",
-						"type": "object",
-						"required": [
-							"action"
-						],
-						"properties": {
-							"action": {
-								"description": "The action which might be executed.",
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/add_xp.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:apply_effect",
+								"origins:apply_effect"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/apply_effect.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:area_of_effect",
+								"origins:area_of_effect"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/area_of_effect.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:block_action_at",
+								"origins:block_action_at"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/block_action_at.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:change_resource",
+								"origins:change_resource"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/change_resource.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:clear_effect",
+								"origins:clear_effect"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/clear_effect.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:crafting_table",
+								"origins:crafting_table"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/crafting_table.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:damage",
+								"origins:damage"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/damage.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:dismount",
+								"origins:dismount"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/dismount.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:drop_inventory",
+								"origins:drop_inventory"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/drop_inventory.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:emit_game_event",
+								"origins:emit_game_event"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/emit_game_event.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:ender_chest",
+								"origins:ender_chest"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/ender_chest.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:equipped_item_action",
+								"origins:equipped_item_action"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/equipped_item_action.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:execute_command",
+								"origins:execute_command"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/execute_command.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:exhaust",
+								"origins:exhaust"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/exhaust.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:explode",
+								"origins:explode"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/explode.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:extinguish",
+								"origins:extinguish"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/extinguish.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:feed",
+								"origins:feed"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/feed.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:gain_air",
+								"origins:gain_air"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/gain_air.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:give",
+								"origins:give"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/give.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:grant_power",
+								"origins:grant_power"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/grant_power.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:heal",
+								"origins:heal"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/heal.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:modify_death_ticks",
+								"origins:modify_death_ticks"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/modify_death_ticks.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:modify_inventory",
+								"origins:modify_inventory"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/modify_inventory.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:modify_resource",
+								"origins:modify_resource"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/modify_resource.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:modify_stat",
+								"origins:modify_stat"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/modify_stat.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:passenger_action",
+								"origins:passenger_action"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/passenger_action.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:play_sound",
+								"origins:play_sound"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/play_sound.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:raycast",
+								"origins:raycast"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/raycast.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:replace_inventory",
+								"origins:replace_inventory"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/replace_inventory.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:revoke_power",
+								"origins:revoke_power"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/revoke_power.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:riding_action",
+								"origins:riding_action"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/riding_action.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:set_fall_distance",
+								"origins:set_fall_distance"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/set_fall_distance.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:set_on_fire",
+								"origins:set_on_fire"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/set_on_fire.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:spawn_effect_cloud",
+								"origins:spawn_effect_cloud"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/spawn_effect_cloud.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:spawn_entity",
+								"origins:spawn_entity"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/spawn_entity.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:spawn_particles",
+								"origins:spawn_particles"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/spawn_particles.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:swing_hand",
+								"origins:swing_hand"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/swing_hand.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:toggle",
+								"origins:toggle"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/toggle.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:trigger_cooldown",
+								"origins:trigger_cooldown"
+							]
+						}
+					}
+				},
+				"then": {
+					"$ref": "apoli/entity_actions/trigger_cooldown.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:and",
+								"origins:and"
+							]
+						}
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\and.json",
+					"type": "object",
+					"required": [
+						"type",
+						"actions"
+					],
+					"properties": {
+						"type": {
+							"description": "apoli:and\nExecutes all provided actions in order.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `apoli:and`\nExecutes all provided actions in order.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"enum": [
+								"apoli:and",
+								"origins:and"
+							]
+						},
+						"actions": {
+							"description": "These actions will be executed one after the other (but in the same tick).",
+							"type": "array",
+							"items": {
 								"$ref": "./entity_action.json"
-							},
-							"chance": {
-								"description": "The chance that the action will execute, from 0 to 1. (E.g. 0.1 means 10% chance, 0.95 means 95% chance).",
-								"type": "number",
-								"minimum": 0,
-								"maximum": 1
-							},
-							"fail_action": {
-								"description": "The action to execute if the specified action in the action field is not executed.",
-								"$ref": "./entity_action.json"
-							}
-						}
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:choice"
-									},
-									{
-										"const": "origins:choice"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-						"title": "Meta Action Choice",
-						"description": "Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.\nType: 'origins:choice'\n- Executes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.",
-						"type": "object",
-						"required": [
-							"actions"
-						],
-						"properties": {
-							"actions": {
-								"description": "Each object has to have an element Action and a weight Integer.",
-								"type": "array",
-								"items": {
-									"type": "object",
-									"properties": {
-										"element": {
-											"$ref": "./entity_action.json"
-										},
-										"weight": {
-											"type": "integer"
-										}
-									}
-								}
-							}
-						}
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:delay"
-									},
-									{
-										"const": "origins:delay"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-						"title": "Meta Action Delay",
-						"description": "Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.\nType: 'origins:delay'\n- Executes the provided action after a set amount of ticks.",
-						"type": "object",
-						"required": [
-							"action",
-							"ticks"
-						],
-						"properties": {
-							"action": {
-								"description": "The action which will be executed after the delay.",
-								"$ref": "./entity_action.json"
-							},
-							"ticks": {
-								"description": "The amount of ticks until the action is executed.",
-								"type": "integer",
-								"minimum": 1
-							}
-						}
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:if_else"
-									},
-									{
-										"const": "origins:if_else"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-						"title": "Meta Action If Else",
-						"description": "Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.\nType: 'origins:if_else'\n- Executes an action only if a condition holds, and optionally executes another action when it doesn't hold.",
-						"type": "object",
-						"required": [
-							"condition",
-							"if_action"
-						],
-						"properties": {
-							"condition": {
-								"description": "A condition based on the type of action.",
-								"$ref": "./entity_condition.json"
-							},
-							"if_action": {
-								"description": "The action which is executed when the condition evaluates to true.",
-								"$ref": "./entity_action.json"
-							},
-							"else_action": {
-								"description": "If present, this action will be executed when the condition evaluates to false.",
-								"$ref": "./entity_action.json"
-							}
-						}
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:if_else_list"
-									},
-									{
-										"const": "origins:if_else_list"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-						"title": "Meta Action If Else List",
-						"description": "Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.\nType: 'origins:if_else_list'\n- Checks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested If-Else (Meta Action Type).",
-						"type": "object",
-						"required": [
-							"actions"
-						],
-						"properties": {
-							"actions": {
-								"description": "Each object has to have an action Action Type object and a condition Condition Type object.",
-								"type": "array",
-								"items": {
-									"type": "object",
-									"required": [
-										"action",
-										"condition"
-									],
-									"properties": {
-										"condition": {
-											"$ref": "./entity_condition.json"
-										},
-										"action": {
-											"$ref": "./entity_action.json"
-										}
-									}
-								}
-							}
-						}
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:nothing"
-									},
-									{
-										"const": "origins:nothing"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-						"title": "Meta Action Nothing",
-						"description": "Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.\nType: 'origins:nothing'\n- Does nothing. Can be used as a backup in case an action is not optional in some place.",
-						"type": "object",
-						"properties": null
-					}
-				},
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "apoli:side"
-									},
-									{
-										"const": "origins:side"
-									}
-								]
-							}
-						}
-					},
-					"then": {
-						"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-						"title": "Meta Action Side",
-						"description": "Meta Action Types are independent of the type they operate on. They basically combine or modify other action types. The actions which are modified have to be of the type the field of the meta action type requires. For example, if you have a field which requires an Entity Action Type and you insert a Delay (Meta Action Type), the action type you need to provide inside that meta action type will have to be an Entity Action Type as well.\nType: 'origins:side'\n- Executes the specified action type on the specified \"side\".",
-						"type": "object",
-						"required": [
-							"action"
-						],
-						"properties": {
-							"action": {
-								"description": "The action to execute.",
-								"$ref": "./entity_action.json"
-							},
-							"side": {
-								"description": "Determines where to execute the specified action type. Accepts \"client\" or \"server\"",
-								"enum": [
-									"client",
-									"server"
-								]
 							}
 						}
 					}
 				}
-			]
-		},
-		{
-			"allOf": [
-				{
-					"if": {
-						"properties": {
-							"type": {
-								"oneOf": [
-									{
-										"const": "skillful:add_skill_points"
-									}
-								]
-							}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:chance",
+								"origins:chance"
+							]
 						}
-					},
-					"then": {
-						"$ref": "skillful/entity_actions/add_skill_points.json"
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\chance.json",
+					"type": "object",
+					"required": [
+						"type",
+						"action"
+					],
+					"properties": {
+						"type": {
+							"description": "apoli:chance\nExecutes the provided action only with a specific chance.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `apoli:chance`\nExecutes the provided action only with a specific chance.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"enum": [
+								"apoli:chance",
+								"origins:chance"
+							]
+						},
+						"action": {
+							"description": "The action which might be executed.",
+							"$ref": "./entity_action.json"
+						},
+						"chance": {
+							"description": "The chance that the action will execute, from 0 to 1. (E.g. 0.1 means 10% chance, 0.95 means 95% chance).",
+							"type": "number",
+							"minimum": 0,
+							"maximum": 1
+						},
+						"fail_action": {
+							"description": "The action to execute if the specified action in the action field is not executed.",
+							"$ref": "./entity_action.json"
+						}
 					}
 				}
-			]
-		}
-	]
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:choice",
+								"origins:choice"
+							]
+						}
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\choice.json",
+					"type": "object",
+					"required": [
+						"type",
+						"actions"
+					],
+					"properties": {
+						"type": {
+							"description": "apoli:choice\nExecutes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `apoli:choice`\nExecutes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"enum": [
+								"apoli:choice",
+								"origins:choice"
+							]
+						},
+						"actions": {
+							"description": "Each object has to have an element Action and a weight Integer.",
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"element": {
+										"$ref": "./entity_action.json"
+									},
+									"weight": {
+										"type": "integer"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:delay",
+								"origins:delay"
+							]
+						}
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\delay.json",
+					"type": "object",
+					"required": [
+						"type",
+						"action",
+						"ticks"
+					],
+					"properties": {
+						"type": {
+							"description": "apoli:delay\nExecutes the provided action after a set amount of ticks.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `apoli:delay`\nExecutes the provided action after a set amount of ticks.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"enum": [
+								"apoli:delay",
+								"origins:delay"
+							]
+						},
+						"action": {
+							"description": "The action which will be executed after the delay.",
+							"$ref": "./entity_action.json"
+						},
+						"ticks": {
+							"description": "The amount of ticks until the action is executed.",
+							"type": "integer",
+							"minimum": 1
+						}
+					}
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:if_else",
+								"origins:if_else"
+							]
+						}
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\if_else.json",
+					"type": "object",
+					"required": [
+						"type",
+						"condition",
+						"if_action"
+					],
+					"properties": {
+						"type": {
+							"description": "apoli:if_else\nExecutes an action only if a condition holds, and optionally executes another action when it doesn't hold.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `apoli:if_else`\nExecutes an action only if a condition holds, and optionally executes another action when it doesn't hold.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"enum": [
+								"apoli:if_else",
+								"origins:if_else"
+							]
+						},
+						"condition": {
+							"description": "A condition based on the type of action.",
+							"$ref": "./entity_condition.json"
+						},
+						"if_action": {
+							"description": "The action which is executed when the condition evaluates to true.",
+							"$ref": "./entity_action.json"
+						},
+						"else_action": {
+							"description": "If present, this action will be executed when the condition evaluates to false.",
+							"$ref": "./entity_action.json"
+						}
+					}
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:if_else_list",
+								"origins:if_else_list"
+							]
+						}
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\if_else_list.json",
+					"type": "object",
+					"required": [
+						"type",
+						"actions"
+					],
+					"properties": {
+						"type": {
+							"description": "apoli:if_else_list\nChecks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested If-Else (Meta Action Type).\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `apoli:if_else_list`\nChecks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested If-Else (Meta Action Type).\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"enum": [
+								"apoli:if_else_list",
+								"origins:if_else_list"
+							]
+						},
+						"actions": {
+							"description": "Each object has to have an action Action Type object and a condition Condition Type object.",
+							"type": "array",
+							"items": {
+								"type": "object",
+								"required": [
+									"action",
+									"condition"
+								],
+								"properties": {
+									"condition": {
+										"$ref": "./entity_condition.json"
+									},
+									"action": {
+										"$ref": "./entity_action.json"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:nothing",
+								"origins:nothing"
+							]
+						}
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\nothing.json",
+					"type": "object",
+					"required": [
+						"type"
+					],
+					"properties": {
+						"type": {
+							"description": "apoli:nothing\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `apoli:nothing`\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"enum": [
+								"apoli:nothing",
+								"origins:nothing"
+							]
+						}
+					}
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"enum": [
+								"apoli:side",
+								"origins:side"
+							]
+						}
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\side.json",
+					"type": "object",
+					"required": [
+						"type",
+						"action"
+					],
+					"properties": {
+						"type": {
+							"description": "apoli:side\nExecutes the specified action type on the specified \"side\".\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `apoli:side`\nExecutes the specified action type on the specified \"side\".\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"enum": [
+								"apoli:side",
+								"origins:side"
+							]
+						},
+						"action": {
+							"description": "The action to execute.",
+							"$ref": "./entity_action.json"
+						},
+						"side": {
+							"description": "Determines where to execute the specified action type. Accepts \"client\" or \"server\"",
+							"enum": [
+								"client",
+								"server"
+							]
+						}
+					}
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "skillful:add_skill_points"
+						}
+					}
+				},
+				"then": {
+					"$ref": "skillful/entity_actions/add_skill_points.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:calculate_resource"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/calculate_resource.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:change_health"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/change_health.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:change_insomnia_ticks"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/change_insomnia_ticks.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:close_screen"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/close_screen.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:damage"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/damage.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:drop_inventory"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/drop_inventory.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:modify_health"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/modify_health.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:modify_inventory"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/modify_inventory.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:modify_key_sequence"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/modify_key_sequence.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:open_inventory"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/open_inventory.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:replace_inventory"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/replace_inventory.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:set_perspective"
+						}
+					}
+				},
+				"then": {
+					"$ref": "eggolib/entity_actions/set_perspective.json"
+				}
+			},
+			{
+				"if": {
+					"properties": {
+						"type": {
+							"const": "eggolib:loop"
+						}
+					}
+				},
+				"then": {
+					"$DONT_EXPORT": true,
+					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_actions\\loop.json",
+					"type": "object",
+					"required": [
+						"type"
+					],
+					"properties": {
+						"type": {
+							"description": "eggolib:loop\nExecutes an action for the specified amount of iterations.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+							"markdownDescription": "### `eggolib:loop`\nExecutes an action for the specified amount of iterations.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+							"$ignoreInvalidRef": true,
+							"const": "eggolib:loop"
+						},
+						"before_action": {
+							"description": "If specified, this action will be executed before the loop starts.",
+							"$ref": "./entity_action.json"
+						},
+						"action": {
+							"description": "If specified, this action will be executed for each iteration of the loop.",
+							"$ref": "./entity_action.json"
+						},
+						"after_action": {
+							"description": "If specified, this action will be executed after the loop ends.",
+							"$ref": "./entity_action.json"
+						},
+						"score": {
+							"description": "If specified, this value will be used as the amount of iterations for the loop.",
+							"$ref": "./types/scoreboard.json"
+						},
+						"value": {
+							"description": "If specified and if score is not specified, this value will be used as the amount of iterations for the loop.",
+							"type": "integer"
+						}
+					}
+				}
+			}
+		]
+	}
 }

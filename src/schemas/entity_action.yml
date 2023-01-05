@@ -1,46 +1,75 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Action
-description: Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+title: Entity Action Type
+description: 'Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.'
+markdownDescription: |-
+  ## Entity Action Type
+  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
+
+  [Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)
 type: object
 required:
   - type
 properties:
   type:
-    description: The ID of the Entity Action
     $ref: ./types/identifier.json
 
-allOf:
-  - $IMPORT:
-      a: true
-      path: ./src/schemas/apoli/entity_actions/
-      format: allOfIfThen
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+if:
+  required:
+    - type
+then:
+  properties:
+    inverted:
+      description: If true, the condition acts inverted.
+      type: boolean
+      default: false
 
-  - $IMPORT:
-      b: true
-      path: ./src/schemas/apoli/meta_actions/
-      format: allOfIfThenUnique
-      replace:
-        actionType: entity_action
-        conditionType: entity_condition
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+  allOf:
+    - $IMPORT:
+        path: ./src/schemas/apoli/entity_actions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
 
-  - $IMPORT:
-      a: true
-      path: ./src/schemas/skillful/entity_actions/
-      format: allOfIfThen
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'skillful:$schemaName'
+    - $IMPORT:
+        path: ./src/schemas/apoli/meta_actions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: entity_action
+          conditionType: entity_condition
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/skillful/entity_actions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              const: skillful:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/eggolib/entity_actions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              const: eggolib:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/eggolib/meta_actions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: entity_action
+          conditionType: entity_condition
+        condition:
+          properties:
+            type:
+              const: eggolib:$schemaName

@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Action Result
-description: A string used for determining the result of a certain action.
+# description: A string used for determining the result of a certain action.
 anyOf:
   - const: consume_partial
     description: Indicates that the action is performed but the actor's hand is not swung and no statistic is incremented.

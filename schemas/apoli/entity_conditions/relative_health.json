@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:relative_health'\n- Checks the current (and the percentage) health value of the entity.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\relative_health.json",
 	"type": "object",
 	"required": [
+		"type",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:relative_health\nChecks the current (and the percentage) health value of the entity.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:relative_health`\nChecks the current (and the percentage) health value of the entity.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:relative_health",
+				"origins:relative_health"
+			]
+		},
 		"comparison": {
 			"description": "How the relative health of the player should be compared to the specified value.",
 			"$ref": "../../types/comparison.json"

@@ -9,5 +9,28 @@
 		"dist": true // set this to false to include "dist" folder in search results
 	},
 	// Turn off tsc task auto detection since we have the necessary tasks as npm scripts
-	"typescript.tsc.autoDetect": "off"
+	"typescript.tsc.autoDetect": "off",
+	"yaml.schemas": {
+		"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/skill_tree.json": [
+			"**/data/*/skill_trees/**/*.yml"
+		],
+		"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/power.json": [
+			"**/powers/**/*.yml"
+		],
+		"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/origin.json": [
+			"**/origin/**/*.yml"
+		],
+		"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/origin_layers.json": [
+			"**/origin_layers/**/*.yml"
+		],
+		"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/keybinding.json": [
+			"**/data/*/keybindings/**/*.yml"
+		],
+		"http://json-schema.org/draft-07/schema": [
+			"**.yml",
+			"**.yaml",
+			"file:///d%3A/github-repos/origins-mod-json-schemas/src/schemas/bientity_action.yml",
+			"file:///d%3A/github-repos/origins-mod-json-schemas/src/schemas/eggolib/entity_conditions/permission_level.yml"
+		]
+	}
 }

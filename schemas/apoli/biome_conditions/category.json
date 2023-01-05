@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Biome Condition",
-	"description": "Biome Condition Types operate on a Biome.\nType: 'origins:category'\n- Checks for the category of a biome.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\biome_conditions\\category.json",
 	"type": "object",
 	"required": [
+		"type",
 		"category"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:category\nChecks for the category of a biome.\nBiome Condition Types operate on a Biome.",
+			"markdownDescription": "### `apoli:category`\nChecks for the category of a biome.\n## Biome Condition Type\nBiome Condition Types operate on a Biome.\n\n[Biome Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/biome_Condition_types/)",
+			"enum": [
+				"apoli:category",
+				"origins:category"
+			]
+		},
 		"category": {
 			"description": "Which category the biome must be in order to succeed the check. See List of Biome Categories for possible values.",
 			"oneOf": [

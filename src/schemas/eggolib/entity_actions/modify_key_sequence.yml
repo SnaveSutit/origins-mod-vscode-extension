@@ -1,0 +1,81 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+description: |-
+  $namespace:$fileName
+  Modifies the current key sequence of a power that uses the Action on Key Sequence (Power Type) present on the entity that invoked the action.
+  Notes
+  If index is less than or equal to -1, then it would refer to the last index of the current key sequence. Otherwise, if it's 0, then it would refer to the first index of the current key sequence.
+  How each operation works
+  - append - Adds the specified keys to the last index of the current key sequence.
+  - insert - Inserts the specified keys to the specified index of the current key sequence.
+  - prepend - Adds the specified keys to the first index of the current key sequence.
+  - remove - Removes the specified keys from the current key sequence. If there are no keys specified, remove the key from the specified index instead.
+  - set - Replace the current key sequence with the specified key sequence.
+  $parentDescription
+markdownDescription: |-
+  ### `$namespace:$fileName`
+  Modifies the current key sequence of a power that uses the Action on Key Sequence (Power Type) present on the entity that invoked the action.
+  ## Notes
+  If index is less than or equal to -1, then it would refer to the last index of the current key sequence. Otherwise, if it's 0, then it would refer to the first index of the current key sequence.
+  ### How each operation works
+    - `append` - Adds the specified keys to the last index of the current key sequence.
+    - `insert` - Inserts the specified keys to the specified index of the current key sequence.
+    - `prepend` - Adds the specified keys to the first index of the current key sequence.
+    - `remove` - Removes the specified keys from the current key sequence. If there are no keys specified, remove the key from the specified index instead.
+    - `set` - Replace the current key sequence with the specified key sequence.
+  $parentDescription
+type: object
+required:
+  - type
+  - power
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies the current key sequence of a power that uses the Action on Key Sequence (Power Type) present on the entity that invoked the action.
+      Notes
+      If index is less than or equal to -1, then it would refer to the last index of the current key sequence. Otherwise, if it's 0, then it would refer to the first index of the current key sequence.
+      How each operation works
+      - append - Adds the specified keys to the last index of the current key sequence.
+      - insert - Inserts the specified keys to the specified index of the current key sequence.
+      - prepend - Adds the specified keys to the first index of the current key sequence.
+      - remove - Removes the specified keys from the current key sequence. If there are no keys specified, remove the key from the specified index instead.
+      - set - Replace the current key sequence with the specified key sequence.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies the current key sequence of a power that uses the Action on Key Sequence (Power Type) present on the entity that invoked the action.
+      ## Notes
+      If index is less than or equal to -1, then it would refer to the last index of the current key sequence. Otherwise, if it's 0, then it would refer to the first index of the current key sequence.
+      ### How each operation works
+        - `append` - Adds the specified keys to the last index of the current key sequence.
+        - `insert` - Inserts the specified keys to the specified index of the current key sequence.
+        - `prepend` - Adds the specified keys to the first index of the current key sequence.
+        - `remove` - Removes the specified keys from the current key sequence. If there are no keys specified, remove the key from the specified index instead.
+        - `set` - Replace the current key sequence with the specified key sequence.
+      $parentDescription
+    const: $namespace:$fileName
+
+  power:
+    description: The namespace and ID of the power to modify its current key sequence of.
+    $ref: ../../types/identifier.json
+
+  operation:
+    description: Determines how the specified keys are operated on the current key sequence of the specified power. Accepts "append", "insert", "prepend", "remove" or "set".
+    default: append
+    enum:
+      - append
+      - insert
+      - prepend
+      - remove
+      - set
+
+  keys:
+    description: If specified, these keys will be used to modify the current key sequence of the specified power.
+    type: array
+    items:
+      $ref: ../../types/key.json
+
+  index:
+    description: The integer to use as the index when modifying the current key sequence of the specified power. Only used by the "insert" and "remove" operations.
+    type: integer
+    default: -1

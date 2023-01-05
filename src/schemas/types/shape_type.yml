@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Shape Type
-description: A string used mainly for ray-casting to determine how it will handle blocks.
+# description: A string used mainly for ray-casting to determine how it will handle blocks.
 type: string
 anyOf:
   - const: collider

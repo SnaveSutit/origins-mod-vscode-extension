@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Action",
-	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:give'\n- Gives the entity an item stack by inserting it into its inventory or dropping it on the ground if there is no available inventory space.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_actions\\give.json",
 	"type": "object",
 	"required": [
+		"type",
 		"stack"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:give\nGives the entity an item stack by inserting it into its inventory or dropping it on the ground if there is no available inventory space.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+			"markdownDescription": "### `apoli:give`\nGives the entity an item stack by inserting it into its inventory or dropping it on the ground if there is no available inventory space.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+			"enum": [
+				"apoli:give",
+				"origins:give"
+			]
+		},
 		"stack": {
 			"description": "The item stack to give to the entity.",
 			"$ref": "../../types/item_stack.json"

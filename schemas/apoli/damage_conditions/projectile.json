@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Damage Condition",
-	"description": "Damage Condition Types operate on a combination of DamageSource and Float, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a damage_condition object field.\nType: 'origins:projectile'\n- Checks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified).",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\damage_conditions\\projectile.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:projectile\nChecks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified).\nDamage Condition Types operate on a combination of DamageSource and Float, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a damage_condition object field.",
+			"markdownDescription": "### `apoli:projectile`\nChecks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified).\n## Damage Condition Type\nDamage Condition Types operate on a combination of DamageSource and Float, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a damage_condition object field.\n\n[Damage Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/damage_Condition_types/)",
+			"enum": [
+				"apoli:projectile",
+				"origins:projectile"
+			]
+		},
 		"projectile": {
 			"description": "If set, the check will only pass if the projectile was of an entity type with the specified namespace and ID.",
 			"$ref": "../../types/identifier.json"

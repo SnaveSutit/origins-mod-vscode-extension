@@ -1,6 +1,17 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Bi-entity Condition",
-	"description": "Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.\nType: 'origins:attack_target'\n- Checks if the actor entity is currently aggressive to the target entity.",
-	"type": "object"
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\bientity_conditions\\attack_target.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "apoli:attack_target\nChecks if the actor entity is currently aggressive to the target entity.\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.",
+			"markdownDescription": "### `apoli:attack_target`\nChecks if the actor entity is currently aggressive to the target entity.\n## Bi-Entity Condition Type\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.\n\n[Bi-Entity Condition Type Documentation](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/)",
+			"enum": [
+				"apoli:attack_target",
+				"origins:attack_target"
+			]
+		}
+	}
 }

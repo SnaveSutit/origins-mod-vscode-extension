@@ -1,14 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:exhaust'
-  - Applies exhaustion to the player over time.
 type: object
 required:
-  - interval
-  - exhaustion
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Applies exhaustion to the player over time.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Applies exhaustion to the player over time.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   interval:
     description: Duration of ticks to wait between applying exhaustion.
     type: integer

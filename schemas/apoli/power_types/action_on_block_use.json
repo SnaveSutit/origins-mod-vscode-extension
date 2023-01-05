@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:action_on_block_use'\n- Executes a Block Action Type and/or Item Action Types when the player that has the power \"uses\" (right-clicks) a block.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\action_on_block_use.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:action_on_block_use\nExecutes a Block Action Type and/or Item Action Types when the player that has the power \"uses\" (right-clicks) a block.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:action_on_block_use`\nExecutes a Block Action Type and/or Item Action Types when the player that has the power \"uses\" (right-clicks) a block.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:action_on_block_use",
+				"origins:action_on_block_use"
+			]
+		},
 		"entity_action": {
 			"description": "If specified, this entity action type will be executed if all conditions are met.",
 			"$ref": "../../entity_action.json"

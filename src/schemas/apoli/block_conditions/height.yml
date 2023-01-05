@@ -1,14 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Block Condition
-description: |-
-  Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.
-  Type: 'origins:height'
-  - Compares the Y position of the block to a value.
 type: object
 required:
+  - type
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Compares the Y position of the block to a value.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Compares the Y position of the block to a value.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   comparison:
     description: How the Y position of the block should be compared to the specified value.
     $ref: ../../types/comparison.json

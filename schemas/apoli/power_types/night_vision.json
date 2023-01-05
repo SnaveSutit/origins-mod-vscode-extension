@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:night_vision'\n- Grants night vision to the player without a status effect.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\night_vision.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:night_vision\nGrants night vision to the player without a status effect.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:night_vision`\nGrants night vision to the player without a status effect.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:night_vision",
+				"origins:night_vision"
+			]
+		},
 		"strength": {
 			"description": "How strong the night vision effect is",
 			"type": "number",

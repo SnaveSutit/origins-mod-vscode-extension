@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:prevent_entity_render'
-  - Prevents an entity from being rendered to the entity that has the power, including their armor, shadow, and hitboxes.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Prevents an entity from being rendered to the entity that has the power, including their armor, shadow, and hitboxes.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Prevents an entity from being rendered to the entity that has the power, including their armor, shadow, and hitboxes.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   entity_condition:
     description: If specified, only entities which fulfills this condition will be affected.
     $ref: ../../entity_condition.json

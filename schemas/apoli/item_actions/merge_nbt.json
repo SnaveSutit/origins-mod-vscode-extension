@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Bi-entity Condition",
-	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\nType: 'origins:merge_nbt'\n- Merges the specified NBT to the item's NBT.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_actions\\merge_nbt.json",
 	"type": "object",
 	"required": [
+		"type",
 		"nbt"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:merge_nbt\nMerges the specified NBT to the item's NBT.\nItem Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.",
+			"markdownDescription": "### `apoli:merge_nbt`\nMerges the specified NBT to the item's NBT.\n## Item Action Type\nItem Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\n\n[Item Action Types Documentation](https://origins.readthedocs.io/en/latest/types/item_Action_types/)",
+			"enum": [
+				"apoli:merge_nbt",
+				"origins:merge_nbt"
+			]
+		},
 		"nbt": {
 			"description": "The NBT to merge to the item's NBT.",
 			"type": "string"

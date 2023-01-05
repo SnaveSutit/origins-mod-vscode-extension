@@ -1,10 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:conditioned_attribute'\n- Applies one or more attribute modifiers; may depend on a condition.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\conditioned_attribute.json",
 	"type": "object",
-	"required": null,
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:conditioned_attribute\nApplies one or more attribute modifiers; may depend on a condition.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:conditioned_attribute`\nApplies one or more attribute modifiers; may depend on a condition.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:conditioned_attribute",
+				"origins:conditioned_attribute"
+			]
+		},
 		"modifier": {
 			"description": "If specified, this modifier will be applied to its corresponding attribute.",
 			"$ref": "../../types/attributed_attribute_modifier.json"

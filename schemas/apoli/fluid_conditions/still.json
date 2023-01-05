@@ -1,6 +1,17 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Fluid Condition",
-	"description": "Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.\nType: 'origins:still'\n- Checks whether this state describes a still (i.e. not flowing, i.e. source) fluid.",
-	"type": "object"
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\fluid_conditions\\still.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "apoli:still\nChecks whether this state describes a still (i.e. not flowing, i.e. source) fluid.\nFluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.",
+			"markdownDescription": "### `apoli:still`\nChecks whether this state describes a still (i.e. not flowing, i.e. source) fluid.\n## Fluid Condition Type\nFluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.\n\n[Fluid Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/fluid_Condition_types/)",
+			"enum": [
+				"apoli:still",
+				"origins:still"
+			]
+		}
+	}
 }

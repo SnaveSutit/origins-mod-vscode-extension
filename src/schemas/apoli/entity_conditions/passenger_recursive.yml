@@ -1,15 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:passenger_recursive'
-  - Checks whether any of the entities in the riding chain is the actor entity.
 type: object
 required:
+  - type
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether any of the entities in the riding chain is the actor entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether any of the entities in the riding chain is the actor entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   bientity_condition:
     description: If specified, only check for the entities that fulfills the bi-entity condition.
     $ref: ../../bientity_condition.json

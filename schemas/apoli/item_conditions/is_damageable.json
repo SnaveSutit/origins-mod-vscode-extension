@@ -1,6 +1,17 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Item Condition",
-	"description": "Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\nType: 'origins:is_damageable'\n- Checks if the item is damageable.",
-	"type": "object"
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_conditions\\is_damageable.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "apoli:is_damageable\nChecks if the item is damageable.\nItem Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.",
+			"markdownDescription": "### `apoli:is_damageable`\nChecks if the item is damageable.\n## Item Condition Type\nItem Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\n\n[Item Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/item_Condition_types/)",
+			"enum": [
+				"apoli:is_damageable",
+				"origins:is_damageable"
+			]
+		}
+	}
 }

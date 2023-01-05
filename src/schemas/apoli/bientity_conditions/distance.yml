@@ -1,14 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Bi-entity Condition
-description: |-
-  Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.
-  Type: 'origins:distance'
-  - Checks the distance between the target entity and the actor entity.
 type: object
 required:
+  - type
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks the distance between the target entity and the actor entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks the distance between the target entity and the actor entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   comparison:
     description: How to compare the distance against the specified value.
     $ref: ../../types/comparison.json

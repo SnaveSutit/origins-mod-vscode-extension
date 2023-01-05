@@ -1,0 +1,15 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Closes the current screen of the player.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Closes the current screen of the player.
+      $parentDescription
+    const: $namespace:$fileName

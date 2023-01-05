@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:predicate'\n- Checks whether the entity fulfills a specified predicate.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\predicate.json",
 	"type": "object",
 	"required": [
+		"type",
 		"predicate"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:predicate\nChecks whether the entity fulfills a specified predicate.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:predicate`\nChecks whether the entity fulfills a specified predicate.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:predicate",
+				"origins:predicate"
+			]
+		},
 		"predicate": {
 			"description": "The namespace and ID of the predicate the entity needs to pass.",
 			"$ref": "../../types/identifier.json"

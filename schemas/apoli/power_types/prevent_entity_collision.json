@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_entity_collision'\n- Prevents an entity colliding with the entity who has this power, if all conditions are met.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\prevent_entity_collision.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:prevent_entity_collision\nPrevents an entity colliding with the entity who has this power, if all conditions are met.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:prevent_entity_collision`\nPrevents an entity colliding with the entity who has this power, if all conditions are met.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:prevent_entity_collision",
+				"origins:prevent_entity_collision"
+			]
+		},
 		"bientity_condition": {
 			"description": "If specified, collision is only affected as long as both the 'actor' (the entity with the power), and the 'target' fulfill the specified conditions.",
 			"$ref": "../../bientity_condition.json"

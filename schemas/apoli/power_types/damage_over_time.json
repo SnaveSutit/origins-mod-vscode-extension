@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:damage_over_time'\n- Inflicts damage on the entity that has the power from a specified damage source within the specified interval.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\damage_over_time.json",
 	"type": "object",
 	"required": [
+		"type",
 		"interval",
 		"damage"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:damage_over_time\nInflicts damage on the entity that has the power from a specified damage source within the specified interval.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:damage_over_time`\nInflicts damage on the entity that has the power from a specified damage source within the specified interval.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:damage_over_time",
+				"origins:damage_over_time"
+			]
+		},
 		"interval": {
 			"description": "Duration of ticks to wait between the damage.",
 			"type": "integer"

@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Action",
-	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:passenger_action'\n- Executes an action on the passengers of the entity.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_actions\\passenger_action.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:passenger_action\nExecutes an action on the passengers of the entity.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+			"markdownDescription": "### `apoli:passenger_action`\nExecutes an action on the passengers of the entity.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+			"enum": [
+				"apoli:passenger_action",
+				"origins:passenger_action"
+			]
+		},
 		"action": {
 			"description": "If specified, executes the specified entity action type on the passenger entity.",
 			"$ref": "../../entity_action.json"

@@ -1,14 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:attribute_modify_transfer'
-  - Transfers the value of an attribute modifier from a specified attribute to a specified power class that extends the ValueModifyingPower super-class.
 type: object
 required:
+  - type
   - class
   - attribute
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Transfers the value of an attribute modifier from a specified attribute to a specified power class that extends the ValueModifyingPower super-class.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Transfers the value of an attribute modifier from a specified attribute to a specified power class that extends the ValueModifyingPower super-class.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   class:
     description: |-
       The ID of the class to transfer the value of an attribute modifier to.

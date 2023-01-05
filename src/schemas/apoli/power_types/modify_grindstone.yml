@@ -1,21 +1,30 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:modify_grindstone'
-  - Modifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.
 type: object
 required:
+  - type
   - result_type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   result_type:
     description: Determines whether to not change the initial item stack ("unchanged"), replace it with the item stack specified in the result_stack field ("specified"), replace it with the item stack from the top input slot of a Grindstone block ("from_top") or replace it with the item stack from the bottom input slot of a Grindstone block ("from_bottom").
     default: unchanged
     oneOf:
-      - unchanged
-      - specified
-      - from_top
-      - from_bottom
+      - const: unchanged
+      - const: specified
+      - const: from_top
+      - const: from_bottom
 
   entity_action:
     description: If specified, this action will be executed on the player upon taking the item stack from the result slot of a Grindstone.

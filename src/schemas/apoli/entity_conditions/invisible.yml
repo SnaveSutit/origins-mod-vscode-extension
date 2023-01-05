@@ -1,8 +1,17 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:invisible'
-  - Checks whether the entity is currently invisible.
 type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether the entity is currently invisible.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether the entity is currently invisible.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName

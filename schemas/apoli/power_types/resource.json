@@ -1,14 +1,21 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:resource'\n- Provides a variable with an assignable minimum and maximum value that can be used as a timer, or other things.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\resource.json",
 	"type": "object",
 	"required": [
+		"type",
 		"min",
 		"max",
 		"hud_render"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:resource\nProvides a variable with an assignable minimum and maximum value that can be used as a timer, or other things.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:resource`\nProvides a variable with an assignable minimum and maximum value that can be used as a timer, or other things.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:resource",
+				"origins:resource"
+			]
+		},
 		"min": {
 			"description": "The minimum value of the resource.",
 			"type": "integer"

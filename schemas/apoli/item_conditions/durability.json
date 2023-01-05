@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Item Condition",
-	"description": "Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\nType: 'origins:durability'\n- Checks the current and absolute durability value of the item.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_conditions\\durability.json",
 	"type": "object",
 	"required": [
+		"type",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:durability\nChecks the current and absolute durability value of the item.\nItem Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.",
+			"markdownDescription": "### `apoli:durability`\nChecks the current and absolute durability value of the item.\n## Item Condition Type\nItem Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\n\n[Item Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/item_Condition_types/)",
+			"enum": [
+				"apoli:durability",
+				"origins:durability"
+			]
+		},
 		"comparison": {
 			"description": "Determines how the durability value of the item should be compared to the specified value.",
 			"$ref": "../../types/comparison.json"

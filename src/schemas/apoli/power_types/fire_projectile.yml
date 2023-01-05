@@ -1,15 +1,24 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:fire_projectile'
-  - Fires one or more projectiles upon pressing the specified Key.
 type: object
 required:
+  - type
   - entity_type
   - cooldown
   - hud_render
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Fires one or more projectiles upon pressing the specified Key.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Fires one or more projectiles upon pressing the specified Key.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   entity_type:
     description: The ID of the entity type that will be fired.
     $ref: ../../types/identifier.json

@@ -1,0 +1,37 @@
+{
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\power_types\\modify_hurt_ticks.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "eggolib:modify_hurt_ticks\nModifies how long the entity that has the power is immune to damage upon being damaged.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `eggolib:modify_hurt_ticks`\nModifies how long the entity that has the power is immune to damage upon being damaged.\n## Note\nBy default, an entity has a \"hurt ticks\" value of 20. The entity will only receive damage again only if either their \"hurt ticks\" value is less than 10 or if they receive a damage with a higher value than the previous.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"const": "eggolib:modify_hurt_ticks"
+		},
+		"bientity_action": {
+			"description": "If specified, this action will be executed on either or both the actor or target entities.",
+			"$ref": "../../bientity_action.json"
+		},
+		"bientity_condition": {
+			"description": "If specified, the specified action/modifier(s) will only be executed/applied if this condition is fulfilled by either or both actor or target entities.",
+			"$ref": "../../bientity_condition.json"
+		},
+		"damage_condition": {
+			"description": "If specified, the specified action/modifier(s) will only be executed/applied if this condition is fulfilled by the damage dealt to the target entity.",
+			"$ref": "../../damage_condition.json"
+		},
+		"modifier": {
+			"description": "If specified, this modifier will be applied to the hurt ticks of the target entity.",
+			"$ref": "../../types/attribute_modifier.json"
+		},
+		"modifiers": {
+			"description": "If specified, these modifiers will be applied to the hurt ticks of the target entity.",
+			"type": "array",
+			"items": {
+				"$ref": "../../types/attribute_modifier.json"
+			}
+		}
+	}
+}

@@ -1,7 +1,17 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Bi-entity Condition
-description: |-
-  Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.
-  Type: 'origins:riding_recursive'
-  - Checks if the actor entity is riding the target entity, regardless of where the target entity is in the riding chain.
 type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks if the actor entity is riding the target entity, regardless of where the target entity is in the riding chain.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks if the actor entity is riding the target entity, regardless of where the target entity is in the riding chain.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName

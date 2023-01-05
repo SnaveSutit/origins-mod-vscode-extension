@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Block Action
-description: |-
-  Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.
-  Type: 'origins:modify_block_state'
-  - Modifies the block state property of the block.
 type: object
 required:
+  - type
   - property
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies the block state property of the block.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies the block state property of the block.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   property:
     description: 'The name of the property that will be modified. Examples are facing or age. See Minecraft Fandom Wiki: https://minecraft.fandom.com/wiki/Block_states#List_of_block_states for possible values.'
     type: string

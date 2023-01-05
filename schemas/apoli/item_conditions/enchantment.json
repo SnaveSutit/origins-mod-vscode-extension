@@ -1,14 +1,21 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Item Condition",
-	"description": "Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\nType: 'origins:enchantment'\n- Checks the level of a certain enchantment on the item.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_conditions\\enchantment.json",
 	"type": "object",
 	"required": [
+		"type",
 		"enchantment",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:enchantment\nChecks the level of a certain enchantment on the item.\nItem Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.",
+			"markdownDescription": "### `apoli:enchantment`\nChecks the level of a certain enchantment on the item.\n## Item Condition Type\nItem Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\n\n[Item Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/item_Condition_types/)",
+			"enum": [
+				"apoli:enchantment",
+				"origins:enchantment"
+			]
+		},
 		"enchantment": {
 			"description": "ID of the enchantment of interest, e.g. minecraft:protection.",
 			"$ref": "../../types/identifier.json"

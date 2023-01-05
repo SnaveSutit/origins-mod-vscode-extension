@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Attribute Identifier
-description: The namespace and ID of an attribute
+# description: The namespace and ID of an attribute
 anyOf:
   - enum:
       - minecraft:generic.armor

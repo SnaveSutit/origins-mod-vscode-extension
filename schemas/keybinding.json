@@ -1,7 +1,8 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\keybinding.json",
 	"title": "Skillful Keybinding",
-	"description": "This is the format of a JSON file describing a keybinding. They need to be placed inside the keybinds folder within your namespace. Keybinds are used to activate active power types, and toggles.\nhttps://skillful-docs.readthedocs.io/en/latest/keybinding/",
+	"description": "This is the format of a JSON file describing a keybinding. They need to be placed inside the keybinds folder within your namespace. Keybinds are used to activate active power types, and toggles.",
+	"markdownDescription": "This is the format of a JSON file describing a keybinding. They need to be placed inside the keybinds folder within your namespace. Keybinds are used to activate active power types, and toggles.\n\n[Skillful Keybinding Documentation](https://skillful-docs.readthedocs.io/en/latest/keybinding/)",
 	"type": "object",
 	"properties": {
 		"key": {

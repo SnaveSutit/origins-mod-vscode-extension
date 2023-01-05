@@ -1,7 +1,17 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_sprinting'\n- Prevents the player that has the power from sprinting.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\prevent_sprinting.json",
 	"type": "object",
-	"properties": null
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "apoli:prevent_sprinting\nPrevents the player that has the power from sprinting.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:prevent_sprinting`\nPrevents the player that has the power from sprinting.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:prevent_sprinting",
+				"origins:prevent_sprinting"
+			]
+		}
+	}
 }

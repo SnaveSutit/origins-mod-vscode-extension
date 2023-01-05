@@ -1,15 +1,24 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Block Condition
-description: |-
-  Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.
-  Type: 'origins:adjacent'
-  - Checks whether a specified amount of blocks adjacent to the block in question fulfills a specified Block Condition Type.
 type: object
 required:
+  - type
   - adjacent_condition
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether a specified amount of blocks adjacent to the block in question fulfills a specified Block Condition Type.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether a specified amount of blocks adjacent to the block in question fulfills a specified Block Condition Type.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   adjacent_condition:
     description: The block condition that needs to be fulfilled by adjacent blocks to count towards this condition.
     $ref: ../../block_condition.json

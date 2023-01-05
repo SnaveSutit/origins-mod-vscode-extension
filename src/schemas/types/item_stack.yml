@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Item Stack
-description: An Object which defines a new item stack.
+# description: An Object which defines a new item stack.
 type: object
 properties:
   item:

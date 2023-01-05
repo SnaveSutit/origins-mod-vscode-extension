@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Bi-entity Condition",
-	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\nType: 'origins:modify'\n- Applies an item modifier to the item stack.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_actions\\modify.json",
 	"type": "object",
 	"required": [
+		"type",
 		"modifier"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify\nApplies an item modifier to the item stack.\nItem Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.",
+			"markdownDescription": "### `apoli:modify`\nApplies an item modifier to the item stack.\n## Item Action Type\nItem Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\n\n[Item Action Types Documentation](https://origins.readthedocs.io/en/latest/types/item_Action_types/)",
+			"enum": [
+				"apoli:modify",
+				"origins:modify"
+			]
+		},
 		"modifier": {
 			"description": "The ID of an item modifier.",
 			"$ref": "../../types/identifier.json"

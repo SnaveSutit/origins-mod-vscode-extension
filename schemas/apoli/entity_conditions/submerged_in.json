@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:submerged_in'\n- Checks whether the entity's eyes are in a fluid that is included in the specified fluid tag.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\submerged_in.json",
 	"type": "object",
 	"required": [
+		"type",
 		"fluid"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:submerged_in\nChecks whether the entity's eyes are in a fluid that is included in the specified fluid tag.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:submerged_in`\nChecks whether the entity's eyes are in a fluid that is included in the specified fluid tag.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:submerged_in",
+				"origins:submerged_in"
+			]
+		},
 		"fluid": {
 			"description": "The namespace and ID of the fluid tag that should be checked. Most important examples: minecraft:water and minecraft:lava.",
 			"anyOf": [

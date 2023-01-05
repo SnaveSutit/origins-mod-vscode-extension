@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Attributed Attribute Modifier
-description: An Object used to specify how a specific attribute should be modified. Basically an Attribute Modifier with an additional attribute field.
+# description: An Object used to specify how a specific attribute should be modified. Basically an Attribute Modifier with an additional attribute field.
 type: object
 required:
   - attribute

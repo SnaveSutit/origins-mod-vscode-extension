@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:tooltip'\n- Applies the specified tooltip(s) to an item that is only visible to the entity that has the power.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\tooltip.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:tooltip\nApplies the specified tooltip(s) to an item that is only visible to the entity that has the power.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:tooltip`\nApplies the specified tooltip(s) to an item that is only visible to the entity that has the power.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:tooltip",
+				"origins:tooltip"
+			]
+		},
 		"item_condition": {
 			"description": "If specified, the specified tooltip(s) will only apply to items that fulfills this condition.",
 			"$ref": "../../item_condition.json"

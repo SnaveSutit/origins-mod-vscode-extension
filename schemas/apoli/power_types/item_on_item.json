@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:item_on_item'\n- Executes an Entity Action Type or Item Action Types when the player uses an item on an item, similar to how you would put items in a bundle.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\item_on_item.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:item_on_item\nExecutes an Entity Action Type or Item Action Types when the player uses an item on an item, similar to how you would put items in a bundle.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:item_on_item`\nExecutes an Entity Action Type or Item Action Types when the player uses an item on an item, similar to how you would put items in a bundle.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:item_on_item",
+				"origins:item_on_item"
+			]
+		},
 		"using_item_condition": {
 			"description": "If specified, the specified actions will only execute if this condition is fulfilled by the item that is used to right-click an item.",
 			"$ref": "../../item_condition.json"

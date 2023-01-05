@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:modify_swim_speed'
-  - Modifies how fast the entity that has the power swims.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies how fast the entity that has the power swims.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies how fast the entity that has the power swims.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   modifier:
     description: If specified, this modifier will apply to the swim speed.
     $ref: ../../types/attribute_modifier.json

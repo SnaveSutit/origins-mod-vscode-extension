@@ -1,0 +1,48 @@
+{
+	"title": "Screen Type",
+	"anyOf": [
+		{
+			"enum": [
+				"anvil",
+				"beacon",
+				"blast_furnace",
+				"book_edit",
+				"book",
+				"brewing_stand",
+				"cartography_table",
+				"chat",
+				"command_block",
+				"crafting",
+				"creative_inventory",
+				"death",
+				"enchantment",
+				"furnace",
+				"game_menu",
+				"game_mode_selection",
+				"generic_3x3_container",
+				"generic_container",
+				"grindstone",
+				"hopper",
+				"horse",
+				"inventory",
+				"jigsaw_block",
+				"lectern",
+				"loom",
+				"merchant",
+				"minecart_command_block",
+				"shulker_box",
+				"sign_edit",
+				"smithing",
+				"smoker",
+				"stonecutter",
+				"structure_block",
+				"choose_origin",
+				"view_origin"
+			]
+		},
+		{
+			"type": "string"
+		}
+	],
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\screen_type.json"
+}

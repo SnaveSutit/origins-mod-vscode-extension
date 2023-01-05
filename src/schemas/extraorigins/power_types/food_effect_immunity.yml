@@ -1,12 +1,19 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'extraorigins:food_effect_immunity'
-  - Grants Status Effect immunity from food effects, such as Hunger from Rotten Flesh. Allows conditions.
 type: object
 required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Grants Status Effect immunity from food effects, such as Hunger from Rotten Flesh. Allows conditions.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Grants Status Effect immunity from food effects, such as Hunger from Rotten Flesh. Allows conditions.
+      $parentDescription
+    const: $namespace:$fileName
+
   effects:
     description: An Array of Status Effects
     type: array

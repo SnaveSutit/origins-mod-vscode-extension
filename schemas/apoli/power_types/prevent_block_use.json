@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_block_use'\n- Prevents the usage (i.e. right-clicking) of blocks for a player. For example, this could be used to make a player not able to open a furnace or chest, not use composters, or not use a button.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\prevent_block_use.json",
 	"type": "object",
 	"required": [
+		"type",
 		"block_condition"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:prevent_block_use\nPrevents the usage (i.e. right-clicking) of blocks for a player. For example, this could be used to make a player not able to open a furnace or chest, not use composters, or not use a button.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:prevent_block_use`\nPrevents the usage (i.e. right-clicking) of blocks for a player. For example, this could be used to make a player not able to open a furnace or chest, not use composters, or not use a button.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:prevent_block_use",
+				"origins:prevent_block_use"
+			]
+		},
 		"block_condition": {
 			"description": "If specified, only blocks that fulfills this condition is affected",
 			"$ref": "../../block_condition.json"

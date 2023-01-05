@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_player_spawn'\n- Modifies the location of the player's spawnpoint to the specified dimension, biome and/or structure.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_player_spawn.json",
 	"type": "object",
 	"required": [
+		"type",
 		"dimension"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify_player_spawn\nModifies the location of the player's spawnpoint to the specified dimension, biome and/or structure.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:modify_player_spawn`\nModifies the location of the player's spawnpoint to the specified dimension, biome and/or structure.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:modify_player_spawn",
+				"origins:modify_player_spawn"
+			]
+		},
 		"dimension": {
 			"description": "The namespace and ID of the dimension the player should spawn in.",
 			"$ref": "../../types/identifier.json"

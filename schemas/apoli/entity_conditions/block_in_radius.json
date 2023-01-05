@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:block_in_radius'\n- Checks whether there is a specified number of blocks that fulfills the specified Block Condition Type within a specified radius relative to the entity's feet.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\block_in_radius.json",
 	"type": "object",
 	"required": [
+		"type",
 		"block_condition",
 		"radius"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:block_in_radius\nChecks whether there is a specified number of blocks that fulfills the specified Block Condition Type within a specified radius relative to the entity's feet.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:block_in_radius`\nChecks whether there is a specified number of blocks that fulfills the specified Block Condition Type within a specified radius relative to the entity's feet.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:block_in_radius",
+				"origins:block_in_radius"
+			]
+		},
 		"block_condition": {
 			"description": "The block condition type to check for.",
 			"$ref": "../../block_condition.json"

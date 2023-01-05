@@ -1,12 +1,16 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'extraorigins:modify_size'\n- Changes the entity's scale. Allows conditions.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\extraorigins\\power_types\\modify_size.json",
 	"type": "object",
 	"required": [
+		"type",
 		"scale"
 	],
 	"properties": {
+		"type": {
+			"description": "extraorigins:modify_size\nChanges the entity's scale. Allows conditions.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `extraorigins:modify_size`\nChanges the entity's scale. Allows conditions.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"const": "extraorigins:modify_size"
+		},
 		"scale_types": {
 			"description": "An Array of Scale Type Identifiers. Defaults to extraorigins:modify_size which contains width, height, drop size, and visibility.",
 			"type": "array",

@@ -1,14 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:nbt'
-  - Checks the entity's NBT.
 type: object
 required:
+  - type
   - nbt
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks the entity's NBT.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks the entity's NBT.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   nbt:
     description: The NBT data to check for.
     type: string

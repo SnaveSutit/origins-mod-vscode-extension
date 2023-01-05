@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:multiple'\n- Allows for defining more that one power in a single file.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\multiple.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"patternProperties": {
+		"type": {
+			"description": "apoli:multiple\nAllows for defining more than one power in a single file.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:multiple`\nAllows for defining more than one power in a single file.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:multiple",
+				"origins:multiple"
+			]
+		},
 		"^(?!(type|badges|condition|description|hidden|loading_priority|name)$)[a-z\\.0-9_\\-]+": {
 			"$ref": "../../power.json",
 			"not": {

@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:brightness'\n- Checks the brightness level at the entity's eyes, which ranges from 0 to 1.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\brightness.json",
 	"type": "object",
 	"required": [
+		"type",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:brightness\nChecks the brightness level at the entity's eyes, which ranges from 0 to 1.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:brightness`\nChecks the brightness level at the entity's eyes, which ranges from 0 to 1.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:brightness",
+				"origins:brightness"
+			]
+		},
 		"comparison": {
 			"description": "How to compare the brightness level against the specified value.",
 			"$ref": "../../types/comparison.json"

@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:particle'\n- Spawns particles on the body of the entity that has the power for visual effects.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\particle.json",
 	"type": "object",
 	"required": [
+		"type",
 		"particle",
 		"frequency"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:particle\nSpawns particles on the body of the entity that has the power for visual effects.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:particle`\nSpawns particles on the body of the entity that has the power for visual effects.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:particle",
+				"origins:particle"
+			]
+		},
 		"particle": {
 			"description": "The particle type that will be spawned.",
 			"$ref": "../../types/particle.json"

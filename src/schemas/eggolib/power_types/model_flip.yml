@@ -1,0 +1,15 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Flips the model of the entity, similar to how Dinnerbone's model is flipped.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Flips the model of the entity, similar to how Dinnerbone's model is flipped.
+      $parentDescription
+    const: $namespace:$fileName

@@ -1,14 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:entiy_type'
-  - Checks whether the entity is of a specific entity type.
 type: object
 required:
+  - type
   - entity_type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether the entity is of a specific entity type.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether the entity is of a specific entity type.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   entity_type:
     description: The namespace and ID of the entity type the entity needs to have to pass the check.
     $ref: ../../types/identifier.json

@@ -1,0 +1,40 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+description: |-
+  $namespace:$fileName
+  Deals damage to the entity.
+  $parentDescription
+markdownDescription: |-
+  ### `$namespace:$fileName`
+  Deals damage to the entity.
+  ## Note
+  If the modifier field is specified, the max health of the entity will be used as the base value in the modifier.
+  $parentDescription
+type: object
+required:
+  - type
+  - source
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Deals damage to the entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Deals damage to the entity.
+      ## Note
+      If the modifier field is specified, the max health of the entity will be used as the base value in the modifier.
+      $parentDescription
+    const: $namespace:$fileName
+
+  amount:
+    description: If specified, this amount of damage will be dealt to the entity.
+    type: number
+
+  source:
+    description: Determines the source for the damage to be used. Controls the death message, invulnerabilities or whether the armor should be taken into account.
+    $ref: ../../types/damage_source.json
+
+  modifier:
+    description: If specified, this modifier and its value will be used as the amount of damage that will be dealt to the entity.
+    $ref: ../../types/attribute_modifier.json

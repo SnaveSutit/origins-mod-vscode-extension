@@ -1,0 +1,26 @@
+{
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_conditions\\chance.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "eggolib:chance\nGenerates a random value ranging from 0.0 to 1.0 and checks if it's less than the specified value.\neggolib:chance\nGenerates a random value ranging from 0.0 to 1.0 and checks if it's less than the specified value.\neggolib:chance\nGenerates a random value ranging from 0.0 to 1.0 and checks if it's less than the specified value.\neggolib:chance\nGenerates a random value ranging from 0.0 to 1.0 and checks if it's less than the specified value.\n$parentDescription",
+			"markdownDescription": "### `eggolib:chance`\nGenerates a random value ranging from 0.0 to 1.0 and checks if it's less than the specified value.\nundefined",
+			"$ignoreInvalidRef": true,
+			"const": "eggolib:chance"
+		},
+		"chance": {
+			"description": "The value to compare the generated random value to.",
+			"type": "number"
+		}
+	},
+	"dependantSchemas": {
+		"type": {
+			"required": [
+				"chance"
+			]
+		}
+	}
+}

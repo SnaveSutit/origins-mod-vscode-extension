@@ -1,20 +1,35 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_grindstone'\n- Modifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_grindstone.json",
 	"type": "object",
 	"required": [
+		"type",
 		"result_type"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify_grindstone\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:modify_grindstone`\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:modify_grindstone",
+				"origins:modify_grindstone"
+			]
+		},
 		"result_type": {
 			"description": "Determines whether to not change the initial item stack (\"unchanged\"), replace it with the item stack specified in the result_stack field (\"specified\"), replace it with the item stack from the top input slot of a Grindstone block (\"from_top\") or replace it with the item stack from the bottom input slot of a Grindstone block (\"from_bottom\").",
 			"default": "unchanged",
 			"oneOf": [
-				"unchanged",
-				"specified",
-				"from_top",
-				"from_bottom"
+				{
+					"const": "unchanged"
+				},
+				{
+					"const": "specified"
+				},
+				{
+					"const": "from_top"
+				},
+				{
+					"const": "from_bottom"
+				}
 			]
 		},
 		"entity_action": {

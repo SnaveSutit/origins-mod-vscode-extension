@@ -1,50 +1,75 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Block Condition
-description: Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.
+title: Block Condition Type
+description: 'Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.'
+markdownDescription: |-
+  ## Block Condition Type
+  Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.
+
+  [Block Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/block_Condition_types/)
 type: object
 required:
   - type
 properties:
   type:
-    description: The ID of the Block Condition
     $ref: ./types/identifier.json
 
-  inverted:
-    description: If true, the condition acts inverted.
-    type: boolean
-    default: false
+if:
+  required:
+    - type
+then:
+  properties:
+    inverted:
+      description: If true, the condition acts inverted.
+      type: boolean
+      default: false
 
-allOf:
-  - $IMPORT:
-      a: true
-      path: ./src/schemas/apoli/block_conditions/
-      format: allOfIfThen
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+  allOf:
+    - $IMPORT:
+        path: ./src/schemas/apoli/block_conditions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
 
-  - $IMPORT:
-      b: true
-      path: ./src/schemas/apoli/meta_conditions/
-      format: allOfIfThenUnique
-      replace:
-        actionType: block_condition
-        conditionType: block_condition
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+    - $IMPORT:
+        path: ./src/schemas/apoli/meta_conditions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: block_condition
+          conditionType: block_condition
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
 
-  - $IMPORT:
-      a: true
-      path: ./src/schemas/extraorigins/block_conditions/
-      format: allOfIfThen
-      condition:
-        properties:
-          type:
-            - const: 'extraorigins:$schemaName'
+    - $IMPORT:
+        path: ./src/schemas/eggolib/meta_conditions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: block_condition
+          conditionType: block_condition
+        condition:
+          properties:
+            type:
+              const: eggolib:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/extraorigins/block_conditions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              const: extraorigins:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/eggolib/block_conditions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              const: eggolib:$schemaName

@@ -1,15 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:equipped_item'
-  - Checks whether the entity has an item equipped in the specified equipment slot that fulfills the specified Item Condition Type.
 type: object
 required:
+  - type
   - equipment_slot
   - item_condition
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether the entity has an item equipped in the specified equipment slot that fulfills the specified Item Condition Type.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether the entity has an item equipped in the specified equipment slot that fulfills the specified Item Condition Type.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   equipment_slot:
     description: Determines which equipment slot to check for the item. Accepts "mainhand", "offhand", "head", "chest", "legs", "feet".
     $ref: ../../types/equipment_slots.json

@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:food_level'\n- Checks the entity's food level (chicken legs / hunger meter / whatever you wanna call it). The food level is in the range of 0 to 20.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\food_level.json",
 	"type": "object",
 	"required": [
+		"type",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:food_level\nChecks the entity's food level (chicken legs / hunger meter / whatever you wanna call it). The food level is in the range of 0 to 20.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:food_level`\nChecks the entity's food level (chicken legs / hunger meter / whatever you wanna call it). The food level is in the range of 0 to 20.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:food_level",
+				"origins:food_level"
+			]
+		},
 		"comparison": {
 			"description": "How the food level should be compared to the specified value.",
 			"$ref": "../../types/comparison.json"

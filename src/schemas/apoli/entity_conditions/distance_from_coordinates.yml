@@ -1,15 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:distance_from_coordinates'
-  - Compares the distance of the entity's current position to the specified coordinates.
 type: object
 required:
+  - type
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Compares the distance of the entity's current position to the specified coordinates.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Compares the distance of the entity's current position to the specified coordinates.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   reference:
     description: The point to compare the distance to.
     type: string

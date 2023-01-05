@@ -1,16 +1,24 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:attribute'
-  - Applies a check towards a specific attribute value of the entity.
 type: object
 required:
+  - type
   - attribute
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Applies a check towards a specific attribute value of the entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Applies a check towards a specific attribute value of the entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   attribute:
     description: 'ID of the attribute of which the value should be checked. See Minecraft Fandom Wiki: Attribute (Attributes) for a list of vanilla attributes that can be checked for.'
     $ref: ../../types/identifier.json

@@ -1,14 +1,21 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:in_block_anywhere'\n- Checks how many blocks are overlapping with the entity's eyes or feet.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\in_block_anywhere.json",
 	"type": "object",
 	"required": [
+		"type",
 		"block_condition",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:in_block_anywhere\nChecks how many blocks are overlapping with the entity's eyes or feet.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:in_block_anywhere`\nChecks how many blocks are overlapping with the entity's eyes or feet.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:in_block_anywhere",
+				"origins:in_block_anywhere"
+			]
+		},
 		"block_condition": {
 			"description": "The block condition type which blocks need to fulfill in order to count for this condition.",
 			"$ref": "../../block_condition.json"

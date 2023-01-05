@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:action_on_land'\n- Executes an Entity Action Type when the player lands on the ground after being airborne.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\action_on_land.json",
 	"type": "object",
 	"required": [
+		"type",
 		"entity_action"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:action_on_land\nExecutes an Entity Action Type when the player lands on the ground after being airborne.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:action_on_land`\nExecutes an Entity Action Type when the player lands on the ground after being airborne.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:action_on_land",
+				"origins:action_on_land"
+			]
+		},
 		"entity_action": {
 			"description": "The action to execute on the player.",
 			"$ref": "../../entity_action.json"

@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:self_action_when_hit'\n- Executes an Entity Action Type on the entity that has the power when the entity takes damage.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\self_action_when_hit.json",
 	"type": "object",
 	"required": [
+		"type",
 		"entity_action",
 		"cooldown"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:self_action_when_hit\nExecutes an Entity Action Type on the entity that has the power when the entity takes damage.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:self_action_when_hit`\nExecutes an Entity Action Type on the entity that has the power when the entity takes damage.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:self_action_when_hit",
+				"origins:self_action_when_hit"
+			]
+		},
 		"entity_action": {
 			"description": "The action to execute on the entity.",
 			"$ref": "../../entity_action.json"

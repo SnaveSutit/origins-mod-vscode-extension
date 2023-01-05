@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:modify_food'
-  - Executes an Entity Action Type and modifies the food and saturation level gain of a food item when a player that has the power eats food item.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes an Entity Action Type and modifies the food and saturation level gain of a food item when a player that has the power eats food item.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes an Entity Action Type and modifies the food and saturation level gain of a food item when a player that has the power eats food item.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   item_condition:
     description: If specified, the specified actions and modifier(s) will only apply to food items that fulfills this condition.
     $ref: ../../item_condition.json

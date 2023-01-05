@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_projectile_damage'\n- Modifies how much damage the projectile of the entity that has the power deals.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_projectile_damage.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify_projectile_damage\nModifies how much damage the projectile of the entity that has the power deals.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:modify_projectile_damage`\nModifies how much damage the projectile of the entity that has the power deals.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:modify_projectile_damage",
+				"origins:modify_projectile_damage"
+			]
+		},
 		"entity_condition": {
 			"description": "If specified, the specified modifier(s) and action(s) will only apply if the dealt damage fulfills by this condition."
 		},

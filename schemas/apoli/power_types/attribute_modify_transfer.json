@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:attribute_modify_transfer'\n- Transfers the value of an attribute modifier from a specified attribute to a specified power class that extends the ValueModifyingPower super-class.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\attribute_modify_transfer.json",
 	"type": "object",
 	"required": [
+		"type",
 		"class",
 		"attribute"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:attribute_modify_transfer\nTransfers the value of an attribute modifier from a specified attribute to a specified power class that extends the ValueModifyingPower super-class.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:attribute_modify_transfer`\nTransfers the value of an attribute modifier from a specified attribute to a specified power class that extends the ValueModifyingPower super-class.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:attribute_modify_transfer",
+				"origins:attribute_modify_transfer"
+			]
+		},
 		"class": {
 			"description": "The ID of the class to transfer the value of an attribute modifier to.\nSee Value Modifying Power Classes for possible values.",
 			"$ref": "../../types/identifier.json"

@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Fluid Condition",
-	"description": "Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.\nType: 'origins:in_tag'\n- Checks whether the fluid is in a specified tag.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\fluid_conditions\\in_tag.json",
 	"type": "object",
 	"required": [
+		"type",
 		"tag"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:in_tag\nChecks whether the fluid is in a specified tag.\nFluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.",
+			"markdownDescription": "### `apoli:in_tag`\nChecks whether the fluid is in a specified tag.\n## Fluid Condition Type\nFluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.\n\n[Fluid Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/fluid_Condition_types/)",
+			"enum": [
+				"apoli:in_tag",
+				"origins:in_tag"
+			]
+		},
 		"tag": {
 			"description": "ID of the tag which the fluid should be in to pass the check.",
 			"$ref": "../../types/identifier.json"

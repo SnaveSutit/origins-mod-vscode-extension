@@ -1,14 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:dimension'
-  - Checks whether the entity is in a specified dimension.
 type: object
 required:
+  - type
   - dimension
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether the entity is in a specified dimension.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether the entity is in a specified dimension.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   dimension:
     description: The namespace and ID of the dimension the player needs to be in for this condition to evaluate to true. Vanilla dimensions are minecraft:overworld, minecraft:the_nether and minecraft:the_end, but namespace and IDs of custom/modded dimensions should also work.
     anyOf:

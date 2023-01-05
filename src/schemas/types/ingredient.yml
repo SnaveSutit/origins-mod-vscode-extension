@@ -1,8 +1,8 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Ingredient
-description: |-
-  An Object specifying a registered item or item tag.
-  Or an Array of Objects specifying a registered item or item tag.
+# description: |-
+#   An Object specifying a registered item or item tag.
+#   Or an Array of Objects specifying a registered item or item tag.
 oneOf:
   - $ref: '#/$defs/item'
   - type: array

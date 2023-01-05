@@ -1,15 +1,24 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:launch'
-  - Launches the entity that has the power upwards upon pressing the specified Key.
 type: object
 required:
+  - type
   - cooldown
   - speed
   - hud_render
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Launches the entity that has the power upwards upon pressing the specified Key.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Launches the entity that has the power upwards upon pressing the specified Key.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   cooldown:
     description: Interval of ticks this power needs to recharge before the power can be triggered again.
     type: integer

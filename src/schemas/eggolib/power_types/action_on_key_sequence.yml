@@ -1,0 +1,48 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+  - keys
+  - key_sequence
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes an action upon pressing certain keybinds in a certain sequence.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes an action upon pressing certain keybinds in a certain sequence.
+      $parentDescription
+    const: $namespace:$fileName
+
+  success_action:
+    description: If specified, this action will be executed if the player succeeded to press the specified keybinds in the specified sequence.
+    $ref: ../../entity_action.json
+
+  fail_action:
+    description: If specified, this action will be executed if the player failed to press the specified keybinds in the specified sequence.
+    $ref: ../../entity_action.json
+
+  cooldown:
+    description: Interval of ticks this power needs to recharge before the power can be triggered again.
+    type: integer
+    default: 0
+
+  hud_render:
+    description: HUD Render	Determines how the cooldown for this power is visualized on the HUD.
+    $ref: ../../types/hud_render.json
+    default:
+      hud_render: false
+
+  keys:
+    description: Determines the keys to be used for completing the sequence.
+    type: array
+    items:
+      $ref: ../../types/functional_key.json
+
+  key_sequence:
+    description: Determines the sequence to be completed by the player.
+    type: array
+    items:
+      $ref: ../../types/key.json

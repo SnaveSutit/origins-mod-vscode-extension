@@ -1,0 +1,34 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether the bounding box of the entity is colliding with a block.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether the bounding box of the entity is colliding with a block.
+      $parentDescription
+    const: $namespace:$fileName
+
+  block_condition:
+    description: If specified, the condition will only evaluate to true if this condition is fulfilled by the block colliding with the bounding box of the entity.
+    $ref: ../../block_condition.json
+
+  offset_x:
+    description: Determines the offset for the bounding box of the entity in the X axis.
+    type: number
+    default: 0.0
+
+  offset_y:
+    description: Determines the offset for the bounding box of the entity in the Y axis.
+    type: number
+    default: 0.0
+
+  offset_z:
+    description: Determines the offset for the bounding box of the entity in the Z axis.
+    type: number
+    default: 0.0

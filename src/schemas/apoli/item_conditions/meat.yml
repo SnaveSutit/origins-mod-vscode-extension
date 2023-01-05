@@ -1,7 +1,17 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Item Condition
-description: |-
-  Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.
-  Type: 'origins:meat'
-  - Checks whether the item is considered meat by Minecraft (usable for breeding wolves).
 type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether the item is considered meat by Minecraft (usable for breeding wolves).
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether the item is considered meat by Minecraft (usable for breeding wolves).
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName

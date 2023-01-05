@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Action",
-	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:play_sound'\n- Plays a sound event at the entity's position. Currently only works on player entities.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_actions\\play_sound.json",
 	"type": "object",
 	"required": [
+		"type",
 		"sound"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:play_sound\nPlays a sound event at the entity's position. Currently only works on player entities.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+			"markdownDescription": "### `apoli:play_sound`\nPlays a sound event at the entity's position. Currently only works on player entities.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+			"enum": [
+				"apoli:play_sound",
+				"origins:play_sound"
+			]
+		},
 		"sound": {
 			"description": "The namespace and ID of the sound to play.",
 			"$ref": "../../types/identifier.json"

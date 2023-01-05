@@ -1,7 +1,17 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Item Condition
-description: |-
-  Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.
-  Type: 'origins:fireproof'
-  - Checks if the item stack is fireproof
 type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks if the item stack is fireproof.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks if the item stack is fireproof.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName

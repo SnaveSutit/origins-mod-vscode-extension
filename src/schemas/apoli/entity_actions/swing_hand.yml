@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Action
-description: |-
-  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
-  Type: 'origins:swing_hand'
-  - Swings the specified hand.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Swings the specified hand.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Swings the specified hand.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   hand:
     description: Determines which hand is swung.
     enum:

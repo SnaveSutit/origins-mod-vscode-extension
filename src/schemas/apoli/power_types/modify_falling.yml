@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:modify_falling'
-  - Modifies the falling velocity of the entity that has the power; can determine whether the entity should take fall damage or not.
 type: object
 required:
+  - type
   - velocity
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies the falling velocity of the entity that has the power; can determine whether the entity should take fall damage or not.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies the falling velocity of the entity that has the power; can determine whether the entity should take fall damage or not.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   velocity:
     description: Determines the speed of the falling velocity.
     type: number

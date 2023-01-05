@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:conditioned_restrict_armor'
-  - Restricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s); may depend on a condition.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Restricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s); may depend on a condition.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Restricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s); may depend on a condition.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   head:
     description: If specified, items which fulfills this condition cannot be equipped in the head equipment slot.
     $ref: ../../item_condition.json

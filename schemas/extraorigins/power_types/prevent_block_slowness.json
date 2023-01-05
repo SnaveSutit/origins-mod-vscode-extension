@@ -1,10 +1,15 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'extraorigins:prevent_block_slowness'\n- Prevents the entity from being slowed by blocks, such as Cobwebs. Allows conditions.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\extraorigins\\power_types\\prevent_block_slowness.json",
 	"type": "object",
-	"required": null,
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "extraorigins:prevent_block_slowness\nPrevents the entity from being slowed by blocks, such as Cobwebs. Allows conditions.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `extraorigins:prevent_block_slowness`\nPrevents the entity from being slowed by blocks, such as Cobwebs. Allows conditions.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"const": "extraorigins:prevent_block_slowness"
+		},
 		"blocks": {
 			"description": "An Array of Blocks.",
 			"type": "array",

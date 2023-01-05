@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:dimension'\n- Checks whether the entity is in a specified dimension.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\dimension.json",
 	"type": "object",
 	"required": [
+		"type",
 		"dimension"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:dimension\nChecks whether the entity is in a specified dimension.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:dimension`\nChecks whether the entity is in a specified dimension.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:dimension",
+				"origins:dimension"
+			]
+		},
 		"dimension": {
 			"description": "The namespace and ID of the dimension the player needs to be in for this condition to evaluate to true. Vanilla dimensions are minecraft:overworld, minecraft:the_nether and minecraft:the_end, but namespace and IDs of custom/modded dimensions should also work.",
 			"anyOf": [

@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Action",
-	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:revoke_power'\n- Revokes a power from the entity from a specified power source.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_actions\\revoke_power.json",
 	"type": "object",
 	"required": [
+		"type",
 		"power",
 		"source"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:revoke_power\nRevokes a power from the entity from a specified power source.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+			"markdownDescription": "### `apoli:revoke_power`\nRevokes a power from the entity from a specified power source.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+			"enum": [
+				"apoli:revoke_power",
+				"origins:revoke_power"
+			]
+		},
 		"power": {
 			"description": "The namespace and ID of the power to be revoked from the entity.",
 			"$ref": "../../types/identifier.json"

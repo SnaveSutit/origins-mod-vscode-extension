@@ -1,0 +1,28 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks if the entity has the specified permission level.
+      Caution: This may not work properly in singleplayer.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks if the entity has the specified permission level.
+      ### Caution
+      This may not work properly in singleplayer.
+      $parentDescription
+    const: $namespace:$fileName
+
+  comparison:
+    description: Determines how the permission level of the entity should be compared to the specified value.
+    default: '>='
+    $ref: ../../types/comparison.json
+
+  compare_to:
+    description: The value which the permission level of the entity should be compared to.
+    type: integer
+    default: 2

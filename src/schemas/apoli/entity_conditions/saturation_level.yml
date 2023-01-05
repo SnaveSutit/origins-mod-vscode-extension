@@ -1,15 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:saturation_level'
-  - Checks the entity's saturation level, which is the invisible value that determines how "full" the entity is, which then determines how long it takes before the hunger level of the entity will go down.
 type: object
 required:
+  - type
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks the entity's saturation level, which is the invisible value that determines how "full" the entity is, which then determines how long it takes before the hunger level of the entity will go down.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks the entity's saturation level, which is the invisible value that determines how "full" the entity is, which then determines how long it takes before the hunger level of the entity will go down.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   comparison:
     description: How the saturation level should be compared to the specified value.
     $ref: ../../types/comparison.json

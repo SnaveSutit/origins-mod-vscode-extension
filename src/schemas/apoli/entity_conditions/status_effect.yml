@@ -1,14 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:status_effect'
-  - Checks whether the entity has a specified status effect with a specified amplifier, and/or duration range.
 type: object
 required:
+  - type
   - effect
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether the entity has a specified status effect with a specified amplifier, and/or duration range.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether the entity has a specified status effect with a specified amplifier, and/or duration range.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   effect:
     description: The namespace and ID of the status effect to check for.s
 

@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Biome Condition",
-	"description": "Biome Condition Types operate on a Biome.\nType: 'origins:temperature'\n- Checks for the temperature of the biome the entity is currently in.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\biome_conditions\\temperature.json",
 	"type": "object",
 	"required": [
+		"type",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:temperature\nChecks for the temperature of the biome the entity is currently in.\nBiome Condition Types operate on a Biome.",
+			"markdownDescription": "### `apoli:temperature`\nChecks for the temperature of the biome the entity is currently in.\n## Biome Condition Type\nBiome Condition Types operate on a Biome.\n\n[Biome Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/biome_Condition_types/)",
+			"enum": [
+				"apoli:temperature",
+				"origins:temperature"
+			]
+		},
 		"comparison": {
 			"description": "How the temperature should be compared to the specified value.",
 			"$ref": "../../types/comparison.json"

@@ -1,16 +1,24 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:in_block_anywhere'
-  - Checks how many blocks are overlapping with the entity's eyes or feet.
 type: object
 required:
+  - type
   - block_condition
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks how many blocks are overlapping with the entity's eyes or feet.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks how many blocks are overlapping with the entity's eyes or feet.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   block_condition:
     description: The block condition type which blocks need to fulfill in order to count for this condition.
     $ref: ../../block_condition.json

@@ -1,6 +1,17 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Block Condition",
-	"description": "Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\nType: 'origins:movement_blocking'\n- Checks whether the block is marked in code as blocking movement and doesn't have an empty collision shape.",
-	"type": "object"
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_conditions\\movement_blocking.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "apoli:movement_blocking\nChecks whether the block is marked in code as blocking movement and doesn't have an empty collision shape.\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.",
+			"markdownDescription": "### `apoli:movement_blocking`\nChecks whether the block is marked in code as blocking movement and doesn't have an empty collision shape.\n## Block Condition Type\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\n\n[Block Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/block_Condition_types/)",
+			"enum": [
+				"apoli:movement_blocking",
+				"origins:movement_blocking"
+			]
+		}
+	}
 }

@@ -1,0 +1,15 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks if the block is air/void air/cave air.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks if the block is air/void air/cave air.
+      $parentDescription
+    const: $namespace:$fileName

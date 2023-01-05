@@ -1,0 +1,15 @@
+{
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\scoreboard.json",
+	"title": "Scoreboard",
+	"type": "object",
+	"properties": {
+		"name": {
+			"description": "The name of the score holder.",
+			"type": "string"
+		},
+		"objective": {
+			"description": "The name of the scoreboard objective.",
+			"type": "string"
+		}
+	}
+}

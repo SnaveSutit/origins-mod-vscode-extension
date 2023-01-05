@@ -1,14 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:lava_vision'
-  - Changes how far the player can see when submerged in lava.
 type: object
 required:
+  - type
   - s
   - v
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Changes how far the player can see when submerged in lava.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Changes how far the player can see when submerged in lava.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   s:
     description: Near view. Vanilla default is 0.25, or 0.0 if you are under the effect of Fire Resistance.
     type: number

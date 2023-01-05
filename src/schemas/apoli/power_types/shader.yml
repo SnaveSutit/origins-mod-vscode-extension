@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:shader'
-  - Applies a post-processing shader to the vision of the entity that has the power.
 type: object
 required:
+  - type
   - shader
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Applies a post-processing shader to the vision of the entity that has the power.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Applies a post-processing shader to the vision of the entity that has the power.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   shader:
     description: Specifies the location of the shader resource file to use.
     $ref: ../../types/identifier.json

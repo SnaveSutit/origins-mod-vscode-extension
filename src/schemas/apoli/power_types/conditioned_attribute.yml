@@ -1,12 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:conditioned_attribute'
-  - Applies one or more attribute modifiers; may depend on a condition.
 type: object
 required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Applies one or more attribute modifiers; may depend on a condition.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Applies one or more attribute modifiers; may depend on a condition.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   modifier:
     description: If specified, this modifier will be applied to its corresponding attribute.
     $ref: ../../types/attributed_attribute_modifier.json

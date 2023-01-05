@@ -1,0 +1,15 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      TYPE TEMPLATE FILE
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      TYPE TEMPLATE FILE
+      $parentDescription
+    const: $namespace:$fileName

@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Action
-description: |-
-  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
-  Type: 'origins:heal'
-  - Restores a specified amount of health to the entity.
 type: object
 required:
+  - type
   - amount
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Restores a specified amount of health to the entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Restores a specified amount of health to the entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   amount:
     description: The amount of health to restore.
     type: number

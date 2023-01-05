@@ -1,8 +1,8 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\hands.json",
 	"title": "Hands",
 	"type": "array",
-	"contains": [
+	"items": [
 		{
 			"const": "main_hand"
 		},

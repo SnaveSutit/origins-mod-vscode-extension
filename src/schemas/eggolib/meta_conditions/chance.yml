@@ -1,0 +1,25 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Generates a random value ranging from 0.0 to 1.0 and checks if it's less than the specified value.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Generates a random value ranging from 0.0 to 1.0 and checks if it's less than the specified value.
+      $parentDescription
+    $ignoreInvalidRef: true
+    const: $namespace:$fileName
+
+  chance:
+    description: The value to compare the generated random value to.
+    type: number
+
+dependantSchemas:
+  type:
+    required:
+      - chance

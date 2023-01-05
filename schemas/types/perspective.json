@@ -1,0 +1,9 @@
+{
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\perspective.json",
+	"title": "Perspective",
+	"enum": [
+		"first_person",
+		"third_person_back",
+		"third_person_front"
+	]
+}

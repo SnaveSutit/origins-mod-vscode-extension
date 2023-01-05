@@ -1,14 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Action
-description: |-
-  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
-  Type: 'origins:modify_resource'
-  - Modifies the value of a certain resource with Attribute Modifiers.
 type: object
 required:
+  - type
   - resource
   - modifier
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies the value of a certain resource with Attribute Modifiers.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies the value of a certain resource with Attribute Modifiers.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   modifier:
     description: This modifier will be applied to the current value of the target power.
     $ref: ../../types/attribute_modifier.json

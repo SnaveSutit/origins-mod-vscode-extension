@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_entity_render'\n- Prevents an entity from being rendered to the entity that has the power, including their armor, shadow, and hitboxes.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\prevent_entity_render.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:prevent_entity_render\nPrevents an entity from being rendered to the entity that has the power, including their armor, shadow, and hitboxes.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:prevent_entity_render`\nPrevents an entity from being rendered to the entity that has the power, including their armor, shadow, and hitboxes.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:prevent_entity_render",
+				"origins:prevent_entity_render"
+			]
+		},
 		"entity_condition": {
 			"description": "If specified, only entities which fulfills this condition will be affected.",
 			"$ref": "../../entity_condition.json"

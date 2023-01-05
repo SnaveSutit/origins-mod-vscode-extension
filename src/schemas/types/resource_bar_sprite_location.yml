@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Resource bar sprite location
-description: A string path to the location of a resource bar texture
+# description: A string path to the location of a resource bar texture
 anyOf:
   - enum:
       - origins:textures/gui/resource_bar.png

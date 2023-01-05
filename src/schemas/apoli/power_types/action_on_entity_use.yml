@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:action_on_entity_use'
-  - Executes a Bi-entity Action Type or Item Action Types when the player that has the power "uses" (right-clicks) an entity.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes a Bi-entity Action Type or Item Action Types when the player that has the power "uses" (right-clicks) an entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes a Bi-entity Action Type or Item Action Types when the player that has the power "uses" (right-clicks) an entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   bientity_action:
     description: If specified, this action will be executed on either or both 'actor' (player) or 'target' (the entity that has the power) entities.
     $ref: ../../bientity_action.json

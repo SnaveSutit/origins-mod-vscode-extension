@@ -1,5 +1,5 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\particle.json",
 	"title": "Particle",
 	"anyOf": [
 		{

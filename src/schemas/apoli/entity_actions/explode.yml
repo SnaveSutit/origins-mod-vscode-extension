@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Action
-description: |-
-  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
-  Type: 'origins:explode'
-  - Summons an explosion at the position of the entity.
 type: object
 required:
+  - type
   - power
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Summons an explosion at the position of the entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Summons an explosion at the position of the entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   power:
     description: Determines the power of the explosion.
     type: number

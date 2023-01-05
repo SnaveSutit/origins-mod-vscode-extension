@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Action",
-	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:spawn_entity'\n- Spawns another entity at the position of the target entity.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_actions\\spawn_entity.json",
 	"type": "object",
 	"required": [
+		"type",
 		"entity_type"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:spawn_entity\nSpawns another entity at the position of the target entity.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+			"markdownDescription": "### `apoli:spawn_entity`\nSpawns another entity at the position of the target entity.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+			"enum": [
+				"apoli:spawn_entity",
+				"origins:spawn_entity"
+			]
+		},
 		"entity_type": {
 			"description": "The namespace and ID of the entity type that will be spawned.",
 			"$ref": "../../types/identifier.json"

@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Status Effect Instance
-description: An Object used to define a status effect with duration, amplifier, etc.
+# description: An Object used to define a status effect with duration, amplifier, etc.
 type: object
 required:
   - effect

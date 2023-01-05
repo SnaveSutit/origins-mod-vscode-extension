@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:effect_immunity'\n- Prevents status effects from being applied to the entity that has the power.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\effect_immunity.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:effect_immunity\nPrevents status effects from being applied to the entity that has the power.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:effect_immunity`\nPrevents status effects from being applied to the entity that has the power.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:effect_immunity",
+				"origins:effect_immunity"
+			]
+		},
 		"effect": {
 			"description": "If specified, the status effect with this namespace and ID can not be applied to the entity that has the power.",
 			"$ref": "../../types/identifier.json"

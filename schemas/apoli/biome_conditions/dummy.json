@@ -1,8 +1,0 @@
-{
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Biome Condition",
-	"description": "Biome Condition Types operate on a Biome.\nType: 'dummy'\n- does nothing.",
-	"type": "object",
-	"required": null,
-	"properties": null
-}

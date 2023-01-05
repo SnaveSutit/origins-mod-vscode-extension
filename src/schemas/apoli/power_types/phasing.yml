@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:phasing'
-  - Allows the entity that has the power to "phase" (move) through blocks.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Allows the entity that has the power to "phase" (move) through blocks.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Allows the entity that has the power to "phase" (move) through blocks.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   blacklist:
     description: If set to true, the block_condition field will define which blocks the player can NOT move through.
     type: boolean

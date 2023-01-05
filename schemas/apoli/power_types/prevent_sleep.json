@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_sleep'\n- Prevents sleeping and sends the player a message about why they can't sleep.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\prevent_sleep.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:prevent_sleep\nPrevents sleeping and sends the player a message about why they can't sleep.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:prevent_sleep`\nPrevents sleeping and sends the player a message about why they can't sleep.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:prevent_sleep",
+				"origins:prevent_sleep"
+			]
+		},
 		"block_condition": {
 			"description": "If specified, sleep will only be prevented if this condition is fulfilled by the bed block.",
 			"$ref": "../../block_condition.json"

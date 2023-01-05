@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:climbing'
-  - Allows the entity the power to climb.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Allows the entity the power to climb.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Allows the entity the power to climb.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   allow_holding:
     description: If true, the entity that has the power is able to hold onto blocks.
     type: boolean

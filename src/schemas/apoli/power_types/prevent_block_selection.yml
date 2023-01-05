@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:prevent_block_selection'
-  - Prevents the selection (i.e. targetting) of blocks for a player. This means they are not able to mine them, and attacks, interactions, etc. will pass through the block to whatever's behind it.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Prevents the selection (i.e. targetting) of blocks for a player. This means they are not able to mine them, and attacks, interactions, etc. will pass through the block to whatever's behind it.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Prevents the selection (i.e. targetting) of blocks for a player. This means they are not able to mine them, and attacks, interactions, etc. will pass through the block to whatever's behind it.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   block_condition:
     description: Prevents the selection (i.e. targetting) of blocks for a player. This means they are not able to mine them, and attacks, interactions, etc. will pass through the block to whatever's behind it.
     $ref: ../../block_condition.json

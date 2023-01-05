@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Fluid Handling
-description: A string used mainly for ray-casting to determine how it will handle fluids.
+# description: A string used mainly for ray-casting to determine how it will handle fluids.
 type: string
 anyOf:
   - const: any

@@ -1,14 +1,21 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:stacking_status_effect'\n- Provides a system where the entity that has the power gains/loses a stack per specified interval if the power is active or inactive respectively. If the stack count is greater than 0, the specified status effect(s) will be applied to the entity.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\stacking_status_effect.json",
 	"type": "object",
 	"required": [
+		"type",
 		"min_stacks",
 		"max_stacks",
 		"duration_per_stack"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:stacking_status_effect\nProvides a system where the entity that has the power gains/loses a stack per specified interval if the power is active or inactive respectively. If the stack count is greater than 0, the specified status effect(s) will be applied to the entity.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:stacking_status_effect`\nProvides a system where the entity that has the power gains/loses a stack per specified interval if the power is active or inactive respectively. If the stack count is greater than 0, the specified status effect(s) will be applied to the entity.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:stacking_status_effect",
+				"origins:stacking_status_effect"
+			]
+		},
 		"min_stacks": {
 			"description": "The minimum number of stacks. Negative numbers are allowed.",
 			"type": "integer"

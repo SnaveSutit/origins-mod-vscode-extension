@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Action",
-	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:equipped_item_action'\n- Executes an Item Action Type on an item stack in a specified equipment slot.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_actions\\equipped_item_action.json",
 	"type": "object",
 	"required": [
+		"type",
 		"equipment_slot",
 		"action"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:equipped_item_action\nExecutes an Item Action Type on an item stack in a specified equipment slot.\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+			"markdownDescription": "### `apoli:equipped_item_action`\nExecutes an Item Action Type on an item stack in a specified equipment slot.\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+			"enum": [
+				"apoli:equipped_item_action",
+				"origins:equipped_item_action"
+			]
+		},
 		"equipment_slot": {
 			"description": "Which equipped item to execute the action on. One of: \"mainhand\", \"offhand\", \"head\", \"chest\", \"legs\", \"feet\".",
 			"$ref": "../../types/equipment_slots.json"

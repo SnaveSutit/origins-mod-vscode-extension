@@ -1,12 +1,19 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'extraorigins:mob_neutrality'
-  - Prevents mobs from attacking the entity unless the entity attacks first.
 type: object
 required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Prevents mobs from attacking the entity unless the entity attacks first.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Prevents mobs from attacking the entity unless the entity attacks first.
+      $parentDescription
+    const: $namespace:$fileName
+
   entity_types:
     description: An Array of Entity Type Identifiers.
     type: array

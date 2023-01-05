@@ -1,14 +1,21 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:fire_projectile'\n- Fires one or more projectiles upon pressing the specified Key.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\fire_projectile.json",
 	"type": "object",
 	"required": [
+		"type",
 		"entity_type",
 		"cooldown",
 		"hud_render"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:fire_projectile\nFires one or more projectiles upon pressing the specified Key.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:fire_projectile`\nFires one or more projectiles upon pressing the specified Key.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:fire_projectile",
+				"origins:fire_projectile"
+			]
+		},
 		"entity_type": {
 			"description": "The ID of the entity type that will be fired.",
 			"$ref": "../../types/identifier.json"

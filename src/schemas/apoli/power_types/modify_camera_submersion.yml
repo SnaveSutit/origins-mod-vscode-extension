@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:modify_camera_submersion'
-  - Modifies how the player perceives the world, similarly to when they're submerged in fluids like water or lava.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies how the player perceives the world, similarly to when they're submerged in fluids like water or lava.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies how the player perceives the world, similarly to when they're submerged in fluids like water or lava.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   from:
     description: Which submersion type to modify.
     type: string

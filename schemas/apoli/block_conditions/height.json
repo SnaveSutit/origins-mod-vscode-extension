@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Block Condition",
-	"description": "Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\nType: 'origins:height'\n- Compares the Y position of the block to a value.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_conditions\\height.json",
 	"type": "object",
 	"required": [
+		"type",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:height\nCompares the Y position of the block to a value.\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.",
+			"markdownDescription": "### `apoli:height`\nCompares the Y position of the block to a value.\n## Block Condition Type\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\n\n[Block Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/block_Condition_types/)",
+			"enum": [
+				"apoli:height",
+				"origins:height"
+			]
+		},
 		"comparison": {
 			"description": "How the Y position of the block should be compared to the specified value.",
 			"$ref": "../../types/comparison.json"

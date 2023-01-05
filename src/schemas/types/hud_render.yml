@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Hud Render
-description: An Object used to define how a resource or cooldown bar should be rendered.
+# description: An Object used to define how a resource or cooldown bar should be rendered.
 type: object
 properties:
   should_render:

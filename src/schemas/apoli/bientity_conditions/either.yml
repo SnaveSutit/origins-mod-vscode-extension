@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Meta Bi-entity Condition Either
-description: |-
-  Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.
-  Type: 'origins:either'
-  - Checks for an entity condition on either the actor or target entities.
 type: object
 required:
+  - type
   - condition
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks for an entity condition on either the actor or target entities.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks for an entity condition on either the actor or target entities.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   condition:
     description: The entity condition type to check on either the actor or target entity.
     $ref: ../../entity_condition.json

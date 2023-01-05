@@ -1,6 +1,17 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Item Condition",
-	"description": "Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\nType: 'origins:meat'\n- Checks whether the item is considered meat by Minecraft (usable for breeding wolves).",
-	"type": "object"
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_conditions\\meat.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "apoli:meat\nChecks whether the item is considered meat by Minecraft (usable for breeding wolves).\nItem Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.",
+			"markdownDescription": "### `apoli:meat`\nChecks whether the item is considered meat by Minecraft (usable for breeding wolves).\n## Item Condition Type\nItem Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.\n\n[Item Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/item_Condition_types/)",
+			"enum": [
+				"apoli:meat",
+				"origins:meat"
+			]
+		}
+	}
 }

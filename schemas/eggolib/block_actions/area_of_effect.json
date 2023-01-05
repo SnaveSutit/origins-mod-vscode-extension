@@ -1,0 +1,37 @@
+{
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\block_actions\\area_of_effect.json",
+	"type": "object",
+	"required": [
+		"type",
+		"radius",
+		"block_action"
+	],
+	"properties": {
+		"type": {
+			"description": "eggolib:area_of_effect\nExecutes an action on blocks that are within the specified radius.\nBlock Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.",
+			"markdownDescription": "### `eggolib:area_of_effect`\nExecutes an action on blocks that are within the specified radius.\n## Block Action Type\nBlock Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.\n\n[Block Action Types Documentation](https://origins.readthedocs.io/en/latest/types/block_action_types/)",
+			"const": "eggolib:area_of_effect"
+		},
+		"radius": {
+			"description": "Determines the radius of the area to execute the action on.",
+			"type": "integer"
+		},
+		"shape": {
+			"description": "Determines the shape of the area to execute the action on. Accepts one of \"cube\", \"star\" or \"sphere\".",
+			"default": "cube",
+			"enum": [
+				"cube",
+				"star",
+				"sphere"
+			]
+		},
+		"block_action": {
+			"description": "The action to execute on the block(s) within the specified radius.",
+			"$ref": "../../block_action.json"
+		},
+		"block_condition": {
+			"description": "If specified, only execute the specified action on the block(s) that fulfills this condition.",
+			"$ref": "../../block_condition.json"
+		}
+	}
+}

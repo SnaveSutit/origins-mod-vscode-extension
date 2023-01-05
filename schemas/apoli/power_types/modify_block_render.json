@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_block_render'\n- Modifies how a block would look like to the entity that has the power.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_block_render.json",
 	"type": "object",
 	"required": [
+		"type",
 		"block"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify_block_render\nModifies how a block would look like to the entity that has the power.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:modify_block_render`\nModifies how a block would look like to the entity that has the power.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:modify_block_render",
+				"origins:modify_block_render"
+			]
+		},
 		"block_condition": {
 			"description": "If specified, only modify how the blocks that fulfill this condition would look like.",
 			"$ref": "../../block_condition.json"

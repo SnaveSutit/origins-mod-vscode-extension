@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Vector
-description: An Object that specifies the X, Y and Z coordinates of a certain point in space.
+# description: An Object that specifies the X, Y and Z coordinates of a certain point in space.
 type: object
 required:
   - x

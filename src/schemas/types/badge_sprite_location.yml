@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Badge sprite location
-description: A string path to the location of a badge texture
+# description: A string path to the location of a badge texture
 anyOf:
   - enum:
       - origins:textures/gui/badge/active.png

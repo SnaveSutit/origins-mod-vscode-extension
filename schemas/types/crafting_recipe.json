@@ -1,10 +1,8 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\crafting_recipe.json",
 	"title": "Crafting Recipe",
-	"description": "An Object specifying a shapeless or shaped crafting recipe. For some more information, view the page on recipes on the MC wiki.",
 	"type": "object",
 	"required": [
-		"type",
 		"id",
 		"result"
 	],

@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:modify_projectile_damage'
-  - Modifies how much damage the projectile of the entity that has the power deals.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies how much damage the projectile of the entity that has the power deals.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies how much damage the projectile of the entity that has the power deals.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   entity_condition:
     description: If specified, the specified modifier(s) and action(s) will only apply if the dealt damage fulfills by this condition.
 

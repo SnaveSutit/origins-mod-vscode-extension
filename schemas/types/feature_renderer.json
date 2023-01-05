@@ -1,5 +1,5 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\feature_renderer.json",
 	"title": "Feature Renderer",
 	"type": "string",
 	"anyOf": [

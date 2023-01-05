@@ -1,6 +1,17 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Bi-entity Action",
-	"description": "Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.\nType: 'origins:mount'\n- Mounts the actor entity onto the target entity.",
-	"type": "object"
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\bientity_actions\\mount.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "apoli:mount\nMounts the actor entity onto the target entity.\nBi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.",
+			"markdownDescription": "### `apoli:mount`\nMounts the actor entity onto the target entity.\n## Bi-Entity Action Type\nBi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.\n\n[Bi-Entity Action Type Documentation](https://origins.readthedocs.io/en/latest/types/bientity_action_types/)",
+			"enum": [
+				"apoli:mount",
+				"origins:mount"
+			]
+		}
+	}
 }

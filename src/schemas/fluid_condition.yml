@@ -1,41 +1,59 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Fluid Condition
-description: Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.
+title: Fluid Condition Type
+description: 'Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.'
+markdownDescription: |-
+  ## Fluid Condition Type
+  Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.
+
+  [Fluid Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/fluid_Condition_types/)
 type: object
 required:
   - type
 properties:
   type:
-    description: The ID of the Fluid Condition to use
     $ref: ./types/identifier.json
 
-  inverted:
-    description: If true, the condition acts inverted.
-    type: boolean
-    default: false
+if:
+  required:
+    - type
+then:
+  properties:
+    inverted:
+      description: If true, the condition acts inverted.
+      type: boolean
+      default: false
 
-allOf:
-  - $IMPORT:
-      a: true
-      path: ./src/schemas/apoli/fluid_conditions/
-      format: allOfIfThen
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+  allOf:
+    - $IMPORT:
+        path: ./src/schemas/apoli/fluid_conditions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
 
-  - $IMPORT:
-      b: true
-      path: ./src/schemas/apoli/meta_conditions/
-      format: allOfIfThenUnique
-      replace:
-        actionType: fluid_condition
-        conditionType: fluid_condition
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+    - $IMPORT:
+        path: ./src/schemas/apoli/meta_conditions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: fluid_condition
+          conditionType: fluid_condition
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/eggolib/meta_conditions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: fluid_condition
+          conditionType: fluid_condition
+        condition:
+          properties:
+            type:
+              const: eggolib:$schemaName

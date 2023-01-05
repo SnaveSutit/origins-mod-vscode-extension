@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:prevent_being_used'\n- Prevents other players from being able to \"use\" (right-click) the entity that has the power and executes a bi-entity action, item action and/or give an item upon being prevented.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\prevent_being_used.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:prevent_being_used\nPrevents other players from being able to \"use\" (right-click) the entity that has the power and executes a bi-entity action, item action and/or give an item upon being prevented.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:prevent_being_used`\nPrevents other players from being able to \"use\" (right-click) the entity that has the power and executes a bi-entity action, item action and/or give an item upon being prevented.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:prevent_being_used",
+				"origins:prevent_being_used"
+			]
+		},
 		"bientity_action": {
 			"description": "If specified, this action will be executed on either or both 'actor' (player) or 'target' (the entity that has the power) entities.",
 			"$ref": "../../bientity_action.json"

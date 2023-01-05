@@ -1,36 +1,59 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Bi-entity Action
+title: Bi-entity Action Type
 description: 'Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.'
+markdownDescription: |-
+  ## Bi-Entity Action Type
+  Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.
+
+  [Bi-Entity Action Type Documentation](https://origins.readthedocs.io/en/latest/types/bientity_action_types/)
 type: object
 required:
   - type
 properties:
   type:
-    description: The ID of the Bi-entity Action
     $ref: ./types/identifier.json
 
-allOf:
-  - $IMPORT:
-      a: true
-      path: ./src/schemas/apoli/bientity_actions/
-      format: allOfIfThen
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+if:
+  required:
+    - type
+then:
+  properties:
+    inverted:
+      description: If true, the condition acts inverted.
+      type: boolean
+      default: false
 
-  - $IMPORT:
-      b: true
-      path: ./src/schemas/apoli/meta_actions/
-      format: allOfIfThenUnique
-      replace:
-        actionType: bientity_action
-        conditionType: bientity_condition
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+  allOf:
+    - $IMPORT:
+        path: ./src/schemas/apoli/bientity_actions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              oneOf:
+                - const: 'apoli:$schemaName'
+                - const: 'origins:$schemaName'
+
+    - $IMPORT:
+        path: ./src/schemas/apoli/meta_actions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: bientity_action
+          conditionType: bientity_condition
+        condition:
+          properties:
+            type:
+              oneOf:
+                - const: 'apoli:$schemaName'
+                - const: 'origins:$schemaName'
+
+    - $IMPORT:
+        path: ./src/schemas/eggolib/meta_actions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: bientity_action
+          conditionType: bientity_condition
+        condition:
+          properties:
+            type:
+              - const: 'eggolib:$schemaName'

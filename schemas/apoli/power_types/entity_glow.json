@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:entity_glow'\n- Makes other entities glow (as with the glowing status effect), but only for the player that has the power.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\entity_glow.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:entity_glow\nMakes other entities glow (as with the glowing status effect), but only for the player that has the power.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:entity_glow`\nMakes other entities glow (as with the glowing status effect), but only for the player that has the power.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:entity_glow",
+				"origins:entity_glow"
+			]
+		},
 		"entity_condition": {
 			"description": "If specified, only entities which fulfill this condition will glow for the player that has the power.",
 			"$ref": "../../entity_condition.json"

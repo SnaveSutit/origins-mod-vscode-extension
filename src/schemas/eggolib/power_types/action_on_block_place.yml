@@ -1,0 +1,71 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes an action upon placing a block.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes an action upon placing a block.
+      $parentDescription
+    const: $namespace:$fileName
+
+  entity_action:
+    description: If specified, this action will be executed on the player upon placing a block.
+    $ref: ../../entity_action.json
+
+  held_item_action:
+    description: If specified, this action will be executed on the item the player has used to place a block.
+    $ref: ../../item_action.json
+
+  result_item_action:
+    description: If specified, this action will be executed on the item that will be given to the player upon placing a block.
+    $ref: ../../item_action.json
+
+  place_to_action:
+    description: If specified, this action will be executed at the position of the block the player has placed.
+    $ref: ../../block_action.json
+
+  place_on_action:
+    description: If specified, this action will be executed on the block the player placed a block on.
+    $ref: ../../block_action.json
+
+  item_condition:
+    description: If specified, only execute the specified actions if the item the player has used to place a block fulfills this condition.
+    $ref: ../../item_condition.json
+
+  place_to_condition:
+    description: If specified, only execute the specified actions if the old block at the position of the new block the player has placed fulfills this condition.
+    $ref: ../../block_condition.json
+
+  place_on_condition:
+    description: If specified, only execute the specified actions if the block the player placed a block on fulfills this condition.
+    $ref: ../../block_condition.json
+
+  directions:
+    description: Determines if the specified actions should be executed if the player has placed a block at the specified side(s) of a block.
+    type: array
+    items:
+      anyOf:
+        - const: up
+        - const: down
+        - const: north
+        - const: south
+        - const: east
+        - const: west
+
+  hands:
+    description: Determines if the specified actions should be executed if the player has attempted to place a block using the specified hand(s).
+    type: array
+    items:
+      anyOf:
+        - const: main_hand
+        - const: off_hand
+
+  result_stack:
+    description: If specified, this item will be given to the player upon placing a block.
+    $ref: ../../types/item_stack.json

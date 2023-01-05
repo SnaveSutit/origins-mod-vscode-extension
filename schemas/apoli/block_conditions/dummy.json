@@ -1,8 +1,0 @@
-{
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Block Condition",
-	"description": "Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\nType: 'dummy'\n- does nothing.",
-	"type": "object",
-	"required": null,
-	"properties": null
-}

@@ -1,8 +1,8 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Condition
-description: |-
-  A String which specifies how two numbers should be compared.
-  Usually the first number is provided by whatever condition you are in, and the second is specified in an accompanying compare_to field.
+# description: |-
+#   A String which specifies how two numbers should be compared.
+#   Usually the first number is provided by whatever condition you are in, and the second is specified in an accompanying compare_to field.
 type: string
 enum:
   - <

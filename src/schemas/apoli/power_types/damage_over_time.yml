@@ -1,14 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:damage_over_time'
-  - Inflicts damage on the entity that has the power from a specified damage source within the specified interval.
 type: object
 required:
+  - type
   - interval
   - damage
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Inflicts damage on the entity that has the power from a specified damage source within the specified interval.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Inflicts damage on the entity that has the power from a specified damage source within the specified interval.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   interval:
     description: Duration of ticks to wait between the damage.
     type: integer

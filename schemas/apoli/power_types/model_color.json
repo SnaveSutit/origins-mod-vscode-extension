@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:model_color'\n- Multiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\model_color.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:model_color\nMultiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:model_color`\nMultiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:model_color",
+				"origins:model_color"
+			]
+		},
 		"red": {
 			"description": "Value by which the red component of the texture will be multiplied.",
 			"type": "number",

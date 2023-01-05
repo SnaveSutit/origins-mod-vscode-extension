@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Bi-entity Condition",
-	"description": "Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.\nType: 'origins:can_see'\n- Checks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\bientity_conditions\\can_see.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:can_see\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.",
+			"markdownDescription": "### `apoli:can_see`\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n## Bi-Entity Condition Type\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.\n\n[Bi-Entity Condition Type Documentation](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/)",
+			"enum": [
+				"apoli:can_see",
+				"origins:can_see"
+			]
+		},
 		"shape_type": {
 			"description": "Determines how the ray-cast will handle blocks.",
 			"$ref": "../../types/shape_type.json",

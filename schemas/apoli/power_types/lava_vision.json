@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:lava_vision'\n- Changes how far the player can see when submerged in lava.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\lava_vision.json",
 	"type": "object",
 	"required": [
+		"type",
 		"s",
 		"v"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:lava_vision\nChanges how far the player can see when submerged in lava.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:lava_vision`\nChanges how far the player can see when submerged in lava.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:lava_vision",
+				"origins:lava_vision"
+			]
+		},
 		"s": {
 			"description": "Near view. Vanilla default is 0.25, or 0.0 if you are under the effect of Fire Resistance.",
 			"type": "number"

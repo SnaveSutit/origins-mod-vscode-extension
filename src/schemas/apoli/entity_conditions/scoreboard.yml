@@ -1,16 +1,24 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:scoreboard'
-  - Compares the score of the entity from a specified scoreboard objective to a specified value.
 type: object
 required:
+  - type
   - objective
   - comparison
   - compare_to
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Compares the score of the entity from a specified scoreboard objective to a specified value.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Compares the score of the entity from a specified scoreboard objective to a specified value.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   objective:
     description: The name of the scoreboard objective to retrieve the value from and compare.
     type: string

@@ -1,8 +1,0 @@
-{
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Block Action",
-	"description": "Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.\nType: 'dummy'\n- does nothing.",
-	"type": "object",
-	"required": null,
-	"properties": null
-}

@@ -1,7 +1,6 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\status_effect_instance.json",
 	"title": "Status Effect Instance",
-	"description": "An Object used to define a status effect with duration, amplifier, etc.",
 	"type": "object",
 	"required": [
 		"effect"

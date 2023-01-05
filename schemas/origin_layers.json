@@ -1,5 +1,5 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\origin_layers.json",
 	"title": "Origin Layer",
 	"description": "https://origins.readthedocs.io/en/latest/json/origin_layer/",
 	"type": "object",

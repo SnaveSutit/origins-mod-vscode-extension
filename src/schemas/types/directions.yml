@@ -1,7 +1,7 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Hands
 type: array
-contains:
+items:
   - const: north
   - const: south
   - const: east

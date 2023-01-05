@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Block Condition",
-	"description": "Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\nType: 'origins:in_tag'\n- Checks whether the block is in a specified tag.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_conditions\\in_tag.json",
 	"type": "object",
 	"required": [
+		"type",
 		"tag"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:in_tag\nChecks whether the block is in a specified tag.\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.",
+			"markdownDescription": "### `apoli:in_tag`\nChecks whether the block is in a specified tag.\n## Block Condition Type\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\n\n[Block Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/block_Condition_types/)",
+			"enum": [
+				"apoli:in_tag",
+				"origins:in_tag"
+			]
+		},
 		"tag": {
 			"description": "The namespace and ID of the tag which the block should be in to pass the check.",
 			"$ref": "../../types/identifier.json"

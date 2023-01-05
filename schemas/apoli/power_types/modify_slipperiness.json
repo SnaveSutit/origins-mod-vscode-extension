@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_slipperiness'\n- Adjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_slipperiness.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify_slipperiness\nAdjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:modify_slipperiness`\nAdjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:modify_slipperiness",
+				"origins:modify_slipperiness"
+			]
+		},
 		"block_condition": {
 			"description": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition.",
 			"$ref": "../../block_condition.json"

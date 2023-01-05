@@ -1,9 +1,15 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'extraorigins:can_walk_on_powder_snow'
-  - Allows an entity to walk on Powder Snow as if they were wearing Leather Boots. Allows conditions.
 type: object
 required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Allows an entity to walk on Powder Snow as if they were wearing Leather Boots. Allows conditions.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Allows an entity to walk on Powder Snow as if they were wearing Leather Boots. Allows conditions.
+      $parentDescription
+    const: $namespace:$fileName

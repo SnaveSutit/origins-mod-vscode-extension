@@ -1,0 +1,14 @@
+{
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\bientity_conditions\\has_matching_tag.json",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"description": "eggolib:has_matching_tag\nChecks whether the actor entity and the target entity has matching scoreboard tag(s) (added via the /tag command).\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.",
+			"markdownDescription": "### `eggolib:has_matching_tag`\nChecks whether the actor entity and the target entity has matching scoreboard tag(s) (added via the /tag command).\n## Bi-Entity Condition Type\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.\n\n[Bi-Entity Condition Type Documentation](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/)",
+			"const": "eggolib:has_matching_tag"
+		}
+	}
+}

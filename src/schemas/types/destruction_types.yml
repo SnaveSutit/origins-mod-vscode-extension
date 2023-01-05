@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Destruction Type
-description: A string that is used to determine the effect of an explosion to the terrain.
+# description: A string that is used to determine the effect of an explosion to the terrain.
 type: string
 anyOf:
   - const: break

@@ -1,7 +1,17 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Fluid Condition
-description: |-
-  Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.
-  Type: 'origins:empty'
-  - Checks whether there is no fluid in this state.
 type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether there is no fluid in this state.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether there is no fluid in this state.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName

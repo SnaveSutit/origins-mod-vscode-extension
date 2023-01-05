@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:starting_equipment'
-  - Provides the player with items when the power is granted.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Provides the player with items when the power is granted.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Provides the player with items when the power is granted.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   stack:
     description: If specified, this item will be given to the player (can be specified in an inventory slot).
     $ref: ../../types/item_stack.json

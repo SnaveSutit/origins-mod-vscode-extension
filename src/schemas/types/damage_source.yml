@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Damage Source
-description: An Object used to specify how to deal damage to an entity.
+# description: An Object used to specify how to deal damage to an entity.
 type: object
 required:
   - name

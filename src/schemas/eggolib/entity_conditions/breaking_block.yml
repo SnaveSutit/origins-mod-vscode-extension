@@ -1,0 +1,24 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks if the player is currently breaking a block.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks if the player is currently breaking a block.
+      $parentDescription
+    const: $namespace:$fileName
+
+  block_condition:
+    description: If specified, the condition will only evaluate to true if this condition is fulfilled by the block being broken.
+    $ref: ../../block_condition.json
+
+  using_effective_tool:
+    description: Determines if the condition should check if the player is using the effective tool for the block being broken.
+    type: boolean
+    default: false

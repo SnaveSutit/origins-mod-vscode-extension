@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Block Action
-description: |-
-  Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.
-  Type: 'origins:execute_command'
-  - Executes a command at the position of the block.
 type: object
 required:
+  - type
   - command
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes a command at the position of the block.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes a command at the position of the block.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   command:
     description: The command to execute.
     type: string

@@ -1,14 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:self_action_on_kill'
-  - Executes an Entity Action Type on the entity that has the power when the entity kills another entity.
 type: object
 required:
+  - type
   - entity_action
   - cooldown
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes an Entity Action Type on the entity that has the power when the entity kills another entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes an Entity Action Type on the entity that has the power when the entity kills another entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   entity_action:
     description: The action to execute on the entity.
     $ref: ../../entity_action.json

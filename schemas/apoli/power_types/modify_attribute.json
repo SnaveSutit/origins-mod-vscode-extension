@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_attribute'\n- Modifies an attribute using Attribute Modifiers.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_attribute.json",
 	"type": "object",
 	"required": [
+		"type",
 		"attribute"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify_attribute\nModifies an attribute using Attribute Modifiers.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:modify_attribute`\nModifies an attribute using Attribute Modifiers.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:modify_attribute",
+				"origins:modify_attribute"
+			]
+		},
 		"attribute": {
 			"description": "The namespace and ID of the attribute to apply the modifier(s) to.",
 			"$ref": "../../types/attributes.json"

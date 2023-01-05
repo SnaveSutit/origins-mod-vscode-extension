@@ -1,36 +1,59 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Item Action
-description: Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
+title: Item Action Type
+description: 'Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.'
+markdownDescription: |-
+  ## Item Action Type
+  Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.
+
+  [Item Action Types Documentation](https://origins.readthedocs.io/en/latest/types/item_Action_types/)
 type: object
 required:
   - type
 properties:
   type:
-    description: The ID of the Item Action to use
     $ref: ./types/identifier.json
 
-allOf:
-  - $IMPORT:
-      a: true
-      path: ./src/schemas/apoli/item_actions/
-      format: allOfIfThen
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+if:
+  required:
+    - type
+then:
+  properties:
+    inverted:
+      description: If true, the condition acts inverted.
+      type: boolean
+      default: false
 
-  - $IMPORT:
-      b: true
-      path: ./src/schemas/apoli/meta_actions/
-      format: allOfIfThenUnique
-      replace:
-        actionType: item_action
-        conditionType: item_condition
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+  allOf:
+    - $IMPORT:
+        path: ./src/schemas/apoli/item_actions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/apoli/meta_actions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: item_action
+          conditionType: item_condition
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/eggolib/meta_actions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: item_action
+          conditionType: item_condition
+        condition:
+          properties:
+            type:
+              const: eggolib:$schemaName

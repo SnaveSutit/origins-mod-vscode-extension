@@ -1,36 +1,67 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Block Condition
-description: Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.
+title: Block Action Type
+description: 'Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.'
+markdownDescription: |-
+  ## Block Action Type
+  Block Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a block_action object field.
+
+  [Block Action Types Documentation](https://origins.readthedocs.io/en/latest/types/block_action_types/)
 type: object
 required:
   - type
 properties:
   type:
-    description: The ID of the Block Condition
     $ref: ./types/identifier.json
 
-allOf:
-  - $IMPORT:
-      a: true
-      path: ./src/schemas/apoli/block_actions/
-      format: allOfIfThen
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+if:
+  required:
+    - type
+then:
+  properties:
+    inverted:
+      description: If true, the condition acts inverted.
+      type: boolean
+      default: false
 
-  - $IMPORT:
-      b: true
-      path: ./src/schemas/apoli/meta_actions/
-      format: allOfIfThenUnique
-      replace:
-        actionType: block_action
-        conditionType: block_condition
-      condition:
-        properties:
-          type:
-            oneOf:
-              - const: 'apoli:$schemaName'
-              - const: 'origins:$schemaName'
+  allOf:
+    - $IMPORT:
+        path: ./src/schemas/apoli/block_actions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/apoli/meta_actions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: block_action
+          conditionType: block_condition
+        condition:
+          properties:
+            type:
+              enum:
+                - apoli:$schemaName
+                - origins:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/eggolib/block_actions/
+        format: arrayConditional
+        condition:
+          properties:
+            type:
+              const: eggolib:$schemaName
+
+    - $IMPORT:
+        path: ./src/schemas/eggolib/meta_actions/
+        format: arrayConditionalUnique
+        replace:
+          actionType: block_action
+          conditionType: block_condition
+        condition:
+          properties:
+            type:
+              const: eggolib:$schemaName

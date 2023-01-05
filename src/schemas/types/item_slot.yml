@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Item Slot
-description: A string that represents a slot from an entity or container's inventory.
+# description: A string that represents a slot from an entity or container's inventory.
 anyOf:
   - enum:
       - armor.chest

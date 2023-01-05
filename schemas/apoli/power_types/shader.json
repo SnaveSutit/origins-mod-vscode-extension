@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:shader'\n- Applies a post-processing shader to the vision of the entity that has the power.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\shader.json",
 	"type": "object",
 	"required": [
+		"type",
 		"shader"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:shader\nApplies a post-processing shader to the vision of the entity that has the power.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:shader`\nApplies a post-processing shader to the vision of the entity that has the power.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:shader",
+				"origins:shader"
+			]
+		},
 		"shader": {
 			"description": "Specifies the location of the shader resource file to use.",
 			"$ref": "../../types/identifier.json"

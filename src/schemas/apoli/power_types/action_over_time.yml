@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:action_over_time'
-  - Executes an Entity Action Type on the entity that has the power within the specified interval.
 type: object
 required:
+  - type
   - interval
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes an Entity Action Type on the entity that has the power within the specified interval.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes an Entity Action Type on the entity that has the power within the specified interval.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   interval:
     description: Interval of ticks between subsequent executions of the specified actions. Must be a value of at least 1.
     type: integer

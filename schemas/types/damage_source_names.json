@@ -1,7 +1,6 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\damage_source_names.json",
 	"title": "Damage Source Name",
-	"description": "The name of a source of damage",
 	"type": "string",
 	"anyOf": [
 		{

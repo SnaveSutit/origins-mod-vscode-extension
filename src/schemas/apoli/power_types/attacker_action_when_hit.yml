@@ -1,14 +1,23 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:attacker_action_when_hit'
-  - Executes an entity action on the attacker entity when the entity that has the power is hit by another entity.
 type: object
 required:
+  - type
   - entity_action
   - cooldown
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Executes an entity action on the attacker entity when the entity that has the power is hit by another entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Executes an entity action on the attacker entity when the entity that has the power is hit by another entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   entity_action:
     description: The action to execute on the attacker.
     $ref: ../../entity_action.json

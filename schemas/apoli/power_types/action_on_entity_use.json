@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:action_on_entity_use'\n- Executes a Bi-entity Action Type or Item Action Types when the player that has the power \"uses\" (right-clicks) an entity.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\action_on_entity_use.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:action_on_entity_use\nExecutes a Bi-entity Action Type or Item Action Types when the player that has the power \"uses\" (right-clicks) an entity.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:action_on_entity_use`\nExecutes a Bi-entity Action Type or Item Action Types when the player that has the power \"uses\" (right-clicks) an entity.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:action_on_entity_use",
+				"origins:action_on_entity_use"
+			]
+		},
 		"bientity_action": {
 			"description": "If specified, this action will be executed on either or both 'actor' (player) or 'target' (the entity that has the power) entities.",
 			"$ref": "../../bientity_action.json"

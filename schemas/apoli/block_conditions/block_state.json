@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Block Condition",
-	"description": "Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\nType: 'origins:block_state'\n- Checks a block state property of the block.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_conditions\\block_state.json",
 	"type": "object",
 	"required": [
+		"type",
 		"property"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:block_state\nChecks a block state property of the block.\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.",
+			"markdownDescription": "### `apoli:block_state`\nChecks a block state property of the block.\n## Block Condition Type\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\n\n[Block Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/block_Condition_types/)",
+			"enum": [
+				"apoli:block_state",
+				"origins:block_state"
+			]
+		},
 		"property": {
 			"description": "The name of the property that will be checked. Examples are facing or age. See: https://minecraft.fandom.com/wiki/Block_states#List_of_block_states",
 			"type": "string"

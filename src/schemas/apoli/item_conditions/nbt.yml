@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Item Condition
-description: |-
-  Item Condition Types operate on an ItemStack. These are available to power/condition types that provides an item_condition object field.
-  Type: 'origins:nbt'
-  - Checks the item's NBT.
 type: object
 required:
+  - type
   - nbt
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks the item's NBT.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks the item's NBT.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   nbt:
     description: The NBT data to check for.
     type: string

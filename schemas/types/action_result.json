@@ -1,7 +1,6 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\action_result.json",
 	"title": "Action Result",
-	"description": "A string used for determining the result of a certain action.",
 	"anyOf": [
 		{
 			"const": "consume_partial",

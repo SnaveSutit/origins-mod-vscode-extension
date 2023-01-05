@@ -1,20 +1,33 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:modify_velocity'\n- Modifies all velocity in a specified axis.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_velocity.json",
 	"type": "object",
 	"required": [
+		"type",
 		"axis"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify_velocity\nModifies all velocity in a specified axis.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:modify_velocity`\nModifies all velocity in a specified axis.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:modify_velocity",
+				"origins:modify_velocity"
+			]
+		},
 		"axis": {
 			"description": "Used to specify the axes affected by this modifier.",
 			"type": "array",
 			"items": {
 				"oneOf": [
-					"x",
-					"y",
-					"z"
+					{
+						"const": "x"
+					},
+					{
+						"const": "y"
+					},
+					{
+						"const": "z"
+					}
 				]
 			}
 		},

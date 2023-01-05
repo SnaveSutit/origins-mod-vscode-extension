@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Meta Bi-entity Condition Both",
-	"description": "Meta Condition Types are independent of the type they operate on. They basically combine or modify other conditions. The conditions which are modified have to be of the type the field of the meta condition requires. For example, if you have a field which requires an Entity Condition Type and you insert an And (Meta Condition Type), the condition types you need to provide inside that condition type will have to be an Entity Condition Type as well.\nType: 'origins:both'\n- Checks for an entity condition on both the actor and target entities.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\bientity_conditions\\both.json",
 	"type": "object",
 	"required": [
+		"type",
 		"condition"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:both\nChecks for an entity condition on both the actor and target entities.\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.",
+			"markdownDescription": "### `apoli:both`\nChecks for an entity condition on both the actor and target entities.\n## Bi-Entity Condition Type\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.\n\n[Bi-Entity Condition Type Documentation](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/)",
+			"enum": [
+				"apoli:both",
+				"origins:both"
+			]
+		},
 		"condition": {
 			"description": "The entity condition type to check on both the actor and target entity.",
 			"$ref": "../../entity_condition.json"

@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Block Condition
-description: |-
-  Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.
-  Type: 'origins:offset'
-  - Checks the provided Block Condition Type at a position offset from the current position.
 type: object
 required:
+  - type
   - condition
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks the provided Block Condition Type at a position offset from the current position.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks the provided Block Condition Type at a position offset from the current position.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   condition:
     description: The condition to check with the given offset.
     $ref: ../../block_condition.json

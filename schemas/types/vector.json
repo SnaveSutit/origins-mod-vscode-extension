@@ -1,7 +1,6 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\vector.json",
 	"title": "Vector",
-	"description": "An Object that specifies the X, Y and Z coordinates of a certain point in space.",
 	"type": "object",
 	"required": [
 		"x",

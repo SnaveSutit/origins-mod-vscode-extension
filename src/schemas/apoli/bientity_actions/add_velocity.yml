@@ -1,12 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Bi-entity Action
-description: |-
-  Bi-entity Action Types operate on a Pair<Entity, Entity>; in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/action types that provides a bientity_action object field.
-  Type: 'origins:add_velocity'
-  - Adds or sets the velocity of the target entity, based on the direction from the actor entity to the target entity.
 type: object
 required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Adds or sets the velocity of the target entity, based on the direction from the actor entity to the target entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Adds or sets the velocity of the target entity, based on the direction from the actor entity to the target entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   x:
     description: The amount of velocity to add on the x-axis.
     type: number

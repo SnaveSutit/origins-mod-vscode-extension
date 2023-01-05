@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Action",
-	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\nType: 'origins:modify_inventory'\n- Modifies the items from either the entity's inventory or a power that uses the Inventory (Power Type).",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_actions\\modify_inventory.json",
 	"type": "object",
 	"required": [
+		"type",
 		"inventory_type"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:modify_inventory\nModifies the items from either the entity's inventory or a power that uses the Inventory (Power Type).\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
+			"markdownDescription": "### `apoli:modify_inventory`\nModifies the items from either the entity's inventory or a power that uses the Inventory (Power Type).\n## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
+			"enum": [
+				"apoli:modify_inventory",
+				"origins:modify_inventory"
+			]
+		},
 		"inventory_type": {
 			"description": "Determines whether to modify the items in the inventory of the entity or the inventory of a power present in the entity.",
 			"$ref": "../../types/inventory_type.json"

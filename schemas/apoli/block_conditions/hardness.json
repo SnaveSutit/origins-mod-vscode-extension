@@ -1,13 +1,20 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Block Condition",
-	"description": "Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\nType: 'origins:hardness'\n- Checks the hardness value of the block.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_conditions\\hardness.json",
 	"type": "object",
 	"required": [
+		"type",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:hardness\nChecks the hardness value of the block.\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.",
+			"markdownDescription": "### `apoli:hardness`\nChecks the hardness value of the block.\n## Block Condition Type\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\n\n[Block Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/block_Condition_types/)",
+			"enum": [
+				"apoli:hardness",
+				"origins:hardness"
+			]
+		},
 		"comparison": {
 			"description": "Determines how the hardness value of the block is compared to the specified value.",
 			"$ref": "../../types/comparison.json"

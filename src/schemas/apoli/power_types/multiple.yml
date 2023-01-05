@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:multiple'
-  - Allows for defining more that one power in a single file.
 type: object
+required:
+  - type
 patternProperties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Allows for defining more than one power in a single file.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Allows for defining more than one power in a single file.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   ? '^(?!(type|badges|condition|description|hidden|loading_priority|name)$)[a-z\.0-9_\-]+'
   : $ref: ../../power.json
     not:

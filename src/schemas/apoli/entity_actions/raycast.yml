@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Action
-description: |-
-  Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.
-  Type: 'origins:raycast'
-  - Casts a ray to the direction where the entity is looking.
 type: object
 required:
+  - type
   - distance
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Casts a ray to the direction where the entity is looking.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Casts a ray to the direction where the entity is looking.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   distance:
     description: Determines the maximum distance the ray-cast will travel.
     type: number

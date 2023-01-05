@@ -1,7 +1,6 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\ingredient.json",
 	"title": "Ingredient",
-	"description": "An Object specifying a registered item or item tag.\nOr an Array of Objects specifying a registered item or item tag.",
 	"oneOf": [
 		{
 			"$ref": "#/$defs/item"

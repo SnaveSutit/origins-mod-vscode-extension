@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Damage Source Name
-description: The name of a source of damage
+# description: The name of a source of damage
 type: string
 anyOf:
   - type: string

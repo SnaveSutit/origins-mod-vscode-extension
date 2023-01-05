@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:entity_glow'
-  - Makes other entities glow (as with the glowing status effect), but only for the player that has the power.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Makes other entities glow (as with the glowing status effect), but only for the player that has the power.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Makes other entities glow (as with the glowing status effect), but only for the player that has the power.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   entity_condition:
     description: If specified, only entities which fulfill this condition will glow for the player that has the power.
     $ref: ../../entity_condition.json

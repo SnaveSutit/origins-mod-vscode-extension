@@ -1,14 +1,21 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:overlay'\n- Applies an overlay to the player's screen.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\overlay.json",
 	"type": "object",
 	"required": [
+		"type",
 		"texture",
 		"draw_mode",
 		"draw_phase"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:overlay\nApplies an overlay to the player's screen.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:overlay`\nApplies an overlay to the player's screen.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:overlay",
+				"origins:overlay"
+			]
+		},
 		"texture": {
 			"description": "The namespace and ID of the texture to use as an overlay.",
 			"$ref": "../../types/identifier.json"

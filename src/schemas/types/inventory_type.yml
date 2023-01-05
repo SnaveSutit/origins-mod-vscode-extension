@@ -1,6 +1,6 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Inventory Type
-description: A string used to determine whether to reference the inventory of the entity or the inventory of a power present in the entity.
+# description: A string used to determine whether to reference the inventory of the entity or the inventory of a power present in the entity.
 type: string
 anyOf:
   - const: inventory

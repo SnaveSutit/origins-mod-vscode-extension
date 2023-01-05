@@ -1,16 +1,24 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Entity Condition
-description: |-
-  Entity Condition Types operate on an Entity, which also allows access to the world.
-  These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.
-  Type: 'origins:block_collision'
-  - Checks whether the bounding box of the entity collides with any block.
 type: object
 required:
+  - type
   - offset_x
   - offset_y
   - offset_z
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks whether the bounding box of the entity collides with any block.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks whether the bounding box of the entity collides with any block.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   offset_x:
     description: 'By how much of the bounding box size should the box be offset in the X direction (e.g.: 0 = no offset, 1 = offset of exact width, 2 = offset of twice the width of the bounding box)'
     type: number

@@ -1,9 +1,18 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:action_on_callback'\n- Execute Entity Action Types depending on the context.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\action_on_callback.json",
 	"type": "object",
+	"required": [
+		"type"
+	],
 	"properties": {
+		"type": {
+			"description": "apoli:action_on_callback\nExecute Entity Action Types depending on the context.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:action_on_callback`\nExecute Entity Action Types depending on the context.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:action_on_callback",
+				"origins:action_on_callback"
+			]
+		},
 		"entity_action_chosen": {
 			"description": "If specified, this action will be executed on the player when the player chooses their origin on the last layer through the menu - by using the Orb of Origin or missing an origin or joining for the first time - if the power was gained from any of the layers.",
 			"$ref": "../../entity_action.json"

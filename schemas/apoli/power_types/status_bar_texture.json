@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'origins:status_bar_texture'\n- Replaces the status bar textures (health, hunger, air, experience, etc.) with a specified sprite sheet.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\status_bar_texture.json",
 	"type": "object",
 	"required": [
+		"type",
 		"texture"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:status_bar_texture\nReplaces the status bar textures (health, hunger, air, experience, etc.) with a specified sprite sheet.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:status_bar_texture`\nReplaces the status bar textures (health, hunger, air, experience, etc.) with a specified sprite sheet.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"enum": [
+				"apoli:status_bar_texture",
+				"origins:status_bar_texture"
+			]
+		},
 		"texture": {
 			"description": "The namespace and ID of the sprite sheet to replace the default one with. Here's what the vanilla sprite sheet looks like: https://raw.githubusercontent.com/misode/mcmeta/6d496b1a91476c4fdd45fdb093d0319141f9c109/assets/minecraft/textures/gui/icons.png",
 			"$ref": "../../types/identifier.json"

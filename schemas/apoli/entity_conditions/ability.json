@@ -1,12 +1,19 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:ability'\n- Checks if the entity has the specified ability enabled.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\ability.json",
 	"type": "object",
 	"required": [
+		"type",
 		"ability"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:ability\nChecks if the entity has the specified ability enabled.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:ability`\nChecks if the entity has the specified ability enabled.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:ability",
+				"origins:ability"
+			]
+		},
 		"ability": {
 			"description": "The namespace and ID of the ability to check for.",
 			"$ref": "../../types/identifier.json"

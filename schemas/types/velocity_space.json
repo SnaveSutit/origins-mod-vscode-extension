@@ -1,7 +1,6 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\velocity_space.json",
 	"title": "Velocity Space",
-	"description": "https://origins.readthedocs.io/en/latest/misc/extras/space/",
 	"enum": [
 		"world",
 		"local",

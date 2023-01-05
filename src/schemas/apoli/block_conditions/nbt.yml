@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Block Condition
-description: |-
-  Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.
-  Type: 'origins:nbt'
-  - Checks the NBT of the block entity.
 type: object
 required:
+  - type
   - nbt
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Checks the NBT of the block entity.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Checks the NBT of the block entity.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   nbt:
     description: The NBT data to check for.
     type: string

@@ -1,14 +1,21 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Entity Condition",
-	"description": "Entity Condition Types operate on an Entity, which also allows access to the world.\nThese are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\nType: 'origins:attribute'\n- Applies a check towards a specific attribute value of the entity.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\attribute.json",
 	"type": "object",
 	"required": [
+		"type",
 		"attribute",
 		"comparison",
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "apoli:attribute\nApplies a check towards a specific attribute value of the entity.\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.",
+			"markdownDescription": "### `apoli:attribute`\nApplies a check towards a specific attribute value of the entity.\n## Entity Condition Type\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the condition object field (or entity_condition in other power/condition types), which restricts when a power is active.\n\n[Entity Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Condition_types/)",
+			"enum": [
+				"apoli:attribute",
+				"origins:attribute"
+			]
+		},
 		"attribute": {
 			"description": "ID of the attribute of which the value should be checked. See Minecraft Fandom Wiki: Attribute (Attributes) for a list of vanilla attributes that can be checked for.",
 			"$ref": "../../types/identifier.json"

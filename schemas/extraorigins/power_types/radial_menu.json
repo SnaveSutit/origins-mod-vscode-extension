@@ -1,9 +1,8 @@
 {
-	"$id": "https://snavesutit.github.io/origins-mod-schemas/",
-	"title": "Power Type",
-	"description": "Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\nType: 'extraorigins:radial_menu'\n- Allows actions to be run from an in game menu, up to four directions (up, down, left, right). Allows conditions.",
+	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\extraorigins\\power_types\\radial_menu.json",
 	"type": "object",
 	"required": [
+		"type",
 		"key",
 		"sprite_location"
 	],
@@ -30,6 +29,11 @@
 		}
 	],
 	"properties": {
+		"type": {
+			"description": "The ID of the Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "The ID of the Power Type\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"const": "extraorigins:radial_menu"
+		},
 		"key": {
 			"description": "The keybind used to open the radial menu",
 			"$ref": "../../types/key.json"

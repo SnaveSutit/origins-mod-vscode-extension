@@ -1,11 +1,21 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:model_color'
-  - Multiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.
 type: object
+required:
+  - type
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Multiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Multiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   red:
     description: Value by which the red component of the texture will be multiplied.
     type: number

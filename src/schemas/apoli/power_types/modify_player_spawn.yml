@@ -1,13 +1,22 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Power Type
-description: |-
-  Power Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.
-  Type: 'origins:modify_player_spawn'
-  - Modifies the location of the player's spawnpoint to the specified dimension, biome and/or structure.
 type: object
 required:
+  - type
   - dimension
 properties:
+  type:
+    description: |-
+      $namespace:$fileName
+      Modifies the location of the player's spawnpoint to the specified dimension, biome and/or structure.
+      $parentDescription
+    markdownDescription: |-
+      ### `$namespace:$fileName`
+      Modifies the location of the player's spawnpoint to the specified dimension, biome and/or structure.
+      $parentDescription
+    enum:
+      - $namespace:$fileName
+      - origins:$fileName
+
   dimension:
     description: The namespace and ID of the dimension the player should spawn in.
     $ref: ../../types/identifier.json
