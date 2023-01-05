@@ -8,7 +8,16 @@ oneOf:
       - key
     properties:
       key:
-        description: A string specifying the keybinding. See Keybindings for possible values.
+        description: |-
+          A string specifying the keybinding.
+          Warning: The keys 'key.origins.ternary_active' through 'key.origins.denary_active' are not included in the Origins mod.
+          They are added by an add-on mod called Origins Extra Keybinds (https://www.curseforge.com/minecraft/mc-mods/origins-extra-keybinds)
+        markdownDescription: |-
+          A string specifying the keybinding.
+          ### Warning
+          The keys `key.origins.ternary_active` through `key.origins.denary_active` are not included in the Origins mod.
+
+          They are added by an add-on mod called [Origins Extra Keybinds](https://www.curseforge.com/minecraft/mc-mods/origins-extra-keybinds)
         $ref: '#/$defs/key_string'
 
       continuous:
@@ -22,6 +31,14 @@ $defs:
       - enum:
           - key.origins.primary_active
           - key.origins.secondary_active
+          - key.origins.ternary_active
+          - key.origins.quaternary_active
+          - key.origins.quinary_active
+          - key.origins.senary_active
+          - key.origins.septenary_active
+          - key.origins.octonary_active
+          - key.origins.nonary_active
+          - key.origins.denary_active
           - key.origins.view_origin
           - key.sprint
           - key.forward
