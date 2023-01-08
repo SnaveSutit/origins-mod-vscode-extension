@@ -3,7 +3,7 @@
 	"icon": "icon.png",
 	"displayName": "Origins Mod Helper",
 	"description": "Adds JSON schemas for origins, origin_layers, and powers used by the [Origins mod](https://www.curseforge.com/minecraft/mc-mods/origins)",
-	"version": "2.1.5",
+	"version": "2.1.6",
 	"publisher": "snavesutit",
 	"author": {
 		"name": "Titus Evans",
