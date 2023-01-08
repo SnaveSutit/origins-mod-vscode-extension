@@ -3,6 +3,9 @@
 	"title": "Origin Layer",
 	"description": "https://origins.readthedocs.io/en/latest/json/origin_layer/",
 	"type": "object",
+	"required": [
+		"origins"
+	],
 	"properties": {
 		"order": {
 			"description": "Specifies the order of this layer in the choose and view origin screen among the other layers.\nSmaller numbers mean it appears before layers with larger numbers.",
@@ -88,8 +91,5 @@
 			"type": "boolean",
 			"default": false
 		}
-	},
-	"required": [
-		"origins"
-	]
+	}
 }

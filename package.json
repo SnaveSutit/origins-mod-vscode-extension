@@ -35,13 +35,6 @@
 			{
 				"fileMatch": [
 					"**/data/*/origin_layers/**/*.json",
-					"**/test.json"
-				],
-				"url": "./schemas/test.json"
-			},
-			{
-				"fileMatch": [
-					"**/data/*/origin_layers/**/*.json",
 					"**/data/*/origin_layers/**/*.yml"
 				],
 				"url": "./schemas/origin_layers.json"

@@ -2,6 +2,8 @@ $id: https://snavesutit.github.io/origins-mod-schemas/
 title: Origin Layer
 description: https://origins.readthedocs.io/en/latest/json/origin_layer/
 type: object
+required:
+  - origins
 properties:
   order:
     description: |-
@@ -100,6 +102,3 @@ properties:
       If set to true, this layer will be hidden from the "View Origin" screen.
     type: boolean
     default: false
-
-required:
-  - origins
