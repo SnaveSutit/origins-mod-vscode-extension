@@ -3,31 +3,26 @@
 	"type": "object",
 	"required": [
 		"type",
-		"axis"
+		"axes"
 	],
 	"properties": {
 		"type": {
-			"description": "apoli:modify_velocity\nModifies all velocity in a specified axis.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
-			"markdownDescription": "### `apoli:modify_velocity`\nModifies all velocity in a specified axis.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
+			"description": "apoli:modify_velocity\nModifies all velocity in a specified axes.\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.",
+			"markdownDescription": "### `apoli:modify_velocity`\nModifies all velocity in a specified axes.\n## Power Type\nPower Types are what grants functionality to your origins! Each power has a type, specified with a type field in the JSON. Which type a power is defines which other fields it requires and supports.\n\n[Power Type Documentation](https://origins.readthedocs.io/en/latest/json/power/)",
 			"enum": [
 				"apoli:modify_velocity",
 				"origins:modify_velocity"
 			]
 		},
-		"axis": {
+		"axes": {
 			"description": "Used to specify the axes affected by this modifier.",
 			"type": "array",
+			"uniqueItems": true,
 			"items": {
-				"oneOf": [
-					{
-						"const": "x"
-					},
-					{
-						"const": "y"
-					},
-					{
-						"const": "z"
-					}
+				"enum": [
+					"x",
+					"y",
+					"z"
 				]
 			}
 		},

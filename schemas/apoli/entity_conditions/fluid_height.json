@@ -25,7 +25,9 @@
 						"minecraft:lava"
 					]
 				},
-				null
+				{
+					"$ref": "../../types/identifier.json"
+				}
 			]
 		},
 		"comparison": {

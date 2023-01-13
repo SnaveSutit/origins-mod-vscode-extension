@@ -21,12 +21,11 @@ properties:
 
   fluid:
     description: 'The namespace and ID of the fluid tag of which the height should be checked. Most important examples: minecraft:water and minecraft:lava.'
-
     anyOf:
       - enum:
           - minecraft:water
           - minecraft:lava
-      -
+      - $ref: ../../types/identifier.json
 
   comparison:
     description: How the fluid height should be compared to the specified value.

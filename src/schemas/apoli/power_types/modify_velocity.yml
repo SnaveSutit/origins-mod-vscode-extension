@@ -2,29 +2,30 @@ $id: https://snavesutit.github.io/origins-mod-schemas/
 type: object
 required:
   - type
-  - axis
+  - axes
 properties:
   type:
     description: |-
       $namespace:$fileName
-      Modifies all velocity in a specified axis.
+      Modifies all velocity in a specified axes.
       $parentDescription
     markdownDescription: |-
       ### `$namespace:$fileName`
-      Modifies all velocity in a specified axis.
+      Modifies all velocity in a specified axes.
       $parentDescription
     enum:
       - $namespace:$fileName
       - origins:$fileName
 
-  axis:
+  axes:
     description: Used to specify the axes affected by this modifier.
     type: array
+    uniqueItems: true
     items:
-      oneOf:
-        - const: x
-        - const: 'y'
-        - const: z
+      enum:
+        - x
+        - 'y'
+        - z
 
   modifier:
     description: Modifies all velocity in a specified axis.
