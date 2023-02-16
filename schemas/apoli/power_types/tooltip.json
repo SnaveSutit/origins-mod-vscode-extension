@@ -19,27 +19,13 @@
 		},
 		"text": {
 			"description": "If specified, apply this string as a tooltip.",
-			"oneOf": [
-				{
-					"type": "string"
-				},
-				{
-					"type": "object"
-				}
-			]
+			"$ref": "../../types/text_component.json"
 		},
 		"texts": {
 			"description": "If specified, apply these strings as a tooltip.",
 			"type": "array",
 			"items": {
-				"oneOf": [
-					{
-						"type": "string"
-					},
-					{
-						"type": "object"
-					}
-				]
+				"$ref": "../../types/text_component.json"
 			}
 		}
 	}

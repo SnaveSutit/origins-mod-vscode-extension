@@ -8,11 +8,11 @@ required:
 properties:
   type:
     description: The type of recipe. Either minecraft:crafting_shaped or minecraft:crafting_shapeless. Other recipe types are not supported.
-    anyOf:
+    allOf:
+      - $ref: ./identifier.json
       - enum:
           - minecraft:crafting_shaped
           - minecraft:crafting_shapeless
-      - $ref: ./identifier.json
 
   id:
     description: An ID for this recipe. Has to be unique among all recipes, otherwise there will be a conflict.
@@ -20,6 +20,11 @@ properties:
 
   result:
     description: The result of the crafting. Note that vanilla does not support NBT tags in the result.
+    allOf:
+      - $ref: ./item_stack.json
+      - not:
+          required:
+            - tag
 
 allOf:
   - if:

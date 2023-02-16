@@ -2,5 +2,5 @@
 	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\identifier.json",
 	"title": "Identifier",
 	"type": "string",
-	"pattern": "^[^:]+:[^:]+$"
+	"pattern": "^([^:]+:)?[^:]+$"
 }

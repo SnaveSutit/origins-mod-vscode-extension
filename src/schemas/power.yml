@@ -51,16 +51,7 @@ then:
       description: If set, it will display icon(s) after the name of the power.
       type: array
       items:
-        type: object
-        description: An Object which displays an icon just after the name of a power in the power list from the Origins GUI.
-        properties:
-          sprite:
-            description: ID of the texture to be displayed as an icon. See the List of sprites for a list of files included by default in the mod.
-            $ref: ./types/badge_sprite_location.json
-
-          text:
-            description: The string to display when you hover over the icon.
-            type: string
+        $ref: ./types/badge.json
 
     # The Skillful mod adds this key
     skill:
