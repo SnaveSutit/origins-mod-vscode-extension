@@ -12,16 +12,37 @@
 			"enum": [
 				"addition",
 				"multiply_base",
-				"multiply_total"
+				"multiply_total",
+
+				"add_base_early",
+				"multiply_base_additive",
+				"multiply_base_multiplicative",
+				"add_base_late",
+				"min_base",
+				"max_base",
+				"set_base",
+				"multiply_total_additive",
+				"multiply_total_multiplicative",
+				"min_total",
+				"max_total",
+				"set_total"
 			]
 		},
 		"value": {
 			"description": "The value with which to apply the operation to the value.",
 			"type": "number"
 		},
+		"resource": {
+			"description": "If specified, the value of this power will be used instead of the value specified in the 'value' field.",
+			"$ref": "./identifier.json"
+		},
 		"name": {
 			"description": "A descriptive name for the modifier, describing where it comes from.",
 			"type": "string"
+		},
+		"modifier": {
+			"description": "If specified, this modifier will be applied to the value of the modifier.",
+			"$ref": "./attribute_modifier.json"
 		}
 	}
 }
