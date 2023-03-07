@@ -19,10 +19,7 @@ class SchemaBuilderError extends Error {
 }
 
 function normalizePath(path) {
-	console.log('Normalizing Path: ' + path)
-	const p = path.replaceAll('\\', '/')
-	console.log('Normalized Path: ' + p)
-	return p
+	return path.replaceAll('\\', '/')
 }
 
 function movePath(from, to, path) {
