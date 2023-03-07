@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\destruction_types.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/destruction_types.json",
 	"title": "Destruction Type",
 	"type": "string",
 	"anyOf": [

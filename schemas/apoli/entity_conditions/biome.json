@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\biome.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/entity_conditions/biome.json",
 	"type": "object",
 	"required": [
 		"type"

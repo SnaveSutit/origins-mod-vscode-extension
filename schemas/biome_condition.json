@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\biome_condition.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/biome_condition.json",
 	"title": "Biome Condition Type",
 	"description": "Biome Condition Types operate on a Biome.",
 	"markdownDescription": "## Biome Condition Type\nBiome Condition Types operate on a Biome.\n\n[Biome Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/biome_Condition_types/)",
@@ -99,7 +99,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\and.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/and.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -138,7 +138,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\constant.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/constant.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -174,7 +174,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\or.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/or.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -209,7 +209,7 @@
 					}
 				},
 				"then": {
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_conditions\\chance.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/meta_conditions/chance.json",
 					"type": "object",
 					"required": [
 						"type"

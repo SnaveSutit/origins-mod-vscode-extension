@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\resource_bar_sprite_location.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/resource_bar_sprite_location.json",
 	"title": "Resource bar sprite location",
 	"anyOf": [
 		{

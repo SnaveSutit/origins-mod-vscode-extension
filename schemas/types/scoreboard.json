@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\scoreboard.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/scoreboard.json",
 	"title": "Scoreboard",
 	"type": "object",
 	"properties": {

@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\entity_action.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/entity_action.json",
 	"title": "Entity Action Type",
 	"description": "Entity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.",
 	"markdownDescription": "## Entity Action Type\nEntity Action Types operate on an Entity. Some more specific actions only have an effect on more specific entity types (e.g. Exhaust (Entity Action Type) only works on a PlayerEntity, as other entities do not have a hunger bar). These are available to power/action types that provides a entity_action object field.\n\n[Entity Action Types Documentation](https://origins.readthedocs.io/en/latest/types/entity_Action_types/)",
@@ -654,7 +654,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\and.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/and.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -693,7 +693,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\chance.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/chance.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -739,7 +739,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\choice.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/choice.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -786,7 +786,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\delay.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/delay.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -828,7 +828,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\if_else.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/if_else.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -873,7 +873,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\if_else_list.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/if_else_list.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -924,7 +924,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\nothing.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/nothing.json",
 					"type": "object",
 					"required": [
 						"type"
@@ -955,7 +955,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\side.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/side.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -1151,7 +1151,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_actions\\loop.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/meta_actions/loop.json",
 					"type": "object",
 					"required": [
 						"type"

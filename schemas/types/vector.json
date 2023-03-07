@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\vector.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/vector.json",
 	"title": "Vector",
 	"type": "object",
 	"required": [

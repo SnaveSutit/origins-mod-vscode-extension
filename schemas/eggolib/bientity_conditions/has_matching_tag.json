@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\bientity_conditions\\has_matching_tag.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/bientity_conditions/has_matching_tag.json",
 	"type": "object",
 	"required": [
 		"type"

@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\extraorigins\\power_types\\radial_menu.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/extraorigins/power_types/radial_menu.json",
 	"type": "object",
 	"required": [
 		"type",

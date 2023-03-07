@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_actions\\remove_enchantment.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/item_actions/remove_enchantment.json",
 	"type": "object",
 	"required": [
 		"type"

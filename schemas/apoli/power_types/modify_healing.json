@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_healing.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/power_types/modify_healing.json",
 	"type": "object",
 	"required": [
 		"type"

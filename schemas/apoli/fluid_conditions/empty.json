@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\fluid_conditions\\empty.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/fluid_conditions/empty.json",
 	"type": "object",
 	"required": [
 		"type"

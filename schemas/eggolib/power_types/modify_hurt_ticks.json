@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\power_types\\modify_hurt_ticks.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/power_types/modify_hurt_ticks.json",
 	"type": "object",
 	"required": [
 		"type"

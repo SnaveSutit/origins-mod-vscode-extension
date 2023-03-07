@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\item_action.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/item_action.json",
 	"title": "Item Action Type",
 	"description": "Item Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.",
 	"markdownDescription": "## Item Action Type\nItem Action Types operate on a stack of items. These are available to power/action types that provides an item_action object field.\n\n[Item Action Types Documentation](https://origins.readthedocs.io/en/latest/types/item_Action_types/)",
@@ -114,7 +114,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\and.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/and.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -153,7 +153,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\chance.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/chance.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -199,7 +199,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\choice.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/choice.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -246,7 +246,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\delay.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/delay.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -288,7 +288,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\if_else.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/if_else.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -333,7 +333,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\if_else_list.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/if_else_list.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -384,7 +384,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\nothing.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/nothing.json",
 					"type": "object",
 					"required": [
 						"type"
@@ -415,7 +415,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_actions\\side.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_actions/side.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -455,7 +455,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_actions\\loop.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/meta_actions/loop.json",
 					"type": "object",
 					"required": [
 						"type"

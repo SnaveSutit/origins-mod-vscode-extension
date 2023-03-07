@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\attacker_action_when_hit.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/power_types/attacker_action_when_hit.json",
 	"type": "object",
 	"required": [
 		"type",

@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\damage_conditions\\projectile.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/damage_conditions/projectile.json",
 	"type": "object",
 	"required": [
 		"type"

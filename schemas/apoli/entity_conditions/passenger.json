@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\passenger.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/entity_conditions/passenger.json",
 	"type": "object",
 	"required": [
 		"type",

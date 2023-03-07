@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\bientity_actions\\add_velocity.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/bientity_actions/add_velocity.json",
 	"type": "object",
 	"required": [
 		"type"

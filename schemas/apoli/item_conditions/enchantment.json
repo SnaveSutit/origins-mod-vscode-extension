@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_conditions\\enchantment.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/item_conditions/enchantment.json",
 	"type": "object",
 	"required": [
 		"type",

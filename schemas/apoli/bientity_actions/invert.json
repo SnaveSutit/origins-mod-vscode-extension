@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\bientity_actions\\invert.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/bientity_actions/invert.json",
 	"type": "object",
 	"required": [
 		"type",

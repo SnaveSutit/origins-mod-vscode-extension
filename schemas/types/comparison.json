@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\comparison.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/comparison.json",
 	"title": "Condition",
 	"type": "string",
 	"enum": [

@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\status_effect_instance.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/status_effect_instance.json",
 	"title": "Status Effect Instance",
 	"type": "object",
 	"required": [

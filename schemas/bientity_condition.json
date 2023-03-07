@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\bientity_condition.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/bientity_condition.json",
 	"title": "Bi-entity Condition Type",
 	"description": "Bi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.",
 	"markdownDescription": "## Bi-Entity Condition Type\nBi-entity Condition Types operate on a Pair<Entity, Entity>, or in simpler terms: an actor and a target. The actor and target is determined depending on the used power type, and can be swapped. These are available to power/condition types that provides a bientity_condition object field.\n\n[Bi-Entity Condition Type Documentation](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/)",
@@ -264,7 +264,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\and.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/and.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -303,7 +303,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\constant.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/constant.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -339,7 +339,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\or.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/or.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -374,7 +374,7 @@
 					}
 				},
 				"then": {
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_conditions\\chance.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/meta_conditions/chance.json",
 					"type": "object",
 					"required": [
 						"type"

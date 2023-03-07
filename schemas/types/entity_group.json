@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\entity_group.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/entity_group.json",
 	"title": "Entity Group",
 	"enum": [
 		"default",

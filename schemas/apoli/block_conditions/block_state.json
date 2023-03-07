@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_conditions\\block_state.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/block_conditions/block_state.json",
 	"type": "object",
 	"required": [
 		"type",

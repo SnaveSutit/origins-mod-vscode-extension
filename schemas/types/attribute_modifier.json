@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\attribute_modifier.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/attribute_modifier.json",
 	"title": "Attribute Modifier",
 	"type": "object",
 	"required": [

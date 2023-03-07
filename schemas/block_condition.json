@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\block_condition.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/block_condition.json",
 	"title": "Block Condition Type",
 	"description": "Block Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.",
 	"markdownDescription": "## Block Condition Type\nBlock Condition Types operate on CachedBlockPosition, essentially a combination of World and BlockPos, which allows retrieving all necessary information about the block. These are available to power/condition types that provides a block_condition object field.\n\n[Block Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/block_Condition_types/)",
@@ -339,7 +339,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\and.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/and.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -378,7 +378,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\constant.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/constant.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -414,7 +414,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\or.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/or.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -449,7 +449,7 @@
 					}
 				},
 				"then": {
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_conditions\\chance.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/meta_conditions/chance.json",
 					"type": "object",
 					"required": [
 						"type"

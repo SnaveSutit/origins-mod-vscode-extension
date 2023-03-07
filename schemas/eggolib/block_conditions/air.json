@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\block_conditions\\air.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/block_conditions/air.json",
 	"type": "object",
 	"required": [
 		"type"

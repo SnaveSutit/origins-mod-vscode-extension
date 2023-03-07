@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\hands.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/hands.json",
 	"title": "Hands",
 	"type": "array",
 	"items": [

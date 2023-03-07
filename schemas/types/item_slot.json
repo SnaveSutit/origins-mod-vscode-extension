@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\item_slot.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/item_slot.json",
 	"title": "Item Slot",
 	"anyOf": [
 		{

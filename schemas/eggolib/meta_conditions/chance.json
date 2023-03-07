@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_conditions\\chance.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/meta_conditions/chance.json",
 	"type": "object",
 	"required": [
 		"type"

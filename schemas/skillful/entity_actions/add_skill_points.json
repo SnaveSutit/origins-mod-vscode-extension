@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\skillful\\entity_actions\\add_skill_points.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/skillful/entity_actions/add_skill_points.json",
 	"type": "object",
 	"required": [
 		"type"

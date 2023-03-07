@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\crafting_recipe.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/crafting_recipe.json",
 	"title": "Crafting Recipe",
 	"type": "object",
 	"required": [

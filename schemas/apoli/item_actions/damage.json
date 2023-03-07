@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_actions\\damage.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/item_actions/damage.json",
 	"type": "object",
 	"required": [
 		"type"

@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\prevent_item_use.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/power_types/prevent_item_use.json",
 	"type": "object",
 	"required": [
 		"type"

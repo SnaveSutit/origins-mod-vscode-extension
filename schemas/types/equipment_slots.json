@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\equipment_slots.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/equipment_slots.json",
 	"title": "Equipment Slots",
 	"type": "string",
 	"enum": [

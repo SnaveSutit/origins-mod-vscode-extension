@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\ingredient.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/ingredient.json",
 	"title": "Ingredient",
 	"oneOf": [
 		{

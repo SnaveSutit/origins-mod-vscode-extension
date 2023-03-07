@@ -44,5 +44,5 @@
 			"type": "string"
 		}
 	],
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\screen_type.json"
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/screen_type.json"
 }

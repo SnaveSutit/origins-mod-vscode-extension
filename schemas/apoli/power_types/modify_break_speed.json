@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\modify_break_speed.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/power_types/modify_break_speed.json",
 	"type": "object",
 	"required": [
 		"type"

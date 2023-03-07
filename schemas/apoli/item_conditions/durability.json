@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\item_conditions\\durability.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/item_conditions/durability.json",
 	"type": "object",
 	"required": [
 		"type",

@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_conditions\\in_rain.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/entity_conditions/in_rain.json",
 	"type": "object",
 	"required": [
 		"type"

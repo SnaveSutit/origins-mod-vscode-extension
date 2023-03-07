@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\item_stack.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/item_stack.json",
 	"title": "Item Stack",
 	"type": "object",
 	"properties": {

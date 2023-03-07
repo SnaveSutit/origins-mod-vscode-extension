@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\entity_conditions\\block_collision.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/entity_conditions/block_collision.json",
 	"type": "object",
 	"required": [
 		"type"

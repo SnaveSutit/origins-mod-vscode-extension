@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\velocity_space.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/velocity_space.json",
 	"title": "Velocity Space",
 	"enum": [
 		"world",

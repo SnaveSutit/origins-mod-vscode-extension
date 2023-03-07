@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\skill_tree.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/skill_tree.json",
 	"title": "Skillful Skill Tree",
 	"description": "This is the format of a JSON file describing a skill. They need to be placed inside the skill_trees folder within your namespace. default_powers are used to create a way to earn points on your skill tree that you can implement yourself.",
 	"type": "object",

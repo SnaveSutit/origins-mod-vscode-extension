@@ -18,8 +18,11 @@ class SchemaBuilderError extends Error {
 	}
 }
 
-function cleanPath(path) {
-	return path.replaceAll('\\', '/')
+function normalizePath(path) {
+	console.log('Normalizing Path: ' + path)
+	const p = path.replaceAll('\\', '/')
+	console.log('Normalized Path: ' + p)
+	return p
 }
 
 function movePath(from, to, path) {
@@ -75,7 +78,7 @@ async function compileImportArrayConditional(stack, schemaPath, schema, args) {
 				if: JSON.parse(thisStrCondition),
 				then: Object.assign(
 					{
-						$ref: cleanPath(
+						$ref: normalizePath(
 							pathjs.relative(parsedSchemaPath.dir, filePath.replace(/(.yml|.yaml)/, '.json'))
 						),
 					},
@@ -215,13 +218,6 @@ function getNearestMarkdownDescription(stack) {
 		if (item.type == 'schema' && item.value.markdownDescription)
 			return item.value.markdownDescription
 	}
-	// if (
-	// 	local.value.$id ==
-	// 	'https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\entity_actions\\execute_command.json'
-	// ) {
-	// 	console.log(stack)
-	// 	process.exit()
-	// }
 }
 
 function getParentSchema(stack, schema) {
@@ -339,8 +335,8 @@ async function compileSchema(schemaPath, previousStack = []) {
 		}
 	})
 	// Update schema ID
-	schema['$id'] = pathjs.join(
-		'https://snavesutit.github.io/origins-mod-schemas/' +
+	schema['$id'] = normalizePath(
+		'https://snavesutit.github.io/origins-mod-schemas/schemas/' +
 			pathjs.relative(srcSchemaPath, schemaPath).replace(/(.yml|.yaml)/, '.json')
 	)
 

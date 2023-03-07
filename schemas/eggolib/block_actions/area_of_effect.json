@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\block_actions\\area_of_effect.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/block_actions/area_of_effect.json",
 	"type": "object",
 	"required": [
 		"type",

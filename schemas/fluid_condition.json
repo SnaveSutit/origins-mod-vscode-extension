@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\fluid_condition.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/fluid_condition.json",
 	"title": "Fluid Condition Type",
 	"description": "Fluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.",
 	"markdownDescription": "## Fluid Condition Type\nFluid Condition Types operate on a FluidState, essentially which fluid (if any) exists, as well as properties of the fluid. These are available to power/condition types that provides a fluid_condition object field.\n\n[Fluid Condition Types Documentation](https://origins.readthedocs.io/en/latest/types/fluid_Condition_types/)",
@@ -84,7 +84,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\and.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/and.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -123,7 +123,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\constant.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/constant.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -159,7 +159,7 @@
 				},
 				"then": {
 					"$DONT_EXPORT": true,
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\meta_conditions\\or.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/meta_conditions/or.json",
 					"type": "object",
 					"required": [
 						"type",
@@ -194,7 +194,7 @@
 					}
 				},
 				"then": {
-					"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\meta_conditions\\chance.json",
+					"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/meta_conditions/chance.json",
 					"type": "object",
 					"required": [
 						"type"

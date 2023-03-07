@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\power_types\\model_flip.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/power_types/model_flip.json",
 	"type": "object",
 	"required": [
 		"type"

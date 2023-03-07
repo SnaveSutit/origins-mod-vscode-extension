@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_conditions\\replacable.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/block_conditions/replacable.json",
 	"type": "object",
 	"required": [
 		"type"

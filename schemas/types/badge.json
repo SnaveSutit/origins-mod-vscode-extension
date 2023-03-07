@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\badge.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/badge.json",
 	"title": "Badge",
 	"description": "An Object which displays an icon just after the name of a power in the power list from the Origins GUI.",
 	"type": "object",

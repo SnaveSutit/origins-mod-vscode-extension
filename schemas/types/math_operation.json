@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\math_operation.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/math_operation.json",
 	"title": "Math Operation",
 	"type": "string",
 	"enum": [

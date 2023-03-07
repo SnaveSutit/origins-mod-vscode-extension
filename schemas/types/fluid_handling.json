@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\fluid_handling.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/fluid_handling.json",
 	"title": "Fluid Handling",
 	"type": "string",
 	"anyOf": [

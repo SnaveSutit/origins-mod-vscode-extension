@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_actions\\execute_command.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/block_actions/execute_command.json",
 	"type": "object",
 	"required": [
 		"type",

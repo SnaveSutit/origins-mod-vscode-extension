@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\power_types\\phasing.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/power_types/phasing.json",
 	"type": "object",
 	"required": [
 		"type"

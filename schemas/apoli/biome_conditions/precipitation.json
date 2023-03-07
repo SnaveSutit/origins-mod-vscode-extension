@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\biome_conditions\\precipitation.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/biome_conditions/precipitation.json",
 	"type": "object",
 	"required": [
 		"type",

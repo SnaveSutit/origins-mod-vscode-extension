@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\eggolib\\entity_actions\\change_insomnia_ticks.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/eggolib/entity_actions/change_insomnia_ticks.json",
 	"type": "object",
 	"required": [
 		"type",

@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\apoli\\block_conditions\\blast_resistance.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/apoli/block_conditions/blast_resistance.json",
 	"type": "object",
 	"required": [
 		"type",
