@@ -20,7 +20,7 @@ properties:
 
   stat:
     description: The namespace and ID of the statistic to be modified.
-    $ref: ../../types/identifier.json
+    $ref: ../../types/stat.json
 
   modifier:
     description: This modifier will be applied to the current value of the statistic specified.

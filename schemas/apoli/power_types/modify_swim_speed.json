@@ -15,13 +15,13 @@
 		},
 		"modifier": {
 			"description": "If specified, this modifier will apply to the swim speed.",
-			"$ref": "../../types/attribute_modifier.json"
+			"$ref": "../../types/attribute_modifier_legacy.json"
 		},
 		"modifiers": {
 			"description": "If specified, these modifiers will apply to the swim speed.",
 			"type": "array",
 			"items": {
-				"$ref": "../../types/attribute_modifier.json"
+				"$ref": "../../types/attribute_modifier_legacy.json"
 			}
 		}
 	}
