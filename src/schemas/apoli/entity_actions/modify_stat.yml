@@ -19,7 +19,7 @@ properties:
       - origins:$fileName
 
   stat:
-    description: The namespace and ID of the statistic to be modified.
+    description: The type and name of the statistic to be modified.
     $ref: ../../types/stat.json
 
   modifier:
