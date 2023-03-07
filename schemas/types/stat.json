@@ -1,5 +1,5 @@
 {
-	"$id": "https:\\snavesutit.github.io\\origins-mod-schemas\\types\\stat.json",
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/stat.json",
 	"title": "Stat",
 	"type": "object",
 	"required": [
