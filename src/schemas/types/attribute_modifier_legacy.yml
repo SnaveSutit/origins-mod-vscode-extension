@@ -1,16 +1,11 @@
 $id: https://snavesutit.github.io/origins-mod-schemas/
-title: Attributed Attribute Modifier
-# description: An Object used to specify how a specific attribute should be modified. Basically an Attribute Modifier with an additional attribute field.
+title: Attribute Modifier (Legacy)
+# description: An Object used to specify how an attribute should be modified.
 type: object
 required:
-  - attribute
   - operation
   - value
 properties:
-  attribute:
-    description: ID of the attribute which will be modified by this modifier.
-    $ref: ./identifier.json
-
   operation:
     description: The operation which will be performed by this modifier.
     anyOf:

@@ -27,24 +27,24 @@
 		},
 		"food_modifier": {
 			"description": "If specified, this modifier will apply to the food amount gained by eating a food item.",
-			"$ref": "../../types/attribute_modifier.json"
+			"$ref": "../../types/attribute_modifier_legacy.json"
 		},
 		"food_modifiers": {
 			"description": "If specified, these modifiers will apply to the food amount gained by eating a food item.",
 			"type": "array",
 			"items": {
-				"$ref": "../../types/attribute_modifier.json"
+				"$ref": "../../types/attribute_modifier_legacy.json"
 			}
 		},
 		"saturation_modifier": {
 			"description": "If specified, this modifier will apply to the saturation amount gained by eating a food item.",
-			"$ref": "../../types/attribute_modifier.json"
+			"$ref": "../../types/attribute_modifier_legacy.json"
 		},
 		"saturation_modifiers": {
 			"description": "If specified, these modifiers will apply to the saturation amount gained by eating a food item.",
 			"type": "array",
 			"items": {
-				"$ref": "../../types/attribute_modifier.json"
+				"$ref": "../../types/attribute_modifier_legacy.json"
 			}
 		},
 		"entity_action": {

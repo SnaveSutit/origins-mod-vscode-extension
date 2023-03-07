@@ -1,0 +1,14 @@
+$id: https://snavesutit.github.io/origins-mod-schemas/
+title: Stat
+# description: An object specifying a statistic via a statistic type and an identifier.
+type: object
+required:
+  - type
+  - id
+properties:
+  type:
+    description: The type of the statistic.
+    $ref: ./identifier.json
+  id:
+    description: The name of the statistic; may depend on the specified type of the statistic.
+    $ref: ./identifier.json
