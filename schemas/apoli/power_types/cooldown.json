@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/cooldown/",
+	"type": "object",
+	"required": [
+		"cooldown"
+	],
+	"properties": {
+		"cooldown": {
+			"type": "integer",
+			"description": "Interval of ticks this power needs to recharge before the power can be triggered again."
+		},
+		"hud_render": {
+			"type": "hud render",
+			"default": "{\"should_render\": false}",
+			"description": "Determines how the cooldown of this power is visualized on the HUD."
+		}
+	}
+}

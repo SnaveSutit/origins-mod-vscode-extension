@@ -1,0 +1,45 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/item_on_item/",
+	"type": "object",
+	"properties": {
+		"using_item_condition": {
+			"$ref": "apoli:item_condition",
+			"description": "If specified, the specified actions will only execute if this condition is fulfilled by the item that is used to right-click an item."
+		},
+		"on_item_condition": {
+			"$ref": "apoli:item_condition",
+			"description": "If specified, the specified actions will only execute if this condition is fulfilled by the item that has been right-clicked."
+		},
+		"result": {
+			"$ref": "../types/item_stack.json",
+			"description": "If specified, this item will be given to the player."
+		},
+		"result_from_on_stack": {
+			"type": "integer",
+			"default": 0,
+			"description": "Determines how many items based on the `on_item` stack will be given as a result for using an item on an item. Mostly to be used in conjunction with `result_item_action`."
+		},
+		"using_item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, this action will be executed on the item that is used to right-click an item."
+		},
+		"on_item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, this action will be executed on the item that has been right-clicked."
+		},
+		"result_item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, this action will be executed on the item that is given to the player."
+		},
+		"entity_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the player after they used an item on an item."
+		},
+		"click_type": {
+			"type": "union",
+			"default": "\"secondary\"",
+			"description": "Determines whether to execute the actions if the player does a right-click (`0` or `\"primary\"`) or left-click (`1` or `\"secondary\"`) action."
+		}
+	}
+}

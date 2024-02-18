@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/elytra_flight/",
+	"type": "object",
+	"required": [
+		"render_elytra"
+	],
+	"properties": {
+		"render_elytra": {
+			"type": "boolean",
+			"description": "Determines whether an Elytra should render on the player's back while this power is active."
+		},
+		"texture_location": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, this will be the texture used by the Elytra granted by this power."
+		}
+	}
+}

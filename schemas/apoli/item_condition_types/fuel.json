@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_condition_types/fuel/",
+	"type": "object",
+	"properties": {
+		"comparison": {
+			"type": "comparison",
+			"default": "\">\"",
+			"description": "Determines how the fuel time value (in ticks) of the item is compared to a specific value."
+		},
+		"compare_to": {
+			"type": "integer",
+			"default": 0,
+			"description": "Which value to compare the fuel time value (in ticks) of the item to."
+		}
+	}
+}

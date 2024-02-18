@@ -1,13 +1,25 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/damage_condition_types/action_on_set/",
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/action_on_set/",
 	"type": "object",
-	"required": ["comparison", "compare_to"],
+	"required": ["set", "bientity_action"],
 	"properties": {
-		"set": {},
-		"bientity_action": {},
-		"bientity_condition": {},
-		"limit": {},
-		"reverse": {}
+		"set": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"limit": {
+			"type": "integer",
+			"default": 0
+		},
+		"reverse": {
+			"type": "boolean",
+			"default": false
+		}
 	}
 }

@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_stat/",
+	"type": "object",
+	"required": ["stat", "modifier"],
+	"properties": {
+		"stat": {
+			"$ref": "$ref(apoli:types/stat)"
+		},
+		"modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		}
+	}
+}

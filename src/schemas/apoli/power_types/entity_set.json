@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/entity_set/",
+	"type": "object",
+	"properties": {
+		"action_on_add": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"action_on_remove": {
+			"$ref": "$ref(apoli:bientity_action)"
+		}
+	}
+}

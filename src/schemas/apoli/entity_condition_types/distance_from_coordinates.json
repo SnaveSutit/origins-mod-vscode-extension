@@ -1,0 +1,47 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/distance_from_coordinates/",
+	"type": "object",
+	"required": ["comparison", "compare_to"],
+	"properties": {
+		"reference": {
+			"type": "string",
+			"default": "\"world_origin\""
+		},
+		"offset": {
+			"$ref": "$ref(apoli:types/vector)"
+		},
+		"ignore_x": {
+			"type": "boolean",
+			"default": false
+		},
+		"ignore_y": {
+			"type": "boolean",
+			"default": false
+		},
+		"ignore_z": {
+			"type": "boolean",
+			"default": false
+		},
+		"shape": {
+			"type": "string",
+			"default": "\"cube\""
+		},
+		"scale_reference_to_dimension": {
+			"type": "boolean",
+			"default": true
+		},
+		"result_on_the_wrong_dimension": {
+			"type": "boolean"
+		},
+		"round_to_digit": {
+			"type": "integer"
+		},
+		"comparison": {
+			"type": "comparison"
+		},
+		"compare_to": {
+			"type": "number"
+		}
+	}
+}

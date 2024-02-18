@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/ability/",
+	"type": "object",
+	"required": [
+		"ability"
+	],
+	"properties": {
+		"ability": {
+			"type": "player ability",
+			"description": "The namespace and ID of the ability to check for."
+		}
+	}
+}

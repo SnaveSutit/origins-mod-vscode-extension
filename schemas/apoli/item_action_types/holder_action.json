@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_action_types/holder_action/",
+	"type": "object",
+	"properties": {
+		"action": {
+			"$ref": "../entity_action.json",
+			"description": "The entity action to execute on the holder of the item stack."
+		},
+		"entity_action": {
+			"$ref": "../entity_action.json",
+			"description": "The same as the `action` field, but with a different name."
+		}
+	}
+}

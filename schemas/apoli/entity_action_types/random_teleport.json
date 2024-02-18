@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/random_teleport/",
+	"type": "object",
+	"properties": {
+		"area_width": {
+			"type": "number",
+			"default": 8,
+			"description": "Determines the width of the area."
+		},
+		"area_height": {
+			"type": "number",
+			"default": 8,
+			"description": "Determines the height of the area."
+		},
+		"heightmap": {
+			"type": "string",
+			"description": "If specified, the location will be anchored to the of the specified surface of the world."
+		},
+		"attempts": {
+			"type": "integer",
+			"description": "Determines how many attempts the entity should be teleported to a random location. Defaults to `area_width` * 2 + `area_height` * 2."
+		},
+		"landing_block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "If specified, the entity will only be teleported on top of a block that fulfills this block condition. Otherwise, the entity will only be teleported on blocks that blocks movement/have solid collision."
+		},
+		"landing_condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "If specified, the entity will only be teleported to a location if the entity fulfills this entity condition. Otherwise, the entity will only be teleported to a location that is empty (e.g: no blocks and fluids.)"
+		},
+		"landing_offset": {
+			"$ref": "../types/vector.json",
+			"description": "Determines the offset of the location of where the entity will be teleported. If the X and Z offsets are specified, the X and Z coordinates of the location will be divided (floored) before applying the offset."
+		},
+		"loaded_chunks_only": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether the entity should only be teleported in loaded chunks. **It is recommended to keep this set to `true` for performance reasons.**"
+		},
+		"success_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this entity action will be executed on the entity after it's been successfully teleported to a random location."
+		},
+		"fail_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this entity action will be executed on the entity upon failing to be teleported on a random location."
+		}
+	}
+}

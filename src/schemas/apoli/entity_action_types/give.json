@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/give/",
+	"type": "object",
+	"required": ["stack"],
+	"properties": {
+		"stack": {
+			"$ref": "$ref(apoli:types/item_stack)"
+		},
+		"item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"preferred_slot": {
+			"$ref": "$ref(apoli:types/equipment_slot)"
+		}
+	}
+}

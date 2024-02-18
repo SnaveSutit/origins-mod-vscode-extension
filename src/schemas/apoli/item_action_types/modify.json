@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_action_types/modify/",
+	"type": "object",
+	"required": ["modifier"],
+	"properties": {
+		"modifier": {
+			"$ref": "$ref(apoli:types/identifier)"
+		}
+	}
+}

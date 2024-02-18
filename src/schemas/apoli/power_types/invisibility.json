@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/invisibility/",
+	"type": "object",
+	"properties": {
+		"render_armor": {
+			"type": "boolean",
+			"default": false
+		},
+		"render_outline": {
+			"type": "boolean",
+			"default": false
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		}
+	}
+}

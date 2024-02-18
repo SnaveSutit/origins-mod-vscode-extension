@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/edible_item/",
+	"type": "object",
+	"required": [
+		"food_component",
+		"consume_sound"
+	],
+	"properties": {
+		"entity_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the player upon consuming an item."
+		},
+		"item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, this action will be executed on the item consumed by the player."
+		},
+		"result_item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, this action will be executed on the item that is given to the player as a result of consuming an item."
+		},
+		"item_condition": {
+			"$ref": "apoli:item_condition",
+			"description": "If specified, will only make the item edible and the specified actions will only be executed if this condition is fulfilled by the item."
+		},
+		"food_component": {
+			"type": "food component",
+			"description": "The food component that the item grants upon eating it."
+		},
+		"return_stack": {
+			"$ref": "../types/item_stack.json",
+			"description": "If specified, this item stack will be given to the player."
+		},
+		"consume_action": {
+			"type": "string",
+			"default": "\"eat\"",
+			"description": "Determines whether the action of consuming the item is considered \"eating\" (`\"eat\"`) or \"drinking\" (`\"drink\"`)."
+		},
+		"consume_sound": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, the sound event with this namespace and ID will be played when the item is eaten."
+		},
+		"consuming_time_modifier": {
+			"$ref": "../types/attribute_modifier.json",
+			"description": "If specified, this modifier will be applied on the maximum time the item is being consumed (in ticks)."
+		},
+		"consuming_time_modifiers": {
+			"type": "array",
+			"description": "If specified, these modifiers will be applied on the the maximum time the item is being consumed (in ticks)."
+		},
+		"priority": {
+			"type": "integer",
+			"default": 0,
+			"description": "Determines the priority of which the power will apply its modification to the item. Must be higher than 0 if the item is already edible."
+		}
+	}
+}

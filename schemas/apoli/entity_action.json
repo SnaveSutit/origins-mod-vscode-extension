@@ -5,5 +5,888 @@
 	"required": [
 		"type"
 	],
-	"allOf": []
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_set",
+							"origins:action_on_set"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/action_on_set.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:add_velocity",
+							"origins:add_velocity"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/add_velocity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:add_xp",
+							"origins:add_xp"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/add_xp.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:apply_effect",
+							"origins:apply_effect"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/apply_effect.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:area_of_effect",
+							"origins:area_of_effect"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/area_of_effect.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:block_action_at",
+							"origins:block_action_at"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/block_action_at.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:change_resource",
+							"origins:change_resource"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/change_resource.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:clear_effect",
+							"origins:clear_effect"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/clear_effect.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:crafting_table",
+							"origins:crafting_table"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/crafting_table.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:damage",
+							"origins:damage"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/damage.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:dismount",
+							"origins:dismount"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/dismount.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:drop_inventory",
+							"origins:drop_inventory"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/drop_inventory.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:emit_game_event",
+							"origins:emit_game_event"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/emit_game_event.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:ender_chest",
+							"origins:ender_chest"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/ender_chest.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:equipped_item_action",
+							"origins:equipped_item_action"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/equipped_item_action.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:execute_command",
+							"origins:execute_command"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/execute_command.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:exhaust",
+							"origins:exhaust"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/exhaust.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:explode",
+							"origins:explode"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/explode.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:extinguish",
+							"origins:extinguish"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/extinguish.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:feed",
+							"origins:feed"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/feed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:fire_projectile",
+							"origins:fire_projectile"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/fire_projectile.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:gain_air",
+							"origins:gain_air"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/gain_air.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:give",
+							"origins:give"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/give.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:grant_advancement",
+							"origins:grant_advancement"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/grant_advancement.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:grant_power",
+							"origins:grant_power"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/grant_power.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:heal",
+							"origins:heal"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/heal.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_death_ticks",
+							"origins:modify_death_ticks"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/modify_death_ticks.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_inventory",
+							"origins:modify_inventory"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/modify_inventory.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_resource",
+							"origins:modify_resource"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/modify_resource.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_stat",
+							"origins:modify_stat"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/modify_stat.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:passenger_action",
+							"origins:passenger_action"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/passenger_action.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:play_sound",
+							"origins:play_sound"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/play_sound.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:random_teleport",
+							"origins:random_teleport"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/random_teleport.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:raycast",
+							"origins:raycast"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/raycast.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:remove_power",
+							"origins:remove_power"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/remove_power.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:replace_inventory",
+							"origins:replace_inventory"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/replace_inventory.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:revoke_advancement",
+							"origins:revoke_advancement"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/revoke_advancement.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:revoke_all_powers",
+							"origins:revoke_all_powers"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/revoke_all_powers.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:revoke_power",
+							"origins:revoke_power"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/revoke_power.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:riding_action",
+							"origins:riding_action"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/riding_action.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:selector_action",
+							"origins:selector_action"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/selector_action.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:set_fall_distance",
+							"origins:set_fall_distance"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/set_fall_distance.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:set_on_fire",
+							"origins:set_on_fire"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/set_on_fire.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:spawn_effect_cloud",
+							"origins:spawn_effect_cloud"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/spawn_effect_cloud.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:spawn_entity",
+							"origins:spawn_entity"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/spawn_entity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:spawn_particles",
+							"origins:spawn_particles"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/spawn_particles.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:swing_hand",
+							"origins:swing_hand"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/swing_hand.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:toggle",
+							"origins:toggle"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/toggle.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:trigger_cooldown",
+							"origins:trigger_cooldown"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_action_types/trigger_cooldown.json"
+			}
+		}
+	]
 }

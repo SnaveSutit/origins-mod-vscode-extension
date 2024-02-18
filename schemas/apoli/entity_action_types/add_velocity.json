@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/add_velocity/",
+	"type": "object",
+	"properties": {
+		"x": {
+			"type": "number",
+			"default": 0,
+			"description": "The amount of velocity to add on the x-axis."
+		},
+		"y": {
+			"type": "number",
+			"default": 0,
+			"description": "The amount of velocity to add on the y-axis."
+		},
+		"z": {
+			"type": "number",
+			"default": 0,
+			"description": "The amount of velocity to add on the z-axis."
+		},
+		"space": {
+			"$ref": "../types/space.json",
+			"description": "The space to perform the addition/setting of velocity in."
+		},
+		"client": {
+			"type": "boolean",
+			"default": true,
+			"description": "If this is false, the action will not execute on the client."
+		},
+		"server": {
+			"type": "boolean",
+			"default": true,
+			"description": "If this is false, the action will not execute on the server."
+		},
+		"set": {
+			"type": "boolean",
+			"default": false,
+			"description": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it."
+		}
+	}
+}

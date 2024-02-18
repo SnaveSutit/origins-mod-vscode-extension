@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/equipped_item_action/",
+	"type": "object",
+	"required": ["equipment_slot", "action"],
+	"properties": {
+		"equipment_slot": {
+			"$ref": "$ref(apoli:types/equipment_slot)"
+		},
+		"action": {
+			"$ref": "$ref(apoli:item_action)"
+		}
+	}
+}

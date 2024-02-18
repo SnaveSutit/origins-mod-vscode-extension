@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/starting_equipment/",
+	"type": "object",
+	"properties": {
+		"stack": {
+			"type": "positioned item stack"
+		},
+		"stacks": {
+			"type": "array"
+		},
+		"recurrent": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

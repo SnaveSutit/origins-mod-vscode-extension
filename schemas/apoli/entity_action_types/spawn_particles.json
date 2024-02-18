@@ -1,0 +1,53 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_particles/",
+	"type": "object",
+	"required": [
+		"particle",
+		"count"
+	],
+	"properties": {
+		"particle": {
+			"$ref": "../types/particle_effect.json",
+			"description": "The particle type that will be spawned."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the particle will only be visible if this bi-entity condition is fulfilled by either or both the entity that has the power and the entity looking at the entity that has the power."
+		},
+		"count": {
+			"type": "integer",
+			"minimum": 0,
+			"description": "How much of the specified particle type will be spawned."
+		},
+		"speed": {
+			"type": "number",
+			"default": 0,
+			"description": "Determines the speed of the specified particle type."
+		},
+		"force": {
+			"type": "boolean",
+			"default": false,
+			"description": "If set to `true`, the specified particle type that will be spawned can be seen from a far distance."
+		},
+		"spread": {
+			"$ref": "../types/vector.json",
+			"description": "Determines the size of the three-dimensional cuboid volume to spawn the specified particle type in."
+		},
+		"offset_x": {
+			"type": "number",
+			"default": 0,
+			"description": "The offset of where the particle will be centered in the X axis."
+		},
+		"offset_y": {
+			"type": "number",
+			"default": 0.5,
+			"description": "The offset of where the particle will be centered in the Y axis."
+		},
+		"offset_z": {
+			"type": "number",
+			"default": 0,
+			"description": "The offset of where the particle will be centered in the Z axis."
+		}
+	}
+}

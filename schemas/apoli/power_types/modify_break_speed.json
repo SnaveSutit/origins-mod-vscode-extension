@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_break_speed/",
+	"type": "object",
+	"properties": {
+		"block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition."
+		},
+		"modifier": {
+			"$ref": "../types/attribute_modifier.json",
+			"description": "If specified, this modifier will be applied to the break speed."
+		},
+		"modifiers": {
+			"type": "array",
+			"description": "If specified, these modifiers will be applied to the break speed."
+		},
+		"hardness_modifier": {
+			"$ref": "../types/attribute_modifier.json",
+			"description": "If specified, this modifier will be applied to the *effective* hardness value of the block while calculating the block's break speed."
+		},
+		"hardness_modifiers": {
+			"type": "array",
+			"description": "If specified, these modifiers will be applied to the *effective* hardness value of the block while calculating the block's break speed."
+		}
+	}
+}

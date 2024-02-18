@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_dealt/",
+	"type": "object",
+	"properties": {
+		"bientity_action": {
+			"$ref": "../bientity_action.json",
+			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities whenever the modifier(s) is/are applied."
+		},
+		"self_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the '**actor**' entity whenever the modifier(s) is/are applied."
+		},
+		"target_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the '**target**' entity whenever the modifier(s) is/are applied."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+		},
+		"target_condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the '**target**' entity."
+		},
+		"damage_condition": {
+			"type": "damage condition type",
+			"description": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the damage dealt by the '**actor**' entity."
+		},
+		"modifier": {
+			"$ref": "../types/attribute_modifier.json",
+			"description": "If specified, this modifier will be applied to the damage dealt by the '**actor**' entity."
+		},
+		"modifiers": {
+			"type": "array",
+			"description": "If specified, these modifiers will be applied t othe damage dealt by the '**actor**' entity."
+		}
+	}
+}

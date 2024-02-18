@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/entity_group/",
+	"type": "object",
+	"required": [
+		"group"
+	],
+	"properties": {
+		"group": {
+			"type": "string",
+			"description": "The group to associate with the player. One of `default`, `undead`, `arthropod`, `illager`, or `aquatic`."
+		}
+	}
+}

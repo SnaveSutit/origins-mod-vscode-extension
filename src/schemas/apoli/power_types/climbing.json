@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/climbing/",
+	"type": "object",
+	"properties": {
+		"allow_holding": {
+			"type": "boolean",
+			"default": true
+		},
+		"hold_condition": {
+			"$ref": "$ref(apoli:entity_condition)"
+		}
+	}
+}

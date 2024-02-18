@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/tooltip/",
+	"type": "object",
+	"properties": {
+		"item_condition": {
+			"$ref": "apoli:item_condition",
+			"description": "If specified, the specified tooltip(s) will only apply to items that fulfills this condition."
+		},
+		"text": {
+			"type": "text component",
+			"description": "If specified, apply this string as a tooltip."
+		},
+		"texts": {
+			"type": "array",
+			"description": "If specified, apply these strings as a tooltip."
+		},
+		"order": {
+			"type": "integer",
+			"default": 0,
+			"description": "Determines the placement order of the tooltip(s) of the power."
+		}
+	}
+}

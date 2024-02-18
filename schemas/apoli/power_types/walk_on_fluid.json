@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/walk_on_fluid/",
+	"type": "object",
+	"required": [
+		"fluid"
+	],
+	"properties": {
+		"fluid": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the fluid tag on which the player should be able to walk onto. Most important examples: `minecraft:water` and `minecraft:lava`."
+		}
+	}
+}

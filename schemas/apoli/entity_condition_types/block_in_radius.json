@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/block_in_radius/",
+	"type": "object",
+	"required": [
+		"block_condition",
+		"radius"
+	],
+	"properties": {
+		"block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "The block condition type to check for."
+		},
+		"radius": {
+			"type": "integer",
+			"description": "The radius to check the blocks that fulfills the specified block condition type within."
+		},
+		"shape": {
+			"type": "string",
+			"default": "\"cube\"",
+			"description": "Determines the shape of the radius. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`."
+		},
+		"comparison": {
+			"type": "comparison",
+			"default": "\">=\"",
+			"description": "How the amount of blocks within the specified radius which fulfills the specified block condition type should be compared to the specified value."
+		},
+		"compare_to": {
+			"type": "integer",
+			"default": 1,
+			"description": "The value to compare the amount to."
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/resource/",
+	"type": "object",
+	"required": [
+		"min",
+		"max"
+	],
+	"properties": {
+		"min": {
+			"type": "integer",
+			"description": "The minimum value of the resource."
+		},
+		"max": {
+			"type": "integer",
+			"description": "The maximum value of the resource."
+		},
+		"hud_render": {
+			"type": "hud render",
+			"description": "Determines how the resource is visualized on the HUD."
+		},
+		"start_value": {
+			"type": "integer",
+			"description": "The value of the resource when the entity first receives the power. If not set, this will be set to the value of the `min` integer field."
+		},
+		"min_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the entity whenever the minimum value is reached."
+		},
+		"max_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the entity whenever the maximum value is reached."
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_over_time/",
+	"type": "object",
+	"properties": {
+		"interval": {
+			"type": "integer",
+			"default": 20
+		},
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"rising_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"falling_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		}
+	}
+}

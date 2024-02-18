@@ -11,7 +11,7 @@ const linkText = /^\[(?<name>[^\n\[]+)\]\((?<target>[^\n ]+)\)$/
 const descriptionRegex = /^#\s+(?<title>.+)(?<description>[^]+?)###\s+.+?$/gm
 const fieldTitleRegex = /Field\s*\|\s*Type\s*\|\s*Default\s*\|\s*Description\n-+\|-+\|-+\|-+\n/gm
 const fieldCaptureRegex =
-	/^(?<field>[^|]+?)\s*\|\s*(?<type>[^|\n]+?)\s*\|\s*(?<defaultValue>[^|\n]+?)?\s*\|\s*(?<description>[^|\n]+?)$/gm
+	/^(?<field>[^|\n\s]+?)\s*\|\s*(?<type>[^|\n]+?)\s*\|\s*(?<defaultValue>[^|\n]+?)?\s*\|\s*(?<description>[^|\n]+?)$/gm
 
 const valuesTitleRegex = /Value\s+?\| Description\n-+\|-+\n/gm
 const valueCaptureRegex = /^(?<value>[^|]+?)\s*\|\s*(?<description>[^|\n]+?)$/gm
@@ -33,12 +33,20 @@ export class Field {
 	public type: string = ''
 	public typePath: string = ''
 	public defaultValue: undefined | string = undefined
+	public mdFile: MDFile
 
-	constructor(name: string, type: string, defaultValue: string, public description: string) {
+	constructor(
+		name: string,
+		type: string,
+		defaultValue: string,
+		public description: string,
+		mdFile: MDFile
+	) {
 		this.name = name.replaceAll('`', '')
 		this.description = description.trim()
 		this.parseType(type)
 		this.parseDefaultValue(defaultValue)
+		this.mdFile = mdFile
 	}
 
 	private parseType(type: string) {
@@ -60,6 +68,13 @@ export class Field {
 			// if (!url) throw new Error(`Failed to parse type '${type2}' for Object field '${this.name}'`)
 			this.typePath = 'types/data_types/object.md'
 			return
+		} else if (type.includes(' or ')) {
+			const types = type.split(' or ')
+			if (types.length > 2)
+				throw new Error(`Failed to parse type '${type}' for field '${this.name}'`)
+			this.type = 'Union'
+			this.typePath = types.map(type => parseMDUrl(type)?.target).join(', ')
+			return
 		}
 		const url = parseMDUrl(type)
 		if (!url) throw new Error(`Failed to parse type '${type}' for field '${this.name}'`)
@@ -69,7 +84,7 @@ export class Field {
 
 	private parseDefaultValue(defaultValue: string) {
 		if (!defaultValue) return
-		if (defaultValue === '_optional_') {
+		if (defaultValue.toLowerCase().includes(`optional`)) {
 			this.optional = true
 			return
 		}
@@ -115,10 +130,14 @@ export class MDFile {
 			throw new Error(`Failed to fetch content of '${file.path}': ${file.content}`)
 		file.content = file.content.replace(/\r/g, '')
 
-		file.id = file.path.split('/').pop()!.replace('.md', '')
-		file.captureDescription()
-		file.captureFields()
-		file.captureValues()
+		try {
+			file.id = file.path.split('/').pop()!.replace('.md', '')
+			file.captureDescription()
+			file.captureFields()
+			file.captureValues()
+		} catch (e: any) {
+			throw new Error(`Failed to parse content of '${file.path}': ${e.message}`)
+		}
 
 		return file
 	}
@@ -132,11 +151,14 @@ export class MDFile {
 			throw new Error(`Failed to fetch content of '${this.path}': ${this.content}`)
 		this.content = this.content.replace(/\r/g, '')
 
-		// this.captureID()
-		this.id = this.path.split('/').pop()!.replace('.md', '')
-		this.captureDescription()
-		this.captureFields()
-		this.captureValues()
+		try {
+			this.id = this.path.split('/').pop()!.replace('.md', '')
+			this.captureDescription()
+			this.captureFields()
+			this.captureValues()
+		} catch (e: any) {
+			throw new Error(`Failed to parse content of '${this.path}': ${e.message}`)
+		}
 
 		return this
 	}
@@ -169,7 +191,7 @@ export class MDFile {
 				const fieldMatch = fieldCaptureRegex.exec(location!)
 				if (!fieldMatch) break
 				const { field, type, defaultValue, description } = fieldMatch.groups!
-				this.fields.push(new Field(field, type, defaultValue, description))
+				this.fields.push(new Field(field, type, defaultValue, description, this))
 			}
 		}
 		if (!this.fields.length) throw new Error(`Failed to capture fields for '${this.path}'`)

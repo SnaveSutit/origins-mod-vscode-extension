@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_dealt/",
+	"type": "object",
+	"properties": {
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"self_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"target_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"target_condition": {
+			"$ref": "$ref(apoli:entity_condition)"
+		},
+		"damage_condition": {
+			"type": "damage condition type"
+		},
+		"modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"modifiers": {
+			"type": "array"
+		}
+	}
+}

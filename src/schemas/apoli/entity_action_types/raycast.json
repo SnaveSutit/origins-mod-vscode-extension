@@ -1,0 +1,72 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/raycast/",
+	"type": "object",
+	"properties": {
+		"distance": {
+			"type": "number"
+		},
+		"block": {
+			"type": "boolean",
+			"default": true
+		},
+		"entity": {
+			"type": "boolean",
+			"default": true
+		},
+		"shape_type": {
+			"$ref": "$ref(apoli:types/shape_type)"
+		},
+		"fluid_handling": {
+			"$ref": "$ref(apoli:types/fuild_handling)",
+			"default": "\"any\""
+		},
+		"space": {
+			"$ref": "$ref(apoli:types/space)"
+		},
+		"direction": {
+			"type": "object"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"entity_distance": {
+			"type": "number"
+		},
+		"block_action": {
+			"$ref": "$ref(apoli:block_action)"
+		},
+		"block_distance": {
+			"type": "number"
+		},
+		"before_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"hit_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"miss_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"command_at_hit": {
+			"type": "string"
+		},
+		"command_hit_offset": {
+			"type": "number"
+		},
+		"command_along_ray": {
+			"type": "string"
+		},
+		"command_step": {
+			"type": "number",
+			"default": 1.0
+		},
+		"command_along_ray_only_on_hit": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

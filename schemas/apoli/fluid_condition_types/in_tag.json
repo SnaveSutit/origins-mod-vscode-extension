@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/fluid_condition_types/in_tag/",
+	"type": "object",
+	"required": [
+		"tag"
+	],
+	"properties": {
+		"tag": {
+			"$ref": "../types/identifier.json",
+			"description": "ID of the tag which the fluid should be in to pass the check."
+		}
+	}
+}

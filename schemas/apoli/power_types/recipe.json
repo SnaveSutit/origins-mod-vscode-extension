@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/recipe/",
+	"type": "object",
+	"required": [
+		"recipe"
+	],
+	"properties": {
+		"recipe": {
+			"type": "crafting recipe",
+			"description": "The recipe to craft, including an `id` field which can be any arbitrary (but unique) identifier."
+		}
+	}
+}

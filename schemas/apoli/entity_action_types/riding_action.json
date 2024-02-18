@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/riding_action/",
+	"type": "object",
+	"properties": {
+		"action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the entity being ridden."
+		},
+		"bientity_action": {
+			"$ref": "../bientity_action.json",
+			"description": "If specified, this action will be executed on either the 'actor' (the passenger entity) or the 'target' (the entity being ridden) or both."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, only execute the specified actions if this condition is fulfilled by either the 'actor' (the passenger entity) or the 'target' (entity being ridden) or both."
+		},
+		"recursive": {
+			"type": "boolean",
+			"default": false,
+			"description": "If set to `true`, the specified action(s) will be executed on all entities that are being ridden."
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_on_item_pickup/",
+	"type": "object",
+	"properties": {
+		"bientity_action": {
+			"$ref": "../bientity_action.json",
+			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and '**target**' entities."
+		},
+		"item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, this item action will be executed on the item that was picked up."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the actions will only be executed if this bi-entity condition is fulfilled by either or both the '**actor**' and '**target**' entities."
+		},
+		"item_condition": {
+			"$ref": "apoli:item_condition",
+			"description": "If specified, the actions will only be executed if this item condition is fulfilled by the item about to be picked up."
+		},
+		"priority": {
+			"type": "integer",
+			"default": 0,
+			"description": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)"
+		}
+	}
+}

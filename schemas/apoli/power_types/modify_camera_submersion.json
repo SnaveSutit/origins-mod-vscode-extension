@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_camera_submersion/",
+	"type": "object",
+	"required": [
+		"to"
+	],
+	"properties": {
+		"from": {
+			"type": "string",
+			"description": "If specified, only this submersion type will be modified. Accepts either `\"none\"` , `\"water\"` or `\"lava\"`"
+		},
+		"to": {
+			"type": "string",
+			"description": "Which submersion type to change to. Accepts either `\"none\"`, `\"water\"` or `\"lava\"`"
+		}
+	}
+}

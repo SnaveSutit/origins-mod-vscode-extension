@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_velocity/",
+	"type": "object",
+	"properties": {
+		"axes": {
+			"type": "array",
+			"default": "[\"x\",\"y\",\"z\"]"
+		},
+		"modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"modifiers": {
+			"type": "array"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/shader/",
+	"type": "object",
+	"required": [
+		"shader"
+	],
+	"properties": {
+		"shader": {
+			"$ref": "../types/identifier.json",
+			"description": "Specifies the location of the shader resource file to use."
+		},
+		"toggleable": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines if the applied shader can be toggled."
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_camera_submersion/",
+	"type": "object",
+	"required": [
+		"to"
+	],
+	"properties": {
+		"from": {
+			"type": "string"
+		},
+		"to": {
+			"type": "string"
+		}
+	}
+}

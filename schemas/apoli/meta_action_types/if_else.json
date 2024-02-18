@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else/",
+	"type": "object",
+	"required": [
+		"condition",
+		"if_action"
+	],
+	"properties": {
+		"condition": {
+			"type": "condition type",
+			"description": "A condition based on the type of action."
+		},
+		"if_action": {
+			"type": "action type",
+			"description": "The action which is executed when the condition evaluates to true."
+		},
+		"else_action": {
+			"type": "action type",
+			"description": "If present, this action will be executed when the condition evaluates to false."
+		}
+	}
+}

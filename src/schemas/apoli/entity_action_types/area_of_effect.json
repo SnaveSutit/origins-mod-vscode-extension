@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/area_of_effect/",
+	"type": "object",
+	"required": ["bientity_action"],
+	"properties": {
+		"radius": {
+			"type": "number",
+			"default": 16.0
+		},
+		"shape": {
+			"$ref": "$ref(apoli:types/shape)",
+			"default": "\"cube\""
+		},
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		}
+	}
+}

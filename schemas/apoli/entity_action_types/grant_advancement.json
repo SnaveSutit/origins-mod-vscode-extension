@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/grant_advancement/",
+	"type": "object",
+	"required": [
+		"advancement"
+	],
+	"properties": {
+		"advancement": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the advancement to be granted to the player."
+		},
+		"criteria": {
+			"type": "array",
+			"description": "If specified, determines the criteria to grant to the specified advancement."
+		},
+		"criterion": {
+			"type": "string",
+			"description": "If specified, determines the criterion to grant to the specified advancement."
+		},
+		"selection": {
+			"$ref": "../types/advancement_selection.json",
+			"description": "Determines how to select the parent advancement(s) or child(ren) advancement(s) of the specified advancement. Can be one of: `\"only\"`, `\"through\"`, `\"from\"`, `\"until\"`, `\"everything\"`"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/power/",
+	"type": "object",
+	"required": [
+		"power"
+	],
+	"properties": {
+		"power": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the power the entity needs to have to pass the check."
+		},
+		"source": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, the condition will check if the power is from the specified power source."
+		}
+	}
+}

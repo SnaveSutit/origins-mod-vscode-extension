@@ -22,7 +22,7 @@
 			"description": "If specified, this NBT data will be applied to the entity that will be spawned."
 		},
 		"entity_action": {
-			"$ref": "apoli:entity_action",
+			"$ref": "../entity_action.json",
 			"description": "If specified, this entity action will be executed on the spawned entity."
 		}
 	}

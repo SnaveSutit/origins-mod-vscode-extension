@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_condition_types/is_equippable/",
+	"type": "object",
+	"properties": {
+		"equipment_slot": {
+			"type": "string",
+			"description": "If specified, checks if the item is equippable in the specified equipment slot. Accepts `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, or `\"offhand\"`."
+		}
+	}
+}

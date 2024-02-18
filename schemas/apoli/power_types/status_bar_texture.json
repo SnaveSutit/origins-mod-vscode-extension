@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/status_bar_texture/",
+	"type": "object",
+	"required": [
+		"texture"
+	],
+	"properties": {
+		"texture": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the sprite sheet to replace the default one with. [Here's what the vanilla sprite sheet looks like.](https://raw.githubusercontent.com/misode/mcmeta/6d496b1a91476c4fdd45fdb093d0319141f9c109/assets/minecraft/textures/gui/icons.png)"
+		}
+	}
+}

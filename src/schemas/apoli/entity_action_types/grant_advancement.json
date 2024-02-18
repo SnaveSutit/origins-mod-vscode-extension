@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/grant_advancement/",
+	"type": "object",
+	"required": ["advancement"],
+	"properties": {
+		"advancement": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"criteria": {
+			"type": "array"
+		},
+		"criterion": {
+			"type": "string"
+		},
+		"selection": {
+			"$ref": "$ref(apoli:types/advancement_selection)"
+		}
+	}
+}

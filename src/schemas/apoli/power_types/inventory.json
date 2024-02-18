@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/inventory/",
+	"type": "object",
+	"properties": {
+		"title": {
+			"type": "string",
+			"default": "\"container.inventory\""
+		},
+		"container_type": {
+			"type": "container type",
+			"default": "\"dropper\""
+		},
+		"drop_on_death": {
+			"type": "boolean",
+			"default": false
+		},
+		"drop_on_death_filter": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"recoverable": {
+			"type": "boolean",
+			"default": true
+		},
+		"key": {
+			"type": "key",
+			"default": "{\"key\": \"key.origins.primary_active\"}"
+		}
+	}
+}

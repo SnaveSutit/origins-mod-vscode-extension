@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/prevent_entity_use/",
+	"type": "object",
+	"properties": {
+		"bientity_action": {
+			"$ref": "../bientity_action.json",
+			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities."
+		},
+		"held_item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, this action will be executed on the item used by the '**actor**' entity for right-clicking the '**target**' entity."
+		},
+		"result_item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, this action will be executed on the item that is given to the '**actor**' entity."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+		},
+		"item_condition": {
+			"$ref": "apoli:item_condition",
+			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by the item used by the '**actor**' entity for right-clicking the '**target**' entity."
+		},
+		"hands": {
+			"type": "array",
+			"default": "[\"off_hand\", \"main_hand\"]",
+			"description": "Determines if the power should be activated if the '**actor**' entity used the specified hand(s). Accepts `\"off_hand\"`, `\"main_hand\"` or both."
+		},
+		"result_stack": {
+			"$ref": "../types/item_stack.json",
+			"description": "If specified, this item stack will be given to the '**actor**' entity."
+		}
+	}
+}

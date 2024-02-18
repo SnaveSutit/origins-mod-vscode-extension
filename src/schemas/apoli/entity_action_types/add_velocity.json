@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/add_velocity/",
+	"type": "object",
+	"properties": {
+		"x": {
+			"type": "number",
+			"default": 0.0
+		},
+		"y": {
+			"type": "number",
+			"default": 0.0
+		},
+		"z": {
+			"type": "number",
+			"default": 0.0
+		},
+		"space": {
+			"$ref": "$ref(apoli:types/space)"
+		},
+		"client": {
+			"type": "boolean",
+			"default": true
+		},
+		"server": {
+			"type": "boolean",
+			"default": true
+		},
+		"set": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

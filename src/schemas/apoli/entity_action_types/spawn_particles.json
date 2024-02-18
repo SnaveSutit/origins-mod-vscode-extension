@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_particles/",
+	"type": "object",
+	"required": ["particle", "count"],
+	"properties": {
+		"particle": {
+			"$ref": "$ref(apoli:types/particle_effect)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"count": {
+			"type": "integer",
+			"minimum": 0
+		},
+		"speed": {
+			"type": "number",
+			"default": 0.0
+		},
+		"force": {
+			"type": "boolean",
+			"default": false
+		},
+		"spread": {
+			"$ref": "$ref(apoli:types/vector)"
+		},
+		"offset_x": {
+			"type": "number",
+			"default": 0.0
+		},
+		"offset_y": {
+			"type": "number",
+			"default": 0.5
+		},
+		"offset_z": {
+			"type": "number",
+			"default": 0.0
+		}
+	}
+}

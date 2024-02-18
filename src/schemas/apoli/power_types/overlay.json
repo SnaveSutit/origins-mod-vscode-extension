@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/overlay/",
+	"type": "object",
+	"required": ["texture", "draw_mode", "draw_phase"],
+	"properties": {
+		"texture": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"strength": {
+			"type": "number",
+			"default": 1.0
+		},
+		"red": {
+			"type": "number",
+			"default": "1.0 "
+		},
+		"green": {
+			"type": "number",
+			"default": 1.0
+		},
+		"blue": {
+			"type": "number",
+			"default": 1.0
+		},
+		"draw_mode": {
+			"type": "string"
+		},
+		"draw_phase": {
+			"type": "string"
+		},
+		"hide_with_hud": {
+			"type": "boolean",
+			"default": true
+		},
+		"visible_in_third_person": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

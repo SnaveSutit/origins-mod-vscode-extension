@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/attribute/",
+	"type": "object",
+	"properties": {
+		"modifier": {
+			"type": "attributed attribute modifier",
+			"description": "If specified, this modifier will be applied to its corresponding attribute."
+		},
+		"modifiers": {
+			"type": "array",
+			"description": "If specified, these modifiers will be applied to their corresponding attributes."
+		},
+		"update_health": {
+			"type": "boolean",
+			"default": true,
+			"description": "When true, the player's health percentage will update to match their new maximum health."
+		}
+	}
+}

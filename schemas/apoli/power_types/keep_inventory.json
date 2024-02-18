@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/keep_inventory/",
+	"type": "object",
+	"properties": {
+		"item_condition": {
+			"$ref": "apoli:item_condition",
+			"description": "If specified, only make the items that fulfill the specified item condition type persist in the entity's inventory."
+		},
+		"slots": {
+			"type": "array",
+			"description": "If specified, only make the items that are in the listed inventory slots persist in the entity's inventory. See [Positioned Item Stack Slots](../../misc/extras/positioned_item_stack_slots.md) for possible values."
+		}
+	}
+}

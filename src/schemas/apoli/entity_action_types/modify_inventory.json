@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory/",
+	"type": "object",
+	"required": ["item_action"],
+	"properties": {
+		"inventory_type": {
+			"$ref": "$ref(apoli:types/inventory_type)"
+		},
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"slot": {
+			"$ref": "$ref(apoli:types/item_slot)"
+		},
+		"slots": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/item_slot)"
+			}
+		},
+		"power": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"process_mode": {
+			"$ref": "$ref(apoli:types/process_mode)"
+		},
+		"limit": {
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

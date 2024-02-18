@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/clear_effect/",
+	"type": "object",
+	"properties": {
+		"effect": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, the status effect with this namespace and ID will be cleared. If not specified, all status effects will be cleared."
+		}
+	}
+}

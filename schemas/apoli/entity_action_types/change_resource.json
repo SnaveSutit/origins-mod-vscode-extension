@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/change_resource/",
+	"type": "object",
+	"required": [
+		"resource",
+		"change"
+	],
+	"properties": {
+		"resource": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the power that uses the [Resource (Power Type)](../power_types/resource.md) or has a built-in cooldown."
+		},
+		"change": {
+			"type": "integer",
+			"description": "This value will be added to the resource (won't go below `min` or above `max` of the [Resource (Power Type)](../power_types/resource.md))."
+		},
+		"operation": {
+			"enum": [
+				"add",
+				"set"
+			],
+			"description": "Determines if the action should add or set the value of the resource. Accepts `\"add\"` or `\"set\"`."
+		}
+	}
+}

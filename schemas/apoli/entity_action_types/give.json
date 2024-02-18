@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/give/",
+	"type": "object",
+	"required": [
+		"stack"
+	],
+	"properties": {
+		"stack": {
+			"$ref": "../types/item_stack.json",
+			"description": "The item stack to give to the entity."
+		},
+		"item_action": {
+			"$ref": "apoli:item_action",
+			"description": "If specified, the specified item action type will be executed on the item stack before it's given to the player."
+		},
+		"preferred_slot": {
+			"$ref": "../types/equipment_slot.json",
+			"description": "If specified, this will prioritize the action to put the item in the specified slot. Accepts `\"chest\"`, `\"feet\"`, `\"head\"`, `\"legs\"`, `\"mainhand\"` or `\"offhand\"`."
+		}
+	}
+}

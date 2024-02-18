@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/toggle/",
+	"type": "object",
+	"properties": {
+		"active_by_default": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether the state of this power type should be ON by default."
+		},
+		"key": {
+			"type": "key",
+			"default": "{\"key\": \"key.origins.primary_active\"}",
+			"description": "Which active key this power should respond to."
+		},
+		"retain_state": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether the state of this power type should retain if the condition (if there is any) is no longer fulfilled."
+		}
+	}
+}

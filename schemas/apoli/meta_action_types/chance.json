@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/chance/",
+	"type": "object",
+	"required": [
+		"action",
+		"chance"
+	],
+	"properties": {
+		"action": {
+			"type": "action type",
+			"description": "The action which might be executed."
+		},
+		"chance": {
+			"type": "number",
+			"description": "The chance that the action will execute, from 0 to 1. (E.g. 0.1 means 10% chance, 0.95 means 95% chance)."
+		},
+		"fail_action": {
+			"type": "action type",
+			"description": "The action to execute if the specified action in the `action` field is not executed."
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/phasing/",
+	"type": "object",
+	"properties": {
+		"blacklist": {
+			"type": "boolean",
+			"default": false
+		},
+		"block_condition": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"render_type": {
+			"type": "string",
+			"default": "\"blindness\""
+		},
+		"view_distance": {
+			"type": "number",
+			"default": 10.0
+		},
+		"phase_down_condition": {
+			"$ref": "$ref(apoli:entity_condition)"
+		}
+	}
+}

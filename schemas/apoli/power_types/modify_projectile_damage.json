@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_projectile_damage/",
+	"type": "object",
+	"properties": {
+		"damage_condition": {
+			"type": "damage condition type",
+			"description": "If specified, the specified modifier(s) and action(s) will only apply if the dealt damage fulfills by this condition."
+		},
+		"modifier": {
+			"$ref": "../types/attribute_modifier.json",
+			"description": "If specified, this modifier will apply to the damage amount."
+		},
+		"modifiers": {
+			"type": "array",
+			"description": "If specified, these modifiers will apply to the damage amount."
+		},
+		"target_condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "If specified, the specified modifier(s) and action(s) will only apply if the the entity that has been hit fulfills this condition."
+		},
+		"self_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the 'actor' entity (the entity that has the power) whenever the modifier(s) are applied."
+		},
+		"target_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the the entity that has been hit whenever the modifier(s) are applied."
+		}
+	}
+}

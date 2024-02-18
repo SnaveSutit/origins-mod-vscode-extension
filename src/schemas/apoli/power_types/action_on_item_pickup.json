@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_on_item_pickup/",
+	"type": "object",
+	"properties": {
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"priority": {
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

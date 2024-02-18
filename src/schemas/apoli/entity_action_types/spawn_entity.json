@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_entity/",
+	"type": "object",
+	"required": ["entity_type"],
+	"properties": {
+		"entity_type": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"tag": {
+			"$ref": "$ref(apoli:types/nbt)"
+		},
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		}
+	}
+}

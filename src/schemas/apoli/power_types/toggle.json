@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/toggle/",
+	"type": "object",
+	"properties": {
+		"active_by_default": {
+			"type": "boolean",
+			"default": true
+		},
+		"key": {
+			"type": "key",
+			"default": "{\"key\": \"key.origins.primary_active\"}"
+		},
+		"retain_state": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

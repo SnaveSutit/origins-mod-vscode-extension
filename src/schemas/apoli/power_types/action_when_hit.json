@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_when_hit/",
+	"type": "object",
+	"required": ["bientity_action"],
+	"properties": {
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"damage_condition": {
+			"type": "damage condition type"
+		},
+		"cooldown": {
+			"type": "integer",
+			"default": 1
+		},
+		"hud_render": {
+			"type": "hud render",
+			"default": "{\"should_render\": false}"
+		}
+	}
+}

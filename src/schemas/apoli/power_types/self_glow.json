@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/self_glow/",
+	"type": "object",
+	"properties": {
+		"entity_condition": {
+			"$ref": "$ref(apoli:entity_condition)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"use_teams": {
+			"type": "boolean",
+			"default": true
+		},
+		"red": {
+			"type": "number",
+			"default": 1.0
+		},
+		"green": {
+			"type": "number",
+			"default": 1.0
+		},
+		"blue": {
+			"type": "number",
+			"default": 1.0
+		}
+	}
+}

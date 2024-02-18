@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/set_size/",
+	"type": "object",
+	"required": [
+		"set",
+		"comparison",
+		"value"
+	],
+	"properties": {
+		"set": {
+			"$ref": "../types/identifier.json",
+			"description": "The ID of the power."
+		},
+		"comparison": {
+			"type": "comparison",
+			"description": "Determines how the amount of entities stored in the power will be compared to the specified value."
+		},
+		"value": {
+			"type": "integer",
+			"description": "The specified value to compare the amount of entities stored in the power to."
+		}
+	}
+}

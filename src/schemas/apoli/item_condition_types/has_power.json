@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_condition_types/has_power/",
+	"type": "object",
+	"required": ["power"],
+	"properties": {
+		"power": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"slot": {
+			"type": "string"
+		}
+	}
+}

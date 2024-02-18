@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/in_block/",
+	"type": "object",
+	"required": [
+		"block_condition"
+	],
+	"properties": {
+		"block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "The block condition type to check for on the block that is overlapping with the entity's feet."
+		}
+	}
+}

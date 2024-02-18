@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_effect_cloud/",
+	"type": "object",
+	"properties": {
+		"radius": {
+			"type": "number",
+			"default": 3.0
+		},
+		"radius_on_use": {
+			"type": "number",
+			"default": -0.5
+		},
+		"wait_time": {
+			"type": "integer",
+			"default": 10
+		},
+		"effect": {
+			"$ref": "$ref(apoli:types/status_effect_instance)"
+		},
+		"effects": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/status_effect_instance)"
+			}
+		}
+	}
+}

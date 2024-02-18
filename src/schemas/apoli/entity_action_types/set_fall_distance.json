@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/set_fall_distance/",
+	"type": "object",
+	"required": ["fall_distance"],
+	"properties": {
+		"fall_distance": {
+			"type": "number"
+		}
+	}
+}

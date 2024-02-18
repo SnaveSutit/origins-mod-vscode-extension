@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/enchantment/",
+	"type": "object",
+	"required": ["enchantment", "comparison", "compare_to"],
+	"properties": {
+		"enchantment": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"calculation": {
+			"type": "string",
+			"default": "\"sum\""
+		},
+		"comparison": {
+			"type": "comparison"
+		},
+		"compare_to": {
+			"type": "integer"
+		}
+	}
+}

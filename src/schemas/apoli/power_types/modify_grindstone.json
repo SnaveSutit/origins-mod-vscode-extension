@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_grindstone/",
+	"type": "object",
+	"properties": {
+		"result_type": {
+			"type": "string",
+			"default": "\"unchanged\""
+		},
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"block_action": {
+			"$ref": "$ref(apoli:block_action)"
+		},
+		"item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"item_action_after_grinding": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"top_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"bottom_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"output_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"result_stack": {
+			"$ref": "$ref(apoli:types/item_stack)"
+		},
+		"xp_modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		}
+	}
+}

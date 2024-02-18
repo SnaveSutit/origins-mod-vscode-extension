@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/command/",
+	"type": "object",
+	"required": [
+		"command",
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"command": {
+			"type": "string",
+			"description": "The command to execute."
+		},
+		"comparison": {
+			"type": "comparison",
+			"description": "How to compare the stored result of the specified command to the specified value."
+		},
+		"compare_to": {
+			"type": "integer",
+			"description": "The value to compare the stored result of the specified command to."
+		}
+	}
+}

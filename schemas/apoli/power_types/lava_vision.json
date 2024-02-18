@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/lava_vision/",
+	"type": "object",
+	"required": [
+		"s",
+		"v"
+	],
+	"properties": {
+		"s": {
+			"type": "number",
+			"description": "Near view. Vanilla default is 0.25, or 0.0 if you are under the effect of Fire Resistance."
+		},
+		"v": {
+			"type": "number",
+			"description": "Far view. Vanilla default is 1.0, or 3.0 if you are under the effect of Fire Resistance."
+		}
+	}
+}

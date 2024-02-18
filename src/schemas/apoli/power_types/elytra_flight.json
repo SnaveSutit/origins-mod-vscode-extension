@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/elytra_flight/",
+	"type": "object",
+	"required": ["render_elytra"],
+	"properties": {
+		"render_elytra": {
+			"type": "boolean"
+		},
+		"texture_location": {
+			"$ref": "$ref(apoli:types/identifier)"
+		}
+	}
+}

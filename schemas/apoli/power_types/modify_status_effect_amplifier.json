@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_status_effect_amplifier/",
+	"type": "object",
+	"properties": {
+		"status_effect": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, only this status effect will have its amplifier modified upon being received."
+		},
+		"status_effects": {
+			"type": "array",
+			"description": "If specified, only these status effect(s) will have its amplifier modified upon being received."
+		},
+		"modifier": {
+			"$ref": "../types/attribute_modifier.json",
+			"description": "If specified, this modifier will be applied to the amplifier of the specified status effect(s)."
+		},
+		"modifiers": {
+			"type": "array",
+			"description": "If specified, these modifiers will be applied to the amplifier of the specified status effect(s)."
+		}
+	}
+}

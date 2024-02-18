@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/chance/",
+	"type": "object",
+	"required": ["action", "chance"],
+	"properties": {
+		"action": {
+			"type": "action type"
+		},
+		"chance": {
+			"type": "number"
+		},
+		"fail_action": {
+			"type": "action type"
+		}
+	}
+}

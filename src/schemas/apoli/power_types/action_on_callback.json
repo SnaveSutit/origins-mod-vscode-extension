@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_on_callback/",
+	"type": "object",
+	"properties": {
+		"entity_action_chosen": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"execute_chosen_when_orb": {
+			"type": "boolean",
+			"default": true
+		},
+		"entity_action_gained": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"entity_action_lost": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"entity_action_added": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"entity_action_removed": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"entity_action_respawned": {
+			"$ref": "$ref(apoli:entity_action)"
+		}
+	}
+}

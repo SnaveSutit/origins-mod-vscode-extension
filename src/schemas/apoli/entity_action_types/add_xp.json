@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/add_xp/",
+	"type": "object",
+	"properties": {
+		"points": {
+			"type": "integer"
+		},
+		"levels": {
+			"type": "integer"
+		}
+	}
+}

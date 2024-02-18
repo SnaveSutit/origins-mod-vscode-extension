@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/prevent_item_use/",
+	"type": "object",
+	"properties": {
+		"item_condition": {
+			"$ref": "apoli:item_condition",
+			"description": "If specified, only items that fulfills this condition will be prevented from being used."
+		}
+	}
+}

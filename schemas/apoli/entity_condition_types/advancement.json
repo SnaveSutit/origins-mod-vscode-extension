@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/advancement/",
+	"type": "object",
+	"required": [
+		"advancement"
+	],
+	"properties": {
+		"advancement": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the advancement the player needs to have completed in order for this condition to evaluate to true."
+		}
+	}
+}

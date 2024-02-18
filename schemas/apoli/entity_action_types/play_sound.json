@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/play_sound/",
+	"type": "object",
+	"required": [
+		"sound"
+	],
+	"properties": {
+		"sound": {
+			"$ref": "../types/identifier.json",
+			"description": "The ID of the sound event to play."
+		},
+		"category": {
+			"$ref": "../types/playsound_category.json",
+			"description": "If specified, this specifies the category and options the sound event falls under. Otherwise, uses the category specified in the entity that invoked this action. Accepts `\"master\"`, `\"music\"`, `\"record\"`, `\"weather\"`, `\"block\"`, `\"hostile\"`, `\"neutral\"`, `\"player\"`, `\"ambient\"` or `\"voice\"`."
+		},
+		"volume": {
+			"type": "number",
+			"default": 1,
+			"description": "The volume of the sound event."
+		},
+		"pitch": {
+			"type": "number",
+			"default": 1,
+			"description": "The pitch of the sound event."
+		}
+	}
+}

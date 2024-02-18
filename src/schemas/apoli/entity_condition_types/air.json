@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/air/",
+	"type": "object",
+	"required": [
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"comparison": {
+			"type": "comparison"
+		},
+		"compare_to": {
+			"type": "integer"
+		}
+	}
+}

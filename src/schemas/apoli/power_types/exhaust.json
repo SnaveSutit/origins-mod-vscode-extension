@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/exhaust/",
+	"type": "object",
+	"required": ["exhaustion"],
+	"properties": {
+		"interval": {
+			"type": "integer",
+			"default": 20
+		},
+		"exhaustion": {
+			"type": "number"
+		}
+	}
+}

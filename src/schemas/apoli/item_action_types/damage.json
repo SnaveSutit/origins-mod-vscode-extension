@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_action_types/damage/",
+	"type": "object",
+	"properties": {
+		"amount": {
+			"type": "integer",
+			"default": 1
+		},
+		"ignore_unbreaking": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

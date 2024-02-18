@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_action_types/remove_enchantment/",
+	"type": "object",
+	"properties": {
+		"enchantment": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, this enchantment will be removed from the item."
+		},
+		"enchantments": {
+			"type": "array",
+			"description": "If specified, these enchantments will be removed from the item."
+		},
+		"levels": {
+			"type": "integer",
+			"description": "If specified, only the enchantments that has the specified level will be removed from the item."
+		},
+		"reset_repair_cost": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines whether the 'repair cost' of the item should be reset."
+		}
+	}
+}

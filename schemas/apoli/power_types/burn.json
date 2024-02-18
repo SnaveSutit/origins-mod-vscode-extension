@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/burn/",
+	"type": "object",
+	"required": [
+		"interval",
+		"burn_duration"
+	],
+	"properties": {
+		"interval": {
+			"type": "integer",
+			"description": "Interval between being set on fire, in ticks."
+		},
+		"burn_duration": {
+			"type": "integer",
+			"description": "Determines how long the fire should last on the entity each time it is set, in seconds."
+		}
+	}
+}

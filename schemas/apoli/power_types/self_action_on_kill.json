@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/self_action_on_kill/",
+	"type": "object",
+	"required": [
+		"entity_action"
+	],
+	"properties": {
+		"entity_action": {
+			"$ref": "../entity_action.json",
+			"description": "The action to execute on the entity."
+		},
+		"cooldown": {
+			"type": "integer",
+			"default": 1,
+			"description": "Interval of ticks this power needs to recharge before the power can be triggered again."
+		},
+		"hud_render": {
+			"type": "hud render",
+			"description": "If specified, determines how the cooldown of this power is visualized on the HUD."
+		},
+		"damage_condition": {
+			"type": "damage condition type",
+			"description": "If specified, the specified action will only execute if the damage dealt by the entity fulfills this condition."
+		},
+		"target_condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "If specified, the specified action will only execute if the entity that has been killed fulfills this condition."
+		}
+	}
+}

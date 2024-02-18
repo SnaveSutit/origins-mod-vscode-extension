@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/prevent_game_event/",
+	"type": "object",
+	"properties": {
+		"event": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, the game event with this namespace and ID will be prevent from being emitted by the entity."
+		},
+		"events": {
+			"type": "array",
+			"description": "If specified, the game events with these namespace and IDs will be prevent from being emitted by the entity."
+		},
+		"tag": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, the game events inside game event tag will be prevented from being emitted by the entity."
+		},
+		"entity_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the entity upon preventing game events."
+		}
+	}
+}

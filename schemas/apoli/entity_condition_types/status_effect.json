@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/status_effect/",
+	"type": "object",
+	"required": [
+		"effect"
+	],
+	"properties": {
+		"effect": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the status effect to check for."
+		},
+		"min_amplifier": {
+			"type": "integer",
+			"default": 0,
+			"description": "The minimum amplifier the status effect should have in order to pass the check."
+		},
+		"max_amplifier": {
+			"type": "integer",
+			"default": 2147483647,
+			"description": "The maximum amplifier the status effect should have in order to pass the check."
+		},
+		"min_duration": {
+			"type": "integer",
+			"default": 0,
+			"description": "The minimum duration in ticks the status effect should have left in order to pass the check."
+		},
+		"max_duration": {
+			"type": "integer",
+			"default": 2147483647,
+			"description": "The maximum duration in ticks the status effect should have left in order to pass the check."
+		}
+	}
+}

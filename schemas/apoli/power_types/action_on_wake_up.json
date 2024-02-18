@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_on_wake_up/",
+	"type": "object",
+	"properties": {
+		"entity_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the player when they wake up."
+		},
+		"block_action": {
+			"$ref": "../block_action.json",
+			"description": "If specified, this action will be executed on the bed block."
+		},
+		"block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "If specified, the specified actions will only execute if this condition is fulfilled by the bed block."
+		}
+	}
+}

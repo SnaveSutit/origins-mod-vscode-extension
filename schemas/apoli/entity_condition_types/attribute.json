@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/attribute/",
+	"type": "object",
+	"required": [
+		"attribute",
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"attribute": {
+			"$ref": "../types/identifier.json",
+			"description": "ID of the attribute of which the value should be checked. See [Minecraft Wiki: Attribute (Attributes)](https://minecraft.wiki/w/Attribute#Attributes) for a list of vanilla attributes that can be checked for."
+		},
+		"comparison": {
+			"type": "comparison",
+			"description": "How to compare the attribute's value to the specified value."
+		},
+		"compare_to": {
+			"type": "number",
+			"description": "The value to compare the attribute's value to."
+		}
+	}
+}

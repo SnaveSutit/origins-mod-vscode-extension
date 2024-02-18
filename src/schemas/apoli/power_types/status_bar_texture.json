@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/status_bar_texture/",
+	"type": "object",
+	"required": ["texture"],
+	"properties": {
+		"texture": {
+			"$ref": "$ref(apoli:types/identifier)"
+		}
+	}
+}

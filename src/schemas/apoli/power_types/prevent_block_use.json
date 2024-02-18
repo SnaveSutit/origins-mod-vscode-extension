@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/prevent_block_use/",
+	"type": "object",
+	"required": ["block_condition"],
+	"properties": {
+		"block_condition": {
+			"$ref": "$ref(apoli:block_condition)"
+		}
+	}
+}

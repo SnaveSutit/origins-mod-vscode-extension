@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/entity_glow/",
+	"type": "object",
+	"properties": {
+		"entity_condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "If specified, only entities which fulfill this condition will glow for the player that has the power."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the power will only be active if this condition is fulfilled by either or both the 'actor' (the player that has the power) and 'target' (the entity that would glow) entities."
+		},
+		"use_teams": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether glowing entities should use their team's color with their glow. If set to false, the entity will instead use the `red`, `green` and `blue` fields within this power type."
+		},
+		"red": {
+			"type": "number",
+			"default": 1,
+			"description": "Value by which the red component of the glow will be multiplied. Range: 0.0 - 1.0."
+		},
+		"green": {
+			"type": "number",
+			"default": 1,
+			"description": "Value by which the green component of the glow will be multiplied. Range: 0.0 - 1.0."
+		},
+		"blue": {
+			"type": "number",
+			"default": 1,
+			"description": "Value by which the blue component of the glow will be multiplied. Range: 0.0 - 1.0."
+		}
+	}
+}

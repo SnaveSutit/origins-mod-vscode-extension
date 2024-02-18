@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_harvest/",
+	"type": "object",
+	"required": ["allow"],
+	"properties": {
+		"block_condition": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"allow": {
+			"type": "boolean"
+		}
+	}
+}

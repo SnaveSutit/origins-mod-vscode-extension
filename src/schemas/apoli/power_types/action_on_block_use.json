@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_on_block_use/",
+	"type": "object",
+	"properties": {
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"block_action": {
+			"$ref": "$ref(apoli:block_action)"
+		},
+		"block_condition": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"directions": {
+			"type": "array",
+			"default": "[\"north\", \"east\", \"south\", \"west\", \"up\", \"down\"]"
+		},
+		"hands": {
+			"type": "array",
+			"default": "[\"off_hand\", \"main_hand\"]"
+		},
+		"result_stack": {
+			"$ref": "$ref(apoli:types/item_stack)"
+		},
+		"held_item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"result_item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"action_result": {
+			"type": "action result",
+			"default": "\"success\""
+		}
+	}
+}

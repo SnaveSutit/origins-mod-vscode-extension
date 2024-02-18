@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/conditioned_restrict_armor/",
+	"type": "object",
+	"properties": {
+		"head": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"chest": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"legs": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"feet": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"tick_rate": {
+			"type": "integer",
+			"default": 80
+		}
+	}
+}

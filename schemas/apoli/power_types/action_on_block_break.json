@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_on_block_break/",
+	"type": "object",
+	"properties": {
+		"entity_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, this action will be executed on the player when a block is broken."
+		},
+		"block_action": {
+			"$ref": "../block_action.json",
+			"description": "If specified, this action will be executed on the block that is broken."
+		},
+		"block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "If set, the specified actions will only trigger when this block condition is met by the broken block."
+		},
+		"only_when_harvested": {
+			"type": "boolean",
+			"default": true,
+			"description": "If this is true, the specified actions will only execute when the player succeeds in harvesting the block (e.g. they will not trigger when stone is broken by hand)."
+		}
+	}
+}

@@ -1,16 +1,33 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/damage_condition_types/action_on_set/",
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/action_on_set/",
 	"type": "object",
 	"required": [
-		"comparison",
-		"compare_to"
+		"set",
+		"bientity_action"
 	],
 	"properties": {
-		"set": {},
-		"bientity_action": {},
-		"bientity_condition": {},
-		"limit": {},
-		"reverse": {}
+		"set": {
+			"$ref": "../types/identifier.json",
+			"description": "The ID of the power."
+		},
+		"bientity_action": {
+			"$ref": "../bientity_action.json",
+			"description": "The bi-entity action to execute on both or either the actor and target."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, only execute the bi-entity action if this bi-entity condition is fulfilled by both or either the actor and target."
+		},
+		"limit": {
+			"type": "integer",
+			"default": 0,
+			"description": "Determines the max amount of times the entity action type should iterate and execute the bi-entity action on the entities stored within the power. If the value is less than or equal to `0`, then there will be no limit."
+		},
+		"reverse": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines whether to reverse the order of the entities within the power when processing."
+		}
 	}
 }

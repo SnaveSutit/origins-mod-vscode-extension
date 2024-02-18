@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_falling/",
+	"type": "object",
+	"required": [
+		"velocity"
+	],
+	"properties": {
+		"velocity": {
+			"type": "number",
+			"description": "Determines the speed of the falling velocity."
+		},
+		"take_fall_damage": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether the entity should take fall damage or not."
+		}
+	}
+}

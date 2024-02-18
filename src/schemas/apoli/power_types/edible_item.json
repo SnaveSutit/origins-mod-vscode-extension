@@ -1,0 +1,43 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/edible_item/",
+	"type": "object",
+	"required": ["food_component", "consume_sound"],
+	"properties": {
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"result_item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"food_component": {
+			"type": "food component"
+		},
+		"return_stack": {
+			"$ref": "$ref(apoli:types/item_stack)"
+		},
+		"consume_action": {
+			"type": "string",
+			"default": "\"eat\""
+		},
+		"consume_sound": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"consuming_time_modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"consuming_time_modifiers": {
+			"type": "array"
+		},
+		"priority": {
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

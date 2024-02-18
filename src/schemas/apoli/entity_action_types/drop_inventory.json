@@ -1,0 +1,42 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/drop_inventory/",
+	"type": "object",
+	"properties": {
+		"inventory_type": {
+			"$ref": "$ref(apoli:types/inventory_type)"
+		},
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"slot": {
+			"$ref": "$ref(apoli:types/item_slot)"
+		},
+		"slots": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/item_slot)"
+			}
+		},
+		"power": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"throw_randomly": {
+			"type": "boolean",
+			"default": false
+		},
+		"retain_ownership": {
+			"type": "boolean",
+			"default": true
+		},
+		"amount": {
+			"type": "integer"
+		}
+	}
+}

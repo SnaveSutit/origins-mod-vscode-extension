@@ -37,7 +37,7 @@ export type StringContentEncodingType =
 	| 'base64'
 
 export type JSONSchema = {
-	$schema?: 'https://json-schema.org/draft-07/schema'
+	$schema?: 'https://json-schema.org/draft-07/schema#'
 	/**
 	 * Extra property added specifically for this project.
 	 * Should link to the documentation for the schema.

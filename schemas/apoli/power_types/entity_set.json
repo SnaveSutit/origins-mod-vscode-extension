@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/entity_set/",
+	"type": "object",
+	"properties": {
+		"action_on_add": {
+			"$ref": "../bientity_action.json",
+			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and the '**target**' upon the '**target**' being added to the set."
+		},
+		"action_on_remove": {
+			"$ref": "../bientity_action.json",
+			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and the '**target**' upon the '**target**' being removed from the set."
+		}
+	}
+}

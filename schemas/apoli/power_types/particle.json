@@ -1,0 +1,56 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/particle/",
+	"type": "object",
+	"required": [
+		"particle",
+		"frequency"
+	],
+	"properties": {
+		"particle": {
+			"$ref": "../types/particle_effect.json"
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json"
+		},
+		"count": {
+			"type": "integer",
+			"default": 1
+		},
+		"speed": {
+			"type": "number",
+			"default": 0
+		},
+		"force": {
+			"type": "boolean",
+			"default": false
+		},
+		"spread": {
+			"$ref": "../types/vector.json",
+			"default": "{\"x\": 0.5, \"y\": 0.5, \"z\": 0.5}"
+		},
+		"offset_x": {
+			"type": "number",
+			"default": 0
+		},
+		"offset_y": {
+			"type": "number",
+			"default": 0.5
+		},
+		"offset_z": {
+			"type": "number",
+			"default": 0
+		},
+		"frequency": {
+			"type": "integer"
+		},
+		"visible_in_first_person": {
+			"type": "boolean",
+			"default": false
+		},
+		"visible_while_invisible": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

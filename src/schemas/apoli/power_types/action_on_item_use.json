@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/action_on_item_use/",
+	"type": "object",
+	"properties": {
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"trigger": {
+			"type": "string",
+			"default": "\"finish\""
+		},
+		"priority": {
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

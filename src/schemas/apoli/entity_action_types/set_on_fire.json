@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/set_on_fire/",
+	"type": "object",
+	"required": [
+		"duration"
+	],
+	"properties": {
+		"duration": {
+			"type": "integer"
+		}
+	}
+}

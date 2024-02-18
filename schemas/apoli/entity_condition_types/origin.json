@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/origin/",
+	"type": "object",
+	"required": [
+		"origin"
+	],
+	"properties": {
+		"origin": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the origin the entity needs to have to pass the check."
+		},
+		"layer": {
+			"$ref": "../types/identifier.json",
+			"description": "If specified, the condition will check if the origin is from the specified origin layer."
+		}
+	}
+}

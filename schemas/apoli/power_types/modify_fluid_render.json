@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_fluid_render/",
+	"type": "object",
+	"required": [
+		"fluid"
+	],
+	"properties": {
+		"block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "If specified, only modify how the blocks that fulfills this condition would look like."
+		},
+		"fluid_condition": {
+			"type": "fluid condition type",
+			"description": "If specified, only modify how the fluids that fulfills this condition would look like."
+		},
+		"fluid": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the replacement fluid."
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/delay/",
+	"type": "object",
+	"required": [
+		"action",
+		"ticks"
+	],
+	"properties": {
+		"action": {
+			"type": "action type",
+			"description": "The action which will be executed after the delay."
+		},
+		"ticks": {
+			"type": "integer",
+			"description": "The amount of ticks until the action is executed."
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/damage/",
+	"type": "object",
+	"required": [
+		"amount",
+		"damage_type"
+	],
+	"properties": {
+		"amount": {
+			"type": "number",
+			"description": "The amount of damage to deal."
+		},
+		"damage_type": {
+			"$ref": "../types/identifier.json",
+			"description": "The damage type to be used. Controls e.g. the death message, invulnerabilities (e.g. towards fire), or whether armor is taken into account."
+		},
+		"modifier": {
+			"$ref": "../types/attribute_modifier.json",
+			"description": "If specified, this modifier will be applied to the damage taken by the '**target**' entity."
+		},
+		"modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
+		}
+	}
+}

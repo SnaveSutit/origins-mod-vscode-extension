@@ -1,0 +1,92 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/raycast/",
+	"type": "object",
+	"properties": {
+		"distance": {
+			"type": "number",
+			"description": "Determines the maximum distance the ray-cast will travel."
+		},
+		"block": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether the ray-cast should include blocks."
+		},
+		"entity": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether the ray-cast should include entities."
+		},
+		"shape_type": {
+			"$ref": "../types/shape_type.json",
+			"description": "Determines how the ray-cast will handle blocks."
+		},
+		"fluid_handling": {
+			"$ref": "apoli:types/fuild_handling",
+			"default": "\"any\"",
+			"description": "Determines how the ray-cast will handle fluids."
+		},
+		"space": {
+			"$ref": "../types/space.json",
+			"description": "The space to execute the raycast in. Defaults to `\"local\"` unless `direction` has been specified, in which case it will default to `\"world\"`."
+		},
+		"direction": {
+			"type": "object",
+			"description": "Used to specify the direction of the raycast. Can have a `x`, `y` and `z` [Floats](../data_types/float.md)."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the specified bi-entity action type will only be executed if the specified bi-entity condition type is fulfilled by either or both the 'actor' (the entity that has the power) or 'target' (the entity that was hit by the ray-cast)."
+		},
+		"bientity_action": {
+			"$ref": "../bientity_action.json",
+			"description": "If specified, this bi-entity action type will be executed on either or both the 'actor' (the entity that has the power) or 'target' (the entity that was hit by the ray-cast)."
+		},
+		"entity_distance": {
+			"type": "number",
+			"description": "Determines the distance of the raycast for entities if `entity` is set to `true`. If absent, it will use the higher value between the entity's attack range (with Reach Entity Attributes compatibility) or the `distance` field."
+		},
+		"block_action": {
+			"$ref": "../block_action.json",
+			"description": "If specified, this block action type will be executed on the block the ray-cast has hit."
+		},
+		"block_distance": {
+			"type": "number",
+			"description": "Determines the distance of the raycast for blocks if `block` is set to `true`. If absent, it will use the higher value between the entity's block reach (with Reach Entity Attributes compatibility) or the `distance` field."
+		},
+		"before_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, execute this entity action type *before* casting a ray."
+		},
+		"hit_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, execute this entity action on the entity that executed the ray-cast if the ray-cast has hit an entity/block."
+		},
+		"miss_action": {
+			"$ref": "../entity_action.json",
+			"description": "If specified, execute this entity action on the entity that executed the ray-cast if the ray-cast did not hit an entity/block."
+		},
+		"command_at_hit": {
+			"type": "string",
+			"description": "The command to execute upon the block/entity the ray-cast has hit."
+		},
+		"command_hit_offset": {
+			"type": "number",
+			"description": "Determines the offset of the command specified in the `command_at_hit` field."
+		},
+		"command_along_ray": {
+			"type": "string",
+			"description": "The command to execute for each step of the ray-cast."
+		},
+		"command_step": {
+			"type": "number",
+			"default": 1,
+			"description": "Determines the size of the step of the ray-cast (in blocks)."
+		},
+		"command_along_ray_only_on_hit": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines if the command specified in the `command_along_ray` field should be executed only if the ray-cast has hit a block/entity."
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/shader/",
+	"type": "object",
+	"required": ["shader"],
+	"properties": {
+		"shader": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"toggleable": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

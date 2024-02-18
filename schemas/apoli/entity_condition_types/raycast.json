@@ -1,0 +1,59 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/raycast/",
+	"type": "object",
+	"properties": {
+		"distance": {
+			"type": "number",
+			"description": "Determines the maximum distance the ray-cast will travel."
+		},
+		"block": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether the ray-cast should include blocks."
+		},
+		"entity": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines whether the ray-cast should include entities."
+		},
+		"shape_type": {
+			"$ref": "../types/shape_type.json",
+			"default": "\"visual\"",
+			"description": "Determines how the ray-cast will handle blocks."
+		},
+		"fluid_handling": {
+			"$ref": "apoli:types/fuild_handling",
+			"default": "\"any\"",
+			"description": "Determines how the ray-cast will handle fluids."
+		},
+		"space": {
+			"$ref": "../types/space.json",
+			"description": "The space to execute the raycast in. Defaults to `\"local\"` unless `direction` has been specified, in which case it will default to `\"world\"`."
+		},
+		"direction": {
+			"type": "object",
+			"description": "Used to specify the direction of the raycast. Can have a `x`, `y` and `z` [Floats](../data_types/float.md)."
+		},
+		"match_bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the entity condition type will check if this bi-entity condition type is fulfilled by either or both the 'actor' (the entity being checked by the entity condition type) and 'target' (entity that the ray-cast has gone through). If not, the entity will be ignored."
+		},
+		"hit_bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the entity condition type will check if this bi-entity condition type is fulfilled by either or both the 'actor' (the entity being checked by the entity condition type) and 'target' (the entity that has hit by the ray-cast)."
+		},
+		"entity_distance": {
+			"type": "number",
+			"description": "Determines the distance of the raycast for entities if `entity` is set to `true`. If absent, it will use the higher value between the entity's attack range (with Reach Entity Attributes compatibility) or the `distance` field."
+		},
+		"block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "If specified, the entity condition type will check if the block that was hit by the ray-cast fulfills this block condition type."
+		},
+		"block_distance": {
+			"type": "number",
+			"description": "Determines the distance of the raycast for blocks if `block` is set to `true`. If absent, it will use the higher value between the entity's block reach (with Reach Entity Attributes compatibility) or the `distance` field."
+		}
+	}
+}

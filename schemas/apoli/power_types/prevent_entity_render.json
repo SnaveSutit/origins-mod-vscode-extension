@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/prevent_entity_render/",
+	"type": "object",
+	"properties": {
+		"entity_condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "If specified, only entities which fulfills this condition will be affected."
+		},
+		"bientity_condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "If specified, the power will only be active if this condition is fulfilled by either or both the 'actor' (the player that has the power) and 'target' (the entity that will not render) entities."
+		}
+	}
+}

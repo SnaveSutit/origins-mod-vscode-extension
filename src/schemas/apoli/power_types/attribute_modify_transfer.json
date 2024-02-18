@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/attribute_modify_transfer/",
+	"type": "object",
+	"required": ["class", "attribute"],
+	"properties": {
+		"class": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"attribute": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"multiplier": {
+			"type": "number",
+			"default": 1.0
+		}
+	}
+}

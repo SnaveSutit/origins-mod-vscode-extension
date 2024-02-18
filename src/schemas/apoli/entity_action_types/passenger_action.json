@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/passenger_action/",
+	"type": "object",
+	"properties": {
+		"action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"recursive": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

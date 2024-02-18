@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/effect_immunity/",
+	"type": "object",
+	"properties": {
+		"effect": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"effects": {
+			"type": "array"
+		},
+		"inverted": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

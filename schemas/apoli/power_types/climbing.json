@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/climbing/",
+	"type": "object",
+	"properties": {
+		"allow_holding": {
+			"type": "boolean",
+			"default": true,
+			"description": "If `true`, the entity that has the power is able to hold onto blocks."
+		},
+		"hold_condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "If specified and `allow_holding` is `true`, the entity that has the power will be able to 'hold onto the block' (not affected by gravity) if this condition is fulfilled, otherwise, defaults to if the entity is sneaking."
+		}
+	}
+}

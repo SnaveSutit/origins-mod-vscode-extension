@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/inventory/",
+	"type": "object",
+	"properties": {
+		"title": {
+			"type": "string",
+			"default": "\"container.inventory\"",
+			"description": "The translation key or literal text to use as the display name for the inventory."
+		},
+		"container_type": {
+			"type": "container type",
+			"default": "\"dropper\"",
+			"description": "Determines what type of container the inventory will be similar to."
+		},
+		"drop_on_death": {
+			"type": "boolean",
+			"default": false,
+			"description": "When this is set to true, the player will drop the items in the inventory on death (vanishing items will vanish!)."
+		},
+		"drop_on_death_filter": {
+			"$ref": "apoli:item_condition",
+			"description": "If this is set, only item stacks matching this condition will be dropped on death."
+		},
+		"recoverable": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines if the content of the inventory should be dropped upon losing the power."
+		},
+		"key": {
+			"type": "key",
+			"default": "{\"key\": \"key.origins.primary_active\"}",
+			"description": "Which active key this power should respond to."
+		}
+	}
+}

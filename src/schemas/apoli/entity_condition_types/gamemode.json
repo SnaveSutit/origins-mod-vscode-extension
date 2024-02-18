@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/gamemode/",
+	"type": "object",
+	"required": [
+		"gamemode"
+	],
+	"properties": {
+		"gamemode": {
+			"type": "string"
+		}
+	}
+}

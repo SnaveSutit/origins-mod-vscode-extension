@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/prevent_sleep/",
+	"type": "object",
+	"properties": {
+		"block_condition": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"message": {
+			"type": "default translatable text component",
+			"default": "{\"translatable\": \"text.apoli.cannot_sleep\"}"
+		},
+		"set_spawn_point": {
+			"type": "boolean",
+			"default": false
+		},
+		"priority": {
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

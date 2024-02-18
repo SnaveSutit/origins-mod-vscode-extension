@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/origin/",
+	"type": "object",
+	"required": ["origin"],
+	"properties": {
+		"origin": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"layer": {
+			"$ref": "$ref(apoli:types/identifier)"
+		}
+	}
+}
