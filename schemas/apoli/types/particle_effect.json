@@ -1,20 +1,27 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/particle_effect/",
-	"type": "object",
-	"required": [
-		"type"
-	],
-	"properties": {
-		"type": {
-			"$ref": "identifier.json",
-			"description": "The namespace and ID of the particle type.",
-			"markdownDescription": "The namespace and ID of the particle type."
+	"oneOf": [
+		{
+			"$ref": "identifier.json"
 		},
-		"params": {
-			"type": "string",
-			"description": "The additional parameter for the particle type.",
-			"markdownDescription": "The additional parameter for the particle type."
+		{
+			"type": "object",
+			"required": [
+				"type"
+			],
+			"properties": {
+				"type": {
+					"$ref": "identifier.json",
+					"description": "The namespace and ID of the particle type.",
+					"markdownDescription": "The namespace and ID of the particle type."
+				},
+				"params": {
+					"type": "string",
+					"description": "The additional parameter for the particle type.",
+					"markdownDescription": "The additional parameter for the particle type."
+				}
+			}
 		}
-	}
+	]
 }

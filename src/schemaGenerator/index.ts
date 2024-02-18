@@ -1,7 +1,7 @@
 import * as fs from 'fs/promises'
 import * as fsSync from 'fs'
 import * as pathjs from 'path'
-import { JSONSchemaPreProcessorAdditions, type JSONSchema } from './schema'
+import { JSONSchemaPreProcessorAdditions, type JSONSchema, IImportOptions } from './schema'
 import { MDFile } from './mdReader'
 import * as chokidar from 'chokidar'
 import * as terminalkit from 'terminal-kit'
@@ -47,8 +47,15 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 			delete schema.$IGNORED_PROPERTIES
 		}
 
+		// if (mdFile.description && schema.type === 'object' && schema.properties) {
+		// 	schema.properties.type = {
+		// 		description: mdFile.description,
+		// 		markdownDescription: mdFile.description,
+		// 	}
+		// }
+
 		if (mdFile.fields.length > 0) {
-			if (schema.type !== 'object') {
+			if (schema.type !== 'object' && propertyObjects.length < 1) {
 				term
 					.brightRed('Schema ')
 					.brightYellow(path)
@@ -89,7 +96,7 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 function processImportFilesIntoArray(
 	layer: JSONSchema,
 	options: ProcessSchemaOptions,
-	importOptions: JSONSchemaPreProcessorAdditions['$IMPORT'] & { type: 'import_files_into_array' }
+	importOptions: IImportOptions & { type: 'import_files_into_array' }
 ) {
 	const path = SRC_DIR + importOptions.path.replace(/\$ref\((.+)\)/, '$1').replace(':', '/')
 	const stringStructure = JSON.stringify(importOptions.schemaStructure)
@@ -123,12 +130,83 @@ function processImportFilesIntoArray(
 	layer.$IMPORT = undefined
 }
 
+function processImportFileContentsIntoArray(
+	layer: JSONSchema,
+	options: ProcessSchemaOptions,
+	importOptions: IImportOptions & { type: 'import_file_contents_into_array' }
+) {
+	const path = SRC_DIR + importOptions.path.replace(/\$ref\((.+)\)/, '$1').replace(':', '/')
+	const stringStructure = JSON.stringify(importOptions.schemaStructure)
+
+	if (layer[importOptions.output_key] === undefined) {
+		throw new Error(
+			`$IMPORT: output_key '${importOptions.output_key}' not found in schema:\n  ${layer}`
+		)
+	}
+
+	let files: string[] = []
+	try {
+		files = fsSync.readdirSync(path).filter(f => f.endsWith('.json'))
+	} catch (e) {
+		throw new Error(`Failed to process $IMPORT while trying to read directory:\n  ${e}`)
+	}
+
+	for (const file of files) {
+		const fileName = file.replace('.json', '')
+		const inFilePath = path + '/' + file
+		const outFilePath = inFilePath.replace(SRC_DIR, OUT_DIR)
+		// const childRefPath = pathjs
+		// 	.relative(pathjs.dirname(options.outPath), outFilePath)
+		// 	.replace(/\\/g, '/')
+		// const parentRefPath = pathjs
+		// 	.relative(pathjs.dirname(outFilePath), options.outPath)
+		// 	.replace(/\\/g, '/')
+		let fileContents = fsSync.readFileSync(inFilePath, 'utf-8')
+
+		if (importOptions.variables?.length > 0) {
+			for (const [name, value] of Object.entries(importOptions.variables).sort(
+				(a, b) => a.length - b.length
+			)) {
+				fileContents = fileContents.replace(new RegExp(`\\$\\$${name}`, 'g'), value)
+			}
+		}
+		// fileContents = fileContents
+		// 	.replace('$$parentNameAction', parentRefPath.replace('condition', 'action'))
+		// 	.replace('$$parentNameCondition', parentRefPath.replace('action', 'condition'))
+
+		const structure = stringStructure
+			.replace(/"\$\$fileRef"/gm, fileContents)
+			.replace(/\$\$fileName/g, fileName)
+
+		layer[importOptions.output_key].push(JSON.parse(structure))
+	}
+
+	layer.$IMPORT = undefined
+}
+
+function processImport(
+	layer: JSONSchema,
+	options: ProcessSchemaOptions,
+	importOptions: IImportOptions
+) {
+	switch (importOptions.type) {
+		case 'import_files_into_array':
+			processImportFilesIntoArray(layer, options, importOptions as any)
+			break
+		case 'import_file_contents_into_array':
+			processImportFileContentsIntoArray(layer, options, importOptions as any)
+			break
+	}
+}
+
 function processSchemaLayer(layer: JSONSchema, options: ProcessSchemaOptions) {
 	if (layer.$IMPORT) {
-		switch (layer.$IMPORT.type) {
-			case 'import_files_into_array':
-				processImportFilesIntoArray(layer, options, layer.$IMPORT)
-				break
+		if (Array.isArray(layer.$IMPORT)) {
+			for (const importOptions of layer.$IMPORT) {
+				processImport(layer, options, importOptions)
+			}
+		} else {
+			processImport(layer, options, layer.$IMPORT)
 		}
 	}
 }
@@ -195,7 +273,8 @@ async function build(schemasToBuild: string[]) {
 }
 
 async function main() {
-	// await fs.writeFile('debug-out.json', JSON.stringify(schemas, null, '\t'))
+	await fs.rm(OUT_DIR, { recursive: true })
+	await fs.mkdir(OUT_DIR, { recursive: true })
 
 	const schemasToBuild: string[] = []
 	async function recurse(path: string) {

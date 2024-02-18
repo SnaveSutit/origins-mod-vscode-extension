@@ -5,6 +5,14 @@
 	"required": [
 		"type"
 	],
+	"definitions": {
+		"action": {
+			"$ref": "entity_action.json"
+		},
+		"condition": {
+			"$ref": "#"
+		}
+	},
 	"allOf": [
 		{
 			"if": {
@@ -58,6 +66,124 @@
 			},
 			"then": {
 				"$ref": "fluid_condition_types/still.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:and",
+							"origins:and"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/and/",
+				"type": "object",
+				"required": [
+					"conditions"
+				],
+				"properties": {
+					"conditions": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/condition"
+						}
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:chance",
+							"origins:chance"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance/",
+				"type": "object",
+				"required": [
+					"chance"
+				],
+				"properties": {
+					"chance": {
+						"type": "number"
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:constant",
+							"origins:constant"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant/",
+				"type": "object",
+				"required": [
+					"value"
+				],
+				"properties": {
+					"value": {
+						"type": "boolean"
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:or",
+							"origins:or"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/or/",
+				"type": "object",
+				"required": [
+					"conditions"
+				],
+				"properties": {
+					"conditions": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/condition"
+						}
+					}
+				}
 			}
 		}
 	]

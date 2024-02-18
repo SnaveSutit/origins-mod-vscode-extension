@@ -5,13 +5,13 @@
 	"required": ["action", "chance"],
 	"properties": {
 		"action": {
-			"$ref": "$$action_type"
+			"$ref": "#/definitions/action"
 		},
 		"chance": {
 			"type": "number"
 		},
 		"fail_action": {
-			"$ref": "$$action_type"
+			"$ref": "#/definitions/action"
 		}
 	}
 }

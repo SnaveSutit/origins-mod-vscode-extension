@@ -4,24 +4,51 @@
 	"type": "object",
 	"required": ["type"],
 
-	"$IMPORT": {
-		"type": "import_files_into_array",
-		"path": "$ref(apoli:bientity_action_types)",
-		"output_key": "allOf",
-		"schemaStructure": {
-			"if": {
-				"required": ["type"],
-				"properties": {
-					"type": {
-						"enum": ["apoli:$$fileName", "origins:$$fileName"]
-					}
-				}
-			},
-			"then": {
-				"$ref": "$$fileRef"
-			}
+	"definitions": {
+		"action": {
+			"$ref": "#"
+		},
+		"condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
 		}
 	},
+
+	"$IMPORT": [
+		{
+			"type": "import_files_into_array",
+			"path": "$ref(apoli:bientity_action_types)",
+			"output_key": "allOf",
+			"schemaStructure": {
+				"if": {
+					"required": ["type"],
+					"properties": {
+						"type": {
+							"enum": ["apoli:$$fileName", "origins:$$fileName"]
+						}
+					}
+				},
+				"then": {
+					"$ref": "$$fileRef"
+				}
+			}
+		},
+		{
+			"type": "import_file_contents_into_array",
+			"path": "$ref(apoli:meta_action_types)",
+			"output_key": "allOf",
+			"schemaStructure": {
+				"if": {
+					"required": ["type"],
+					"properties": {
+						"type": {
+							"enum": ["apoli:$$fileName", "origins:$$fileName"]
+						}
+					}
+				},
+				"then": "$$fileRef"
+			}
+		}
+	],
 
 	"allOf": []
 }

@@ -5,7 +5,7 @@
 	"required": ["action", "ticks"],
 	"properties": {
 		"action": {
-			"$ref": "$$action_type"
+			"$ref": "#/definitions/action"
 		},
 		"ticks": {
 			"type": "integer"

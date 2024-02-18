@@ -7,7 +7,7 @@
 		"conditions": {
 			"type": "array",
 			"items": {
-				"$ref": "$$condition_type"
+				"$ref": "#/definitions/condition"
 			}
 		}
 	}

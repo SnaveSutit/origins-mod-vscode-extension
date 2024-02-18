@@ -64,7 +64,7 @@
 						"$ref": "types/identifier.json"
 					},
 					"text": {
-						"type": "string"
+						"$ref": "types/text_component.json"
 					}
 				}
 			}
@@ -118,7 +118,7 @@
 						"$ref": "types/identifier.json"
 					},
 					"text": {
-						"type": "string"
+						"$ref": "types/text_component.json"
 					}
 				}
 			}

@@ -8,7 +8,7 @@
 	],
 	"properties": {
 		"action": {
-			"$ref": "$$action_type",
+			"$ref": "#/definitions/action",
 			"description": "The action to execute.",
 			"markdownDescription": "The action to execute."
 		},

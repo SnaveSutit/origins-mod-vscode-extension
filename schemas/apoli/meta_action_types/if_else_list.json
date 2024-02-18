@@ -9,7 +9,19 @@
 		"actions": {
 			"type": "array",
 			"items": {
-				"$ref": "$$action_type"
+				"type": "object",
+				"required": [
+					"action",
+					"condition"
+				],
+				"properties": {
+					"action": {
+						"$ref": "#/definitions/action"
+					},
+					"condition": {
+						"$ref": "#/definitions/condition"
+					}
+				}
 			},
 			"description": "Each object has to have an `action` [Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list) object and a `condition` [Condition Type](../condition_types.md) object.",
 			"markdownDescription": "Each object has to have an `action` [Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list) object and a `condition` [Condition Type](../condition_types.md) object."

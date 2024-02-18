@@ -7,7 +7,16 @@
 		"actions": {
 			"type": "array",
 			"items": {
-				"$ref": "$$action_type"
+				"type": "object",
+				"required": ["action", "condition"],
+				"properties": {
+					"action": {
+						"$ref": "#/definitions/action"
+					},
+					"condition": {
+						"$ref": "#/definitions/condition"
+					}
+				}
 			}
 		}
 	}

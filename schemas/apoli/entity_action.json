@@ -5,6 +5,14 @@
 	"required": [
 		"type"
 	],
+	"definitions": {
+		"action": {
+			"$ref": "#"
+		},
+		"condition": {
+			"$ref": "entity_condition.json"
+		}
+	},
 	"allOf": [
 		{
 			"if": {
@@ -886,6 +894,280 @@
 			},
 			"then": {
 				"$ref": "entity_action_types/trigger_cooldown.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:and",
+							"origins:and"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/and/",
+				"type": "object",
+				"required": [
+					"actions"
+				],
+				"properties": {
+					"actions": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/action"
+						}
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:chance",
+							"origins:chance"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/chance/",
+				"type": "object",
+				"required": [
+					"action",
+					"chance"
+				],
+				"properties": {
+					"action": {
+						"$ref": "#/definitions/action"
+					},
+					"chance": {
+						"type": "number"
+					},
+					"fail_action": {
+						"$ref": "#/definitions/action"
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:choice",
+							"origins:choice"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/choice/",
+				"type": "object",
+				"required": [
+					"actions"
+				],
+				"properties": {
+					"actions": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"required": [
+								"element",
+								"weight"
+							],
+							"properties": {
+								"element": {
+									"$ref": "#/definitions/action"
+								},
+								"weight": {
+									"type": "number"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:delay",
+							"origins:delay"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/delay/",
+				"type": "object",
+				"required": [
+					"action",
+					"ticks"
+				],
+				"properties": {
+					"action": {
+						"$ref": "#/definitions/action"
+					},
+					"ticks": {
+						"type": "integer"
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:if_else",
+							"origins:if_else"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else/",
+				"type": "object",
+				"required": [
+					"condition",
+					"if_action"
+				],
+				"properties": {
+					"condition": {
+						"$ref": "#/definitions/condition"
+					},
+					"if_action": {
+						"$ref": "#/definitions/action"
+					},
+					"else_action": {
+						"$ref": "#/definitions/action"
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:if_else_list",
+							"origins:if_else_list"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list/",
+				"type": "object",
+				"required": [
+					"actions"
+				],
+				"properties": {
+					"actions": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"required": [
+								"action",
+								"condition"
+							],
+							"properties": {
+								"action": {
+									"$ref": "#/definitions/action"
+								},
+								"condition": {
+									"$ref": "#/definitions/condition"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:nothing",
+							"origins:nothing"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/nothing/",
+				"type": "object"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:side",
+							"origins:side"
+						]
+					}
+				}
+			},
+			"then": {
+				"$schema": "https://json-schema.org/draft-07/schema#",
+				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/side/",
+				"type": "object",
+				"required": [
+					"action",
+					"side"
+				],
+				"properties": {
+					"action": {
+						"$ref": "#/definitions/action"
+					},
+					"side": {
+						"enum": [
+							"client",
+							"server"
+						]
+					}
+				}
 			}
 		}
 	]

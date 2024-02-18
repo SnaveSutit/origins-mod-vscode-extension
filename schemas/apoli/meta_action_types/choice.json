@@ -9,7 +9,19 @@
 		"actions": {
 			"type": "array",
 			"items": {
-				"$ref": "$$action_type"
+				"type": "object",
+				"required": [
+					"element",
+					"weight"
+				],
+				"properties": {
+					"element": {
+						"$ref": "#/definitions/action"
+					},
+					"weight": {
+						"type": "number"
+					}
+				}
 			},
 			"description": "Each object has to have an `element` [Action](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice) and a `weight` [Integer](../data_types/integer.md).",
 			"markdownDescription": "Each object has to have an `element` [Action](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice) and a `weight` [Integer](../data_types/integer.md)."

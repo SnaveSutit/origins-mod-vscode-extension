@@ -386,25 +386,28 @@ export type JSONSchema = {
 	[key: string]: any
 } & JSONSchemaPreProcessorAdditions
 
+export interface IImportOptions {
+	type: 'import_files_into_array' | 'import_file_contents_into_array'
+	/**
+	 * Where to find the files to import.
+	 */
+	path: string
+	/**
+	 * A key in this object containing an array that the generated schema structures will be pushed to.
+	 */
+	output_key: string
+	variables: Record<string, any>
+	/**
+	 * The schema structure generated for each imported file.
+	 * Includes variables that can be used to insert data into the schema.
+	 *
+	 * $$fileName - The name of the file without the extension.
+	 * $$fileRef - The schema reference to the file.
+	 */
+	schemaStructure: JSONSchema
+}
+
 export interface JSONSchemaPreProcessorAdditions {
-	$IMPORT?: {
-		type: 'import_files_into_array'
-		/**
-		 * Where to find the files to import.
-		 */
-		path: string
-		/**
-		 * A key in this object containing an array that the generated schema structures will be pushed to.
-		 */
-		output_key: string
-		/**
-		 * The schema structure generated for each imported file.
-		 * Includes variables that can be used to insert data into the schema.
-		 *
-		 * $$fileName - The name of the file without the extension.
-		 * $$fileRef - The schema reference to the file.
-		 */
-		schemaStructure: JSONSchema
-	}
+	$IMPORT?: IImportOptions | IImportOptions[]
 	$IGNORED_PROPERTIES?: string[]
 }

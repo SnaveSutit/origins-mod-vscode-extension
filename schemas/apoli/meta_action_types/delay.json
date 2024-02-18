@@ -8,7 +8,7 @@
 	],
 	"properties": {
 		"action": {
-			"$ref": "$$action_type",
+			"$ref": "#/definitions/action",
 			"description": "The action which will be executed after the delay.",
 			"markdownDescription": "The action which will be executed after the delay."
 		},

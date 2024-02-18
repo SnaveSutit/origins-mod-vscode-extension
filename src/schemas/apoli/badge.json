@@ -46,7 +46,7 @@
 						"$ref": "$ref(apoli:types/identifier)"
 					},
 					"text": {
-						"type": "string"
+						"$ref": "$ref(apoli:types/text_component)"
 					}
 				}
 			}
@@ -85,7 +85,7 @@
 						"$ref": "$ref(apoli:types/identifier)"
 					},
 					"text": {
-						"type": "string"
+						"$ref": "$ref(apoli:types/text_component)"
 					}
 				}
 			}
