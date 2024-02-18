@@ -62,6 +62,13 @@
 			},
 			{
 				"fileMatch": [
+					"**/data/*/global_powers/**/*.json",
+					"**/data/*/global_powers/**/*.yml"
+				],
+				"url": "./schemas/apoli/global_power_set.json"
+			},
+			{
+				"fileMatch": [
 					"**/data/*/skill_trees/**/*.json",
 					"**/data/*/skill_trees/**/*.yml"
 				],
@@ -100,9 +107,8 @@
 		"compile": "webpack",
 		"watch": "webpack --watch",
 		"build": "vsce package -o origins-mod-helper.vsix",
-		"yml": "node ./tools/schema_builder.js",
 		"go": "yarn install",
-		"package": "node ./tools/schema_builder.js --once && webpack --mode production --devtool hidden-source-map",
+		"package": "ts-node ./src/schemaGenerator/index.ts --once && webpack --mode production --devtool hidden-source-map",
 		"lint": "prettier --write .",
 		"test": "node ./out/test/runTest.js",
 		"run-schema-generator": "ts-node ./src/schemaGenerator/index.ts",

@@ -276,18 +276,23 @@ async function main() {
 	await fs.rm(OUT_DIR, { recursive: true })
 	await fs.mkdir(OUT_DIR, { recursive: true })
 
-	const schemasToBuild: string[] = []
-	async function recurse(path: string) {
-		for (const file of await fs.readdir(path)) {
-			const filePath = pathjs.join(path, file)
-			if (filePath.endsWith('.json')) {
-				schemasToBuild.push(filePath)
-			} else if ((await fs.stat(filePath)).isDirectory()) {
-				await recurse(filePath)
+	if (process.argv.includes('--once')) {
+		const schemasToBuild: string[] = []
+		async function recurse(path: string) {
+			for (const file of await fs.readdir(path)) {
+				const filePath = pathjs.join(path, file)
+				if (filePath.endsWith('.json')) {
+					schemasToBuild.push(filePath)
+				} else if ((await fs.stat(filePath)).isDirectory()) {
+					await recurse(filePath)
+				}
 			}
 		}
+		await recurse(SRC_DIR)
+
+		await build(schemasToBuild)
+		return
 	}
-	await recurse(SRC_DIR)
 
 	const watcher = chokidar.watch(SRC_DIR)
 	const deleteQueue: string[] = []
