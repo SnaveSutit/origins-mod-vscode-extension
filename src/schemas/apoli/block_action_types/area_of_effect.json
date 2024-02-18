@@ -1,0 +1,20 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/area_of_effect/",
+	"type": "object",
+	"required": ["block_action"],
+	"properties": {
+		"radius": {
+			"type": "number"
+		},
+		"shape": {
+			"$ref": "$ref(apoli:types/shape)"
+		},
+		"block_action": {
+			"$ref": "$ref(apoli:block_action)"
+		},
+		"block_condition": {
+			"$ref": "$ref(apoli:block_condition)"
+		}
+	}
+}

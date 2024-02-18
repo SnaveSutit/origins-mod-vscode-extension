@@ -1,0 +1,45 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_condition_types/relative_rotation/",
+	"type": "object",
+	"required": [
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"axes": {
+			"type": "array",
+			"items": {
+				"enum": [
+					"x",
+					"y",
+					"z"
+				],
+				"uniqueItems": true
+			},
+			"description": "The axes to get the angle values to calculate, and compare to."
+		},
+		"actor_rotation": {
+			"enum": [
+				"head",
+				"body"
+			],
+			"description": "Determines the initial point of the rotation for the actor. Accepts `\"head\"` or `\"body\"`."
+		},
+		"target_rotation": {
+			"enum": [
+				"head",
+				"body"
+			],
+			"description": "Determines the initial point of the rotation for the target. Accepts `\"head\"` or `\"body\"`."
+		},
+		"comparison": {
+			"$ref": "../types/comparison.json",
+			"description": "Determines how the calculated angle value will be compared to the specified value."
+		},
+		"compare_to": {
+			"type": "number",
+			"description": "The value to compare the calculated angle value to."
+		}
+	}
+}

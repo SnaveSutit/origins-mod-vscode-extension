@@ -6,11 +6,14 @@
 		"powers": {
 			"type": "array",
 			"items": {
-				"$ref": "$(apoli:types/identifier)"
+				"$ref": "$ref(apoli:types/identifier)"
 			}
 		},
 		"icon": {
-			"oneOf": [{ "$ref": "$(apoli:types/identifier)" }, { "$ref": "$(apoli:types/item_stack)" }]
+			"oneOf": [
+				{ "$ref": "$ref(apoli:types/identifier)" },
+				{ "$ref": "$ref(apoli:types/item_stack)" }
+			]
 		},
 		"unchoosable": {
 			"type": "boolean",
@@ -33,7 +36,7 @@
 		"upgrades": {
 			"type": "array",
 			"items": {
-				"$ref": "$(apoli:upgrade)"
+				"$ref": "$ref(apoli:upgrade)"
 			}
 		},
 		"loading_priority": {

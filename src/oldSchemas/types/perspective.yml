@@ -1,6 +1,0 @@
-$id: https://snavesutit.github.io/origins-mod-schemas/
-title: Perspective
-enum:
-  - first_person
-  - third_person_back
-  - third_person_front

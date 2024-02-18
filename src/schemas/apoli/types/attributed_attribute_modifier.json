@@ -1,0 +1,20 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/attributed_attribute_modifier/",
+	"type": "object",
+	"required": ["attribute", "operation", "value"],
+	"properties": {
+		"attribute": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"operation": {
+			"$ref": "$ref(apoli:types/attributed_attribute_modifier_operation)"
+		},
+		"value": {
+			"type": "number"
+		},
+		"name": {
+			"type": "string"
+		}
+	}
+}

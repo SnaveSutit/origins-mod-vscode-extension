@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/key/",
+	"type": "object",
+	"required": ["key"],
+	"properties": {
+		"key": {
+			"type": "string"
+		},
+		"continuous": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/offset/",
+	"type": "object",
+	"required": ["condition"],
+	"properties": {
+		"condition": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"x": {
+			"type": "integer",
+			"default": 0
+		},
+		"y": {
+			"type": "integer",
+			"default": 0
+		},
+		"z": {
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

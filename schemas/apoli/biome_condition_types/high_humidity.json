@@ -1,0 +1,5 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/biome_condition_types/high_humidity/",
+	"type": "object"
+}

@@ -1,0 +1,21 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/item_slot/",
+	"enum": [
+		"armor.chest",
+		"armor.feet",
+		"armor.head",
+		"armor.legs",
+		"container.<slot_number>",
+		"enderchest.<slot_number>",
+		"horse.<slot_number>",
+		"horse.armor",
+		"horse.saddle",
+		"hotbar.<slot_number>",
+		"inventory.<slot_number>",
+		"villager.<slot_number>",
+		"weapon.mainhand",
+		"weapon.offhand",
+		"weapon"
+	]
+}

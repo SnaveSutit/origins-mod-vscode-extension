@@ -1,0 +1,11 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/fluid/",
+	"type": "object",
+	"required": ["fluid_condition"],
+	"properties": {
+		"fluid_condition": {
+			"$ref": "$ref(apoli:fluid_condition)"
+		}
+	}
+}

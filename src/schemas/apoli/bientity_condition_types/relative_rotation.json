@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_condition_types/relative_rotation/",
+	"type": "object",
+	"required": ["comparison", "compare_to"],
+	"properties": {
+		"axes": {
+			"type": "array",
+			"items": {
+				"enum": ["x", "y", "z"],
+				"uniqueItems": true
+			}
+		},
+		"actor_rotation": {
+			"enum": ["head", "body"]
+		},
+		"target_rotation": {
+			"enum": ["head", "body"]
+		},
+		"comparison": {
+			"$ref": "$ref(apoli:types/comparison)"
+		},
+		"compare_to": {
+			"type": "number"
+		}
+	}
+}

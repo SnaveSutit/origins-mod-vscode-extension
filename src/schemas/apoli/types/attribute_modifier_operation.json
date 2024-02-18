@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation/",
+	"enum": [
+		"add_base_early",
+		"multiply_base_additive",
+		"multiply_base_multiplicative",
+		"add_base_late",
+		"min_base",
+		"max_base",
+		"set_base",
+		"multiply_total_additive",
+		"multiply_total_multiplicative",
+		"min_total",
+		"max_total",
+		"set_total"
+	]
+}

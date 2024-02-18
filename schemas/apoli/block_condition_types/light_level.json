@@ -1,0 +1,26 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/light_level/",
+	"type": "object",
+	"required": [
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"light_type": {
+			"enum": [
+				"sky",
+				"block"
+			],
+			"description": "If specified, determines the type of light level to compare. Accepts `\"sky\"` or `\"block\"`."
+		},
+		"comparison": {
+			"$ref": "../types/comparison.json",
+			"description": "How the light level should be compared to the specified value."
+		},
+		"compare_to": {
+			"type": "number",
+			"description": "The value to compare the light level at the block's position to."
+		}
+	}
+}

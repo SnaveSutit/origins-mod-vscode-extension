@@ -1,0 +1,17 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/command/",
+	"type": "object",
+	"required": ["command", "comparison", "compare_to"],
+	"properties": {
+		"command": {
+			"type": "string"
+		},
+		"comparison": {
+			"$ref": "$ref(apoli:types/comparison)"
+		},
+		"compare_to": {
+			"type": "number"
+		}
+	}
+}

@@ -1,5 +1,6 @@
 // import { dataTypes } from './dataTypes'
 import { JSONSchema } from './schema'
+import * as fs from 'fs'
 import * as terminalkit from 'terminal-kit'
 const term = terminalkit.terminal
 
@@ -104,7 +105,25 @@ export class MDFile {
 		return new MDFile(path)
 	}
 
-	public async read(): Promise<MDFile> {
+	public static fromFile(path: string) {
+		term.gray(`Reading Markdown File `).brightBlue(path).gray('...\n')
+
+		const file = new MDFile(path.replace(/\\/g, '/'))
+
+		file.content = fs.readFileSync(path, 'utf-8')
+		if (!file.content || file.content.includes('404: Not Found'))
+			throw new Error(`Failed to fetch content of '${file.path}': ${file.content}`)
+		file.content = file.content.replace(/\r/g, '')
+
+		file.id = file.path.split('/').pop()!.replace('.md', '')
+		file.captureDescription()
+		file.captureFields()
+		file.captureValues()
+
+		return file
+	}
+
+	public async fetchContent(): Promise<MDFile> {
 		const url = rawGithubUrl + this.path
 		term.gray(`Reading Markdown File `).brightBlue(url).gray('...\n')
 

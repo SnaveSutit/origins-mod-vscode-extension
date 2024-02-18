@@ -1,0 +1,38 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/modify_block_state/",
+	"type": "object",
+	"required": [
+		"property"
+	],
+	"properties": {
+		"property": {
+			"type": "string",
+			"description": "The name of the property that will be modified. Examples are `facing` or `age`. See [Minecraft Wiki: Block States (List of block states)](https://minecraft.wiki/w/Block_states#List_of_block_states) for possible values."
+		},
+		"operation": {
+			"enum": [
+				"set",
+				"add"
+			],
+			"description": "Determines how the value specified in the `change` field is operated on the specified property. Accepts `\"add\"` or `\"set\"`."
+		},
+		"change": {
+			"type": "number",
+			"description": "If specified, the value to add, remove or set to/from the specified property if the specified property is an integer."
+		},
+		"value": {
+			"type": "boolean",
+			"description": "If specified, the boolean to use as the new value for the specified property if the specified property is a boolean."
+		},
+		"enum": {
+			"type": "string",
+			"description": "If specified, the string to use as the new value for the specified property if the specified property is a string."
+		},
+		"cycle": {
+			"type": "boolean",
+			"default": false,
+			"description": "If set to true, changes the property to the next state in the cycle, ignoring all other optional fields. All property types can use this operation."
+		}
+	}
+}

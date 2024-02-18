@@ -1,0 +1,82 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/biome_condition_types/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:high_humidity",
+							"origins:high_humidity"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "biome_condition_types/high_humidity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_tag",
+							"origins:in_tag"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "biome_condition_types/in_tag.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:precipitation",
+							"origins:precipitation"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "biome_condition_types/precipitation.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:temperature",
+							"origins:temperature"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "biome_condition_types/temperature.json"
+			}
+		}
+	]
+}

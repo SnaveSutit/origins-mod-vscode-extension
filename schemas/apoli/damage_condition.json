@@ -1,0 +1,118 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/damage_condition_types/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:amount",
+							"origins:amount"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "damage_condition_types/amount.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:attacker",
+							"origins:attacker"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "damage_condition_types/attacker.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_tag",
+							"origins:in_tag"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "damage_condition_types/in_tag.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:name",
+							"origins:name"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "damage_condition_types/name.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:projectile",
+							"origins:projectile"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "damage_condition_types/projectile.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:type",
+							"origins:type"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "damage_condition_types/type.json"
+			}
+		}
+	]
+}

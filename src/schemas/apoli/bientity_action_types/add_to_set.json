@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_action_types/add_to_set/",
+	"type": "object",
+	"required": ["set"],
+	"properties": {
+		"set": {
+			"type": "string"
+		},
+		"time_limit": {
+			"type": "integer",
+			"minimum": 0
+		}
+	}
+}

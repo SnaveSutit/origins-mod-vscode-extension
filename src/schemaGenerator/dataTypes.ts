@@ -52,7 +52,7 @@ export class DataType {
 
 	async getMDFile(): Promise<MDFile> {
 		if (!this._mdFile) {
-			this._mdFile = await new MDFile(this.path).read()
+			this._mdFile = await new MDFile(this.path).fetchContent()
 		}
 		return this._mdFile
 	}

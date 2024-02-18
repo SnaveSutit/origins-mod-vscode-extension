@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/damage_condition_types/projectile/",
+	"type": "object",
+	"properties": {
+		"projectile": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"projectile_condition": {
+			"$ref": "$ref(apoli:entity_condition)"
+		}
+	}
+}

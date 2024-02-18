@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/damage_condition_types/name/",
+	"type": "object",
+	"required": [
+		"name"
+	],
+	"properties": {
+		"name": {
+			"type": "string",
+			"description": "Name the damage source should have to pass the check. See [List of Damage Source Names](../../misc/extras/damage_source_names.md) for possible values."
+		}
+	}
+}

@@ -4,7 +4,7 @@
 	"type": "object",
 	"properties": {
 		"item": {
-			"$ref": "$(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"amount": {
 			"type": "integer"

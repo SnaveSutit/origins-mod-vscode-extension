@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/block/",
+	"type": "object",
+	"required": [
+		"block"
+	],
+	"properties": {
+		"block": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace and ID of the block that this block needs to be to pass the check."
+		}
+	}
+}

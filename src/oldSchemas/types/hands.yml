@@ -1,8 +1,0 @@
-$id: https://snavesutit.github.io/origins-mod-schemas/
-title: Hands
-type: array
-items:
-  - const: main_hand
-  - const: off_hand
-uniqueItems: true
-minItems: 1

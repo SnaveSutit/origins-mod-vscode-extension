@@ -1,0 +1,12 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/bonemeal/",
+	"type": "object",
+	"properties": {
+		"effects": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines if the particle and other visual effects of the bonemeal-ing action should appear."
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/explode/",
+	"type": "object",
+	"required": [
+		"power"
+	],
+	"properties": {
+		"power": {
+			"type": "number",
+			"description": "Determines the power of the explosion."
+		},
+		"destruction_type": {
+			"$ref": "../types/destruction_type.json",
+			"description": "Determines the effect of the explosion to the terrain."
+		},
+		"indestructible": {
+			"$ref": "../block_condition.json",
+			"description": "If specified, the blocks that fulfill this condition will not be destroyed by the summoned explosion."
+		},
+		"destructible": {
+			"$ref": "../block_condition.json",
+			"description": "If specified, only the blocks that fulfill this condition will be destroyed by the summoned explosion."
+		},
+		"create_fire": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines if the summoned explosion should create fire."
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/adjacent/",
+	"type": "object",
+	"required": [
+		"adjacent_condition",
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"adjacent_condition": {
+			"$ref": "../block_condition.json",
+			"description": "The block condition that needs to be fulfilled by adjacent blocks to count towards this condition."
+		},
+		"comparison": {
+			"$ref": "../types/comparison.json",
+			"description": "How the number of adjacent blocks which fulfill `adjacent_condition` should be compared to the specified value."
+		},
+		"compare_to": {
+			"type": "number",
+			"description": "The value to compare the number to."
+		}
+	}
+}

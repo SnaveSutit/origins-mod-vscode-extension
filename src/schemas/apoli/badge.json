@@ -16,16 +16,16 @@
 				"required": ["sprite", "recipe"],
 				"properties": {
 					"sprite": {
-						"$ref": "$(apoli:types/identifier)"
+						"$ref": "$ref(apoli:types/identifier)"
 					},
 					"recipe": {
-						"$ref": "$(apoli:types/crafting_recipe)"
+						"$ref": "$ref(apoli:types/crafting_recipe)"
 					},
 					"suffix": {
-						"$ref": "$(apoli:types/text_component)"
+						"$ref": "$ref(apoli:types/text_component)"
 					},
 					"prefix": {
-						"$ref": "$(apoli:types/text_component)"
+						"$ref": "$ref(apoli:types/text_component)"
 					}
 				}
 			}
@@ -43,7 +43,7 @@
 				"required": ["sprite", "text"],
 				"properties": {
 					"sprite": {
-						"$ref": "$(apoli:types/identifier)"
+						"$ref": "$ref(apoli:types/identifier)"
 					},
 					"text": {
 						"type": "string"
@@ -64,7 +64,7 @@
 				"required": ["sprite"],
 				"properties": {
 					"sprite": {
-						"$ref": "$(apoli:types/identifier)"
+						"$ref": "$ref(apoli:types/identifier)"
 					}
 				}
 			}
@@ -82,7 +82,7 @@
 				"required": ["sprite", "text"],
 				"properties": {
 					"sprite": {
-						"$ref": "$(apoli:types/identifier)"
+						"$ref": "$ref(apoli:types/identifier)"
 					},
 					"text": {
 						"type": "string"

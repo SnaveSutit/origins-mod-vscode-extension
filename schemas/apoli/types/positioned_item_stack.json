@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/positioned_item_stack/",
+	"type": "object",
+	"properties": {
+		"item": {
+			"$ref": "identifier.json",
+			"description": "ID of a registered item."
+		},
+		"amount": {
+			"type": "integer",
+			"description": "Size of the stack."
+		},
+		"tag": {
+			"type": "string",
+			"description": "NBT data of the item."
+		},
+		"slot": {
+			"type": "integer",
+			"description": "Inventory slot position of the stack. If not specified, will be the first free slot in the inventory. See [Positioned Item Stack Slots](../../misc/extras/positioned_item_stack_slots.md) for possible values."
+		}
+	}
+}

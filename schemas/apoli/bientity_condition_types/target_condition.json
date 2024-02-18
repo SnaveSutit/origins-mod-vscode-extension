@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_condition_types/target_condition/",
+	"type": "object",
+	"required": [
+		"condition"
+	],
+	"properties": {
+		"condition": {
+			"$ref": "../bientity_condition.json",
+			"description": "The entity condition type to check for on the target entity."
+		}
+	}
+}

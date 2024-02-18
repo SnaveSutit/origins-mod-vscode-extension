@@ -1,0 +1,42 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/distance_from_coordinates/",
+	"type": "object",
+	"required": ["comparison", "compare_to"],
+	"properties": {
+		"reference": {
+			"enum": ["world_origin", "world_spawn"]
+		},
+		"offset": {
+			"$ref": "$ref(apoli:types/vector)"
+		},
+		"ignore_x": {
+			"type": "boolean"
+		},
+		"ignore_y": {
+			"type": "boolean"
+		},
+		"ignore_z": {
+			"type": "boolean"
+		},
+		"shape": {
+			"enum": ["cube", "star", "sphere"]
+		},
+		"scale_reference_to_dimension": {
+			"type": "boolean",
+			"default": true
+		},
+		"result_on_the_wrong_dimension": {
+			"type": "boolean"
+		},
+		"round_to_digit": {
+			"type": "integer"
+		},
+		"comparison": {
+			"$ref": "$ref(apoli:types/comparison)"
+		},
+		"compare_to": {
+			"type": "number"
+		}
+	}
+}

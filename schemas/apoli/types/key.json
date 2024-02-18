@@ -1,0 +1,19 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/key/",
+	"type": "object",
+	"required": [
+		"key"
+	],
+	"properties": {
+		"key": {
+			"type": "string",
+			"description": "A string specifying the keybinding. See [Keybindings](../../misc/extras/keybindings.md) for possible values."
+		},
+		"continuous": {
+			"type": "boolean",
+			"default": false,
+			"description": "Whether the keybinding should only trigger the power on the first tick the key is held down, or, if set to true, continuously on each tick while the key is held."
+		}
+	}
+}

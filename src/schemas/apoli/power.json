@@ -4,20 +4,20 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"$ref": "$(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"name": {
-			"$ref": "$(apoli:types/text_component)"
+			"$ref": "$ref(apoli:types/text_component)"
 		},
 		"description": {
-			"$ref": "$(apoli:types/text_component)"
+			"$ref": "$ref(apoli:types/text_component)"
 		},
 		"hidden": {
 			"type": "boolean",
 			"default": false
 		},
 		"condition": {
-			"$ref": "$(apoli:entity_condition)"
+			"$ref": "$ref(apoli:entity_condition)"
 		},
 		"loading_priority": {
 			"type": "integer",
@@ -26,7 +26,7 @@
 		"badges": {
 			"type": "array",
 			"items": {
-				"$ref": "$(apoli:badge)"
+				"$ref": "$ref(apoli:badge)"
 			}
 		}
 	}

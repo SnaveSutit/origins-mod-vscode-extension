@@ -1,16 +1,23 @@
 import { MDFile } from './mdReader'
 
-type SimpleSchemaType = 'object' | 'array' | 'string' | 'number' | 'integer' | 'boolean' | 'null'
+export type SimpleSchemaType =
+	| 'object'
+	| 'array'
+	| 'string'
+	| 'number'
+	| 'integer'
+	| 'boolean'
+	| 'null'
 
-type DateAndTimeStringFormat = 'date-time' | 'time' | 'date' | 'duration'
-type EmailStringFormat = 'email' | 'idn-email'
-type HostnameStringFormat = 'hostname' | 'idn-hostname'
-type IPAddressStringFormat = 'ipv4' | 'ipv6'
-type ResourceIDStringFormat = 'uuid' | 'uri' | 'uri-reference' | 'iri' | 'iri-reference'
-type URITemplateStringFormat = 'uri-template'
-type JSONPointerStringFormat = 'json-pointer'
-type RegexStringFormat = 'regex'
-type StringFormat =
+export type DateAndTimeStringFormat = 'date-time' | 'time' | 'date' | 'duration'
+export type EmailStringFormat = 'email' | 'idn-email'
+export type HostnameStringFormat = 'hostname' | 'idn-hostname'
+export type IPAddressStringFormat = 'ipv4' | 'ipv6'
+export type ResourceIDStringFormat = 'uuid' | 'uri' | 'uri-reference' | 'iri' | 'iri-reference'
+export type URITemplateStringFormat = 'uri-template'
+export type JSONPointerStringFormat = 'json-pointer'
+export type RegexStringFormat = 'regex'
+export type StringFormat =
 	| DateAndTimeStringFormat
 	| EmailStringFormat
 	| HostnameStringFormat
@@ -20,7 +27,7 @@ type StringFormat =
 	| JSONPointerStringFormat
 	| RegexStringFormat
 
-type StringContentEncodingType =
+export type StringContentEncodingType =
 	| '7bit'
 	| '8bit'
 	| 'binary'
@@ -375,55 +382,28 @@ export type JSONSchema = {
 	 * https://json-schema.org/understanding-json-schema/reference/numeric#range
 	 */
 	exclusiveMaximum?: number
-} & (
-	| {
-			/**
-			 * Objects are the mapping type in JSON.
-			 * They map "keys" to "values".
-			 * In JSON, the "keys" must always be strings.
-			 * Each of these pairs is conventionally referred to as a "property".
-			 *
-			 * https://json-schema.org/understanding-json-schema/reference/object#object
-			 */
-			type: 'object'
-	  }
-	| {
-			/**
-			 * Arrays are used for ordered elements.
-			 * In JSON, each element in an array may be of a different type.
-			 *
-			 * https://json-schema.org/understanding-json-schema/reference/array#array
-			 */
-			type: 'array'
-	  }
-	| {
-			type: 'string'
-	  }
-	| {
-			/**
-			 * https://json-schema.org/understanding-json-schema/reference/numeric#numeric-types
-			 */
-			type: 'number' | 'integer'
-	  }
-	| {
-			/**
-			 * The `boolean` type matches only two special values: `true` and `false`.
-			 * Note that values that evaluate to `true` or `false`, such as `1` and `0`, are not accepted by the schema.
-			 *
-			 * https://json-schema.org/understanding-json-schema/reference/boolean#boolean
-			 */
-			type: 'boolean'
-	  }
-	| {
-			/**
-			 * When a schema specifies a type of `null`, it has only one acceptable value: `null`.
-			 * It's important to remember that in JSON, `null` isn't equivalent to something being absent.
-			 *
-			 * https://json-schema.org/understanding-json-schema/reference/null#null
-			 */
-			type: 'null'
-	  }
-	| {
-			type?: undefined
-	  }
-)
+
+	[key: string]: any
+} & JSONSchemaPreProcessorAdditions
+
+export interface JSONSchemaPreProcessorAdditions {
+	$IMPORT?: {
+		type: 'import_files_into_array'
+		/**
+		 * Where to find the files to import.
+		 */
+		path: string
+		/**
+		 * A key in this object containing an array that the generated schema structures will be pushed to.
+		 */
+		output_key: string
+		/**
+		 * The schema structure generated for each imported file.
+		 * Includes variables that can be used to insert data into the schema.
+		 *
+		 * $$fileName - The name of the file without the extension.
+		 * $$fileRef - The schema reference to the file.
+		 */
+		schemaStructure: JSONSchema
+	}
+}

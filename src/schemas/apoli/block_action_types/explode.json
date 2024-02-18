@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/explode/",
+	"type": "object",
+	"required": ["power"],
+	"properties": {
+		"power": {
+			"type": "number"
+		},
+		"destruction_type": {
+			"$ref": "$ref(apoli:types/destruction_type)"
+		},
+		"indestructible": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"destructible": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"create_fire": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

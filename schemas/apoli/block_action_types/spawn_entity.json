@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/spawn_entity/",
+	"type": "object",
+	"required": [
+		"entity_type"
+	],
+	"properties": {
+		"entity_type": {
+			"$ref": "../types/identifier.json",
+			"description": "The ID of the type of entity that will be spawned."
+		},
+		"tag": {
+			"oneOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "object"
+				}
+			],
+			"description": "If specified, this NBT data will be applied to the entity that will be spawned."
+		},
+		"entity_action": {
+			"$ref": "apoli:entity_action",
+			"description": "If specified, this entity action will be executed on the spawned entity."
+		}
+	}
+}

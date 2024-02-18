@@ -1,0 +1,26 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/area_of_effect/",
+	"type": "object",
+	"required": [
+		"block_action"
+	],
+	"properties": {
+		"radius": {
+			"type": "number",
+			"description": "Determines the radius of the area."
+		},
+		"shape": {
+			"$ref": "../types/shape.json",
+			"description": "Determines the shape of the area."
+		},
+		"block_action": {
+			"$ref": "../block_action.json",
+			"description": "The block action to execute on the blocks within the specified radius."
+		},
+		"block_condition": {
+			"$ref": "../block_condition.json",
+			"description": "If specified, the specified block action will only be executed on blocks that fulfill this block condition."
+		}
+	}
+}

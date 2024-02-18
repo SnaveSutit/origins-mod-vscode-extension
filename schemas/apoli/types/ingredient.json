@@ -9,7 +9,8 @@
 			],
 			"properties": {
 				"item": {
-					"$ref": "identifier.json"
+					"$ref": "identifier.json",
+					"description": "ID of a registered item."
 				}
 			}
 		},
@@ -19,7 +20,8 @@
 			],
 			"properties": {
 				"tag": {
-					"$ref": "identifier.json"
+					"$ref": "identifier.json",
+					"description": "ID of an item tag. Will be ignored if `item` is set."
 				}
 			}
 		}

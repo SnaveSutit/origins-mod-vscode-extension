@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_condition_types/can_see/",
+	"type": "object",
+	"properties": {
+		"shape_type": {
+			"$ref": "../types/shape_type.json",
+			"description": "Determines how the ray-cast will handle blocks."
+		},
+		"fluid_handling": {
+			"$ref": "../types/fluid_handling.json",
+			"description": "Determines how the ray-cast will handle fluids."
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_action_types/invert/",
+	"type": "object",
+	"required": ["action"],
+	"properties": {
+		"action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/attributed_attribute_modifier/",
+	"type": "object",
+	"required": [
+		"attribute",
+		"operation",
+		"value"
+	],
+	"properties": {
+		"attribute": {
+			"$ref": "identifier.json",
+			"description": "ID of the attribute which will be modified by this modifier."
+		},
+		"operation": {
+			"$ref": "attributed_attribute_modifier_operation.json",
+			"description": "The operation which will be performed by this modifier."
+		},
+		"value": {
+			"type": "number",
+			"description": "The value to use for the modifier operation."
+		},
+		"name": {
+			"type": "string",
+			"description": "A descriptive name for the modifier, describing where it comes from."
+		}
+	}
+}

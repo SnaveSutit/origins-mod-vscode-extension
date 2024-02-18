@@ -5,13 +5,13 @@
 	"required": ["type", "id", "result"],
 	"properties": {
 		"id": {
-			"$ref": "$(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"result": {
 			"type": "object",
 			"properties": {
 				"item": {
-					"$ref": "$(apoli:types/identifier)"
+					"$ref": "$ref(apoli:types/identifier)"
 				},
 				"count": {
 					"type": "integer",
@@ -43,7 +43,7 @@
 						"type": "object",
 						"patternProperties": {
 							"^.$": {
-								"$ref": "$(apoli:types/ingredient)"
+								"$ref": "$ref(apoli:types/ingredient)"
 							}
 						}
 					}
@@ -65,11 +65,11 @@
 						"type": "array",
 						"items": {
 							"oneOf": [
-								{ "$ref": "$(apoli:types/ingredient)" },
+								{ "$ref": "$ref(apoli:types/ingredient)" },
 								{
 									"type": "array",
 									"items": {
-										"$ref": "$(apoli:types/ingredient)"
+										"$ref": "$ref(apoli:types/ingredient)"
 									}
 								}
 							]

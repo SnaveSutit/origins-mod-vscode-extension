@@ -95,7 +95,7 @@
 											"type": "string"
 										},
 										"id": {
-											"$ref": "$(apoli:types/identifier)"
+											"$ref": "$ref(apoli:types/identifier)"
 										},
 										"name": {
 											"type": "string"
@@ -107,7 +107,7 @@
 									"required": ["id"],
 									"properties": {
 										"id": {
-											"$ref": "$(apoli:types/identifier)"
+											"$ref": "$ref(apoli:types/identifier)"
 										},
 										"count": {
 											"type": "string"
@@ -128,7 +128,7 @@
 					}
 				},
 				"font": {
-					"$ref": "$(apoli:types/identifier)"
+					"$ref": "$ref(apoli:types/identifier)"
 				},
 				"tl": {
 					"type": "string"

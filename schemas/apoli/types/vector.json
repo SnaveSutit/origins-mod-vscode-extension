@@ -1,0 +1,22 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/vector/",
+	"type": "object",
+	"properties": {
+		"x": {
+			"type": "number",
+			"default": 0,
+			"description": "The X coordinate of the point."
+		},
+		"y": {
+			"type": "number",
+			"default": 0,
+			"description": "The Y coordinate of the point."
+		},
+		"z": {
+			"type": "number",
+			"default": 0,
+			"description": "The Z coordinate of the point."
+		}
+	}
+}

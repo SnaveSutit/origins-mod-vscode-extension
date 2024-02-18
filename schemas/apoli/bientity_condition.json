@@ -1,0 +1,316 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_condition_types/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:actor_condition",
+							"origins:actor_condition"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/actor_condition.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:attacker",
+							"origins:attacker"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/attacker.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:attack_target",
+							"origins:attack_target"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/attack_target.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:both",
+							"origins:both"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/both.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:can_see",
+							"origins:can_see"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/can_see.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:distance",
+							"origins:distance"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/distance.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:either",
+							"origins:either"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/either.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:equal",
+							"origins:equal"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/equal.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:invert",
+							"origins:invert"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/invert.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_set",
+							"origins:in_set"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/in_set.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:owner",
+							"origins:owner"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/owner.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:relative_rotation",
+							"origins:relative_rotation"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/relative_rotation.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:riding",
+							"origins:riding"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/riding.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:riding_recursive",
+							"origins:riding_recursive"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/riding_recursive.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:riding_root",
+							"origins:riding_root"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/riding_root.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:target_condition",
+							"origins:target_condition"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/target_condition.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:undirected",
+							"origins:undirected"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "bientity_condition_types/undirected.json"
+			}
+		}
+	]
+}

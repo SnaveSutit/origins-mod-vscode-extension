@@ -1,0 +1,35 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/food_component/",
+	"type": "object",
+	"required": ["hunger", "saturation"],
+	"properties": {
+		"hunger": {
+			"type": "integer"
+		},
+		"saturation": {
+			"type": "number"
+		},
+		"meat": {
+			"type": "boolean",
+			"default": false
+		},
+		"always_edible": {
+			"type": "boolean",
+			"default": false
+		},
+		"snack": {
+			"type": "boolean",
+			"default": false
+		},
+		"effect": {
+			"$ref": "$ref(apoli:types/status_effect_instance)"
+		},
+		"effects": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/status_effect_instance)"
+			}
+		}
+	}
+}

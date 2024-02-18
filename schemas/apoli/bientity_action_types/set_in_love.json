@@ -1,0 +1,5 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_action_types/set_in_love/",
+	"type": "object"
+}

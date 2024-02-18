@@ -1,0 +1,34 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/hud_render/",
+	"type": "object",
+	"properties": {
+		"should_render": {
+			"type": "boolean",
+			"default": true
+		},
+		"sprite_location": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"bar_index": {
+			"type": "integer",
+			"minimum": 0,
+			"default": 0
+		},
+		"icon_index": {
+			"type": "integer",
+			"minimum": 0,
+			"default": 0
+		},
+		"condition": {
+			"$ref": "$ref(apoli:types/entity_condition)"
+		},
+		"inverted": {
+			"type": "boolean",
+			"default": false
+		},
+		"order": {
+			"type": "integer"
+		}
+	}
+}

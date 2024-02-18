@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/command/",
+	"type": "object",
+	"required": [
+		"command",
+		"comparison",
+		"compare_to"
+	],
+	"properties": {
+		"command": {
+			"type": "string",
+			"description": "The command to execute."
+		},
+		"comparison": {
+			"$ref": "../types/comparison.json",
+			"description": "How to compare the stored result of the specified command to the specified value."
+		},
+		"compare_to": {
+			"type": "number",
+			"description": "The value to compare the stored result of the specified command to."
+		}
+	}
+}

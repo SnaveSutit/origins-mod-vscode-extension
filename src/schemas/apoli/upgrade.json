@@ -4,10 +4,10 @@
 	"type": "object",
 	"properties": {
 		"condition": {
-			"$ref": "$(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"origin": {
-			"$ref": "$(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"announcement": {
 			"type": "string"

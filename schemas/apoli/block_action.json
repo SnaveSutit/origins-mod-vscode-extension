@@ -1,0 +1,172 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:add_block",
+							"origins:add_block"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/add_block.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:area_of_effect",
+							"origins:area_of_effect"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/area_of_effect.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:bonemeal",
+							"origins:bonemeal"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/bonemeal.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:execute_command",
+							"origins:execute_command"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/execute_command.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:explode",
+							"origins:explode"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/explode.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_block_state",
+							"origins:modify_block_state"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/modify_block_state.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:offset",
+							"origins:offset"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/offset.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:set_block",
+							"origins:set_block"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/set_block.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:spawn_entity",
+							"origins:spawn_entity"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "block_action_types/spawn_entity.json"
+			}
+		}
+	]
+}

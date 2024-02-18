@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/modify_block_state/",
+	"type": "object",
+	"required": ["property"],
+	"properties": {
+		"property": {
+			"type": "string"
+		},
+		"operation": {
+			"enum": ["set", "add"]
+		},
+		"change": {
+			"type": "number"
+		},
+		"value": {
+			"type": "boolean"
+		},
+		"enum": {
+			"type": "string"
+		},
+		"cycle": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}
