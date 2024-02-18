@@ -1,0 +1,82 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/crafting_recipe/",
+	"type": "object",
+	"required": ["type", "id", "result"],
+	"properties": {
+		"id": {
+			"$ref": "$(apoli:types/identifier)"
+		},
+		"result": {
+			"type": "object",
+			"properties": {
+				"item": {
+					"$ref": "$(apoli:types/identifier)"
+				},
+				"count": {
+					"type": "integer",
+					"minimum": 1
+				}
+			}
+		}
+	},
+	"allOf": [
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"enum": ["apoli:crafting_shaped", "origins:crafting_shaped"]
+					}
+				}
+			},
+			"then": {
+				"required": ["pattern", "key"],
+				"properties": {
+					"pattern": {
+						"type": "array",
+						"items": {
+							"type": "string",
+							"pattern": "^.{1,3}$"
+						}
+					},
+					"key": {
+						"type": "object",
+						"patternProperties": {
+							"^.$": {
+								"$ref": "$(apoli:types/ingredient)"
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"type": {
+						"enum": ["apoli:crafting_shapeless", "origins:crafting_shapeless"]
+					}
+				}
+			},
+			"then": {
+				"required": ["ingredients"],
+				"properties": {
+					"ingredients": {
+						"type": "array",
+						"items": {
+							"oneOf": [
+								{ "$ref": "$(apoli:types/ingredient)" },
+								{
+									"type": "array",
+									"items": {
+										"$ref": "$(apoli:types/ingredient)"
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	]
+}

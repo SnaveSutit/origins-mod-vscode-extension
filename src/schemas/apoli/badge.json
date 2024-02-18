@@ -1,0 +1,94 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"required": ["type"],
+	"allOf": [
+		{
+			"if": {
+				"required": ["type"],
+				"properties": {
+					"type": {
+						"enum": ["apoli:crafting_recipe", "origins:crafting_recipe"]
+					}
+				}
+			},
+			"then": {
+				"required": ["sprite", "recipe"],
+				"properties": {
+					"sprite": {
+						"$ref": "$(apoli:types/identifier)"
+					},
+					"recipe": {
+						"$ref": "$(apoli:types/crafting_recipe)"
+					},
+					"suffix": {
+						"$ref": "$(apoli:types/text_component)"
+					},
+					"prefix": {
+						"$ref": "$(apoli:types/text_component)"
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": ["type"],
+				"properties": {
+					"type": {
+						"enum": ["apoli:keybind", "origins:keybind"]
+					}
+				}
+			},
+			"then": {
+				"required": ["sprite", "text"],
+				"properties": {
+					"sprite": {
+						"$ref": "$(apoli:types/identifier)"
+					},
+					"text": {
+						"type": "string"
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": ["type"],
+				"properties": {
+					"type": {
+						"enum": ["apoli:sprite", "origins:sprite"]
+					}
+				}
+			},
+			"then": {
+				"required": ["sprite"],
+				"properties": {
+					"sprite": {
+						"$ref": "$(apoli:types/identifier)"
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"required": ["type"],
+				"properties": {
+					"type": {
+						"enum": ["apoli:tooltip", "origins:tooltip"]
+					}
+				}
+			},
+			"then": {
+				"required": ["sprite", "text"],
+				"properties": {
+					"sprite": {
+						"$ref": "$(apoli:types/identifier)"
+					},
+					"text": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	]
+}

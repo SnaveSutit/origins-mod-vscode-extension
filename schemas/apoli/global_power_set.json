@@ -1,0 +1,26 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/global_power_set/",
+	"type": "object",
+	"properties": {
+		"entity_types": {
+			"type": "array",
+			"items": {
+				"$ref": "types/identifier.json"
+			},
+			"description": "If specified, the specified powers will only be granted to entities that fulfill this tag-like specifier."
+		},
+		"powers": {
+			"type": "array",
+			"items": {
+				"$ref": "power.json"
+			},
+			"description": "The ID(s) of the power(s) to grant to entities globally."
+		},
+		"order": {
+			"type": "integer",
+			"default": 0,
+			"description": "Determines the order at which the global power set is applied."
+		}
+	}
+}

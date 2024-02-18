@@ -1,0 +1,40 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/power/",
+	"type": "object",
+	"properties": {
+		"type": {
+			"$ref": "types/identifier.json",
+			"description": "The namespace and ID of the desired [Power Type](../types/power_types.md)."
+		},
+		"name": {
+			"$ref": "types/text_component.json",
+			"description": "The display name of the power."
+		},
+		"description": {
+			"$ref": "types/text_component.json",
+			"description": "The description of the power."
+		},
+		"hidden": {
+			"type": "boolean",
+			"default": false,
+			"description": "If set to true, this power will not be displayed in the power list of the origin."
+		},
+		"condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "If set, this power will only be active when the player with this power fulfills the condition."
+		},
+		"loading_priority": {
+			"type": "integer",
+			"default": 0,
+			"description": "Specifies when this power is loaded. Higher numbers mean it's loaded later, which means it will override those with lower loading priorities which share the same ID."
+		},
+		"badges": {
+			"type": "array",
+			"items": {
+				"$ref": "badge.json"
+			},
+			"description": "If set, it will display icon(s) after the name of the power."
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/ingredient/",
+	"type": "object",
+	"oneOf": [
+		{
+			"required": [
+				"item"
+			],
+			"properties": {
+				"item": {
+					"$ref": "identifier.json"
+				}
+			}
+		},
+		{
+			"required": [
+				"tag"
+			],
+			"properties": {
+				"tag": {
+					"$ref": "identifier.json"
+				}
+			}
+		}
+	]
+}

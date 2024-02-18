@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/global_power_set/",
+	"type": "object",
+	"properties": {
+		"entity_types": {
+			"type": "array",
+			"items": {
+				"$ref": "$(apoli:types/identifier)"
+			}
+		},
+		"powers": {
+			"type": "array",
+			"items": {
+				"$ref": "$(apoli:power)"
+			}
+		},
+		"order": {
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

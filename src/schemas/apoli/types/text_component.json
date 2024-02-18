@@ -1,0 +1,181 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/text_component/",
+	"definitions": {
+		"jsonTextArray": {
+			"type": "array",
+			"items": {
+				"$ref": "#"
+			}
+		},
+		"colors": {
+			"type": "string",
+			"examples": [
+				"#ffffff",
+				"dark_red",
+				"red",
+				"gold",
+				"yellow",
+				"dark_green",
+				"green",
+				"aqua",
+				"dark_aqua",
+				"dark_blue",
+				"blue",
+				"light_purple",
+				"dark_purple",
+				"white",
+				"gray",
+				"dark_gray",
+				"black"
+			]
+		}
+	},
+	"oneOf": [
+		{
+			"type": "string"
+		},
+		{
+			"$ref": "#/definitions/jsonTextArray"
+		},
+		{
+			"type": "object",
+			"properties": {
+				"text": {
+					"type": "string"
+				},
+				"color": {
+					"type": "string"
+				},
+				"bold": {
+					"type": "boolean"
+				},
+				"italic": {
+					"type": "boolean"
+				},
+				"underlined": {
+					"type": "boolean"
+				},
+				"strikethrough": {
+					"type": "boolean"
+				},
+				"obfuscated": {
+					"type": "boolean"
+				},
+				"insertion": {
+					"type": "string"
+				},
+				"clickEvent": {
+					"type": "object",
+					"properties": {
+						"action": {
+							"type": "string"
+						},
+						"value": {
+							"type": "string"
+						}
+					}
+				},
+				"hoverEvent": {
+					"type": "object",
+					"properties": {
+						"action": {
+							"type": "string"
+						},
+						"contents": {
+							"oneOf": [
+								{
+									"$ref": "#"
+								},
+								{
+									"type": "object",
+									"required": ["type", "id"],
+									"properties": {
+										"type": {
+											"type": "string"
+										},
+										"id": {
+											"$ref": "$(apoli:types/identifier)"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								{
+									"type": "object",
+									"required": ["id"],
+									"properties": {
+										"id": {
+											"$ref": "$(apoli:types/identifier)"
+										},
+										"count": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							]
+						}
+					}
+				},
+				"extra": {
+					"type": "array",
+					"items": {
+						"$ref": "#"
+					}
+				},
+				"font": {
+					"$ref": "$(apoli:types/identifier)"
+				},
+				"tl": {
+					"type": "string"
+				},
+				"with": {
+					"$ref": "#/definitions/jsonTextArray"
+				},
+				"score": {
+					"type": "object",
+					"required": ["name", "objective"],
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"objective": {
+							"type": "string"
+						},
+						"value": {
+							"type": "string"
+						}
+					}
+				},
+				"selector": {
+					"type": "string"
+				},
+				"separator": {
+					"type": "string"
+				},
+				"keybind": {
+					"type": "string"
+				},
+				"nbt": {
+					"type": "string"
+				},
+				"interpret": {
+					"type": "boolean"
+				},
+				"block": {
+					"type": "string"
+				},
+				"entity": {
+					"type": "string"
+				},
+				"storage": {
+					"type": "string"
+				}
+			}
+		}
+	]
+}

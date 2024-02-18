@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/power/",
+	"type": "object",
+	"properties": {
+		"type": {
+			"$ref": "$(apoli:types/identifier)"
+		},
+		"name": {
+			"$ref": "$(apoli:types/text_component)"
+		},
+		"description": {
+			"$ref": "$(apoli:types/text_component)"
+		},
+		"hidden": {
+			"type": "boolean",
+			"default": false
+		},
+		"condition": {
+			"$ref": "$(apoli:entity_condition)"
+		},
+		"loading_priority": {
+			"type": "integer",
+			"default": 0
+		},
+		"badges": {
+			"type": "array",
+			"items": {
+				"$ref": "$(apoli:badge)"
+			}
+		}
+	}
+}

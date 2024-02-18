@@ -44,14 +44,5 @@ const extensionConfig = {
 	infrastructureLogging: {
 		level: 'log', // enables logging required for problem matchers
 	},
-	// plugins: [
-	// 	{
-	// 		apply: compiler => {
-	// 			compiler.hooks.compile.tap('Compile yml to JSON', () => {
-	// 				ymlCompiler.compile()
-	// 			})
-	// 		},
-	// 	},
-	// ],
 }
 module.exports = [extensionConfig]

@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/conditioned_origin/",
+	"type": "object",
+	"properties": {
+		"condition": {
+			"$ref": "apoli:entity_condition",
+			"description": "The entity condition that the player needs to fulfill to get access to the origins specified here."
+		},
+		"origins": {
+			"type": "array",
+			"items": {
+				"$ref": "types/identifier.json"
+			},
+			"description": "Then namespace and IDs of the origins which should become available when the `condition` is fulfilled."
+		}
+	}
+}

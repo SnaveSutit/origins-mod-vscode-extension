@@ -1,0 +1,16 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/upgrade/",
+	"type": "object",
+	"properties": {
+		"condition": {
+			"$ref": "$(apoli:types/identifier)"
+		},
+		"origin": {
+			"$ref": "$(apoli:types/identifier)"
+		},
+		"announcement": {
+			"type": "string"
+		}
+	}
+}

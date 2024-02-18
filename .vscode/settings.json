@@ -32,5 +32,6 @@
 			"file:///d%3A/github-repos/origins-mod-json-schemas/src/schemas/bientity_action.yml",
 			"file:///d%3A/github-repos/origins-mod-json-schemas/src/schemas/eggolib/entity_conditions/permission_level.yml"
 		]
-	}
+	},
+	"workbench.iconTheme": "material-icon-theme"
 }

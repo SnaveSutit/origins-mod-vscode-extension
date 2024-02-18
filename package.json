@@ -37,35 +37,42 @@
 					"**/data/*/origin_layers/**/*.json",
 					"**/data/*/origin_layers/**/*.yml"
 				],
-				"url": "./schemas/origin_layers.json"
+				"url": "./schemas/apoli/origin_layers.json"
+			},
+			{
+				"fileMatch": [
+					"**/data/*/badges/**/*.json",
+					"**/data/*/badges/**/*.yml"
+				],
+				"url": "./schemas/apoli/badge.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/origins/**/*.json",
 					"**/data/*/origins/**/*.yml"
 				],
-				"url": "./schemas/origin.json"
+				"url": "./schemas/apoli/origin.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/powers/**/*.json",
 					"**/data/*/powers/**/*.yml"
 				],
-				"url": "./schemas/power.json"
+				"url": "./schemas/apoli/power.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/skill_trees/**/*.json",
 					"**/data/*/skill_trees/**/*.yml"
 				],
-				"url": "./schemas/skill_tree.json"
+				"url": "./schemas/apoli/skill_tree.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/keybindings/**/*.json",
 					"**/data/*/keybindings/**/*.yml"
 				],
-				"url": "./schemas/keybinding.json"
+				"url": "./schemas/apoli/keybinding.json"
 			}
 		],
 		"configurationDefaults": {
@@ -98,6 +105,7 @@
 		"package": "node ./tools/schema_builder.js --once && webpack --mode production --devtool hidden-source-map",
 		"lint": "prettier --write .",
 		"test": "node ./out/test/runTest.js",
+		"run-schema-generator": "ts-node ./src/schemaGenerator/index.ts",
 		"version_patch": "yarn version --new-version patch",
 		"version_minor": "yarn version --new-version minor",
 		"version_major": "yarn version --new-version major",
@@ -110,7 +118,7 @@
 		"@types/node": "14.x",
 		"@types/vscode": "^1.65.0",
 		"@vscode/test-electron": "^2.1.3",
-		"chokidar": "^3.5.3",
+		"chokidar": "^3.6.0",
 		"glob": "^7.2.0",
 		"js-yaml": "^4.1.0",
 		"mocha": "^9.2.2",
@@ -121,5 +129,10 @@
 		"webpack": "^5.70.0",
 		"webpack-cli": "^4.9.2"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"@types/sync-fetch": "^0.4.3",
+		"@types/terminal-kit": "^2.5.6",
+		"sync-fetch": "^0.5.2",
+		"terminal-kit": "^3.0.1"
+	}
 }

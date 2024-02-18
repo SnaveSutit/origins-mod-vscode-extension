@@ -1,0 +1,6 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/entity_type_taglike/",
+	"type": "string",
+	"pattern": "^\\#?([a-z0-9_\\/\\-\\.]+:)?[a-z0-9_\\/\\-\\.]+$"
+}
