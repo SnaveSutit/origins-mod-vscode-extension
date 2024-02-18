@@ -2,10 +2,7 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/distance_from_coordinates/",
 	"type": "object",
-	"required": [
-		"comparison",
-		"compare_to"
-	],
+	"required": ["comparison", "compare_to"],
 	"properties": {
 		"reference": {
 			"type": "string",
@@ -20,19 +17,19 @@
 		},
 		"ignore_x": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether to consider the X axis to be 0.",
 			"markdownDescription": "Determines whether to consider the X axis to be 0."
 		},
 		"ignore_y": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether to consider the Y axis to be 0.",
 			"markdownDescription": "Determines whether to consider the Y axis to be 0."
 		},
 		"ignore_z": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether to consider the Z axis to be 0.",
 			"markdownDescription": "Determines whether to consider the Z axis to be 0."
 		},
@@ -43,7 +40,7 @@
 		},
 		"scale_reference_to_dimension": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether to check for the reference point whilst considering the coordinate scale of the dimension.",
 			"markdownDescription": "Determines whether to check for the reference point whilst considering the coordinate scale of the dimension."
 		},

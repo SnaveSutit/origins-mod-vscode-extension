@@ -16,7 +16,7 @@
 		},
 		"drop_on_death": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "When this is set to true, the player will drop the items in the inventory on death (vanishing items will vanish!).",
 			"markdownDescription": "When this is set to true, the player will drop the items in the inventory on death (vanishing items will vanish!)."
 		},
@@ -27,7 +27,7 @@
 		},
 		"recoverable": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines if the content of the inventory should be dropped upon losing the power.",
 			"markdownDescription": "Determines if the content of the inventory should be dropped upon losing the power."
 		},

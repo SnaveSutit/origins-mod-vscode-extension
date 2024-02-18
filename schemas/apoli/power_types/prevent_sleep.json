@@ -15,7 +15,7 @@
 		},
 		"set_spawn_point": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the spawnpoint of the player is set upon right-clicking a bed while being prevented. (similar to what happens when you right-click a bed while it's daytime)",
 			"markdownDescription": "Determines whether the spawnpoint of the player is set upon right-clicking a bed while being prevented. (similar to what happens when you right-click a bed while it's daytime)"
 		},

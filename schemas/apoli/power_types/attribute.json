@@ -18,7 +18,7 @@
 		},
 		"update_health": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "When true, the player's health percentage will update to match their new maximum health.",
 			"markdownDescription": "When true, the player's health percentage will update to match their new maximum health."
 		}

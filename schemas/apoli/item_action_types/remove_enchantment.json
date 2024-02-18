@@ -23,7 +23,7 @@
 		},
 		"reset_repair_cost": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the 'repair cost' of the item should be reset.",
 			"markdownDescription": "Determines whether the 'repair cost' of the item should be reset."
 		}

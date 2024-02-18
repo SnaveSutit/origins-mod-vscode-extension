@@ -24,7 +24,7 @@
 		},
 		"update_health": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether the health percentage will update to match the entity's new maximum health.",
 			"markdownDescription": "Determines whether the health percentage will update to match the entity's new maximum health."
 		}

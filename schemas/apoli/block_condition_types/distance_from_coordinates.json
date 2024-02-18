@@ -2,16 +2,10 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_condition_types/distance_from_coordinates/",
 	"type": "object",
-	"required": [
-		"comparison",
-		"compare_to"
-	],
+	"required": ["comparison", "compare_to"],
 	"properties": {
 		"reference": {
-			"enum": [
-				"world_origin",
-				"world_spawn"
-			],
+			"enum": ["world_origin", "world_spawn"],
 			"description": "The point to compare the distance to. Accepts `\"world_origin\"` or `\"world_spawn\"`.",
 			"markdownDescription": "The point to compare the distance to. Accepts `\"world_origin\"` or `\"world_spawn\"`."
 		},
@@ -36,17 +30,13 @@
 			"markdownDescription": "Determines whether to consider the Z axis to be 0."
 		},
 		"shape": {
-			"enum": [
-				"cube",
-				"star",
-				"sphere"
-			],
+			"enum": ["cube", "star", "sphere"],
 			"description": "Determines the shape of the check. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`.",
 			"markdownDescription": "Determines the shape of the check. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`."
 		},
 		"scale_reference_to_dimension": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether to check for the reference point whilst considering the coordinate scale of the dimension.",
 			"markdownDescription": "Determines whether to check for the reference point whilst considering the coordinate scale of the dimension."
 		},

@@ -5,7 +5,7 @@
 	"properties": {
 		"allow_holding": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If `true`, the entity that has the power is able to hold onto blocks.",
 			"markdownDescription": "If `true`, the entity that has the power is able to hold onto blocks."
 		},

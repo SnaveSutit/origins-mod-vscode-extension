@@ -51,13 +51,13 @@
 		},
 		"always_edible": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether a food item can be eaten regardless of the player's hunger bar being full.",
 			"markdownDescription": "Determines whether a food item can be eaten regardless of the player's hunger bar being full."
 		},
 		"prevent_effects": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "If set to `true`, prevent status effects from being applied.",
 			"markdownDescription": "If set to `true`, prevent status effects from being applied."
 		}

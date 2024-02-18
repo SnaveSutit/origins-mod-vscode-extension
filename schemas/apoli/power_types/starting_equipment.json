@@ -18,7 +18,7 @@
 		},
 		"recurrent": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the specified item(s) should be given after respawning.",
 			"markdownDescription": "Determines whether the specified item(s) should be given after respawning."
 		}

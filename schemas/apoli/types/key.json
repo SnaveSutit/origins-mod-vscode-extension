@@ -7,9 +7,7 @@
 		},
 		{
 			"type": "object",
-			"required": [
-				"key"
-			],
+			"required": ["key"],
 			"properties": {
 				"key": {
 					"type": "string",
@@ -18,7 +16,7 @@
 				},
 				"continuous": {
 					"type": "boolean",
-					"default": false,
+					"default": true,
 					"description": "Whether the keybinding should only trigger the power on the first tick the key is held down, or, if set to true, continuously on each tick while the key is held.",
 					"markdownDescription": "Whether the keybinding should only trigger the power on the first tick the key is held down, or, if set to true, continuously on each tick while the key is held."
 				}

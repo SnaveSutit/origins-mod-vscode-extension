@@ -42,7 +42,7 @@
 		},
 		"loaded_chunks_only": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether the entity should only be teleported in loaded chunks. **It is recommended to keep this set to `true` for performance reasons.**",
 			"markdownDescription": "Determines whether the entity should only be teleported in loaded chunks. **It is recommended to keep this set to `true` for performance reasons.**"
 		},

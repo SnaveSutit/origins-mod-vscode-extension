@@ -43,13 +43,13 @@
 		},
 		"throw_randomly": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "If `true`, items will be thrown in random directions instead of being normally dropped, similar to how items are dropped when you die.",
 			"markdownDescription": "If `true`, items will be thrown in random directions instead of being normally dropped, similar to how items are dropped when you die."
 		},
 		"retain_ownership": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If `true`, the dropped items will have their `Thrower` NBT set as the `UUID` NBT of the entity that invoked the action.",
 			"markdownDescription": "If `true`, the dropped items will have their `Thrower` NBT set as the `UUID` NBT of the entity that invoked the action."
 		},

@@ -11,7 +11,7 @@
 		},
 		"ignore_unbreaking": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines if this action should ignore the Unbreaking enchantment.",
 			"markdownDescription": "Determines if this action should ignore the Unbreaking enchantment."
 		}

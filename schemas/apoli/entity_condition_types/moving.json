@@ -5,13 +5,13 @@
 	"properties": {
 		"horizontally": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether to check if the entity is moving horizontally.",
 			"markdownDescription": "Determines whether to check if the entity is moving horizontally."
 		},
 		"vertically": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether to check if the entity is moving vertically.",
 			"markdownDescription": "Determines whether to check if the entity is moving vertically."
 		}

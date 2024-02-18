@@ -20,7 +20,7 @@
 		},
 		"only_when_harvested": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If this is true, the specified actions will only execute when the player succeeds in harvesting the block (e.g. they will not trigger when stone is broken by hand).",
 			"markdownDescription": "If this is true, the specified actions will only execute when the player succeeds in harvesting the block (e.g. they will not trigger when stone is broken by hand)."
 		}

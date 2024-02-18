@@ -10,13 +10,13 @@
 		},
 		"block": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether the ray-cast should include blocks.",
 			"markdownDescription": "Determines whether the ray-cast should include blocks."
 		},
 		"entity": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether the ray-cast should include entities.",
 			"markdownDescription": "Determines whether the ray-cast should include entities."
 		},

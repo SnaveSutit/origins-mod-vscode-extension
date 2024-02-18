@@ -2,9 +2,7 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/explode/",
 	"type": "object",
-	"required": [
-		"power"
-	],
+	"required": ["power"],
 	"properties": {
 		"power": {
 			"type": "number",
@@ -28,7 +26,7 @@
 		},
 		"create_fire": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines if the summoned explosion should create fire.",
 			"markdownDescription": "Determines if the summoned explosion should create fire."
 		}
