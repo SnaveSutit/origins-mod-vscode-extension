@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"description": "How the current day time ticks of the world should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the current day time ticks of the world should be compared to the specified value.",
+			"markdownDescription": "How the current day time ticks of the world should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "The value to compare the current day time ticks of the world to."
+			"description": "The value to compare the current day time ticks of the world to.",
+			"markdownDescription": "The value to compare the current day time ticks of the world to."
 		}
 	}
 }

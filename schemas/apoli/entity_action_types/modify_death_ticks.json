@@ -8,7 +8,8 @@
 	"properties": {
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "This modifier will be applied to the current death ticks value of the entity."
+			"description": "This modifier will be applied to the current death ticks value of the entity.",
+			"markdownDescription": "This modifier will be applied to the current death ticks value of the entity."
 		}
 	}
 }

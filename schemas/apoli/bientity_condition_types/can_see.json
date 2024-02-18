@@ -5,11 +5,13 @@
 	"properties": {
 		"shape_type": {
 			"$ref": "../types/shape_type.json",
-			"description": "Determines how the ray-cast will handle blocks."
+			"description": "Determines how the ray-cast will handle blocks.",
+			"markdownDescription": "Determines how the ray-cast will handle blocks."
 		},
 		"fluid_handling": {
 			"$ref": "../types/fluid_handling.json",
-			"description": "Determines how the ray-cast will handle fluids."
+			"description": "Determines how the ray-cast will handle fluids.",
+			"markdownDescription": "Determines how the ray-cast will handle fluids."
 		}
 	}
 }

@@ -8,8 +8,7 @@
 			"default": "\"container.inventory\""
 		},
 		"container_type": {
-			"type": "container type",
-			"default": "\"dropper\""
+			"$ref": "$ref(apoli:types/container_type)"
 		},
 		"drop_on_death": {
 			"type": "boolean",
@@ -23,8 +22,7 @@
 			"default": true
 		},
 		"key": {
-			"type": "key",
-			"default": "{\"key\": \"key.origins.primary_active\"}"
+			"$ref": "$ref(apoli:types/key)"
 		}
 	}
 }

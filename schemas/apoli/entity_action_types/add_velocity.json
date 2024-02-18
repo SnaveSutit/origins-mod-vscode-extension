@@ -6,36 +6,43 @@
 		"x": {
 			"type": "number",
 			"default": 0,
-			"description": "The amount of velocity to add on the x-axis."
+			"description": "The amount of velocity to add on the x-axis.",
+			"markdownDescription": "The amount of velocity to add on the x-axis."
 		},
 		"y": {
 			"type": "number",
 			"default": 0,
-			"description": "The amount of velocity to add on the y-axis."
+			"description": "The amount of velocity to add on the y-axis.",
+			"markdownDescription": "The amount of velocity to add on the y-axis."
 		},
 		"z": {
 			"type": "number",
 			"default": 0,
-			"description": "The amount of velocity to add on the z-axis."
+			"description": "The amount of velocity to add on the z-axis.",
+			"markdownDescription": "The amount of velocity to add on the z-axis."
 		},
 		"space": {
 			"$ref": "../types/space.json",
-			"description": "The space to perform the addition/setting of velocity in."
+			"description": "The space to perform the addition/setting of velocity in.",
+			"markdownDescription": "The space to perform the addition/setting of velocity in."
 		},
 		"client": {
 			"type": "boolean",
 			"default": true,
-			"description": "If this is false, the action will not execute on the client."
+			"description": "If this is false, the action will not execute on the client.",
+			"markdownDescription": "If this is false, the action will not execute on the client."
 		},
 		"server": {
 			"type": "boolean",
 			"default": true,
-			"description": "If this is false, the action will not execute on the server."
+			"description": "If this is false, the action will not execute on the server.",
+			"markdownDescription": "If this is false, the action will not execute on the server."
 		},
 		"set": {
 			"type": "boolean",
 			"default": false,
-			"description": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it."
+			"description": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it.",
+			"markdownDescription": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it."
 		}
 	}
 }

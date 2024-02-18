@@ -5,20 +5,27 @@
 	"properties": {
 		"enchantment": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, this enchantment will be removed from the item."
+			"description": "If specified, this enchantment will be removed from the item.",
+			"markdownDescription": "If specified, this enchantment will be removed from the item."
 		},
 		"enchantments": {
 			"type": "array",
-			"description": "If specified, these enchantments will be removed from the item."
+			"items": {
+				"$ref": "../types/identifier.json"
+			},
+			"description": "If specified, these enchantments will be removed from the item.",
+			"markdownDescription": "If specified, these enchantments will be removed from the item."
 		},
 		"levels": {
 			"type": "integer",
-			"description": "If specified, only the enchantments that has the specified level will be removed from the item."
+			"description": "If specified, only the enchantments that has the specified level will be removed from the item.",
+			"markdownDescription": "If specified, only the enchantments that has the specified level will be removed from the item."
 		},
 		"reset_repair_cost": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines whether the 'repair cost' of the item should be reset."
+			"description": "Determines whether the 'repair cost' of the item should be reset.",
+			"markdownDescription": "Determines whether the 'repair cost' of the item should be reset."
 		}
 	}
 }

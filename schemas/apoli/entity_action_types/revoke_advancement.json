@@ -5,22 +5,26 @@
 	"properties": {
 		"advancement": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the advancement to be revoked from the player."
+			"description": "The namespace and ID of the advancement to be revoked from the player.",
+			"markdownDescription": "The namespace and ID of the advancement to be revoked from the player."
 		},
 		"criteria": {
 			"type": "array",
 			"items": {
 				"type": "string"
 			},
-			"description": "If specified, determines the criteria to revoke from the specified advancement."
+			"description": "If specified, determines the criteria to revoke from the specified advancement.",
+			"markdownDescription": "If specified, determines the criteria to revoke from the specified advancement."
 		},
 		"criterion": {
 			"type": "string",
-			"description": "If specified, determines the criterion to revoke from the specified advancement."
+			"description": "If specified, determines the criterion to revoke from the specified advancement.",
+			"markdownDescription": "If specified, determines the criterion to revoke from the specified advancement."
 		},
 		"selection": {
 			"$ref": "../types/advancement_selection.json",
-			"description": "Determines how to select the parent advancement(s) or child(ren) advancement(s) of the specified advancement. Can be one of: `\"only\"`, `\"through\"`, `\"from\"`, `\"until\"`, `\"everything\"`"
+			"description": "Determines how to select the parent advancement(s) or child(ren) advancement(s) of the specified advancement. Can be one of: `\"only\"`, `\"through\"`, `\"from\"`, `\"until\"`, `\"everything\"`",
+			"markdownDescription": "Determines how to select the parent advancement(s) or child(ren) advancement(s) of the specified advancement. Can be one of: `\"only\"`, `\"through\"`, `\"from\"`, `\"until\"`, `\"everything\"`"
 		}
 	}
 }

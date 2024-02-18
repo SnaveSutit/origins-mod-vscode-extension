@@ -8,7 +8,8 @@
 	"properties": {
 		"tag": {
 			"$ref": "../types/identifier.json",
-			"description": "ID of the tag which the fluid should be in to pass the check."
+			"description": "ID of the tag which the fluid should be in to pass the check.",
+			"markdownDescription": "ID of the tag which the fluid should be in to pass the check."
 		}
 	}
 }

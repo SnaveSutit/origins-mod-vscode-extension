@@ -12,13 +12,13 @@
 			"type": "number"
 		},
 		"hud_render": {
-			"type": "hud render"
+			"$ref": "$ref(apoli:types/hud_render)"
 		},
 		"sound": {
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"key": {
-			"type": "key"
+			"$ref": "$ref(apoli:types/key)"
 		}
 	}
 }

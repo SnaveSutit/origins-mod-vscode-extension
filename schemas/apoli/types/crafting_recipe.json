@@ -10,7 +10,8 @@
 	"properties": {
 		"id": {
 			"$ref": "identifier.json",
-			"description": "An ID for this recipe. Has to be unique among all recipes, otherwise there will be a conflict."
+			"description": "An ID for this recipe. Has to be unique among all recipes, otherwise there will be a conflict.",
+			"markdownDescription": "An ID for this recipe. Has to be unique among all recipes, otherwise there will be a conflict."
 		},
 		"result": {
 			"type": "object",
@@ -23,7 +24,8 @@
 					"minimum": 1
 				}
 			},
-			"description": "The result of the crafting. **Note that vanilla does _not_ support NBT tags in the result.**"
+			"description": "The result of the crafting. **Note that vanilla does _not_ support NBT tags in the result.**",
+			"markdownDescription": "The result of the crafting. **Note that vanilla does _not_ support NBT tags in the result.**"
 		}
 	},
 	"allOf": [
@@ -35,7 +37,8 @@
 							"apoli:crafting_shaped",
 							"origins:crafting_shaped"
 						],
-						"description": "The type of recipe. Either `minecraft:crafting_shaped` or `minecraft:crafting_shapeless`. Other recipe types are not supported."
+						"description": "The type of recipe. Either `minecraft:crafting_shaped` or `minecraft:crafting_shapeless`. Other recipe types are not supported.",
+						"markdownDescription": "The type of recipe. Either `minecraft:crafting_shaped` or `minecraft:crafting_shapeless`. Other recipe types are not supported."
 					}
 				}
 			},
@@ -51,7 +54,8 @@
 							"type": "string",
 							"pattern": "^.{1,3}$"
 						},
-						"description": "Specifies the pattern, with each element representing one row. Use a single character to describe one item. A space means that position is empty."
+						"description": "Specifies the pattern, with each element representing one row. Use a single character to describe one item. A space means that position is empty.",
+						"markdownDescription": "Specifies the pattern, with each element representing one row. Use a single character to describe one item. A space means that position is empty."
 					},
 					"key": {
 						"type": "object",
@@ -60,7 +64,8 @@
 								"$ref": "ingredient.json"
 							}
 						},
-						"description": "Specifies which character in the pattern corresponds to which [Ingredient](ingredient.md)."
+						"description": "Specifies which character in the pattern corresponds to which [Ingredient](https://origins.readthedocs.io/en/latest/types/data_types/crafting_recipe).",
+						"markdownDescription": "Specifies which character in the pattern corresponds to which [Ingredient](https://origins.readthedocs.io/en/latest/types/data_types/crafting_recipe)."
 					}
 				}
 			}
@@ -73,7 +78,8 @@
 							"apoli:crafting_shapeless",
 							"origins:crafting_shapeless"
 						],
-						"description": "The type of recipe. Either `minecraft:crafting_shaped` or `minecraft:crafting_shapeless`. Other recipe types are not supported."
+						"description": "The type of recipe. Either `minecraft:crafting_shaped` or `minecraft:crafting_shapeless`. Other recipe types are not supported.",
+						"markdownDescription": "The type of recipe. Either `minecraft:crafting_shaped` or `minecraft:crafting_shapeless`. Other recipe types are not supported."
 					}
 				}
 			},
@@ -97,7 +103,8 @@
 								}
 							]
 						},
-						"description": "The items that need to be put in the crafting grid for the recipe."
+						"description": "The items that need to be put in the crafting grid for the recipe.",
+						"markdownDescription": "The items that need to be put in the crafting grid for the recipe."
 					}
 				}
 			}

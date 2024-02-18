@@ -29,8 +29,8 @@
 			"$ref": "$ref(apoli:entity_action)"
 		},
 		"click_type": {
-			"type": "union",
-			"default": "\"secondary\""
+			"enum": ["secondary", "primary"],
+			"default": "secondary"
 		}
 	}
 }

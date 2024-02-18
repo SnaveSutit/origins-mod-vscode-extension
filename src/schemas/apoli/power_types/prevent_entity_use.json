@@ -19,8 +19,7 @@
 			"$ref": "$ref(apoli:item_condition)"
 		},
 		"hands": {
-			"type": "array",
-			"default": "[\"off_hand\", \"main_hand\"]"
+			"$ref": "$ref(apoli:types/hands)"
 		},
 		"result_stack": {
 			"$ref": "$ref(apoli:types/item_stack)"

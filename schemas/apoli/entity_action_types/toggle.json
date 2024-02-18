@@ -8,7 +8,8 @@
 	"properties": {
 		"power": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the power that uses the [Toggle (Power Type)](../power_types/toggle.md)."
+			"description": "The namespace and ID of the power that uses the [Toggle (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/toggle).",
+			"markdownDescription": "The namespace and ID of the power that uses the [Toggle (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/toggle)."
 		}
 	}
 }

@@ -8,7 +8,7 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"comparison": {
-			"type": "comparison"
+			"$ref": "$ref(apoli:types/comparison)"
 		},
 		"value": {
 			"type": "integer"

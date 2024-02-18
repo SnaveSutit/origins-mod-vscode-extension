@@ -6,36 +6,43 @@
 		"should_render": {
 			"type": "boolean",
 			"default": true,
-			"description": "Whether the bar should be visible or not."
+			"description": "Whether the bar should be visible or not.",
+			"markdownDescription": "Whether the bar should be visible or not."
 		},
 		"sprite_location": {
 			"$ref": "identifier.json",
-			"description": "The path to the file in the assets which contains what the bar looks like. See the [List of sprites](../../misc/extras/sprites.md) for a list of files included by default in the mod."
+			"description": "The path to the file in the assets which contains what the bar looks like. See the [List of sprites](https://origins.readthedocs.io/en/latest/types/data_types/hud_render) for a list of files included by default in the mod.",
+			"markdownDescription": "The path to the file in the assets which contains what the bar looks like. See the [List of sprites](https://origins.readthedocs.io/en/latest/types/data_types/hud_render) for a list of files included by default in the mod."
 		},
 		"bar_index": {
 			"type": "integer",
 			"minimum": 0,
 			"default": 0,
-			"description": "The indexed position of the bar on the sprite to use. Please note that indexes start at `0`."
+			"description": "The indexed position of the bar on the sprite to use. Please note that indexes start at `0`.",
+			"markdownDescription": "The indexed position of the bar on the sprite to use. Please note that indexes start at `0`."
 		},
 		"icon_index": {
 			"type": "integer",
 			"minimum": 0,
 			"default": 0,
-			"description": "The indexed position of the icon on the sprite to use. Please note that indexes start at `0`."
+			"description": "The indexed position of the icon on the sprite to use. Please note that indexes start at `0`.",
+			"markdownDescription": "The indexed position of the icon on the sprite to use. Please note that indexes start at `0`."
 		},
 		"condition": {
-			"$ref": "apoli:types/entity_condition",
-			"description": "If set (and `should_render` is true), the bar will only display when the entity with the power fulfills this condition."
+			"$ref": "../entity_condition.json",
+			"description": "If set (and `should_render` is true), the bar will only display when the entity with the power fulfills this condition.",
+			"markdownDescription": "If set (and `should_render` is true), the bar will only display when the entity with the power fulfills this condition."
 		},
 		"inverted": {
 			"type": "boolean",
 			"default": false,
-			"description": "If set to true, inverts the way the hud render process (it'll look like its value is being decreased)."
+			"description": "If set to true, inverts the way the hud render process (it'll look like its value is being decreased).",
+			"markdownDescription": "If set to true, inverts the way the hud render process (it'll look like its value is being decreased)."
 		},
 		"order": {
 			"type": "integer",
-			"description": "If specified, this determines the position of the HUD render when being rendered. The higher the `order` value is, the higher it is on the rendered HUD render stack."
+			"description": "If specified, this determines the position of the HUD render when being rendered. The higher the `order` value is, the higher it is on the rendered HUD render stack.",
+			"markdownDescription": "If specified, this determines the position of the HUD render when being rendered. The higher the `order` value is, the higher it is on the rendered HUD render stack."
 		}
 	}
 }

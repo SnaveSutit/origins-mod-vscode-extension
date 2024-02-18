@@ -5,11 +5,13 @@
 	"properties": {
 		"action_on_add": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and the '**target**' upon the '**target**' being added to the set."
+			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and the '**target**' upon the '**target**' being added to the set.",
+			"markdownDescription": "If specified, this bi-entity action will be executed on either or both the '**actor**' and the '**target**' upon the '**target**' being added to the set."
 		},
 		"action_on_remove": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and the '**target**' upon the '**target**' being removed from the set."
+			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and the '**target**' upon the '**target**' being removed from the set.",
+			"markdownDescription": "If specified, this bi-entity action will be executed on either or both the '**actor**' and the '**target**' upon the '**target**' being removed from the set."
 		}
 	}
 }

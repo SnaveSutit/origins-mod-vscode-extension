@@ -8,7 +8,8 @@
 				"MAIN_HAND",
 				"OFF_HAND"
 			],
-			"description": "Determines which hand is swung. Accepts either `\"MAIN_HAND\"`, `\"OFF_HAND\"`"
+			"description": "Determines which hand is swung. Accepts either `\"MAIN_HAND\"`, `\"OFF_HAND\"`",
+			"markdownDescription": "Determines which hand is swung. Accepts either `\"MAIN_HAND\"`, `\"OFF_HAND\"`"
 		}
 	}
 }

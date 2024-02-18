@@ -8,7 +8,8 @@
 	"properties": {
 		"amount": {
 			"type": "number",
-			"description": "The amount of exhaustion to apply to the player."
+			"description": "The amount of exhaustion to apply to the player.",
+			"markdownDescription": "The amount of exhaustion to apply to the player."
 		}
 	}
 }

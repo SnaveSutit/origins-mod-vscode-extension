@@ -5,48 +5,58 @@
 	"properties": {
 		"inventory_type": {
 			"$ref": "../types/inventory_type.json",
-			"description": "Determines whether to drop the items from the inventory of the entity or the inventory of a power present in the entity."
+			"description": "Determines whether to drop the items from the inventory of the entity or the inventory of a power present in the entity.",
+			"markdownDescription": "Determines whether to drop the items from the inventory of the entity or the inventory of a power present in the entity."
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the entity **before** the items are dropped."
+			"description": "If specified, this action will be executed on the entity **before** the items are dropped.",
+			"markdownDescription": "If specified, this action will be executed on the entity **before** the items are dropped."
 		},
 		"item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this action will be executed on the affected items **before** the affected items are dropped."
+			"$ref": "../item_action.json",
+			"description": "If specified, this action will be executed on the affected items **before** the affected items are dropped.",
+			"markdownDescription": "If specified, this action will be executed on the affected items **before** the affected items are dropped."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, only items which fulfill this condition will be dropped."
+			"$ref": "../item_condition.json",
+			"description": "If specified, only items which fulfill this condition will be dropped.",
+			"markdownDescription": "If specified, only items which fulfill this condition will be dropped."
 		},
 		"slot": {
 			"$ref": "../types/item_slot.json",
-			"description": "If specified, only items in the designated slot will be dropped."
+			"description": "If specified, only items in the designated slot will be dropped.",
+			"markdownDescription": "If specified, only items in the designated slot will be dropped."
 		},
 		"slots": {
 			"type": "array",
 			"items": {
 				"$ref": "../types/item_slot.json"
 			},
-			"description": "If specified, only items in the designated slots will be dropped."
+			"description": "If specified, only items in the designated slots will be dropped.",
+			"markdownDescription": "If specified, only items in the designated slots will be dropped."
 		},
 		"power": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, the items in the inventory of this power will be dropped instead of the items in the entity's inventory if `inventory_type` is set to `\"power\"`."
+			"description": "If specified, the items in the inventory of this power will be dropped instead of the items in the entity's inventory if `inventory_type` is set to `\"power\"`.",
+			"markdownDescription": "If specified, the items in the inventory of this power will be dropped instead of the items in the entity's inventory if `inventory_type` is set to `\"power\"`."
 		},
 		"throw_randomly": {
 			"type": "boolean",
 			"default": false,
-			"description": "If `true`, items will be thrown in random directions instead of being normally dropped, similar to how items are dropped when you die."
+			"description": "If `true`, items will be thrown in random directions instead of being normally dropped, similar to how items are dropped when you die.",
+			"markdownDescription": "If `true`, items will be thrown in random directions instead of being normally dropped, similar to how items are dropped when you die."
 		},
 		"retain_ownership": {
 			"type": "boolean",
 			"default": true,
-			"description": "If `true`, the dropped items will have their `Thrower` NBT set as the `UUID` NBT of the entity that invoked the action."
+			"description": "If `true`, the dropped items will have their `Thrower` NBT set as the `UUID` NBT of the entity that invoked the action.",
+			"markdownDescription": "If `true`, the dropped items will have their `Thrower` NBT set as the `UUID` NBT of the entity that invoked the action."
 		},
 		"amount": {
 			"type": "integer",
-			"description": "If specified, the affected items will be split by this amount."
+			"description": "If specified, the affected items will be split by this amount.",
+			"markdownDescription": "If specified, the affected items will be split by this amount."
 		}
 	}
 }

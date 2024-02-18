@@ -8,11 +8,13 @@
 	"properties": {
 		"type": {
 			"$ref": "identifier.json",
-			"description": "The namespace and ID of the particle type."
+			"description": "The namespace and ID of the particle type.",
+			"markdownDescription": "The namespace and ID of the particle type."
 		},
 		"params": {
 			"type": "string",
-			"description": "The additional parameter for the particle type."
+			"description": "The additional parameter for the particle type.",
+			"markdownDescription": "The additional parameter for the particle type."
 		}
 	}
 }

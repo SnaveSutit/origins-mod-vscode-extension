@@ -5,11 +5,16 @@
 	"properties": {
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the value."
+			"description": "If specified, this modifier will be applied to the value.",
+			"markdownDescription": "If specified, this modifier will be applied to the value."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to the value."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the value.",
+			"markdownDescription": "If specified, these modifiers will be applied to the value."
 		}
 	}
 }

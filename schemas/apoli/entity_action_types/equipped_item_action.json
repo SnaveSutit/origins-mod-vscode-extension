@@ -9,11 +9,13 @@
 	"properties": {
 		"equipment_slot": {
 			"$ref": "../types/equipment_slot.json",
-			"description": "Which equipped item to execute the action on. One of: `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`."
+			"description": "Which equipped item to execute the action on. One of: `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`.",
+			"markdownDescription": "Which equipped item to execute the action on. One of: `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`."
 		},
 		"action": {
-			"$ref": "apoli:item_action",
-			"description": "The item action type to execute on the item stack in the specified equipment slot."
+			"$ref": "../item_action.json",
+			"description": "The item action type to execute on the item stack in the specified equipment slot.",
+			"markdownDescription": "The item action type to execute on the item stack in the specified equipment slot."
 		}
 	}
 }

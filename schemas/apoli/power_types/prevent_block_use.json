@@ -8,7 +8,8 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, only blocks that fulfill this condition are affected."
+			"description": "If specified, only blocks that fulfill this condition are affected.",
+			"markdownDescription": "If specified, only blocks that fulfill this condition are affected."
 		}
 	}
 }

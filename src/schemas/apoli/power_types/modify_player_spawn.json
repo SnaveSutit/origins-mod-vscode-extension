@@ -14,8 +14,8 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"spawn_strategy": {
-			"type": "string",
-			"default": "\"default\""
+			"enum": ["default", "center"],
+			"default": "default"
 		},
 		"dimension_distance_multiplier": {
 			"type": "number"

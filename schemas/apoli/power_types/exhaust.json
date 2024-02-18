@@ -9,11 +9,13 @@
 		"interval": {
 			"type": "integer",
 			"default": 20,
-			"description": "Duration of ticks to wait between applying exhaustion."
+			"description": "Duration of ticks to wait between applying exhaustion.",
+			"markdownDescription": "Duration of ticks to wait between applying exhaustion."
 		},
 		"exhaustion": {
 			"type": "number",
-			"description": "How much exhaustion will be applied each interval."
+			"description": "How much exhaustion will be applied each interval.",
+			"markdownDescription": "How much exhaustion will be applied each interval."
 		}
 	}
 }

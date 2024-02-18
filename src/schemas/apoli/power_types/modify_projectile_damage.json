@@ -4,13 +4,16 @@
 	"type": "object",
 	"properties": {
 		"damage_condition": {
-			"type": "damage condition type"
+			"$ref": "$ref(apoli:damage_condition)"
 		},
 		"modifier": {
 			"$ref": "$ref(apoli:types/attribute_modifier)"
 		},
 		"modifiers": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
 		},
 		"target_condition": {
 			"$ref": "$ref(apoli:entity_condition)"

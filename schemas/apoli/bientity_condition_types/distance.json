@@ -9,11 +9,13 @@
 	"properties": {
 		"comparison": {
 			"$ref": "../types/comparison.json",
-			"description": "How to compare the distance against the specified value."
+			"description": "How to compare the distance against the specified value.",
+			"markdownDescription": "How to compare the distance against the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "The distance (in blocks) to compare the distance between the actor and target to."
+			"description": "The distance (in blocks) to compare the distance between the actor and target to.",
+			"markdownDescription": "The distance (in blocks) to compare the distance between the actor and target to."
 		}
 	}
 }

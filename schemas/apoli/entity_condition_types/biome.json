@@ -5,15 +5,21 @@
 	"properties": {
 		"biome": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, only evaluate the condition to true if the biome the entity is in matches the specified namespace and ID."
+			"description": "If specified, only evaluate the condition to true if the biome the entity is in matches the specified namespace and ID.",
+			"markdownDescription": "If specified, only evaluate the condition to true if the biome the entity is in matches the specified namespace and ID."
 		},
 		"biomes": {
 			"type": "array",
-			"description": "If specified, only evaluate the condition to true if the biome the entity is in matches one of the specified namespace and IDs."
+			"items": {
+				"$ref": "../types/identifier.json"
+			},
+			"description": "If specified, only evaluate the condition to true if the biome the entity is in matches one of the specified namespace and IDs.",
+			"markdownDescription": "If specified, only evaluate the condition to true if the biome the entity is in matches one of the specified namespace and IDs."
 		},
 		"condition": {
-			"type": "biome condition type",
-			"description": "If specified, only evaluate the condition to true if the biome the entity is in fulfills the specified biome condition type."
+			"$ref": "../biome_condition.json",
+			"description": "If specified, only evaluate the condition to true if the biome the entity is in fulfills the specified biome condition type.",
+			"markdownDescription": "If specified, only evaluate the condition to true if the biome the entity is in fulfills the specified biome condition type."
 		}
 	}
 }

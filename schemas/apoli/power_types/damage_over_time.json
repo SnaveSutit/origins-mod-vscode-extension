@@ -9,38 +9,40 @@
 		"interval": {
 			"type": "integer",
 			"default": 20,
-			"description": "Duration of ticks to wait between the damage."
+			"description": "Duration of ticks to wait between the damage.",
+			"markdownDescription": "Duration of ticks to wait between the damage."
 		},
 		"onset_delay": {
 			"type": "integer",
-			"description": "How many ticks the power has to be active in order to apply the first damage. If not set, this will be equal to `interval`."
+			"description": "How many ticks the power has to be active in order to apply the first damage. If not set, this will be equal to `interval`.",
+			"markdownDescription": "How many ticks the power has to be active in order to apply the first damage. If not set, this will be equal to `interval`."
 		},
 		"damage": {
 			"type": "number",
-			"description": "How much damage will be dealt each interval."
+			"description": "How much damage will be dealt each interval.",
+			"markdownDescription": "How much damage will be dealt each interval."
 		},
 		"damage_easy": {
 			"type": "number",
-			"description": "How much damage will be dealt each interval on Easy difficulty. If not set, this will be equal to `damage`."
-		},
-		"damage_source": {
-			"type": "damage source",
-			"default": "**DEPRECATED**",
-			"description": "Use `damage_type` instead. [More information here](https://gist.github.com/apace100/bfbf82a8f9d6bd2db13e4feaf653a6b0)."
+			"description": "How much damage will be dealt each interval on Easy difficulty. If not set, this will be equal to `damage`.",
+			"markdownDescription": "How much damage will be dealt each interval on Easy difficulty. If not set, this will be equal to `damage`."
 		},
 		"damage_type": {
 			"$ref": "../types/identifier.json",
 			"default": "apoli:damage_over_time",
-			"description": "The damage type this power uses."
+			"description": "The damage type this power uses.",
+			"markdownDescription": "The damage type this power uses."
 		},
 		"protection_enchantment": {
 			"$ref": "../types/identifier.json",
-			"description": "If set, the total amount of levels of this enchantment will be counted on the player's armor to increase the `onset_delay`."
+			"description": "If set, the total amount of levels of this enchantment will be counted on the player's armor to increase the `onset_delay`.",
+			"markdownDescription": "If set, the total amount of levels of this enchantment will be counted on the player's armor to increase the `onset_delay`."
 		},
 		"protection_effectiveness": {
 			"type": "number",
 			"default": 1,
-			"description": "If `protection_enchantment` is set, this multiplier scales how effective it will be (1.0 = time the `onset_delay` is increased is the same as with Hydrophobia and Water Protection)."
+			"description": "If `protection_enchantment` is set, this multiplier scales how effective it will be (1.0 = time the `onset_delay` is increased is the same as with Hydrophobia and Water Protection).",
+			"markdownDescription": "If `protection_enchantment` is set, this multiplier scales how effective it will be (1.0 = time the `onset_delay` is increased is the same as with Hydrophobia and Water Protection)."
 		}
 	}
 }

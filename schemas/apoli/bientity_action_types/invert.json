@@ -8,7 +8,8 @@
 	"properties": {
 		"action": {
 			"$ref": "../bientity_action.json",
-			"description": "The bi-entity action to execute which will have its 'target' and 'actor' contexts swapped."
+			"description": "The bi-entity action to execute which will have its 'target' and 'actor' contexts swapped.",
+			"markdownDescription": "The bi-entity action to execute which will have its 'target' and 'actor' contexts swapped."
 		}
 	}
 }

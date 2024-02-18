@@ -9,23 +9,28 @@
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
-			"description": "Interval of ticks this power needs to recharge before the power can be triggered again."
+			"description": "Interval of ticks this power needs to recharge before the power can be triggered again.",
+			"markdownDescription": "Interval of ticks this power needs to recharge before the power can be triggered again."
 		},
 		"speed": {
 			"type": "number",
-			"description": "The speed applied to the player in the upwards direction."
+			"description": "The speed applied to the player in the upwards direction.",
+			"markdownDescription": "The speed applied to the player in the upwards direction."
 		},
 		"hud_render": {
-			"type": "hud render",
-			"description": "Determines how the cooldown of this power is visualized on the HUD."
+			"$ref": "../types/hud_render.json",
+			"description": "Determines how the cooldown of this power is visualized on the HUD.",
+			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		},
 		"sound": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, the sound event with this namespace and ID will be played when the power is triggered."
+			"description": "If specified, the sound event with this namespace and ID will be played when the power is triggered.",
+			"markdownDescription": "If specified, the sound event with this namespace and ID will be played when the power is triggered."
 		},
 		"key": {
-			"type": "key",
-			"description": "Which active key this power should respond to."
+			"$ref": "../types/key.json",
+			"description": "Which active key this power should respond to.",
+			"markdownDescription": "Which active key this power should respond to."
 		}
 	}
 }

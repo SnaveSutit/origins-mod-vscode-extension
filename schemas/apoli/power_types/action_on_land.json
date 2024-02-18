@@ -8,7 +8,8 @@
 	"properties": {
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "The action to execute on the player."
+			"description": "The action to execute on the player.",
+			"markdownDescription": "The action to execute on the player."
 		}
 	}
 }

@@ -3,6 +3,7 @@
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/damage_condition_types/type/",
 	"type": "object",
 	"required": ["damage_type"],
+	"$IGNORED_PROPERTIES": ["damage_type"],
 	"properties": {
 		"projectile": {
 			"$ref": "$ref(apoli:types/identifier)"

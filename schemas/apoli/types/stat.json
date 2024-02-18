@@ -9,11 +9,13 @@
 	"properties": {
 		"type": {
 			"$ref": "identifier.json",
-			"description": "The type of the statistic."
+			"description": "The type of the statistic.",
+			"markdownDescription": "The type of the statistic."
 		},
 		"id": {
 			"$ref": "identifier.json",
-			"description": "The name of the statistic; may depend on the specified type of the statistic."
+			"description": "The name of the statistic; may depend on the specified type of the statistic.",
+			"markdownDescription": "The name of the statistic; may depend on the specified type of the statistic."
 		}
 	}
 }

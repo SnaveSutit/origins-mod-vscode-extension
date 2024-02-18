@@ -8,7 +8,11 @@
 	"properties": {
 		"conditions": {
 			"type": "array",
-			"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled."
+			"items": {
+				"$ref": "$$condition_type"
+			},
+			"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+			"markdownDescription": "All of these condition types have to be fulfilled in order for this condition to be fulfilled."
 		}
 	}
 }

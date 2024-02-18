@@ -8,8 +8,7 @@
 			"default": true
 		},
 		"key": {
-			"type": "key",
-			"default": "{\"key\": \"key.origins.primary_active\"}"
+			"$ref": "$ref(apoli:types/key)"
 		},
 		"retain_state": {
 			"type": "boolean",

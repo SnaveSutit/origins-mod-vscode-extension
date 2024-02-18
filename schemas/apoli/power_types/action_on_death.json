@@ -8,15 +8,18 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "The action to be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "The action to be executed on either or both the '**actor**' and '**target**' entities.",
+			"markdownDescription": "The action to be executed on either or both the '**actor**' and '**target**' entities."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
 		},
 		"damage_condition": {
-			"type": "damage condition type",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity."
+			"$ref": "../damage_condition.json",
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity."
 		}
 	}
 }

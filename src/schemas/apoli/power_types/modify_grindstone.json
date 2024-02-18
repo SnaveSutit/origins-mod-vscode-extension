@@ -4,8 +4,8 @@
 	"type": "object",
 	"properties": {
 		"result_type": {
-			"type": "string",
-			"default": "\"unchanged\""
+			"enum": ["unchanged", "specified", "from_top", "from_bottom"],
+			"default": "unchanged"
 		},
 		"entity_action": {
 			"$ref": "$ref(apoli:entity_action)"

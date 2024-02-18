@@ -8,15 +8,18 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, only modify how the blocks that fulfills this condition would look like."
+			"description": "If specified, only modify how the blocks that fulfills this condition would look like.",
+			"markdownDescription": "If specified, only modify how the blocks that fulfills this condition would look like."
 		},
 		"fluid_condition": {
-			"type": "fluid condition type",
-			"description": "If specified, only modify how the fluids that fulfills this condition would look like."
+			"$ref": "../fluid_condition.json",
+			"description": "If specified, only modify how the fluids that fulfills this condition would look like.",
+			"markdownDescription": "If specified, only modify how the fluids that fulfills this condition would look like."
 		},
 		"fluid": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the replacement fluid."
+			"description": "The namespace and ID of the replacement fluid.",
+			"markdownDescription": "The namespace and ID of the replacement fluid."
 		}
 	}
 }

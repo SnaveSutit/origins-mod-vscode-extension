@@ -8,11 +8,13 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, only blocks that fulfill this condition are affected."
+			"description": "If specified, only blocks that fulfill this condition are affected.",
+			"markdownDescription": "If specified, only blocks that fulfill this condition are affected."
 		},
 		"allow": {
 			"type": "boolean",
-			"description": "Determines whether the player is be able to harvest the block."
+			"description": "Determines whether the player is be able to harvest the block.",
+			"markdownDescription": "Determines whether the player is be able to harvest the block."
 		}
 	}
 }

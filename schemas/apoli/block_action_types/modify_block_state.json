@@ -8,31 +8,37 @@
 	"properties": {
 		"property": {
 			"type": "string",
-			"description": "The name of the property that will be modified. Examples are `facing` or `age`. See [Minecraft Wiki: Block States (List of block states)](https://minecraft.wiki/w/Block_states#List_of_block_states) for possible values."
+			"description": "The name of the property that will be modified. Examples are `facing` or `age`. See [Minecraft Wiki: Block States (List of block states)](https://origins.readthedocs.io/en/latest/types/block_action_types/modify_block_state) for possible values.",
+			"markdownDescription": "The name of the property that will be modified. Examples are `facing` or `age`. See [Minecraft Wiki: Block States (List of block states)](https://origins.readthedocs.io/en/latest/types/block_action_types/modify_block_state) for possible values."
 		},
 		"operation": {
 			"enum": [
 				"set",
 				"add"
 			],
-			"description": "Determines how the value specified in the `change` field is operated on the specified property. Accepts `\"add\"` or `\"set\"`."
+			"description": "Determines how the value specified in the `change` field is operated on the specified property. Accepts `\"add\"` or `\"set\"`.",
+			"markdownDescription": "Determines how the value specified in the `change` field is operated on the specified property. Accepts `\"add\"` or `\"set\"`."
 		},
 		"change": {
 			"type": "number",
-			"description": "If specified, the value to add, remove or set to/from the specified property if the specified property is an integer."
+			"description": "If specified, the value to add, remove or set to/from the specified property if the specified property is an integer.",
+			"markdownDescription": "If specified, the value to add, remove or set to/from the specified property if the specified property is an integer."
 		},
 		"value": {
 			"type": "boolean",
-			"description": "If specified, the boolean to use as the new value for the specified property if the specified property is a boolean."
+			"description": "If specified, the boolean to use as the new value for the specified property if the specified property is a boolean.",
+			"markdownDescription": "If specified, the boolean to use as the new value for the specified property if the specified property is a boolean."
 		},
 		"enum": {
 			"type": "string",
-			"description": "If specified, the string to use as the new value for the specified property if the specified property is a string."
+			"description": "If specified, the string to use as the new value for the specified property if the specified property is a string.",
+			"markdownDescription": "If specified, the string to use as the new value for the specified property if the specified property is a string."
 		},
 		"cycle": {
 			"type": "boolean",
 			"default": false,
-			"description": "If set to true, changes the property to the next state in the cycle, ignoring all other optional fields. All property types can use this operation."
+			"description": "If set to true, changes the property to the next state in the cycle, ignoring all other optional fields. All property types can use this operation.",
+			"markdownDescription": "If set to true, changes the property to the next state in the cycle, ignoring all other optional fields. All property types can use this operation."
 		}
 	}
 }

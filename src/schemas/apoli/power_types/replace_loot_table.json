@@ -5,7 +5,12 @@
 	"required": ["replace"],
 	"properties": {
 		"replace": {
-			"type": "object"
+			"type": "object",
+			"patternProperties": {
+				"^([a-z0-9_\\/\\-\\.]+:)?[a-z0-9_\\/\\-\\.]+$": {
+					"$ref": "$ref(apoli:types/identifier)"
+				}
+			}
 		},
 		"bientity_condition": {
 			"$ref": "$ref(apoli:bientity_condition)"

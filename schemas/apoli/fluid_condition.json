@@ -1,0 +1,64 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/fluid_condition_types/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:empty",
+							"origins:empty"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "fluid_condition_types/empty.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_tag",
+							"origins:in_tag"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "fluid_condition_types/in_tag.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:still",
+							"origins:still"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "fluid_condition_types/still.json"
+			}
+		}
+	]
+}

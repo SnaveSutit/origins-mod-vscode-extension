@@ -10,15 +10,18 @@
 	"properties": {
 		"set": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of the power."
+			"description": "The ID of the power.",
+			"markdownDescription": "The ID of the power."
 		},
 		"comparison": {
-			"type": "comparison",
-			"description": "Determines how the amount of entities stored in the power will be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "Determines how the amount of entities stored in the power will be compared to the specified value.",
+			"markdownDescription": "Determines how the amount of entities stored in the power will be compared to the specified value."
 		},
 		"value": {
 			"type": "integer",
-			"description": "The specified value to compare the amount of entities stored in the power to."
+			"description": "The specified value to compare the amount of entities stored in the power to.",
+			"markdownDescription": "The specified value to compare the amount of entities stored in the power to."
 		}
 	}
 }

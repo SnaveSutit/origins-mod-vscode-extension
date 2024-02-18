@@ -8,7 +8,8 @@
 	"properties": {
 		"condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "The entity condition type to check on either actor or target entities."
+			"description": "The entity condition type to check on either actor or target entities.",
+			"markdownDescription": "The entity condition type to check on either actor or target entities."
 		}
 	}
 }

@@ -9,18 +9,21 @@
 	"properties": {
 		"resource": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the power that uses the [Resource (Power Type)](../power_types/resource.md) or has a built-in cooldown."
+			"description": "The namespace and ID of the power that uses the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/change_resource) or has a built-in cooldown.",
+			"markdownDescription": "The namespace and ID of the power that uses the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/change_resource) or has a built-in cooldown."
 		},
 		"change": {
 			"type": "integer",
-			"description": "This value will be added to the resource (won't go below `min` or above `max` of the [Resource (Power Type)](../power_types/resource.md))."
+			"description": "This value will be added to the resource (won't go below `min` or above `max` of the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/change_resource)).",
+			"markdownDescription": "This value will be added to the resource (won't go below `min` or above `max` of the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/change_resource))."
 		},
 		"operation": {
 			"enum": [
 				"add",
 				"set"
 			],
-			"description": "Determines if the action should add or set the value of the resource. Accepts `\"add\"` or `\"set\"`."
+			"description": "Determines if the action should add or set the value of the resource. Accepts `\"add\"` or `\"set\"`.",
+			"markdownDescription": "Determines if the action should add or set the value of the resource. Accepts `\"add\"` or `\"set\"`."
 		}
 	}
 }

@@ -15,12 +15,10 @@
 			"default": true
 		},
 		"shape_type": {
-			"$ref": "$ref(apoli:types/shape_type)",
-			"default": "\"visual\""
+			"$ref": "$ref(apoli:types/shape_type)"
 		},
 		"fluid_handling": {
-			"$ref": "$ref(apoli:types/fuild_handling)",
-			"default": "\"any\""
+			"$ref": "$ref(apoli:types/fluid_handling)"
 		},
 		"space": {
 			"$ref": "$ref(apoli:types/space)"

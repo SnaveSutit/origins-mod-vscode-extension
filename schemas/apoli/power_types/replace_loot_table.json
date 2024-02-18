@@ -8,24 +8,34 @@
 	"properties": {
 		"replace": {
 			"type": "object",
-			"description": "An object with `\"key\": \"value\"` pairs that determine which loot table (`\"key\"`) will be replaced with a new loot table (`\"value\"`)."
+			"patternProperties": {
+				"^([a-z0-9_\\/\\-\\.]+:)?[a-z0-9_\\/\\-\\.]+$": {
+					"$ref": "../types/identifier.json"
+				}
+			},
+			"description": "An object with `\"key\": \"value\"` pairs that determine which loot table (`\"key\"`) will be replaced with a new loot table (`\"value\"`).",
+			"markdownDescription": "An object with `\"key\": \"value\"` pairs that determine which loot table (`\"key\"`) will be replaced with a new loot table (`\"value\"`)."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the loot tables will only be replaced if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the loot tables will only be replaced if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, the loot tables will only be replaced if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
 		},
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the loot tables will only be replaced if the block at the context of the loot tables fulfill this condition."
+			"description": "If specified, the loot tables will only be replaced if the block at the context of the loot tables fulfill this condition.",
+			"markdownDescription": "If specified, the loot tables will only be replaced if the block at the context of the loot tables fulfill this condition."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, the loot tables will only be replaced if the item in the context of the loot tables fulfill this condition."
+			"$ref": "../item_condition.json",
+			"description": "If specified, the loot tables will only be replaced if the item in the context of the loot tables fulfill this condition.",
+			"markdownDescription": "If specified, the loot tables will only be replaced if the item in the context of the loot tables fulfill this condition."
 		},
 		"priority": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines the application priority of the power."
+			"description": "Determines the application priority of the power.",
+			"markdownDescription": "Determines the application priority of the power."
 		}
 	}
 }

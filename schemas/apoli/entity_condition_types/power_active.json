@@ -8,7 +8,8 @@
 	"properties": {
 		"power": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the power which will be checked for being active."
+			"description": "The namespace and ID of the power which will be checked for being active.",
+			"markdownDescription": "The namespace and ID of the power which will be checked for being active."
 		}
 	}
 }

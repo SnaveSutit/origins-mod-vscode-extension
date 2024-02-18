@@ -12,10 +12,10 @@
 			"default": 1
 		},
 		"damage_condition": {
-			"type": "damage condition type"
+			"$ref": "$ref(apoli:damage_condition)"
 		},
 		"hud_render": {
-			"type": "hud render"
+			"$ref": "$ref(apoli:types/hud_render)"
 		}
 	}
 }

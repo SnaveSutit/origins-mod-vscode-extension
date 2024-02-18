@@ -7,8 +7,9 @@
 	],
 	"properties": {
 		"recipe": {
-			"type": "crafting recipe",
-			"description": "The recipe to craft, including an `id` field which can be any arbitrary (but unique) identifier."
+			"$ref": "../types/crafting_recipe.json",
+			"description": "The recipe to craft, including an `id` field which can be any arbitrary (but unique) identifier.",
+			"markdownDescription": "The recipe to craft, including an `id` field which can be any arbitrary (but unique) identifier."
 		}
 	}
 }

@@ -7,7 +7,10 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"events": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/identifier)"
+			}
 		},
 		"tag": {
 			"$ref": "$ref(apoli:types/identifier)"

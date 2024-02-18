@@ -8,12 +8,14 @@
 	"properties": {
 		"set": {
 			"type": "string",
-			"description": "The ID of the power to add the target entity into."
+			"description": "The ID of the power to add the target entity into.",
+			"markdownDescription": "The ID of the power to add the target entity into."
 		},
 		"time_limit": {
 			"type": "integer",
 			"minimum": 0,
-			"description": "If specified, this will determine how long the target entity will be stored in the specified power in ticks."
+			"description": "If specified, this will determine how long the target entity will be stored in the specified power in ticks.",
+			"markdownDescription": "If specified, this will determine how long the target entity will be stored in the specified power in ticks."
 		}
 	}
 }

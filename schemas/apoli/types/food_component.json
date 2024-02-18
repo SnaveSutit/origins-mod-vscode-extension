@@ -9,37 +9,44 @@
 	"properties": {
 		"hunger": {
 			"type": "integer",
-			"description": "The amount of hunger shanks the food component recovers upon consumption."
+			"description": "The amount of hunger shanks the food component recovers upon consumption.",
+			"markdownDescription": "The amount of hunger shanks the food component recovers upon consumption."
 		},
 		"saturation": {
 			"type": "number",
-			"description": "The amount of saturation to give the player upon consumption."
+			"description": "The amount of saturation to give the player upon consumption.",
+			"markdownDescription": "The amount of saturation to give the player upon consumption."
 		},
 		"meat": {
 			"type": "boolean",
 			"default": false,
-			"description": "Whether this food component counts as meat or not."
+			"description": "Whether this food component counts as meat or not.",
+			"markdownDescription": "Whether this food component counts as meat or not."
 		},
 		"always_edible": {
 			"type": "boolean",
 			"default": false,
-			"description": "Whether this food component is edible at full hunger or not."
+			"description": "Whether this food component is edible at full hunger or not.",
+			"markdownDescription": "Whether this food component is edible at full hunger or not."
 		},
 		"snack": {
 			"type": "boolean",
 			"default": false,
-			"description": "Whether this food component takes as long as dried kelp to eat (16 ticks) or not (32 ticks)."
+			"description": "Whether this food component takes as long as dried kelp to eat (16 ticks) or not (32 ticks).",
+			"markdownDescription": "Whether this food component takes as long as dried kelp to eat (16 ticks) or not (32 ticks)."
 		},
 		"effect": {
 			"$ref": "status_effect_instance.json",
-			"description": "A status effect and the chance of it triggering upon consuming something with this food component."
+			"description": "A status effect and the chance of it triggering upon consuming something with this food component.",
+			"markdownDescription": "A status effect and the chance of it triggering upon consuming something with this food component."
 		},
 		"effects": {
 			"type": "array",
 			"items": {
 				"$ref": "status_effect_instance.json"
 			},
-			"description": "A status effect and the chance of it triggering upon consuming something with this food component."
+			"description": "A status effect and the chance of it triggering upon consuming something with this food component.",
+			"markdownDescription": "A status effect and the chance of it triggering upon consuming something with this food component."
 		}
 	}
 }

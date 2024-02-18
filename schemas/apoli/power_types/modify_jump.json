@@ -5,15 +5,21 @@
 	"properties": {
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the upwards velocity."
+			"description": "If specified, this modifier will be applied to the upwards velocity.",
+			"markdownDescription": "If specified, this modifier will be applied to the upwards velocity."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to the upwards velocity."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the upwards velocity.",
+			"markdownDescription": "If specified, these modifiers will be applied to the upwards velocity."
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the entity that has the power whenever the entity jumps."
+			"description": "If specified, this action will be executed on the entity that has the power whenever the entity jumps.",
+			"markdownDescription": "If specified, this action will be executed on the entity that has the power whenever the entity jumps."
 		}
 	}
 }

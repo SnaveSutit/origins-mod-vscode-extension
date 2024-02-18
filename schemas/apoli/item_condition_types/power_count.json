@@ -9,15 +9,18 @@
 	"properties": {
 		"slot": {
 			"type": "string",
-			"description": "If specified, this will check how many powers are assigned to this equipment slot. Accepts one of `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, `\"mainhand\"` or `\"offhand\"`."
+			"description": "If specified, this will check how many powers are assigned to this equipment slot. Accepts one of `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, `\"mainhand\"` or `\"offhand\"`.",
+			"markdownDescription": "If specified, this will check how many powers are assigned to this equipment slot. Accepts one of `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, `\"mainhand\"` or `\"offhand\"`."
 		},
 		"comparison": {
-			"type": "comparison",
-			"description": "Determines how the amount of powers embedded in the item is compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "Determines how the amount of powers embedded in the item is compared to the specified value.",
+			"markdownDescription": "Determines how the amount of powers embedded in the item is compared to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "The value to compare the amount of powers embedded in the item to."
+			"description": "The value to compare the amount of powers embedded in the item to.",
+			"markdownDescription": "The value to compare the amount of powers embedded in the item to."
 		}
 	}
 }

@@ -10,15 +10,18 @@
 	"properties": {
 		"attribute": {
 			"$ref": "../types/identifier.json",
-			"description": "ID of the attribute of which the value should be checked. See [Minecraft Wiki: Attribute (Attributes)](https://minecraft.wiki/w/Attribute#Attributes) for a list of vanilla attributes that can be checked for."
+			"description": "ID of the attribute of which the value should be checked. See [Minecraft Wiki: Attribute (Attributes)](https://origins.readthedocs.io/en/latest/types/entity_condition_types/attribute) for a list of vanilla attributes that can be checked for.",
+			"markdownDescription": "ID of the attribute of which the value should be checked. See [Minecraft Wiki: Attribute (Attributes)](https://origins.readthedocs.io/en/latest/types/entity_condition_types/attribute) for a list of vanilla attributes that can be checked for."
 		},
 		"comparison": {
-			"type": "comparison",
-			"description": "How to compare the attribute's value to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How to compare the attribute's value to the specified value.",
+			"markdownDescription": "How to compare the attribute's value to the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "The value to compare the attribute's value to."
+			"description": "The value to compare the attribute's value to.",
+			"markdownDescription": "The value to compare the attribute's value to."
 		}
 	}
 }

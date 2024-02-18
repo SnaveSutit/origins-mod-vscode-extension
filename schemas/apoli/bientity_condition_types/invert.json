@@ -8,7 +8,8 @@
 	"properties": {
 		"condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "The bi-entity condition type to check which will have its 'target' and 'actor' contexts swapped."
+			"description": "The bi-entity condition type to check which will have its 'target' and 'actor' contexts swapped.",
+			"markdownDescription": "The bi-entity condition type to check which will have its 'target' and 'actor' contexts swapped."
 		}
 	}
 }

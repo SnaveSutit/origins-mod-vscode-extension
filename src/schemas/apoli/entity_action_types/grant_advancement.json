@@ -8,7 +8,11 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"criteria": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"uniqueItems": true
 		},
 		"criterion": {
 			"type": "string"

@@ -10,15 +10,18 @@
 	"properties": {
 		"command": {
 			"type": "string",
-			"description": "The command to execute."
+			"description": "The command to execute.",
+			"markdownDescription": "The command to execute."
 		},
 		"comparison": {
-			"type": "comparison",
-			"description": "How to compare the stored result of the specified command to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How to compare the stored result of the specified command to the specified value.",
+			"markdownDescription": "How to compare the stored result of the specified command to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "The value to compare the stored result of the specified command to."
+			"description": "The value to compare the stored result of the specified command to.",
+			"markdownDescription": "The value to compare the stored result of the specified command to."
 		}
 	}
 }

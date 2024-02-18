@@ -10,15 +10,18 @@
 	"properties": {
 		"fluid": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the fluid tag of which the height should be checked. Most important examples: `minecraft:water` and `minecraft:lava`."
+			"description": "The namespace and ID of the fluid tag of which the height should be checked. Most important examples: `minecraft:water` and `minecraft:lava`.",
+			"markdownDescription": "The namespace and ID of the fluid tag of which the height should be checked. Most important examples: `minecraft:water` and `minecraft:lava`."
 		},
 		"comparison": {
-			"type": "comparison",
-			"description": "How the fluid height should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the fluid height should be compared to the specified value.",
+			"markdownDescription": "How the fluid height should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "Which value the fluid height should be compared to."
+			"description": "Which value the fluid height should be compared to.",
+			"markdownDescription": "Which value the fluid height should be compared to."
 		}
 	}
 }

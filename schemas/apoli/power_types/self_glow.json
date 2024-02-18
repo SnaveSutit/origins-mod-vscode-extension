@@ -4,32 +4,38 @@
 	"type": "object",
 	"properties": {
 		"entity_condition": {
-			"$ref": "apoli:entity_condition",
-			"description": "If specified, only entities that fulfills this condition will see the entity that has the power glow."
+			"$ref": "../entity_condition.json",
+			"description": "If specified, only entities that fulfills this condition will see the entity that has the power glow.",
+			"markdownDescription": "If specified, only entities that fulfills this condition will see the entity that has the power glow."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If set, only entities which fulfill this bi-entity condition in relation to the entity that has the power will see the entity that has the power glow."
+			"description": "If set, only entities which fulfill this bi-entity condition in relation to the entity that has the power will see the entity that has the power glow.",
+			"markdownDescription": "If set, only entities which fulfill this bi-entity condition in relation to the entity that has the power will see the entity that has the power glow."
 		},
 		"use_teams": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines whether glowing entities should use their team's color with their glow. If set to false, the entity will instead use the `red`, `green` and `blue` fields within this power type."
+			"description": "Determines whether glowing entities should use their team's color with their glow. If set to false, the entity will instead use the `red`, `green` and `blue` fields within this power type.",
+			"markdownDescription": "Determines whether glowing entities should use their team's color with their glow. If set to false, the entity will instead use the `red`, `green` and `blue` fields within this power type."
 		},
 		"red": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the red component of the glow will be multiplied. Range: 0.0 - 1.0."
+			"description": "Value by which the red component of the glow will be multiplied. Range: 0.0 - 1.0.",
+			"markdownDescription": "Value by which the red component of the glow will be multiplied. Range: 0.0 - 1.0."
 		},
 		"green": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the green component of the glow will be multiplied. Range: 0.0 - 1.0."
+			"description": "Value by which the green component of the glow will be multiplied. Range: 0.0 - 1.0.",
+			"markdownDescription": "Value by which the green component of the glow will be multiplied. Range: 0.0 - 1.0."
 		},
 		"blue": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the blue component of the glow will be multiplied. Range: 0.0 - 1.0."
+			"description": "Value by which the blue component of the glow will be multiplied. Range: 0.0 - 1.0.",
+			"markdownDescription": "Value by which the blue component of the glow will be multiplied. Range: 0.0 - 1.0."
 		}
 	}
 }

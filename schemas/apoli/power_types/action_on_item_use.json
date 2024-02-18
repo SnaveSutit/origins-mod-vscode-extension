@@ -5,25 +5,35 @@
 	"properties": {
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the player after they use an item."
+			"description": "If specified, this action will be executed on the player after they use an item.",
+			"markdownDescription": "If specified, this action will be executed on the player after they use an item."
 		},
 		"item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this action will be executed on the _remaining_ item."
+			"$ref": "../item_action.json",
+			"description": "If specified, this action will be executed on the _remaining_ item.",
+			"markdownDescription": "If specified, this action will be executed on the _remaining_ item."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, the actions will only execute if this condition is fulfilled by the item _before use._"
+			"$ref": "../item_condition.json",
+			"description": "If specified, the actions will only execute if this condition is fulfilled by the item _before use._",
+			"markdownDescription": "If specified, the actions will only execute if this condition is fulfilled by the item _before use._"
 		},
 		"trigger": {
-			"type": "string",
-			"default": "\"finish\"",
-			"description": "Defines when the action is executed, see below table for accepted values."
+			"enum": [
+				"finish",
+				"start",
+				"stop",
+				"during",
+				"instant"
+			],
+			"description": "Defines when the action is executed, see below table for accepted values.",
+			"markdownDescription": "Defines when the action is executed, see below table for accepted values."
 		},
 		"priority": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines the execution priority of the power."
+			"description": "Determines the execution priority of the power.",
+			"markdownDescription": "Determines the execution priority of the power."
 		}
 	}
 }

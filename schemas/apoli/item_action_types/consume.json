@@ -6,7 +6,8 @@
 		"amount": {
 			"type": "integer",
 			"default": 1,
-			"description": "The amount of items to remove."
+			"description": "The amount of items to remove.",
+			"markdownDescription": "The amount of items to remove."
 		}
 	}
 }

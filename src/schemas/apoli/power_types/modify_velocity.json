@@ -5,13 +5,19 @@
 	"properties": {
 		"axes": {
 			"type": "array",
-			"default": "[\"x\",\"y\",\"z\"]"
+			"items": {
+				"enum": ["x", "y", "z"]
+			},
+			"uniqueItems": true
 		},
 		"modifier": {
 			"$ref": "$ref(apoli:types/attribute_modifier)"
 		},
 		"modifiers": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
 		}
 	}
 }

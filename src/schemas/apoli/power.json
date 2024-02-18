@@ -2,10 +2,8 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/power/",
 	"type": "object",
+	"required": ["type"],
 	"properties": {
-		"type": {
-			"$ref": "$ref(apoli:types/identifier)"
-		},
 		"name": {
 			"$ref": "$ref(apoli:types/text_component)"
 		},
@@ -29,5 +27,26 @@
 				"$ref": "$ref(apoli:badge)"
 			}
 		}
-	}
+	},
+
+	"$IMPORT": {
+		"type": "import_files_into_array",
+		"path": "$ref(apoli:power_types)",
+		"output_key": "allOf",
+		"schemaStructure": {
+			"if": {
+				"required": ["type"],
+				"properties": {
+					"type": {
+						"enum": ["apoli:$$fileName", "origins:$$fileName"]
+					}
+				}
+			},
+			"then": {
+				"$ref": "$$fileRef"
+			}
+		}
+	},
+
+	"allOf": []
 }

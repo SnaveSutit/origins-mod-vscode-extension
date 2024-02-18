@@ -4,12 +4,17 @@
 	"type": "object",
 	"properties": {
 		"feature": {
-			"type": "feature renderer",
-			"description": "If specified, this feature renderer will not be rendered."
+			"$ref": "../types/feature_renderer.json",
+			"description": "If specified, this feature renderer will not be rendered.",
+			"markdownDescription": "If specified, this feature renderer will not be rendered."
 		},
 		"features": {
 			"type": "array",
-			"description": "If specified, these feature renderers will not be rendered."
+			"items": {
+				"$ref": "../types/feature_renderer.json"
+			},
+			"description": "If specified, these feature renderers will not be rendered.",
+			"markdownDescription": "If specified, these feature renderers will not be rendered."
 		}
 	}
 }

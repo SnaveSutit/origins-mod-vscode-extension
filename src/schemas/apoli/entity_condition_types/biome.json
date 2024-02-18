@@ -7,10 +7,13 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"biomes": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/identifier)"
+			}
 		},
 		"condition": {
-			"type": "biome condition type"
+			"$ref": "$ref(apoli:biome_condition)"
 		}
 	}
 }

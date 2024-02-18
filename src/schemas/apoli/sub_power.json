@@ -1,0 +1,35 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/power/",
+	"type": "object",
+	"required": ["type"],
+	"$IGNORED_PROPERTIES": [
+		"name",
+		"description",
+		"hidden",
+		"condition",
+		"loading_priority",
+		"badges"
+	],
+
+	"$IMPORT": {
+		"type": "import_files_into_array",
+		"path": "$ref(apoli:power_types)",
+		"output_key": "allOf",
+		"schemaStructure": {
+			"if": {
+				"required": ["type"],
+				"properties": {
+					"type": {
+						"enum": ["apoli:$$fileName", "origins:$$fileName"]
+					}
+				}
+			},
+			"then": {
+				"$ref": "$$fileRef"
+			}
+		}
+	},
+
+	"allOf": []
+}

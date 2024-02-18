@@ -9,11 +9,13 @@
 	"properties": {
 		"stat": {
 			"$ref": "../types/stat.json",
-			"description": "The type and name of the statistic to be modified."
+			"description": "The type and name of the statistic to be modified.",
+			"markdownDescription": "The type and name of the statistic to be modified."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "This modifier will be applied to the current value of the statistic specified."
+			"description": "This modifier will be applied to the current value of the statistic specified.",
+			"markdownDescription": "This modifier will be applied to the current value of the statistic specified."
 		}
 	}
 }

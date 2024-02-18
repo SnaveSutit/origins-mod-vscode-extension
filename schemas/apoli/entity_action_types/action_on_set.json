@@ -9,25 +9,30 @@
 	"properties": {
 		"set": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of the power."
+			"description": "The ID of the power.",
+			"markdownDescription": "The ID of the power."
 		},
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "The bi-entity action to execute on both or either the actor and target."
+			"description": "The bi-entity action to execute on both or either the actor and target.",
+			"markdownDescription": "The bi-entity action to execute on both or either the actor and target."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, only execute the bi-entity action if this bi-entity condition is fulfilled by both or either the actor and target."
+			"description": "If specified, only execute the bi-entity action if this bi-entity condition is fulfilled by both or either the actor and target.",
+			"markdownDescription": "If specified, only execute the bi-entity action if this bi-entity condition is fulfilled by both or either the actor and target."
 		},
 		"limit": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines the max amount of times the entity action type should iterate and execute the bi-entity action on the entities stored within the power. If the value is less than or equal to `0`, then there will be no limit."
+			"description": "Determines the max amount of times the entity action type should iterate and execute the bi-entity action on the entities stored within the power. If the value is less than or equal to `0`, then there will be no limit.",
+			"markdownDescription": "Determines the max amount of times the entity action type should iterate and execute the bi-entity action on the entities stored within the power. If the value is less than or equal to `0`, then there will be no limit."
 		},
 		"reverse": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines whether to reverse the order of the entities within the power when processing."
+			"description": "Determines whether to reverse the order of the entities within the power when processing.",
+			"markdownDescription": "Determines whether to reverse the order of the entities within the power when processing."
 		}
 	}
 }

@@ -8,61 +8,74 @@
 	"properties": {
 		"entity_type": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of the entity type that will be fired."
+			"description": "The ID of the entity type that will be fired.",
+			"markdownDescription": "The ID of the entity type that will be fired."
 		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
-			"description": "Interval of ticks this power needs to recharge before the power can be triggered again."
+			"description": "Interval of ticks this power needs to recharge before the power can be triggered again.",
+			"markdownDescription": "Interval of ticks this power needs to recharge before the power can be triggered again."
 		},
 		"hud_render": {
-			"type": "hud render",
-			"description": "Determines how the cooldown of this power is visualized on the HUD."
+			"$ref": "../types/hud_render.json",
+			"description": "Determines how the cooldown of this power is visualized on the HUD.",
+			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		},
 		"count": {
 			"type": "integer",
 			"default": 1,
-			"description": "The amount of projectiles to fire each use."
+			"description": "The amount of projectiles to fire each use.",
+			"markdownDescription": "The amount of projectiles to fire each use."
 		},
 		"interval": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines the interval for firing multiple projectiles consecutively (in ticks). If set to 0, it will fire all the projectiles at the same tick."
+			"description": "Determines the interval for firing multiple projectiles consecutively (in ticks). If set to 0, it will fire all the projectiles at the same tick.",
+			"markdownDescription": "Determines the interval for firing multiple projectiles consecutively (in ticks). If set to 0, it will fire all the projectiles at the same tick."
 		},
 		"start_delay": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines how long the start of the firing process is delayed (in ticks)."
+			"description": "Determines how long the start of the firing process is delayed (in ticks).",
+			"markdownDescription": "Determines how long the start of the firing process is delayed (in ticks)."
 		},
 		"speed": {
 			"type": "number",
 			"default": 1.5,
-			"description": "The speed applied to the fired projectile."
+			"description": "The speed applied to the fired projectile.",
+			"markdownDescription": "The speed applied to the fired projectile."
 		},
 		"divergence": {
 			"type": "number",
 			"default": 1,
-			"description": "How much each projectile fired is affected by random spread."
+			"description": "How much each projectile fired is affected by random spread.",
+			"markdownDescription": "How much each projectile fired is affected by random spread."
 		},
 		"sound": {
 			"$ref": "../types/identifier.json",
-			"description": "If set, the sound with this ID will be played when the power is used."
+			"description": "If set, the sound with this ID will be played when the power is used.",
+			"markdownDescription": "If set, the sound with this ID will be played when the power is used."
 		},
 		"tag": {
 			"$ref": "../types/nbt.json",
-			"description": "NBT data of the entity."
+			"description": "NBT data of the entity.",
+			"markdownDescription": "NBT data of the entity."
 		},
 		"key": {
-			"type": "key",
-			"description": "Which active key this power should respond to. If none is specified, this power will use the primary active power key (by default G)."
+			"$ref": "../types/key.json",
+			"description": "Which active key this power should respond to. If none is specified, this power will use the primary active power key (by default G).",
+			"markdownDescription": "Which active key this power should respond to. If none is specified, this power will use the primary active power key (by default G)."
 		},
 		"projectile_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this entity action will be executed on the projectile or entity that will be launched."
+			"description": "If specified, this entity action will be executed on the projectile or entity that will be launched.",
+			"markdownDescription": "If specified, this entity action will be executed on the projectile or entity that will be launched."
 		},
 		"shooter_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this entity action will be executed on the entity that has the power."
+			"description": "If specified, this entity action will be executed on the entity that has the power.",
+			"markdownDescription": "If specified, this entity action will be executed on the entity that has the power."
 		}
 	}
 }

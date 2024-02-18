@@ -4,12 +4,17 @@
 	"type": "object",
 	"properties": {
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, only make the items that fulfill the specified item condition type persist in the entity's inventory."
+			"$ref": "../item_condition.json",
+			"description": "If specified, only make the items that fulfill the specified item condition type persist in the entity's inventory.",
+			"markdownDescription": "If specified, only make the items that fulfill the specified item condition type persist in the entity's inventory."
 		},
 		"slots": {
 			"type": "array",
-			"description": "If specified, only make the items that are in the listed inventory slots persist in the entity's inventory. See [Positioned Item Stack Slots](../../misc/extras/positioned_item_stack_slots.md) for possible values."
+			"items": {
+				"type": "integer"
+			},
+			"description": "If specified, only make the items that are in the listed inventory slots persist in the entity's inventory. See [Positioned Item Stack Slots](https://origins.readthedocs.io/en/latest/types/power_types/keep_inventory) for possible values.",
+			"markdownDescription": "If specified, only make the items that are in the listed inventory slots persist in the entity's inventory. See [Positioned Item Stack Slots](https://origins.readthedocs.io/en/latest/types/power_types/keep_inventory) for possible values."
 		}
 	}
 }

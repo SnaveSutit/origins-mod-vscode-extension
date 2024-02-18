@@ -8,14 +8,13 @@
 			"$ref": "$ref(apoli:entity_action)"
 		},
 		"damage_condition": {
-			"type": "damage condition type"
+			"$ref": "$ref(apoli:damage_condition)"
 		},
 		"cooldown": {
 			"type": "integer"
 		},
 		"hud_render": {
-			"type": "hud render",
-			"default": "{\"should_render\": false}"
+			"$ref": "$ref(apoli:types/hud_render)"
 		}
 	}
 }

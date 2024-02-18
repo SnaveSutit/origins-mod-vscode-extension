@@ -8,7 +8,8 @@
 	"properties": {
 		"value": {
 			"type": "boolean",
-			"description": "If true, the condition is always fulfilled. If false, the condition is never fulfilled."
+			"description": "If true, the condition is always fulfilled. If false, the condition is never fulfilled.",
+			"markdownDescription": "If true, the condition is always fulfilled. If false, the condition is never fulfilled."
 		}
 	}
 }

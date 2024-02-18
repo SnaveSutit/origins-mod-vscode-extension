@@ -4,8 +4,9 @@
 	"type": "object",
 	"properties": {
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, only items that fulfills this condition will be prevented from being used."
+			"$ref": "../item_condition.json",
+			"description": "If specified, only items that fulfills this condition will be prevented from being used.",
+			"markdownDescription": "If specified, only items that fulfills this condition will be prevented from being used."
 		}
 	}
 }

@@ -12,7 +12,7 @@
 			"default": 1.0
 		},
 		"key": {
-			"type": "key"
+			"$ref": "$ref(apoli:types/key)"
 		}
 	}
 }

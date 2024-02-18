@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"description": "How the saturation level should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the saturation level should be compared to the specified value.",
+			"markdownDescription": "How the saturation level should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "The value the saturation level should be compared to."
+			"description": "The value the saturation level should be compared to.",
+			"markdownDescription": "The value the saturation level should be compared to."
 		}
 	}
 }

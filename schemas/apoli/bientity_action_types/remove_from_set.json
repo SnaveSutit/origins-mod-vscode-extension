@@ -8,7 +8,8 @@
 	"properties": {
 		"set": {
 			"type": "string",
-			"description": "The ID of the power to remove the target entity from."
+			"description": "The ID of the power to remove the target entity from.",
+			"markdownDescription": "The ID of the power to remove the target entity from."
 		}
 	}
 }

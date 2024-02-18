@@ -9,27 +9,33 @@
 	"properties": {
 		"min": {
 			"type": "integer",
-			"description": "The minimum value of the resource."
+			"description": "The minimum value of the resource.",
+			"markdownDescription": "The minimum value of the resource."
 		},
 		"max": {
 			"type": "integer",
-			"description": "The maximum value of the resource."
+			"description": "The maximum value of the resource.",
+			"markdownDescription": "The maximum value of the resource."
 		},
 		"hud_render": {
-			"type": "hud render",
-			"description": "Determines how the resource is visualized on the HUD."
+			"$ref": "../types/hud_render.json",
+			"description": "Determines how the resource is visualized on the HUD.",
+			"markdownDescription": "Determines how the resource is visualized on the HUD."
 		},
 		"start_value": {
 			"type": "integer",
-			"description": "The value of the resource when the entity first receives the power. If not set, this will be set to the value of the `min` integer field."
+			"description": "The value of the resource when the entity first receives the power. If not set, this will be set to the value of the `min` integer field.",
+			"markdownDescription": "The value of the resource when the entity first receives the power. If not set, this will be set to the value of the `min` integer field."
 		},
 		"min_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the entity whenever the minimum value is reached."
+			"description": "If specified, this action will be executed on the entity whenever the minimum value is reached.",
+			"markdownDescription": "If specified, this action will be executed on the entity whenever the minimum value is reached."
 		},
 		"max_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the entity whenever the maximum value is reached."
+			"description": "If specified, this action will be executed on the entity whenever the maximum value is reached.",
+			"markdownDescription": "If specified, this action will be executed on the entity whenever the maximum value is reached."
 		}
 	}
 }

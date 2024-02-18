@@ -3,6 +3,7 @@
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/damage_over_time/",
 	"type": "object",
 	"required": ["damage"],
+	"$IGNORED_PROPERTIES": ["damage_source"],
 	"properties": {
 		"interval": {
 			"type": "integer",
@@ -16,10 +17,6 @@
 		},
 		"damage_easy": {
 			"type": "number"
-		},
-		"damage_source": {
-			"type": "damage source",
-			"default": "**DEPRECATED**"
 		},
 		"damage_type": {
 			"$ref": "$ref(apoli:types/identifier)",

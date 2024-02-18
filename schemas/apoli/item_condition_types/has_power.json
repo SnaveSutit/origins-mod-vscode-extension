@@ -8,11 +8,13 @@
 	"properties": {
 		"power": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of the power to check for."
+			"description": "The ID of the power to check for.",
+			"markdownDescription": "The ID of the power to check for."
 		},
 		"slot": {
 			"type": "string",
-			"description": "If specified, this will check if the power embedded to the item is assigned to this equipment slot. Accepts one of `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, `\"mainhand\"` or `\"offhand\"`."
+			"description": "If specified, this will check if the power embedded to the item is assigned to this equipment slot. Accepts one of `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, `\"mainhand\"` or `\"offhand\"`.",
+			"markdownDescription": "If specified, this will check if the power embedded to the item is assigned to this equipment slot. Accepts one of `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, `\"mainhand\"` or `\"offhand\"`."
 		}
 	}
 }

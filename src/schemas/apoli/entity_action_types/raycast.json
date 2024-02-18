@@ -18,7 +18,7 @@
 			"$ref": "$ref(apoli:types/shape_type)"
 		},
 		"fluid_handling": {
-			"$ref": "$ref(apoli:types/fuild_handling)",
+			"$ref": "$ref(apoli:types/fluid_handling)",
 			"default": "\"any\""
 		},
 		"space": {

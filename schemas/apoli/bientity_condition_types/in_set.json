@@ -8,7 +8,8 @@
 	"properties": {
 		"set": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of the power to check whether the target entity is in."
+			"description": "The ID of the power to check whether the target entity is in.",
+			"markdownDescription": "The ID of the power to check whether the target entity is in."
 		}
 	}
 }

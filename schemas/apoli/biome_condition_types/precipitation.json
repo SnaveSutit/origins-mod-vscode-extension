@@ -9,7 +9,8 @@
 				"rain",
 				"snow"
 			],
-			"description": "Which precipitation the biome has to have in order to succeed the check. Accepts `\"none\"`, `\"rain\"` or `\"snow\"`. Due to limitations with the system, this will check precipitation at a world height of 64."
+			"description": "Which precipitation the biome has to have in order to succeed the check. Accepts `\"none\"`, `\"rain\"` or `\"snow\"`. Due to limitations with the system, this will check precipitation at a world height of 64.",
+			"markdownDescription": "Which precipitation the biome has to have in order to succeed the check. Accepts `\"none\"`, `\"rain\"` or `\"snow\"`. Due to limitations with the system, this will check precipitation at a world height of 64."
 		}
 	}
 }

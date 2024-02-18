@@ -6,7 +6,7 @@ const term = terminalkit.terminal
 
 export const rawGithubUrl = 'https://raw.githubusercontent.com/apace100/origins-docs/latest/docs/'
 export const docsUrl = 'https://origins.readthedocs.io/en/latest/'
-const linkText = /^\[(?<name>[^\n\[]+)\]\((?<target>[^\n ]+)\)$/
+const linkText = /\[(?<name>[^\n\[]+?)\]\((?<target>[^\n ]+?)\)/
 
 const descriptionRegex = /^#\s+(?<title>.+)(?<description>[^]+?)###\s+.+?$/gm
 const fieldTitleRegex = /Field\s*\|\s*Type\s*\|\s*Default\s*\|\s*Description\n-+\|-+\|-+\|-+\n/gm
@@ -25,6 +25,17 @@ export function parseMDUrl(url: string): { name: string; target: string } | unde
 export function pathToUrl(from: string, path: string) {
 	const url = new URL(path, from)
 	return url.href
+}
+
+function processDescriptionLinks(description: string, mdFile: MDFile) {
+	const links = description.match(linkText)
+	if (!links) return description
+	for (const link of links) {
+		const url = parseMDUrl(link)
+		if (!url) continue
+		description = description.replace(link, `[${url.name}](${mdFile.docsUrl})`)
+	}
+	return description
 }
 
 export class Field {
@@ -58,15 +69,13 @@ export class Field {
 			this.typePath = url.target
 			return
 		} else if (type.startsWith('[Object')) {
-			// const type2 = type
-			// 	.split(' of ')[1]
-			// 	.replace(/".+": /, '')
-			// 	.replace('fields', '')
-			// 	.trim()
 			this.type = 'Object'
-			// const url = parseMDUrl(type2)
-			// if (!url) throw new Error(`Failed to parse type '${type2}' for Object field '${this.name}'`)
 			this.typePath = 'types/data_types/object.md'
+			return
+		} else if (type === '[Bi-entity Condition Type]') {
+			// There is a typo in power_type/particle.md...😔
+			this.type = 'bi entity condition type'
+			this.typePath = 'types/bientity_condition_types.md'
 			return
 		} else if (type.includes(' or ')) {
 			const types = type.split(' or ')
@@ -144,7 +153,7 @@ export class MDFile {
 
 	public async fetchContent(): Promise<MDFile> {
 		const url = rawGithubUrl + this.path
-		term.gray(`Reading Markdown File `).brightBlue(url).gray('...\n')
+		// term.gray(`Reading Markdown File `).brightBlue(url).gray('...\n')
 
 		this.content = await fetch(url).then(res => res.text())
 		if (!this.content || this.content.includes('404: Not Found'))
@@ -175,14 +184,14 @@ export class MDFile {
 		if (!match) throw new Error(`Failed to capture description for '${this.path}'`)
 		const { title, description } = match.groups!
 		this.title = title
-		this.description = description
+		this.description = processDescriptionLinks(description, this)
 	}
 
 	private captureFields() {
 		fieldTitleRegex.lastIndex = 0
 		const locations = this.content.split(fieldTitleRegex)
 		if (locations.length < 2) {
-			term.gray(`No fields found for `).cyan(this.path)('\n')
+			// term.gray(`No fields found for `).cyan(this.path)('\n')
 			return
 		}
 		for (const location of locations) {
@@ -191,7 +200,9 @@ export class MDFile {
 				const fieldMatch = fieldCaptureRegex.exec(location!)
 				if (!fieldMatch) break
 				const { field, type, defaultValue, description } = fieldMatch.groups!
-				this.fields.push(new Field(field, type, defaultValue, description, this))
+				this.fields.push(
+					new Field(field, type, defaultValue, processDescriptionLinks(description, this), this)
+				)
 			}
 		}
 		if (!this.fields.length) throw new Error(`Failed to capture fields for '${this.path}'`)
@@ -201,7 +212,7 @@ export class MDFile {
 		valuesTitleRegex.lastIndex = 0
 		const match = this.content.split(valuesTitleRegex).pop()
 		if (match === this.content) {
-			term.gray(`No values found for `).cyan(this.path)('\n')
+			// term.gray(`No values found for `).cyan(this.path)('\n')
 			return
 		}
 		valueCaptureRegex.lastIndex = 0
@@ -209,7 +220,7 @@ export class MDFile {
 			const valueMatch = valueCaptureRegex.exec(match!)
 			if (!valueMatch) break
 			const { value, description } = valueMatch.groups!
-			this.values.push({ value, description })
+			this.values.push({ value, description: processDescriptionLinks(description, this) })
 		}
 		if (!this.values.length) throw new Error(`Failed to capture values for '${this.path}'`)
 	}

@@ -4,8 +4,7 @@
 	"type": "object",
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"default": "\">\""
+			"$ref": "$ref(apoli:types/comparison)"
 		},
 		"compare_to": {
 			"type": "integer",

@@ -9,11 +9,13 @@
 	"properties": {
 		"comparison": {
 			"$ref": "../types/comparison.json",
-			"description": "Determines how the blast resistance of the block is compared to the specified value."
+			"description": "Determines how the blast resistance of the block is compared to the specified value.",
+			"markdownDescription": "Determines how the blast resistance of the block is compared to the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "The value to compare the blast resistance of the block to."
+			"description": "The value to compare the blast resistance of the block to.",
+			"markdownDescription": "The value to compare the blast resistance of the block to."
 		}
 	}
 }

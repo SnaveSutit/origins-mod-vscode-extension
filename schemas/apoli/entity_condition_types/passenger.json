@@ -5,17 +5,19 @@
 	"properties": {
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, it will check for the entity/entities that fulfills the bi-entity condition."
+			"description": "If specified, it will check for the entity/entities that fulfills the bi-entity condition.",
+			"markdownDescription": "If specified, it will check for the entity/entities that fulfills the bi-entity condition."
 		},
 		"comparison": {
-			"type": "comparison",
-			"default": "\">=\"",
-			"description": "How the number of entities that are currently riding the entity should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the number of entities that are currently riding the entity should be compared to the specified value.",
+			"markdownDescription": "How the number of entities that are currently riding the entity should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
 			"default": 1,
-			"description": "Which value the number of entities currently riding the entity should be compared to."
+			"description": "Which value the number of entities currently riding the entity should be compared to.",
+			"markdownDescription": "Which value the number of entities currently riding the entity should be compared to."
 		}
 	}
 }

@@ -10,45 +10,54 @@
 	"properties": {
 		"texture": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the texture to use as an overlay."
+			"description": "The namespace and ID of the texture to use as an overlay.",
+			"markdownDescription": "The namespace and ID of the texture to use as an overlay."
 		},
 		"strength": {
 			"type": "number",
 			"default": 1,
-			"description": "If the `\"texture\"` draw mode is used, it determines the alpha (transparency) value of the texture. If the `\"nausea\"` draw mode is used, it determines the value of how the texture is stretched (1.0 = screen size). Range: 0.0 to 1.0."
+			"description": "If the `\"texture\"` draw mode is used, it determines the alpha (transparency) value of the texture. If the `\"nausea\"` draw mode is used, it determines the value of how the texture is stretched (1.0 = screen size). Range: 0.0 to 1.0.",
+			"markdownDescription": "If the `\"texture\"` draw mode is used, it determines the alpha (transparency) value of the texture. If the `\"nausea\"` draw mode is used, it determines the value of how the texture is stretched (1.0 = screen size). Range: 0.0 to 1.0."
 		},
 		"red": {
 			"type": "number",
 			"default": "1.0 ",
-			"description": "Value by which the red component of the texture will be multiplied. Range: 0.0 to 1.0."
+			"description": "Value by which the red component of the texture will be multiplied. Range: 0.0 to 1.0.",
+			"markdownDescription": "Value by which the red component of the texture will be multiplied. Range: 0.0 to 1.0."
 		},
 		"green": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the green component of the texture will be multiplied. Range: 0.0 to 1.0."
+			"description": "Value by which the green component of the texture will be multiplied. Range: 0.0 to 1.0.",
+			"markdownDescription": "Value by which the green component of the texture will be multiplied. Range: 0.0 to 1.0."
 		},
 		"blue": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the blue component of the texture will be multiplied. Range: 0.0 to 1.0."
+			"description": "Value by which the blue component of the texture will be multiplied. Range: 0.0 to 1.0.",
+			"markdownDescription": "Value by which the blue component of the texture will be multiplied. Range: 0.0 to 1.0."
 		},
 		"draw_mode": {
 			"type": "string",
-			"description": "Determines whether to treat black as transparent or draw the texture as is (`\"nausea\"` or `\"texture\"` respectively)."
+			"description": "Determines whether to treat black as transparent or draw the texture as is (`\"nausea\"` or `\"texture\"` respectively).",
+			"markdownDescription": "Determines whether to treat black as transparent or draw the texture as is (`\"nausea\"` or `\"texture\"` respectively)."
 		},
 		"draw_phase": {
 			"type": "string",
-			"description": "Determines if the overlay should render below or above the HUD (`\"below_hud\"` or `\"above_hud\"` respectively)."
+			"description": "Determines if the overlay should render below or above the HUD (`\"below_hud\"` or `\"above_hud\"` respectively).",
+			"markdownDescription": "Determines if the overlay should render below or above the HUD (`\"below_hud\"` or `\"above_hud\"` respectively)."
 		},
 		"hide_with_hud": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines if the overlay should be hidden if the HUD elements are hidden (with F1)."
+			"description": "Determines if the overlay should be hidden if the HUD elements are hidden (with F1).",
+			"markdownDescription": "Determines if the overlay should be hidden if the HUD elements are hidden (with F1)."
 		},
 		"visible_in_third_person": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines if the overlay is visible in third person."
+			"description": "Determines if the overlay is visible in third person.",
+			"markdownDescription": "Determines if the overlay is visible in third person."
 		}
 	}
 }

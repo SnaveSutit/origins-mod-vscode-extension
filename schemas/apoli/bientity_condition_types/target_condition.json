@@ -8,7 +8,8 @@
 	"properties": {
 		"condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "The entity condition type to check for on the target entity."
+			"description": "The entity condition type to check for on the target entity.",
+			"markdownDescription": "The entity condition type to check for on the target entity."
 		}
 	}
 }

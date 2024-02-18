@@ -8,25 +8,29 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "The action to be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "The action to be executed on either or both the '**actor**' and '**target**' entities.",
+			"markdownDescription": "The action to be executed on either or both the '**actor**' and '**target**' entities."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
 		},
 		"damage_condition": {
-			"type": "damage condition type",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity."
+			"$ref": "../damage_condition.json",
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity."
 		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
-			"description": "Interval of ticks this power needs to recharge before the power can be triggered again."
+			"description": "Interval of ticks this power needs to recharge before the power can be triggered again.",
+			"markdownDescription": "Interval of ticks this power needs to recharge before the power can be triggered again."
 		},
 		"hud_render": {
-			"type": "hud render",
-			"default": "{\"should_render\": false}",
-			"description": "Determines how the cooldown of this power is visualized on the HUD."
+			"$ref": "../types/hud_render.json",
+			"description": "Determines how the cooldown of this power is visualized on the HUD.",
+			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		}
 	}
 }

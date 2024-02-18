@@ -8,7 +8,8 @@
 	"properties": {
 		"nbt": {
 			"$ref": "../types/nbt.json",
-			"description": "The NBT to merge to the item's NBT."
+			"description": "The NBT to merge to the item's NBT.",
+			"markdownDescription": "The NBT to merge to the item's NBT."
 		}
 	}
 }

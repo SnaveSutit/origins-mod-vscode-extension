@@ -8,16 +8,19 @@
 	],
 	"properties": {
 		"condition": {
-			"type": "condition type",
-			"description": "A condition based on the type of action."
+			"$ref": "$$condition_type",
+			"description": "A condition based on the type of action.",
+			"markdownDescription": "A condition based on the type of action."
 		},
 		"if_action": {
-			"type": "action type",
-			"description": "The action which is executed when the condition evaluates to true."
+			"$ref": "$$action_type",
+			"description": "The action which is executed when the condition evaluates to true.",
+			"markdownDescription": "The action which is executed when the condition evaluates to true."
 		},
 		"else_action": {
-			"type": "action type",
-			"description": "If present, this action will be executed when the condition evaluates to false."
+			"$ref": "$$action_type",
+			"description": "If present, this action will be executed when the condition evaluates to false.",
+			"markdownDescription": "If present, this action will be executed when the condition evaluates to false."
 		}
 	}
 }

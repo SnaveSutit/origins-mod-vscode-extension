@@ -4,21 +4,28 @@
 	"type": "object",
 	"properties": {
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, the specified tooltip(s) will only apply to items that fulfills this condition."
+			"$ref": "../item_condition.json",
+			"description": "If specified, the specified tooltip(s) will only apply to items that fulfills this condition.",
+			"markdownDescription": "If specified, the specified tooltip(s) will only apply to items that fulfills this condition."
 		},
 		"text": {
-			"type": "text component",
-			"description": "If specified, apply this string as a tooltip."
+			"$ref": "../types/text_component.json",
+			"description": "If specified, apply this string as a tooltip.",
+			"markdownDescription": "If specified, apply this string as a tooltip."
 		},
 		"texts": {
 			"type": "array",
-			"description": "If specified, apply these strings as a tooltip."
+			"items": {
+				"$ref": "../types/text_component.json"
+			},
+			"description": "If specified, apply these strings as a tooltip.",
+			"markdownDescription": "If specified, apply these strings as a tooltip."
 		},
 		"order": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines the placement order of the tooltip(s) of the power."
+			"description": "Determines the placement order of the tooltip(s) of the power.",
+			"markdownDescription": "Determines the placement order of the tooltip(s) of the power."
 		}
 	}
 }

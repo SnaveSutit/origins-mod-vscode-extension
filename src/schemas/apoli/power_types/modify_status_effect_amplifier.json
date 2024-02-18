@@ -7,13 +7,19 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"status_effects": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/identifier)"
+			}
 		},
 		"modifier": {
 			"$ref": "$ref(apoli:types/attribute_modifier)"
 		},
 		"modifiers": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
 		}
 	}
 }

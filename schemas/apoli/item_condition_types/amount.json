@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"description": "Determines how to compare the number of items in this stack to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "Determines how to compare the number of items in this stack to the specified value.",
+			"markdownDescription": "Determines how to compare the number of items in this stack to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "Which value to compare the item's count value to."
+			"description": "Which value to compare the item's count value to.",
+			"markdownDescription": "Which value to compare the item's count value to."
 		}
 	}
 }

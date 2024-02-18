@@ -8,7 +8,8 @@
 	"properties": {
 		"power": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the power that will be triggered."
+			"description": "The namespace and ID of the power that will be triggered.",
+			"markdownDescription": "The namespace and ID of the power that will be triggered."
 		}
 	}
 }

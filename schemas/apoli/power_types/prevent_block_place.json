@@ -5,49 +5,58 @@
 	"properties": {
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this entity action will be executed on the player upon being prevented from placing a block."
+			"description": "If specified, this entity action will be executed on the player upon being prevented from placing a block.",
+			"markdownDescription": "If specified, this entity action will be executed on the player upon being prevented from placing a block."
 		},
 		"held_item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this item action will be executed on the item the player has used to try to place a block."
+			"$ref": "../item_action.json",
+			"description": "If specified, this item action will be executed on the item the player has used to try to place a block.",
+			"markdownDescription": "If specified, this item action will be executed on the item the player has used to try to place a block."
 		},
 		"place_to_action": {
 			"$ref": "../block_action.json",
-			"description": "If specified, this block action will be executed at the position of the block the player tried to place."
+			"description": "If specified, this block action will be executed at the position of the block the player tried to place.",
+			"markdownDescription": "If specified, this block action will be executed at the position of the block the player tried to place."
 		},
 		"place_on_action": {
 			"$ref": "../block_action.json",
-			"description": "If specified, this block action will be executed on the block the player tried to place a block on."
+			"description": "If specified, this block action will be executed on the block the player tried to place a block on.",
+			"markdownDescription": "If specified, this block action will be executed on the block the player tried to place a block on."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, the specified actions will only be executed if the item the player has used to try to place a block fulfills this item condition."
+			"$ref": "../item_condition.json",
+			"description": "If specified, the specified actions will only be executed if the item the player has used to try to place a block fulfills this item condition.",
+			"markdownDescription": "If specified, the specified actions will only be executed if the item the player has used to try to place a block fulfills this item condition."
 		},
 		"place_to_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the specified actions will only be executed if the block at the position of the block the player tried to place fulfills this block condition."
+			"description": "If specified, the specified actions will only be executed if the block at the position of the block the player tried to place fulfills this block condition.",
+			"markdownDescription": "If specified, the specified actions will only be executed if the block at the position of the block the player tried to place fulfills this block condition."
 		},
 		"place_on_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the specified actions will only be executed if the block the player tried to place a block on fulfills this block condition."
+			"description": "If specified, the specified actions will only be executed if the block the player tried to place a block on fulfills this block condition.",
+			"markdownDescription": "If specified, the specified actions will only be executed if the block the player tried to place a block on fulfills this block condition."
 		},
 		"directions": {
-			"type": "array",
-			"default": "[\"up\", \"down\", \"north\", \"south\", \"east\", \"west\"]",
-			"description": "Determines whether the specified actions should be executed if the player tried to place a block at the specified side(s) of a block."
+			"$ref": "../types/directions.json",
+			"description": "Determines whether the specified actions should be executed if the player tried to place a block at the specified side(s) of a block.",
+			"markdownDescription": "Determines whether the specified actions should be executed if the player tried to place a block at the specified side(s) of a block."
 		},
 		"hands": {
-			"type": "array",
-			"default": "[\"main_hand\", \"off_hand\"]",
-			"description": "Determines whether the specified actions should be executed if the player used the specified hand(s) when trying to place a block."
+			"$ref": "../types/hands.json",
+			"description": "Determines whether the specified actions should be executed if the player used the specified hand(s) when trying to place a block.",
+			"markdownDescription": "Determines whether the specified actions should be executed if the player used the specified hand(s) when trying to place a block."
 		},
 		"result_stack": {
 			"$ref": "../types/item_stack.json",
-			"description": "If specified, this item stack will be given to the player upon trying to place a block."
+			"description": "If specified, this item stack will be given to the player upon trying to place a block.",
+			"markdownDescription": "If specified, this item stack will be given to the player upon trying to place a block."
 		},
 		"result_item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this item action will be executed on the item that will be given to the player upon trying to place a block."
+			"$ref": "../item_action.json",
+			"description": "If specified, this item action will be executed on the item that will be given to the player upon trying to place a block.",
+			"markdownDescription": "If specified, this item action will be executed on the item that will be given to the player upon trying to place a block."
 		}
 	}
 }

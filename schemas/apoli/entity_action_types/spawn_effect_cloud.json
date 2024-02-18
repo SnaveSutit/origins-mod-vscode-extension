@@ -6,28 +6,33 @@
 		"radius": {
 			"type": "number",
 			"default": 3,
-			"description": "The radius of the cloud."
+			"description": "The radius of the cloud.",
+			"markdownDescription": "The radius of the cloud."
 		},
 		"radius_on_use": {
 			"type": "number",
 			"default": -0.5,
-			"description": "How much the radius should change when an effect is applied."
+			"description": "How much the radius should change when an effect is applied.",
+			"markdownDescription": "How much the radius should change when an effect is applied."
 		},
 		"wait_time": {
 			"type": "integer",
 			"default": 10,
-			"description": "How many ticks to wait until the cloud takes effect."
+			"description": "How many ticks to wait until the cloud takes effect.",
+			"markdownDescription": "How many ticks to wait until the cloud takes effect."
 		},
 		"effect": {
 			"$ref": "../types/status_effect_instance.json",
-			"description": "If specified, this status effect will be applied by the cloud to entities inside of it."
+			"description": "If specified, this status effect will be applied by the cloud to entities inside of it.",
+			"markdownDescription": "If specified, this status effect will be applied by the cloud to entities inside of it."
 		},
 		"effects": {
 			"type": "array",
 			"items": {
 				"$ref": "../types/status_effect_instance.json"
 			},
-			"description": "If specified, these status effects will be applied by the cloud to entities inside of it."
+			"description": "If specified, these status effects will be applied by the cloud to entities inside of it.",
+			"markdownDescription": "If specified, these status effects will be applied by the cloud to entities inside of it."
 		}
 	}
 }

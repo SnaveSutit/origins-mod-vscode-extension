@@ -7,12 +7,22 @@
 	],
 	"properties": {
 		"from": {
-			"type": "string",
-			"description": "If specified, only this submersion type will be modified. Accepts either `\"none\"` , `\"water\"` or `\"lava\"`"
+			"enum": [
+				"none",
+				"water",
+				"lava"
+			],
+			"description": "If specified, only this submersion type will be modified. Accepts either `\"none\"` , `\"water\"` or `\"lava\"`",
+			"markdownDescription": "If specified, only this submersion type will be modified. Accepts either `\"none\"` , `\"water\"` or `\"lava\"`"
 		},
 		"to": {
-			"type": "string",
-			"description": "Which submersion type to change to. Accepts either `\"none\"`, `\"water\"` or `\"lava\"`"
+			"enum": [
+				"none",
+				"water",
+				"lava"
+			],
+			"description": "Which submersion type to change to. Accepts either `\"none\"`, `\"water\"` or `\"lava\"`",
+			"markdownDescription": "Which submersion type to change to. Accepts either `\"none\"`, `\"water\"` or `\"lava\"`"
 		}
 	}
 }

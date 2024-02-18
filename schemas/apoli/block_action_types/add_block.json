@@ -8,7 +8,8 @@
 	"properties": {
 		"block": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the block to place."
+			"description": "The namespace and ID of the block to place.",
+			"markdownDescription": "The namespace and ID of the block to place."
 		}
 	}
 }

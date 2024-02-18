@@ -8,12 +8,17 @@
 	],
 	"properties": {
 		"action": {
-			"type": "action type",
-			"description": "The action to execute."
+			"$ref": "$$action_type",
+			"description": "The action to execute.",
+			"markdownDescription": "The action to execute."
 		},
 		"side": {
-			"type": "string",
-			"description": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`"
+			"enum": [
+				"client",
+				"server"
+			],
+			"description": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`",
+			"markdownDescription": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`"
 		}
 	}
 }

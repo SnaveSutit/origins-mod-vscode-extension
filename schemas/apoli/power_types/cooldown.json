@@ -8,12 +8,13 @@
 	"properties": {
 		"cooldown": {
 			"type": "integer",
-			"description": "Interval of ticks this power needs to recharge before the power can be triggered again."
+			"description": "Interval of ticks this power needs to recharge before the power can be triggered again.",
+			"markdownDescription": "Interval of ticks this power needs to recharge before the power can be triggered again."
 		},
 		"hud_render": {
-			"type": "hud render",
-			"default": "{\"should_render\": false}",
-			"description": "Determines how the cooldown of this power is visualized on the HUD."
+			"$ref": "../types/hud_render.json",
+			"description": "Determines how the cooldown of this power is visualized on the HUD.",
+			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		}
 	}
 }

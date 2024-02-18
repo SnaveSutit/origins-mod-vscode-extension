@@ -8,7 +8,8 @@
 	"properties": {
 		"fall_distance": {
 			"type": "number",
-			"description": "The desired fall distance value."
+			"description": "The desired fall distance value.",
+			"markdownDescription": "The desired fall distance value."
 		}
 	}
 }

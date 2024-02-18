@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"description": "How the breath / air / bubble bar (in ticks) should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the breath / air / bubble bar (in ticks) should be compared to the specified value.",
+			"markdownDescription": "How the breath / air / bubble bar (in ticks) should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "Which value the breath should be compared to."
+			"description": "Which value the breath should be compared to.",
+			"markdownDescription": "Which value the breath should be compared to."
 		}
 	}
 }

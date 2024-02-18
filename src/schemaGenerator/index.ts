@@ -41,6 +41,12 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 
 		const propertyObjects = collectPropertyObjects(schema, [])
 
+		let ignoredProperties: string[] = []
+		if (Array.isArray(schema.$IGNORED_PROPERTIES)) {
+			ignoredProperties = schema.$IGNORED_PROPERTIES
+			delete schema.$IGNORED_PROPERTIES
+		}
+
 		if (mdFile.fields.length > 0) {
 			if (schema.type !== 'object') {
 				term
@@ -49,12 +55,13 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 					.brightRed(' is not an object, but has fields in ')
 					.brightYellow(mdFile.path)('\n')
 			}
-			const foundFields: string[] = []
+			const foundFields: string[] = [...ignoredProperties]
 			for (const propObj of propertyObjects) {
 				for (const field of mdFile.fields) {
 					if (!propObj[field.name]) continue
 					foundFields.push(field.name)
-					propObj[field.name].description = field.description
+					propObj[field.name].markdownDescription = propObj[field.name].description =
+						field.description
 				}
 			}
 			// for (const prop in contents.properties) {
@@ -145,12 +152,13 @@ function processSchema(schema: JSONSchema, options: ProcessSchemaOptions) {
 }
 
 async function build(schemasToBuild: string[]) {
+	term.brightGreen('Building schemas...\n')
 	const fileIOQueue: Array<{ path: string; content: string }> = []
 
 	for (const schemaPath of schemasToBuild) {
 		const outPath = schemaPath.replace(SRC_DIR, OUT_DIR)
 		const fileName = pathjs.basename(outPath)
-		term.brightCyan(`\nProcessing `).brightBlue(fileName).gray(` (${outPath})`)('\n')
+		// term.brightCyan(`\nProcessing `).brightBlue(fileName).gray(` (${outPath})`)('\n')
 
 		const contents: JSONSchema = await fs.readFile(schemaPath, 'utf-8').then(JSON.parse)
 

@@ -9,11 +9,13 @@
 	"properties": {
 		"s": {
 			"type": "number",
-			"description": "Near view. Vanilla default is 0.25, or 0.0 if you are under the effect of Fire Resistance."
+			"description": "Near view. Vanilla default is 0.25, or 0.0 if you are under the effect of Fire Resistance.",
+			"markdownDescription": "Near view. Vanilla default is 0.25, or 0.0 if you are under the effect of Fire Resistance."
 		},
 		"v": {
 			"type": "number",
-			"description": "Far view. Vanilla default is 1.0, or 3.0 if you are under the effect of Fire Resistance."
+			"description": "Far view. Vanilla default is 1.0, or 3.0 if you are under the effect of Fire Resistance.",
+			"markdownDescription": "Far view. Vanilla default is 1.0, or 3.0 if you are under the effect of Fire Resistance."
 		}
 	}
 }

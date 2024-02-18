@@ -16,13 +16,19 @@
 			"$ref": "$ref(apoli:types/attribute_modifier)"
 		},
 		"food_modifiers": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
 		},
 		"saturation_modifier": {
 			"$ref": "$ref(apoli:types/attribute_modifier)"
 		},
 		"saturation_modifiers": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
 		},
 		"entity_action": {
 			"$ref": "$ref(apoli:entity_action)"

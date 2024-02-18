@@ -4,10 +4,13 @@
 	"type": "object",
 	"properties": {
 		"stack": {
-			"type": "positioned item stack"
+			"$ref": "$ref(apoli:types/positioned_item_stack)"
 		},
 		"stacks": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/positioned_item_stack)"
+			}
 		},
 		"recurrent": {
 			"type": "boolean",

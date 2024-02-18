@@ -8,19 +8,23 @@
 	"properties": {
 		"radius": {
 			"type": "number",
-			"description": "Determines the radius of the area."
+			"description": "Determines the radius of the area.",
+			"markdownDescription": "Determines the radius of the area."
 		},
 		"shape": {
 			"$ref": "../types/shape.json",
-			"description": "Determines the shape of the area."
+			"description": "Determines the shape of the area.",
+			"markdownDescription": "Determines the shape of the area."
 		},
 		"block_action": {
 			"$ref": "../block_action.json",
-			"description": "The block action to execute on the blocks within the specified radius."
+			"description": "The block action to execute on the blocks within the specified radius.",
+			"markdownDescription": "The block action to execute on the blocks within the specified radius."
 		},
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the specified block action will only be executed on blocks that fulfill this block condition."
+			"description": "If specified, the specified block action will only be executed on blocks that fulfill this block condition.",
+			"markdownDescription": "If specified, the specified block action will only be executed on blocks that fulfill this block condition."
 		}
 	}
 }

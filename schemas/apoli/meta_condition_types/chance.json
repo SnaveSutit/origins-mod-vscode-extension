@@ -8,7 +8,8 @@
 	"properties": {
 		"chance": {
 			"type": "number",
-			"description": "The value to compare the randomly generated number to."
+			"description": "The value to compare the randomly generated number to.",
+			"markdownDescription": "The value to compare the randomly generated number to."
 		}
 	}
 }

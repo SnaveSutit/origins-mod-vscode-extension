@@ -8,11 +8,10 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"calculation": {
-			"type": "string",
-			"default": "\"sum\""
+			"enum": ["sum", "max"]
 		},
 		"comparison": {
-			"type": "comparison"
+			"$ref": "$ref(apoli:types/comparison)"
 		},
 		"compare_to": {
 			"type": "integer"

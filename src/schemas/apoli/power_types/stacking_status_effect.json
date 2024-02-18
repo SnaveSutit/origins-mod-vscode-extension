@@ -21,7 +21,10 @@
 			"$ref": "$ref(apoli:types/status_effect_instance)"
 		},
 		"effects": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/status_effect_instance)"
+			}
 		}
 	}
 }

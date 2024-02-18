@@ -11,7 +11,7 @@
 			"type": "integer"
 		},
 		"hud_render": {
-			"type": "hud render"
+			"$ref": "$ref(apoli:types/hud_render)"
 		},
 		"start_value": {
 			"type": "integer"

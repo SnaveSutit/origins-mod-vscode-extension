@@ -10,28 +10,37 @@
 	"properties": {
 		"min_stacks": {
 			"type": "integer",
-			"description": "The minimum number of stacks. Negative numbers are allowed."
+			"description": "The minimum number of stacks. Negative numbers are allowed.",
+			"markdownDescription": "The minimum number of stacks. Negative numbers are allowed."
 		},
 		"max_stacks": {
 			"type": "integer",
-			"description": "The maximum number of stacks."
+			"description": "The maximum number of stacks.",
+			"markdownDescription": "The maximum number of stacks."
 		},
 		"duration_per_stack": {
 			"type": "integer",
-			"description": "Determines the duration of the specified status effect(s) for each stack."
+			"description": "Determines the duration of the specified status effect(s) for each stack.",
+			"markdownDescription": "Determines the duration of the specified status effect(s) for each stack."
 		},
 		"tick_rate": {
 			"type": "integer",
 			"default": 10,
-			"description": "Determines how fast the power will gain/lose stacks in ticks."
+			"description": "Determines how fast the power will gain/lose stacks in ticks.",
+			"markdownDescription": "Determines how fast the power will gain/lose stacks in ticks."
 		},
 		"effect": {
 			"$ref": "../types/status_effect_instance.json",
-			"description": "If specified, this status effect will be applied on the entity that has the power."
+			"description": "If specified, this status effect will be applied on the entity that has the power.",
+			"markdownDescription": "If specified, this status effect will be applied on the entity that has the power."
 		},
 		"effects": {
 			"type": "array",
-			"description": "If specified, these status effects will be applied on the entity that has the power."
+			"items": {
+				"$ref": "../types/status_effect_instance.json"
+			},
+			"description": "If specified, these status effects will be applied on the entity that has the power.",
+			"markdownDescription": "If specified, these status effects will be applied on the entity that has the power."
 		}
 	}
 }

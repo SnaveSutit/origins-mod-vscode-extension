@@ -2,12 +2,10 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/recipe/",
 	"type": "object",
-	"required": [
-		"recipe"
-	],
+	"required": ["recipe"],
 	"properties": {
 		"recipe": {
-			"type": "crafting recipe"
+			"$ref": "$ref(apoli:types/crafting_recipe)"
 		}
 	}
 }

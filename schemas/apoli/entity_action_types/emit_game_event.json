@@ -8,7 +8,8 @@
 	"properties": {
 		"event": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of a game event."
+			"description": "The namespace and ID of a game event.",
+			"markdownDescription": "The namespace and ID of a game event."
 		}
 	}
 }

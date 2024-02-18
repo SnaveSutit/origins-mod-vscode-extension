@@ -9,16 +9,19 @@
 	"properties": {
 		"class": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of the class to transfer the value of an attribute modifier to. See [Value Modifying Power Classes](../../misc/extras/value_modifying_power_classes.md) for possible values."
+			"description": "The ID of the class to transfer the value of an attribute modifier to. See [Value Modifying Power Classes](https://origins.readthedocs.io/en/latest/types/power_types/attribute_modify_transfer) for possible values.",
+			"markdownDescription": "The ID of the class to transfer the value of an attribute modifier to. See [Value Modifying Power Classes](https://origins.readthedocs.io/en/latest/types/power_types/attribute_modify_transfer) for possible values."
 		},
 		"attribute": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the attribute to get the value from."
+			"description": "The namespace and ID of the attribute to get the value from.",
+			"markdownDescription": "The namespace and ID of the attribute to get the value from."
 		},
 		"multiplier": {
 			"type": "number",
 			"default": 1,
-			"description": "Determines the multiplier for the value."
+			"description": "Determines the multiplier for the value.",
+			"markdownDescription": "Determines the multiplier for the value."
 		}
 	}
 }

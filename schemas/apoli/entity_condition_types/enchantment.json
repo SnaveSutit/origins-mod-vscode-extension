@@ -10,20 +10,26 @@
 	"properties": {
 		"enchantment": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the enchantment of interest."
+			"description": "The namespace and ID of the enchantment of interest.",
+			"markdownDescription": "The namespace and ID of the enchantment of interest."
 		},
 		"calculation": {
-			"type": "string",
-			"default": "\"sum\"",
-			"description": "Which number to compare - either the `sum` of levels of this enchantment on all of the player's equipment, or the `max` level of this enchantment on any of the player's equipment."
+			"enum": [
+				"sum",
+				"max"
+			],
+			"description": "Which number to compare - either the `sum` of levels of this enchantment on all of the player's equipment, or the `max` level of this enchantment on any of the player's equipment.",
+			"markdownDescription": "Which number to compare - either the `sum` of levels of this enchantment on all of the player's equipment, or the `max` level of this enchantment on any of the player's equipment."
 		},
 		"comparison": {
-			"type": "comparison",
-			"description": "How the enchantment level should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the enchantment level should be compared to the specified value.",
+			"markdownDescription": "How the enchantment level should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "The value to compare the enchantment level to."
+			"description": "The value to compare the enchantment level to.",
+			"markdownDescription": "The value to compare the enchantment level to."
 		}
 	}
 }

@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"equipment_slot": {
-			"type": "string",
-			"description": "Determines which equipment slot to check for the item. Accepts `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`."
+			"$ref": "../types/equipment_slot.json",
+			"description": "Determines which equipment slot to check for the item. Accepts `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`.",
+			"markdownDescription": "Determines which equipment slot to check for the item. Accepts `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "The item condition type to check for on the item in the specified equipment slot."
+			"$ref": "../item_condition.json",
+			"description": "The item condition type to check for on the item in the specified equipment slot.",
+			"markdownDescription": "The item condition type to check for on the item in the specified equipment slot."
 		}
 	}
 }

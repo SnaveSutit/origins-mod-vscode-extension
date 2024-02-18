@@ -7,8 +7,9 @@
 	],
 	"properties": {
 		"fluid_condition": {
-			"$ref": "apoli:fluid_condition",
-			"description": "The fluid condition type to check the fluid state at the position."
+			"$ref": "../fluid_condition.json",
+			"description": "The fluid condition type to check the fluid state at the position.",
+			"markdownDescription": "The fluid condition type to check the fluid state at the position."
 		}
 	}
 }

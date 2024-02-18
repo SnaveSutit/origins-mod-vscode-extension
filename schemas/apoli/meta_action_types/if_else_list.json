@@ -8,7 +8,11 @@
 	"properties": {
 		"actions": {
 			"type": "array",
-			"description": "Each object has to have an `action` [Action Type](../action_types.md) object and a `condition` [Condition Type](../condition_types.md) object."
+			"items": {
+				"$ref": "$$action_type"
+			},
+			"description": "Each object has to have an `action` [Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list) object and a `condition` [Condition Type](../condition_types.md) object.",
+			"markdownDescription": "Each object has to have an `action` [Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list) object and a `condition` [Condition Type](../condition_types.md) object."
 		}
 	}
 }

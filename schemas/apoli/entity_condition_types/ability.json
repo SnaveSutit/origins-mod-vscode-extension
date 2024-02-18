@@ -7,8 +7,9 @@
 	],
 	"properties": {
 		"ability": {
-			"type": "player ability",
-			"description": "The namespace and ID of the ability to check for."
+			"$ref": "../types/player_ability.json",
+			"description": "The namespace and ID of the ability to check for.",
+			"markdownDescription": "The namespace and ID of the ability to check for."
 		}
 	}
 }

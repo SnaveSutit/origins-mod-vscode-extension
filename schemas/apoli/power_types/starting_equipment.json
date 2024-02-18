@@ -4,17 +4,23 @@
 	"type": "object",
 	"properties": {
 		"stack": {
-			"type": "positioned item stack",
-			"description": "If specified, this item will be given to the player (can be specified in an inventory slot)."
+			"$ref": "../types/positioned_item_stack.json",
+			"description": "If specified, this item will be given to the player (can be specified in an inventory slot).",
+			"markdownDescription": "If specified, this item will be given to the player (can be specified in an inventory slot)."
 		},
 		"stacks": {
 			"type": "array",
-			"description": "If specified, these items will be given to the player (can be specified in an inventory slot)."
+			"items": {
+				"$ref": "../types/positioned_item_stack.json"
+			},
+			"description": "If specified, these items will be given to the player (can be specified in an inventory slot).",
+			"markdownDescription": "If specified, these items will be given to the player (can be specified in an inventory slot)."
 		},
 		"recurrent": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines whether the specified item(s) should be given after respawning."
+			"description": "Determines whether the specified item(s) should be given after respawning.",
+			"markdownDescription": "Determines whether the specified item(s) should be given after respawning."
 		}
 	}
 }

@@ -8,7 +8,7 @@
 			"$ref": "$ref(apoli:block_condition)"
 		},
 		"fluid_condition": {
-			"type": "fluid condition type"
+			"$ref": "$ref(apoli:fluid_condition)"
 		},
 		"fluid": {
 			"$ref": "$ref(apoli:types/identifier)"

@@ -1,0 +1,2310 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/power/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_being_used",
+							"origins:action_on_being_used"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_being_used.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_block_break",
+							"origins:action_on_block_break"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_block_break.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_block_place",
+							"origins:action_on_block_place"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_block_place.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_block_use",
+							"origins:action_on_block_use"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_block_use.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_callback",
+							"origins:action_on_callback"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_callback.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_death",
+							"origins:action_on_death"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_death.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_entity_use",
+							"origins:action_on_entity_use"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_entity_use.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_hit",
+							"origins:action_on_hit"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_item_pickup",
+							"origins:action_on_item_pickup"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_item_pickup.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_item_use",
+							"origins:action_on_item_use"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_item_use.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_land",
+							"origins:action_on_land"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_land.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_on_wake_up",
+							"origins:action_on_wake_up"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_on_wake_up.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_over_time",
+							"origins:action_over_time"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_over_time.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_when_damage_taken",
+							"origins:action_when_damage_taken"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_when_damage_taken.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:action_when_hit",
+							"origins:action_when_hit"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/action_when_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:active_self",
+							"origins:active_self"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/active_self.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:attacker_action_when_hit",
+							"origins:attacker_action_when_hit"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/attacker_action_when_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:attribute",
+							"origins:attribute"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/attribute.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:attribute_modify_transfer",
+							"origins:attribute_modify_transfer"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/attribute_modify_transfer.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:burn",
+							"origins:burn"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/burn.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:climbing",
+							"origins:climbing"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/climbing.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:conditioned_attribute",
+							"origins:conditioned_attribute"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/conditioned_attribute.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:conditioned_restrict_armor",
+							"origins:conditioned_restrict_armor"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/conditioned_restrict_armor.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:cooldown",
+							"origins:cooldown"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/cooldown.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:creative_flight",
+							"origins:creative_flight"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/creative_flight.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:damage_over_time",
+							"origins:damage_over_time"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/damage_over_time.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:disable_regen",
+							"origins:disable_regen"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/disable_regen.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:edible_item",
+							"origins:edible_item"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/edible_item.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:effect_immunity",
+							"origins:effect_immunity"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/effect_immunity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:elytra_flight",
+							"origins:elytra_flight"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/elytra_flight.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:entity_glow",
+							"origins:entity_glow"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/entity_glow.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:entity_group",
+							"origins:entity_group"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/entity_group.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:entity_set",
+							"origins:entity_set"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/entity_set.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:exhaust",
+							"origins:exhaust"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/exhaust.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:fire_immunity",
+							"origins:fire_immunity"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/fire_immunity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:fire_projectile",
+							"origins:fire_projectile"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/fire_projectile.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:freeze",
+							"origins:freeze"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/freeze.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:game_event_listener",
+							"origins:game_event_listener"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/game_event_listener.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:grounded",
+							"origins:grounded"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/grounded.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:ignore_water",
+							"origins:ignore_water"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/ignore_water.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:inventory",
+							"origins:inventory"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/inventory.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:invisibility",
+							"origins:invisibility"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/invisibility.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:invulnerability",
+							"origins:invulnerability"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/invulnerability.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:item_on_item",
+							"origins:item_on_item"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/item_on_item.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:keep_inventory",
+							"origins:keep_inventory"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/keep_inventory.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:launch",
+							"origins:launch"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/launch.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:lava_vision",
+							"origins:lava_vision"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/lava_vision.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:model_color",
+							"origins:model_color"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/model_color.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_air_speed",
+							"origins:modify_air_speed"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_air_speed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_attribute",
+							"origins:modify_attribute"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_attribute.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_block_render",
+							"origins:modify_block_render"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_block_render.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_break_speed",
+							"origins:modify_break_speed"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_break_speed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_camera_submersion",
+							"origins:modify_camera_submersion"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_camera_submersion.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_crafting",
+							"origins:modify_crafting"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_crafting.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_damage_dealt",
+							"origins:modify_damage_dealt"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_damage_dealt.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_damage_taken",
+							"origins:modify_damage_taken"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_damage_taken.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_enchantment_level",
+							"origins:modify_enchantment_level"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_enchantment_level.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_exhaustion",
+							"origins:modify_exhaustion"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_exhaustion.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_falling",
+							"origins:modify_falling"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_falling.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_fluid_render",
+							"origins:modify_fluid_render"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_fluid_render.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_food",
+							"origins:modify_food"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_food.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_grindstone",
+							"origins:modify_grindstone"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_grindstone.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_harvest",
+							"origins:modify_harvest"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_harvest.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_healing",
+							"origins:modify_healing"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_healing.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_insomnia_ticks",
+							"origins:modify_insomnia_ticks"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_insomnia_ticks.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_jump",
+							"origins:modify_jump"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_jump.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_lava_speed",
+							"origins:modify_lava_speed"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_lava_speed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_player_spawn",
+							"origins:modify_player_spawn"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_player_spawn.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_projectile_damage",
+							"origins:modify_projectile_damage"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_projectile_damage.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_slipperiness",
+							"origins:modify_slipperiness"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_slipperiness.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_status_effect_amplifier",
+							"origins:modify_status_effect_amplifier"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_status_effect_amplifier.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_status_effect_duration",
+							"origins:modify_status_effect_duration"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_status_effect_duration.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_swim_speed",
+							"origins:modify_swim_speed"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_swim_speed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_velocity",
+							"origins:modify_velocity"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_velocity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify_xp_gain",
+							"origins:modify_xp_gain"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/modify_xp_gain.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:multiple",
+							"origins:multiple"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/multiple.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:night_vision",
+							"origins:night_vision"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/night_vision.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:overlay",
+							"origins:overlay"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/overlay.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:particle",
+							"origins:particle"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/particle.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:phasing",
+							"origins:phasing"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/phasing.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_being_used",
+							"origins:prevent_being_used"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_being_used.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_block_place",
+							"origins:prevent_block_place"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_block_place.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_block_selection",
+							"origins:prevent_block_selection"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_block_selection.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_block_use",
+							"origins:prevent_block_use"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_block_use.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_death",
+							"origins:prevent_death"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_death.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_elytra_flight",
+							"origins:prevent_elytra_flight"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_elytra_flight.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_entity_collision",
+							"origins:prevent_entity_collision"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_entity_collision.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_entity_render",
+							"origins:prevent_entity_render"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_entity_render.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_entity_use",
+							"origins:prevent_entity_use"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_entity_use.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_feature_render",
+							"origins:prevent_feature_render"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_feature_render.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_game_event",
+							"origins:prevent_game_event"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_game_event.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_item_pickup",
+							"origins:prevent_item_pickup"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_item_pickup.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_item_use",
+							"origins:prevent_item_use"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_item_use.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_sleep",
+							"origins:prevent_sleep"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_sleep.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:prevent_sprinting",
+							"origins:prevent_sprinting"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/prevent_sprinting.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:recipe",
+							"origins:recipe"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/recipe.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:replace_loot_table",
+							"origins:replace_loot_table"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/replace_loot_table.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:resource",
+							"origins:resource"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/resource.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:restrict_armor",
+							"origins:restrict_armor"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/restrict_armor.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:self_action_on_hit",
+							"origins:self_action_on_hit"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/self_action_on_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:self_action_on_kill",
+							"origins:self_action_on_kill"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/self_action_on_kill.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:self_action_when_hit",
+							"origins:self_action_when_hit"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/self_action_when_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:self_glow",
+							"origins:self_glow"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/self_glow.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:shader",
+							"origins:shader"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/shader.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:shaking",
+							"origins:shaking"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/shaking.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:simple",
+							"origins:simple"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/simple.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:stacking_status_effect",
+							"origins:stacking_status_effect"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/stacking_status_effect.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:starting_equipment",
+							"origins:starting_equipment"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/starting_equipment.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:status_bar_texture",
+							"origins:status_bar_texture"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/status_bar_texture.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:swimming",
+							"origins:swimming"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/swimming.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:target_action_on_hit",
+							"origins:target_action_on_hit"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/target_action_on_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:toggle",
+							"origins:toggle"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/toggle.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:toggle_night_vision",
+							"origins:toggle_night_vision"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/toggle_night_vision.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:tooltip",
+							"origins:tooltip"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/tooltip.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:walk_on_fluid",
+							"origins:walk_on_fluid"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/walk_on_fluid.json"
+			}
+		}
+	]
+}

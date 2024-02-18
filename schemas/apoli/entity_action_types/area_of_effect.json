@@ -9,20 +9,24 @@
 		"radius": {
 			"type": "number",
 			"default": 16,
-			"description": "Determines the radius of the area."
+			"description": "Determines the radius of the area.",
+			"markdownDescription": "Determines the radius of the area."
 		},
 		"shape": {
 			"$ref": "../types/shape.json",
 			"default": "\"cube\"",
-			"description": "Determines the shape of the area."
+			"description": "Determines the shape of the area.",
+			"markdownDescription": "Determines the shape of the area."
 		},
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "The bi-entity action to execute on either or both the '**actor**' or the '**target(s)**'."
+			"description": "The bi-entity action to execute on either or both the '**actor**' or the '**target(s)**'.",
+			"markdownDescription": "The bi-entity action to execute on either or both the '**actor**' or the '**target(s)**'."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified bi-entity action will only be executed on either or both the '**actor**' or '**target(s)**' that fulfill this bi-entity condition."
+			"description": "If specified, the specified bi-entity action will only be executed on either or both the '**actor**' or '**target(s)**' that fulfill this bi-entity condition.",
+			"markdownDescription": "If specified, the specified bi-entity action will only be executed on either or both the '**actor**' or '**target(s)**' that fulfill this bi-entity condition."
 		}
 	}
 }

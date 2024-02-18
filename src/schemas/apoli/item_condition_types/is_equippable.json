@@ -4,7 +4,7 @@
 	"type": "object",
 	"properties": {
 		"equipment_slot": {
-			"type": "string"
+			"$ref": "$ref(apoli:types/equipment_slot)"
 		}
 	}
 }

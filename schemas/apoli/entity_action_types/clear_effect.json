@@ -5,7 +5,8 @@
 	"properties": {
 		"effect": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, the status effect with this namespace and ID will be cleared. If not specified, all status effects will be cleared."
+			"description": "If specified, the status effect with this namespace and ID will be cleared. If not specified, all status effects will be cleared.",
+			"markdownDescription": "If specified, the status effect with this namespace and ID will be cleared. If not specified, all status effects will be cleared."
 		}
 	}
 }

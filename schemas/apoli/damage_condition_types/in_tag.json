@@ -8,7 +8,8 @@
 	"properties": {
 		"tag": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the tag which the damage type should be in to pass the check."
+			"description": "The namespace and ID of the tag which the damage type should be in to pass the check.",
+			"markdownDescription": "The namespace and ID of the tag which the damage type should be in to pass the check."
 		}
 	}
 }

@@ -9,11 +9,13 @@
 	"properties": {
 		"interval": {
 			"type": "integer",
-			"description": "Interval between being set on fire, in ticks."
+			"description": "Interval between being set on fire, in ticks.",
+			"markdownDescription": "Interval between being set on fire, in ticks."
 		},
 		"burn_duration": {
 			"type": "integer",
-			"description": "Determines how long the fire should last on the entity each time it is set, in seconds."
+			"description": "Determines how long the fire should last on the entity each time it is set, in seconds.",
+			"markdownDescription": "Determines how long the fire should last on the entity each time it is set, in seconds."
 		}
 	}
 }

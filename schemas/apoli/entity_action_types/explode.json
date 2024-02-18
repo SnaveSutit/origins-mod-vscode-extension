@@ -8,30 +8,36 @@
 	"properties": {
 		"power": {
 			"type": "number",
-			"description": "Determines the power of the explosion."
+			"description": "Determines the power of the explosion.",
+			"markdownDescription": "Determines the power of the explosion."
 		},
 		"destruction_type": {
 			"$ref": "../types/destruction_type.json",
 			"default": "\"break\"",
-			"description": "Determines the effect of the explosion to the terrain."
+			"description": "Determines the effect of the explosion to the terrain.",
+			"markdownDescription": "Determines the effect of the explosion to the terrain."
 		},
 		"damage_self": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines if the entity that invoked the action should take damage from the summoned explosion."
+			"description": "Determines if the entity that invoked the action should take damage from the summoned explosion.",
+			"markdownDescription": "Determines if the entity that invoked the action should take damage from the summoned explosion."
 		},
 		"indestructible": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the blocks that fulfill this condition will not be destroyed by the summoned explosion."
+			"description": "If specified, the blocks that fulfill this condition will not be destroyed by the summoned explosion.",
+			"markdownDescription": "If specified, the blocks that fulfill this condition will not be destroyed by the summoned explosion."
 		},
 		"destructible": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, only the blocks that fulfill this condition will be destroyed by the summoned explosion."
+			"description": "If specified, only the blocks that fulfill this condition will be destroyed by the summoned explosion.",
+			"markdownDescription": "If specified, only the blocks that fulfill this condition will be destroyed by the summoned explosion."
 		},
 		"create_fire": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines if the summoned explosion should create fire."
+			"description": "Determines if the summoned explosion should create fire.",
+			"markdownDescription": "Determines if the summoned explosion should create fire."
 		}
 	}
 }

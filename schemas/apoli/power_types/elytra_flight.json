@@ -8,11 +8,13 @@
 	"properties": {
 		"render_elytra": {
 			"type": "boolean",
-			"description": "Determines whether an Elytra should render on the player's back while this power is active."
+			"description": "Determines whether an Elytra should render on the player's back while this power is active.",
+			"markdownDescription": "Determines whether an Elytra should render on the player's back while this power is active."
 		},
 		"texture_location": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, this will be the texture used by the Elytra granted by this power."
+			"description": "If specified, this will be the texture used by the Elytra granted by this power.",
+			"markdownDescription": "If specified, this will be the texture used by the Elytra granted by this power."
 		}
 	}
 }

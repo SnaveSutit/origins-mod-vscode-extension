@@ -8,7 +8,8 @@
 	"properties": {
 		"value": {
 			"type": "integer",
-			"description": "The amount of breath to restore."
+			"description": "The amount of breath to restore.",
+			"markdownDescription": "The amount of breath to restore."
 		}
 	}
 }

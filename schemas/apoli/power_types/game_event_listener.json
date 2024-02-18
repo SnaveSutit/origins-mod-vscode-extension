@@ -4,62 +4,80 @@
 	"type": "object",
 	"properties": {
 		"trigger_order": {
-			"type": "string",
-			"default": "\"unspecified\"",
-			"description": "Determines whether the power type should prioritize game events by distance (`\"by_distance\"`) or arbitrarily (`\"unspecified\"`)."
+			"enum": [
+				"by_distance",
+				"unspecified"
+			],
+			"default": "unspecified",
+			"description": "Determines whether the power type should prioritize game events by distance (`\"by_distance\"`) or arbitrarily (`\"unspecified\"`).",
+			"markdownDescription": "Determines whether the power type should prioritize game events by distance (`\"by_distance\"`) or arbitrarily (`\"unspecified\"`)."
 		},
 		"entity": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines whether the power type should listen to game events emitted by entities."
+			"description": "Determines whether the power type should listen to game events emitted by entities.",
+			"markdownDescription": "Determines whether the power type should listen to game events emitted by entities."
 		},
 		"block": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines whether the power type should listen to game events emitted by blocks."
+			"description": "Determines whether the power type should listen to game events emitted by blocks.",
+			"markdownDescription": "Determines whether the power type should listen to game events emitted by blocks."
 		},
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
 		},
 		"block_action": {
 			"$ref": "../block_action.json",
-			"description": "If specified, this block action type will be executed at the position where the game event or vibration was emitted."
+			"description": "If specified, this block action type will be executed at the position where the game event or vibration was emitted.",
+			"markdownDescription": "If specified, this block action type will be executed at the position where the game event or vibration was emitted."
 		},
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, only executes the actions if the game event or vibration is emitted by a block that fulfills the block condition."
+			"description": "If specified, only executes the actions if the game event or vibration is emitted by a block that fulfills the block condition.",
+			"markdownDescription": "If specified, only executes the actions if the game event or vibration is emitted by a block that fulfills the block condition."
 		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
-			"description": "Interval of ticks this power needs to recharge before being able to listen to game events or vibrations again."
+			"description": "Interval of ticks this power needs to recharge before being able to listen to game events or vibrations again.",
+			"markdownDescription": "Interval of ticks this power needs to recharge before being able to listen to game events or vibrations again."
 		},
 		"hud_render": {
-			"type": "hud render",
-			"default": "{\"should_render\": false}",
-			"description": "Determines how the cooldown of this power is visualized on the HUD."
+			"$ref": "../types/hud_render.json",
+			"description": "Determines how the cooldown of this power is visualized on the HUD.",
+			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		},
 		"event": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, will make the power only listen for the game events with this namespace and IDs."
+			"description": "If specified, will make the power only listen for the game events with this namespace and IDs.",
+			"markdownDescription": "If specified, will make the power only listen for the game events with this namespace and IDs."
 		},
 		"events": {
 			"type": "array",
-			"description": "If specified, will make the power only listen for the game events with these namespace and IDs."
+			"items": {
+				"$ref": "../types/identifier.json"
+			},
+			"description": "If specified, will make the power only listen for the game events with these namespace and IDs.",
+			"markdownDescription": "If specified, will make the power only listen for the game events with these namespace and IDs."
 		},
 		"event_tag": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, will make the power only listen for the game events inside game event tag."
+			"description": "If specified, will make the power only listen for the game events inside game event tag.",
+			"markdownDescription": "If specified, will make the power only listen for the game events inside game event tag."
 		},
 		"show_particle": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines whether the vibration should emit a particle effect."
+			"description": "Determines whether the vibration should emit a particle effect.",
+			"markdownDescription": "Determines whether the vibration should emit a particle effect."
 		}
 	}
 }

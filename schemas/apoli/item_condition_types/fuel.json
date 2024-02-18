@@ -4,14 +4,15 @@
 	"type": "object",
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"default": "\">\"",
-			"description": "Determines how the fuel time value (in ticks) of the item is compared to a specific value."
+			"$ref": "../types/comparison.json",
+			"description": "Determines how the fuel time value (in ticks) of the item is compared to a specific value.",
+			"markdownDescription": "Determines how the fuel time value (in ticks) of the item is compared to a specific value."
 		},
 		"compare_to": {
 			"type": "integer",
 			"default": 0,
-			"description": "Which value to compare the fuel time value (in ticks) of the item to."
+			"description": "Which value to compare the fuel time value (in ticks) of the item to.",
+			"markdownDescription": "Which value to compare the fuel time value (in ticks) of the item to."
 		}
 	}
 }

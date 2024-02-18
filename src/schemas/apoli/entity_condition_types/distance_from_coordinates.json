@@ -24,8 +24,7 @@
 			"default": false
 		},
 		"shape": {
-			"type": "string",
-			"default": "\"cube\""
+			"$ref": "$ref(apoli:types/shape)"
 		},
 		"scale_reference_to_dimension": {
 			"type": "boolean",
@@ -38,7 +37,7 @@
 			"type": "integer"
 		},
 		"comparison": {
-			"type": "comparison"
+			"$ref": "$ref(apoli:types/comparison)"
 		},
 		"compare_to": {
 			"type": "number"

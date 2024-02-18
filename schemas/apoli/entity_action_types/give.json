@@ -8,15 +8,18 @@
 	"properties": {
 		"stack": {
 			"$ref": "../types/item_stack.json",
-			"description": "The item stack to give to the entity."
+			"description": "The item stack to give to the entity.",
+			"markdownDescription": "The item stack to give to the entity."
 		},
 		"item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, the specified item action type will be executed on the item stack before it's given to the player."
+			"$ref": "../item_action.json",
+			"description": "If specified, the specified item action type will be executed on the item stack before it's given to the player.",
+			"markdownDescription": "If specified, the specified item action type will be executed on the item stack before it's given to the player."
 		},
 		"preferred_slot": {
 			"$ref": "../types/equipment_slot.json",
-			"description": "If specified, this will prioritize the action to put the item in the specified slot. Accepts `\"chest\"`, `\"feet\"`, `\"head\"`, `\"legs\"`, `\"mainhand\"` or `\"offhand\"`."
+			"description": "If specified, this will prioritize the action to put the item in the specified slot. Accepts `\"chest\"`, `\"feet\"`, `\"head\"`, `\"legs\"`, `\"mainhand\"` or `\"offhand\"`.",
+			"markdownDescription": "If specified, this will prioritize the action to put the item in the specified slot. Accepts `\"chest\"`, `\"feet\"`, `\"head\"`, `\"legs\"`, `\"mainhand\"` or `\"offhand\"`."
 		}
 	}
 }

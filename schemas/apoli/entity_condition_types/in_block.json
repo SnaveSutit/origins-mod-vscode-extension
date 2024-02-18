@@ -8,7 +8,8 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "The block condition type to check for on the block that is overlapping with the entity's feet."
+			"description": "The block condition type to check for on the block that is overlapping with the entity's feet.",
+			"markdownDescription": "The block condition type to check for on the block that is overlapping with the entity's feet."
 		}
 	}
 }

@@ -12,7 +12,7 @@
 			"default": 1
 		},
 		"hud_render": {
-			"type": "hud render"
+			"$ref": "$ref(apoli:types/hud_render)"
 		},
 		"count": {
 			"type": "integer",
@@ -41,7 +41,7 @@
 			"$ref": "$ref(apoli:types/nbt)"
 		},
 		"key": {
-			"type": "key"
+			"$ref": "$ref(apoli:types/key)"
 		},
 		"projectile_action": {
 			"$ref": "$ref(apoli:entity_action)"

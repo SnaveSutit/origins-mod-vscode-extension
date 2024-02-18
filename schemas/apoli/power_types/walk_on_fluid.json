@@ -8,7 +8,8 @@
 	"properties": {
 		"fluid": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the fluid tag on which the player should be able to walk onto. Most important examples: `minecraft:water` and `minecraft:lava`."
+			"description": "The namespace and ID of the fluid tag on which the player should be able to walk onto. Most important examples: `minecraft:water` and `minecraft:lava`.",
+			"markdownDescription": "The namespace and ID of the fluid tag on which the player should be able to walk onto. Most important examples: `minecraft:water` and `minecraft:lava`."
 		}
 	}
 }

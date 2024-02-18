@@ -4,8 +4,9 @@
 	"type": "object",
 	"properties": {
 		"equipment_slot": {
-			"type": "string",
-			"description": "If specified, checks if the item is equippable in the specified equipment slot. Accepts `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, or `\"offhand\"`."
+			"$ref": "../types/equipment_slot.json",
+			"description": "If specified, checks if the item is equippable in the specified equipment slot. Accepts `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, or `\"offhand\"`.",
+			"markdownDescription": "If specified, checks if the item is equippable in the specified equipment slot. Accepts `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, or `\"offhand\"`."
 		}
 	}
 }

@@ -10,15 +10,18 @@
 	"properties": {
 		"resource": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of a power that will be evaluated."
+			"description": "The namespace and ID of a power that will be evaluated.",
+			"markdownDescription": "The namespace and ID of a power that will be evaluated."
 		},
 		"comparison": {
-			"type": "comparison",
-			"description": "How the value of the power that will be evaluated should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the value of the power that will be evaluated should be compared to the specified value.",
+			"markdownDescription": "How the value of the power that will be evaluated should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "The value to compare the value of the power that will be evaluated to."
+			"description": "The value to compare the value of the power that will be evaluated to.",
+			"markdownDescription": "The value to compare the value of the power that will be evaluated to."
 		}
 	}
 }

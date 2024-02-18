@@ -8,26 +8,31 @@
 	"properties": {
 		"amount": {
 			"type": "number",
-			"description": "The amount of damage to deal."
+			"description": "The amount of damage to deal.",
+			"markdownDescription": "The amount of damage to deal."
 		},
 		"source": {
 			"type": "null",
-			"description": "Use `damage_type` instead. [More information here](https://gist.github.com/apace100/bfbf82a8f9d6bd2db13e4feaf653a6b0)."
+			"description": "Use `damage_type` instead. [More information here](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage).",
+			"markdownDescription": "Use `damage_type` instead. [More information here](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage)."
 		},
 		"damage_type": {
 			"$ref": "../types/damage_source.json",
-			"description": "The damage type to be used. Controls e.g. the death message, invulnerabilities (e.g. towards fire), or whether armor is taken into account."
+			"description": "The damage type to be used. Controls e.g. the death message, invulnerabilities (e.g. towards fire), or whether armor is taken into account.",
+			"markdownDescription": "The damage type to be used. Controls e.g. the death message, invulnerabilities (e.g. towards fire), or whether armor is taken into account."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the damage taken by the '**target**' entity."
+			"description": "If specified, this modifier will be applied to the damage taken by the '**target**' entity.",
+			"markdownDescription": "If specified, this modifier will be applied to the damage taken by the '**target**' entity."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
 				"$ref": "../types/attribute_modifier.json"
 			},
-			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
+			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity.",
+			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
 		}
 	}
 }

@@ -8,7 +8,8 @@
 	"properties": {
 		"entity_type": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of the type of entity that will be spawned."
+			"description": "The ID of the type of entity that will be spawned.",
+			"markdownDescription": "The ID of the type of entity that will be spawned."
 		},
 		"tag": {
 			"oneOf": [
@@ -19,11 +20,13 @@
 					"type": "object"
 				}
 			],
-			"description": "If specified, this NBT data will be applied to the entity that will be spawned."
+			"description": "If specified, this NBT data will be applied to the entity that will be spawned.",
+			"markdownDescription": "If specified, this NBT data will be applied to the entity that will be spawned."
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this entity action will be executed on the spawned entity."
+			"description": "If specified, this entity action will be executed on the spawned entity.",
+			"markdownDescription": "If specified, this entity action will be executed on the spawned entity."
 		}
 	}
 }

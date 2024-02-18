@@ -8,30 +8,36 @@
 	"properties": {
 		"entity_type": {
 			"$ref": "../types/identifier.json",
-			"description": "The identifier of the projectile or entity that will be launched."
+			"description": "The identifier of the projectile or entity that will be launched.",
+			"markdownDescription": "The identifier of the projectile or entity that will be launched."
 		},
 		"divergence": {
 			"type": "number",
 			"default": 1,
-			"description": "Determines how much the projectile or entity that will be launched is affected by random spread."
+			"description": "Determines how much the projectile or entity that will be launched is affected by random spread.",
+			"markdownDescription": "Determines how much the projectile or entity that will be launched is affected by random spread."
 		},
 		"speed": {
 			"type": "number",
 			"default": 1,
-			"description": "Determines the speed of the projectile or entity that will be launched."
+			"description": "Determines the speed of the projectile or entity that will be launched.",
+			"markdownDescription": "Determines the speed of the projectile or entity that will be launched."
 		},
 		"count": {
 			"type": "integer",
 			"default": 1,
-			"description": "Determines the count of projectiles or entities that will be launched."
+			"description": "Determines the count of projectiles or entities that will be launched.",
+			"markdownDescription": "Determines the count of projectiles or entities that will be launched."
 		},
 		"tag": {
 			"$ref": "../types/nbt.json",
-			"description": "If specified, this NBT data will be added to the projectile or entity that will be launched."
+			"description": "If specified, this NBT data will be added to the projectile or entity that will be launched.",
+			"markdownDescription": "If specified, this NBT data will be added to the projectile or entity that will be launched."
 		},
 		"projectile_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this entity action will be executed on the projectile or entity that will be launched."
+			"description": "If specified, this entity action will be executed on the projectile or entity that will be launched.",
+			"markdownDescription": "If specified, this entity action will be executed on the projectile or entity that will be launched."
 		}
 	}
 }

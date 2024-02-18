@@ -8,7 +8,8 @@
 	"properties": {
 		"duration": {
 			"type": "integer",
-			"description": "The amount of seconds the entity should burn."
+			"description": "The amount of seconds the entity should burn.",
+			"markdownDescription": "The amount of seconds the entity should burn."
 		}
 	}
 }

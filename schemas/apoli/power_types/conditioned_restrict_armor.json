@@ -4,25 +4,30 @@
 	"type": "object",
 	"properties": {
 		"head": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, items which fulfills this condition cannot be equipped in the head equipment slot."
+			"$ref": "../item_condition.json",
+			"description": "If specified, items which fulfills this condition cannot be equipped in the head equipment slot.",
+			"markdownDescription": "If specified, items which fulfills this condition cannot be equipped in the head equipment slot."
 		},
 		"chest": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, items which fulfills this condition cannot be equipped in the chest equipment slot."
+			"$ref": "../item_condition.json",
+			"description": "If specified, items which fulfills this condition cannot be equipped in the chest equipment slot.",
+			"markdownDescription": "If specified, items which fulfills this condition cannot be equipped in the chest equipment slot."
 		},
 		"legs": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, items which fulfills this condition cannot be equipped in the legs equipment slot."
+			"$ref": "../item_condition.json",
+			"description": "If specified, items which fulfills this condition cannot be equipped in the legs equipment slot.",
+			"markdownDescription": "If specified, items which fulfills this condition cannot be equipped in the legs equipment slot."
 		},
 		"feet": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, items which fulfills this condition cannot be equipped in the feet equipment slot."
+			"$ref": "../item_condition.json",
+			"description": "If specified, items which fulfills this condition cannot be equipped in the feet equipment slot.",
+			"markdownDescription": "If specified, items which fulfills this condition cannot be equipped in the feet equipment slot."
 		},
 		"tick_rate": {
 			"type": "integer",
 			"default": 80,
-			"description": "The frequency (in ticks) with which to check the condition. Lower values mean the condition changes are detected more quickly, but this comes at a potentially huge performance cost."
+			"description": "The frequency (in ticks) with which to check the condition. Lower values mean the condition changes are detected more quickly, but this comes at a potentially huge performance cost.",
+			"markdownDescription": "The frequency (in ticks) with which to check the condition. Lower values mean the condition changes are detected more quickly, but this comes at a potentially huge performance cost."
 		}
 	}
 }

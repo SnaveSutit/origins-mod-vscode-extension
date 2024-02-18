@@ -5,24 +5,29 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "If specified, this bi-entity action will be executed on either or both the '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, this bi-entity action will be executed on either or both the '**actor**' and '**target**' entities."
 		},
 		"item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this item action will be executed on the item that was picked up."
+			"$ref": "../item_action.json",
+			"description": "If specified, this item action will be executed on the item that was picked up.",
+			"markdownDescription": "If specified, this item action will be executed on the item that was picked up."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the actions will only be executed if this bi-entity condition is fulfilled by either or both the '**actor**' and '**target**' entities."
+			"description": "If specified, the actions will only be executed if this bi-entity condition is fulfilled by either or both the '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, the actions will only be executed if this bi-entity condition is fulfilled by either or both the '**actor**' and '**target**' entities."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, the actions will only be executed if this item condition is fulfilled by the item about to be picked up."
+			"$ref": "../item_condition.json",
+			"description": "If specified, the actions will only be executed if this item condition is fulfilled by the item about to be picked up.",
+			"markdownDescription": "If specified, the actions will only be executed if this item condition is fulfilled by the item about to be picked up."
 		},
 		"priority": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)"
+			"description": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)",
+			"markdownDescription": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)"
 		}
 	}
 }

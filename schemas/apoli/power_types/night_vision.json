@@ -6,7 +6,8 @@
 		"strength": {
 			"type": "number",
 			"default": 1,
-			"description": "Determines how strong the night vision effect is. Accepted range is from 0.0 to 1.0."
+			"description": "Determines how strong the night vision effect is. Accepted range is from 0.0 to 1.0.",
+			"markdownDescription": "Determines how strong the night vision effect is. Accepted range is from 0.0 to 1.0."
 		}
 	}
 }

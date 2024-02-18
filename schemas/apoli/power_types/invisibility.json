@@ -6,16 +6,19 @@
 		"render_armor": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines whether armor should be shown or not."
+			"description": "Determines whether armor should be shown or not.",
+			"markdownDescription": "Determines whether armor should be shown or not."
 		},
 		"render_outline": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines whether the glowing outline should be shown or not."
+			"description": "Determines whether the glowing outline should be shown or not.",
+			"markdownDescription": "Determines whether the glowing outline should be shown or not."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the '**target**' will only be invisible to '**actors**' (either the player or mobs that may see the target) if the bi-entity condition is fulfilled by either or both of them."
+			"description": "If specified, the '**target**' will only be invisible to '**actors**' (either the player or mobs that may see the target) if the bi-entity condition is fulfilled by either or both of them.",
+			"markdownDescription": "If specified, the '**target**' will only be invisible to '**actors**' (either the player or mobs that may see the target) if the bi-entity condition is fulfilled by either or both of them."
 		}
 	}
 }

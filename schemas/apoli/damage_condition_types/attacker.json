@@ -7,8 +7,9 @@
 	],
 	"properties": {
 		"entity_condition": {
-			"$ref": "apoli:entity_condition",
-			"description": "If set, the attacker entity must fulfill the provided entity condition type in order for this condition to evaluate to true."
+			"$ref": "../entity_condition.json",
+			"description": "If set, the attacker entity must fulfill the provided entity condition type in order for this condition to evaluate to true.",
+			"markdownDescription": "If set, the attacker entity must fulfill the provided entity condition type in order for this condition to evaluate to true."
 		}
 	}
 }

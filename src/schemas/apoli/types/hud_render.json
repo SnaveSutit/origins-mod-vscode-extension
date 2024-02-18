@@ -21,7 +21,7 @@
 			"default": 0
 		},
 		"condition": {
-			"$ref": "$ref(apoli:types/entity_condition)"
+			"$ref": "$ref(apoli:entity_condition)"
 		},
 		"inverted": {
 			"type": "boolean",

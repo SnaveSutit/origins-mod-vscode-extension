@@ -7,8 +7,9 @@
 	],
 	"properties": {
 		"group": {
-			"type": "string",
-			"description": "The group to associate with the player. One of `default`, `undead`, `arthropod`, `illager`, or `aquatic`."
+			"$ref": "../types/entity_group.json",
+			"description": "The group to associate with the player. One of `default`, `undead`, `arthropod`, `illager`, or `aquatic`.",
+			"markdownDescription": "The group to associate with the player. One of `default`, `undead`, `arthropod`, `illager`, or `aquatic`."
 		}
 	}
 }

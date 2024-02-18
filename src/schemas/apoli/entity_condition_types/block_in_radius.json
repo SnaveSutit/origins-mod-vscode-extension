@@ -15,8 +15,7 @@
 			"default": "\"cube\""
 		},
 		"comparison": {
-			"type": "comparison",
-			"default": "\">=\""
+			"$ref": "$ref(apoli:types/comparison)"
 		},
 		"compare_to": {
 			"type": "integer",

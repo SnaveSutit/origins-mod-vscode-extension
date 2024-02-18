@@ -5,17 +5,22 @@
 	"properties": {
 		"inventory_types": {
 			"type": "array",
-			"default": "[\"inventory\"]"
+			"items": {
+				"$ref": "$ref(apoli:types/inventory_type)"
+			},
+			"uniqueItems": true
 		},
 		"process_mode": {
-			"$ref": "$ref(apoli:types/process_mode)",
-			"default": "\"items\""
+			"$ref": "$ref(apoli:types/process_mode)"
 		},
 		"item_condition": {
 			"$ref": "$ref(apoli:item_condition)"
 		},
 		"slots": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/item_slot)"
+			}
 		},
 		"slot": {
 			"$ref": "$ref(apoli:types/item_slot)"
@@ -24,8 +29,7 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"comparison": {
-			"type": "comparison",
-			"default": "\">\""
+			"$ref": "$ref(apoli:types/comparison)"
 		},
 		"compare_to": {
 			"type": "integer",

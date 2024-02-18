@@ -8,7 +8,8 @@
 	"properties": {
 		"action": {
 			"$ref": "../bientity_action.json",
-			"description": "The entity action type to execute on the actor entity."
+			"description": "The entity action type to execute on the actor entity.",
+			"markdownDescription": "The entity action type to execute on the actor entity."
 		}
 	}
 }

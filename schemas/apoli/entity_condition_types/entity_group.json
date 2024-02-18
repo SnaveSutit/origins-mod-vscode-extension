@@ -7,8 +7,9 @@
 	],
 	"properties": {
 		"group": {
-			"type": "string",
-			"description": "Entity group required for the entity to pass the check. One of `default`, `undead`, `arthropod`, `illager` and `aquatic`."
+			"$ref": "../types/entity_group.json",
+			"description": "Entity group required for the entity to pass the check. One of `default`, `undead`, `arthropod`, `illager` and `aquatic`.",
+			"markdownDescription": "Entity group required for the entity to pass the check. One of `default`, `undead`, `arthropod`, `illager` and `aquatic`."
 		}
 	}
 }

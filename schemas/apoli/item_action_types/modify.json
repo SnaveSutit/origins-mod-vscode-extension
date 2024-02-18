@@ -8,7 +8,8 @@
 	"properties": {
 		"modifier": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of an item modifier."
+			"description": "The ID of an item modifier.",
+			"markdownDescription": "The ID of an item modifier."
 		}
 	}
 }

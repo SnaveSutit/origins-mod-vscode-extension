@@ -6,22 +6,26 @@
 		"red": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the red component of the texture will be multiplied. Range: 0.0 - 1.0."
+			"description": "Value by which the red component of the texture will be multiplied. Range: 0.0 - 1.0.",
+			"markdownDescription": "Value by which the red component of the texture will be multiplied. Range: 0.0 - 1.0."
 		},
 		"green": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the green component of the texture will be multiplied. Range: 0.0 - 1.0."
+			"description": "Value by which the green component of the texture will be multiplied. Range: 0.0 - 1.0.",
+			"markdownDescription": "Value by which the green component of the texture will be multiplied. Range: 0.0 - 1.0."
 		},
 		"blue": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the blue component of the texture will be multiplied. Range: 0.0 - 1.0."
+			"description": "Value by which the blue component of the texture will be multiplied. Range: 0.0 - 1.0.",
+			"markdownDescription": "Value by which the blue component of the texture will be multiplied. Range: 0.0 - 1.0."
 		},
 		"alpha": {
 			"type": "number",
 			"default": 1,
-			"description": "Value by which the alpha (= transparency) component of the texture will be multiplied. Range: 0.0 - 1.0."
+			"description": "Value by which the alpha (= transparency) component of the texture will be multiplied. Range: 0.0 - 1.0.",
+			"markdownDescription": "Value by which the alpha (= transparency) component of the texture will be multiplied. Range: 0.0 - 1.0."
 		}
 	}
 }

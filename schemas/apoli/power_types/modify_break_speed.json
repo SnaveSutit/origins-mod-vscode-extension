@@ -5,23 +5,34 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition."
+			"description": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition.",
+			"markdownDescription": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the break speed."
+			"description": "If specified, this modifier will be applied to the break speed.",
+			"markdownDescription": "If specified, this modifier will be applied to the break speed."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to the break speed."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the break speed.",
+			"markdownDescription": "If specified, these modifiers will be applied to the break speed."
 		},
 		"hardness_modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the *effective* hardness value of the block while calculating the block's break speed."
+			"description": "If specified, this modifier will be applied to the *effective* hardness value of the block while calculating the block's break speed.",
+			"markdownDescription": "If specified, this modifier will be applied to the *effective* hardness value of the block while calculating the block's break speed."
 		},
 		"hardness_modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to the *effective* hardness value of the block while calculating the block's break speed."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the *effective* hardness value of the block while calculating the block's break speed.",
+			"markdownDescription": "If specified, these modifiers will be applied to the *effective* hardness value of the block while calculating the block's break speed."
 		}
 	}
 }

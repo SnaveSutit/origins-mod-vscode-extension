@@ -6,25 +6,34 @@
 		"blacklist": {
 			"type": "boolean",
 			"default": false,
-			"description": "If set to true, the `block_condition` field will define which blocks the player can **NOT** move through."
+			"description": "If set to true, the `block_condition` field will define which blocks the player can **NOT** move through.",
+			"markdownDescription": "If set to true, the `block_condition` field will define which blocks the player can **NOT** move through."
 		},
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the entity will only be able to move through these blocks (or **not** be able to move through these, depending on what `blacklist` is set to)."
+			"description": "If specified, the entity will only be able to move through these blocks (or **not** be able to move through these, depending on what `blacklist` is set to).",
+			"markdownDescription": "If specified, the entity will only be able to move through these blocks (or **not** be able to move through these, depending on what `blacklist` is set to)."
 		},
 		"render_type": {
-			"type": "string",
-			"default": "\"blindness\"",
-			"description": "Determines how the environment is rendered when \"phasing\" through (moving) blocks. Accepts `\"blindness\"`, `\"remove_blocks\"` or `\"none\"`."
+			"enum": [
+				"blindness",
+				"remove_blocks",
+				"none"
+			],
+			"default": "blindness",
+			"description": "Determines how the environment is rendered when \"phasing\" through (moving) blocks. Accepts `\"blindness\"`, `\"remove_blocks\"` or `\"none\"`.",
+			"markdownDescription": "Determines how the environment is rendered when \"phasing\" through (moving) blocks. Accepts `\"blindness\"`, `\"remove_blocks\"` or `\"none\"`."
 		},
 		"view_distance": {
 			"type": "number",
 			"default": 10,
-			"description": "Determines how far the player can look through walls when \"phasing\" (moving) through blocks when `render_type` is set to `\"blindness\"`."
+			"description": "Determines how far the player can look through walls when \"phasing\" (moving) through blocks when `render_type` is set to `\"blindness\"`.",
+			"markdownDescription": "Determines how far the player can look through walls when \"phasing\" (moving) through blocks when `render_type` is set to `\"blindness\"`."
 		},
 		"phase_down_condition": {
-			"$ref": "apoli:entity_condition",
-			"description": "If specified, the entity will only be able to \"phase\" (move) downwards if this condition is fulfilled."
+			"$ref": "../entity_condition.json",
+			"description": "If specified, the entity will only be able to \"phase\" (move) downwards if this condition is fulfilled.",
+			"markdownDescription": "If specified, the entity will only be able to \"phase\" (move) downwards if this condition is fulfilled."
 		}
 	}
 }

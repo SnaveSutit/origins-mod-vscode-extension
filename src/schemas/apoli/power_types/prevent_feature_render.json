@@ -4,10 +4,13 @@
 	"type": "object",
 	"properties": {
 		"feature": {
-			"type": "feature renderer"
+			"$ref": "$ref(apoli:types/feature_renderer)"
 		},
 		"features": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/feature_renderer)"
+			}
 		}
 	}
 }

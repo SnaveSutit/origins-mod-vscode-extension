@@ -9,20 +9,23 @@
 	"properties": {
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "The action to be executed upon taking damage."
+			"description": "The action to be executed upon taking damage.",
+			"markdownDescription": "The action to be executed upon taking damage."
 		},
 		"damage_condition": {
-			"type": "damage condition type",
-			"description": "If specified, the action will only trigger when this condition holds for the specified type of damage."
+			"$ref": "../damage_condition.json",
+			"description": "If specified, the action will only trigger when this condition holds for the specified type of damage.",
+			"markdownDescription": "If specified, the action will only trigger when this condition holds for the specified type of damage."
 		},
 		"cooldown": {
 			"type": "integer",
-			"description": "Interval of ticks this power needs to recharge before the power can be triggered again."
+			"description": "Interval of ticks this power needs to recharge before the power can be triggered again.",
+			"markdownDescription": "Interval of ticks this power needs to recharge before the power can be triggered again."
 		},
 		"hud_render": {
-			"type": "hud render",
-			"default": "{\"should_render\": false}",
-			"description": "Determines how the cooldown of this power is visualized on the HUD."
+			"$ref": "../types/hud_render.json",
+			"description": "Determines how the cooldown of this power is visualized on the HUD.",
+			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		}
 	}
 }

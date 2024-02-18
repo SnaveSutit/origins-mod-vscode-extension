@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"description": "How to compare the brightness level against the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How to compare the brightness level against the specified value.",
+			"markdownDescription": "How to compare the brightness level against the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "The value to compare the brightness level to."
+			"description": "The value to compare the brightness level to.",
+			"markdownDescription": "The value to compare the brightness level to."
 		}
 	}
 }

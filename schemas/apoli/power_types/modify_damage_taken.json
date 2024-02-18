@@ -5,39 +5,51 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities whenever the modifier(s) is/are applied."
 		},
 		"self_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the '**target**' entity whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on the '**target**' entity whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on the '**target**' entity whenever the modifier(s) is/are applied."
 		},
 		"attacker_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the '**actor**' entity whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on the '**actor**' entity whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on the '**actor**' entity whenever the modifier(s) is/are applied."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
 		},
 		"apply_armor_condition": {
-			"$ref": "apoli:entity_condition",
-			"description": "If specified, armor will only be applied to the damage taken if this condition is fulfilled by the '**target**' entity."
+			"$ref": "../entity_condition.json",
+			"description": "If specified, armor will only be applied to the damage taken if this condition is fulfilled by the '**target**' entity.",
+			"markdownDescription": "If specified, armor will only be applied to the damage taken if this condition is fulfilled by the '**target**' entity."
 		},
 		"damage_armor_condition": {
-			"$ref": "apoli:entity_condition",
-			"description": "If specified, worn armor will only be damaged if this condition is fulfilled by the '**target**' entity."
+			"$ref": "../entity_condition.json",
+			"description": "If specified, worn armor will only be damaged if this condition is fulfilled by the '**target**' entity.",
+			"markdownDescription": "If specified, worn armor will only be damaged if this condition is fulfilled by the '**target**' entity."
 		},
 		"damage_condition": {
-			"type": "damage condition type",
-			"description": "If specified, the specified modifiers(s) and/or action(s) will only apply if the taken damage fulfills this condition."
+			"$ref": "../damage_condition.json",
+			"description": "If specified, the specified modifiers(s) and/or action(s) will only apply if the taken damage fulfills this condition.",
+			"markdownDescription": "If specified, the specified modifiers(s) and/or action(s) will only apply if the taken damage fulfills this condition."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the damage taken by the '**target**' entity."
+			"description": "If specified, this modifier will be applied to the damage taken by the '**target**' entity.",
+			"markdownDescription": "If specified, this modifier will be applied to the damage taken by the '**target**' entity."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity.",
+			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
 		}
 	}
 }

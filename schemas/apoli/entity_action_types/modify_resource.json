@@ -9,11 +9,13 @@
 	"properties": {
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "This modifier will be applied to the current value of the target power."
+			"description": "This modifier will be applied to the current value of the target power.",
+			"markdownDescription": "This modifier will be applied to the current value of the target power."
 		},
 		"resource": {
 			"$ref": "../types/identifier.json",
-			"description": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](../power_types/resource.md) or the [Cooldown (Power Type)](../power_types/cooldown.md)."
+			"description": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource) or the [Cooldown (Power Type)](../power_types/cooldown.md).",
+			"markdownDescription": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource) or the [Cooldown (Power Type)](../power_types/cooldown.md)."
 		}
 	}
 }

@@ -1,0 +1,352 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_condition_types/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:amount",
+							"origins:amount"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/amount.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:armor_value",
+							"origins:armor_value"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/armor_value.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:durability",
+							"origins:durability"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/durability.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:empty",
+							"origins:empty"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/empty.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:enchantable",
+							"origins:enchantable"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/enchantable.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:enchantment",
+							"origins:enchantment"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/enchantment.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:fireproof",
+							"origins:fireproof"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/fireproof.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:food",
+							"origins:food"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/food.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:fuel",
+							"origins:fuel"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/fuel.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:harvest_level",
+							"origins:harvest_level"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/harvest_level.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:has_power",
+							"origins:has_power"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/has_power.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:ingredient",
+							"origins:ingredient"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/ingredient.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:is_damageable",
+							"origins:is_damageable"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/is_damageable.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:is_equippable",
+							"origins:is_equippable"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/is_equippable.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:meat",
+							"origins:meat"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/meat.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:nbt",
+							"origins:nbt"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/nbt.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:power_count",
+							"origins:power_count"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/power_count.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:relative_durability",
+							"origins:relative_durability"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/relative_durability.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:smeltable",
+							"origins:smeltable"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_condition_types/smeltable.json"
+			}
+		}
+	]
+}

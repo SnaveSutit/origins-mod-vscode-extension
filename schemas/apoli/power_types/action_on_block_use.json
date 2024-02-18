@@ -5,46 +5,53 @@
 	"properties": {
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this entity action type will be executed if all conditions are met."
+			"description": "If specified, this entity action type will be executed if all conditions are met.",
+			"markdownDescription": "If specified, this entity action type will be executed if all conditions are met."
 		},
 		"block_action": {
 			"$ref": "../block_action.json",
-			"description": "If specified, the used block will run this action if all conditions are met."
+			"description": "If specified, the used block will run this action if all conditions are met.",
+			"markdownDescription": "If specified, the used block will run this action if all conditions are met."
 		},
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, only execute the specified actions if this condition is fulfilled by the used block."
+			"description": "If specified, only execute the specified actions if this condition is fulfilled by the used block.",
+			"markdownDescription": "If specified, only execute the specified actions if this condition is fulfilled by the used block."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, only execute the specified actions if this condition is fulfilled by the item in the 'actor' (the player that has the power) entity's specified hand(s) determined by the `hands` string field."
+			"$ref": "../item_condition.json",
+			"description": "If specified, only execute the specified actions if this condition is fulfilled by the item in the 'actor' (the player that has the power) entity's specified hand(s) determined by the `hands` string field.",
+			"markdownDescription": "If specified, only execute the specified actions if this condition is fulfilled by the item in the 'actor' (the player that has the power) entity's specified hand(s) determined by the `hands` string field."
 		},
 		"directions": {
-			"type": "array",
-			"default": "[\"north\", \"east\", \"south\", \"west\", \"up\", \"down\"]",
-			"description": "If specified, only execute the specified actions if you used the specified face of the block."
+			"$ref": "../types/directions.json",
+			"description": "If specified, only execute the specified actions if you used the specified face of the block.",
+			"markdownDescription": "If specified, only execute the specified actions if you used the specified face of the block."
 		},
 		"hands": {
-			"type": "array",
-			"default": "[\"off_hand\", \"main_hand\"]",
-			"description": "Determines if the power should be activated if the player used the specified hand(s). Accepts `\"off_hand\"`, `\"main_hand\"` or both."
+			"$ref": "../types/hands.json",
+			"description": "Determines if the power should be activated if the player used the specified hand(s). Accepts `\"off_hand\"`, `\"main_hand\"` or both.",
+			"markdownDescription": "Determines if the power should be activated if the player used the specified hand(s). Accepts `\"off_hand\"`, `\"main_hand\"` or both."
 		},
 		"result_stack": {
 			"$ref": "../types/item_stack.json",
-			"description": "If specified, gives the item to the 'actor' (the player that has the power) entity."
+			"description": "If specified, gives the item to the 'actor' (the player that has the power) entity.",
+			"markdownDescription": "If specified, gives the item to the 'actor' (the player that has the power) entity."
 		},
 		"held_item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this action will be executed on the item used for right-clicking the 'target' entity in the specified hand(s) determined by the `hands` string field."
+			"$ref": "../item_action.json",
+			"description": "If specified, this action will be executed on the item used for right-clicking the 'target' entity in the specified hand(s) determined by the `hands` string field.",
+			"markdownDescription": "If specified, this action will be executed on the item used for right-clicking the 'target' entity in the specified hand(s) determined by the `hands` string field."
 		},
 		"result_item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this action will be executed on the item that is given to the 'actor' (the player that has the power) entity."
+			"$ref": "../item_action.json",
+			"description": "If specified, this action will be executed on the item that is given to the 'actor' (the player that has the power) entity.",
+			"markdownDescription": "If specified, this action will be executed on the item that is given to the 'actor' (the player that has the power) entity."
 		},
 		"action_result": {
-			"type": "action result",
-			"default": "\"success\"",
-			"description": "Determines the result of the 'use' action."
+			"$ref": "../types/action_result.json",
+			"description": "Determines the result of the 'use' action.",
+			"markdownDescription": "Determines the result of the 'use' action."
 		}
 	}
 }

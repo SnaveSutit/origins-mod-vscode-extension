@@ -8,24 +8,32 @@
 	"properties": {
 		"dimension": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the dimension the player should spawn in."
+			"description": "The namespace and ID of the dimension the player should spawn in.",
+			"markdownDescription": "The namespace and ID of the dimension the player should spawn in."
 		},
 		"biome": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, the player will only spawn in the biome that matches the specified namespace and ID."
+			"description": "If specified, the player will only spawn in the biome that matches the specified namespace and ID.",
+			"markdownDescription": "If specified, the player will only spawn in the biome that matches the specified namespace and ID."
 		},
 		"structure": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, the player will only spawn in the specified namespace and ID of the structure. **The structure needs to generate in the specified dimension.**"
+			"description": "If specified, the player will only spawn in the specified namespace and ID of the structure. **The structure needs to generate in the specified dimension.**",
+			"markdownDescription": "If specified, the player will only spawn in the specified namespace and ID of the structure. **The structure needs to generate in the specified dimension.**"
 		},
 		"spawn_strategy": {
-			"type": "string",
-			"default": "\"default\"",
-			"description": "Determines whether the player should spawn near the world spawnpoint (0, 0) of the dimension (`\"center\"`) or near the coordinates of the Overworld spawnpoint (whilst considering the value of the `dimension_distance_multiplier` field) (`\"default\"`)."
+			"enum": [
+				"default",
+				"center"
+			],
+			"default": "default",
+			"description": "Determines whether the player should spawn near the world spawnpoint (0, 0) of the dimension (`\"center\"`) or near the coordinates of the Overworld spawnpoint (whilst considering the value of the `dimension_distance_multiplier` field) (`\"default\"`).",
+			"markdownDescription": "Determines whether the player should spawn near the world spawnpoint (0, 0) of the dimension (`\"center\"`) or near the coordinates of the Overworld spawnpoint (whilst considering the value of the `dimension_distance_multiplier` field) (`\"default\"`)."
 		},
 		"dimension_distance_multiplier": {
 			"type": "number",
-			"description": "Defines the ratio of Overworld blocks to blocks in the specified dimension. e.g: for The Nether dimension, this would be set to `0.125`. **This needs to be set when `spawn_strategy` is set to `\"default\"`**"
+			"description": "Defines the ratio of Overworld blocks to blocks in the specified dimension. e.g: for The Nether dimension, this would be set to `0.125`. **This needs to be set when `spawn_strategy` is set to `\"default\"`**",
+			"markdownDescription": "Defines the ratio of Overworld blocks to blocks in the specified dimension. e.g: for The Nether dimension, this would be set to `0.125`. **This needs to be set when `spawn_strategy` is set to `\"default\"`**"
 		}
 	}
 }

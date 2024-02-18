@@ -5,22 +5,25 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, sleep will only be prevented if this condition is fulfilled by the bed block."
+			"description": "If specified, sleep will only be prevented if this condition is fulfilled by the bed block.",
+			"markdownDescription": "If specified, sleep will only be prevented if this condition is fulfilled by the bed block."
 		},
 		"message": {
-			"type": "default translatable text component",
-			"default": "{\"translatable\": \"text.apoli.cannot_sleep\"}",
-			"description": "The message that will be shown when sleep is prevented this way."
+			"$ref": "../types/default_translatable_text_component.json",
+			"description": "The message that will be shown when sleep is prevented this way.",
+			"markdownDescription": "The message that will be shown when sleep is prevented this way."
 		},
 		"set_spawn_point": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines whether the spawnpoint of the player is set upon right-clicking a bed while being prevented. (similar to what happens when you right-click a bed while it's daytime)"
+			"description": "Determines whether the spawnpoint of the player is set upon right-clicking a bed while being prevented. (similar to what happens when you right-click a bed while it's daytime)",
+			"markdownDescription": "Determines whether the spawnpoint of the player is set upon right-clicking a bed while being prevented. (similar to what happens when you right-click a bed while it's daytime)"
 		},
 		"priority": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines the priority of which power will prevent the player to sleep, set their spawn and display a message. The power with `set_spawn_point` set to `true` and the highest `priority` value will be prioritized."
+			"description": "Determines the priority of which power will prevent the player to sleep, set their spawn and display a message. The power with `set_spawn_point` set to `true` and the highest `priority` value will be prioritized.",
+			"markdownDescription": "Determines the priority of which power will prevent the player to sleep, set their spawn and display a message. The power with `set_spawn_point` set to `true` and the highest `priority` value will be prioritized."
 		}
 	}
 }

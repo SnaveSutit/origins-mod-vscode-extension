@@ -9,26 +9,30 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "The block condition type to check for."
+			"description": "The block condition type to check for.",
+			"markdownDescription": "The block condition type to check for."
 		},
 		"radius": {
 			"type": "integer",
-			"description": "The radius to check the blocks that fulfills the specified block condition type within."
+			"description": "The radius to check the blocks that fulfills the specified block condition type within.",
+			"markdownDescription": "The radius to check the blocks that fulfills the specified block condition type within."
 		},
 		"shape": {
 			"type": "string",
 			"default": "\"cube\"",
-			"description": "Determines the shape of the radius. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`."
+			"description": "Determines the shape of the radius. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`.",
+			"markdownDescription": "Determines the shape of the radius. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`."
 		},
 		"comparison": {
-			"type": "comparison",
-			"default": "\">=\"",
-			"description": "How the amount of blocks within the specified radius which fulfills the specified block condition type should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the amount of blocks within the specified radius which fulfills the specified block condition type should be compared to the specified value.",
+			"markdownDescription": "How the amount of blocks within the specified radius which fulfills the specified block condition type should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
 			"default": 1,
-			"description": "The value to compare the amount to."
+			"description": "The value to compare the amount to.",
+			"markdownDescription": "The value to compare the amount to."
 		}
 	}
 }

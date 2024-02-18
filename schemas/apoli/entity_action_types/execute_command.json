@@ -8,7 +8,8 @@
 	"properties": {
 		"command": {
 			"type": "string",
-			"description": "The command to execute on the entity."
+			"description": "The command to execute on the entity.",
+			"markdownDescription": "The command to execute on the entity."
 		}
 	}
 }

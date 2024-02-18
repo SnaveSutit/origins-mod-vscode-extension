@@ -5,7 +5,8 @@
 	"properties": {
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the collision will only be prevented if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the collision will only be prevented if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, the collision will only be prevented if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
 		}
 	}
 }

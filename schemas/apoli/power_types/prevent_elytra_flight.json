@@ -5,7 +5,8 @@
 	"properties": {
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed upon the entity trying to fly an Elytra/power that uses the [Elytra Flight (Power Type)](elytra_flight.md)."
+			"description": "If specified, this action will be executed upon the entity trying to fly an Elytra/power that uses the [Elytra Flight (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/prevent_elytra_flight).",
+			"markdownDescription": "If specified, this action will be executed upon the entity trying to fly an Elytra/power that uses the [Elytra Flight (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/prevent_elytra_flight)."
 		}
 	}
 }

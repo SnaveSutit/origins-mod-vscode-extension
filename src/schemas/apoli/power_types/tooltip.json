@@ -7,10 +7,13 @@
 			"$ref": "$ref(apoli:item_condition)"
 		},
 		"text": {
-			"type": "text component"
+			"$ref": "$ref(apoli:types/text_component)"
 		},
 		"texts": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/text_component)"
+			}
 		},
 		"order": {
 			"type": "integer",

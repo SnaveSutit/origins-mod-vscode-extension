@@ -4,10 +4,13 @@
 	"type": "object",
 	"properties": {
 		"modifier": {
-			"type": "attributed attribute modifier"
+			"$ref": "$ref(apoli:types/attributed_attribute_modifier)"
 		},
 		"modifiers": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attributed_attribute_modifier)"
+			}
 		},
 		"tick_rate": {
 			"type": "integer",

@@ -9,23 +9,28 @@
 	"properties": {
 		"operation": {
 			"$ref": "attribute_modifier_operation.json",
-			"description": "The operation which will be performed by this modifier."
+			"description": "The operation which will be performed by this modifier.",
+			"markdownDescription": "The operation which will be performed by this modifier."
 		},
 		"value": {
 			"type": "number",
-			"description": "The value to use for the modifier operation."
+			"description": "The value to use for the modifier operation.",
+			"markdownDescription": "The value to use for the modifier operation."
 		},
 		"resource": {
 			"$ref": "identifier.json",
-			"description": "If specified, the value of this power will be used instead of the value specified in the `value` field."
+			"description": "If specified, the value of this power will be used instead of the value specified in the `value` field.",
+			"markdownDescription": "If specified, the value of this power will be used instead of the value specified in the `value` field."
 		},
 		"name": {
 			"type": "string",
-			"description": "A descriptive name for the modifier, describing where it comes from."
+			"description": "A descriptive name for the modifier, describing where it comes from.",
+			"markdownDescription": "A descriptive name for the modifier, describing where it comes from."
 		},
 		"modifier": {
 			"$ref": "attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the value of the modifier."
+			"description": "If specified, this modifier will be applied to the value of the modifier.",
+			"markdownDescription": "If specified, this modifier will be applied to the value of the modifier."
 		}
 	}
 }

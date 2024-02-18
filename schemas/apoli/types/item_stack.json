@@ -5,15 +5,18 @@
 	"properties": {
 		"item": {
 			"$ref": "identifier.json",
-			"description": "ID of a registered item."
+			"description": "ID of a registered item.",
+			"markdownDescription": "ID of a registered item."
 		},
 		"amount": {
 			"type": "integer",
-			"description": "Size of the stack."
+			"description": "Size of the stack.",
+			"markdownDescription": "Size of the stack."
 		},
 		"tag": {
 			"type": "string",
-			"description": "NBT data of the item."
+			"description": "NBT data of the item.",
+			"markdownDescription": "NBT data of the item."
 		}
 	}
 }

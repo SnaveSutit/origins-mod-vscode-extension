@@ -1,0 +1,1270 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:ability",
+							"origins:ability"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/ability.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:advancement",
+							"origins:advancement"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/advancement.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:air",
+							"origins:air"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/air.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:attribute",
+							"origins:attribute"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/attribute.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:biome",
+							"origins:biome"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/biome.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:block_collision",
+							"origins:block_collision"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/block_collision.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:block_in_radius",
+							"origins:block_in_radius"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/block_in_radius.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:brightness",
+							"origins:brightness"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/brightness.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:climbing",
+							"origins:climbing"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/climbing.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:collided_horizontally",
+							"origins:collided_horizontally"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/collided_horizontally.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:command",
+							"origins:command"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/command.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:creative_flying",
+							"origins:creative_flying"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/creative_flying.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:daytime",
+							"origins:daytime"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/daytime.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:dimension",
+							"origins:dimension"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/dimension.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:distance_from_coordinates",
+							"origins:distance_from_coordinates"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/distance_from_coordinates.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:elytra_flight_possible",
+							"origins:elytra_flight_possible"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/elytra_flight_possible.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:enchantment",
+							"origins:enchantment"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/enchantment.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:entity_group",
+							"origins:entity_group"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/entity_group.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:entity_type",
+							"origins:entity_type"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/entity_type.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:equipped_item",
+							"origins:equipped_item"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/equipped_item.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:exists",
+							"origins:exists"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/exists.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:exposed_to_sky",
+							"origins:exposed_to_sky"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/exposed_to_sky.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:exposed_to_sun",
+							"origins:exposed_to_sun"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/exposed_to_sun.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:fall_distance",
+							"origins:fall_distance"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/fall_distance.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:fall_flying",
+							"origins:fall_flying"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/fall_flying.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:fluid_height",
+							"origins:fluid_height"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/fluid_height.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:food_level",
+							"origins:food_level"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/food_level.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:gamemode",
+							"origins:gamemode"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/gamemode.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:glowing",
+							"origins:glowing"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/glowing.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:health",
+							"origins:health"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/health.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:inventory",
+							"origins:inventory"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/inventory.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:invisible",
+							"origins:invisible"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/invisible.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_block",
+							"origins:in_block"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/in_block.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_block_anywhere",
+							"origins:in_block_anywhere"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/in_block_anywhere.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_rain",
+							"origins:in_rain"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/in_rain.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_snow",
+							"origins:in_snow"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/in_snow.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_tag",
+							"origins:in_tag"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/in_tag.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:in_thunderstorm",
+							"origins:in_thunderstorm"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/in_thunderstorm.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:living",
+							"origins:living"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/living.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:moving",
+							"origins:moving"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/moving.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:nbt",
+							"origins:nbt"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/nbt.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:on_block",
+							"origins:on_block"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/on_block.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:on_fire",
+							"origins:on_fire"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/on_fire.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:origin",
+							"origins:origin"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/origin.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:passenger",
+							"origins:passenger"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/passenger.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:passenger_recursive",
+							"origins:passenger_recursive"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/passenger_recursive.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:power",
+							"origins:power"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/power.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:power_active",
+							"origins:power_active"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/power_active.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:power_type",
+							"origins:power_type"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/power_type.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:predicate",
+							"origins:predicate"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/predicate.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:raycast",
+							"origins:raycast"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/raycast.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:relative_health",
+							"origins:relative_health"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/relative_health.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:resource",
+							"origins:resource"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/resource.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:riding",
+							"origins:riding"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/riding.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:riding_recursive",
+							"origins:riding_recursive"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/riding_recursive.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:riding_root",
+							"origins:riding_root"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/riding_root.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:saturation_level",
+							"origins:saturation_level"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/saturation_level.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:scoreboard",
+							"origins:scoreboard"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/scoreboard.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:set_size",
+							"origins:set_size"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/set_size.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:sneaking",
+							"origins:sneaking"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/sneaking.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:sprinting",
+							"origins:sprinting"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/sprinting.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:status_effect",
+							"origins:status_effect"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/status_effect.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:submerged_in",
+							"origins:submerged_in"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/submerged_in.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:swimming",
+							"origins:swimming"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/swimming.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:tamed",
+							"origins:tamed"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/tamed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:time_of_day",
+							"origins:time_of_day"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/time_of_day.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:using_effective_tool",
+							"origins:using_effective_tool"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/using_effective_tool.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:using_item",
+							"origins:using_item"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/using_item.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:xp_levels",
+							"origins:xp_levels"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/xp_levels.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:xp_points",
+							"origins:xp_points"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "entity_condition_types/xp_points.json"
+			}
+		}
+	]
+}

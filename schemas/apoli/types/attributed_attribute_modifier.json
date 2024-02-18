@@ -10,19 +10,23 @@
 	"properties": {
 		"attribute": {
 			"$ref": "identifier.json",
-			"description": "ID of the attribute which will be modified by this modifier."
+			"description": "ID of the attribute which will be modified by this modifier.",
+			"markdownDescription": "ID of the attribute which will be modified by this modifier."
 		},
 		"operation": {
 			"$ref": "attributed_attribute_modifier_operation.json",
-			"description": "The operation which will be performed by this modifier."
+			"description": "The operation which will be performed by this modifier.",
+			"markdownDescription": "The operation which will be performed by this modifier."
 		},
 		"value": {
 			"type": "number",
-			"description": "The value to use for the modifier operation."
+			"description": "The value to use for the modifier operation.",
+			"markdownDescription": "The value to use for the modifier operation."
 		},
 		"name": {
 			"type": "string",
-			"description": "A descriptive name for the modifier, describing where it comes from."
+			"description": "A descriptive name for the modifier, describing where it comes from.",
+			"markdownDescription": "A descriptive name for the modifier, describing where it comes from."
 		}
 	}
 }

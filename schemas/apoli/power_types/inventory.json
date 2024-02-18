@@ -6,31 +6,35 @@
 		"title": {
 			"type": "string",
 			"default": "\"container.inventory\"",
-			"description": "The translation key or literal text to use as the display name for the inventory."
+			"description": "The translation key or literal text to use as the display name for the inventory.",
+			"markdownDescription": "The translation key or literal text to use as the display name for the inventory."
 		},
 		"container_type": {
-			"type": "container type",
-			"default": "\"dropper\"",
-			"description": "Determines what type of container the inventory will be similar to."
+			"$ref": "../types/container_type.json",
+			"description": "Determines what type of container the inventory will be similar to.",
+			"markdownDescription": "Determines what type of container the inventory will be similar to."
 		},
 		"drop_on_death": {
 			"type": "boolean",
 			"default": false,
-			"description": "When this is set to true, the player will drop the items in the inventory on death (vanishing items will vanish!)."
+			"description": "When this is set to true, the player will drop the items in the inventory on death (vanishing items will vanish!).",
+			"markdownDescription": "When this is set to true, the player will drop the items in the inventory on death (vanishing items will vanish!)."
 		},
 		"drop_on_death_filter": {
-			"$ref": "apoli:item_condition",
-			"description": "If this is set, only item stacks matching this condition will be dropped on death."
+			"$ref": "../item_condition.json",
+			"description": "If this is set, only item stacks matching this condition will be dropped on death.",
+			"markdownDescription": "If this is set, only item stacks matching this condition will be dropped on death."
 		},
 		"recoverable": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines if the content of the inventory should be dropped upon losing the power."
+			"description": "Determines if the content of the inventory should be dropped upon losing the power.",
+			"markdownDescription": "Determines if the content of the inventory should be dropped upon losing the power."
 		},
 		"key": {
-			"type": "key",
-			"default": "{\"key\": \"key.origins.primary_active\"}",
-			"description": "Which active key this power should respond to."
+			"$ref": "../types/key.json",
+			"description": "Which active key this power should respond to.",
+			"markdownDescription": "Which active key this power should respond to."
 		}
 	}
 }

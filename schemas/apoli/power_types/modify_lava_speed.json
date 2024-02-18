@@ -5,11 +5,16 @@
 	"properties": {
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the movement speed while in lava."
+			"description": "If specified, this modifier will be applied to the movement speed while in lava.",
+			"markdownDescription": "If specified, this modifier will be applied to the movement speed while in lava."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to the movement speed while in lava."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the movement speed while in lava.",
+			"markdownDescription": "If specified, these modifiers will be applied to the movement speed while in lava."
 		}
 	}
 }

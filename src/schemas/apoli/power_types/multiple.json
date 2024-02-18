@@ -1,4 +1,10 @@
 {
 	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/multiple/"
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/multiple/",
+	"type": "object",
+	"patternProperties": {
+		"^(?!(type|badges|condition|description|hidden|loading_priority|name)$)[a-z0-9_\\/\\-\\.]+$": {
+			"$ref": "$ref(apoli:sub_power)"
+		}
+	}
 }

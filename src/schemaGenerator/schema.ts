@@ -406,4 +406,5 @@ export interface JSONSchemaPreProcessorAdditions {
 		 */
 		schemaStructure: JSONSchema
 	}
+	$IGNORED_PROPERTIES?: string[]
 }

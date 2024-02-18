@@ -8,7 +8,8 @@
 	"properties": {
 		"command": {
 			"type": "string",
-			"description": "The command to execute."
+			"description": "The command to execute.",
+			"markdownDescription": "The command to execute."
 		}
 	}
 }

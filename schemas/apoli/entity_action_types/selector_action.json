@@ -8,15 +8,18 @@
 	"properties": {
 		"selector": {
 			"type": "string",
-			"description": "The selector to use for selecting entities. It can be the username of a player, the UUID of the entity or a target selector."
+			"description": "The selector to use for selecting entities. It can be the username of a player, the UUID of the entity or a target selector.",
+			"markdownDescription": "The selector to use for selecting entities. It can be the username of a player, the UUID of the entity or a target selector."
 		},
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both the '**actor**' and '**target**' entities."
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both the '**actor**' and '**target**' entities.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by either or both the '**actor**' and '**target**' entities."
 		}
 	}
 }

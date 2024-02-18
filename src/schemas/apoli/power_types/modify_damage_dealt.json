@@ -19,13 +19,16 @@
 			"$ref": "$ref(apoli:entity_condition)"
 		},
 		"damage_condition": {
-			"type": "damage condition type"
+			"$ref": "$ref(apoli:damage_condition)"
 		},
 		"modifier": {
 			"$ref": "$ref(apoli:types/attribute_modifier)"
 		},
 		"modifiers": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
 		}
 	}
 }

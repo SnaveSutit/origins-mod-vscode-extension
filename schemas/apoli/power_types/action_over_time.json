@@ -6,19 +6,23 @@
 		"interval": {
 			"type": "integer",
 			"default": 20,
-			"description": "Interval of ticks between subsequent executions of the specified actions. Must be a value of at least 1."
+			"description": "Interval of ticks between subsequent executions of the specified actions. Must be a value of at least 1.",
+			"markdownDescription": "Interval of ticks between subsequent executions of the specified actions. Must be a value of at least 1."
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "The action to execute on the entity that has the power each interval."
+			"description": "The action to execute on the entity that has the power each interval.",
+			"markdownDescription": "The action to execute on the entity that has the power each interval."
 		},
 		"rising_action": {
 			"$ref": "../entity_action.json",
-			"description": "The action to execute on the first interval tick in which the condition became true."
+			"description": "The action to execute on the first interval tick in which the condition became true.",
+			"markdownDescription": "The action to execute on the first interval tick in which the condition became true."
 		},
 		"falling_action": {
 			"$ref": "../entity_action.json",
-			"description": "The action to execute on the first interval tick in which the condition became false."
+			"description": "The action to execute on the first interval tick in which the condition became false.",
+			"markdownDescription": "The action to execute on the first interval tick in which the condition became false."
 		}
 	}
 }

@@ -4,46 +4,62 @@
 	"type": "object",
 	"properties": {
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, the specified actions and modifier(s) will only apply to food items that fulfills this condition."
+			"$ref": "../item_condition.json",
+			"description": "If specified, the specified actions and modifier(s) will only apply to food items that fulfills this condition.",
+			"markdownDescription": "If specified, the specified actions and modifier(s) will only apply to food items that fulfills this condition."
 		},
 		"item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this item action type will be executed on the remaining item stacks that was consumed."
+			"$ref": "../item_action.json",
+			"description": "If specified, this item action type will be executed on the remaining item stacks that was consumed.",
+			"markdownDescription": "If specified, this item action type will be executed on the remaining item stacks that was consumed."
 		},
 		"replace_stack": {
 			"$ref": "../types/item_stack.json",
-			"description": "If specified, this item stack will replace the item stack that was consumed *after* consuming it."
+			"description": "If specified, this item stack will replace the item stack that was consumed *after* consuming it.",
+			"markdownDescription": "If specified, this item stack will replace the item stack that was consumed *after* consuming it."
 		},
 		"food_modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will apply to the food amount gained by eating a food item."
+			"description": "If specified, this modifier will apply to the food amount gained by eating a food item.",
+			"markdownDescription": "If specified, this modifier will apply to the food amount gained by eating a food item."
 		},
 		"food_modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will apply to the food amount gained by eating a food item."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will apply to the food amount gained by eating a food item.",
+			"markdownDescription": "If specified, these modifiers will apply to the food amount gained by eating a food item."
 		},
 		"saturation_modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will apply to the saturation amount gained by eating a food item."
+			"description": "If specified, this modifier will apply to the saturation amount gained by eating a food item.",
+			"markdownDescription": "If specified, this modifier will apply to the saturation amount gained by eating a food item."
 		},
 		"saturation_modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will apply to the saturation amount gained by eating a food item."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will apply to the saturation amount gained by eating a food item.",
+			"markdownDescription": "If specified, these modifiers will apply to the saturation amount gained by eating a food item."
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the player that has ate a food item."
+			"description": "If specified, this action will be executed on the player that has ate a food item.",
+			"markdownDescription": "If specified, this action will be executed on the player that has ate a food item."
 		},
 		"always_edible": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines whether a food item can be eaten regardless of the player's hunger bar being full."
+			"description": "Determines whether a food item can be eaten regardless of the player's hunger bar being full.",
+			"markdownDescription": "Determines whether a food item can be eaten regardless of the player's hunger bar being full."
 		},
 		"prevent_effects": {
 			"type": "boolean",
 			"default": false,
-			"description": "If set to `true`, prevent status effects from being applied."
+			"description": "If set to `true`, prevent status effects from being applied.",
+			"markdownDescription": "If set to `true`, prevent status effects from being applied."
 		}
 	}
 }

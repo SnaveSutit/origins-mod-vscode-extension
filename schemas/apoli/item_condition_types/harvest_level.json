@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"description": "How to compare the item's harvest level to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How to compare the item's harvest level to the specified value.",
+			"markdownDescription": "How to compare the item's harvest level to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "Which value to compare the item's harvest level to."
+			"description": "Which value to compare the item's harvest level to.",
+			"markdownDescription": "Which value to compare the item's harvest level to."
 		}
 	}
 }

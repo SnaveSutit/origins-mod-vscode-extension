@@ -5,11 +5,16 @@
 	"properties": {
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to your healing bonus."
+			"description": "If specified, this modifier will be applied to your healing bonus.",
+			"markdownDescription": "If specified, this modifier will be applied to your healing bonus."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to your healing bonus."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to your healing bonus.",
+			"markdownDescription": "If specified, these modifiers will be applied to your healing bonus."
 		}
 	}
 }

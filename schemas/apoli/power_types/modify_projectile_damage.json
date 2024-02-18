@@ -4,28 +4,37 @@
 	"type": "object",
 	"properties": {
 		"damage_condition": {
-			"type": "damage condition type",
-			"description": "If specified, the specified modifier(s) and action(s) will only apply if the dealt damage fulfills by this condition."
+			"$ref": "../damage_condition.json",
+			"description": "If specified, the specified modifier(s) and action(s) will only apply if the dealt damage fulfills by this condition.",
+			"markdownDescription": "If specified, the specified modifier(s) and action(s) will only apply if the dealt damage fulfills by this condition."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will apply to the damage amount."
+			"description": "If specified, this modifier will apply to the damage amount.",
+			"markdownDescription": "If specified, this modifier will apply to the damage amount."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will apply to the damage amount."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will apply to the damage amount.",
+			"markdownDescription": "If specified, these modifiers will apply to the damage amount."
 		},
 		"target_condition": {
-			"$ref": "apoli:entity_condition",
-			"description": "If specified, the specified modifier(s) and action(s) will only apply if the the entity that has been hit fulfills this condition."
+			"$ref": "../entity_condition.json",
+			"description": "If specified, the specified modifier(s) and action(s) will only apply if the the entity that has been hit fulfills this condition.",
+			"markdownDescription": "If specified, the specified modifier(s) and action(s) will only apply if the the entity that has been hit fulfills this condition."
 		},
 		"self_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the 'actor' entity (the entity that has the power) whenever the modifier(s) are applied."
+			"description": "If specified, this action will be executed on the 'actor' entity (the entity that has the power) whenever the modifier(s) are applied.",
+			"markdownDescription": "If specified, this action will be executed on the 'actor' entity (the entity that has the power) whenever the modifier(s) are applied."
 		},
 		"target_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the the entity that has been hit whenever the modifier(s) are applied."
+			"description": "If specified, this action will be executed on the the entity that has been hit whenever the modifier(s) are applied.",
+			"markdownDescription": "If specified, this action will be executed on the the entity that has been hit whenever the modifier(s) are applied."
 		}
 	}
 }

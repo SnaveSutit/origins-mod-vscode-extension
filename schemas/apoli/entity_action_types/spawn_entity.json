@@ -8,19 +8,23 @@
 	"properties": {
 		"entity_type": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the entity type that will be spawned."
+			"description": "The namespace and ID of the entity type that will be spawned.",
+			"markdownDescription": "The namespace and ID of the entity type that will be spawned."
 		},
 		"tag": {
 			"$ref": "../types/nbt.json",
-			"description": "If specified, this NBT data will be applied to the entity that will be spawned."
+			"description": "If specified, this NBT data will be applied to the entity that will be spawned.",
+			"markdownDescription": "If specified, this NBT data will be applied to the entity that will be spawned."
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, the specified entity action type will be executed on the entity that will be spawned when it is spawned."
+			"description": "If specified, the specified entity action type will be executed on the entity that will be spawned when it is spawned.",
+			"markdownDescription": "If specified, the specified entity action type will be executed on the entity that will be spawned when it is spawned."
 		},
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this bi-entity action will be executed on either or both the actor (the entity that invoked the entity action) and the target (the spawned entity)."
+			"description": "If specified, this bi-entity action will be executed on either or both the actor (the entity that invoked the entity action) and the target (the spawned entity).",
+			"markdownDescription": "If specified, this bi-entity action will be executed on either or both the actor (the entity that invoked the entity action) and the target (the spawned entity)."
 		}
 	}
 }

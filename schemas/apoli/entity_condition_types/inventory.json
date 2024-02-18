@@ -5,39 +5,51 @@
 	"properties": {
 		"inventory_types": {
 			"type": "array",
-			"default": "[\"inventory\"]",
-			"description": "Determines whether to check for items in the entity's inventory, inventories of powers present in the entity, or both."
+			"items": {
+				"$ref": "../types/inventory_type.json"
+			},
+			"uniqueItems": true,
+			"description": "Determines whether to check for items in the entity's inventory, inventories of powers present in the entity, or both.",
+			"markdownDescription": "Determines whether to check for items in the entity's inventory, inventories of powers present in the entity, or both."
 		},
 		"process_mode": {
 			"$ref": "../types/process_mode.json",
-			"default": "\"items\"",
-			"description": "Determines how the item stacks in the specified inventory/inventories are evaluated."
+			"description": "Determines how the item stacks in the specified inventory/inventories are evaluated.",
+			"markdownDescription": "Determines how the item stacks in the specified inventory/inventories are evaluated."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, only account for items from the specified inventory/inventories that fulfill this condition."
+			"$ref": "../item_condition.json",
+			"description": "If specified, only account for items from the specified inventory/inventories that fulfill this condition.",
+			"markdownDescription": "If specified, only account for items from the specified inventory/inventories that fulfill this condition."
 		},
 		"slots": {
 			"type": "array",
-			"description": "If specified, only items from these specified item slots are evaluated."
+			"items": {
+				"$ref": "../types/item_slot.json"
+			},
+			"description": "If specified, only items from these specified item slots are evaluated.",
+			"markdownDescription": "If specified, only items from these specified item slots are evaluated."
 		},
 		"slot": {
 			"$ref": "../types/item_slot.json",
-			"description": "If specified, only the item from this specified item slot is evaluated."
+			"description": "If specified, only the item from this specified item slot is evaluated.",
+			"markdownDescription": "If specified, only the item from this specified item slot is evaluated."
 		},
 		"power": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified and if `inventory_type` is `\"power\"`, the items in the inventory of this power will be evaluated instead."
+			"description": "If specified and if `inventory_type` is `\"power\"`, the items in the inventory of this power will be evaluated instead.",
+			"markdownDescription": "If specified and if `inventory_type` is `\"power\"`, the items in the inventory of this power will be evaluated instead."
 		},
 		"comparison": {
-			"type": "comparison",
-			"default": "\">\"",
-			"description": "Determines how the amount of items/stacks that were evaluated are compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "Determines how the amount of items/stacks that were evaluated are compared to the specified value.",
+			"markdownDescription": "Determines how the amount of items/stacks that were evaluated are compared to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
 			"default": 0,
-			"description": "The value at which the amount of items/stacks that were evaluated are compared to."
+			"description": "The value at which the amount of items/stacks that were evaluated are compared to.",
+			"markdownDescription": "The value at which the amount of items/stacks that were evaluated are compared to."
 		}
 	}
 }

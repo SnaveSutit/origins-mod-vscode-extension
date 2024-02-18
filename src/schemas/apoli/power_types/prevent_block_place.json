@@ -25,12 +25,10 @@
 			"$ref": "$ref(apoli:block_condition)"
 		},
 		"directions": {
-			"type": "array",
-			"default": "[\"up\", \"down\", \"north\", \"south\", \"east\", \"west\"]"
+			"$ref": "$ref(apoli:types/directions)"
 		},
 		"hands": {
-			"type": "array",
-			"default": "[\"main_hand\", \"off_hand\"]"
+			"$ref": "$ref(apoli:types/hands)"
 		},
 		"result_stack": {
 			"$ref": "$ref(apoli:types/item_stack)"

@@ -5,7 +5,7 @@
 	"required": ["equipment_slot", "item_condition"],
 	"properties": {
 		"equipment_slot": {
-			"type": "string"
+			"$ref": "$ref(apoli:types/equipment_slot)"
 		},
 		"item_condition": {
 			"$ref": "$ref(apoli:item_condition)"

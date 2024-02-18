@@ -8,7 +8,8 @@
 	"properties": {
 		"predicate": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the predicate the entity needs to pass."
+			"description": "The namespace and ID of the predicate the entity needs to pass.",
+			"markdownDescription": "The namespace and ID of the predicate the entity needs to pass."
 		}
 	}
 }

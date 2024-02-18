@@ -12,23 +12,28 @@
 				"world_origin",
 				"world_spawn"
 			],
-			"description": "The point to compare the distance to. Accepts `\"world_origin\"` or `\"world_spawn\"`."
+			"description": "The point to compare the distance to. Accepts `\"world_origin\"` or `\"world_spawn\"`.",
+			"markdownDescription": "The point to compare the distance to. Accepts `\"world_origin\"` or `\"world_spawn\"`."
 		},
 		"offset": {
 			"$ref": "../types/vector.json",
-			"description": "If specified, determines how much the reference point should be offset."
+			"description": "If specified, determines how much the reference point should be offset.",
+			"markdownDescription": "If specified, determines how much the reference point should be offset."
 		},
 		"ignore_x": {
 			"type": "boolean",
-			"description": "Determines whether to consider the X axis to be 0."
+			"description": "Determines whether to consider the X axis to be 0.",
+			"markdownDescription": "Determines whether to consider the X axis to be 0."
 		},
 		"ignore_y": {
 			"type": "boolean",
-			"description": "Determines whether to consider the Y axis to be 0."
+			"description": "Determines whether to consider the Y axis to be 0.",
+			"markdownDescription": "Determines whether to consider the Y axis to be 0."
 		},
 		"ignore_z": {
 			"type": "boolean",
-			"description": "Determines whether to consider the Z axis to be 0."
+			"description": "Determines whether to consider the Z axis to be 0.",
+			"markdownDescription": "Determines whether to consider the Z axis to be 0."
 		},
 		"shape": {
 			"enum": [
@@ -36,28 +41,34 @@
 				"star",
 				"sphere"
 			],
-			"description": "Determines the shape of the check. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`."
+			"description": "Determines the shape of the check. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`.",
+			"markdownDescription": "Determines the shape of the check. Accepts `\"cube\"`, `\"star\"` or `\"sphere\"`."
 		},
 		"scale_reference_to_dimension": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines whether to check for the reference point whilst considering the coordinate scale of the dimension."
+			"description": "Determines whether to check for the reference point whilst considering the coordinate scale of the dimension.",
+			"markdownDescription": "Determines whether to check for the reference point whilst considering the coordinate scale of the dimension."
 		},
 		"result_on_the_wrong_dimension": {
 			"type": "boolean",
-			"description": "If specified, this value will override the result of the comparison if the block being tested is not in the reference's dimension."
+			"description": "If specified, this value will override the result of the comparison if the block being tested is not in the reference's dimension.",
+			"markdownDescription": "If specified, this value will override the result of the comparison if the block being tested is not in the reference's dimension."
 		},
 		"round_to_digit": {
 			"type": "integer",
-			"description": "If specified, rounds the result to the closest number with the specified amount of digits after the comma. Negative numbers also work (e.g: `-2` rounds to multiples of 100)."
+			"description": "If specified, rounds the result to the closest number with the specified amount of digits after the comma. Negative numbers also work (e.g: `-2` rounds to multiples of 100).",
+			"markdownDescription": "If specified, rounds the result to the closest number with the specified amount of digits after the comma. Negative numbers also work (e.g: `-2` rounds to multiples of 100)."
 		},
 		"comparison": {
 			"$ref": "../types/comparison.json",
-			"description": "Determines how the calculated distance is compared to the specified value."
+			"description": "Determines how the calculated distance is compared to the specified value.",
+			"markdownDescription": "Determines how the calculated distance is compared to the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "The value to compare the calculated distance to."
+			"description": "The value to compare the calculated distance to.",
+			"markdownDescription": "The value to compare the calculated distance to."
 		}
 	}
 }

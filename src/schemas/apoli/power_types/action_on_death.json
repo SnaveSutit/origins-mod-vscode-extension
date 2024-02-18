@@ -11,7 +11,7 @@
 			"$ref": "$ref(apoli:bientity_condition)"
 		},
 		"damage_condition": {
-			"type": "damage condition type"
+			"$ref": "$ref(apoli:damage_condition)"
 		}
 	}
 }

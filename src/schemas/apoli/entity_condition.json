@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/",
+	"type": "object",
+	"required": ["type"],
+
+	"$IMPORT": {
+		"type": "import_files_into_array",
+		"path": "$ref(apoli:entity_condition_types)",
+		"output_key": "allOf",
+		"schemaStructure": {
+			"if": {
+				"required": ["type"],
+				"properties": {
+					"type": {
+						"enum": ["apoli:$$fileName", "origins:$$fileName"]
+					}
+				}
+			},
+			"then": {
+				"$ref": "$$fileRef"
+			}
+		}
+	},
+
+	"allOf": []
+}

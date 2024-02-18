@@ -2,16 +2,13 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/side/",
 	"type": "object",
-	"required": [
-		"action",
-		"side"
-	],
+	"required": ["action", "side"],
 	"properties": {
 		"action": {
-			"type": "action type"
+			"$ref": "$$action_type"
 		},
 		"side": {
-			"type": "string"
+			"enum": ["client", "server"]
 		}
 	}
 }

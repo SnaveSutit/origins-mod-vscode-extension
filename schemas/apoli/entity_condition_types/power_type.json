@@ -8,7 +8,8 @@
 	"properties": {
 		"power_type": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the [Power Type](../power_types.md) of a power the entity has."
+			"description": "The namespace and ID of the [Power Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/power_type) of a power the entity has.",
+			"markdownDescription": "The namespace and ID of the [Power Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/power_type) of a power the entity has."
 		}
 	}
 }

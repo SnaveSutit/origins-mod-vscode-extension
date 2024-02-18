@@ -1,0 +1,118 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_action_types/",
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:consume",
+							"origins:consume"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_action_types/consume.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:damage",
+							"origins:damage"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_action_types/damage.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:holder_action",
+							"origins:holder_action"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_action_types/holder_action.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:merge_nbt",
+							"origins:merge_nbt"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_action_types/merge_nbt.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:modify",
+							"origins:modify"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_action_types/modify.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
+							"apoli:remove_enchantment",
+							"origins:remove_enchantment"
+						]
+					}
+				}
+			},
+			"then": {
+				"$ref": "item_action_types/remove_enchantment.json"
+			}
+		}
+	]
+}

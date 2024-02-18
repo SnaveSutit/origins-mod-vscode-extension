@@ -5,19 +5,29 @@
 	"properties": {
 		"status_effect": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, only this status effect will have its duration modified upon being received."
+			"description": "If specified, only this status effect will have its duration modified upon being received.",
+			"markdownDescription": "If specified, only this status effect will have its duration modified upon being received."
 		},
 		"status_effects": {
 			"type": "array",
-			"description": "If specified, only these status effects will have its duration modified upon being received."
+			"items": {
+				"$ref": "../types/identifier.json"
+			},
+			"description": "If specified, only these status effects will have its duration modified upon being received.",
+			"markdownDescription": "If specified, only these status effects will have its duration modified upon being received."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the duration of the specified status effect(s)."
+			"description": "If specified, this modifier will be applied to the duration of the specified status effect(s).",
+			"markdownDescription": "If specified, this modifier will be applied to the duration of the specified status effect(s)."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to the duration of the specified status effect(s)."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the duration of the specified status effect(s).",
+			"markdownDescription": "If specified, these modifiers will be applied to the duration of the specified status effect(s)."
 		}
 	}
 }

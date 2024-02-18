@@ -5,7 +5,7 @@
 	"required": ["comparison", "compare_to"],
 	"properties": {
 		"comparison": {
-			"type": "comparison"
+			"$ref": "$ref(apoli:types/comparison)"
 		},
 		"compare_to": {
 			"type": "number"

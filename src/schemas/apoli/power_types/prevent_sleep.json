@@ -7,8 +7,7 @@
 			"$ref": "$ref(apoli:block_condition)"
 		},
 		"message": {
-			"type": "default translatable text component",
-			"default": "{\"translatable\": \"text.apoli.cannot_sleep\"}"
+			"$ref": "$ref(apoli:types/default_translatable_text_component)"
 		},
 		"set_spawn_point": {
 			"type": "boolean",

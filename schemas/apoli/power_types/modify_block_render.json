@@ -8,11 +8,13 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, only modify how the blocks that fulfill this condition would look like."
+			"description": "If specified, only modify how the blocks that fulfill this condition would look like.",
+			"markdownDescription": "If specified, only modify how the blocks that fulfill this condition would look like."
 		},
 		"block": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the replacement block."
+			"description": "The namespace and ID of the replacement block.",
+			"markdownDescription": "The namespace and ID of the replacement block."
 		}
 	}
 }

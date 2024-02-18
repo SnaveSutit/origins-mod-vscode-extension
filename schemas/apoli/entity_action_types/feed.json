@@ -9,11 +9,13 @@
 	"properties": {
 		"food": {
 			"type": "integer",
-			"description": "The amount of food points to restore."
+			"description": "The amount of food points to restore.",
+			"markdownDescription": "The amount of food points to restore."
 		},
 		"saturation": {
 			"type": "number",
-			"description": "The amount of saturation points to restore."
+			"description": "The amount of saturation points to restore.",
+			"markdownDescription": "The amount of saturation points to restore."
 		}
 	}
 }

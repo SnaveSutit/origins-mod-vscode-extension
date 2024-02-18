@@ -11,8 +11,8 @@
 			"$ref": "$ref(apoli:block_condition)"
 		},
 		"render_type": {
-			"type": "string",
-			"default": "\"blindness\""
+			"enum": ["blindness", "remove_blocks", "none"],
+			"default": "blindness"
 		},
 		"view_distance": {
 			"type": "number",

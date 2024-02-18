@@ -9,22 +9,26 @@
 	"properties": {
 		"amount": {
 			"type": "number",
-			"description": "The amount of damage to deal."
+			"description": "The amount of damage to deal.",
+			"markdownDescription": "The amount of damage to deal."
 		},
 		"damage_type": {
 			"$ref": "../types/identifier.json",
-			"description": "The damage type to be used. Controls e.g. the death message, invulnerabilities (e.g. towards fire), or whether armor is taken into account."
+			"description": "The damage type to be used. Controls e.g. the death message, invulnerabilities (e.g. towards fire), or whether armor is taken into account.",
+			"markdownDescription": "The damage type to be used. Controls e.g. the death message, invulnerabilities (e.g. towards fire), or whether armor is taken into account."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the damage taken by the '**target**' entity."
+			"description": "If specified, this modifier will be applied to the damage taken by the '**target**' entity.",
+			"markdownDescription": "If specified, this modifier will be applied to the damage taken by the '**target**' entity."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
 				"$ref": "../types/attribute_modifier.json"
 			},
-			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
+			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity.",
+			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
 		}
 	}
 }

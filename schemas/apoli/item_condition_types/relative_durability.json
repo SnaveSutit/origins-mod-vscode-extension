@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"description": "Determines how the relative durability value of the item should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "Determines how the relative durability value of the item should be compared to the specified value.",
+			"markdownDescription": "Determines how the relative durability value of the item should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "The value which the durability value of the item should be compared to."
+			"description": "The value which the durability value of the item should be compared to.",
+			"markdownDescription": "The value which the durability value of the item should be compared to."
 		}
 	}
 }

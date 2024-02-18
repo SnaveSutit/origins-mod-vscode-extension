@@ -7,8 +7,9 @@
 	],
 	"properties": {
 		"ingredient": {
-			"type": "ingredient",
-			"description": "The ingredient this item must match to pass the check."
+			"$ref": "../types/ingredient.json",
+			"description": "The ingredient this item must match to pass the check.",
+			"markdownDescription": "The ingredient this item must match to pass the check."
 		}
 	}
 }

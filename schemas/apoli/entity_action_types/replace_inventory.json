@@ -8,43 +8,52 @@
 	"properties": {
 		"inventory_type": {
 			"$ref": "../types/inventory_type.json",
-			"description": "Determines whether to replace the items from the inventory of the entity or the inventory of a power present in the entity."
+			"description": "Determines whether to replace the items from the inventory of the entity or the inventory of a power present in the entity.",
+			"markdownDescription": "Determines whether to replace the items from the inventory of the entity or the inventory of a power present in the entity."
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the entity **before** the items are replaced."
+			"description": "If specified, this action will be executed on the entity **before** the items are replaced.",
+			"markdownDescription": "If specified, this action will be executed on the entity **before** the items are replaced."
 		},
 		"item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified, this action will be executed on the affected items **after** the affected items are replaced."
+			"$ref": "../item_action.json",
+			"description": "If specified, this action will be executed on the affected items **after** the affected items are replaced.",
+			"markdownDescription": "If specified, this action will be executed on the affected items **after** the affected items are replaced."
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, only items which fulfill this condition will be replaced."
+			"$ref": "../item_condition.json",
+			"description": "If specified, only items which fulfill this condition will be replaced.",
+			"markdownDescription": "If specified, only items which fulfill this condition will be replaced."
 		},
 		"slot": {
 			"$ref": "../types/item_slot.json",
-			"description": "If specified, only items in the designated slot will be replaced."
+			"description": "If specified, only items in the designated slot will be replaced.",
+			"markdownDescription": "If specified, only items in the designated slot will be replaced."
 		},
 		"slots": {
 			"type": "array",
 			"items": {
 				"$ref": "../types/item_slot.json"
 			},
-			"description": "If specified, only items in the designated slots will be replaced."
+			"description": "If specified, only items in the designated slots will be replaced.",
+			"markdownDescription": "If specified, only items in the designated slots will be replaced."
 		},
 		"power": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, the items in the inventory of this power will be replaced instead of the items in the entity's inventory if `inventory_type` is set to `\"power\"`."
+			"description": "If specified, the items in the inventory of this power will be replaced instead of the items in the entity's inventory if `inventory_type` is set to `\"power\"`.",
+			"markdownDescription": "If specified, the items in the inventory of this power will be replaced instead of the items in the entity's inventory if `inventory_type` is set to `\"power\"`."
 		},
 		"stack": {
 			"$ref": "../types/item_stack.json",
-			"description": "The item to use as a replacement for the affected items."
+			"description": "The item to use as a replacement for the affected items.",
+			"markdownDescription": "The item to use as a replacement for the affected items."
 		},
 		"merge_nbt": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines whether to merge the NBTs of the item that will be replaced and the NBTs of the item that will be used as a replacement."
+			"description": "Determines whether to merge the NBTs of the item that will be replaced and the NBTs of the item that will be used as a replacement.",
+			"markdownDescription": "Determines whether to merge the NBTs of the item that will be replaced and the NBTs of the item that will be used as a replacement."
 		}
 	}
 }

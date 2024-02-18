@@ -8,11 +8,13 @@
 	"properties": {
 		"power": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the power the entity needs to have to pass the check."
+			"description": "The namespace and ID of the power the entity needs to have to pass the check.",
+			"markdownDescription": "The namespace and ID of the power the entity needs to have to pass the check."
 		},
 		"source": {
 			"$ref": "../types/identifier.json",
-			"description": "If specified, the condition will check if the power is from the specified power source."
+			"description": "If specified, the condition will check if the power is from the specified power source.",
+			"markdownDescription": "If specified, the condition will check if the power is from the specified power source."
 		}
 	}
 }

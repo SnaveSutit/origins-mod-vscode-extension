@@ -4,12 +4,14 @@
 	"type": "object",
 	"properties": {
 		"damage_condition": {
-			"type": "damage condition type",
-			"description": "If specified, death will only be prevented if the damage dealt to the entity fulfills this condition."
+			"$ref": "../damage_condition.json",
+			"description": "If specified, death will only be prevented if the damage dealt to the entity fulfills this condition.",
+			"markdownDescription": "If specified, death will only be prevented if the damage dealt to the entity fulfills this condition."
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the entity when death is prevented."
+			"description": "If specified, this action will be executed on the entity when death is prevented.",
+			"markdownDescription": "If specified, this action will be executed on the entity when death is prevented."
 		}
 	}
 }

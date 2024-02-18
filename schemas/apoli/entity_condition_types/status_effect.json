@@ -8,27 +8,32 @@
 	"properties": {
 		"effect": {
 			"$ref": "../types/identifier.json",
-			"description": "The namespace and ID of the status effect to check for."
+			"description": "The namespace and ID of the status effect to check for.",
+			"markdownDescription": "The namespace and ID of the status effect to check for."
 		},
 		"min_amplifier": {
 			"type": "integer",
 			"default": 0,
-			"description": "The minimum amplifier the status effect should have in order to pass the check."
+			"description": "The minimum amplifier the status effect should have in order to pass the check.",
+			"markdownDescription": "The minimum amplifier the status effect should have in order to pass the check."
 		},
 		"max_amplifier": {
 			"type": "integer",
 			"default": 2147483647,
-			"description": "The maximum amplifier the status effect should have in order to pass the check."
+			"description": "The maximum amplifier the status effect should have in order to pass the check.",
+			"markdownDescription": "The maximum amplifier the status effect should have in order to pass the check."
 		},
 		"min_duration": {
 			"type": "integer",
 			"default": 0,
-			"description": "The minimum duration in ticks the status effect should have left in order to pass the check."
+			"description": "The minimum duration in ticks the status effect should have left in order to pass the check.",
+			"markdownDescription": "The minimum duration in ticks the status effect should have left in order to pass the check."
 		},
 		"max_duration": {
 			"type": "integer",
 			"default": 2147483647,
-			"description": "The maximum duration in ticks the status effect should have left in order to pass the check."
+			"description": "The maximum duration in ticks the status effect should have left in order to pass the check.",
+			"markdownDescription": "The maximum duration in ticks the status effect should have left in order to pass the check."
 		}
 	}
 }

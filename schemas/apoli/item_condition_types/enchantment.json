@@ -9,15 +9,18 @@
 	"properties": {
 		"enchantment": {
 			"$ref": "../types/identifier.json",
-			"description": "ID of the enchantment of interest, e.g. `minecraft:protection`. If not set, amount of enchantments will be checked instead."
+			"description": "ID of the enchantment of interest, e.g. `minecraft:protection`. If not set, amount of enchantments will be checked instead.",
+			"markdownDescription": "ID of the enchantment of interest, e.g. `minecraft:protection`. If not set, amount of enchantments will be checked instead."
 		},
 		"comparison": {
-			"type": "comparison",
-			"description": "How to compare the enchantment level, or the amount of enchantments, to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How to compare the enchantment level, or the amount of enchantments, to the specified value.",
+			"markdownDescription": "How to compare the enchantment level, or the amount of enchantments, to the specified value."
 		},
 		"compare_to": {
 			"type": "integer",
-			"description": "Which value to compare the enchantment level or amount against."
+			"description": "Which value to compare the enchantment level or amount against.",
+			"markdownDescription": "Which value to compare the enchantment level or amount against."
 		}
 	}
 }

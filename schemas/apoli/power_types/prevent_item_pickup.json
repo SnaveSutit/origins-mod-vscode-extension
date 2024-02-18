@@ -5,28 +5,34 @@
 	"properties": {
 		"bientity_action_thrower": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this bi-entity action will be executed on either or both the actor and target entities (See to the table above to determine which actor/target entity is being referred to.)"
+			"description": "If specified, this bi-entity action will be executed on either or both the actor and target entities (See to the table above to determine which actor/target entity is being referred to.)",
+			"markdownDescription": "If specified, this bi-entity action will be executed on either or both the actor and target entities (See to the table above to determine which actor/target entity is being referred to.)"
 		},
 		"bientity_action_item": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this bi-entity action will be executed on either or both the actor and target entities (See to the table above to determine which actor/target entity is being referred to.)"
+			"description": "If specified, this bi-entity action will be executed on either or both the actor and target entities (See to the table above to determine which actor/target entity is being referred to.)",
+			"markdownDescription": "If specified, this bi-entity action will be executed on either or both the actor and target entities (See to the table above to determine which actor/target entity is being referred to.)"
 		},
 		"item_action": {
-			"$ref": "apoli:item_action",
-			"description": "If specified,this item action will be executed on the item that was attempted to be picked up."
+			"$ref": "../item_action.json",
+			"description": "If specified,this item action will be executed on the item that was attempted to be picked up.",
+			"markdownDescription": "If specified,this item action will be executed on the item that was attempted to be picked up."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the restriction will only happen if this bi-entity condition is fulfilled by either or both the actor and target entities (See the table above to determine which actor/target entity is being referred to.)"
+			"description": "If specified, the restriction will only happen if this bi-entity condition is fulfilled by either or both the actor and target entities (See the table above to determine which actor/target entity is being referred to.)",
+			"markdownDescription": "If specified, the restriction will only happen if this bi-entity condition is fulfilled by either or both the actor and target entities (See the table above to determine which actor/target entity is being referred to.)"
 		},
 		"item_condition": {
-			"$ref": "apoli:item_condition",
-			"description": "If specified, the restriction will only happen if this item condition is fulfilled by the item about to be picked up."
+			"$ref": "../item_condition.json",
+			"description": "If specified, the restriction will only happen if this item condition is fulfilled by the item about to be picked up.",
+			"markdownDescription": "If specified, the restriction will only happen if this item condition is fulfilled by the item about to be picked up."
 		},
 		"priority": {
 			"type": "integer",
 			"default": 0,
-			"description": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)"
+			"description": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)",
+			"markdownDescription": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)"
 		}
 	}
 }

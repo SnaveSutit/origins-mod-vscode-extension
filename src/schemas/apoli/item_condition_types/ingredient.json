@@ -2,12 +2,10 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/item_condition_types/ingredient/",
 	"type": "object",
-	"required": [
-		"ingredient"
-	],
+	"required": ["ingredient"],
 	"properties": {
 		"ingredient": {
-			"type": "ingredient"
+			"$ref": "$ref(apoli:types/ingredient)"
 		}
 	}
 }

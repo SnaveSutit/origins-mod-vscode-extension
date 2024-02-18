@@ -6,12 +6,14 @@
 		"amount": {
 			"type": "integer",
 			"default": 1,
-			"description": "The amount of damage it should do to the item stack."
+			"description": "The amount of damage it should do to the item stack.",
+			"markdownDescription": "The amount of damage it should do to the item stack."
 		},
 		"ignore_unbreaking": {
 			"type": "boolean",
 			"default": false,
-			"description": "Determines if this action should ignore the Unbreaking enchantment."
+			"description": "Determines if this action should ignore the Unbreaking enchantment.",
+			"markdownDescription": "Determines if this action should ignore the Unbreaking enchantment."
 		}
 	}
 }

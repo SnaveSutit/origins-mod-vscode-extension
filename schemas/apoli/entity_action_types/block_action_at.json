@@ -8,7 +8,8 @@
 	"properties": {
 		"block_action": {
 			"$ref": "../block_action.json",
-			"description": "The block action type to execute."
+			"description": "The block action type to execute.",
+			"markdownDescription": "The block action type to execute."
 		}
 	}
 }

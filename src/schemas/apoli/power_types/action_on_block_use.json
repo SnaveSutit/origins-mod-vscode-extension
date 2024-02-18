@@ -16,12 +16,10 @@
 			"$ref": "$ref(apoli:item_condition)"
 		},
 		"directions": {
-			"type": "array",
-			"default": "[\"north\", \"east\", \"south\", \"west\", \"up\", \"down\"]"
+			"$ref": "$ref(apoli:types/directions)"
 		},
 		"hands": {
-			"type": "array",
-			"default": "[\"off_hand\", \"main_hand\"]"
+			"$ref": "$ref(apoli:types/hands)"
 		},
 		"result_stack": {
 			"$ref": "$ref(apoli:types/item_stack)"
@@ -33,8 +31,7 @@
 			"$ref": "$ref(apoli:item_action)"
 		},
 		"action_result": {
-			"type": "action result",
-			"default": "\"success\""
+			"$ref": "$ref(apoli:types/action_result)"
 		}
 	}
 }

@@ -4,17 +4,23 @@
 	"type": "object",
 	"properties": {
 		"modifier": {
-			"type": "attributed attribute modifier",
-			"description": "If specified, this modifier will be applied to its corresponding attribute."
+			"$ref": "../types/attributed_attribute_modifier.json",
+			"description": "If specified, this modifier will be applied to its corresponding attribute.",
+			"markdownDescription": "If specified, this modifier will be applied to its corresponding attribute."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to their corresponding attributes."
+			"items": {
+				"$ref": "../types/attributed_attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to their corresponding attributes.",
+			"markdownDescription": "If specified, these modifiers will be applied to their corresponding attributes."
 		},
 		"update_health": {
 			"type": "boolean",
 			"default": true,
-			"description": "When true, the player's health percentage will update to match their new maximum health."
+			"description": "When true, the player's health percentage will update to match their new maximum health.",
+			"markdownDescription": "When true, the player's health percentage will update to match their new maximum health."
 		}
 	}
 }

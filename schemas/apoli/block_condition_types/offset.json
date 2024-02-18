@@ -8,22 +8,26 @@
 	"properties": {
 		"condition": {
 			"$ref": "../block_condition.json",
-			"description": "The condition to check with the given offset."
+			"description": "The condition to check with the given offset.",
+			"markdownDescription": "The condition to check with the given offset."
 		},
 		"x": {
 			"type": "integer",
 			"default": 0,
-			"description": "How much to offset the position on the x-axis."
+			"description": "How much to offset the position on the x-axis.",
+			"markdownDescription": "How much to offset the position on the x-axis."
 		},
 		"y": {
 			"type": "integer",
 			"default": 0,
-			"description": "How much to offset the position on the y-axis."
+			"description": "How much to offset the position on the y-axis.",
+			"markdownDescription": "How much to offset the position on the y-axis."
 		},
 		"z": {
 			"type": "integer",
 			"default": 0,
-			"description": "How much to offset the position on the z-axis."
+			"description": "How much to offset the position on the z-axis.",
+			"markdownDescription": "How much to offset the position on the z-axis."
 		}
 	}
 }

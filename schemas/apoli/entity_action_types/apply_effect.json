@@ -5,11 +5,16 @@
 	"properties": {
 		"effect": {
 			"$ref": "../types/status_effect_instance.json",
-			"description": "If set, this status effect will be applied by this action."
+			"description": "If set, this status effect will be applied by this action.",
+			"markdownDescription": "If set, this status effect will be applied by this action."
 		},
 		"effects": {
 			"type": "array",
-			"description": "If set, these status effects will be applied by this action."
+			"items": {
+				"$ref": "../types/status_effect_instance.json"
+			},
+			"description": "If set, these status effects will be applied by this action.",
+			"markdownDescription": "If set, these status effects will be applied by this action."
 		}
 	}
 }

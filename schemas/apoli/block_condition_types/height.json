@@ -9,11 +9,13 @@
 	"properties": {
 		"comparison": {
 			"$ref": "../types/comparison.json",
-			"description": "How the Y position of the block should be compared to the specified value."
+			"description": "How the Y position of the block should be compared to the specified value.",
+			"markdownDescription": "How the Y position of the block should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "The value to compare the Y position of the block to."
+			"description": "The value to compare the Y position of the block to.",
+			"markdownDescription": "The value to compare the Y position of the block to."
 		}
 	}
 }

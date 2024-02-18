@@ -5,15 +5,21 @@
 	"properties": {
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition."
+			"description": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition.",
+			"markdownDescription": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier.json",
-			"description": "If specified, this modifier will be applied to the entity's slipperiness."
+			"description": "If specified, this modifier will be applied to the entity's slipperiness.",
+			"markdownDescription": "If specified, this modifier will be applied to the entity's slipperiness."
 		},
 		"modifiers": {
 			"type": "array",
-			"description": "If specified, these modifiers will be applied to the entity's slipperiness."
+			"items": {
+				"$ref": "../types/attribute_modifier.json"
+			},
+			"description": "If specified, these modifiers will be applied to the entity's slipperiness.",
+			"markdownDescription": "If specified, these modifiers will be applied to the entity's slipperiness."
 		}
 	}
 }

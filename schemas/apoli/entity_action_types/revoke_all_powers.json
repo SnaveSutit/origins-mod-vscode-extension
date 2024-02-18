@@ -8,7 +8,8 @@
 	"properties": {
 		"source": {
 			"$ref": "../types/identifier.json",
-			"description": "The ID of the source to revoke powers from."
+			"description": "The ID of the source to revoke powers from.",
+			"markdownDescription": "The ID of the source to revoke powers from."
 		}
 	}
 }

@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"action": {
-			"type": "action type",
-			"description": "The action which will be executed after the delay."
+			"$ref": "$$action_type",
+			"description": "The action which will be executed after the delay.",
+			"markdownDescription": "The action which will be executed after the delay."
 		},
 		"ticks": {
 			"type": "integer",
-			"description": "The amount of ticks until the action is executed."
+			"description": "The amount of ticks until the action is executed.",
+			"markdownDescription": "The amount of ticks until the action is executed."
 		}
 	}
 }

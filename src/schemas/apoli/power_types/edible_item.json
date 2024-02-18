@@ -17,14 +17,13 @@
 			"$ref": "$ref(apoli:item_condition)"
 		},
 		"food_component": {
-			"type": "food component"
+			"$ref": "$ref(apoli:types/food_component)"
 		},
 		"return_stack": {
 			"$ref": "$ref(apoli:types/item_stack)"
 		},
 		"consume_action": {
-			"type": "string",
-			"default": "\"eat\""
+			"enum": ["eat", "drink"]
 		},
 		"consume_sound": {
 			"$ref": "$ref(apoli:types/identifier)"
@@ -33,7 +32,10 @@
 			"$ref": "$ref(apoli:types/attribute_modifier)"
 		},
 		"consuming_time_modifiers": {
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
 		},
 		"priority": {
 			"type": "integer",

@@ -5,11 +5,13 @@
 	"properties": {
 		"projectile": {
 			"$ref": "../types/identifier.json",
-			"description": "If set, the check will only pass if the projectile was of an entity type with the specified namespace and ID."
+			"description": "If set, the check will only pass if the projectile was of an entity type with the specified namespace and ID.",
+			"markdownDescription": "If set, the check will only pass if the projectile was of an entity type with the specified namespace and ID."
 		},
 		"projectile_condition": {
-			"$ref": "apoli:entity_condition",
-			"description": "If set, the check will only pass if the projectile entity fulfills this condition."
+			"$ref": "../entity_condition.json",
+			"description": "If set, the check will only pass if the projectile entity fulfills this condition.",
+			"markdownDescription": "If set, the check will only pass if the projectile entity fulfills this condition."
 		}
 	}
 }

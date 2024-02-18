@@ -8,12 +8,14 @@
 	],
 	"properties": {
 		"comparison": {
-			"type": "comparison",
-			"description": "How the health of the entity should be compared to the specified value."
+			"$ref": "../types/comparison.json",
+			"description": "How the health of the entity should be compared to the specified value.",
+			"markdownDescription": "How the health of the entity should be compared to the specified value."
 		},
 		"compare_to": {
 			"type": "number",
-			"description": "Which value the health should be compared to."
+			"description": "Which value the health should be compared to.",
+			"markdownDescription": "Which value the health should be compared to."
 		}
 	}
 }

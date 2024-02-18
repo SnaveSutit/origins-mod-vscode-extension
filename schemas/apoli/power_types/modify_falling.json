@@ -8,12 +8,14 @@
 	"properties": {
 		"velocity": {
 			"type": "number",
-			"description": "Determines the speed of the falling velocity."
+			"description": "Determines the speed of the falling velocity.",
+			"markdownDescription": "Determines the speed of the falling velocity."
 		},
 		"take_fall_damage": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines whether the entity should take fall damage or not."
+			"description": "Determines whether the entity should take fall damage or not.",
+			"markdownDescription": "Determines whether the entity should take fall damage or not."
 		}
 	}
 }
