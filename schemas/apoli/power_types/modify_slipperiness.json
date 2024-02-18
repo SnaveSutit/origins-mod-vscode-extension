@@ -9,14 +9,14 @@
 			"markdownDescription": "If specified, the modifier(s) will only apply to the blocks that fulfills this condition."
 		},
 		"modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied to the entity's slipperiness.",
 			"markdownDescription": "If specified, this modifier will be applied to the entity's slipperiness."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will be applied to the entity's slipperiness.",
 			"markdownDescription": "If specified, these modifiers will be applied to the entity's slipperiness."

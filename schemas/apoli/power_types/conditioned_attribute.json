@@ -4,14 +4,14 @@
 	"type": "object",
 	"properties": {
 		"modifier": {
-			"$ref": "../types/attributed_attribute_modifier.json",
+			"$ref": "../types/attributed_attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied to its corresponding attribute.",
 			"markdownDescription": "If specified, this modifier will be applied to its corresponding attribute."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attributed_attribute_modifier.json"
+				"$ref": "../types/attributed_attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will be applied to their corresponding attributes.",
 			"markdownDescription": "If specified, these modifiers will be applied to their corresponding attributes."
@@ -24,7 +24,7 @@
 		},
 		"update_health": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the health percentage will update to match the entity's new maximum health.",
 			"markdownDescription": "Determines whether the health percentage will update to match the entity's new maximum health."
 		}

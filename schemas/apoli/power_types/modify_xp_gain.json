@@ -4,14 +4,14 @@
 	"type": "object",
 	"properties": {
 		"modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will apply to the experience gained.",
 			"markdownDescription": "If specified, this modifier will apply to the experience gained."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will apply to the experience gained.",
 			"markdownDescription": "If specified, these modifiers will apply to the experience gained."

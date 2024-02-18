@@ -19,27 +19,27 @@
 			"markdownDescription": "If specified, this item stack will replace the item stack that was consumed *after* consuming it."
 		},
 		"food_modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will apply to the food amount gained by eating a food item.",
 			"markdownDescription": "If specified, this modifier will apply to the food amount gained by eating a food item."
 		},
 		"food_modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will apply to the food amount gained by eating a food item.",
 			"markdownDescription": "If specified, these modifiers will apply to the food amount gained by eating a food item."
 		},
 		"saturation_modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will apply to the saturation amount gained by eating a food item.",
 			"markdownDescription": "If specified, this modifier will apply to the saturation amount gained by eating a food item."
 		},
 		"saturation_modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will apply to the saturation amount gained by eating a food item.",
 			"markdownDescription": "If specified, these modifiers will apply to the saturation amount gained by eating a food item."
@@ -51,13 +51,13 @@
 		},
 		"always_edible": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether a food item can be eaten regardless of the player's hunger bar being full.",
 			"markdownDescription": "Determines whether a food item can be eaten regardless of the player's hunger bar being full."
 		},
 		"prevent_effects": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If set to `true`, prevent status effects from being applied.",
 			"markdownDescription": "If set to `true`, prevent status effects from being applied."
 		}

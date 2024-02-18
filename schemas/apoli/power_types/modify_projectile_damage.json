@@ -9,14 +9,14 @@
 			"markdownDescription": "If specified, the specified modifier(s) and action(s) will only apply if the dealt damage fulfills by this condition."
 		},
 		"modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will apply to the damage amount.",
 			"markdownDescription": "If specified, this modifier will apply to the damage amount."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will apply to the damage amount.",
 			"markdownDescription": "If specified, these modifiers will apply to the damage amount."

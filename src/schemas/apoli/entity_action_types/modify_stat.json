@@ -8,7 +8,7 @@
 			"$ref": "$ref(apoli:types/stat)"
 		},
 		"modifier": {
-			"$ref": "$ref(apoli:types/attribute_modifier)"
+			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 		}
 	}
 }

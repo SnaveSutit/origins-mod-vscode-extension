@@ -2,7 +2,10 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_action_types/action_on_set/",
 	"type": "object",
-	"required": ["set", "bientity_action"],
+	"required": [
+		"set",
+		"bientity_action"
+	],
 	"properties": {
 		"set": {
 			"$ref": "../types/identifier.json",
@@ -27,7 +30,7 @@
 		},
 		"reverse": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether to reverse the order of the entities within the power when processing.",
 			"markdownDescription": "Determines whether to reverse the order of the entities within the power when processing."
 		}

@@ -2,7 +2,9 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/status_effect_instance/",
 	"type": "object",
-	"required": ["effect"],
+	"required": [
+		"effect"
+	],
 	"properties": {
 		"effect": {
 			"$ref": "identifier.json",
@@ -23,19 +25,19 @@
 		},
 		"is_ambient": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether the particle effects of the status effect is less noticeable.",
 			"markdownDescription": "Determines whether the particle effects of the status effect is less noticeable."
 		},
 		"show_particles": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the status effect should display particle effects on the entity.",
 			"markdownDescription": "Determines whether the status effect should display particle effects on the entity."
 		},
 		"show_icon": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the status effect would display an icon on the HUD.",
 			"markdownDescription": "Determines whether the status effect would display an icon on the HUD."
 		}

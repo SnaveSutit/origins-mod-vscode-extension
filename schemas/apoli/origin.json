@@ -25,7 +25,7 @@
 		},
 		"unchoosable": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If set to true, this origin will not show up in any origin layer to choose it, but it will still be able to be set for that layer with a command or via an origin upgrade.",
 			"markdownDescription": "If set to true, this origin will not show up in any origin layer to choose it, but it will still be able to be set for that layer with a command or via an origin upgrade."
 		},

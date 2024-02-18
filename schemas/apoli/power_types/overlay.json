@@ -2,7 +2,11 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/overlay/",
 	"type": "object",
-	"required": ["texture", "draw_mode", "draw_phase"],
+	"required": [
+		"texture",
+		"draw_mode",
+		"draw_phase"
+	],
 	"properties": {
 		"texture": {
 			"$ref": "../types/identifier.json",
@@ -45,13 +49,13 @@
 		},
 		"hide_with_hud": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines if the overlay should be hidden if the HUD elements are hidden (with F1).",
 			"markdownDescription": "Determines if the overlay should be hidden if the HUD elements are hidden (with F1)."
 		},
 		"visible_in_third_person": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines if the overlay is visible in third person.",
 			"markdownDescription": "Determines if the overlay is visible in third person."
 		}

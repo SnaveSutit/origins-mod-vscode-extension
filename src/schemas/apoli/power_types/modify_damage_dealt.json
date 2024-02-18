@@ -22,12 +22,12 @@
 			"$ref": "$ref(apoli:damage_condition)"
 		},
 		"modifier": {
-			"$ref": "$ref(apoli:types/attribute_modifier)"
+			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/attribute_modifier)"
+				"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 			}
 		}
 	}

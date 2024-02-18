@@ -4,12 +4,12 @@
 	"type": "object",
 	"properties": {
 		"modifier": {
-			"$ref": "$ref(apoli:types/attributed_attribute_modifier)"
+			"$ref": "$ref(apoli:types/attributed_attribute_modifier_arrayable)"
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/attributed_attribute_modifier)"
+				"$ref": "$ref(apoli:types/attributed_attribute_modifier_arrayable)"
 			}
 		},
 		"update_health": {

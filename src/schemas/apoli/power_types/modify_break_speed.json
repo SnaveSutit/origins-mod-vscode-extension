@@ -7,21 +7,21 @@
 			"$ref": "$ref(apoli:block_condition)"
 		},
 		"modifier": {
-			"$ref": "$ref(apoli:types/attribute_modifier)"
+			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/attribute_modifier)"
+				"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 			}
 		},
 		"hardness_modifier": {
-			"$ref": "$ref(apoli:types/attribute_modifier)"
+			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 		},
 		"hardness_modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/attribute_modifier)"
+				"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 			}
 		}
 	}

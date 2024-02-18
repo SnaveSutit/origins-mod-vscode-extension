@@ -17,14 +17,14 @@
 			"markdownDescription": "Used to specify the axes affected by this modifier."
 		},
 		"modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will apply to velocity in the specified axes.",
 			"markdownDescription": "If specified, this modifier will apply to velocity in the specified axes."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will apply to the specified axes.",
 			"markdownDescription": "If specified, these modifiers will apply to the specified axes."

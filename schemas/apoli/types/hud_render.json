@@ -5,7 +5,7 @@
 	"properties": {
 		"should_render": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Whether the bar should be visible or not.",
 			"markdownDescription": "Whether the bar should be visible or not."
 		},
@@ -35,7 +35,7 @@
 		},
 		"inverted": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If set to true, inverts the way the hud render process (it'll look like its value is being decreased).",
 			"markdownDescription": "If set to true, inverts the way the hud render process (it'll look like its value is being decreased)."
 		},

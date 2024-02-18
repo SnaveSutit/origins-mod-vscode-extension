@@ -17,7 +17,7 @@
 			"type": "string"
 		},
 		"modifier": {
-			"$ref": "$ref(apoli:types/attribute_modifier)"
+			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 		}
 	}
 }

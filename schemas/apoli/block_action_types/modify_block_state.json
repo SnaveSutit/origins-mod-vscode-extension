@@ -2,7 +2,9 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/modify_block_state/",
 	"type": "object",
-	"required": ["property"],
+	"required": [
+		"property"
+	],
 	"properties": {
 		"property": {
 			"type": "string",
@@ -10,7 +12,10 @@
 			"markdownDescription": "The name of the property that will be modified. Examples are `facing` or `age`. See [Minecraft Wiki: Block States (List of block states)](https://origins.readthedocs.io/en/latest/types/block_action_types/modify_block_state) for possible values."
 		},
 		"operation": {
-			"enum": ["set", "add"],
+			"enum": [
+				"set",
+				"add"
+			],
 			"description": "Determines how the value specified in the `change` field is operated on the specified property. Accepts `\"add\"` or `\"set\"`.",
 			"markdownDescription": "Determines how the value specified in the `change` field is operated on the specified property. Accepts `\"add\"` or `\"set\"`."
 		},
@@ -31,7 +36,7 @@
 		},
 		"cycle": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If set to true, changes the property to the next state in the cycle, ignoring all other optional fields. All property types can use this operation.",
 			"markdownDescription": "If set to true, changes the property to the next state in the cycle, ignoring all other optional fields. All property types can use this operation."
 		}

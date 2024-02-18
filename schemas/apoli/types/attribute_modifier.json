@@ -28,7 +28,7 @@
 			"markdownDescription": "A descriptive name for the modifier, describing where it comes from."
 		},
 		"modifier": {
-			"$ref": "attribute_modifier.json",
+			"$ref": "attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied to the value of the modifier.",
 			"markdownDescription": "If specified, this modifier will be applied to the value of the modifier."
 		}

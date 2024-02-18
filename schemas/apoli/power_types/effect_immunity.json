@@ -18,7 +18,7 @@
 		},
 		"inverted": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether to make the entity immune to the status effect(s) that aren't specified.",
 			"markdownDescription": "Determines whether to make the entity immune to the status effect(s) that aren't specified."
 		}

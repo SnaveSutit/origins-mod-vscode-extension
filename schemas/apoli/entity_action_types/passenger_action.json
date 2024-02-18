@@ -20,7 +20,7 @@
 		},
 		"recursive": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If set to `true`, the specified action(s) will be executed on all the passenger entities.",
 			"markdownDescription": "If set to `true`, the specified action(s) will be executed on all the passenger entities."
 		}

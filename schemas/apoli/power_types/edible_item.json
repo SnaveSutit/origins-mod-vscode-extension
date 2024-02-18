@@ -51,14 +51,14 @@
 			"markdownDescription": "If specified, the sound event with this namespace and ID will be played when the item is eaten."
 		},
 		"consuming_time_modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied on the maximum time the item is being consumed (in ticks).",
 			"markdownDescription": "If specified, this modifier will be applied on the maximum time the item is being consumed (in ticks)."
 		},
 		"consuming_time_modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will be applied on the the maximum time the item is being consumed (in ticks).",
 			"markdownDescription": "If specified, these modifiers will be applied on the the maximum time the item is being consumed (in ticks)."

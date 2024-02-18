@@ -2,7 +2,10 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/food_component/",
 	"type": "object",
-	"required": ["hunger", "saturation"],
+	"required": [
+		"hunger",
+		"saturation"
+	],
 	"properties": {
 		"hunger": {
 			"type": "integer",
@@ -16,19 +19,19 @@
 		},
 		"meat": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Whether this food component counts as meat or not.",
 			"markdownDescription": "Whether this food component counts as meat or not."
 		},
 		"always_edible": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Whether this food component is edible at full hunger or not.",
 			"markdownDescription": "Whether this food component is edible at full hunger or not."
 		},
 		"snack": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Whether this food component takes as long as dried kelp to eat (16 ticks) or not (32 ticks).",
 			"markdownDescription": "Whether this food component takes as long as dried kelp to eat (16 ticks) or not (32 ticks)."
 		},

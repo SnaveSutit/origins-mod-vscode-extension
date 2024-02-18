@@ -23,19 +23,19 @@
 		},
 		"client": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "If this is false, the action will not execute on the client.",
 			"markdownDescription": "If this is false, the action will not execute on the client."
 		},
 		"server": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "If this is false, the action will not execute on the server.",
 			"markdownDescription": "If this is false, the action will not execute on the server."
 		},
 		"set": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it.",
 			"markdownDescription": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it."
 		}

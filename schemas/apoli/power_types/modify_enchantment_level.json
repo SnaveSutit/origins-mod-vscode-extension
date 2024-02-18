@@ -17,14 +17,14 @@
 			"markdownDescription": "If specified, only applies/modifies the level of the specified enchantment to/from the entity if the item condition is fulfilled by the item."
 		},
 		"modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied to the current level of the specified enchantment from the entity.",
 			"markdownDescription": "If specified, this modifier will be applied to the current level of the specified enchantment from the entity."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will be applied to the current level of the specified enchantment from the entity.",
 			"markdownDescription": "If specified, these modifiers will be applied to the current level of the specified enchantment from the entity."

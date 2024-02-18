@@ -34,14 +34,14 @@
 			"markdownDescription": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the damage dealt by the '**actor**' entity."
 		},
 		"modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied to the damage dealt by the '**actor**' entity.",
 			"markdownDescription": "If specified, this modifier will be applied to the damage dealt by the '**actor**' entity."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will be applied t othe damage dealt by the '**actor**' entity.",
 			"markdownDescription": "If specified, these modifiers will be applied t othe damage dealt by the '**actor**' entity."

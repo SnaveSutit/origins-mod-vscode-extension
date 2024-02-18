@@ -13,21 +13,21 @@
 			"$ref": "$ref(apoli:types/item_stack)"
 		},
 		"food_modifier": {
-			"$ref": "$ref(apoli:types/attribute_modifier)"
+			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 		},
 		"food_modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/attribute_modifier)"
+				"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 			}
 		},
 		"saturation_modifier": {
-			"$ref": "$ref(apoli:types/attribute_modifier)"
+			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 		},
 		"saturation_modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/attribute_modifier)"
+				"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 			}
 		},
 		"entity_action": {

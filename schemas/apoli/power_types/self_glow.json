@@ -15,7 +15,7 @@
 		},
 		"use_teams": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether glowing entities should use their team's color with their glow. If set to false, the entity will instead use the `red`, `green` and `blue` fields within this power type.",
 			"markdownDescription": "Determines whether glowing entities should use their team's color with their glow. If set to false, the entity will instead use the `red`, `green` and `blue` fields within this power type."
 		},

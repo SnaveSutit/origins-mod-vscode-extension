@@ -12,12 +12,12 @@
 			"$ref": "$ref(apoli:types/identifier)"
 		},
 		"modifier": {
-			"$ref": "$ref(apoli:types/attribute_modifier)"
+			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/attribute_modifier)"
+				"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"
 			}
 		}
 	}

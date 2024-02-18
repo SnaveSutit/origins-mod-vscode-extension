@@ -5,7 +5,7 @@
 	"properties": {
 		"effects": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines if the particle and other visual effects of the bonemeal-ing action should appear.",
 			"markdownDescription": "Determines if the particle and other visual effects of the bonemeal-ing action should appear."
 		}

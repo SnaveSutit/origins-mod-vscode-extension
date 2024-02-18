@@ -4,20 +4,23 @@
 	"type": "object",
 	"properties": {
 		"trigger_order": {
-			"enum": ["by_distance", "unspecified"],
+			"enum": [
+				"by_distance",
+				"unspecified"
+			],
 			"default": "unspecified",
 			"description": "Determines whether the power type should prioritize game events by distance (`\"by_distance\"`) or arbitrarily (`\"unspecified\"`).",
 			"markdownDescription": "Determines whether the power type should prioritize game events by distance (`\"by_distance\"`) or arbitrarily (`\"unspecified\"`)."
 		},
 		"entity": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the power type should listen to game events emitted by entities.",
 			"markdownDescription": "Determines whether the power type should listen to game events emitted by entities."
 		},
 		"block": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the power type should listen to game events emitted by blocks.",
 			"markdownDescription": "Determines whether the power type should listen to game events emitted by blocks."
 		},
@@ -72,7 +75,7 @@
 		},
 		"show_particle": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Determines whether the vibration should emit a particle effect.",
 			"markdownDescription": "Determines whether the vibration should emit a particle effect."
 		}

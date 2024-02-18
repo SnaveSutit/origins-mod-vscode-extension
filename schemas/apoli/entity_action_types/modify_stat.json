@@ -13,7 +13,7 @@
 			"markdownDescription": "The type and name of the statistic to be modified."
 		},
 		"modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "This modifier will be applied to the current value of the statistic specified.",
 			"markdownDescription": "This modifier will be applied to the current value of the statistic specified."
 		}

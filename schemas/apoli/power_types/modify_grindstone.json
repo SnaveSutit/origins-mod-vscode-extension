@@ -55,7 +55,7 @@
 			"markdownDescription": "If specified, this item stack will be used as a replacement only if the `result_type` field has a value of `\"specified\"`."
 		},
 		"xp_modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied to the value of the experience received from removing an enchantment from an item stack.",
 			"markdownDescription": "If specified, this modifier will be applied to the value of the experience received from removing an enchantment from an item stack."
 		}

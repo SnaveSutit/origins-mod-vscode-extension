@@ -5,13 +5,13 @@
 	"properties": {
 		"check_state": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "If set to `true`, the entity condition type will check if pressing the `key.jump` keybind would activate elytra flight if the player had the ability to.",
 			"markdownDescription": "If set to `true`, the entity condition type will check if pressing the `key.jump` keybind would activate elytra flight if the player had the ability to."
 		},
 		"check_abilities": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "If set to `true`, the entity condition type will check whether the player has the ability to activate elytra flight. (e.g: wearing an elytra or have a power that uses the [Elytra Flight (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_condition_types/elytra_flight_possible))",
 			"markdownDescription": "If set to `true`, the entity condition type will check whether the player has the ability to activate elytra flight. (e.g: wearing an elytra or have a power that uses the [Elytra Flight (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_condition_types/elytra_flight_possible))"
 		}

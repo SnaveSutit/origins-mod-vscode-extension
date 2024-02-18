@@ -2,7 +2,10 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/particle/",
 	"type": "object",
-	"required": ["particle", "frequency"],
+	"required": [
+		"particle",
+		"frequency"
+	],
 	"properties": {
 		"particle": {
 			"$ref": "../types/particle_effect.json",
@@ -28,7 +31,7 @@
 		},
 		"force": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether to display the emitted particles within 512 blocks (`true`) or 32 blocks (`false`).",
 			"markdownDescription": "Determines whether to display the emitted particles within 512 blocks (`true`) or 32 blocks (`false`)."
 		},
@@ -62,13 +65,13 @@
 		},
 		"visible_in_first_person": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether the particle type should be visible in first person.",
 			"markdownDescription": "Determines whether the particle type should be visible in first person."
 		},
 		"visible_while_invisible": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Determines whether the particle type should be visible if the entity is invisible.",
 			"markdownDescription": "Determines whether the particle type should be visible if the entity is invisible."
 		}

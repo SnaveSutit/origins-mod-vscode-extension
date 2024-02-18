@@ -5,7 +5,7 @@
 	"properties": {
 		"active_by_default": {
 			"type": "boolean",
-			"default": false,
+			"default": true,
 			"description": "Whether this power starts in the on or off state.",
 			"markdownDescription": "Whether this power starts in the on or off state."
 		},

@@ -4,14 +4,14 @@
 	"type": "object",
 	"properties": {
 		"modifier": {
-			"$ref": "../types/attribute_modifier.json",
+			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied to the received exhaustion amount.",
 			"markdownDescription": "If specified, this modifier will be applied to the received exhaustion amount."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/attribute_modifier.json"
+				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
 			"description": "If specified, these modifiers will be applied to the received exhaustion amount.",
 			"markdownDescription": "If specified, these modifiers will be applied to the received exhaustion amount."
