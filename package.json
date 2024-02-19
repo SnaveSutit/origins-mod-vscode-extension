@@ -108,7 +108,7 @@
 		"watch": "webpack --watch",
 		"build": "vsce package -o origins-mod-helper.vsix",
 		"go": "yarn install",
-		"package": "ts-node ./src/schemaGenerator/index.ts --once && webpack --mode production --devtool hidden-source-map",
+		"package": "ts-node ./src/schemaGenerator/index.ts --once --workflow && webpack --mode production --devtool hidden-source-map",
 		"lint": "prettier --write .",
 		"test": "node ./out/test/runTest.js",
 		"run-schema-generator": "ts-node ./src/schemaGenerator/index.ts",

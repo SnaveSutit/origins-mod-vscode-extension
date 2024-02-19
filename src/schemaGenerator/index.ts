@@ -265,7 +265,7 @@ async function processSchema(schema: JSONSchema, options: ProcessSchemaOptions) 
 async function build(schemasToBuild: string[]) {
 	term.brightGreen('Building schemas...\n')
 	let buildProgress: ReturnType<typeof term.progressBar> | undefined
-	if (!(schemasToBuild.length < 10)) {
+	if (!process.argv.includes('--workflow') && !(schemasToBuild.length < 10)) {
 		buildProgress = term.progressBar({
 			items: schemasToBuild.length,
 			percent: true,
@@ -313,7 +313,7 @@ async function build(schemasToBuild: string[]) {
 
 	term.brightGreen('Writing files...\n')
 	let writeProgress: ReturnType<typeof term.progressBar> | undefined
-	if (!(fileIOQueue.length < 10)) {
+	if (!process.argv.includes('--workflow') && !(fileIOQueue.length < 10)) {
 		writeProgress = term.progressBar({
 			items: fileIOQueue.length,
 			percent: true,
