@@ -50,6 +50,10 @@
 			},
 			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity.",
 			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_taken)\n\nModifies how much damage the entity that has the power takes.\n\nType ID: `origins:modify_damage_taken`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that did the attacking whilst the '**target**' entity is the entity that has the power.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_taken)\n\nModifies how much damage the entity that has the power takes.\n\nType ID: `origins:modify_damage_taken`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that did the attacking whilst the '**target**' entity is the entity that has the power.\n\n\n"
 		}
 	}
 }

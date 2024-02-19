@@ -10,6 +10,10 @@
 			"$ref": "../bientity_condition.json",
 			"description": "The bi-entity condition type to check which will have its 'target' and 'actor' contexts swapped.",
 			"markdownDescription": "The bi-entity condition type to check which will have its 'target' and 'actor' contexts swapped."
+		},
+		"type": {
+			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/invert)\n\nSwaps the context of the target entity and the actor entity.\n\nType ID: `origins:invert`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/invert)\n\nSwaps the context of the target entity and the actor entity.\n\nType ID: `origins:invert`\n\n\n"
 		}
 	}
 }

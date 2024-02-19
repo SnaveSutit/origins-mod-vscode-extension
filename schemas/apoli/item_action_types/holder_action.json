@@ -12,6 +12,10 @@
 			"$ref": "../entity_action.json",
 			"description": "The same as the `action` field, but with a different name.",
 			"markdownDescription": "The same as the `action` field, but with a different name."
+		},
+		"type": {
+			"description": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/holder_action)\n\nExecutes an entity action on the holder of the item stack.\n\nType ID: `origins:holder_action`\n\nAliases: `origins:holder`\n\n\n",
+			"markdownDescription": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/holder_action)\n\nExecutes an entity action on the holder of the item stack.\n\nType ID: `origins:holder_action`\n\nAliases: `origins:holder`\n\n\n"
 		}
 	}
 }

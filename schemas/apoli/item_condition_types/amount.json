@@ -16,6 +16,10 @@
 			"type": "integer",
 			"description": "Which value to compare the item's count value to.",
 			"markdownDescription": "Which value to compare the item's count value to."
+		},
+		"type": {
+			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/amount)\n\nChecks the amount of the item.\n\nType ID: `origins:amount`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/amount)\n\nChecks the amount of the item.\n\nType ID: `origins:amount`\n\n\n"
 		}
 	}
 }

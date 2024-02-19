@@ -19,6 +19,10 @@
 			"$ref": "../types/key.json",
 			"description": "Which active key this power should respond to. If none is specified, this power will use the primary active power key (by default G).",
 			"markdownDescription": "Which active key this power should respond to. If none is specified, this power will use the primary active power key (by default G)."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/toggle_night_vision)\n\nDefines a [Night Vision (Power Type)](night_vision.md) which can be toggled on and off with the specified [Key](../data_types/key.md).\n\nType ID: `origins:toggle_night_vision`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/toggle_night_vision)\n\nDefines a [Night Vision (Power Type)](night_vision.md) which can be toggled on and off with the specified [Key](../data_types/key.md).\n\nType ID: `origins:toggle_night_vision`\n\n\n"
 		}
 	}
 }

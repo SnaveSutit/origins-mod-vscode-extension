@@ -15,6 +15,10 @@
 			},
 			"description": "If specified, these modifiers will be applied to the movement speed while in lava.",
 			"markdownDescription": "If specified, these modifiers will be applied to the movement speed while in lava."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_lava_speed)\n\nModifies how fast the entity that has the power moves in lava.\n\nType ID: `origins:modify_lava_speed`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_lava_speed)\n\nModifies how fast the entity that has the power moves in lava.\n\nType ID: `origins:modify_lava_speed`\n\n\n"
 		}
 	}
 }

@@ -10,6 +10,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "ID of the tag which the fluid should be in to pass the check.",
 			"markdownDescription": "ID of the tag which the fluid should be in to pass the check."
+		},
+		"type": {
+			"description": "\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/in_tag)\n\nChecks whether the fluid is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n",
+			"markdownDescription": "\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/in_tag)\n\nChecks whether the fluid is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n"
 		}
 	}
 }

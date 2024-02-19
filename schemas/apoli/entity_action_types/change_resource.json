@@ -24,6 +24,10 @@
 			],
 			"description": "Determines if the action should add or set the value of the resource. Accepts `\"add\"` or `\"set\"`.",
 			"markdownDescription": "Determines if the action should add or set the value of the resource. Accepts `\"add\"` or `\"set\"`."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/change_resource)\n\nChanges the value of a power that either uses the [Resource](../power_types/resource.md) power type, or has a built-in cooldown.\n\nType ID: `origins:change_resource`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/change_resource)\n\nChanges the value of a power that either uses the [Resource](../power_types/resource.md) power type, or has a built-in cooldown.\n\nType ID: `origins:change_resource`\n\n\n"
 		}
 	}
 }

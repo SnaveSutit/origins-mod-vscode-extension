@@ -10,6 +10,10 @@
 			"type": "string",
 			"description": "Name the damage source should have to pass the check. See [List of Damage Source Names](https://origins.readthedocs.io/en/latest/types/damage_condition_types/name) for possible values.",
 			"markdownDescription": "Name the damage source should have to pass the check. See [List of Damage Source Names](https://origins.readthedocs.io/en/latest/types/damage_condition_types/name) for possible values."
+		},
+		"type": {
+			"description": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/name)\n\nChecks whether the damage source has a specific name (essentially checking the type of damage).\n\nType ID: `origins:name`\n\n\n",
+			"markdownDescription": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/name)\n\nChecks whether the damage source has a specific name (essentially checking the type of damage).\n\nType ID: `origins:name`\n\n\n"
 		}
 	}
 }

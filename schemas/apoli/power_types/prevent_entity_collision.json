@@ -7,6 +7,10 @@
 			"$ref": "../bientity_condition.json",
 			"description": "If specified, the collision will only be prevented if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
 			"markdownDescription": "If specified, the collision will only be prevented if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_entity_collision)\n\nPrevents the entity that has the power from colliding with other entities.\n\nType ID: `origins:prevent_entity_collision`\n\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that has the power whilst the '**target**' entity is the entity that was collided with.\n    \n\n!!! caution\n\n    Currently, this power type does not prevent collisions of certain entities that have solid hitboxes, such as Boats and Shulkers.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_entity_collision)\n\nPrevents the entity that has the power from colliding with other entities.\n\nType ID: `origins:prevent_entity_collision`\n\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that has the power whilst the '**target**' entity is the entity that was collided with.\n    \n\n!!! caution\n\n    Currently, this power type does not prevent collisions of certain entities that have solid hitboxes, such as Boats and Shulkers.\n\n\n"
 		}
 	}
 }

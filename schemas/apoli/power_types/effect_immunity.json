@@ -21,6 +21,10 @@
 			"default": false,
 			"description": "Determines whether to make the entity immune to the status effect(s) that aren't specified.",
 			"markdownDescription": "Determines whether to make the entity immune to the status effect(s) that aren't specified."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/effect_immunity)\n\nPrevents status effects from being applied to the entity that has the power.\n\nType ID: `origins:effect_immunity`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/effect_immunity)\n\nPrevents status effects from being applied to the entity that has the power.\n\nType ID: `origins:effect_immunity`\n\n\n"
 		}
 	}
 }

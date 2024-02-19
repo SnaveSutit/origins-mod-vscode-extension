@@ -23,6 +23,10 @@
 			],
 			"description": "Which submersion type to change to. Accepts either `\"none\"`, `\"water\"` or `\"lava\"`",
 			"markdownDescription": "Which submersion type to change to. Accepts either `\"none\"`, `\"water\"` or `\"lava\"`"
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_camera_submersion)\n\nModifies how the player perceives the world, similarly to when they're submerged in fluids like water or lava.\n\nType ID: `origins:modify_camera_submersion`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_camera_submersion)\n\nModifies how the player perceives the world, similarly to when they're submerged in fluids like water or lava.\n\nType ID: `origins:modify_camera_submersion`\n\n\n"
 		}
 	}
 }

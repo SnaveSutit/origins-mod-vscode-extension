@@ -21,6 +21,10 @@
 			"default": false,
 			"description": "Determines whether the specified item(s) should be given after respawning.",
 			"markdownDescription": "Determines whether the specified item(s) should be given after respawning."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/starting_equipment)\n\nProvides the player with items when the power is granted.\n\nType ID: `origins:starting_equipment`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/starting_equipment)\n\nProvides the player with items when the power is granted.\n\nType ID: `origins:starting_equipment`\n\n\n"
 		}
 	}
 }

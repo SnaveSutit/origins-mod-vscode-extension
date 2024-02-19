@@ -22,6 +22,10 @@
 			"type": "number",
 			"description": "The value to compare the attribute's value to.",
 			"markdownDescription": "The value to compare the attribute's value to."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/attribute)\n\nApplies a check towards a specific attribute value of the entity.\n\nType ID: `origins:attribute`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/attribute)\n\nApplies a check towards a specific attribute value of the entity.\n\nType ID: `origins:attribute`\n\n\n"
 		}
 	}
 }

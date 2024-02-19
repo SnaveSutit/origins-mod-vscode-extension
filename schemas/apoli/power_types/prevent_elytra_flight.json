@@ -7,6 +7,10 @@
 			"$ref": "../entity_action.json",
 			"description": "If specified, this action will be executed upon the entity trying to fly an Elytra/power that uses the [Elytra Flight (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/prevent_elytra_flight).",
 			"markdownDescription": "If specified, this action will be executed upon the entity trying to fly an Elytra/power that uses the [Elytra Flight (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/prevent_elytra_flight)."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_elytra_flight)\n\nPrevents the entity that has the power from flying with either an Elytra item or a power that uses the [Elytra Flight (Power Type)](elytra_flight.md).\n\nType ID: `origins:prevent_elytra_flight`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_elytra_flight)\n\nPrevents the entity that has the power from flying with either an Elytra item or a power that uses the [Elytra Flight (Power Type)](elytra_flight.md).\n\nType ID: `origins:prevent_elytra_flight`\n\n\n"
 		}
 	}
 }

@@ -15,6 +15,10 @@
 			},
 			"description": "If specified, these modifiers will be applied to your healing bonus.",
 			"markdownDescription": "If specified, these modifiers will be applied to your healing bonus."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_healing)\n\nModifies the amount of health you get from all sources of healing _(e.g natural regen, instant health effect, regeneration effect)_\n\nType ID: `origins:modify_healing`\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_healing)\n\nModifies the amount of health you get from all sources of healing _(e.g natural regen, instant health effect, regeneration effect)_\n\nType ID: `origins:modify_healing`\n\n"
 		}
 	}
 }

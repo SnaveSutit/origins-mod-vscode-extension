@@ -22,6 +22,10 @@
 			"type": "integer",
 			"description": "The value to compare the value of the power that will be evaluated to.",
 			"markdownDescription": "The value to compare the value of the power that will be evaluated to."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/resource)\n\nChecks the value of a power that uses the [Resource (Power Type)](../power_types/resource.md) or a power type that has a built-in cooldown (using remaining ticks as the value).\n\nType ID: `origins:resource`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/resource)\n\nChecks the value of a power that uses the [Resource (Power Type)](../power_types/resource.md) or a power type that has a built-in cooldown (using remaining ticks as the value).\n\nType ID: `origins:resource`\n\n\n"
 		}
 	}
 }

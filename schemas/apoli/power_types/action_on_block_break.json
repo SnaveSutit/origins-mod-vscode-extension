@@ -23,6 +23,10 @@
 			"default": true,
 			"description": "If this is true, the specified actions will only execute when the player succeeds in harvesting the block (e.g. they will not trigger when stone is broken by hand).",
 			"markdownDescription": "If this is true, the specified actions will only execute when the player succeeds in harvesting the block (e.g. they will not trigger when stone is broken by hand)."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_block_break)\n\nExecutes an [Entity Action Type](../entity_action_types.md) or a [Block Action Type](../block_action_types.md) when the player breaks a block.\n\nType ID: `origins:action_on_block_break`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_block_break)\n\nExecutes an [Entity Action Type](../entity_action_types.md) or a [Block Action Type](../block_action_types.md) when the player breaks a block.\n\nType ID: `origins:action_on_block_break`\n\n\n"
 		}
 	}
 }

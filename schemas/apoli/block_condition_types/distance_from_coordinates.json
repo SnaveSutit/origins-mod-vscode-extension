@@ -69,6 +69,10 @@
 			"type": "number",
 			"description": "The value to compare the calculated distance to.",
 			"markdownDescription": "The value to compare the calculated distance to."
+		},
+		"type": {
+			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/distance_from_coordinates)\n\nCompares the distance of the block's current position to the specified coordinates.\n\nType ID: `origins:distance_from_coordinates`\n\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/distance_from_coordinates)\n\nCompares the distance of the block's current position to the specified coordinates.\n\nType ID: `origins:distance_from_coordinates`\n\n\n"
 		}
 	}
 }

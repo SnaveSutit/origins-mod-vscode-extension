@@ -10,6 +10,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "The ID of the power to check whether the target entity is in.",
 			"markdownDescription": "The ID of the power to check whether the target entity is in."
+		},
+		"type": {
+			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/in_set)\n\nChecks whether the target entity is within a power that uses the [Entity Set (Power Type)](../power_types/entity_set.md) of the actor entity.\n\nType ID: `origins:in_set`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/in_set)\n\nChecks whether the target entity is within a power that uses the [Entity Set (Power Type)](../power_types/entity_set.md) of the actor entity.\n\nType ID: `origins:in_set`\n\n\n"
 		}
 	}
 }

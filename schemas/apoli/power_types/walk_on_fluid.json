@@ -10,6 +10,10 @@
 			"$ref": "../types/autocomplete_helpers/fluid_identifier.json",
 			"description": "The namespace and ID of the fluid tag on which the player should be able to walk onto. Most important examples: `minecraft:water` and `minecraft:lava`.",
 			"markdownDescription": "The namespace and ID of the fluid tag on which the player should be able to walk onto. Most important examples: `minecraft:water` and `minecraft:lava`."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/walk_on_fluid)\n\nAllows the entity that has the power to walk on fluid.\n\nType ID: `origins:walk_on_fluid`\n\n!!! note\n\n    It is suggested to use the [Fluid Height (Entity Condition Type)](../entity_condition_types/fluid_height.md) entity condition type to check if the height of the fluid the player is currently on/in is less or equal to 0.4, otherwise, the entity that has the power may have problems getting out of the fluid once they are submerged.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/walk_on_fluid)\n\nAllows the entity that has the power to walk on fluid.\n\nType ID: `origins:walk_on_fluid`\n\n!!! note\n\n    It is suggested to use the [Fluid Height (Entity Condition Type)](../entity_condition_types/fluid_height.md) entity condition type to check if the height of the fluid the player is currently on/in is less or equal to 0.4, otherwise, the entity that has the power may have problems getting out of the fluid once they are submerged.\n\n\n"
 		}
 	}
 }

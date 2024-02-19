@@ -54,6 +54,10 @@
 			"default": 0,
 			"description": "Determines the max amount of times the action should modify item stacks in the inventory. If the specified value is <= `0`, then there will be no limit.",
 			"markdownDescription": "Determines the max amount of times the action should modify item stacks in the inventory. If the specified value is <= `0`, then there will be no limit."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory)\n\nModifies the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](../power_types/inventory.md).\n\nType ID: `origins:modify_inventory`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory)\n\nModifies the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](../power_types/inventory.md).\n\nType ID: `origins:modify_inventory`\n\n\n"
 		}
 	}
 }

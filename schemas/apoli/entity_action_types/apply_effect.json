@@ -15,6 +15,10 @@
 			},
 			"description": "If set, these status effects will be applied by this action.",
 			"markdownDescription": "If set, these status effects will be applied by this action."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/apply_effect)\n\nAdds one or more status effects to the living entity. Does not have an effect on non-living entities.\n\nType ID: `origins:apply_effect`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/apply_effect)\n\nAdds one or more status effects to the living entity. Does not have an effect on non-living entities.\n\nType ID: `origins:apply_effect`\n\n\n"
 		}
 	}
 }

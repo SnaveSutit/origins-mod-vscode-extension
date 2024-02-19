@@ -148,7 +148,13 @@
 						"type": "array",
 						"items": {
 							"$ref": "#/definitions/action"
-						}
+						},
+						"description": "These actions will be executed one after the other (but in the same tick).",
+						"markdownDescription": "These actions will be executed one after the other (but in the same tick)."
+					},
+					"type": {
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/and)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/and)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n"
 					}
 				}
 			}
@@ -177,13 +183,23 @@
 				],
 				"properties": {
 					"action": {
-						"$ref": "#/definitions/action"
+						"$ref": "#/definitions/action",
+						"description": "The action which might be executed.",
+						"markdownDescription": "The action which might be executed."
 					},
 					"chance": {
-						"type": "number"
+						"type": "number",
+						"description": "The chance that the action will execute, from 0 to 1. (E.g. 0.1 means 10% chance, 0.95 means 95% chance).",
+						"markdownDescription": "The chance that the action will execute, from 0 to 1. (E.g. 0.1 means 10% chance, 0.95 means 95% chance)."
 					},
 					"fail_action": {
-						"$ref": "#/definitions/action"
+						"$ref": "#/definitions/action",
+						"description": "The action to execute if the specified action in the `action` field is not executed.",
+						"markdownDescription": "The action to execute if the specified action in the `action` field is not executed."
+					},
+					"type": {
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/chance)\n\nExecutes the provided action only with a specific chance.\n\nType ID: `origins:chance`\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/chance)\n\nExecutes the provided action only with a specific chance.\n\nType ID: `origins:chance`\n\n\n"
 					}
 				}
 			}
@@ -226,7 +242,13 @@
 									"type": "number"
 								}
 							}
-						}
+						},
+						"description": "Each object has to have an `element` [Action](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice) and a `weight` [Integer](../data_types/integer.md).",
+						"markdownDescription": "Each object has to have an `element` [Action](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice) and a `weight` [Integer](../data_types/integer.md)."
+					},
+					"type": {
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice)\n\nExecutes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.\n\nType ID: `origins:choice`\n\n!!! note\n\n    The chance of the object is determined by dividing the weight of the object to the sum of all weights of all the objects (`weight / sumOfAllWeights = chance`).\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice)\n\nExecutes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.\n\nType ID: `origins:choice`\n\n!!! note\n\n    The chance of the object is determined by dividing the weight of the object to the sum of all weights of all the objects (`weight / sumOfAllWeights = chance`).\n\n\n"
 					}
 				}
 			}
@@ -255,10 +277,18 @@
 				],
 				"properties": {
 					"action": {
-						"$ref": "#/definitions/action"
+						"$ref": "#/definitions/action",
+						"description": "The action which will be executed after the delay.",
+						"markdownDescription": "The action which will be executed after the delay."
 					},
 					"ticks": {
-						"type": "integer"
+						"type": "integer",
+						"description": "The amount of ticks until the action is executed.",
+						"markdownDescription": "The amount of ticks until the action is executed."
+					},
+					"type": {
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/delay)\n\nExecutes the provided action after a set amount of ticks.\n\nType ID: `origins:delay`\n\n!!! caution\n\n    Delaying an action for more than a few ticks is not recommended! This meta action type is not reliable for such task.\n\n    If you want to delay an action type *reliably,* you can use a power that would use the [Cooldown (Power Type)](../power_types/cooldown.md) and trigger that power with the [Trigger Cooldown (Entity Action Type)](../entity_action_types/trigger_cooldown.md).\n\n    You can then use another power that would use the [Action Over Time (Power Type)](../power_types/action_over_time.md) and check if the value of the power that would use the [Cooldown (Power Type)](../power_types/cooldown.md) is `\"==\"` to `0` using the [Resource (Entity Condition Type)](../entity_condition_types/resource.md).\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/delay)\n\nExecutes the provided action after a set amount of ticks.\n\nType ID: `origins:delay`\n\n!!! caution\n\n    Delaying an action for more than a few ticks is not recommended! This meta action type is not reliable for such task.\n\n    If you want to delay an action type *reliably,* you can use a power that would use the [Cooldown (Power Type)](../power_types/cooldown.md) and trigger that power with the [Trigger Cooldown (Entity Action Type)](../entity_action_types/trigger_cooldown.md).\n\n    You can then use another power that would use the [Action Over Time (Power Type)](../power_types/action_over_time.md) and check if the value of the power that would use the [Cooldown (Power Type)](../power_types/cooldown.md) is `\"==\"` to `0` using the [Resource (Entity Condition Type)](../entity_condition_types/resource.md).\n\n\n"
 					}
 				}
 			}
@@ -287,13 +317,23 @@
 				],
 				"properties": {
 					"condition": {
-						"$ref": "#/definitions/condition"
+						"$ref": "#/definitions/condition",
+						"description": "A condition based on the type of action.",
+						"markdownDescription": "A condition based on the type of action."
 					},
 					"if_action": {
-						"$ref": "#/definitions/action"
+						"$ref": "#/definitions/action",
+						"description": "The action which is executed when the condition evaluates to true.",
+						"markdownDescription": "The action which is executed when the condition evaluates to true."
 					},
 					"else_action": {
-						"$ref": "#/definitions/action"
+						"$ref": "#/definitions/action",
+						"description": "If present, this action will be executed when the condition evaluates to false.",
+						"markdownDescription": "If present, this action will be executed when the condition evaluates to false."
+					},
+					"type": {
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else)\n\nExecutes an action only if a condition holds, and optionally executes another action when it doesn't hold.\n\nType ID: `origins:if_else`\n\n!!! note\n\n    Depending on the condition type, a different action type is expected:\n\n    Action Type | Condition Type\n    ------------|----------------\n    [Bi-entity Action Type](../bientity_action_types.md) | [Bi-entity Condition Type](../bientity_condition_types.md)\n    [Entity Action Type](../entity_action_types.md) | [Entity Condition Type](../entity_condition_types.md)\n    [Block Action Type](../block_action_types.md) | [Block Condition Type](../block_condition_types.md)\n    [Item Action Type](../item_action_types.md) | [Item Condition Type](../item_condition_types.md)\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else)\n\nExecutes an action only if a condition holds, and optionally executes another action when it doesn't hold.\n\nType ID: `origins:if_else`\n\n!!! note\n\n    Depending on the condition type, a different action type is expected:\n\n    Action Type | Condition Type\n    ------------|----------------\n    [Bi-entity Action Type](../bientity_action_types.md) | [Bi-entity Condition Type](../bientity_condition_types.md)\n    [Entity Action Type](../entity_action_types.md) | [Entity Condition Type](../entity_condition_types.md)\n    [Block Action Type](../block_action_types.md) | [Block Condition Type](../block_condition_types.md)\n    [Item Action Type](../item_action_types.md) | [Item Condition Type](../item_condition_types.md)\n\n\n"
 					}
 				}
 			}
@@ -336,7 +376,13 @@
 									"$ref": "#/definitions/condition"
 								}
 							}
-						}
+						},
+						"description": "Each object has to have an `action` [Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list) object and a `condition` [Condition Type](../condition_types.md) object.",
+						"markdownDescription": "Each object has to have an `action` [Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list) object and a `condition` [Condition Type](../condition_types.md) object."
+					},
+					"type": {
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list)\n\nChecks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested [If-Else (Meta Action Type)](if_else.md).\n\nType ID: `origins:if_else_list`\n\n!!! note\n\n    Depending on the condition type, a different action type is expected:\n    \n    Action Type | Condition Type\n    ------------|----------------\n    [Bi-entity Action Type](../bientity_action_types.md) | [Bi-entity Condition Type](../bientity_condition_types.md)\n    [Entity Action Type](../entity_action_types.md) | [Entity Condition Type](../entity_condition_types.md)\n    [Block Action Type](../block_action_types.md) | [Block Condition Type](../block_condition_types.md)\n    [Item Action Type](../item_action_types.md) | [Item Condition Type](../item_condition_types.md)\n\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list)\n\nChecks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested [If-Else (Meta Action Type)](if_else.md).\n\nType ID: `origins:if_else_list`\n\n!!! note\n\n    Depending on the condition type, a different action type is expected:\n    \n    Action Type | Condition Type\n    ------------|----------------\n    [Bi-entity Action Type](../bientity_action_types.md) | [Bi-entity Condition Type](../bientity_condition_types.md)\n    [Entity Action Type](../entity_action_types.md) | [Entity Condition Type](../entity_condition_types.md)\n    [Block Action Type](../block_action_types.md) | [Block Condition Type](../block_condition_types.md)\n    [Item Action Type](../item_action_types.md) | [Item Condition Type](../item_condition_types.md)\n\n\n\n"
 					}
 				}
 			}
@@ -385,13 +431,21 @@
 				],
 				"properties": {
 					"action": {
-						"$ref": "#/definitions/action"
+						"$ref": "#/definitions/action",
+						"description": "The action to execute.",
+						"markdownDescription": "The action to execute."
 					},
 					"side": {
 						"enum": [
 							"client",
 							"server"
-						]
+						],
+						"description": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`",
+						"markdownDescription": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`"
+					},
+					"type": {
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/side)\n\nExecutes the specified action type on the specified \"side\".\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/side)\n\nExecutes the specified action type on the specified \"side\".\n\n\n"
 					}
 				}
 			}

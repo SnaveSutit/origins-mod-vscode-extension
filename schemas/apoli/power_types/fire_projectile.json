@@ -76,6 +76,10 @@
 			"$ref": "../entity_action.json",
 			"description": "If specified, this entity action will be executed on the entity that has the power.",
 			"markdownDescription": "If specified, this entity action will be executed on the entity that has the power."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/fire_projectile)\n\nFires one or more projectiles upon pressing the specified [Key](../data_types/key.md).\n\nType ID: `origins:fire_projectile`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/fire_projectile)\n\nFires one or more projectiles upon pressing the specified [Key](../data_types/key.md).\n\nType ID: `origins:fire_projectile`\n\n\n"
 		}
 	}
 }

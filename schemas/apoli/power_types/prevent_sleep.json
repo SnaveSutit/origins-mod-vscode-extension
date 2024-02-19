@@ -24,6 +24,10 @@
 			"default": 0,
 			"description": "Determines the priority of which power will prevent the player to sleep, set their spawn and display a message. The power with `set_spawn_point` set to `true` and the highest `priority` value will be prioritized.",
 			"markdownDescription": "Determines the priority of which power will prevent the player to sleep, set their spawn and display a message. The power with `set_spawn_point` set to `true` and the highest `priority` value will be prioritized."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_sleep)\n\nPrevents sleeping and sends the player a message about why they can't sleep.\n\nType ID: `origins:prevent_sleep`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_sleep)\n\nPrevents sleeping and sends the player a message about why they can't sleep.\n\nType ID: `origins:prevent_sleep`\n\n\n"
 		}
 	}
 }

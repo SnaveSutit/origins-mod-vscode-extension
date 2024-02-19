@@ -10,6 +10,10 @@
 			"$ref": "../entity_action.json",
 			"description": "The action to execute on the player.",
 			"markdownDescription": "The action to execute on the player."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_land)\n\nExecutes an [Entity Action Type](../entity_action_types.md) when the player lands on the ground after being airborne.\n\nType ID: `origins:action_on_land`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_land)\n\nExecutes an [Entity Action Type](../entity_action_types.md) when the player lands on the ground after being airborne.\n\nType ID: `origins:action_on_land`\n\n\n"
 		}
 	}
 }

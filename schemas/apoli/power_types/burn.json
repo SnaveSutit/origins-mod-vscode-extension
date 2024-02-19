@@ -16,6 +16,10 @@
 			"type": "integer",
 			"description": "Determines how long the fire should last on the entity each time it is set, in seconds.",
 			"markdownDescription": "Determines how long the fire should last on the entity each time it is set, in seconds."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/burn)\n\nSets the entity that has the power on fire within the specified interval.\n\nType ID: `origins:burn`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/burn)\n\nSets the entity that has the power on fire within the specified interval.\n\nType ID: `origins:burn`\n\n\n"
 		}
 	}
 }

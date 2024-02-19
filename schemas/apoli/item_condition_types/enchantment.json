@@ -21,6 +21,10 @@
 			"type": "integer",
 			"description": "Which value to compare the enchantment level or amount against.",
 			"markdownDescription": "Which value to compare the enchantment level or amount against."
+		},
+		"type": {
+			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/enchantment)\n\nChecks the level of a certain enchantment, or the amount of individual enchantments on the item.\n\nType ID: `origins:enchantment`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/enchantment)\n\nChecks the level of a certain enchantment, or the amount of individual enchantments on the item.\n\nType ID: `origins:enchantment`\n\n\n"
 		}
 	}
 }

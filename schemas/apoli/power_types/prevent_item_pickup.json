@@ -33,6 +33,10 @@
 			"default": 0,
 			"description": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)",
 			"markdownDescription": "Determines the execution priority of the powers that use this power type (in a low-to-high priority order.)"
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_item_pickup)\n\nPrevents the entity that has the power from picking up an item.\n\nType ID: `origins:prevent_item_pickup`\n\n\n!!!\tnote\n\n\tThe actor and target context of certain fields of this power type are as follows:\n\n\tField | Actor | Target\n\t------|-------|-------\n\t`bientity_action_thrower` | The entity that threw the item. | The entity about to pick up the item.\n\t`bientity_action_item` | The entity about to pick up the item. | The item entity to be picked up.\n\t`bientity_condition` | The entity that threw the item. | The entity about to pick up the item.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_item_pickup)\n\nPrevents the entity that has the power from picking up an item.\n\nType ID: `origins:prevent_item_pickup`\n\n\n!!!\tnote\n\n\tThe actor and target context of certain fields of this power type are as follows:\n\n\tField | Actor | Target\n\t------|-------|-------\n\t`bientity_action_thrower` | The entity that threw the item. | The entity about to pick up the item.\n\t`bientity_action_item` | The entity about to pick up the item. | The item entity to be picked up.\n\t`bientity_condition` | The entity that threw the item. | The entity about to pick up the item.\n\n\n"
 		}
 	}
 }

@@ -10,6 +10,10 @@
 			"$ref": "../types/autocomplete_helpers/fluid_identifier.json",
 			"description": "The namespace and ID of the fluid tag that should be checked. Most important examples: `minecraft:water` and `minecraft:lava`.",
 			"markdownDescription": "The namespace and ID of the fluid tag that should be checked. Most important examples: `minecraft:water` and `minecraft:lava`."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/submerged_in)\n\nChecks whether the entity's eyes are in a fluid that is included in the specified fluid tag.\n\nType ID: `origins:submerged_in`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/submerged_in)\n\nChecks whether the entity's eyes are in a fluid that is included in the specified fluid tag.\n\nType ID: `origins:submerged_in`\n\n\n"
 		}
 	}
 }

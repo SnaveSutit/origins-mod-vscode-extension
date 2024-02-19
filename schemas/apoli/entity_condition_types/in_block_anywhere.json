@@ -21,6 +21,10 @@
 			"default": 1,
 			"description": "The value to compare the number to.",
 			"markdownDescription": "The value to compare the number to."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/in_block_anywhere)\n\nChecks how many blocks are overlapping with the entity's eyes or feet.\n\nType ID: `origins:in_block_anywhere`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/in_block_anywhere)\n\nChecks how many blocks are overlapping with the entity's eyes or feet.\n\nType ID: `origins:in_block_anywhere`\n\n\n"
 		}
 	}
 }

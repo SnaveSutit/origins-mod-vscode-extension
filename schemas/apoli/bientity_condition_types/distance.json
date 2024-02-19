@@ -16,6 +16,10 @@
 			"type": "number",
 			"description": "The distance (in blocks) to compare the distance between the actor and target to.",
 			"markdownDescription": "The distance (in blocks) to compare the distance between the actor and target to."
+		},
+		"type": {
+			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/distance)\n\nChecks the distance between the target entity and the actor entity.\n\nType ID: `origins:distance`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/distance)\n\nChecks the distance between the target entity and the actor entity.\n\nType ID: `origins:distance`\n\n\n"
 		}
 	}
 }

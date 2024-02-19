@@ -58,6 +58,10 @@
 			"default": false,
 			"description": "Determines if the overlay is visible in third person.",
 			"markdownDescription": "Determines if the overlay is visible in third person."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/overlay)\n\nApplies an overlay to the player's screen.\n\nType ID: `origins:overlay`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/overlay)\n\nApplies an overlay to the player's screen.\n\nType ID: `origins:overlay`\n\n\n"
 		}
 	}
 }

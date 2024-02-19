@@ -16,6 +16,10 @@
 			"type": "number",
 			"description": "Which value the temperature should be compared to.",
 			"markdownDescription": "Which value the temperature should be compared to."
+		},
+		"type": {
+			"description": "\n\n[Biome Condition Type](https://origins.readthedocs.io/en/latest/types/biome_condition_types/temperature)\n\nChecks for the temperature of the biome the entity is currently in.\n\nType ID: `origins:temperature`\n\n!!! note\n\n    You can visit [Minecraft Wiki: Biome (List of Overworld climates)](https://minecraft.wiki/w/Biome#List_of_Overworld_climates) for a list of temperature values for the vanilla biomes.\n\n\n",
+			"markdownDescription": "\n\n[Biome Condition Type](https://origins.readthedocs.io/en/latest/types/biome_condition_types/temperature)\n\nChecks for the temperature of the biome the entity is currently in.\n\nType ID: `origins:temperature`\n\n!!! note\n\n    You can visit [Minecraft Wiki: Biome (List of Overworld climates)](https://minecraft.wiki/w/Biome#List_of_Overworld_climates) for a list of temperature values for the vanilla biomes.\n\n\n"
 		}
 	}
 }

@@ -40,6 +40,10 @@
 			"default": true,
 			"description": "Determines whether the status effect would display an icon on the HUD.",
 			"markdownDescription": "Determines whether the status effect would display an icon on the HUD."
+		},
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/status_effect_instance)\n\nAn [Object](object.md) used to define a status effect with duration, amplifier, etc.\n\n\n!!! note\n\n    To make the Status Effect Instance infinite, you can set the value of `duration` to `-1`.\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/status_effect_instance)\n\nAn [Object](object.md) used to define a status effect with duration, amplifier, etc.\n\n\n!!! note\n\n    To make the Status Effect Instance infinite, you can set the value of `duration` to `-1`.\n\n\n"
 		}
 	}
 }

@@ -26,6 +26,10 @@
 			},
 			"description": "The result of the crafting. **Note that vanilla does _not_ support NBT tags in the result.**",
 			"markdownDescription": "The result of the crafting. **Note that vanilla does _not_ support NBT tags in the result.**"
+		},
+		"type": {
+			"description": "The type of recipe. Either `minecraft:crafting_shaped` or `minecraft:crafting_shapeless`. Other recipe types are not supported.",
+			"markdownDescription": "The type of recipe. Either `minecraft:crafting_shaped` or `minecraft:crafting_shapeless`. Other recipe types are not supported."
 		}
 	},
 	"allOf": [

@@ -28,6 +28,10 @@
 			"default": 0,
 			"description": "How much to offset the position on the z-axis.",
 			"markdownDescription": "How much to offset the position on the z-axis."
+		},
+		"type": {
+			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/offset)\n\nChecks the provided [Block Condition Type](../block_condition_types.md) at a position offset from the current position.\n\nType ID: `origins:offset`\n\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/offset)\n\nChecks the provided [Block Condition Type](../block_condition_types.md) at a position offset from the current position.\n\nType ID: `origins:offset`\n\n\n"
 		}
 	}
 }

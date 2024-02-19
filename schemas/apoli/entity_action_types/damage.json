@@ -29,6 +29,10 @@
 			},
 			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity.",
 			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/damage)\n\nApplies damage to an entity.\n\nType ID: `origins:damage`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/damage)\n\nApplies damage to an entity.\n\nType ID: `origins:damage`\n\n\n"
 		}
 	}
 }

@@ -38,6 +38,10 @@
 			"$ref": "../entity_action.json",
 			"description": "If specified, this entity action will be executed on the projectile or entity that will be launched.",
 			"markdownDescription": "If specified, this entity action will be executed on the projectile or entity that will be launched."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/fire_projectile)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/fire_projectile)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n"
 		}
 	}
 }

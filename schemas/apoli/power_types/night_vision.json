@@ -8,6 +8,10 @@
 			"default": 1,
 			"description": "Determines how strong the night vision effect is. Accepted range is from 0.0 to 1.0.",
 			"markdownDescription": "Determines how strong the night vision effect is. Accepted range is from 0.0 to 1.0."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/night_vision)\n\nGrants night vision to the player without the Night Vision status effect.\n\nType ID: `origins:night_vision`\n\n\n!!! note\n\n    The strength value of the Night Vision status effect is the default value, which is 1.0.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/night_vision)\n\nGrants night vision to the player without the Night Vision status effect.\n\nType ID: `origins:night_vision`\n\n\n!!! note\n\n    The strength value of the Night Vision status effect is the default value, which is 1.0.\n\n\n"
 		}
 	}
 }

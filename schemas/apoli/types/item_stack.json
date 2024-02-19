@@ -17,6 +17,10 @@
 			"type": "string",
 			"description": "NBT data of the item.",
 			"markdownDescription": "NBT data of the item."
+		},
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/item_stack)\n\nAn [Object](object.md) which defines a new item stack.\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/item_stack)\n\nAn [Object](object.md) which defines a new item stack.\n\n\n"
 		}
 	}
 }

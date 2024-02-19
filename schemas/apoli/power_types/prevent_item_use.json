@@ -7,6 +7,10 @@
 			"$ref": "../item_condition.json",
 			"description": "If specified, only items that fulfills this condition will be prevented from being used.",
 			"markdownDescription": "If specified, only items that fulfills this condition will be prevented from being used."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_item_use)\n\nPrevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).\n\nType ID: `origins:prevent_item_use`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_item_use)\n\nPrevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).\n\nType ID: `origins:prevent_item_use`\n\n\n"
 		}
 	}
 }

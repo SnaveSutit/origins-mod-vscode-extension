@@ -10,6 +10,10 @@
 			"$ref": "../types/autocomplete_helpers/block_identifier.json",
 			"description": "The namespace and ID of the block that this block needs to be to pass the check.",
 			"markdownDescription": "The namespace and ID of the block that this block needs to be to pass the check."
+		},
+		"type": {
+			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/block)\n\nChecks whether the block is a certain block (by ID).\n\nType ID: `origins:block`\n\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/block)\n\nChecks whether the block is a certain block (by ID).\n\nType ID: `origins:block`\n\n\n"
 		}
 	}
 }

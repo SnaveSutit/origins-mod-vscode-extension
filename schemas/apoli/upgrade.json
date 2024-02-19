@@ -17,6 +17,10 @@
 			"type": "string",
 			"description": "A text which will show up in the local chat of the player in a pretty color. If none is specified, there won't be a message.",
 			"markdownDescription": "A text which will show up in the local chat of the player in a pretty color. If none is specified, there won't be a message."
+		},
+		"type": {
+			"description": "\n\nAn [Object](https://origins.readthedocs.io/en/latest/json/upgrade) used to specify an upgrade of an origin within an [Origin JSON](origin.md).\n\n\n\n",
+			"markdownDescription": "\n\nAn [Object](https://origins.readthedocs.io/en/latest/json/upgrade) used to specify an upgrade of an origin within an [Origin JSON](origin.md).\n\n\n\n"
 		}
 	}
 }

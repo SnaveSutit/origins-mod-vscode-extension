@@ -24,6 +24,10 @@
 			"type": "number",
 			"description": "The value to compare the light level at the block's position to.",
 			"markdownDescription": "The value to compare the light level at the block's position to."
+		},
+		"type": {
+			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/light_level)\n\nAllows checking the light level at the block's position.\n\nType ID: `origins:light_level`\n\n\n!!! note\n\n    If no light type is specified in the `light_type` field, the highest light level between the block light level and **internal** sky light level will be used as the \"resulting\" light level of the position of the block.\n\n    See [Minecraft Wiki: Light (Internal light level)](https://minecraft.wiki/w/Light#Internal_light_level) for more information about internal sky light levels.\n\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/light_level)\n\nAllows checking the light level at the block's position.\n\nType ID: `origins:light_level`\n\n\n!!! note\n\n    If no light type is specified in the `light_type` field, the highest light level between the block light level and **internal** sky light level will be used as the \"resulting\" light level of the position of the block.\n\n    See [Minecraft Wiki: Light (Internal light level)](https://minecraft.wiki/w/Light#Internal_light_level) for more information about internal sky light levels.\n\n\n"
 		}
 	}
 }

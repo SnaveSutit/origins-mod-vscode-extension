@@ -50,6 +50,10 @@
 			"default": 0,
 			"description": "The value at which the amount of items/stacks that were evaluated are compared to.",
 			"markdownDescription": "The value at which the amount of items/stacks that were evaluated are compared to."
+		},
+		"type": {
+			"description": "\n\nEntity Condition Type\n\nChecks if the inventory of the entity is occupied.\n\nType ID: `origins:inventory`\n\n\n",
+			"markdownDescription": "\n\nEntity Condition Type\n\nChecks if the inventory of the entity is occupied.\n\nType ID: `origins:inventory`\n\n\n"
 		}
 	}
 }

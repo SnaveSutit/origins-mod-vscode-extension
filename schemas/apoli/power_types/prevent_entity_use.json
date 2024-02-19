@@ -37,6 +37,10 @@
 			"$ref": "../types/item_stack.json",
 			"description": "If specified, this item stack will be given to the '**actor**' entity.",
 			"markdownDescription": "If specified, this item stack will be given to the '**actor**' entity."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_entity_use)\n\nPrevents the player that has the power from \"using\" (right-clicking) an entity and executes a bi-entity action, item action and/or give an item upon being prevented.\n\nType ID: `origins:prevent_entity_use`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that has the power whilst the '**target**' entity is the entity that was \"used\" (right-clicked).\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_entity_use)\n\nPrevents the player that has the power from \"using\" (right-clicking) an entity and executes a bi-entity action, item action and/or give an item upon being prevented.\n\nType ID: `origins:prevent_entity_use`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that has the power whilst the '**target**' entity is the entity that was \"used\" (right-clicked).\n\n\n"
 		}
 	}
 }

@@ -33,6 +33,10 @@
 			},
 			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity.",
 			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
+		},
+		"type": {
+			"description": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage)\n\nApplies damage to the target entity as if the actor entity has attacked it.\n\nType ID: `origins:damage`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage)\n\nApplies damage to the target entity as if the actor entity has attacked it.\n\nType ID: `origins:damage`\n\n\n"
 		}
 	}
 }

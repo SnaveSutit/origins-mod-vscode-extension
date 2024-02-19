@@ -16,6 +16,10 @@
 			"type": "integer",
 			"description": "The value which the durability value of the item should be compared to.",
 			"markdownDescription": "The value which the durability value of the item should be compared to."
+		},
+		"type": {
+			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/durability)\n\nChecks the current and absolute durability value of the item.\n\nType ID: `origins:durability`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/durability)\n\nChecks the current and absolute durability value of the item.\n\nType ID: `origins:durability`\n\n\n"
 		}
 	}
 }

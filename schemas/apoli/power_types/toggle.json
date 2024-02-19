@@ -19,6 +19,10 @@
 			"default": true,
 			"description": "Determines whether the state of this power type should retain if the condition (if there is any) is no longer fulfilled.",
 			"markdownDescription": "Determines whether the state of this power type should retain if the condition (if there is any) is no longer fulfilled."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/toggle)\n\nProvides a state that can be toggled with the specified [Key](../data_types/key.md).\n\nType ID: `origins:toggle`\n\n\n!!! note\n\n    This power type provides a state that can be toggled with the [Toggle (Entity Action Type)](../entity_action_types/toggle.md) and check the state of with the [Power Active (Entity Condition Type)](../entity_condition_types/power_active.md).\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/toggle)\n\nProvides a state that can be toggled with the specified [Key](../data_types/key.md).\n\nType ID: `origins:toggle`\n\n\n!!! note\n\n    This power type provides a state that can be toggled with the [Toggle (Entity Action Type)](../entity_action_types/toggle.md) and check the state of with the [Power Active (Entity Condition Type)](../entity_condition_types/power_active.md).\n\n\n"
 		}
 	}
 }

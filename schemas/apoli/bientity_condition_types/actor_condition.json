@@ -7,9 +7,13 @@
 	],
 	"properties": {
 		"condition": {
-			"$ref": "../bientity_condition.json",
+			"$ref": "../entity_condition.json",
 			"description": "The entity condition type to check for on the acting entity.",
 			"markdownDescription": "The entity condition type to check for on the acting entity."
+		},
+		"type": {
+			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/actor_condition)\n\nChecks for an [Entity Condition Type](../entity_condition_types.md) on the actor entity.\n\nType ID: `origins:actor_condition`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/actor_condition)\n\nChecks for an [Entity Condition Type](../entity_condition_types.md) on the actor entity.\n\nType ID: `origins:actor_condition`\n\n\n"
 		}
 	}
 }

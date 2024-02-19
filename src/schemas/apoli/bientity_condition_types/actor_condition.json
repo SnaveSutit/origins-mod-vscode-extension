@@ -5,7 +5,7 @@
 	"required": ["condition"],
 	"properties": {
 		"condition": {
-			"$ref": "$ref(apoli:bientity_condition)"
+			"$ref": "$ref(apoli:entity_condition)"
 		}
 	}
 }

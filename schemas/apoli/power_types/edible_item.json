@@ -68,6 +68,10 @@
 			"default": 0,
 			"description": "Determines the priority of which the power will apply its modification to the item. Must be higher than 0 if the item is already edible.",
 			"markdownDescription": "Determines the priority of which the power will apply its modification to the item. Must be higher than 0 if the item is already edible."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/edible_item)\n\nMakes an item edible.\n\nType ID: `origins:edible_item`\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/edible_item)\n\nMakes an item edible.\n\nType ID: `origins:edible_item`\n\n"
 		}
 	}
 }

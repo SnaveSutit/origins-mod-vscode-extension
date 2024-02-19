@@ -7,6 +7,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "The namespace and ID of the tag which the biome should be in to pass the check.",
 			"markdownDescription": "The namespace and ID of the tag which the biome should be in to pass the check."
+		},
+		"type": {
+			"description": "\n\n[Biome Condition Type](https://origins.readthedocs.io/en/latest/types/biome_condition_types/in_tag)\n\nChecks whether the biome is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n",
+			"markdownDescription": "\n\n[Biome Condition Type](https://origins.readthedocs.io/en/latest/types/biome_condition_types/in_tag)\n\nChecks whether the biome is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n"
 		}
 	}
 }

@@ -64,6 +64,10 @@
 			"default": 0,
 			"description": "Specifies when this origin is loaded. Higher numbers mean it's loaded later, which means it will override those with lower loading priorities which share the same ID.",
 			"markdownDescription": "Specifies when this origin is loaded. Higher numbers mean it's loaded later, which means it will override those with lower loading priorities which share the same ID."
+		},
+		"type": {
+			"description": "\n\nThis is the format of a JSON file describing an origin. Origins are used to give players special abilities, which can alter the player's gameplay.\n\nOrigin JSON files need to be placed inside the `data/<namespace>/origins` folder of your datapack. The said files can be referenced as `namespace:path/to/origin` (`data/namespace/origins/path/to/origin.json`) in the `origins` field of an [Origin Layer (JSON)](https://origins.readthedocs.io/en/latest/json/origin) file.\n\n\n",
+			"markdownDescription": "\n\nThis is the format of a JSON file describing an origin. Origins are used to give players special abilities, which can alter the player's gameplay.\n\nOrigin JSON files need to be placed inside the `data/<namespace>/origins` folder of your datapack. The said files can be referenced as `namespace:path/to/origin` (`data/namespace/origins/path/to/origin.json`) in the `origins` field of an [Origin Layer (JSON)](https://origins.readthedocs.io/en/latest/json/origin) file.\n\n\n"
 		}
 	}
 }

@@ -10,6 +10,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "The namespace and ID of the [Power Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/power_type) of a power the entity has.",
 			"markdownDescription": "The namespace and ID of the [Power Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/power_type) of a power the entity has."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/power_type)\n\nChecks if the entity has a power that uses the specified [Power Type](../power_types.md).\n\nType ID: `origins:power_type`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/power_type)\n\nChecks if the entity has a power that uses the specified [Power Type](../power_types.md).\n\nType ID: `origins:power_type`\n\n\n"
 		}
 	}
 }

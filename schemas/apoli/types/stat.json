@@ -8,7 +8,6 @@
 	],
 	"properties": {
 		"type": {
-			"$ref": "autocomplete_helpers/stat_type_identifier.json",
 			"description": "The type of the statistic.",
 			"markdownDescription": "The type of the statistic."
 		},

@@ -10,6 +10,10 @@
 			"$ref": "../types/nbt.json",
 			"description": "The NBT data to check for.",
 			"markdownDescription": "The NBT data to check for."
+		},
+		"type": {
+			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/nbt)\n\nChecks the item's NBT.\n\nType ID: `origins:nbt`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/nbt)\n\nChecks the item's NBT.\n\nType ID: `origins:nbt`\n\n\n"
 		}
 	}
 }

@@ -13,6 +13,10 @@
 			},
 			"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
 			"markdownDescription": "All of these condition types have to be fulfilled in order for this condition to be fulfilled."
+		},
+		"type": {
+			"description": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/and)\n\nChecks whether all of the provided conditions are fulfilled.\n\nType ID: `origins:and`\n\n\n",
+			"markdownDescription": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/and)\n\nChecks whether all of the provided conditions are fulfilled.\n\nType ID: `origins:and`\n\n\n"
 		}
 	}
 }

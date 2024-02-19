@@ -7,6 +7,10 @@
 			"$ref": "../block_condition.json",
 			"description": "If specified, only blocks that fulfill this condition are affected.",
 			"markdownDescription": "If specified, only blocks that fulfill this condition are affected."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_block_selection)\n\nPrevents the selection of blocks for the player that has the power.\n\nType ID: `origins:prevent_block_selection`\n\n!!! note\n\n    Preventing the \"selection\" of a block means that the player won't be able to mine or interact with the said block; meaning that actions will pass through the block to whatever is behind the said block.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_block_selection)\n\nPrevents the selection of blocks for the player that has the power.\n\nType ID: `origins:prevent_block_selection`\n\n!!! note\n\n    Preventing the \"selection\" of a block means that the player won't be able to mine or interact with the said block; meaning that actions will pass through the block to whatever is behind the said block.\n\n\n"
 		}
 	}
 }

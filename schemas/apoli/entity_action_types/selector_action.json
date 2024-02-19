@@ -20,6 +20,10 @@
 			"$ref": "../bientity_condition.json",
 			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both the '**actor**' and '**target**' entities.",
 			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by either or both the '**actor**' and '**target**' entities."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/selector_action)\n\nExecutes an action on entities selected by a target selector.\n\nType ID: `origins:selector_action`\n\n\n!!! note\n\n    See [Minecraft Wiki: Target selectors](https://minecraft.wiki/w/Target_selectors) for more information about target selectors.\n\n!!! note\n\n    This entity action type has a bi-entity action context, where the '**actor**' entity is the entity that invoked the entity action while the '**target**' entities are the entities that were selected by the specified `selector`.\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/selector_action)\n\nExecutes an action on entities selected by a target selector.\n\nType ID: `origins:selector_action`\n\n\n!!! note\n\n    See [Minecraft Wiki: Target selectors](https://minecraft.wiki/w/Target_selectors) for more information about target selectors.\n\n!!! note\n\n    This entity action type has a bi-entity action context, where the '**actor**' entity is the entity that invoked the entity action while the '**target**' entities are the entities that were selected by the specified `selector`.\n\n\n"
 		}
 	}
 }

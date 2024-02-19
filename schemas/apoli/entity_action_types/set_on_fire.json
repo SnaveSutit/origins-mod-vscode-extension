@@ -10,6 +10,10 @@
 			"type": "integer",
 			"description": "The amount of seconds the entity should burn.",
 			"markdownDescription": "The amount of seconds the entity should burn."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/set_on_fire)\n\nSets the entity on fire for the specified amount of time in seconds.\n\nType ID: `origins:set_on_fire`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/set_on_fire)\n\nSets the entity on fire for the specified amount of time in seconds.\n\nType ID: `origins:set_on_fire`\n\n\n"
 		}
 	}
 }

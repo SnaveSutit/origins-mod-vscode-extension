@@ -10,6 +10,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "The namespace and ID of a game event.",
 			"markdownDescription": "The namespace and ID of a game event."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/emit_game_event)\n\nEmits a 'game event' at the entity's position.\n\nType ID: `origins:emit_game_event`\n\n\n!!! note\n\n    See [Minecraft Wiki: Sculk Sensor (Vibration amplitudes)](https://minecraft.wiki/w/Sculk_Sensor?oldid=2099339#Vibration_amplitudes) for a list of vanilla game events you can use.\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/emit_game_event)\n\nEmits a 'game event' at the entity's position.\n\nType ID: `origins:emit_game_event`\n\n\n!!! note\n\n    See [Minecraft Wiki: Sculk Sensor (Vibration amplitudes)](https://minecraft.wiki/w/Sculk_Sensor?oldid=2099339#Vibration_amplitudes) for a list of vanilla game events you can use.\n\n\n"
 		}
 	}
 }

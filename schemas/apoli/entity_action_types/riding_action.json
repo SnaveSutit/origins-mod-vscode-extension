@@ -23,6 +23,10 @@
 			"default": false,
 			"description": "If set to `true`, the specified action(s) will be executed on all entities that are being ridden.",
 			"markdownDescription": "If set to `true`, the specified action(s) will be executed on all entities that are being ridden."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/riding_action)\n\nExecutes an action on the entity/entities that's being ridden by the entity.\n\nType ID: `origins:riding_action`\n\n!!! note\n\n    Not to be confused with [Passenger Action](./passenger_action.md).\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/riding_action)\n\nExecutes an action on the entity/entities that's being ridden by the entity.\n\nType ID: `origins:riding_action`\n\n!!! note\n\n    Not to be confused with [Passenger Action](./passenger_action.md).\n\n\n"
 		}
 	}
 }

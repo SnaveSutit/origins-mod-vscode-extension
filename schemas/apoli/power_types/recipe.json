@@ -10,6 +10,10 @@
 			"$ref": "../types/crafting_recipe.json",
 			"description": "The recipe to craft, including an `id` field which can be any arbitrary (but unique) identifier.",
 			"markdownDescription": "The recipe to craft, including an `id` field which can be any arbitrary (but unique) identifier."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/recipe)\n\nAllows a player with this power to craft the defined crafting recipe.\n\nType ID: `origins:recipe`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/recipe)\n\nAllows a player with this power to craft the defined crafting recipe.\n\nType ID: `origins:recipe`\n\n\n"
 		}
 	}
 }

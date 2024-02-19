@@ -10,6 +10,10 @@
 			"$ref": "../block_condition.json",
 			"description": "If specified, only blocks that fulfill this condition are affected.",
 			"markdownDescription": "If specified, only blocks that fulfill this condition are affected."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_block_use)\n\nPrevents the usage of blocks for the player that has the power.\n\nType ID: `origins:prevent_block_use`\n\n!!! note\n\n    Preventing the \"usage\" of a block means that the player won't be able to interact (right-click) with the said block.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_block_use)\n\nPrevents the usage of blocks for the player that has the power.\n\nType ID: `origins:prevent_block_use`\n\n!!! note\n\n    Preventing the \"usage\" of a block means that the player won't be able to interact (right-click) with the said block.\n\n\n"
 		}
 	}
 }

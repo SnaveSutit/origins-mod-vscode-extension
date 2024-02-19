@@ -10,6 +10,10 @@
 			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "This modifier will be applied to the current death ticks value of the entity.",
 			"markdownDescription": "This modifier will be applied to the current death ticks value of the entity."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_death_ticks)\n\nModifies how long the entity has been dead for.\n\nType ID: `origins:modify_death_ticks`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_death_ticks)\n\nModifies how long the entity has been dead for.\n\nType ID: `origins:modify_death_ticks`\n\n\n"
 		}
 	}
 }

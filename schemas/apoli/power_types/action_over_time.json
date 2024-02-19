@@ -23,6 +23,10 @@
 			"$ref": "../entity_action.json",
 			"description": "The action to execute on the first interval tick in which the condition became false.",
 			"markdownDescription": "The action to execute on the first interval tick in which the condition became false."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_over_time)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power within the specified interval.\n\nType ID: `origins:action_over_time`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_over_time)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power within the specified interval.\n\nType ID: `origins:action_over_time`\n\n\n"
 		}
 	}
 }

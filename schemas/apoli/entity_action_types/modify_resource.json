@@ -16,6 +16,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource) or the [Cooldown (Power Type)](../power_types/cooldown.md).",
 			"markdownDescription": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource) or the [Cooldown (Power Type)](../power_types/cooldown.md)."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource)\n\nModifies the value of a certain resource with [Attribute Modifiers](../data_types/attribute_modifier.md).\n\nType ID: `origins:modify_resource`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource)\n\nModifies the value of a certain resource with [Attribute Modifiers](../data_types/attribute_modifier.md).\n\nType ID: `origins:modify_resource`\n\n\n"
 		}
 	}
 }

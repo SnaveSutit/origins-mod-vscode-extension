@@ -27,6 +27,10 @@
 			"$ref": "../bientity_condition.json",
 			"description": "If specified, the specified bi-entity action will only be executed on either or both the '**actor**' or '**target(s)**' that fulfill this bi-entity condition.",
 			"markdownDescription": "If specified, the specified bi-entity action will only be executed on either or both the '**actor**' or '**target(s)**' that fulfill this bi-entity condition."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/area_of_effect)\n\nExecutes a [Bi-Entity Action](../bientity_action_types.md) within a specified radius.\n\nType ID: `origins:area_of_effect`\n\n\n!!! note\n\n    In the context of this entity action type, the '**actor**' is the entity that invoked the action and the '**target(s)**' is/are the entity/entities within the specified radius.\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/area_of_effect)\n\nExecutes a [Bi-Entity Action](../bientity_action_types.md) within a specified radius.\n\nType ID: `origins:area_of_effect`\n\n\n!!! note\n\n    In the context of this entity action type, the '**actor**' is the entity that invoked the action and the '**target(s)**' is/are the entity/entities within the specified radius.\n\n\n"
 		}
 	}
 }

@@ -8,6 +8,10 @@
 	"properties": {
 		"projectile": {
 			"$ref": "../types/identifier.json"
+		},
+		"type": {
+			"description": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/type)\n\nChecks whether the damage source is of a certain damage type.\n\nType ID: `origins:type`\n\n\n",
+			"markdownDescription": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/type)\n\nChecks whether the damage source is of a certain damage type.\n\nType ID: `origins:type`\n\n\n"
 		}
 	}
 }

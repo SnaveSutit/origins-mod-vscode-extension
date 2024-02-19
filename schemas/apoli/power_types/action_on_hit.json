@@ -31,6 +31,10 @@
 			"$ref": "../types/hud_render.json",
 			"description": "Determines how the cooldown of this power is visualized on the HUD.",
 			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_hit)\n\nExecutes an action when the entity that has the power has hit another entity.\n\nType ID: `origins:action_on_hit`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that has the power whilst the '**target**' entity is the entity that was hit.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_hit)\n\nExecutes an action when the entity that has the power has hit another entity.\n\nType ID: `origins:action_on_hit`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that has the power whilst the '**target**' entity is the entity that was hit.\n\n\n"
 		}
 	}
 }

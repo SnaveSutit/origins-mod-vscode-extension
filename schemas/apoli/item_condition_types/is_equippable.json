@@ -7,6 +7,10 @@
 			"$ref": "../types/equipment_slot.json",
 			"description": "If specified, checks if the item is equippable in the specified equipment slot. Accepts `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, or `\"offhand\"`.",
 			"markdownDescription": "If specified, checks if the item is equippable in the specified equipment slot. Accepts `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, or `\"offhand\"`."
+		},
+		"type": {
+			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/is_equippable)\n\nChecks if the item is equippable.\n\nType ID: [`origins:is_equippable`](## \"Aliases: [\"origins:equippable\"]\")\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/is_equippable)\n\nChecks if the item is equippable.\n\nType ID: [`origins:is_equippable`](## \"Aliases: [\"origins:equippable\"]\")\n\n\n"
 		}
 	}
 }

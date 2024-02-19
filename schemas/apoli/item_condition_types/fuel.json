@@ -13,6 +13,10 @@
 			"default": 0,
 			"description": "Which value to compare the fuel time value (in ticks) of the item to.",
 			"markdownDescription": "Which value to compare the fuel time value (in ticks) of the item to."
+		},
+		"type": {
+			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/fuel)\n\nChecks whether the item is considered as fuel.\n\nType ID: `origins:fuel`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/fuel)\n\nChecks whether the item is considered as fuel.\n\nType ID: `origins:fuel`\n\n\n"
 		}
 	}
 }

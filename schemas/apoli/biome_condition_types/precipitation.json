@@ -11,6 +11,10 @@
 			],
 			"description": "Which precipitation the biome has to have in order to succeed the check. Accepts `\"none\"`, `\"rain\"` or `\"snow\"`. Due to limitations with the system, this will check precipitation at a world height of 64.",
 			"markdownDescription": "Which precipitation the biome has to have in order to succeed the check. Accepts `\"none\"`, `\"rain\"` or `\"snow\"`. Due to limitations with the system, this will check precipitation at a world height of 64."
+		},
+		"type": {
+			"description": "\n\n[Biome Condition Type](https://origins.readthedocs.io/en/latest/types/biome_condition_types/precipitation)\n\nChecks for the precipitation type of the biome the entity is currently in.\n\nType ID: `origins:precipitation`\n\n\n",
+			"markdownDescription": "\n\n[Biome Condition Type](https://origins.readthedocs.io/en/latest/types/biome_condition_types/precipitation)\n\nChecks for the precipitation type of the biome the entity is currently in.\n\nType ID: `origins:precipitation`\n\n\n"
 		}
 	}
 }

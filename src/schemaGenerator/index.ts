@@ -48,12 +48,12 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 			delete schema.$IGNORED_PROPERTIES
 		}
 
-		// if (mdFile.description && schema.type === 'object' && schema.properties) {
-		// 	schema.properties.type = {
-		// 		description: mdFile.description,
-		// 		markdownDescription: mdFile.description,
-		// 	}
-		// }
+		if (mdFile.description && schema.type === 'object' && schema.properties) {
+			schema.properties.type = {
+				description: mdFile.description,
+				markdownDescription: mdFile.description,
+			}
+		}
 
 		if (mdFile.fields.length > 0) {
 			if (schema.type !== 'object' && propertyObjects.length < 1) {
@@ -72,15 +72,6 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 						field.description
 				}
 			}
-			// for (const prop in contents.properties) {
-			// 	if (!mdFile.fields.find(f => f.name === prop)) {
-			// 		term
-			// 			.brightRed('Found extra field ')
-			// 			.brightYellow(prop)
-			// 			.brightRed(' in ')
-			// 			.brightYellow(mdFile.path)('\n')
-			// 	}
-			// }
 			for (const field of mdFile.fields) {
 				if (!foundFields.includes(field.name)) {
 					term
@@ -131,7 +122,7 @@ function processImportFilesIntoArray(
 	layer.$IMPORT = undefined
 }
 
-function processImportFileContentsIntoArray(
+async function processImportFileContentsIntoArray(
 	layer: JSONSchema,
 	options: ProcessSchemaOptions,
 	importOptions: ImportOptions & { type: 'import_file_contents_into_array' }
@@ -162,21 +153,25 @@ function processImportFileContentsIntoArray(
 		// const parentRefPath = pathjs
 		// 	.relative(pathjs.dirname(outFilePath), options.outPath)
 		// 	.replace(/\\/g, '/')
-		let fileContents = fsSync.readFileSync(inFilePath, 'utf-8')
 
+		const fileContents: JSONSchema = JSON.parse(fsSync.readFileSync(inFilePath, 'utf-8'))
+		await processSchema(fileContents, { schemaPath: inFilePath, outPath: outFilePath })
+		await processSchemaProperties(fileContents, inFilePath)
+
+		let fileStrContents = JSON.stringify(fileContents)
 		if (importOptions.variables?.length > 0) {
 			for (const [name, value] of Object.entries(importOptions.variables).sort(
 				(a, b) => a.length - b.length
 			)) {
-				fileContents = fileContents.replace(new RegExp(`\\$\\$${name}`, 'g'), value)
+				fileStrContents = fileStrContents.replace(new RegExp(`\\$\\$${name}`, 'g'), value)
 			}
 		}
-		// fileContents = fileContents
+		// fileStrContents = fileStrContents
 		// 	.replace('$$parentNameAction', parentRefPath.replace('condition', 'action'))
 		// 	.replace('$$parentNameCondition', parentRefPath.replace('action', 'condition'))
 
 		const structure = stringStructure
-			.replace(/"\$\$fileRef"/gm, fileContents)
+			.replace(/"\$\$fileRef"/gm, fileStrContents)
 			.replace(/\$\$fileName/g, fileName)
 
 		layer[importOptions.output_key].push(JSON.parse(structure))
@@ -212,7 +207,7 @@ function processImportMinecraftRegistry(
 	layer.$IMPORT = undefined
 }
 
-function processImport(
+async function processImport(
 	layer: JSONSchema,
 	options: ProcessSchemaOptions,
 	importOptions: ImportOptions
@@ -222,7 +217,7 @@ function processImport(
 			processImportFilesIntoArray(layer, options, importOptions as any)
 			break
 		case 'import_file_contents_into_array':
-			processImportFileContentsIntoArray(layer, options, importOptions as any)
+			await processImportFileContentsIntoArray(layer, options, importOptions as any)
 			break
 		case 'import_minecraft_registry':
 			processImportMinecraftRegistry(layer, options, importOptions as any)
@@ -233,14 +228,14 @@ function processImport(
 	}
 }
 
-function processSchemaLayer(layer: JSONSchema, options: ProcessSchemaOptions) {
+async function processSchemaLayer(layer: JSONSchema, options: ProcessSchemaOptions) {
 	if (layer.$IMPORT) {
 		if (Array.isArray(layer.$IMPORT)) {
 			for (const importOptions of layer.$IMPORT) {
-				processImport(layer, options, importOptions)
+				await processImport(layer, options, importOptions)
 			}
 		} else {
-			processImport(layer, options, layer.$IMPORT)
+			await processImport(layer, options, layer.$IMPORT)
 		}
 	}
 }
@@ -250,15 +245,15 @@ interface ProcessSchemaOptions {
 	outPath: string
 }
 
-function processSchema(schema: JSONSchema, options: ProcessSchemaOptions) {
+async function processSchema(schema: JSONSchema, options: ProcessSchemaOptions) {
 	if (Array.isArray(schema)) {
 		for (const item of schema) {
-			processSchema(item, options)
+			await processSchema(item, options)
 		}
 	} else if (typeof schema === 'object') {
-		processSchemaLayer(schema, options)
+		await processSchemaLayer(schema, options)
 		for (const val of Object.values(schema)) {
-			processSchema(val, options)
+			await processSchema(val, options)
 		}
 	}
 }
@@ -284,7 +279,7 @@ async function build(schemasToBuild: string[]) {
 
 		const contents: JSONSchema = await fs.readFile(schemaPath, 'utf-8').then(JSON.parse)
 
-		processSchema(contents, { schemaPath, outPath })
+		await processSchema(contents, { schemaPath, outPath })
 		await processSchemaProperties(contents, schemaPath)
 
 		let strContents = JSON.stringify(contents, null, '\t')

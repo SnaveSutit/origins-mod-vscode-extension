@@ -57,6 +57,10 @@
 			"type": "integer",
 			"description": "If specified, the affected items will be split by this amount.",
 			"markdownDescription": "If specified, the affected items will be split by this amount."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/drop_inventory)\n\nDrops the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](../power_types/inventory.md).\n\nType ID: `origins:drop_inventory`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/drop_inventory)\n\nDrops the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](../power_types/inventory.md).\n\nType ID: `origins:drop_inventory`\n\n\n"
 		}
 	}
 }

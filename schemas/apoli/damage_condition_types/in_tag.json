@@ -10,6 +10,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "The namespace and ID of the tag which the damage type should be in to pass the check.",
 			"markdownDescription": "The namespace and ID of the tag which the damage type should be in to pass the check."
+		},
+		"type": {
+			"description": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/in_tag)\n\nChecks whether the type of this damage is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n!!! note\n\n    See [Minecraft Wiki: Tag (Damage types)](https://minecraft.wiki/w/Tag#Damage_types) for a list of of damage type tags provided/used in vanilla.\n\n\n",
+			"markdownDescription": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/in_tag)\n\nChecks whether the type of this damage is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n!!! note\n\n    See [Minecraft Wiki: Tag (Damage types)](https://minecraft.wiki/w/Tag#Damage_types) for a list of of damage type tags provided/used in vanilla.\n\n\n"
 		}
 	}
 }

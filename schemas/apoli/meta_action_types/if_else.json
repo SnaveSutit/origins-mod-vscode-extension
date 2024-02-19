@@ -21,6 +21,10 @@
 			"$ref": "#/definitions/action",
 			"description": "If present, this action will be executed when the condition evaluates to false.",
 			"markdownDescription": "If present, this action will be executed when the condition evaluates to false."
+		},
+		"type": {
+			"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else)\n\nExecutes an action only if a condition holds, and optionally executes another action when it doesn't hold.\n\nType ID: `origins:if_else`\n\n!!! note\n\n    Depending on the condition type, a different action type is expected:\n\n    Action Type | Condition Type\n    ------------|----------------\n    [Bi-entity Action Type](../bientity_action_types.md) | [Bi-entity Condition Type](../bientity_condition_types.md)\n    [Entity Action Type](../entity_action_types.md) | [Entity Condition Type](../entity_condition_types.md)\n    [Block Action Type](../block_action_types.md) | [Block Condition Type](../block_condition_types.md)\n    [Item Action Type](../item_action_types.md) | [Item Condition Type](../item_condition_types.md)\n\n\n",
+			"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else)\n\nExecutes an action only if a condition holds, and optionally executes another action when it doesn't hold.\n\nType ID: `origins:if_else`\n\n!!! note\n\n    Depending on the condition type, a different action type is expected:\n\n    Action Type | Condition Type\n    ------------|----------------\n    [Bi-entity Action Type](../bientity_action_types.md) | [Bi-entity Condition Type](../bientity_condition_types.md)\n    [Entity Action Type](../entity_action_types.md) | [Entity Condition Type](../entity_condition_types.md)\n    [Block Action Type](../block_action_types.md) | [Block Condition Type](../block_condition_types.md)\n    [Item Action Type](../item_action_types.md) | [Item Condition Type](../item_condition_types.md)\n\n\n"
 		}
 	}
 }

@@ -22,6 +22,10 @@
 			"$ref": "../item_condition.json",
 			"description": "If specified, items which fulfills this condition cannot be equipped in the feet equipment slot.",
 			"markdownDescription": "If specified, items which fulfills this condition cannot be equipped in the feet equipment slot."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/restrict_armor)\n\nRestricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s).\n\nType ID: `origins:restrict_armor`\n\n!!! note\n\n    This power type does not support a `condition`. If the `condition` field is present, it will be ignored. If you wish to check for an entity condition before applying the restriction, you can use the [Conditioned Restrict Armor](conditioned_restrict_armor.md) power type instead.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/restrict_armor)\n\nRestricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s).\n\nType ID: `origins:restrict_armor`\n\n!!! note\n\n    This power type does not support a `condition`. If the `condition` field is present, it will be ignored. If you wish to check for an entity condition before applying the restriction, you can use the [Conditioned Restrict Armor](conditioned_restrict_armor.md) power type instead.\n\n\n"
 		}
 	}
 }

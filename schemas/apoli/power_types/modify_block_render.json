@@ -15,6 +15,10 @@
 			"$ref": "../types/autocomplete_helpers/block_identifier.json",
 			"description": "The namespace and ID of the replacement block.",
 			"markdownDescription": "The namespace and ID of the replacement block."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_block_render)\n\nModifies how a block would look like to the entity that has the power.\n\nType ID: `origins:modify_block_render`\n\n!!! caution\n\n    Currently, this power type does not work properly if you have installed a mod that changes the rendering engine, such as Sodium.\n\n!!! note\n\n    This power type does **not** support a `condition`. If the `condition` field is present, it will be ignored.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_block_render)\n\nModifies how a block would look like to the entity that has the power.\n\nType ID: `origins:modify_block_render`\n\n!!! caution\n\n    Currently, this power type does not work properly if you have installed a mod that changes the rendering engine, such as Sodium.\n\n!!! note\n\n    This power type does **not** support a `condition`. If the `condition` field is present, it will be ignored.\n\n\n"
 		}
 	}
 }

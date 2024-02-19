@@ -26,6 +26,10 @@
 			"$ref": "../damage_condition.json",
 			"description": "If specified, the specified action will only execute if the damage taken fulfills this condition.",
 			"markdownDescription": "If specified, the specified action will only execute if the damage taken fulfills this condition."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/self_action_when_hit)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power when the entity takes damage.\n\nType ID: `origins:self_action_when_hit`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/self_action_when_hit)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power when the entity takes damage.\n\nType ID: `origins:self_action_when_hit`\n\n\n"
 		}
 	}
 }

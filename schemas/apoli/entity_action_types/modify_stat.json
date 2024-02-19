@@ -16,6 +16,10 @@
 			"$ref": "../types/attribute_modifier_arrayable.json",
 			"description": "This modifier will be applied to the current value of the statistic specified.",
 			"markdownDescription": "This modifier will be applied to the current value of the statistic specified."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_stat)\n\nModifies the value of a certain statistic with [Attribute Modifiers](../data_types/attribute_modifier.md).\n\nType ID: `origins:modify_stat`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_stat)\n\nModifies the value of a certain statistic with [Attribute Modifiers](../data_types/attribute_modifier.md).\n\nType ID: `origins:modify_stat`\n\n\n"
 		}
 	}
 }

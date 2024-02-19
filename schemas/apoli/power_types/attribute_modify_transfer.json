@@ -37,6 +37,10 @@
 			"default": 1,
 			"description": "Determines the multiplier for the value.",
 			"markdownDescription": "Determines the multiplier for the value."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/attribute_modify_transfer)\n\nTransfers the value of an attribute modifier from a specified attribute to a specified power class that extends the [`ValueModifyingPower`](https://github.com/apace100/apoli/blob/master/src/main/java/io/github/apace100/apoli/power/ValueModifyingPower.java) super-class.\n\nType ID: `origins:attribute_modify_transfer`\n\n!!! note\n\n    Refer to the [Minecraft Wiki: Attribute](https://minecraft.wiki/w/Attribute) page for a list of **vanilla** attributes that you can get the value from.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/attribute_modify_transfer)\n\nTransfers the value of an attribute modifier from a specified attribute to a specified power class that extends the [`ValueModifyingPower`](https://github.com/apace100/apoli/blob/master/src/main/java/io/github/apace100/apoli/power/ValueModifyingPower.java) super-class.\n\nType ID: `origins:attribute_modify_transfer`\n\n!!! note\n\n    Refer to the [Minecraft Wiki: Attribute](https://minecraft.wiki/w/Attribute) page for a list of **vanilla** attributes that you can get the value from.\n\n\n"
 		}
 	}
 }

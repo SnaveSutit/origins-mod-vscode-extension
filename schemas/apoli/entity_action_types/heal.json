@@ -10,6 +10,10 @@
 			"type": "number",
 			"description": "The amount of health to restore.",
 			"markdownDescription": "The amount of health to restore."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/heal)\n\nRestores a specified amount of health to the entity.\n\nType ID: `origins:heal`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/heal)\n\nRestores a specified amount of health to the entity.\n\nType ID: `origins:heal`\n\n\n"
 		}
 	}
 }

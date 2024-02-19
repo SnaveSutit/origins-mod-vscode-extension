@@ -64,6 +64,10 @@
 			"type": "number",
 			"description": "Determines the distance of the raycast for blocks if `block` is set to `true`. If absent, it will use the higher value between the entity's block reach (with Reach Entity Attributes compatibility) or the `distance` field.",
 			"markdownDescription": "Determines the distance of the raycast for blocks if `block` is set to `true`. If absent, it will use the higher value between the entity's block reach (with Reach Entity Attributes compatibility) or the `distance` field."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/raycast)\n\nCasts a ray to the direction where the entity is looking.\n\nType ID: `origins:raycast`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/raycast)\n\nCasts a ray to the direction where the entity is looking.\n\nType ID: `origins:raycast`\n\n\n"
 		}
 	}
 }

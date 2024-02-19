@@ -16,6 +16,10 @@
 			"type": "number",
 			"description": "The amount of saturation points to restore.",
 			"markdownDescription": "The amount of saturation points to restore."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/feed)\n\nFeeds the entity, filling up their hunger bar as if they had eaten a food item with the provided values.\n\nType ID: `origins:feed`\n\n!!! note\n\n    The actual food saturation level is determined by the `food * saturation * 2` formula.\n\n!!! note\n\n    **This entity action type will only work on players.**\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/feed)\n\nFeeds the entity, filling up their hunger bar as if they had eaten a food item with the provided values.\n\nType ID: `origins:feed`\n\n!!! note\n\n    The actual food saturation level is determined by the `food * saturation * 2` formula.\n\n!!! note\n\n    **This entity action type will only work on players.**\n\n\n"
 		}
 	}
 }

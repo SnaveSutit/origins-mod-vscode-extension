@@ -12,6 +12,10 @@
 			"$ref": "text_component.json",
 			"description": "If specified, this will override the title that shows up when viewing an origin in the layer.",
 			"markdownDescription": "If specified, this will override the title that shows up when viewing an origin in the layer."
+		},
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/gui_title)\n\nAn [Object](object.md) used to override the title in the choose/view origin GUI of a layer.\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/gui_title)\n\nAn [Object](object.md) used to override the title in the choose/view origin GUI of a layer.\n\n\n"
 		}
 	}
 }

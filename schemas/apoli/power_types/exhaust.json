@@ -16,6 +16,10 @@
 			"type": "number",
 			"description": "How much exhaustion will be applied each interval.",
 			"markdownDescription": "How much exhaustion will be applied each interval."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/exhaust)\n\nApplies exhaustion to the player over time.\n\nType ID: `origins:exhaust`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/exhaust)\n\nApplies exhaustion to the player over time.\n\nType ID: `origins:exhaust`\n\n\n"
 		}
 	}
 }

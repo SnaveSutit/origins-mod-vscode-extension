@@ -10,6 +10,10 @@
 			"$ref": "../bientity_condition.json",
 			"description": "The bi-entity condition type to check for.",
 			"markdownDescription": "The bi-entity condition type to check for."
+		},
+		"type": {
+			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/undirected)\n\nChecks if the specified bi-entity condition is true before or after swapping the actor and target context.\n\nType ID: `origins:undirected`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/undirected)\n\nChecks if the specified bi-entity condition is true before or after swapping the actor and target context.\n\nType ID: `origins:undirected`\n\n\n"
 		}
 	}
 }

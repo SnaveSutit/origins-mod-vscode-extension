@@ -15,6 +15,10 @@
 			"type": "string",
 			"description": "If specified, this will check if the power embedded to the item is assigned to this equipment slot. Accepts one of `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, `\"mainhand\"` or `\"offhand\"`.",
 			"markdownDescription": "If specified, this will check if the power embedded to the item is assigned to this equipment slot. Accepts one of `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`, `\"mainhand\"` or `\"offhand\"`."
+		},
+		"type": {
+			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/has_power)\n\nChecks if the item has a power embedded to it.\n\nType ID: `origins:has_power`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/has_power)\n\nChecks if the item has a power embedded to it.\n\nType ID: `origins:has_power`\n\n\n"
 		}
 	}
 }

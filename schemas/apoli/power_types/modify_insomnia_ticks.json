@@ -15,6 +15,10 @@
 			},
 			"description": "If specified, these modifiers will be applied to the value.",
 			"markdownDescription": "If specified, these modifiers will be applied to the value."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_insomnia_ticks)\n\nModifies the value used for calculating when a Phantom will spawn for a player.\n\nType ID: `origins:modify_insomnia_ticks`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_insomnia_ticks)\n\nModifies the value used for calculating when a Phantom will spawn for a player.\n\nType ID: `origins:modify_insomnia_ticks`\n\n\n"
 		}
 	}
 }

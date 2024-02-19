@@ -5,7 +5,13 @@ import * as terminalkit from 'terminal-kit'
 const term = terminalkit.terminal
 
 export const rawGithubUrl = 'https://raw.githubusercontent.com/apace100/origins-docs/latest/docs/'
-export const docsUrl = 'https://origins.readthedocs.io/en/latest/'
+export const originsDocsUrl = 'https://origins.readthedocs.io/en/latest/'
+export const apugliDocsUrl = 'https://apugli.readthedocs.io/en/latest/'
+export const epoliDocsUrl = 'https://epoli-docs.readthedocs.io/en/latest/'
+export const eggolibDocsUrl = 'https://eggolib.github.io/latest/'
+export const skillfulDocsUrl = 'https://skillful-docs.readthedocs.io/en/latest/'
+// export const extraoriginsDocsUrl = ''
+
 const linkText = /\[(?<name>[^\n\[]+?)\]\((?<target>[^\n ]+?)\)/
 
 const descriptionRegex = /^#\s+(?<title>.+)(?<description>[^]+?)###\s+.+?$/gm
@@ -113,9 +119,11 @@ export class MDFile {
 	public fields: Field[] = []
 	public values: { value: string; description: string }[] = []
 	public url: string
+	private _docsUrl: string = ''
 
-	constructor(public path: string) {
+	constructor(public path: string, docsUrl?: string) {
 		this.url = pathToUrl(rawGithubUrl, path)
+		this._docsUrl = docsUrl || pathToUrl(originsDocsUrl, path)
 	}
 
 	public static fromRawURL(url: string) {
@@ -124,9 +132,22 @@ export class MDFile {
 	}
 
 	public static fromDocsURL(url: string) {
-		let path = url.replace(docsUrl, '')
+		let docsUrl: string
+		if (url.includes(originsDocsUrl)) docsUrl = originsDocsUrl
+		else if (url.includes(apugliDocsUrl)) docsUrl = apugliDocsUrl
+		else if (url.includes(epoliDocsUrl)) docsUrl = epoliDocsUrl
+		else if (url.includes(eggolibDocsUrl)) docsUrl = eggolibDocsUrl
+		else if (url.includes(skillfulDocsUrl)) docsUrl = skillfulDocsUrl
+		else throw new Error(`Failed to parse docs url '${url}'`)
+		let path = url
+			.replace(originsDocsUrl, '')
+			.replace(apugliDocsUrl, '')
+			.replace(epoliDocsUrl, '')
+			.replace(eggolibDocsUrl, '')
+			.replace(skillfulDocsUrl, '')
+
 		if (path.endsWith('/')) path = path.slice(0, -1) + '.md'
-		return new MDFile(path)
+		return new MDFile(path, docsUrl)
 	}
 
 	public static fromFile(path: string) {
@@ -226,6 +247,6 @@ export class MDFile {
 	}
 
 	get docsUrl() {
-		return 'https://origins.readthedocs.io/en/latest/' + this.path.replace('.md', '')
+		return this._docsUrl + this.path.replace('.md', '')
 	}
 }

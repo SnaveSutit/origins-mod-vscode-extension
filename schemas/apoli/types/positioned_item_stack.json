@@ -22,6 +22,10 @@
 			"type": "integer",
 			"description": "Inventory slot position of the stack. If not specified, will be the first free slot in the inventory. See [Positioned Item Stack Slots](https://origins.readthedocs.io/en/latest/types/data_types/positioned_item_stack) for possible values.",
 			"markdownDescription": "Inventory slot position of the stack. If not specified, will be the first free slot in the inventory. See [Positioned Item Stack Slots](https://origins.readthedocs.io/en/latest/types/data_types/positioned_item_stack) for possible values."
+		},
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/positioned_item_stack)\n\nAn [Object](object.md) which defines a new item stack alongside a position in an inventory. Basically an [Item Stack](item_stack.md) with a `slot` field.\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/positioned_item_stack)\n\nAn [Object](object.md) which defines a new item stack alongside a position in an inventory. Basically an [Item Stack](item_stack.md) with a `slot` field.\n\n\n"
 		}
 	}
 }

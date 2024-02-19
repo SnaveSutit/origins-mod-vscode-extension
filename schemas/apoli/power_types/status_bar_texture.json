@@ -10,6 +10,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "The namespace and ID of the sprite sheet to replace the default one with. [Here's what the vanilla sprite sheet looks like.](https://origins.readthedocs.io/en/latest/types/power_types/status_bar_texture)",
 			"markdownDescription": "The namespace and ID of the sprite sheet to replace the default one with. [Here's what the vanilla sprite sheet looks like.](https://origins.readthedocs.io/en/latest/types/power_types/status_bar_texture)"
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/status_bar_texture)\n\nReplaces the status bar textures (health, hunger, air, experience, etc.) with a specified sprite sheet.\n\nType ID: `origins:status_bar_texture`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/status_bar_texture)\n\nReplaces the status bar textures (health, hunger, air, experience, etc.) with a specified sprite sheet.\n\nType ID: `origins:status_bar_texture`\n\n\n"
 		}
 	}
 }

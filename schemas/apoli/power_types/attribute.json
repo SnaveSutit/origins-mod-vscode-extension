@@ -21,6 +21,10 @@
 			"default": true,
 			"description": "When true, the player's health percentage will update to match their new maximum health.",
 			"markdownDescription": "When true, the player's health percentage will update to match their new maximum health."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/attribute)\n\nModifies one or more attributes using [Attributed Attribute Modifiers](../data_types/attributed_attribute_modifier.md)\n\nType ID: `origins:attribute`\n\n!!! caution\n\n    This power type does **not** support a `condition`. If the `condition` field is present, it will be ignored. If you wish to check for an entity condition before applying the attribute modifier(s), you can use the [Conditioned Attribute](../power_types/conditioned_attribute.md) power type instead.\n\n!!! note\n\n    Refer to the [Minecraft Wiki: Attribute](https://minecraft.wiki/w/Attribute) page for a list of **vanilla** attributes that you can modify.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/attribute)\n\nModifies one or more attributes using [Attributed Attribute Modifiers](../data_types/attributed_attribute_modifier.md)\n\nType ID: `origins:attribute`\n\n!!! caution\n\n    This power type does **not** support a `condition`. If the `condition` field is present, it will be ignored. If you wish to check for an entity condition before applying the attribute modifier(s), you can use the [Conditioned Attribute](../power_types/conditioned_attribute.md) power type instead.\n\n!!! note\n\n    Refer to the [Minecraft Wiki: Attribute](https://minecraft.wiki/w/Attribute) page for a list of **vanilla** attributes that you can modify.\n\n\n"
 		}
 	}
 }

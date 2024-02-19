@@ -148,7 +148,13 @@
 						"type": "array",
 						"items": {
 							"$ref": "#/definitions/condition"
-						}
+						},
+						"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+						"markdownDescription": "All of these condition types have to be fulfilled in order for this condition to be fulfilled."
+					},
+					"type": {
+						"description": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/and)\n\nChecks whether all of the provided conditions are fulfilled.\n\nType ID: `origins:and`\n\n\n",
+						"markdownDescription": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/and)\n\nChecks whether all of the provided conditions are fulfilled.\n\nType ID: `origins:and`\n\n\n"
 					}
 				}
 			}
@@ -176,7 +182,13 @@
 				],
 				"properties": {
 					"chance": {
-						"type": "number"
+						"type": "number",
+						"description": "The value to compare the randomly generated number to.",
+						"markdownDescription": "The value to compare the randomly generated number to."
+					},
+					"type": {
+						"description": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n",
+						"markdownDescription": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n"
 					}
 				}
 			}
@@ -204,7 +216,13 @@
 				],
 				"properties": {
 					"value": {
-						"type": "boolean"
+						"type": "boolean",
+						"description": "If true, the condition is always fulfilled. If false, the condition is never fulfilled.",
+						"markdownDescription": "If true, the condition is always fulfilled. If false, the condition is never fulfilled."
+					},
+					"type": {
+						"description": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n",
+						"markdownDescription": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n"
 					}
 				}
 			}
@@ -235,7 +253,13 @@
 						"type": "array",
 						"items": {
 							"$ref": "#/definitions/condition"
-						}
+						},
+						"description": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled.",
+						"markdownDescription": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled."
+					},
+					"type": {
+						"description": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/or)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n",
+						"markdownDescription": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/or)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n"
 					}
 				}
 			}

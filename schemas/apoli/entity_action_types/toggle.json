@@ -10,6 +10,10 @@
 			"$ref": "../types/identifier.json",
 			"description": "The namespace and ID of the power that uses the [Toggle (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/toggle).",
 			"markdownDescription": "The namespace and ID of the power that uses the [Toggle (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/toggle)."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/toggle)\n\nToggles the state of a power that uses the [Toggle (Power Type)](../power_types/toggle.md).\n\nType ID: `origins:toggle`\n\n!!! note\n\n    Not to be confused with [Toggle (Power Type)](../power_types/toggle.md).\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/toggle)\n\nToggles the state of a power that uses the [Toggle (Power Type)](../power_types/toggle.md).\n\nType ID: `origins:toggle`\n\n!!! note\n\n    Not to be confused with [Toggle (Power Type)](../power_types/toggle.md).\n\n\n"
 		}
 	}
 }
