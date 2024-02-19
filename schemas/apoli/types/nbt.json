@@ -7,11 +7,5 @@
 		{
 			"type": "object"
 		}
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/nbt)\n\nA [string](string.md) or [object](object.md) that defines a named binary tag (NBT) for storing arbitrary data. It consists of key-value pairs (the key being the name of the tag) separated by a comma.\n\n\n!!! note\n\n    See [Minecraft Wiki: NBT format](https://minecraft.wiki/w/NBT_format) for more information about named binary tags (NBTs).\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/nbt)\n\nA [string](string.md) or [object](object.md) that defines a named binary tag (NBT) for storing arbitrary data. It consists of key-value pairs (the key being the name of the tag) separated by a comma.\n\n\n!!! note\n\n    See [Minecraft Wiki: NBT format](https://minecraft.wiki/w/NBT_format) for more information about named binary tags (NBTs).\n\n\n"
-		}
-	}
+	]
 }

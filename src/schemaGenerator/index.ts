@@ -48,7 +48,7 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 			delete schema.$IGNORED_PROPERTIES
 		}
 
-		if (mdFile.description) {
+		if (mdFile.description && schema.$docsUrl.match(/.+(?:action|condition|power)_types/)) {
 			schema.properties ??= {}
 			schema.properties.type ??= {
 				description: mdFile.description,

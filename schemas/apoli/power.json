@@ -38,10 +38,6 @@
 			},
 			"description": "If set, it will display icon(s) after the name of the power.",
 			"markdownDescription": "If set, it will display icon(s) after the name of the power."
-		},
-		"type": {
-			"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
-			"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
 		}
 	},
 	"allOf": [

@@ -2,11 +2,5 @@
 	"enum": [
 		"inventory",
 		"power"
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type][data_types]\n\nA [String][string] used to determine whether to reference the inventory of the entity or the inventory of a power present in the entity.\n\n!!!\tnote\n\n\tNot to be confused with the [Container Type (Data Type)][container_type]\n\n\n",
-			"markdownDescription": "\n\n[Data Type][data_types]\n\nA [String][string] used to determine whether to reference the inventory of the entity or the inventory of a power present in the entity.\n\n!!!\tnote\n\n\tNot to be confused with the [Container Type (Data Type)][container_type]\n\n\n"
-		}
-	}
+	]
 }

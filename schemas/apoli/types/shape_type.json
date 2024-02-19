@@ -3,11 +3,5 @@
 		"collider",
 		"outline",
 		"visual"
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type][data_types]\n\nA [String][string] used to determine how raycasts will handle blocks.\n\n\n",
-			"markdownDescription": "\n\n[Data Type][data_types]\n\nA [String][string] used to determine how raycasts will handle blocks.\n\n\n"
-		}
-	}
+	]
 }

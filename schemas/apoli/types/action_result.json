@@ -5,11 +5,5 @@
 		"fail",
 		"pass",
 		"success"
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type][data_types]\n\nA [String][string] used to indicate the result of a certain action.\n\n\n",
-			"markdownDescription": "\n\n[Data Type][data_types]\n\nA [String][string] used to indicate the result of a certain action.\n\n\n"
-		}
-	}
+	]
 }

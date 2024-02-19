@@ -5,11 +5,5 @@
 		"minecraft:invulnerable",
 		"minecraft:mayBuild",
 		"minecraft:mayfly"
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type][data_types]\n\nA [String][string] used to represent a player's ability.\n\n\n",
-			"markdownDescription": "\n\n[Data Type][data_types]\n\nA [String][string] used to represent a player's ability.\n\n\n"
-		}
-	}
+	]
 }

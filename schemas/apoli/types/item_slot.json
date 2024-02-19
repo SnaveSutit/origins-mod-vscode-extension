@@ -15,11 +15,5 @@
 		"weapon.mainhand",
 		"weapon.offhand",
 		"weapon"
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/item_slot)\n\nA [String](string.md) that represents a slot from an entity or container's inventory.\n\n\n!!! note\n\n    It's recommended to use the `container.<slot_number>` item slots for representing the slots of a power that uses the [Inventory (Power Type)](../power_types/inventory.md)\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/item_slot)\n\nA [String](string.md) that represents a slot from an entity or container's inventory.\n\n\n!!! note\n\n    It's recommended to use the `container.<slot_number>` item slots for representing the slots of a power that uses the [Inventory (Power Type)](../power_types/inventory.md)\n\n\n"
-		}
-	}
+	]
 }

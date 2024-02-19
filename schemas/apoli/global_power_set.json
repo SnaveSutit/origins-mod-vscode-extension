@@ -22,10 +22,6 @@
 			"default": 0,
 			"description": "Determines the order at which the global power set is applied.",
 			"markdownDescription": "Determines the order at which the global power set is applied."
-		},
-		"type": {
-			"description": "\n\nThis is the format of a JSON file describing a global power set. Global power sets are sets of powers that are granted to entities globally with the `apoli:global` power source. It can also be filtered so that the set of powers will only be granted to certain entities of certain type or entities included in a certain entity type tag.\n\nGlobal Power Set JSON files need to be placed inside the `data/<namespace>/global_powers` folder of a datapack.\n\n\n",
-			"markdownDescription": "\n\nThis is the format of a JSON file describing a global power set. Global power sets are sets of powers that are granted to entities globally with the `apoli:global` power source. It can also be filtered so that the set of powers will only be granted to certain entities of certain type or entities included in a certain entity type tag.\n\nGlobal Power Set JSON files need to be placed inside the `data/<namespace>/global_powers` folder of a datapack.\n\n\n"
 		}
 	}
 }

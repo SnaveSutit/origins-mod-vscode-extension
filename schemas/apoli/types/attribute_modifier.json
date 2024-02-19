@@ -29,10 +29,6 @@
 			"$ref": "attribute_modifier_arrayable.json",
 			"description": "If specified, this modifier will be applied to the value of the modifier.",
 			"markdownDescription": "If specified, this modifier will be applied to the value of the modifier."
-		},
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier)\n\nAn [Object](object.md) used to specify how a value should be modified.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier)\n\nAn [Object](object.md) used to specify how a value should be modified.\n\n\n"
 		}
 	}
 }

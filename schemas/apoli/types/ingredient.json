@@ -25,11 +25,5 @@
 				}
 			}
 		}
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/ingredient)\n\n_Either_: an [Object](object.md) specifying a registered item or item tag.\n\n_Or_: an [Array](array.md) of [Objects](object.md) specifying a registered item or item tag.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/ingredient)\n\n_Either_: an [Object](object.md) specifying a registered item or item tag.\n\n_Or_: an [Array](array.md) of [Objects](object.md) specifying a registered item or item tag.\n\n\n"
-		}
-	}
+	]
 }

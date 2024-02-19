@@ -3,11 +3,5 @@
 		"addition",
 		"multiply_base",
 		"multiply_total"
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/attributed_attribute_modifier_operation)\n\nA [String](string.md) used to specify the operation used by [Attributed Attribute Modifiers](attributed_attribute_modifier.md).\n\n!!! note\n\n    The listed values are ordered based on the order of priority; with `addition` being applied before `multiply_base` and `multiply_total` being applied last.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/attributed_attribute_modifier_operation)\n\nA [String](string.md) used to specify the operation used by [Attributed Attribute Modifiers](attributed_attribute_modifier.md).\n\n!!! note\n\n    The listed values are ordered based on the order of priority; with `addition` being applied before `multiply_base` and `multiply_total` being applied last.\n\n\n"
-		}
-	}
+	]
 }

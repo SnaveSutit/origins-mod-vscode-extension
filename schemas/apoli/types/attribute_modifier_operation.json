@@ -12,11 +12,5 @@
 		"min_total",
 		"max_total",
 		"set_total"
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation)\n\nA [String](string.md) used to specify the operation used by [Attribute Modifiers](attribute_modifier.md).\n\n!!! note\n\n    The listed values are ordered based on the order of priority; with `add_base_early` being applied before the other modifiers and `set_total` being applied last.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation)\n\nA [String](string.md) used to specify the operation used by [Attribute Modifiers](attribute_modifier.md).\n\n!!! note\n\n    The listed values are ordered based on the order of priority; with `add_base_early` being applied before the other modifiers and `set_total` being applied last.\n\n\n"
-		}
-	}
+	]
 }

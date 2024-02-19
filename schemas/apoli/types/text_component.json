@@ -183,11 +183,5 @@
 				}
 			}
 		}
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/text_component)\n\nA [String](string.md) or [Object](object.md) used for displaying text with fancy formatting.\n\n!!! note\n\n    You can refer to [Minecraft Wiki: Raw JSON text format](https://minecraft.wiki/w/Raw_JSON_text_format) for JSON text components you can use.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/text_component)\n\nA [String](string.md) or [Object](object.md) used for displaying text with fancy formatting.\n\n!!! note\n\n    You can refer to [Minecraft Wiki: Raw JSON text format](https://minecraft.wiki/w/Raw_JSON_text_format) for JSON text components you can use.\n\n\n"
-		}
-	}
+	]
 }

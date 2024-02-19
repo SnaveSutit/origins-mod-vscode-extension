@@ -2284,11 +2284,5 @@
 				"$ref": "power_types/walk_on_fluid.json"
 			}
 		}
-	],
-	"properties": {
-		"type": {
-			"description": "\n\nThis is the format of a JSON file describing a power. Powers are used to give functionality to origins. \n\nPower JSON files need to be placed inside the `data/<namespace>/powers` folder of your datapack. The said files can be referenced as `namespace:path/to/power` (`data/namespace/powers/path/to/power.json`) in the `powers` field of an [Origin (JSON)](https://origins.readthedocs.io/en/latest/json/power) file.\n\nDepending on the chosen `type`, power JSONs have more required and optional fields. See the corresponding power type page for a description of what those fields are.\n\n\n",
-			"markdownDescription": "\n\nThis is the format of a JSON file describing a power. Powers are used to give functionality to origins. \n\nPower JSON files need to be placed inside the `data/<namespace>/powers` folder of your datapack. The said files can be referenced as `namespace:path/to/power` (`data/namespace/powers/path/to/power.json`) in the `powers` field of an [Origin (JSON)](https://origins.readthedocs.io/en/latest/json/power) file.\n\nDepending on the chosen `type`, power JSONs have more required and optional fields. See the corresponding power type page for a description of what those fields are.\n\n\n"
-		}
-	}
+	]
 }

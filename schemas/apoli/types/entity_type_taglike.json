@@ -1,10 +1,4 @@
 {
 	"type": "string",
-	"pattern": "^\\#?([a-z0-9_\\/\\-\\.]+:)?[a-z0-9_\\/\\-\\.]+$",
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/entity_type_taglike)\n\nEntity Type Tag-likes are an [Array](../data_types/array.md) of [Identifiers](../data_types/identifier.md) that refers to an entity type or an entity type tag (if prefixed with `#`), similar to how entries in a tag are defined.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/entity_type_taglike)\n\nEntity Type Tag-likes are an [Array](../data_types/array.md) of [Identifiers](../data_types/identifier.md) that refers to an entity type or an entity type tag (if prefixed with `#`), similar to how entries in a tag are defined.\n\n\n"
-		}
-	}
+	"pattern": "^\\#?([a-z0-9_\\/\\-\\.]+:)?[a-z0-9_\\/\\-\\.]+$"
 }

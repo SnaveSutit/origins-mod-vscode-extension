@@ -9,11 +9,5 @@
 				"$ref": "attribute_modifier.json"
 			}
 		}
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier)\n\nAn [Object](object.md) used to specify how a value should be modified.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier)\n\nAn [Object](object.md) used to specify how a value should be modified.\n\n\n"
-		}
-	}
+	]
 }

@@ -18,10 +18,6 @@
 			"default": 0,
 			"description": "The Z coordinate of the point.",
 			"markdownDescription": "The Z coordinate of the point."
-		},
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/vector)\n\nAn [Object](object.md) that specifies the X, Y and Z coordinates of a certain point in space.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/vector)\n\nAn [Object](object.md) that specifies the X, Y and Z coordinates of a certain point in space.\n\n\n"
 		}
 	}
 }

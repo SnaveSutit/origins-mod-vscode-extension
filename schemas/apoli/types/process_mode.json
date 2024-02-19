@@ -2,11 +2,5 @@
 	"enum": [
 		"items",
 		"stacks"
-	],
-	"properties": {
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/process_mode)\n\nA [string](string.md) that determines how an item stack is processed; be it either being modified or evaluated.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/process_mode)\n\nA [string](string.md) that determines how an item stack is processed; be it either being modified or evaluated.\n\n\n"
-		}
-	}
+	]
 }

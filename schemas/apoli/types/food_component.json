@@ -45,10 +45,6 @@
 			},
 			"description": "A status effect and the chance of it triggering upon consuming something with this food component.",
 			"markdownDescription": "A status effect and the chance of it triggering upon consuming something with this food component."
-		},
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/food_component)\n\nAn [Object](object.md) which defines a new food component.\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/food_component)\n\nAn [Object](object.md) which defines a new food component.\n\n\n"
 		}
 	}
 }

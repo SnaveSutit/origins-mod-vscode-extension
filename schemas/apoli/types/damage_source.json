@@ -38,10 +38,6 @@
 			"default": false,
 			"description": "When true, the damage will be considered \"out of world\" damage, i.e. damage from falling into the void.",
 			"markdownDescription": "When true, the damage will be considered \"out of world\" damage, i.e. damage from falling into the void."
-		},
-		"type": {
-			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/damage_source)\n\nAn [Object](object.md) used to specify how to deal damage to an entity.\n\n!!! danger\n\n    The concept of damage sources is deprecated. Associated fields may be removed in a future version. Any power or action requiring you to specify a damage source, will now have a way to specify a damage type instead (usually a field called `damage_type`) which should be used instead. [More information here](https://gist.github.com/apace100/bfbf82a8f9d6bd2db13e4feaf653a6b0).\n\n\n\n",
-			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/damage_source)\n\nAn [Object](object.md) used to specify how to deal damage to an entity.\n\n!!! danger\n\n    The concept of damage sources is deprecated. Associated fields may be removed in a future version. Any power or action requiring you to specify a damage source, will now have a way to specify a damage type instead (usually a field called `damage_type`) which should be used instead. [More information here](https://gist.github.com/apace100/bfbf82a8f9d6bd2db13e4feaf653a6b0).\n\n\n\n"
 		}
 	}
 }
