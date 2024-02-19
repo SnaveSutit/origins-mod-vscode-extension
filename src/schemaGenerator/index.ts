@@ -196,6 +196,7 @@ function processImportMinecraftRegistry(
 
 	const registry = MINECRAFT_REGISTRY[importOptions.registry_key as keyof typeof MINECRAFT_REGISTRY]
 	if (!registry) {
+		console.log(MINECRAFT_REGISTRY)
 		throw new Error(`Minecraft registry key '${importOptions.registry_key}' not found`)
 	}
 

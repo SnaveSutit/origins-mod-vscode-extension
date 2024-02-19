@@ -155,6 +155,7 @@ async function updateLocalRegistry() {
 			const latestVersion = await getLatestVersion()
 			storeRegistry(newRegistry)
 			storeVersion(latestVersion)
+			updateMemoryRegistry()
 			// localStorage.setItem('animated_java:minecraftRegistry', JSON.stringify(newRegistry))
 			// localStorage.setItem('animated_java:minecraftRegistryVersion', JSON.stringify(latestVersion))
 			console.log('Minecraft Registry updated!')
