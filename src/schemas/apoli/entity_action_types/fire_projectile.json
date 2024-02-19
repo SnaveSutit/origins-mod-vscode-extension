@@ -5,7 +5,7 @@
 	"required": ["entity_type"],
 	"properties": {
 		"entity_type": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/entity_identifier)"
 		},
 		"divergence": {
 			"type": "number",
