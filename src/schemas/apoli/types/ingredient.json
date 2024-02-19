@@ -1,22 +1,47 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/ingredient/",
-	"type": "object",
-	"oneOf": [
-		{
-			"required": ["item"],
-			"properties": {
-				"item": {
-					"$ref": "$ref(apoli:types/autocomplete_helpers/item_identifier)"
+	"definitions": {
+		"item": {
+			"type": "object",
+			"oneOf": [
+				{
+					"required": ["item"],
+					"properties": {
+						"item": {
+							"$ref": "$ref(apoli:types/autocomplete_helpers/item_identifier)"
+						}
+					}
+				},
+				{
+					"required": ["tag"],
+					"properties": {
+						"tag": {
+							"$ref": "$ref(apoli:types/identifier)"
+						}
+					}
 				}
+			]
+		}
+	},
+	"allOf": [
+		{
+			"if": {
+				"type": "object"
+			},
+			"then": {
+				"$ref": "#/definitions/item"
 			}
 		},
 		{
-			"required": ["tag"],
-			"properties": {
-				"tag": {
-					"$ref": "$ref(apoli:types/identifier)"
-				}
+			"if": {
+				"type": "array"
+			},
+			"then": {
+				"items": {
+					"$ref": "#/definitions/item"
+				},
+				"minItems": 1
 			}
 		}
 	]
