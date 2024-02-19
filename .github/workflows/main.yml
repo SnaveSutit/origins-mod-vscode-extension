@@ -13,7 +13,6 @@ jobs:
         with:
           node-version: 20
       - run: yarn install
-      - run: yarn package
       - name: Publish to Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v1
         with:
