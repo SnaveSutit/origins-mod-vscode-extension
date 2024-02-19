@@ -2,8 +2,8 @@
 	"anyOf": [
 		{
 			"enum": [
-				"minecraft:$item",
-				"minecraft:$item"
+				"minecraft:lava",
+				"minecraft:water"
 			]
 		},
 		{

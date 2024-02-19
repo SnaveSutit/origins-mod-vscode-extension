@@ -202,7 +202,7 @@ function processImportMinecraftRegistry(
 
 	for (const item of registry.items) {
 		const structure = JSON.stringify(importOptions.schema_structure)
-			.replace(/$item/g, item)
+			.replace(/\$item/g, item)
 			.replace(/\$registryKey/g, importOptions.registry_key)
 
 		layer[importOptions.output_key].push(JSON.parse(structure))
