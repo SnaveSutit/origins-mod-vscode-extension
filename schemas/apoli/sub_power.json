@@ -1512,26 +1512,6 @@
 				"properties": {
 					"type": {
 						"enum": [
-							"apoli:multiple",
-							"origins:multiple"
-						],
-						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
-						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
-					}
-				}
-			},
-			"then": {
-				"$ref": "power_types/multiple.json"
-			}
-		},
-		{
-			"if": {
-				"required": [
-					"type"
-				],
-				"properties": {
-					"type": {
-						"enum": [
 							"apoli:night_vision",
 							"origins:night_vision"
 						],

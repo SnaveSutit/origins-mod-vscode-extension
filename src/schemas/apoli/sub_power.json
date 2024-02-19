@@ -16,6 +16,7 @@
 		"type": "import_files_into_array",
 		"path": "$ref(apoli:power_types)",
 		"output_key": "allOf",
+		"exclude": ["multiple"],
 		"schema_structure": {
 			"if": {
 				"required": ["type"],

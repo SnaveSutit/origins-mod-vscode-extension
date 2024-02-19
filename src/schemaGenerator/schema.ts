@@ -400,6 +400,10 @@ export type ImportOptions = {
 	 * $$fileRef - The schema reference to the file.
 	 */
 	schema_structure: JSONSchema | string
+	/**
+	 * A list of file names to exclude from the import.
+	 */
+	exclude?: string[]
 } & (
 	| {
 			type: 'import_minecraft_registry'

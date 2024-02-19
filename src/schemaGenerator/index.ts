@@ -110,6 +110,7 @@ function processImportFilesIntoArray(
 
 	for (const file of files) {
 		const fileName = file.replace('.json', '')
+		if (importOptions.exclude?.includes(fileName)) continue
 		const outFilePath = (path + '/' + file).replace(SRC_DIR, OUT_DIR)
 		const refPath = pathjs
 			.relative(pathjs.dirname(options.outPath), outFilePath)
@@ -152,6 +153,7 @@ async function processImportFileContentsIntoArray(
 
 	for (const file of files) {
 		const fileName = file.replace('.json', '')
+		if (importOptions.exclude?.includes(fileName)) continue
 		const inFilePath = path + '/' + file
 		const outFilePath = inFilePath.replace(SRC_DIR, OUT_DIR)
 		// const childRefPath = pathjs

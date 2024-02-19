@@ -1,14 +1,16 @@
 {
 	"type": "object",
-	"patternProperties": {
-		"^(?!(type|badges|condition|description|hidden|loading_priority|name)$)[a-z0-9_\\/\\-\\.]+$": {
-			"$ref": "../sub_power.json"
-		}
-	},
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/multiple)\n\nAllows for defining more than one power in a single file.\n\nType ID: `origins:multiple`\n\n\n!!! note\n\n    The sub-powers are automatically hidden. When the super-power (where the `origins:multiple` power type is used) is added to the entity, all sub-powers are added automatically.\n\n\n!!! note\n\n    You can reference sub-powers by using the ID of the super-power and the ID of the sub-power, split by an underscore (`_`).\n    (e.g: `namespace:super-power_sub-power`)\n\n\n!!! caution\n\n    If you wish to check for an entity condition for the entire super-power, you would have to check for the said entity condition in every sub-power of the super-power.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/multiple)\n\nAllows for defining more than one power in a single file.\n\nType ID: `origins:multiple`\n\n\n!!! note\n\n    The sub-powers are automatically hidden. When the super-power (where the `origins:multiple` power type is used) is added to the entity, all sub-powers are added automatically.\n\n\n!!! note\n\n    You can reference sub-powers by using the ID of the super-power and the ID of the sub-power, split by an underscore (`_`).\n    (e.g: `namespace:super-power_sub-power`)\n\n\n!!! caution\n\n    If you wish to check for an entity condition for the entire super-power, you would have to check for the said entity condition in every sub-power of the super-power.\n\n\n"
+			"description": "[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/)\n\nAllows for defining more than one power in a single file.\n\nType ID: `origins:multiple`\n\n\n!!! note\n\n    The sub-powers are automatically hidden. When the super-power (where the `origins:multiple` power type is used) is added to the entity, all sub-powers are added automatically.\n\n\n!!! note\n\n    You can reference sub-powers by using the ID of the super-power and the ID of the sub-power, split by an underscore (`_`).\n    (e.g: `namespace:super-power_sub-power`)\n\n\n!!! caution\n\n    If you wish to check for an entity condition for the entire super-power, you would have to check for the said entity condition in every sub-power of the super-power.",
+			"markdownDescription": "[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/)\n\nAllows for defining more than one power in a single file.\n\nType ID: `origins:multiple`\n\n\n!!! note\n\n    The sub-powers are automatically hidden. When the super-power (where the `origins:multiple` power type is used) is added to the entity, all sub-powers are added automatically.\n\n\n!!! note\n\n    You can reference sub-powers by using the ID of the super-power and the ID of the sub-power, split by an underscore (`_`).\n    (e.g: `namespace:super-power_sub-power`)\n\n\n!!! caution\n\n    If you wish to check for an entity condition for the entire super-power, you would have to check for the said entity condition in every sub-power of the super-power."
+		}
+	},
+	"patternProperties": {
+		"^(?!(type|hidden|badges|description|loading_priority|name|condition)$)[a-z0-9_\\/\\-\\.]+$": {
+			"$ref": "../sub_power.json",
+			"description": "Any \"key\", except for `hidden` and `type`, is considered a sub-power and takes a fully-defined power type as the value.",
+			"markdownDescription": "Any \"key\", except for `hidden` and `type`, is considered a sub-power and takes a fully-defined power type as the value."
 		}
 	}
 }
