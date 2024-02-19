@@ -7,7 +7,7 @@
 	],
 	"properties": {
 		"block": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/block_identifier.json",
 			"description": "The namespace and ID of the block that this block needs to be to pass the check.",
 			"markdownDescription": "The namespace and ID of the block that this block needs to be to pass the check."
 		}

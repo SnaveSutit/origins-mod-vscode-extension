@@ -4,7 +4,7 @@
 	"type": "object",
 	"properties": {
 		"item": {
-			"$ref": "identifier.json",
+			"$ref": "autocomplete_helpers/item_identifier.json",
 			"description": "ID of a registered item.",
 			"markdownDescription": "ID of a registered item."
 		},

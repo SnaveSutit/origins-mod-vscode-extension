@@ -5,7 +5,7 @@
 	"required": ["attribute", "comparison", "compare_to"],
 	"properties": {
 		"attribute": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/attribute_identifier)"
 		},
 		"comparison": {
 			"$ref": "$ref(apoli:types/comparison)"

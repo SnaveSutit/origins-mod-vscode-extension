@@ -5,7 +5,7 @@
 	"required": ["fluid", "comparison", "compare_to"],
 	"properties": {
 		"fluid": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/fluid_identifier)"
 		},
 		"comparison": {
 			"$ref": "$ref(apoli:types/comparison)"

@@ -7,7 +7,7 @@
 	],
 	"properties": {
 		"enchantment": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/enchantment_identifier.json",
 			"description": "ID of the enchantment to apply/modify the level of to the entity., e.g. `minecraft:protection`.",
 			"markdownDescription": "ID of the enchantment to apply/modify the level of to the entity., e.g. `minecraft:protection`."
 		},

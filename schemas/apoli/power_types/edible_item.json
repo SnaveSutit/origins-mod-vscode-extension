@@ -46,7 +46,7 @@
 			"markdownDescription": "Determines whether the action of consuming the item is considered \"eating\" (`\"eat\"`) or \"drinking\" (`\"drink\"`)."
 		},
 		"consume_sound": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/sound_identifier.json",
 			"description": "If specified, the sound event with this namespace and ID will be played when the item is eaten.",
 			"markdownDescription": "If specified, the sound event with this namespace and ID will be played when the item is eaten."
 		},

@@ -5,7 +5,7 @@
 	"required": ["entity_type"],
 	"properties": {
 		"entity_type": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/entity_identifier)"
 		},
 		"cooldown": {
 			"type": "integer",
@@ -35,7 +35,7 @@
 			"default": 1.0
 		},
 		"sound": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/sound_identifier)"
 		},
 		"tag": {
 			"$ref": "$ref(apoli:types/nbt)"

@@ -7,7 +7,7 @@
 	],
 	"properties": {
 		"entity_type": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/entity_identifier.json",
 			"description": "The ID of the type of entity that will be spawned.",
 			"markdownDescription": "The ID of the type of entity that will be spawned."
 		},

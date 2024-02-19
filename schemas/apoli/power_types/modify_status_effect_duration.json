@@ -4,14 +4,14 @@
 	"type": "object",
 	"properties": {
 		"status_effect": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/status_effect_identifier.json",
 			"description": "If specified, only this status effect will have its duration modified upon being received.",
 			"markdownDescription": "If specified, only this status effect will have its duration modified upon being received."
 		},
 		"status_effects": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/identifier.json"
+				"$ref": "../types/autocomplete_helpers/status_effect_identifier.json"
 			},
 			"description": "If specified, only these status effects will have its duration modified upon being received.",
 			"markdownDescription": "If specified, only these status effects will have its duration modified upon being received."

@@ -5,10 +5,25 @@
 	"required": ["class", "attribute"],
 	"properties": {
 		"class": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"enum": [
+				"modify_air_speed",
+				"modify_break_speed",
+				"modify_crafting",
+				"modify_damage_dealt",
+				"modify_damage_taken",
+				"modify_exhaustion",
+				"modify_xp_gain",
+				"modify_jump",
+				"modify_lava_speed",
+				"modify_projectile_damage",
+				"modify_slipperiness",
+				"modify_status_effect_amplifier",
+				"modify_status_effect_duration",
+				"modify_swim_speed"
+			]
 		},
 		"attribute": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/attribute_identifier)"
 		},
 		"multiplier": {
 			"type": "number",

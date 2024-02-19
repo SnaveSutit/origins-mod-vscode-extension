@@ -4,14 +4,14 @@
 	"type": "object",
 	"properties": {
 		"effect": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/status_effect_identifier.json",
 			"description": "If specified, only the status effect with this namespace and ID can not be applied to the entity that has the power.",
 			"markdownDescription": "If specified, only the status effect with this namespace and ID can not be applied to the entity that has the power."
 		},
 		"effects": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/identifier.json"
+				"$ref": "../types/autocomplete_helpers/status_effect_identifier.json"
 			},
 			"description": "If specified, only the status effects with the specified namespace and IDs can not be applied to the entity that has the power.",
 			"markdownDescription": "If specified, only the status effects with the specified namespace and IDs can not be applied to the entity that has the power."

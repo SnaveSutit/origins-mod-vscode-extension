@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"anyOf": [
+		{
+			"enum": [
+				"minecraft:overworld",
+				"minecraft:the_end",
+				"minecraft:the_nether"
+			]
+		},
+		{
+			"$ref": "../identifier.json"
+		}
+	]
+}

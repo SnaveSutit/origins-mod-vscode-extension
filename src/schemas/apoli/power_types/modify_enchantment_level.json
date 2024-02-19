@@ -5,7 +5,7 @@
 	"required": ["enchantment"],
 	"properties": {
 		"enchantment": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/enchantment_identifier)"
 		},
 		"item_condition": {
 			"$ref": "$ref(apoli:item_condition)"

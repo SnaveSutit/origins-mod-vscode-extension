@@ -10,7 +10,7 @@
 			"type": "object",
 			"patternProperties": {
 				"^([a-z0-9_\\/\\-\\.]+:)?[a-z0-9_\\/\\-\\.]+$": {
-					"$ref": "../types/identifier.json"
+					"$ref": "../types/autocomplete_helpers/loot_table_identifier.json"
 				}
 			},
 			"description": "An object with `\"key\": \"value\"` pairs that determine which loot table (`\"key\"`) will be replaced with a new loot table (`\"value\"`).",

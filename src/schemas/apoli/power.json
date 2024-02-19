@@ -33,7 +33,7 @@
 		"type": "import_files_into_array",
 		"path": "$ref(apoli:power_types)",
 		"output_key": "allOf",
-		"schemaStructure": {
+		"schema_structure": {
 			"if": {
 				"required": ["type"],
 				"properties": {

@@ -9,7 +9,7 @@
 	],
 	"properties": {
 		"enchantment": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/enchantment_identifier.json",
 			"description": "The namespace and ID of the enchantment of interest.",
 			"markdownDescription": "The namespace and ID of the enchantment of interest."
 		},

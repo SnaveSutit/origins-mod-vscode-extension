@@ -7,7 +7,7 @@
 	],
 	"properties": {
 		"effect": {
-			"$ref": "identifier.json",
+			"$ref": "autocomplete_helpers/status_effect_identifier.json",
 			"description": "The identifier of the status effect.",
 			"markdownDescription": "The identifier of the status effect."
 		},

@@ -3,7 +3,7 @@
 	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/particle_effect/",
 	"oneOf": [
 		{
-			"$ref": "identifier.json"
+			"$ref": "autocomplete_helpers/particle_identifier.json"
 		},
 		{
 			"type": "object",
@@ -12,7 +12,7 @@
 			],
 			"properties": {
 				"type": {
-					"$ref": "identifier.json",
+					"$ref": "autocomplete_helpers/particle_identifier.json",
 					"description": "The namespace and ID of the particle type.",
 					"markdownDescription": "The namespace and ID of the particle type."
 				},

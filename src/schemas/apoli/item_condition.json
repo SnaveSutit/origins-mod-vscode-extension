@@ -18,7 +18,7 @@
 			"type": "import_files_into_array",
 			"path": "$ref(apoli:item_condition_types)",
 			"output_key": "allOf",
-			"schemaStructure": {
+			"schema_structure": {
 				"if": {
 					"required": ["type"],
 					"properties": {
@@ -36,7 +36,7 @@
 			"type": "import_file_contents_into_array",
 			"path": "$ref(apoli:meta_condition_types)",
 			"output_key": "allOf",
-			"schemaStructure": {
+			"schema_structure": {
 				"if": {
 					"required": ["type"],
 					"properties": {

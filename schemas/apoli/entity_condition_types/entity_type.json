@@ -7,7 +7,7 @@
 	],
 	"properties": {
 		"entity_type": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/entity_identifier.json",
 			"description": "The namespace and ID of the entity type the entity needs to have to pass the check.",
 			"markdownDescription": "The namespace and ID of the entity type the entity needs to have to pass the check."
 		}

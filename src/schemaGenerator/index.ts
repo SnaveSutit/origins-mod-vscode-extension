@@ -1,7 +1,8 @@
 import * as fs from 'fs/promises'
 import * as fsSync from 'fs'
 import * as pathjs from 'path'
-import { JSONSchemaPreProcessorAdditions, type JSONSchema, IImportOptions } from './schema'
+import { type JSONSchema, type ImportOptions } from './schema'
+import { MINECRAFT_REGISTRY, checkIfRegistryNeedsUpdate } from './minecraftRegistries'
 import { MDFile } from './mdReader'
 import * as chokidar from 'chokidar'
 import * as terminalkit from 'terminal-kit'
@@ -96,10 +97,10 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 function processImportFilesIntoArray(
 	layer: JSONSchema,
 	options: ProcessSchemaOptions,
-	importOptions: IImportOptions & { type: 'import_files_into_array' }
+	importOptions: ImportOptions & { type: 'import_files_into_array' }
 ) {
 	const path = SRC_DIR + importOptions.path.replace(/\$ref\((.+)\)/, '$1').replace(':', '/')
-	const stringStructure = JSON.stringify(importOptions.schemaStructure)
+	const stringStructure = JSON.stringify(importOptions.schema_structure)
 
 	if (layer[importOptions.output_key] === undefined) {
 		throw new Error(
@@ -133,10 +134,10 @@ function processImportFilesIntoArray(
 function processImportFileContentsIntoArray(
 	layer: JSONSchema,
 	options: ProcessSchemaOptions,
-	importOptions: IImportOptions & { type: 'import_file_contents_into_array' }
+	importOptions: ImportOptions & { type: 'import_file_contents_into_array' }
 ) {
 	const path = SRC_DIR + importOptions.path.replace(/\$ref\((.+)\)/, '$1').replace(':', '/')
-	const stringStructure = JSON.stringify(importOptions.schemaStructure)
+	const stringStructure = JSON.stringify(importOptions.schema_structure)
 
 	if (layer[importOptions.output_key] === undefined) {
 		throw new Error(
@@ -184,10 +185,37 @@ function processImportFileContentsIntoArray(
 	layer.$IMPORT = undefined
 }
 
+function processImportMinecraftRegistry(
+	layer: JSONSchema,
+	options: ProcessSchemaOptions,
+	importOptions: ImportOptions & { type: 'import_minecraft_registry' }
+) {
+	if (layer[importOptions.output_key] === undefined) {
+		throw new Error(
+			`$IMPORT: output_key '${importOptions.output_key}' not found in schema:\n  ${layer}`
+		)
+	}
+
+	const registry = MINECRAFT_REGISTRY[importOptions.registry_key as keyof typeof MINECRAFT_REGISTRY]
+	if (!registry) {
+		throw new Error(`Minecraft registry key '${importOptions.registry_key}' not found`)
+	}
+
+	for (const item of registry.items) {
+		const structure = JSON.stringify(importOptions.schema_structure)
+			.replace(/\$\$item/g, item)
+			.replace(/\$\$registryKey/g, importOptions.registry_key)
+
+		layer[importOptions.output_key].push(JSON.parse(structure))
+	}
+
+	layer.$IMPORT = undefined
+}
+
 function processImport(
 	layer: JSONSchema,
 	options: ProcessSchemaOptions,
-	importOptions: IImportOptions
+	importOptions: ImportOptions
 ) {
 	switch (importOptions.type) {
 		case 'import_files_into_array':
@@ -196,6 +224,12 @@ function processImport(
 		case 'import_file_contents_into_array':
 			processImportFileContentsIntoArray(layer, options, importOptions as any)
 			break
+		case 'import_minecraft_registry':
+			processImportMinecraftRegistry(layer, options, importOptions as any)
+			break
+		default:
+			// @ts-ignore
+			throw new Error(`Unknown $IMPORT type: ${importOptions.type}`)
 	}
 }
 
@@ -231,9 +265,19 @@ function processSchema(schema: JSONSchema, options: ProcessSchemaOptions) {
 
 async function build(schemasToBuild: string[]) {
 	term.brightGreen('Building schemas...\n')
+	let buildProgress: ReturnType<typeof term.progressBar> | undefined
+	if (!(schemasToBuild.length < 10)) {
+		buildProgress = term.progressBar({
+			items: schemasToBuild.length,
+			percent: true,
+			eta: true,
+			syncMode: true,
+		})
+	}
 	const fileIOQueue: Array<{ path: string; content: string }> = []
 
 	for (const schemaPath of schemasToBuild) {
+		buildProgress?.startItem(schemaPath)
 		const outPath = schemaPath.replace(SRC_DIR, OUT_DIR)
 		const fileName = pathjs.basename(outPath)
 		// term.brightCyan(`\nProcessing `).brightBlue(fileName).gray(` (${outPath})`)('\n')
@@ -264,17 +308,35 @@ async function build(schemasToBuild: string[]) {
 		})
 
 		fileIOQueue.push({ path: outPath, content: strContents })
+		buildProgress?.itemDone(schemaPath)
+	}
+	buildProgress?.stop()
+
+	term.brightGreen('Writing files...\n')
+	let writeProgress: ReturnType<typeof term.progressBar> | undefined
+	if (!(fileIOQueue.length < 10)) {
+		writeProgress = term.progressBar({
+			items: fileIOQueue.length,
+			percent: true,
+			eta: true,
+			syncMode: true,
+		})
 	}
 
 	for (const { path, content } of fileIOQueue) {
+		writeProgress?.startItem(path)
 		await fs.mkdir(pathjs.dirname(path), { recursive: true })
 		await fs.writeFile(path, content)
+		writeProgress?.itemDone(path)
 	}
+	writeProgress?.stop()
 }
 
 async function main() {
 	await fs.rm(OUT_DIR, { recursive: true })
 	await fs.mkdir(OUT_DIR, { recursive: true })
+
+	await checkIfRegistryNeedsUpdate()
 
 	if (process.argv.includes('--once')) {
 		const schemasToBuild: string[] = []
@@ -346,12 +408,15 @@ async function main() {
 				lastBuildErrored = false
 			}
 
-			await build(paths).catch(e => {
-				term.brightRed('Failed to build schemas:\n  ').brightRed(e)('\n')
-				lastBuildErrored = true
-			})
-			term.brightGreen('Watching for changes...\n')
-			working = false
+			await build(paths)
+				.then(() => {
+					term.brightGreen('Watching for changes...\n')
+					working = false
+				})
+				.catch(e => {
+					term.brightRed('Failed to build schemas:\n  ').brightRed(e)('\n').brightRed(e.stack)('\n')
+					lastBuildErrored = true
+				})
 		}
 	}, 250)
 }

@@ -4,7 +4,7 @@
 	"type": "object",
 	"properties": {
 		"recipe": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/recipe_identifier)"
 		},
 		"item_action": {
 			"$ref": "$ref(apoli:item_action)"

@@ -5,7 +5,7 @@
 	"required": ["dimension"],
 	"properties": {
 		"dimension": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/dimension_identifier)"
 		}
 	}
 }

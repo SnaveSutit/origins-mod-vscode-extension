@@ -5,7 +5,7 @@
 	"required": ["enchantment", "comparison", "compare_to"],
 	"properties": {
 		"enchantment": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/enchantment_identifier)"
 		},
 		"calculation": {
 			"enum": ["sum", "max"]

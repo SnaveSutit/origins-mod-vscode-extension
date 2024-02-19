@@ -5,7 +5,7 @@
 	"required": ["advancement"],
 	"properties": {
 		"advancement": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/advancement_identifier)"
 		}
 	}
 }

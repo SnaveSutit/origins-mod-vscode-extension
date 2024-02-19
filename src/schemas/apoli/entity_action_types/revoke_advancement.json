@@ -4,7 +4,7 @@
 	"type": "object",
 	"properties": {
 		"advancement": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/advancement_identifier)"
 		},
 		"criteria": {
 			"type": "array",

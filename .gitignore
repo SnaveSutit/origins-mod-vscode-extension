@@ -1,4 +1,6 @@
 debug_out
+.minecraftRegistry.json
+.minecraftRegistryVersion.json
 
 # Logs
 logs

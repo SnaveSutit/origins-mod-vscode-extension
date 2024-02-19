@@ -35,12 +35,12 @@
 			"$ref": "$ref(apoli:types/hud_render)"
 		},
 		"event": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/game_event_identifier)"
 		},
 		"events": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/identifier)"
+				"$ref": "$ref(apoli:types/autocomplete_helpers/game_event_identifier)"
 			}
 		},
 		"event_tag": {

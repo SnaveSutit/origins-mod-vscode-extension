@@ -4,12 +4,12 @@
 	"type": "object",
 	"properties": {
 		"effect": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/status_effect_identifier)"
 		},
 		"effects": {
 			"type": "array",
 			"items": {
-				"$ref": "$ref(apoli:types/identifier)"
+				"$ref": "$ref(apoli:types/autocomplete_helpers/status_effect_identifier)"
 			}
 		},
 		"inverted": {

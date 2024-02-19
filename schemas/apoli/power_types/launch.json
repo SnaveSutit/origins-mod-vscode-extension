@@ -23,7 +23,7 @@
 			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		},
 		"sound": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/sound_identifier.json",
 			"description": "If specified, the sound event with this namespace and ID will be played when the power is triggered.",
 			"markdownDescription": "If specified, the sound event with this namespace and ID will be played when the power is triggered."
 		},

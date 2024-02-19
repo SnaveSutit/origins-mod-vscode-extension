@@ -5,7 +5,7 @@
 	"required": ["sound"],
 	"properties": {
 		"sound": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/sound_identifier)"
 		},
 		"category": {
 			"$ref": "$ref(apoli:types/playsound_category)"

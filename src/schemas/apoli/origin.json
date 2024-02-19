@@ -11,7 +11,7 @@
 		},
 		"icon": {
 			"oneOf": [
-				{ "$ref": "$ref(apoli:types/identifier)" },
+				{ "$ref": "$ref(apoli:types/autocomplete_helpers/item_identifier)" },
 				{ "$ref": "$ref(apoli:types/item_stack)" }
 			]
 		},

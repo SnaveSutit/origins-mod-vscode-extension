@@ -4,7 +4,7 @@
 	"type": "object",
 	"properties": {
 		"item": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/item_identifier)"
 		},
 		"amount": {
 			"type": "integer"

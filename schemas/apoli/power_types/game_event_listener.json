@@ -56,14 +56,14 @@
 			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		},
 		"event": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/game_event_identifier.json",
 			"description": "If specified, will make the power only listen for the game events with this namespace and IDs.",
 			"markdownDescription": "If specified, will make the power only listen for the game events with this namespace and IDs."
 		},
 		"events": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/identifier.json"
+				"$ref": "../types/autocomplete_helpers/game_event_identifier.json"
 			},
 			"description": "If specified, will make the power only listen for the game events with these namespace and IDs.",
 			"markdownDescription": "If specified, will make the power only listen for the game events with these namespace and IDs."

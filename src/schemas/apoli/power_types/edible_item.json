@@ -26,7 +26,7 @@
 			"enum": ["eat", "drink"]
 		},
 		"consume_sound": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/sound_identifier)"
 		},
 		"consuming_time_modifier": {
 			"$ref": "$ref(apoli:types/attribute_modifier_arrayable)"

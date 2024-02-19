@@ -8,12 +8,27 @@
 	],
 	"properties": {
 		"class": {
-			"$ref": "../types/identifier.json",
+			"enum": [
+				"modify_air_speed",
+				"modify_break_speed",
+				"modify_crafting",
+				"modify_damage_dealt",
+				"modify_damage_taken",
+				"modify_exhaustion",
+				"modify_xp_gain",
+				"modify_jump",
+				"modify_lava_speed",
+				"modify_projectile_damage",
+				"modify_slipperiness",
+				"modify_status_effect_amplifier",
+				"modify_status_effect_duration",
+				"modify_swim_speed"
+			],
 			"description": "The ID of the class to transfer the value of an attribute modifier to. See [Value Modifying Power Classes](https://origins.readthedocs.io/en/latest/types/power_types/attribute_modify_transfer) for possible values.",
 			"markdownDescription": "The ID of the class to transfer the value of an attribute modifier to. See [Value Modifying Power Classes](https://origins.readthedocs.io/en/latest/types/power_types/attribute_modify_transfer) for possible values."
 		},
 		"attribute": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/attribute_identifier.json",
 			"description": "The namespace and ID of the attribute to get the value from.",
 			"markdownDescription": "The namespace and ID of the attribute to get the value from."
 		},

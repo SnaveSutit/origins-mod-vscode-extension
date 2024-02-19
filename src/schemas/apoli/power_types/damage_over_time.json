@@ -19,11 +19,11 @@
 			"type": "number"
 		},
 		"damage_type": {
-			"$ref": "$ref(apoli:types/identifier)",
+			"$ref": "$ref(apoli:types/autocomplete_helpers/damage_type_identifier)",
 			"default": "apoli:damage_over_time"
 		},
 		"protection_enchantment": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/enchantment_identifier)"
 		},
 		"protection_effectiveness": {
 			"type": "number",

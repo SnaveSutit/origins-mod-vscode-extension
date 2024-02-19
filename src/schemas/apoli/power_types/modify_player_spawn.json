@@ -5,13 +5,13 @@
 	"required": ["dimension"],
 	"properties": {
 		"dimension": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/dimension_identifier)"
 		},
 		"biome": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/biome_identifier)"
 		},
 		"structure": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/structure_identifier)"
 		},
 		"spawn_strategy": {
 			"enum": ["default", "center"],

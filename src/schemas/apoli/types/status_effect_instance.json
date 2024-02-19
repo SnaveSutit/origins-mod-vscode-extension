@@ -5,7 +5,7 @@
 	"required": ["effect"],
 	"properties": {
 		"effect": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/status_effect_identifier)"
 		},
 		"duration": {
 			"type": "integer",

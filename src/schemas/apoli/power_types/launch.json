@@ -15,7 +15,7 @@
 			"$ref": "$ref(apoli:types/hud_render)"
 		},
 		"sound": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/sound_identifier)"
 		},
 		"key": {
 			"$ref": "$ref(apoli:types/key)"

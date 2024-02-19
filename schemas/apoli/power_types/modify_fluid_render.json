@@ -17,7 +17,7 @@
 			"markdownDescription": "If specified, only modify how the fluids that fulfills this condition would look like."
 		},
 		"fluid": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/fluid_identifier.json",
 			"description": "The namespace and ID of the replacement fluid.",
 			"markdownDescription": "The namespace and ID of the replacement fluid."
 		}

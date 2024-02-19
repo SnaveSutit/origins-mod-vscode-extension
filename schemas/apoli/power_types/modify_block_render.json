@@ -12,7 +12,7 @@
 			"markdownDescription": "If specified, only modify how the blocks that fulfill this condition would look like."
 		},
 		"block": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/block_identifier.json",
 			"description": "The namespace and ID of the replacement block.",
 			"markdownDescription": "The namespace and ID of the replacement block."
 		}

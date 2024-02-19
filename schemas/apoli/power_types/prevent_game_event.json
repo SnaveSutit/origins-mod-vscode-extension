@@ -4,14 +4,14 @@
 	"type": "object",
 	"properties": {
 		"event": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/game_event_identifier.json",
 			"description": "If specified, the game event with this namespace and ID will be prevent from being emitted by the entity.",
 			"markdownDescription": "If specified, the game event with this namespace and ID will be prevent from being emitted by the entity."
 		},
 		"events": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/identifier.json"
+				"$ref": "../types/autocomplete_helpers/game_event_identifier.json"
 			},
 			"description": "If specified, the game events with these namespace and IDs will be prevent from being emitted by the entity.",
 			"markdownDescription": "If specified, the game events with these namespace and IDs will be prevent from being emitted by the entity."

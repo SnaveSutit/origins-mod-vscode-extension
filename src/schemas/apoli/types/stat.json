@@ -5,10 +5,10 @@
 	"required": ["type", "id"],
 	"properties": {
 		"type": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/stat_type_identifier)"
 		},
 		"id": {
-			"$ref": "$ref(apoli:types/identifier)"
+			"$ref": "$ref(apoli:types/autocomplete_helpers/stat_id_identifier)"
 		}
 	}
 }

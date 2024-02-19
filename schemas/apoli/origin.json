@@ -14,7 +14,7 @@
 		"icon": {
 			"oneOf": [
 				{
-					"$ref": "types/identifier.json"
+					"$ref": "types/autocomplete_helpers/item_identifier.json"
 				},
 				{
 					"$ref": "types/item_stack.json"

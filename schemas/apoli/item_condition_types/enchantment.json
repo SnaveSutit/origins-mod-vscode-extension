@@ -8,7 +8,7 @@
 	],
 	"properties": {
 		"enchantment": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/enchantment_identifier.json",
 			"description": "ID of the enchantment of interest, e.g. `minecraft:protection`. If not set, amount of enchantments will be checked instead.",
 			"markdownDescription": "ID of the enchantment of interest, e.g. `minecraft:protection`. If not set, amount of enchantments will be checked instead."
 		},

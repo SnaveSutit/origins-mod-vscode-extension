@@ -386,17 +386,12 @@ export type JSONSchema = {
 	[key: string]: any
 } & JSONSchemaPreProcessorAdditions
 
-export interface IImportOptions {
-	type: 'import_files_into_array' | 'import_file_contents_into_array'
-	/**
-	 * Where to find the files to import.
-	 */
-	path: string
+export type ImportOptions = {
+	type: string
 	/**
 	 * A key in this object containing an array that the generated schema structures will be pushed to.
 	 */
 	output_key: string
-	variables: Record<string, any>
 	/**
 	 * The schema structure generated for each imported file.
 	 * Includes variables that can be used to insert data into the schema.
@@ -404,10 +399,23 @@ export interface IImportOptions {
 	 * $$fileName - The name of the file without the extension.
 	 * $$fileRef - The schema reference to the file.
 	 */
-	schemaStructure: JSONSchema
-}
+	schema_structure: JSONSchema | string
+} & (
+	| {
+			type: 'import_minecraft_registry'
+			registry_key: string
+	  }
+	| {
+			type: 'import_files_into_array' | 'import_file_contents_into_array'
+			/**
+			 * Where to find the files to import.
+			 */
+			path: string
+			variables: Record<string, any>
+	  }
+)
 
 export interface JSONSchemaPreProcessorAdditions {
-	$IMPORT?: IImportOptions | IImportOptions[]
+	$IMPORT?: ImportOptions | ImportOptions[]
 	$IGNORED_PROPERTIES?: string[]
 }

@@ -4,14 +4,14 @@
 	"type": "object",
 	"properties": {
 		"enchantment": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/enchantment_identifier.json",
 			"description": "If specified, this enchantment will be removed from the item.",
 			"markdownDescription": "If specified, this enchantment will be removed from the item."
 		},
 		"enchantments": {
 			"type": "array",
 			"items": {
-				"$ref": "../types/identifier.json"
+				"$ref": "../types/autocomplete_helpers/enchantment_identifier.json"
 			},
 			"description": "If specified, these enchantments will be removed from the item.",
 			"markdownDescription": "If specified, these enchantments will be removed from the item."
