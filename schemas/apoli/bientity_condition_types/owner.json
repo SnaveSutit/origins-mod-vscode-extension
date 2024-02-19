@@ -1,5 +1,9 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/bientity_condition_types/owner/",
-	"type": "object"
+	"type": "object",
+	"properties": {
+		"type": {
+			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/owner)\n\nChecks whether the actor entity is the owner of the tamable target entity.\n\nType ID: `origins:owner`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/owner)\n\nChecks whether the actor entity is the owner of the tamable target entity.\n\nType ID: `origins:owner`\n\n\n"
+		}
+	}
 }

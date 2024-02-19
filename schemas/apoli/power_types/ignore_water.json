@@ -1,5 +1,9 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/ignore_water/",
-	"type": "object"
+	"type": "object",
+	"properties": {
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/ignore_water)\n\nPrevents the movement of the entity that has the power from being affected by water.\n\nType ID: `origins:ignore_water`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/ignore_water)\n\nPrevents the movement of the entity that has the power from being affected by water.\n\nType ID: `origins:ignore_water`\n\n\n"
+		}
+	}
 }

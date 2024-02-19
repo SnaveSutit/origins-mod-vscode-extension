@@ -1,6 +1,4 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/and/",
 	"type": "object",
 	"required": [
 		"actions"
@@ -9,7 +7,7 @@
 		"actions": {
 			"type": "array",
 			"items": {
-				"$ref": "#/definitions/action"
+				"$ref": "$actionRef"
 			},
 			"description": "These actions will be executed one after the other (but in the same tick).",
 			"markdownDescription": "These actions will be executed one after the other (but in the same tick)."

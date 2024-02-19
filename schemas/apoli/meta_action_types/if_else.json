@@ -1,6 +1,4 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else/",
 	"type": "object",
 	"required": [
 		"condition",
@@ -8,17 +6,17 @@
 	],
 	"properties": {
 		"condition": {
-			"$ref": "#/definitions/condition",
+			"$ref": "$conditionRef",
 			"description": "A condition based on the type of action.",
 			"markdownDescription": "A condition based on the type of action."
 		},
 		"if_action": {
-			"$ref": "#/definitions/action",
+			"$ref": "$actionRef",
 			"description": "The action which is executed when the condition evaluates to true.",
 			"markdownDescription": "The action which is executed when the condition evaluates to true."
 		},
 		"else_action": {
-			"$ref": "#/definitions/action",
+			"$ref": "$actionRef",
 			"description": "If present, this action will be executed when the condition evaluates to false.",
 			"markdownDescription": "If present, this action will be executed when the condition evaluates to false."
 		},

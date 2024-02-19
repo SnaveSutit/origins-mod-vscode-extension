@@ -1,18 +1,8 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/entity_condition_types/",
 	"type": "object",
 	"required": [
 		"type"
 	],
-	"definitions": {
-		"action": {
-			"$ref": "entity_action.json"
-		},
-		"condition": {
-			"$ref": "#"
-		}
-	},
 	"allOf": [
 		{
 			"if": {
@@ -1289,8 +1279,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/and/",
 				"type": "object",
 				"required": [
 					"conditions"
@@ -1299,7 +1287,7 @@
 					"conditions": {
 						"type": "array",
 						"items": {
-							"$ref": "#/definitions/condition"
+							"$ref": "#"
 						},
 						"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
 						"markdownDescription": "All of these condition types have to be fulfilled in order for this condition to be fulfilled."
@@ -1326,8 +1314,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance/",
 				"type": "object",
 				"required": [
 					"chance"
@@ -1360,8 +1346,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant/",
 				"type": "object",
 				"required": [
 					"value"
@@ -1394,8 +1378,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/or/",
 				"type": "object",
 				"required": [
 					"conditions"
@@ -1404,7 +1386,7 @@
 					"conditions": {
 						"type": "array",
 						"items": {
-							"$ref": "#/definitions/condition"
+							"$ref": "#"
 						},
 						"description": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled.",
 						"markdownDescription": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled."
@@ -1416,5 +1398,11 @@
 				}
 			}
 		}
-	]
+	],
+	"properties": {
+		"type": {
+			"description": "\n\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the `condition` object field (or `entity_condition` in other power/condition types), which restricts when a power is active.\n\n\n",
+			"markdownDescription": "\n\nEntity Condition Types operate on an Entity, which also allows access to the world. These are available to be used in most powers in the `condition` object field (or `entity_condition` in other power/condition types), which restricts when a power is active.\n\n\n"
+		}
+	}
 }

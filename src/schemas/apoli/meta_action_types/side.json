@@ -5,7 +5,7 @@
 	"required": ["action", "side"],
 	"properties": {
 		"action": {
-			"$ref": "#/definitions/action"
+			"$ref": "$actionRef"
 		},
 		"side": {
 			"enum": ["client", "server"]

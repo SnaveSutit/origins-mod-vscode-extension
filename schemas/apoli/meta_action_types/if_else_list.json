@@ -1,6 +1,4 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list/",
 	"type": "object",
 	"required": [
 		"actions"
@@ -16,10 +14,10 @@
 				],
 				"properties": {
 					"action": {
-						"$ref": "#/definitions/action"
+						"$ref": "$actionRef"
 					},
 					"condition": {
-						"$ref": "#/definitions/condition"
+						"$ref": "$conditionRef"
 					}
 				}
 			},

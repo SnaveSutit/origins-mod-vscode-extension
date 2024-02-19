@@ -1,5 +1,9 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/fire_immunity/",
-	"type": "object"
+	"type": "object",
+	"properties": {
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/fire_immunity)\n\nGrants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire).\n\nType ID: `origins:fire_immunity`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/fire_immunity)\n\nGrants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire).\n\nType ID: `origins:fire_immunity`\n\n\n"
+		}
+	}
 }

@@ -1,6 +1,4 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_dealt/",
 	"type": "object",
 	"properties": {
 		"bientity_action": {

@@ -1,9 +1,13 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/shape/",
 	"enum": [
 		"cube",
 		"star",
 		"sphere"
-	]
+	],
+	"properties": {
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/shape)\n\nA [string](string.md) that determines the shape of an area, which can be used for collecting block positions and/or entities.\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/shape)\n\nA [string](string.md) that determines the shape of an area, which can be used for collecting block positions and/or entities.\n\n\n"
+		}
+	}
 }

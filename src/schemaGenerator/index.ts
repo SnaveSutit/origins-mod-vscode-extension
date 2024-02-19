@@ -48,8 +48,9 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 			delete schema.$IGNORED_PROPERTIES
 		}
 
-		if (mdFile.description && schema.type === 'object' && schema.properties) {
-			schema.properties.type = {
+		if (mdFile.description) {
+			schema.properties ??= {}
+			schema.properties.type ??= {
 				description: mdFile.description,
 				markdownDescription: mdFile.description,
 			}
@@ -83,6 +84,7 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 			}
 		}
 	}
+	delete schema.$docsUrl
 }
 
 function processImportFilesIntoArray(
@@ -113,8 +115,8 @@ function processImportFilesIntoArray(
 			.relative(pathjs.dirname(options.outPath), outFilePath)
 			.replace(/\\/g, '/')
 		const structure = stringStructure
-			.replace(/\$\$fileRef/g, refPath)
-			.replace(/\$\$fileName/g, fileName)
+			.replace(/\$fileRef/g, refPath)
+			.replace(/\$fileName/g, fileName)
 
 		layer[importOptions.output_key].push(JSON.parse(structure))
 	}
@@ -142,6 +144,11 @@ async function processImportFileContentsIntoArray(
 	} catch (e) {
 		throw new Error(`Failed to process $IMPORT while trying to read directory:\n  ${e}`)
 	}
+	const variables: [string, any][] = []
+	if (importOptions.variables && Object.keys(importOptions.variables).length > 0) {
+		variables.push(...Object.entries(importOptions.variables))
+		variables.sort((a, b) => a[0].length - b[0].length)
+	}
 
 	for (const file of files) {
 		const fileName = file.replace('.json', '')
@@ -159,20 +166,14 @@ async function processImportFileContentsIntoArray(
 		await processSchemaProperties(fileContents, inFilePath)
 
 		let fileStrContents = JSON.stringify(fileContents)
-		if (importOptions.variables?.length > 0) {
-			for (const [name, value] of Object.entries(importOptions.variables).sort(
-				(a, b) => a.length - b.length
-			)) {
-				fileStrContents = fileStrContents.replace(new RegExp(`\\$\\$${name}`, 'g'), value)
-			}
+		for (const [name, value] of variables) {
+			// console.log(name, value, `$${name}`)
+			fileStrContents = fileStrContents.replaceAll(`$${name}`, value)
 		}
-		// fileStrContents = fileStrContents
-		// 	.replace('$$parentNameAction', parentRefPath.replace('condition', 'action'))
-		// 	.replace('$$parentNameCondition', parentRefPath.replace('action', 'condition'))
 
 		const structure = stringStructure
-			.replace(/"\$\$fileRef"/gm, fileStrContents)
-			.replace(/\$\$fileName/g, fileName)
+			.replace(/"\$fileRef"/gm, fileStrContents)
+			.replace(/\$fileName/g, fileName)
 
 		layer[importOptions.output_key].push(JSON.parse(structure))
 	}
@@ -198,8 +199,8 @@ function processImportMinecraftRegistry(
 
 	for (const item of registry.items) {
 		const structure = JSON.stringify(importOptions.schema_structure)
-			.replace(/\$\$item/g, item)
-			.replace(/\$\$registryKey/g, importOptions.registry_key)
+			.replace(/$item/g, item)
+			.replace(/\$registryKey/g, importOptions.registry_key)
 
 		layer[importOptions.output_key].push(JSON.parse(structure))
 	}
@@ -238,6 +239,7 @@ async function processSchemaLayer(layer: JSONSchema, options: ProcessSchemaOptio
 			await processImport(layer, options, layer.$IMPORT)
 		}
 	}
+	delete layer.$schema
 }
 
 interface ProcessSchemaOptions {

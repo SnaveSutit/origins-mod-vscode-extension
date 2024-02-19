@@ -4,15 +4,6 @@
 	"type": "object",
 	"required": ["type"],
 
-	"definitions": {
-		"action": {
-			"$ref": "#"
-		},
-		"condition": {
-			"$ref": "$ref(apoli:block_condition)"
-		}
-	},
-
 	"$IMPORT": [
 		{
 			"type": "import_files_into_array",
@@ -23,12 +14,12 @@
 					"required": ["type"],
 					"properties": {
 						"type": {
-							"enum": ["apoli:$$fileName", "origins:$$fileName"]
+							"enum": ["apoli:$fileName", "origins:$fileName"]
 						}
 					}
 				},
 				"then": {
-					"$ref": "$$fileRef"
+					"$ref": "$fileRef"
 				}
 			}
 		},
@@ -36,16 +27,20 @@
 			"type": "import_file_contents_into_array",
 			"path": "$ref(apoli:meta_action_types)",
 			"output_key": "allOf",
+			"variables": {
+				"conditionRef": "$ref(apoli:block_condition)",
+				"actionRef": "#"
+			},
 			"schema_structure": {
 				"if": {
 					"required": ["type"],
 					"properties": {
 						"type": {
-							"enum": ["apoli:$$fileName", "origins:$$fileName"]
+							"enum": ["apoli:$fileName", "origins:$fileName"]
 						}
 					}
 				},
-				"then": "$$fileRef"
+				"then": "$fileRef"
 			}
 		}
 	],

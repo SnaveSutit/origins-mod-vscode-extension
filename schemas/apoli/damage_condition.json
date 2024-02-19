@@ -1,18 +1,8 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/damage_condition_types/",
 	"type": "object",
 	"required": [
 		"type"
 	],
-	"definitions": {
-		"action": {
-			"$ref": "entity_action.json"
-		},
-		"condition": {
-			"$ref": "#"
-		}
-	},
 	"allOf": [
 		{
 			"if": {
@@ -137,8 +127,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/and/",
 				"type": "object",
 				"required": [
 					"conditions"
@@ -147,7 +135,7 @@
 					"conditions": {
 						"type": "array",
 						"items": {
-							"$ref": "#/definitions/condition"
+							"$ref": "#"
 						},
 						"description": "All of these condition types have to be fulfilled in order for this condition to be fulfilled.",
 						"markdownDescription": "All of these condition types have to be fulfilled in order for this condition to be fulfilled."
@@ -174,8 +162,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance/",
 				"type": "object",
 				"required": [
 					"chance"
@@ -208,8 +194,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant/",
 				"type": "object",
 				"required": [
 					"value"
@@ -242,8 +226,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_condition_types/or/",
 				"type": "object",
 				"required": [
 					"conditions"
@@ -252,7 +234,7 @@
 					"conditions": {
 						"type": "array",
 						"items": {
-							"$ref": "#/definitions/condition"
+							"$ref": "#"
 						},
 						"description": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled.",
 						"markdownDescription": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled."
@@ -264,5 +246,11 @@
 				}
 			}
 		}
-	]
+	],
+	"properties": {
+		"type": {
+			"description": "\n\nDamage Condition Types operate on a combination of `DamageSource` and `Float`, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a `damage_condition` object field.\n\n\n",
+			"markdownDescription": "\n\nDamage Condition Types operate on a combination of `DamageSource` and `Float`, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a `damage_condition` object field.\n\n\n"
+		}
+	}
 }

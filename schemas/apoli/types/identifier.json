@@ -1,6 +1,10 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/identifier/",
 	"type": "string",
-	"pattern": "^(([a-z0-9_\\/\\-\\.]+|\\*):)?(\\*_)?[a-z0-9_\\/\\-\\.]+$"
+	"pattern": "^(([a-z0-9_\\/\\-\\.]+|\\*):)?(\\*_)?[a-z0-9_\\/\\-\\.]+$",
+	"properties": {
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/identifier)\n\nA [String](string.md) which specifies an identifier used in Minecraft. They are used to refer to items, blocks, status effects, locations in data or resource packs, and a lot of other things.\n\n\nAn identifier consists of a namespace and a path. Namespace and path are separated with a colon. An identifier may only contain lower-case letters (a-z), digits (0-9), `-`, `_` and `.`. It can include at most a single colon (`:`) for separation. The path may contain `/` to indicate \"folders\", but the namespace may not.\n\nIf no namespace is specified, it will default to `minecraft`.\n\nRead more here: [Minecraft Wiki: Namespaced ID](https://minecraft.wiki/w/Namespaced_ID)\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/identifier)\n\nA [String](string.md) which specifies an identifier used in Minecraft. They are used to refer to items, blocks, status effects, locations in data or resource packs, and a lot of other things.\n\n\nAn identifier consists of a namespace and a path. Namespace and path are separated with a colon. An identifier may only contain lower-case letters (a-z), digits (0-9), `-`, `_` and `.`. It can include at most a single colon (`:`) for separation. The path may contain `/` to indicate \"folders\", but the namespace may not.\n\nIf no namespace is specified, it will default to `minecraft`.\n\nRead more here: [Minecraft Wiki: Namespaced ID](https://minecraft.wiki/w/Namespaced_ID)\n\n\n"
+		}
+	}
 }

@@ -1,5 +1,9 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/swimming/",
-	"type": "object"
+	"type": "object",
+	"properties": {
+		"type": {
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/swimming)\n\nAllows the player to swim (outside of water!).\n\nType ID: `origins:swimming`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/swimming)\n\nAllows the player to swim (outside of water!).\n\nType ID: `origins:swimming`\n\n\n"
+		}
+	}
 }

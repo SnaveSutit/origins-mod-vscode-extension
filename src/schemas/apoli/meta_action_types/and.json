@@ -7,7 +7,7 @@
 		"actions": {
 			"type": "array",
 			"items": {
-				"$ref": "#/definitions/action"
+				"$ref": "$actionRef"
 			}
 		}
 	}

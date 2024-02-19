@@ -1,6 +1,4 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/space/",
 	"enum": [
 		"world",
 		"local",
@@ -10,5 +8,11 @@
 		"velocity_normalized",
 		"velocity_horizontal",
 		"velocity_horizontal_normalized"
-	]
+	],
+	"properties": {
+		"type": {
+			"description": "\n\n[Data Type][data_types]\n\nA [String][string] that defines which coordinate system is used for directions. Currently, only used in the [Add Velocity (Entity Action Type)](https://origins.readthedocs.io/en/latest/types/data_types/space).\n\n\n",
+			"markdownDescription": "\n\n[Data Type][data_types]\n\nA [String][string] that defines which coordinate system is used for directions. Currently, only used in the [Add Velocity (Entity Action Type)](https://origins.readthedocs.io/en/latest/types/data_types/space).\n\n\n"
+		}
+	}
 }

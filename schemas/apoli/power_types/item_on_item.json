@@ -1,6 +1,4 @@
 {
-	"$schema": "https://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/power_types/item_on_item/",
 	"type": "object",
 	"properties": {
 		"using_item_condition": {

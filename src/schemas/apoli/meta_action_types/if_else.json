@@ -5,13 +5,13 @@
 	"required": ["condition", "if_action"],
 	"properties": {
 		"condition": {
-			"$ref": "#/definitions/condition"
+			"$ref": "$conditionRef"
 		},
 		"if_action": {
-			"$ref": "#/definitions/action"
+			"$ref": "$actionRef"
 		},
 		"else_action": {
-			"$ref": "#/definitions/action"
+			"$ref": "$actionRef"
 		}
 	}
 }

@@ -6,7 +6,7 @@
 				"type": "import_minecraft_registry",
 				"registry_key": "damage_type",
 				"output_key": "enum",
-				"schema_structure": "minecraft:$$item"
+				"schema_structure": "minecraft:$item"
 			},
 			"enum": []
 		},

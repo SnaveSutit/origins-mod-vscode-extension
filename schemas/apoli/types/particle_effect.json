@@ -1,6 +1,4 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/particle_effect/",
 	"oneOf": [
 		{
 			"$ref": "autocomplete_helpers/particle_identifier.json"
@@ -23,5 +21,11 @@
 				}
 			}
 		}
-	]
+	],
+	"properties": {
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/particle_effect)\n\nA data type that's either a [String](string.md) which defines only the particle type or an [Object](object.md) which defines the particle type and its additional parameters.\n\n\n!!! note\n\n    Refer to the [Minecraft Wiki: Particles (Particle IDs)](https://minecraft.wiki/w/Particles#Particle_IDs) page for a list of **vanilla** particle type IDs that you can use.\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/particle_effect)\n\nA data type that's either a [String](string.md) which defines only the particle type or an [Object](object.md) which defines the particle type and its additional parameters.\n\n\n!!! note\n\n    Refer to the [Minecraft Wiki: Particles (Particle IDs)](https://minecraft.wiki/w/Particles#Particle_IDs) page for a list of **vanilla** particle type IDs that you can use.\n\n\n"
+		}
+	}
 }

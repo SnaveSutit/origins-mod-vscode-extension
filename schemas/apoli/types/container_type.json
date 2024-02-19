@@ -1,11 +1,15 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/container_type/",
 	"enum": [
 		"chest",
 		"hopper",
 		"dropper",
 		"dispenser",
 		"double_chest"
-	]
+	],
+	"properties": {
+		"type": {
+			"description": "\n\n[Data Type][data_types]\n\nA [String][string] used to determine the type of container to use for the inventory of a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/data_types/container_type).\n\n!!!\tnote\n\n\tNot to be confused with the [Inventory Type (Data Type)][inventory_type]\n\n\n",
+			"markdownDescription": "\n\n[Data Type][data_types]\n\nA [String][string] used to determine the type of container to use for the inventory of a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/data_types/container_type).\n\n!!!\tnote\n\n\tNot to be confused with the [Inventory Type (Data Type)][inventory_type]\n\n\n"
+		}
+	}
 }

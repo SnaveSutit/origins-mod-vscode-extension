@@ -11,10 +11,10 @@
 				"required": ["action", "condition"],
 				"properties": {
 					"action": {
-						"$ref": "#/definitions/action"
+						"$ref": "$actionRef"
 					},
 					"condition": {
-						"$ref": "#/definitions/condition"
+						"$ref": "$conditionRef"
 					}
 				}
 			}

@@ -11,7 +11,7 @@
 				"required": ["element", "weight"],
 				"properties": {
 					"element": {
-						"$ref": "#/definitions/action"
+						"$ref": "$actionRef"
 					},
 					"weight": {
 						"type": "number"

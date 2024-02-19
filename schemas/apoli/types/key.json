@@ -1,6 +1,4 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/key/",
 	"oneOf": [
 		{
 			"type": "string"
@@ -24,5 +22,11 @@
 				}
 			}
 		}
-	]
+	],
+	"properties": {
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/key)\n\nAn [Object](object.md) which defines a keybinding, used in active powers to define which key they react to.\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/key)\n\nAn [Object](object.md) which defines a keybinding, used in active powers to define which key they react to.\n\n\n"
+		}
+	}
 }

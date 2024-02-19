@@ -1,18 +1,8 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/block_action_types/",
 	"type": "object",
 	"required": [
 		"type"
 	],
-	"definitions": {
-		"action": {
-			"$ref": "#"
-		},
-		"condition": {
-			"$ref": "block_condition.json"
-		}
-	},
 	"allOf": [
 		{
 			"if": {
@@ -191,8 +181,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/and/",
 				"type": "object",
 				"required": [
 					"actions"
@@ -201,7 +189,7 @@
 					"actions": {
 						"type": "array",
 						"items": {
-							"$ref": "#/definitions/action"
+							"$ref": "#"
 						},
 						"description": "These actions will be executed one after the other (but in the same tick).",
 						"markdownDescription": "These actions will be executed one after the other (but in the same tick)."
@@ -228,8 +216,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/chance/",
 				"type": "object",
 				"required": [
 					"action",
@@ -237,7 +223,7 @@
 				],
 				"properties": {
 					"action": {
-						"$ref": "#/definitions/action",
+						"$ref": "#",
 						"description": "The action which might be executed.",
 						"markdownDescription": "The action which might be executed."
 					},
@@ -247,7 +233,7 @@
 						"markdownDescription": "The chance that the action will execute, from 0 to 1. (E.g. 0.1 means 10% chance, 0.95 means 95% chance)."
 					},
 					"fail_action": {
-						"$ref": "#/definitions/action",
+						"$ref": "#",
 						"description": "The action to execute if the specified action in the `action` field is not executed.",
 						"markdownDescription": "The action to execute if the specified action in the `action` field is not executed."
 					},
@@ -273,8 +259,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/choice/",
 				"type": "object",
 				"required": [
 					"actions"
@@ -290,7 +274,7 @@
 							],
 							"properties": {
 								"element": {
-									"$ref": "#/definitions/action"
+									"$ref": "#"
 								},
 								"weight": {
 									"type": "number"
@@ -322,8 +306,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/delay/",
 				"type": "object",
 				"required": [
 					"action",
@@ -331,7 +313,7 @@
 				],
 				"properties": {
 					"action": {
-						"$ref": "#/definitions/action",
+						"$ref": "#",
 						"description": "The action which will be executed after the delay.",
 						"markdownDescription": "The action which will be executed after the delay."
 					},
@@ -362,8 +344,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else/",
 				"type": "object",
 				"required": [
 					"condition",
@@ -371,17 +351,17 @@
 				],
 				"properties": {
 					"condition": {
-						"$ref": "#/definitions/condition",
+						"$ref": "block_condition.json",
 						"description": "A condition based on the type of action.",
 						"markdownDescription": "A condition based on the type of action."
 					},
 					"if_action": {
-						"$ref": "#/definitions/action",
+						"$ref": "#",
 						"description": "The action which is executed when the condition evaluates to true.",
 						"markdownDescription": "The action which is executed when the condition evaluates to true."
 					},
 					"else_action": {
-						"$ref": "#/definitions/action",
+						"$ref": "#",
 						"description": "If present, this action will be executed when the condition evaluates to false.",
 						"markdownDescription": "If present, this action will be executed when the condition evaluates to false."
 					},
@@ -407,8 +387,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/if_else_list/",
 				"type": "object",
 				"required": [
 					"actions"
@@ -424,10 +402,10 @@
 							],
 							"properties": {
 								"action": {
-									"$ref": "#/definitions/action"
+									"$ref": "#"
 								},
 								"condition": {
-									"$ref": "#/definitions/condition"
+									"$ref": "block_condition.json"
 								}
 							}
 						},
@@ -456,9 +434,13 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/nothing/",
-				"type": "object"
+				"type": "object",
+				"properties": {
+					"type": {
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/nothing)\n\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n\nType ID: `origins:nothing`\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/nothing)\n\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n\nType ID: `origins:nothing`\n\n\n"
+					}
+				}
 			}
 		},
 		{
@@ -476,8 +458,6 @@
 				}
 			},
 			"then": {
-				"$schema": "https://json-schema.org/draft-07/schema#",
-				"$docsUrl": "https://origins.readthedocs.io/en/latest/types/meta_action_types/side/",
 				"type": "object",
 				"required": [
 					"action",
@@ -485,7 +465,7 @@
 				],
 				"properties": {
 					"action": {
-						"$ref": "#/definitions/action",
+						"$ref": "#",
 						"description": "The action to execute.",
 						"markdownDescription": "The action to execute."
 					},
@@ -504,5 +484,11 @@
 				}
 			}
 		}
-	]
+	],
+	"properties": {
+		"type": {
+			"description": "\n\nBlock Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a `block_action` object field.\n\n\n",
+			"markdownDescription": "\n\nBlock Action Types operate an action at a selected block or set of blocks. These are available to power/action types that provides a `block_action` object field.\n\n\n"
+		}
+	}
 }

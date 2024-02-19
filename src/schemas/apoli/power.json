@@ -38,12 +38,12 @@
 				"required": ["type"],
 				"properties": {
 					"type": {
-						"enum": ["apoli:$$fileName", "origins:$$fileName"]
+						"enum": ["apoli:$fileName", "origins:$fileName"]
 					}
 				}
 			},
 			"then": {
-				"$ref": "$$fileRef"
+				"$ref": "$fileRef"
 			}
 		}
 	},

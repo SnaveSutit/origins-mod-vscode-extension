@@ -1,5 +1,9 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$docsUrl": "https://origins.readthedocs.io/en/latest/types/data_types/default_translatable_text_component/",
-	"$ref": "text_component.json"
+	"$ref": "text_component.json",
+	"properties": {
+		"type": {
+			"description": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/default_translatable_text_component)\n\nA [text component](text_component.md), where if the specified [text component](text_component.md) is a string, it will be treated as a translation key.\n\n\n!!! note\n\n    You can refer to [Minecraft Wiki: Raw JSON text format](https://minecraft.wiki/w/Raw_JSON_text_format) for JSON text components you can use.\n\n\n",
+			"markdownDescription": "\n\n[Data Type](https://origins.readthedocs.io/en/latest/types/data_types/default_translatable_text_component)\n\nA [text component](text_component.md), where if the specified [text component](text_component.md) is a string, it will be treated as a translation key.\n\n\n!!! note\n\n    You can refer to [Minecraft Wiki: Raw JSON text format](https://minecraft.wiki/w/Raw_JSON_text_format) for JSON text components you can use.\n\n\n"
+		}
+	}
 }
