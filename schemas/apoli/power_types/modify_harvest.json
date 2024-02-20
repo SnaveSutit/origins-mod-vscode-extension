@@ -15,8 +15,8 @@
 			"markdownDescription": "Determines whether the player is be able to harvest the block."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_harvest)\n\nModifies whether a player is able to harvest a block or not (= receive the block drops).\n\nType ID: `origins:modify_harvest`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_harvest)\n\nModifies whether a player is able to harvest a block or not (= receive the block drops).\n\nType ID: `origins:modify_harvest`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies whether a player is able to harvest a block or not (= receive the block drops).\n\nType ID: `origins:modify_harvest`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies whether a player is able to harvest a block or not (= receive the block drops).\n\nType ID: `origins:modify_harvest`\n\n\n"
 		}
 	}
 }

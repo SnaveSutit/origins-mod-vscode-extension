@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/ender_chest)\n\nBrings up the Ender Chest GUI as if the player has interacted with one.\n\nType ID: `origins:ender_chest`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/ender_chest)\n\nBrings up the Ender Chest GUI as if the player has interacted with one.\n\nType ID: `origins:ender_chest`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nBrings up the Ender Chest GUI as if the player has interacted with one.\n\nType ID: `origins:ender_chest`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nBrings up the Ender Chest GUI as if the player has interacted with one.\n\nType ID: `origins:ender_chest`\n\n\n"
 		}
 	}
 }

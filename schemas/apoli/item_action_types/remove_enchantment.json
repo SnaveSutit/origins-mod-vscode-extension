@@ -26,8 +26,8 @@
 			"markdownDescription": "Determines whether the 'repair cost' of the item should be reset."
 		},
 		"type": {
-			"description": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/remove_enchantment)\n\nRemoves certain enchantments from the item.\n\nType ID: `origins:remove_enchantment`\n\n\n",
-			"markdownDescription": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/remove_enchantment)\n\nRemoves certain enchantments from the item.\n\nType ID: `origins:remove_enchantment`\n\n\n"
+			"description": "\n\n[Item Action Type](../item_action_types.md)\n\nRemoves certain enchantments from the item.\n\nType ID: `origins:remove_enchantment`\n\n\n",
+			"markdownDescription": "\n\n[Item Action Type](../item_action_types.md)\n\nRemoves certain enchantments from the item.\n\nType ID: `origins:remove_enchantment`\n\n\n"
 		}
 	}
 }

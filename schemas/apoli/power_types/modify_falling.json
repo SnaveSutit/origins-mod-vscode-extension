@@ -16,8 +16,8 @@
 			"markdownDescription": "Determines whether the entity should take fall damage or not."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_falling)\n\nModifies the falling velocity of the entity that has the power; can determine whether the entity should take fall damage or not.\n\nType ID: `origins:modify_falling`\n\n!!! note\n\n    By default, the player falls at a speed of 0.08, or 0.01 if a Slow Falling status effect is present.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_falling)\n\nModifies the falling velocity of the entity that has the power; can determine whether the entity should take fall damage or not.\n\nType ID: `origins:modify_falling`\n\n!!! note\n\n    By default, the player falls at a speed of 0.08, or 0.01 if a Slow Falling status effect is present.\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the falling velocity of the entity that has the power; can determine whether the entity should take fall damage or not.\n\nType ID: `origins:modify_falling`\n\n!!! note\n\n    By default, the player falls at a speed of 0.08, or 0.01 if a Slow Falling status effect is present.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the falling velocity of the entity that has the power; can determine whether the entity should take fall damage or not.\n\nType ID: `origins:modify_falling`\n\n!!! note\n\n    By default, the player falls at a speed of 0.08, or 0.01 if a Slow Falling status effect is present.\n\n\n"
 		}
 	}
 }

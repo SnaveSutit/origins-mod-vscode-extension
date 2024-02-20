@@ -16,8 +16,8 @@
 			"markdownDescription": "The value which the durability value of the item should be compared to."
 		},
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/relative_durability)\n\nChecks the current and the percentage durability value of the item.\n\nType ID: `origins:relative_durability`\n\n!!! note\n\n    The percentage of the durability value can be calculated with the `currentDurability / maxDurability` formula.\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/relative_durability)\n\nChecks the current and the percentage durability value of the item.\n\nType ID: `origins:relative_durability`\n\n!!! note\n\n    The percentage of the durability value can be calculated with the `currentDurability / maxDurability` formula.\n\n\n"
+			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks the current and the percentage durability value of the item.\n\nType ID: `origins:relative_durability`\n\n!!! note\n\n    The percentage of the durability value can be calculated with the `currentDurability / maxDurability` formula.\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks the current and the percentage durability value of the item.\n\nType ID: `origins:relative_durability`\n\n!!! note\n\n    The percentage of the durability value can be calculated with the `currentDurability / maxDurability` formula.\n\n\n"
 		}
 	}
 }

@@ -27,8 +27,8 @@
 			"markdownDescription": "The pitch of the sound event."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/play_sound)\n\nPlays a sound event at the entity's position.\n\nType ID: `origins:play_sound`\n\n\n!!! note\n\n    The value of the `volume` field is used to multiply the base distance of the sound event, which is 16 blocks (`1.0`).\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/play_sound)\n\nPlays a sound event at the entity's position.\n\nType ID: `origins:play_sound`\n\n\n!!! note\n\n    The value of the `volume` field is used to multiply the base distance of the sound event, which is 16 blocks (`1.0`).\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nPlays a sound event at the entity's position.\n\nType ID: `origins:play_sound`\n\n\n!!! note\n\n    The value of the `volume` field is used to multiply the base distance of the sound event, which is 16 blocks (`1.0`).\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nPlays a sound event at the entity's position.\n\nType ID: `origins:play_sound`\n\n\n!!! note\n\n    The value of the `volume` field is used to multiply the base distance of the sound event, which is 16 blocks (`1.0`).\n\n\n"
 		}
 	}
 }

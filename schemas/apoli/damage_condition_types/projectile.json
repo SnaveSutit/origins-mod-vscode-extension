@@ -12,8 +12,8 @@
 			"markdownDescription": "If set, the check will only pass if the projectile entity fulfills this condition."
 		},
 		"type": {
-			"description": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/projectile)\n\nChecks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified).\n\nType ID: `origins:projectile`\n\n\n",
-			"markdownDescription": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/projectile)\n\nChecks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified).\n\nType ID: `origins:projectile`\n\n\n"
+			"description": "\n\n[Damage Condition Type](../damage_condition_types.md)\n\nChecks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified).\n\nType ID: `origins:projectile`\n\n\n",
+			"markdownDescription": "\n\n[Damage Condition Type](../damage_condition_types.md)\n\nChecks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified).\n\nType ID: `origins:projectile`\n\n\n"
 		}
 	}
 }

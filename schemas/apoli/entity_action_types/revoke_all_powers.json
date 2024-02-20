@@ -10,8 +10,8 @@
 			"markdownDescription": "The ID of the source to revoke powers from."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/revoke_all_powers)\n\nRevoke all powers from the specified source.\n\nType ID: `origins:revoke_all_powers`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/revoke_all_powers)\n\nRevoke all powers from the specified source.\n\nType ID: `origins:revoke_all_powers`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRevoke all powers from the specified source.\n\nType ID: `origins:revoke_all_powers`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRevoke all powers from the specified source.\n\nType ID: `origins:revoke_all_powers`\n\n\n"
 		}
 	}
 }

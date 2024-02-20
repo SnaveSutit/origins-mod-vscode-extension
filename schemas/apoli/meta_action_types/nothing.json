@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/nothing)\n\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n\nType ID: `origins:nothing`\n\n\n",
-			"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/nothing)\n\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n\nType ID: `origins:nothing`\n\n\n"
+			"description": "\n\n[Meta Action Type](../meta_action_types.md)\n\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n\nType ID: `origins:nothing`\n\n\n",
+			"markdownDescription": "\n\n[Meta Action Type](../meta_action_types.md)\n\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n\nType ID: `origins:nothing`\n\n\n"
 		}
 	}
 }

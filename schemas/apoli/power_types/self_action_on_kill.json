@@ -31,8 +31,8 @@
 			"markdownDescription": "If specified, the specified action will only execute if the entity that has been killed fulfills this condition."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/self_action_on_kill)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power when the entity kills another entity.\n\nType ID: `origins:self_action_on_kill`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/self_action_on_kill)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power when the entity kills another entity.\n\nType ID: `origins:self_action_on_kill`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power when the entity kills another entity.\n\nType ID: `origins:self_action_on_kill`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power when the entity kills another entity.\n\nType ID: `origins:self_action_on_kill`\n\n\n"
 		}
 	}
 }

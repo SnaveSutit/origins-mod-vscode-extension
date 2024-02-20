@@ -10,8 +10,8 @@
 			"markdownDescription": "The ID of the power to remove the target entity from."
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/remove_from_set)\n\nRemoves the target entity from the power that uses the [Entity Set (Power Type)](../power_types.md) of the actor entity.\n\nType ID: `origins:remove_from_set`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/remove_from_set)\n\nRemoves the target entity from the power that uses the [Entity Set (Power Type)](../power_types.md) of the actor entity.\n\nType ID: `origins:remove_from_set`\n\n\n"
+			"description": "\n\n[Bi-entity Action Type](../bientity_action_types.md)\n\nRemoves the target entity from the power that uses the [Entity Set (Power Type)](https://origins.readthedocs.io/en/latest/types/bientity_action_types/remove_from_set) of the actor entity.\n\nType ID: `origins:remove_from_set`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Action Type](../bientity_action_types.md)\n\nRemoves the target entity from the power that uses the [Entity Set (Power Type)](https://origins.readthedocs.io/en/latest/types/bientity_action_types/remove_from_set) of the actor entity.\n\nType ID: `origins:remove_from_set`\n\n\n"
 		}
 	}
 }

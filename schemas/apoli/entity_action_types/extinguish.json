@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/extinguish)\n\nExtinguishes the fire from the entity, removing the burning effect.\n\nType ID: `origins:extinguish`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/extinguish)\n\nExtinguishes the fire from the entity, removing the burning effect.\n\nType ID: `origins:extinguish`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExtinguishes the fire from the entity, removing the burning effect.\n\nType ID: `origins:extinguish`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExtinguishes the fire from the entity, removing the burning effect.\n\nType ID: `origins:extinguish`\n\n\n"
 		}
 	}
 }

@@ -12,12 +12,12 @@
 		},
 		"resource": {
 			"$ref": "../types/identifier.json",
-			"description": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource) or the [Cooldown (Power Type)](../power_types/cooldown.md).",
-			"markdownDescription": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource) or the [Cooldown (Power Type)](../power_types/cooldown.md)."
+			"description": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource) or the [Cooldown (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource).",
+			"markdownDescription": "This power will have its value modified; as long as the power is using the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource) or the [Cooldown (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource)."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource)\n\nModifies the value of a certain resource with [Attribute Modifiers](../data_types/attribute_modifier.md).\n\nType ID: `origins:modify_resource`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource)\n\nModifies the value of a certain resource with [Attribute Modifiers](../data_types/attribute_modifier.md).\n\nType ID: `origins:modify_resource`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nModifies the value of a certain resource with [Attribute Modifiers](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource).\n\nType ID: `origins:modify_resource`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nModifies the value of a certain resource with [Attribute Modifiers](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_resource).\n\nType ID: `origins:modify_resource`\n\n\n"
 		}
 	}
 }

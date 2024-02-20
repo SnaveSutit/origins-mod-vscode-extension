@@ -21,12 +21,12 @@
 					}
 				}
 			},
-			"description": "Each object has to have an `element` [Action](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice) and a `weight` [Integer](../data_types/integer.md).",
-			"markdownDescription": "Each object has to have an `element` [Action](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice) and a `weight` [Integer](../data_types/integer.md)."
+			"description": "Each object has to have an `element` [Action](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice) and a `weight` [Integer](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice).",
+			"markdownDescription": "Each object has to have an `element` [Action](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice) and a `weight` [Integer](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice)."
 		},
 		"type": {
-			"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice)\n\nExecutes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.\n\nType ID: `origins:choice`\n\n!!! note\n\n    The chance of the object is determined by dividing the weight of the object to the sum of all weights of all the objects (`weight / sumOfAllWeights = chance`).\n\n\n",
-			"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/choice)\n\nExecutes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.\n\nType ID: `origins:choice`\n\n!!! note\n\n    The chance of the object is determined by dividing the weight of the object to the sum of all weights of all the objects (`weight / sumOfAllWeights = chance`).\n\n\n"
+			"description": "\n\n[Meta Action Type](../meta_action_types.md)\n\nExecutes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.\n\nType ID: `origins:choice`\n\n!!! note\n\n    The chance of the object is determined by dividing the weight of the object to the sum of all weights of all the objects (`weight / sumOfAllWeights = chance`).\n\n\n",
+			"markdownDescription": "\n\n[Meta Action Type](../meta_action_types.md)\n\nExecutes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen.\n\nType ID: `origins:choice`\n\n!!! note\n\n    The chance of the object is determined by dividing the weight of the object to the sum of all weights of all the objects (`weight / sumOfAllWeights = chance`).\n\n\n"
 		}
 	}
 }

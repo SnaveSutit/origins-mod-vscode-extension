@@ -33,8 +33,8 @@
 			"markdownDescription": "If specified, these status effects will be applied by the cloud to entities inside of it."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_effect_cloud)\n\nSpawns an area effect cloud (as from a lingering potion) at the position of the entity.\n\nType ID: `origins:spawn_effect_cloud`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_effect_cloud)\n\nSpawns an area effect cloud (as from a lingering potion) at the position of the entity.\n\nType ID: `origins:spawn_effect_cloud`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns an area effect cloud (as from a lingering potion) at the position of the entity.\n\nType ID: `origins:spawn_effect_cloud`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns an area effect cloud (as from a lingering potion) at the position of the entity.\n\nType ID: `origins:spawn_effect_cloud`\n\n\n"
 		}
 	}
 }

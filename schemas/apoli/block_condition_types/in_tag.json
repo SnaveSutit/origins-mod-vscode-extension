@@ -10,8 +10,8 @@
 			"markdownDescription": "The namespace and ID of the tag which the block should be in to pass the check."
 		},
 		"type": {
-			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/in_tag)\n\nChecks whether the block is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n",
-			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/in_tag)\n\nChecks whether the block is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n"
+			"description": "\n\n[Block Condition Type](../block_condition_types.md)\n\nChecks whether the block is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](../block_condition_types.md)\n\nChecks whether the block is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n"
 		}
 	}
 }

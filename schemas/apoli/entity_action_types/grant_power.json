@@ -16,8 +16,8 @@
 			"markdownDescription": "The namespace and ID of the source of the granted power."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/grant_power)\n\nGrants a power to the entity from a specified power source.\n\nType ID: `origins:grant_power`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/grant_power)\n\nGrants a power to the entity from a specified power source.\n\nType ID: `origins:grant_power`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nGrants a power to the entity from a specified power source.\n\nType ID: `origins:grant_power`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nGrants a power to the entity from a specified power source.\n\nType ID: `origins:grant_power`\n\n\n"
 		}
 	}
 }

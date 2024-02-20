@@ -38,8 +38,8 @@
 			"markdownDescription": "Determines if the summoned explosion should create fire."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/explode)\n\nSummons an explosion with a specific explosion power.\n\nType ID: `origins:explode`\n\n!!! note\n\n    See [Minecraft Wiki: Explosion (Explosion strength)](https://minecraft.wiki/w/Explosion#Explosion_strength) for a list of power values that are used in vanilla.\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/explode)\n\nSummons an explosion with a specific explosion power.\n\nType ID: `origins:explode`\n\n!!! note\n\n    See [Minecraft Wiki: Explosion (Explosion strength)](https://minecraft.wiki/w/Explosion#Explosion_strength) for a list of power values that are used in vanilla.\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSummons an explosion with a specific explosion power.\n\nType ID: `origins:explode`\n\n!!! note\n\n    See [Minecraft Wiki: Explosion (Explosion strength)](https://origins.readthedocs.io/en/latest/types/entity_action_types/explode) for a list of power values that are used in vanilla.\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSummons an explosion with a specific explosion power.\n\nType ID: `origins:explode`\n\n!!! note\n\n    See [Minecraft Wiki: Explosion (Explosion strength)](https://origins.readthedocs.io/en/latest/types/entity_action_types/explode) for a list of power values that are used in vanilla.\n\n\n"
 		}
 	}
 }

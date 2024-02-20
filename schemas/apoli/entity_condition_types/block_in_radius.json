@@ -33,8 +33,8 @@
 			"markdownDescription": "The value to compare the amount to."
 		},
 		"type": {
-			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/block_in_radius)\n\nChecks whether there is a specified number of blocks that fulfills the specified [Block Condition Type](../block_condition_types.md) within a specified radius relative to the entity's feet.\n\nType ID: `origins:block_in_radius`\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/block_in_radius)\n\nChecks whether there is a specified number of blocks that fulfills the specified [Block Condition Type](../block_condition_types.md) within a specified radius relative to the entity's feet.\n\nType ID: `origins:block_in_radius`\n\n\n"
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks whether there is a specified number of blocks that fulfills the specified [Block Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/block_in_radius) within a specified radius relative to the entity's feet.\n\nType ID: `origins:block_in_radius`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks whether there is a specified number of blocks that fulfills the specified [Block Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/block_in_radius) within a specified radius relative to the entity's feet.\n\nType ID: `origins:block_in_radius`\n\n\n"
 		}
 	}
 }

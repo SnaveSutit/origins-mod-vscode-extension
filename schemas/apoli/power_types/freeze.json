@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/freeze)\n\nFreezes the entity that has the power, as if they're in a Powder Snow block.\n\nType ID: `origins:freeze`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/freeze)\n\nFreezes the entity that has the power, as if they're in a Powder Snow block.\n\nType ID: `origins:freeze`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nFreezes the entity that has the power, as if they're in a Powder Snow block.\n\nType ID: `origins:freeze`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nFreezes the entity that has the power, as if they're in a Powder Snow block.\n\nType ID: `origins:freeze`\n\n\n"
 		}
 	}
 }

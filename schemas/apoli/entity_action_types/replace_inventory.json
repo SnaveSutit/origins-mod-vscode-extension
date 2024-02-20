@@ -54,8 +54,8 @@
 			"markdownDescription": "Determines whether to merge the NBTs of the item that will be replaced and the NBTs of the item that will be used as a replacement."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory)\n\nReplaces the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](../power_types/inventory.md).\n\nType ID: `origins:replace_inventory`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory)\n\nReplaces the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](../power_types/inventory.md).\n\nType ID: `origins:replace_inventory`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nReplaces the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory).\n\nType ID: `origins:replace_inventory`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nReplaces the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory).\n\nType ID: `origins:replace_inventory`\n\n\n"
 		}
 	}
 }

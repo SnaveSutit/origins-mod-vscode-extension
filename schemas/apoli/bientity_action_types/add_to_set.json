@@ -16,8 +16,8 @@
 			"markdownDescription": "If specified, this will determine how long the target entity will be stored in the specified power in ticks."
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/add_to_set)\n\nAdd the target entity to the power that uses the [Entity Set (Power Type)](../power_types/entity_set.md) of the actor entity.\n\nType ID: `origins:add_to_set`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/add_to_set)\n\nAdd the target entity to the power that uses the [Entity Set (Power Type)](../power_types/entity_set.md) of the actor entity.\n\nType ID: `origins:add_to_set`\n\n\n"
+			"description": "\n\n[Bi-entity Action Type](../bientity_action_types.md)\n\nAdd the target entity to the power that uses the [Entity Set (Power Type)](https://origins.readthedocs.io/en/latest/types/bientity_action_types/add_to_set) of the actor entity.\n\nType ID: `origins:add_to_set`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Action Type](../bientity_action_types.md)\n\nAdd the target entity to the power that uses the [Entity Set (Power Type)](https://origins.readthedocs.io/en/latest/types/bientity_action_types/add_to_set) of the actor entity.\n\nType ID: `origins:add_to_set`\n\n\n"
 		}
 	}
 }

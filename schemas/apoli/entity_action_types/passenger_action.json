@@ -23,8 +23,8 @@
 			"markdownDescription": "If set to `true`, the specified action(s) will be executed on all the passenger entities."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/passenger_action)\n\nExecutes an action on the passengers of the entity.\n\nType ID: `origins:passenger_action`\n\n!!! note\n\n    Not to be confused with [Riding Action](./riding_action.md)\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/passenger_action)\n\nExecutes an action on the passengers of the entity.\n\nType ID: `origins:passenger_action`\n\n!!! note\n\n    Not to be confused with [Riding Action](./riding_action.md)\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExecutes an action on the passengers of the entity.\n\nType ID: `origins:passenger_action`\n\n!!! note\n\n    Not to be confused with [Riding Action](https://origins.readthedocs.io/en/latest/types/entity_action_types/passenger_action)\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExecutes an action on the passengers of the entity.\n\nType ID: `origins:passenger_action`\n\n!!! note\n\n    Not to be confused with [Riding Action](https://origins.readthedocs.io/en/latest/types/entity_action_types/passenger_action)\n\n\n"
 		}
 	}
 }

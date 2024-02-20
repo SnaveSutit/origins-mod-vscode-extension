@@ -10,8 +10,8 @@
 			"markdownDescription": "The ID of the power to remove from the entity."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/remove_power)\n\nRemoves a power from the entity, regardless of its source.\n\nType ID: `origins:remove_power`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/remove_power)\n\nRemoves a power from the entity, regardless of its source.\n\nType ID: `origins:remove_power`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRemoves a power from the entity, regardless of its source.\n\nType ID: `origins:remove_power`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRemoves a power from the entity, regardless of its source.\n\nType ID: `origins:remove_power`\n\n\n"
 		}
 	}
 }

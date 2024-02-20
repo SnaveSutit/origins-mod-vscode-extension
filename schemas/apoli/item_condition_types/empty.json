@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/empty)\n\nChecks if there is no item.\n\nType ID: `origins:empty`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/empty)\n\nChecks if there is no item.\n\nType ID: `origins:empty`\n\n\n"
+			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks if there is no item.\n\nType ID: `origins:empty`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks if there is no item.\n\nType ID: `origins:empty`\n\n\n"
 		}
 	}
 }

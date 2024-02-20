@@ -10,8 +10,8 @@
 			"markdownDescription": "The entity condition type to check on either actor or target entities."
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/either)\n\nChecks for an entity condition on either the actor or the target entities.\n\nType ID: `origins:either`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/either)\n\nChecks for an entity condition on either the actor or the target entities.\n\nType ID: `origins:either`\n\n\n"
+			"description": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks for an entity condition on either the actor or the target entities.\n\nType ID: `origins:either`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks for an entity condition on either the actor or the target entities.\n\nType ID: `origins:either`\n\n\n"
 		}
 	}
 }

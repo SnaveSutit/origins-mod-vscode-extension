@@ -11,8 +11,8 @@
 		},
 		"source": {
 			"type": "null",
-			"description": "Use `damage_type` instead. [More information here](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage).",
-			"markdownDescription": "Use `damage_type` instead. [More information here](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage)."
+			"description": "Use `damage_type` instead. [More information here](https://gist.github.com/apace100/bfbf82a8f9d6bd2db13e4feaf653a6b0).",
+			"markdownDescription": "Use `damage_type` instead. [More information here](https://gist.github.com/apace100/bfbf82a8f9d6bd2db13e4feaf653a6b0)."
 		},
 		"damage_type": {
 			"$ref": "../types/damage_source.json",
@@ -33,8 +33,8 @@
 			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage)\n\nApplies damage to the target entity as if the actor entity has attacked it.\n\nType ID: `origins:damage`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/damage)\n\nApplies damage to the target entity as if the actor entity has attacked it.\n\nType ID: `origins:damage`\n\n\n"
+			"description": "\n\n[Bi-entity Action Type](../bientity_action_types.md)\n\nApplies damage to the target entity as if the actor entity has attacked it.\n\nType ID: `origins:damage`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Action Type](../bientity_action_types.md)\n\nApplies damage to the target entity as if the actor entity has attacked it.\n\nType ID: `origins:damage`\n\n\n"
 		}
 	}
 }

@@ -21,8 +21,8 @@
 			"markdownDescription": "The value to compare the amount of powers embedded in the item to."
 		},
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/power_count)\n\nChecks how many powers are embedded in the item.\n\nType ID: `origins:power_count`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/power_count)\n\nChecks how many powers are embedded in the item.\n\nType ID: `origins:power_count`\n\n\n"
+			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks how many powers are embedded in the item.\n\nType ID: `origins:power_count`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks how many powers are embedded in the item.\n\nType ID: `origins:power_count`\n\n\n"
 		}
 	}
 }

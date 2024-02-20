@@ -16,8 +16,8 @@
 			"markdownDescription": "Which value to compare the item's harvest level to."
 		},
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/harvest_level)\n\nChecks whether the material of the item has a certain harvest level value. Refer to [Minecraft Wiki: Tiers](https://minecraft.wiki/w/Tiers) for the harvest level of the materials (there it's called \"mining level\"). Items without a material are considered to have a harvest level of 0.\n\nType ID: `origins:harvest_level`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/harvest_level)\n\nChecks whether the material of the item has a certain harvest level value. Refer to [Minecraft Wiki: Tiers](https://minecraft.wiki/w/Tiers) for the harvest level of the materials (there it's called \"mining level\"). Items without a material are considered to have a harvest level of 0.\n\nType ID: `origins:harvest_level`\n\n\n"
+			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/harvest_level)\n\nChecks whether the material of the item has a certain harvest level value. Refer to [Minecraft Wiki: Tiers](https://origins.readthedocs.io/en/latest/types/item_condition_types/harvest_level) for the harvest level of the materials (there it's called \"mining level\"). Items without a material are considered to have a harvest level of 0.\n\nType ID: `origins:harvest_level`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/harvest_level)\n\nChecks whether the material of the item has a certain harvest level value. Refer to [Minecraft Wiki: Tiers](https://origins.readthedocs.io/en/latest/types/item_condition_types/harvest_level) for the harvest level of the materials (there it's called \"mining level\"). Items without a material are considered to have a harvest level of 0.\n\nType ID: `origins:harvest_level`\n\n\n"
 		}
 	}
 }

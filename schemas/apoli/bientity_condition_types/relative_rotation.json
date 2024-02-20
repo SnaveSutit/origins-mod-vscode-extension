@@ -45,8 +45,8 @@
 			"markdownDescription": "The value to compare the calculated angle value to."
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/relative_rotation)\n\nCompares the rotation angle of the 'actor' to the 'target'.\n\nType ID: `origins:relative_rotation`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/relative_rotation)\n\nCompares the rotation angle of the 'actor' to the 'target'.\n\nType ID: `origins:relative_rotation`\n\n\n"
+			"description": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nCompares the rotation angle of the 'actor' to the 'target'.\n\nType ID: `origins:relative_rotation`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nCompares the rotation angle of the 'actor' to the 'target'.\n\nType ID: `origins:relative_rotation`\n\n\n"
 		}
 	}
 }

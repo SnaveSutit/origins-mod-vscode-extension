@@ -15,8 +15,8 @@
 			"markdownDescription": "If specified, these modifiers will be applied to the entity's air speed."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_air_speed)\n\nModifies the air speed of the entity that has the power.\n\nType ID: `origins:modify_air_speed`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_air_speed)\n\nModifies the air speed of the entity that has the power.\n\nType ID: `origins:modify_air_speed`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the air speed of the entity that has the power.\n\nType ID: `origins:modify_air_speed`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the air speed of the entity that has the power.\n\nType ID: `origins:modify_air_speed`\n\n\n"
 		}
 	}
 }

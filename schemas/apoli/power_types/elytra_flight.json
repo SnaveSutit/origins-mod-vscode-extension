@@ -15,8 +15,8 @@
 			"markdownDescription": "If specified, this will be the texture used by the Elytra granted by this power."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/elytra_flight)\n\nAllows the player to fly as if they had an Elytra equipped.\n\nType ID: `origins:elytra_flight`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/elytra_flight)\n\nAllows the player to fly as if they had an Elytra equipped.\n\nType ID: `origins:elytra_flight`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nAllows the player to fly as if they had an Elytra equipped.\n\nType ID: `origins:elytra_flight`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAllows the player to fly as if they had an Elytra equipped.\n\nType ID: `origins:elytra_flight`\n\n\n"
 		}
 	}
 }

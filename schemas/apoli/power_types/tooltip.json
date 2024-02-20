@@ -26,8 +26,8 @@
 			"markdownDescription": "Determines the placement order of the tooltip(s) of the power."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/tooltip)\n\nApplies the specified tooltip(s) to an item that is only visible to the entity that has the power.\n\nType ID: `origins:tooltip`\n\n\n!!! warning\n\n    Currently, this power type is not able to \"resolve\" certain JSON text components. See [Minecraft Wiki: Raw JSON text format (Component resolution)](https://minecraft.wiki/w/Raw_JSON_text_format#Component_resolution) for more information.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/tooltip)\n\nApplies the specified tooltip(s) to an item that is only visible to the entity that has the power.\n\nType ID: `origins:tooltip`\n\n\n!!! warning\n\n    Currently, this power type is not able to \"resolve\" certain JSON text components. See [Minecraft Wiki: Raw JSON text format (Component resolution)](https://minecraft.wiki/w/Raw_JSON_text_format#Component_resolution) for more information.\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nApplies the specified tooltip(s) to an item that is only visible to the entity that has the power.\n\nType ID: `origins:tooltip`\n\n\n!!! warning\n\n    Currently, this power type is not able to \"resolve\" certain JSON text components. See [Minecraft Wiki: Raw JSON text format (Component resolution)](https://origins.readthedocs.io/en/latest/types/power_types/tooltip) for more information.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nApplies the specified tooltip(s) to an item that is only visible to the entity that has the power.\n\nType ID: `origins:tooltip`\n\n\n!!! warning\n\n    Currently, this power type is not able to \"resolve\" certain JSON text components. See [Minecraft Wiki: Raw JSON text format (Component resolution)](https://origins.readthedocs.io/en/latest/types/power_types/tooltip) for more information.\n\n\n"
 		}
 	}
 }

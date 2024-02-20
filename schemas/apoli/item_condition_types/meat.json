@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/meat)\n\nChecks whether the item is considered meat by Minecraft (usable for breeding wolves).\n\nType ID: `origins:meat`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/meat)\n\nChecks whether the item is considered meat by Minecraft (usable for breeding wolves).\n\nType ID: `origins:meat`\n\n\n"
+			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks whether the item is considered meat by Minecraft (usable for breeding wolves).\n\nType ID: `origins:meat`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks whether the item is considered meat by Minecraft (usable for breeding wolves).\n\nType ID: `origins:meat`\n\n\n"
 		}
 	}
 }

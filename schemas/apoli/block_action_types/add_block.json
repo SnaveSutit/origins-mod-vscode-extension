@@ -10,8 +10,8 @@
 			"markdownDescription": "The namespace and ID of the block to place."
 		},
 		"type": {
-			"description": "\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/add_block)\n\nAdds a block at the specified action position. Adding means setting the block at the position, offset by the direction of the action.\n\nType ID: `origins:add_block`\n\n\n",
-			"markdownDescription": "\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/add_block)\n\nAdds a block at the specified action position. Adding means setting the block at the position, offset by the direction of the action.\n\nType ID: `origins:add_block`\n\n\n"
+			"description": "\n\n[Block Action Type](../block_action_types.md)\n\nAdds a block at the specified action position. Adding means setting the block at the position, offset by the direction of the action.\n\nType ID: `origins:add_block`\n\n\n",
+			"markdownDescription": "\n\n[Block Action Type](../block_action_types.md)\n\nAdds a block at the specified action position. Adding means setting the block at the position, offset by the direction of the action.\n\nType ID: `origins:add_block`\n\n\n"
 		}
 	}
 }

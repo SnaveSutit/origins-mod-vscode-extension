@@ -12,8 +12,8 @@
 			"markdownDescription": "Determines how the ray-cast will handle fluids."
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/can_see)\n\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n\nType ID: `origins:can_see`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/can_see)\n\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n\nType ID: `origins:can_see`\n\n\n"
+			"description": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n\nType ID: `origins:can_see`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n\nType ID: `origins:can_see`\n\n\n"
 		}
 	}
 }

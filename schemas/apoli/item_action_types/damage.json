@@ -14,8 +14,8 @@
 			"markdownDescription": "Determines if this action should ignore the Unbreaking enchantment."
 		},
 		"type": {
-			"description": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/damage)\n\nDamages the item stack with a specified amount.\n\nType ID: `origins:damage`\n\n\n",
-			"markdownDescription": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/damage)\n\nDamages the item stack with a specified amount.\n\nType ID: `origins:damage`\n\n\n"
+			"description": "\n\n[Item Action Type](../item_action_types.md)\n\nDamages the item stack with a specified amount.\n\nType ID: `origins:damage`\n\n\n",
+			"markdownDescription": "\n\n[Item Action Type](../item_action_types.md)\n\nDamages the item stack with a specified amount.\n\nType ID: `origins:damage`\n\n\n"
 		}
 	}
 }

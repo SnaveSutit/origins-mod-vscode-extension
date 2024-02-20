@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/food)\n\nChecks whether the item is a food component.\n\nType ID: `origins:food`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/food)\n\nChecks whether the item is a food component.\n\nType ID: `origins:food`\n\n\n"
+			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks whether the item is a food component.\n\nType ID: `origins:food`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks whether the item is a food component.\n\nType ID: `origins:food`\n\n\n"
 		}
 	}
 }

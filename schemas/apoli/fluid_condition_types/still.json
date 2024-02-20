@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/still)\n\nChecks whether this state describes a still (i.e. not flowing, i.e. source) fluid.\n\nType ID: `origins:still`\n\n\n",
-			"markdownDescription": "\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/still)\n\nChecks whether this state describes a still (i.e. not flowing, i.e. source) fluid.\n\nType ID: `origins:still`\n\n\n"
+			"description": "\n\n[Fluid Condition Type](../fluid_condition_types.md)\n\nChecks whether this state describes a still (i.e. not flowing, i.e. source) fluid.\n\nType ID: `origins:still`\n\n\n",
+			"markdownDescription": "\n\n[Fluid Condition Type](../fluid_condition_types.md)\n\nChecks whether this state describes a still (i.e. not flowing, i.e. source) fluid.\n\nType ID: `origins:still`\n\n\n"
 		}
 	}
 }

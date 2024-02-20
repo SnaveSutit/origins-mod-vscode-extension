@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/shaking)\n\nMakes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion.\n\nType ID: `origins:shaking`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/shaking)\n\nMakes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion.\n\nType ID: `origins:shaking`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nMakes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion.\n\nType ID: `origins:shaking`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nMakes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion.\n\nType ID: `origins:shaking`\n\n\n"
 		}
 	}
 }

@@ -12,7 +12,7 @@ export const eggolibDocsUrl = 'https://eggolib.github.io/latest/'
 export const skillfulDocsUrl = 'https://skillful-docs.readthedocs.io/en/latest/'
 // export const extraoriginsDocsUrl = ''
 
-const linkText = /\[(?<name>[^\n\[]+?)\]\((?<target>[^\n ]+?)\)/
+const linkText = /\[(?<name>[^\n\[]+?)\]\((?<target>[^\n ]+?)\)/g
 
 const descriptionRegex = /^#\s+(?<title>.+)(?<description>[^]+?)###\s+.+?$/gm
 const fieldTitleRegex = /Field\s*\|\s*Type\s*\|\s*Default\s*\|\s*Description\n-+\|-+\|-+\|-+\n/gm
@@ -23,7 +23,7 @@ const valuesTitleRegex = /Value\s+?\| Description\n-+\|-+\n/gm
 const valueCaptureRegex = /^(?<value>[^|]+?)\s*\|\s*(?<description>[^|\n]+?)$/gm
 
 export function parseMDUrl(url: string): { name: string; target: string } | undefined {
-	const match = url.match(linkText)
+	const match = linkText.exec(url)
 	if (!match) return
 	return match.groups as { name: string; target: string }
 }
@@ -34,13 +34,19 @@ export function pathToUrl(from: string, path: string) {
 }
 
 function processDescriptionLinks(description: string, mdFile: MDFile) {
-	const links = description.match(linkText)
-	if (!links) return description
-	for (const link of links) {
-		const url = parseMDUrl(link)
-		if (!url) continue
-		description = description.replace(link, `[${url.name}](${mdFile.docsUrl})`)
+	let link = linkText.exec(description)
+
+	while (link) {
+		// term.brightRed(link[0])('\n')
+		const { name } = link.groups!
+		// term.brightGreen(`[${name}](${mdFile.docsUrl})`)('\n')
+		description = description.replace(link[0], `[${name}](${mdFile.docsUrl})`)
+		link = linkText.exec(description)
 	}
+
+	// term(description)(`\n`)
+	// process.exit(0)
+
 	return description
 }
 

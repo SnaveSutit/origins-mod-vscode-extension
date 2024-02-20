@@ -16,8 +16,8 @@
 			"markdownDescription": "The item action type to execute on the item stack in the specified equipment slot."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/equipped_item_action)\n\nExecutes an [Item Action Type](../item_action_types.md) on an item stack in a specified equipment slot.\n\nType ID: `origins:equipped_item_action`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/equipped_item_action)\n\nExecutes an [Item Action Type](../item_action_types.md) on an item stack in a specified equipment slot.\n\nType ID: `origins:equipped_item_action`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExecutes an [Item Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/equipped_item_action) on an item stack in a specified equipment slot.\n\nType ID: `origins:equipped_item_action`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExecutes an [Item Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/equipped_item_action) on an item stack in a specified equipment slot.\n\nType ID: `origins:equipped_item_action`\n\n\n"
 		}
 	}
 }

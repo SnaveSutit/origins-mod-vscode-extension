@@ -1,0 +1,65 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/origin_layer/",
+	"type": "object",
+	"properties": {
+		"order": {
+			"type": "integer"
+		},
+		"origins": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/identifier)"
+			}
+		},
+		"enabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"replace": {
+			"type": "boolean",
+			"default": true
+		},
+		"name": {
+			"$ref": "$ref(apoli:types/text_component)"
+		},
+		"gui_title": {
+			"$ref": "$ref(apoli:types/gui_title)"
+		},
+		"missing_name": {
+			"$ref": "$ref(apoli:types/text_component)"
+		},
+		"missing_description": {
+			"$ref": "$ref(apoli:types/text_component)"
+		},
+		"allow_random": {
+			"type": "boolean",
+			"default": true
+		},
+		"allow_random_unchoosable": {
+			"type": "boolean",
+			"default": true
+		},
+		"exclude_random": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/identifier)"
+			}
+		},
+		"default_origin": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"auto_choose": {
+			"type": "boolean",
+			"default": true
+		},
+		"hidden": {
+			"type": "boolean",
+			"default": true
+		},
+		"loading_priority": {
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

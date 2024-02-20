@@ -25,8 +25,8 @@
 			"markdownDescription": "Determines how to select the parent advancement(s) or child(ren) advancement(s) of the specified advancement. Can be one of: `\"only\"`, `\"through\"`, `\"from\"`, `\"until\"`, `\"everything\"`"
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/revoke_advancement)\n\nRevokes an advancement from the player.\n\nType ID: `origins:revoke_advancement`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/revoke_advancement)\n\nRevokes an advancement from the player.\n\nType ID: `origins:revoke_advancement`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRevokes an advancement from the player.\n\nType ID: `origins:revoke_advancement`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRevokes an advancement from the player.\n\nType ID: `origins:revoke_advancement`\n\n\n"
 		}
 	}
 }

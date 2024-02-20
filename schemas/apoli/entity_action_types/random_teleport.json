@@ -55,8 +55,8 @@
 			"markdownDescription": "If specified, this entity action will be executed on the entity upon failing to be teleported on a random location."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/random_teleport)\n\nTeleports the entity to a random location within the specified area.\n\nType ID: `origins:random_teleport`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/random_teleport)\n\nTeleports the entity to a random location within the specified area.\n\nType ID: `origins:random_teleport`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nTeleports the entity to a random location within the specified area.\n\nType ID: `origins:random_teleport`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nTeleports the entity to a random location within the specified area.\n\nType ID: `origins:random_teleport`\n\n\n"
 		}
 	}
 }

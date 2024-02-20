@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/swimming)\n\nChecks whether the entity is currently swimming (in the swimming pose).\n\nType ID: `origins:swimming`\n\n!!! note\n\n    **This entity condition type will only work on players.**\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/swimming)\n\nChecks whether the entity is currently swimming (in the swimming pose).\n\nType ID: `origins:swimming`\n\n!!! note\n\n    **This entity condition type will only work on players.**\n\n\n"
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks whether the entity is currently swimming (in the swimming pose).\n\nType ID: `origins:swimming`\n\n!!! note\n\n    **This entity condition type will only work on players.**\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks whether the entity is currently swimming (in the swimming pose).\n\nType ID: `origins:swimming`\n\n!!! note\n\n    **This entity condition type will only work on players.**\n\n\n"
 		}
 	}
 }

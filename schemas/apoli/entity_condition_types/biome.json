@@ -20,8 +20,8 @@
 			"markdownDescription": "If specified, only evaluate the condition to true if the biome the entity is in fulfills the specified biome condition type."
 		},
 		"type": {
-			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/biome)\n\nChecks whether the entity is in a specified biome.\n\nType ID: `origins:biome`\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/biome)\n\nChecks whether the entity is in a specified biome.\n\nType ID: `origins:biome`\n\n\n"
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks whether the entity is in a specified biome.\n\nType ID: `origins:biome`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks whether the entity is in a specified biome.\n\nType ID: `origins:biome`\n\n\n"
 		}
 	}
 }

@@ -10,8 +10,8 @@
 			"markdownDescription": "The amount of breath to restore."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/gain_air)\n\nRestores breath (bubbles!) to a living entity.\n\nType ID: `origins:gain_air`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/gain_air)\n\nRestores breath (bubbles!) to a living entity.\n\nType ID: `origins:gain_air`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRestores breath (bubbles!) to a living entity.\n\nType ID: `origins:gain_air`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRestores breath (bubbles!) to a living entity.\n\nType ID: `origins:gain_air`\n\n\n"
 		}
 	}
 }

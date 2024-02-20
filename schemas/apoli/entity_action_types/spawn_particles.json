@@ -57,8 +57,8 @@
 			"markdownDescription": "The offset of where the particle will be centered in the Z axis."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_particles)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:spawn_particles`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_particles)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:spawn_particles`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:spawn_particles`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:spawn_particles`\n\n\n"
 		}
 	}
 }

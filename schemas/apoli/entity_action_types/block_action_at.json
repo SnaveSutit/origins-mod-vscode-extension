@@ -10,8 +10,8 @@
 			"markdownDescription": "The block action type to execute."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/block_action_at)\n\nExecutes a [Block Action Type](../block_action_types.md) at the position of the entity.\n\nType ID: `origins:block_action_at`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/block_action_at)\n\nExecutes a [Block Action Type](../block_action_types.md) at the position of the entity.\n\nType ID: `origins:block_action_at`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExecutes a [Block Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/block_action_at) at the position of the entity.\n\nType ID: `origins:block_action_at`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExecutes a [Block Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/block_action_at) at the position of the entity.\n\nType ID: `origins:block_action_at`\n\n\n"
 		}
 	}
 }

@@ -16,8 +16,8 @@
 			"markdownDescription": "The value to compare the amount of damage to."
 		},
 		"type": {
-			"description": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/amount)\n\nChecks whether the damage is of a specified amount.\n\nType ID: `origins:amount`\n\n\n",
-			"markdownDescription": "\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/amount)\n\nChecks whether the damage is of a specified amount.\n\nType ID: `origins:amount`\n\n\n"
+			"description": "\n\n[Damage Condition Type](../damage_condition_types.md)\n\nChecks whether the damage is of a specified amount.\n\nType ID: `origins:amount`\n\n\n",
+			"markdownDescription": "\n\n[Damage Condition Type](../damage_condition_types.md)\n\nChecks whether the damage is of a specified amount.\n\nType ID: `origins:amount`\n\n\n"
 		}
 	}
 }

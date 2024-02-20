@@ -10,8 +10,8 @@
 			"markdownDescription": "The fluid condition type to check the fluid state at the position."
 		},
 		"type": {
-			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/fluid)\n\nChecks the fluid state of the current position with a [Fluid Condition Type](../fluid_condition_types.md).\n\nType ID: `origins:fluid`\n\n\n",
-			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/fluid)\n\nChecks the fluid state of the current position with a [Fluid Condition Type](../fluid_condition_types.md).\n\nType ID: `origins:fluid`\n\n\n"
+			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/fluid)\n\nChecks the fluid state of the current position with a [Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/fluid).\n\nType ID: `origins:fluid`\n\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/fluid)\n\nChecks the fluid state of the current position with a [Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/fluid).\n\nType ID: `origins:fluid`\n\n\n"
 		}
 	}
 }

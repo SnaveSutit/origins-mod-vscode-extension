@@ -16,8 +16,8 @@
 			"markdownDescription": "Far view. Vanilla default is 1.0, or 3.0 if you are under the effect of Fire Resistance."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/lava_vision)\n\nChanges how far the player can see when submerged in lava.\n\nType ID: `origins:lava_vision`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/lava_vision)\n\nChanges how far the player can see when submerged in lava.\n\nType ID: `origins:lava_vision`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nChanges how far the player can see when submerged in lava.\n\nType ID: `origins:lava_vision`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nChanges how far the player can see when submerged in lava.\n\nType ID: `origins:lava_vision`\n\n\n"
 		}
 	}
 }

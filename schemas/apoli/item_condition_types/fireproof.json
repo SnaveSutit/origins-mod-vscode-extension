@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/fireproof)\n\nChecks if the item stack is fireproof.\n\nType ID: `origins:fireproof`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/fireproof)\n\nChecks if the item stack is fireproof.\n\nType ID: `origins:fireproof`\n\n\n"
+			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks if the item stack is fireproof.\n\nType ID: `origins:fireproof`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks if the item stack is fireproof.\n\nType ID: `origins:fireproof`\n\n\n"
 		}
 	}
 }

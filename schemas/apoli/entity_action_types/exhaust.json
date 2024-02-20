@@ -10,8 +10,8 @@
 			"markdownDescription": "The amount of exhaustion to apply to the player."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/exhaust)\n\nApplies exhaustion to the entity, reducing saturation and hunger.\n\nType ID: `origins:exhaust`\n\n!!! note\n\n    **This entity action type will only work on players.**\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/exhaust)\n\nApplies exhaustion to the entity, reducing saturation and hunger.\n\nType ID: `origins:exhaust`\n\n!!! note\n\n    **This entity action type will only work on players.**\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nApplies exhaustion to the entity, reducing saturation and hunger.\n\nType ID: `origins:exhaust`\n\n!!! note\n\n    **This entity action type will only work on players.**\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nApplies exhaustion to the entity, reducing saturation and hunger.\n\nType ID: `origins:exhaust`\n\n!!! note\n\n    **This entity action type will only work on players.**\n\n\n"
 		}
 	}
 }

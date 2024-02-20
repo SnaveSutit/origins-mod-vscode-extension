@@ -1,0 +1,93 @@
+{
+	"type": "object",
+	"properties": {
+		"order": {
+			"type": "integer",
+			"description": "Specifies the order of this layer in the choose and view origin screen among the other layers. Smaller numbers mean it appears before layers with larger numbers.",
+			"markdownDescription": "Specifies the order of this layer in the choose and view origin screen among the other layers. Smaller numbers mean it appears before layers with larger numbers."
+		},
+		"origins": {
+			"type": "array",
+			"items": {
+				"$ref": "types/identifier.json"
+			},
+			"description": "Defines the origins that should be in this layer. [Identifier](https://origins.readthedocs.io/en/latest/json/origin_layer) strings and [Conditioned Origin](https://origins.readthedocs.io/en/latest/json/origin_layer) objects can be mixed in the same array.",
+			"markdownDescription": "Defines the origins that should be in this layer. [Identifier](https://origins.readthedocs.io/en/latest/json/origin_layer) strings and [Conditioned Origin](https://origins.readthedocs.io/en/latest/json/origin_layer) objects can be mixed in the same array."
+		},
+		"enabled": {
+			"type": "boolean",
+			"default": false,
+			"description": "If set to false, this layer will be unavailable.",
+			"markdownDescription": "If set to false, this layer will be unavailable."
+		},
+		"replace": {
+			"type": "boolean",
+			"default": true,
+			"description": "If set to false, the data in this file will be appended to an already existing version of this layer. Useful to add custom origins to the default origin layer for example. If set to true, the layer will be replaced and only the origins specified in this file will appear.",
+			"markdownDescription": "If set to false, the data in this file will be appended to an already existing version of this layer. Useful to add custom origins to the default origin layer for example. If set to true, the layer will be replaced and only the origins specified in this file will appear."
+		},
+		"name": {
+			"$ref": "types/text_component.json",
+			"description": "The display name of the layer. Will show at the top of the GUI saying \"Choose your [name here]\".",
+			"markdownDescription": "The display name of the layer. Will show at the top of the GUI saying \"Choose your [name here]\"."
+		},
+		"gui_title": {
+			"$ref": "types/gui_title.json",
+			"description": "If specified, the choose/view origin title for the layer (the text that shows at the top of the GUI) will be overridden by this.",
+			"markdownDescription": "If specified, the choose/view origin title for the layer (the text that shows at the top of the GUI) will be overridden by this."
+		},
+		"missing_name": {
+			"$ref": "types/text_component.json",
+			"description": "The display name of the origin that will show when viewing the origin if no origin has been assigned to this layer.",
+			"markdownDescription": "The display name of the origin that will show when viewing the origin if no origin has been assigned to this layer."
+		},
+		"missing_description": {
+			"$ref": "types/text_component.json",
+			"description": "The description of the origin that will show when viewing the origin if no origin has been assigned to this layer.",
+			"markdownDescription": "The description of the origin that will show when viewing the origin if no origin has been assigned to this layer."
+		},
+		"allow_random": {
+			"type": "boolean",
+			"default": true,
+			"description": "If set to true, this layer will show an option for choosing a random origin.",
+			"markdownDescription": "If set to true, this layer will show an option for choosing a random origin."
+		},
+		"allow_random_unchoosable": {
+			"type": "boolean",
+			"default": true,
+			"description": "Whether origins which are unchoosable (`unchoosable` field set to true in the origin file) should be included in the random option. Can for example be used to force players to choose a random origin, by setting this to true and making all origins in the layer unchoosable.",
+			"markdownDescription": "Whether origins which are unchoosable (`unchoosable` field set to true in the origin file) should be included in the random option. Can for example be used to force players to choose a random origin, by setting this to true and making all origins in the layer unchoosable."
+		},
+		"exclude_random": {
+			"type": "array",
+			"items": {
+				"$ref": "types/identifier.json"
+			},
+			"description": "If specified, the origins included in this list will not be picked by the random choice.",
+			"markdownDescription": "If specified, the origins included in this list will not be picked by the random choice."
+		},
+		"default_origin": {
+			"$ref": "types/identifier.json",
+			"description": "If set, the origin with this namespace and ID will automatically be chosen for a new player. If an orb of origin is used later on, the player will be able to choose another origin then and the `default_origin` will not apply. Could for example be used to make all players start as human, and then use the orb as a progression item to select an origin.",
+			"markdownDescription": "If set, the origin with this namespace and ID will automatically be chosen for a new player. If an orb of origin is used later on, the player will be able to choose another origin then and the `default_origin` will not apply. Could for example be used to make all players start as human, and then use the orb as a progression item to select an origin."
+		},
+		"auto_choose": {
+			"type": "boolean",
+			"default": true,
+			"description": "If set to true, this layer will automatically pick an origin for the player if only one option is available. This also applies when an orb of origin is used.",
+			"markdownDescription": "If set to true, this layer will automatically pick an origin for the player if only one option is available. This also applies when an orb of origin is used."
+		},
+		"hidden": {
+			"type": "boolean",
+			"default": true,
+			"description": "If set to true, this layer will be hidden from the \"View Origin\" screen.",
+			"markdownDescription": "If set to true, this layer will be hidden from the \"View Origin\" screen."
+		},
+		"loading_priority": {
+			"type": "integer",
+			"default": 0,
+			"description": "Specifies when this layer is loaded. Higher numbers mean it's loaded later, which means it will override those with lower loading priorities which share the same ID.",
+			"markdownDescription": "Specifies when this layer is loaded. Higher numbers mean it's loaded later, which means it will override those with lower loading priorities which share the same ID."
+		}
+	}
+}

@@ -13,8 +13,8 @@
 			"markdownDescription": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled."
 		},
 		"type": {
-			"description": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/or)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n",
-			"markdownDescription": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/or)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n"
+			"description": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n",
+			"markdownDescription": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n"
 		}
 	}
 }

@@ -27,8 +27,8 @@
 			"markdownDescription": "If specified, this entity action will be executed on the spawned entity."
 		},
 		"type": {
-			"description": "\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/spawn_entity)\n\nSpawns an entity at the position of the block.\n\nType ID: `origins:spawn_entity`\n\n\n",
-			"markdownDescription": "\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/spawn_entity)\n\nSpawns an entity at the position of the block.\n\nType ID: `origins:spawn_entity`\n\n\n"
+			"description": "\n\n[Block Action Type](../block_action_types.md)\n\nSpawns an entity at the position of the block.\n\nType ID: `origins:spawn_entity`\n\n\n",
+			"markdownDescription": "\n\n[Block Action Type](../block_action_types.md)\n\nSpawns an entity at the position of the block.\n\nType ID: `origins:spawn_entity`\n\n\n"
 		}
 	}
 }

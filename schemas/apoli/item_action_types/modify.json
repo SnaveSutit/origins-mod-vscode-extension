@@ -10,8 +10,8 @@
 			"markdownDescription": "The ID of an item modifier."
 		},
 		"type": {
-			"description": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/modify)\n\nApplies an [Item Modifier](https://minecraft.wiki/w/Item_modifier) to the item stack.\n\nType ID: `origins:modify`\n\n\n",
-			"markdownDescription": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/modify)\n\nApplies an [Item Modifier](https://minecraft.wiki/w/Item_modifier) to the item stack.\n\nType ID: `origins:modify`\n\n\n"
+			"description": "\n\n[Item Action Type](../item_action_types.md)\n\nApplies an [Item Modifier](https://origins.readthedocs.io/en/latest/types/item_action_types/modify) to the item stack.\n\nType ID: `origins:modify`\n\n\n",
+			"markdownDescription": "\n\n[Item Action Type](../item_action_types.md)\n\nApplies an [Item Modifier](https://origins.readthedocs.io/en/latest/types/item_action_types/modify) to the item stack.\n\nType ID: `origins:modify`\n\n\n"
 		}
 	}
 }

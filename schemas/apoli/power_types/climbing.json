@@ -13,8 +13,8 @@
 			"markdownDescription": "If specified and `allow_holding` is `true`, the entity that has the power will be able to 'hold onto the block' (not affected by gravity) if this condition is fulfilled, otherwise, defaults to if the entity is sneaking."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/climbing)\n\nAllows the entity that has the power to climb.\n\nType ID: `origins:climbing`\n\n!!! note\n\n    To have the usual climbing effect, it is recommended to check for the [Collided Horizontally (Entity Condition Type)](../entity_condition_types/collided_horizontally.md) inside the `condition` object of the power.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/climbing)\n\nAllows the entity that has the power to climb.\n\nType ID: `origins:climbing`\n\n!!! note\n\n    To have the usual climbing effect, it is recommended to check for the [Collided Horizontally (Entity Condition Type)](../entity_condition_types/collided_horizontally.md) inside the `condition` object of the power.\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nAllows the entity that has the power to climb.\n\nType ID: `origins:climbing`\n\n!!! note\n\n    To have the usual climbing effect, it is recommended to check for the [Collided Horizontally (Entity Condition Type)](https://origins.readthedocs.io/en/latest/types/power_types/climbing) inside the `condition` object of the power.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAllows the entity that has the power to climb.\n\nType ID: `origins:climbing`\n\n!!! note\n\n    To have the usual climbing effect, it is recommended to check for the [Collided Horizontally (Entity Condition Type)](https://origins.readthedocs.io/en/latest/types/power_types/climbing) inside the `condition` object of the power.\n\n\n"
 		}
 	}
 }

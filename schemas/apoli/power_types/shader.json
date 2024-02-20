@@ -16,8 +16,8 @@
 			"markdownDescription": "Determines if the applied shader can be toggled."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/shader)\n\nApplies a post-processing shader to the vision of the entity that has the power.\n\nType ID: `origins:shader`\n\n!!! note\n\n    For more information about post-processing shaders, visit [Minecraft Wiki: Shaders (Before 1.9)](https://minecraft.wiki/w/Shaders/Before_1.9)\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/shader)\n\nApplies a post-processing shader to the vision of the entity that has the power.\n\nType ID: `origins:shader`\n\n!!! note\n\n    For more information about post-processing shaders, visit [Minecraft Wiki: Shaders (Before 1.9)](https://minecraft.wiki/w/Shaders/Before_1.9)\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nApplies a post-processing shader to the vision of the entity that has the power.\n\nType ID: `origins:shader`\n\n!!! note\n\n    For more information about post-processing shaders, visit [Minecraft Wiki: Shaders (Before 1.9)](https://origins.readthedocs.io/en/latest/types/power_types/shader)\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nApplies a post-processing shader to the vision of the entity that has the power.\n\nType ID: `origins:shader`\n\n!!! note\n\n    For more information about post-processing shaders, visit [Minecraft Wiki: Shaders (Before 1.9)](https://origins.readthedocs.io/en/latest/types/power_types/shader)\n\n\n"
 		}
 	}
 }

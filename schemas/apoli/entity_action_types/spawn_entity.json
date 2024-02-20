@@ -25,8 +25,8 @@
 			"markdownDescription": "If specified, this bi-entity action will be executed on either or both the actor (the entity that invoked the entity action) and the target (the spawned entity)."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_entity)\n\nSpawns another entity at the position of the target entity.\n\nType ID: `origins:spawn_entity`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_entity)\n\nSpawns another entity at the position of the target entity.\n\nType ID: `origins:spawn_entity`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns another entity at the position of the target entity.\n\nType ID: `origins:spawn_entity`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns another entity at the position of the target entity.\n\nType ID: `origins:spawn_entity`\n\n\n"
 		}
 	}
 }

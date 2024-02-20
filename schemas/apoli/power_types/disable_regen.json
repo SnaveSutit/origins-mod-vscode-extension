@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/disable_regen)\n\nDisables the natural health regeneration when on full hunger.\n\nType ID: `origins:disable_regen`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/disable_regen)\n\nDisables the natural health regeneration when on full hunger.\n\nType ID: `origins:disable_regen`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nDisables the natural health regeneration when on full hunger.\n\nType ID: `origins:disable_regen`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nDisables the natural health regeneration when on full hunger.\n\nType ID: `origins:disable_regen`\n\n\n"
 		}
 	}
 }

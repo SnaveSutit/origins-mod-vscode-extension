@@ -33,8 +33,8 @@
 			"markdownDescription": "If specified, these modifiers will be applied to the *effective* hardness value of the block while calculating the block's break speed."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_break_speed)\n\nModifies how fast the player that has the power can break blocks.\n\nType ID: `origins:modify_break_speed`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_break_speed)\n\nModifies how fast the player that has the power can break blocks.\n\nType ID: `origins:modify_break_speed`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies how fast the player that has the power can break blocks.\n\nType ID: `origins:modify_break_speed`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies how fast the player that has the power can break blocks.\n\nType ID: `origins:modify_break_speed`\n\n\n"
 		}
 	}
 }

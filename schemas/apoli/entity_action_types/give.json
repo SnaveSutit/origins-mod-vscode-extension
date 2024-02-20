@@ -20,8 +20,8 @@
 			"markdownDescription": "If specified, this will prioritize the action to put the item in the specified slot. Accepts `\"chest\"`, `\"feet\"`, `\"head\"`, `\"legs\"`, `\"mainhand\"` or `\"offhand\"`."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/give)\n\nGives the entity an item stack by inserting it into its inventory or dropping it on the ground if there is no available inventory space.\n\nType ID: `origins:give`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/give)\n\nGives the entity an item stack by inserting it into its inventory or dropping it on the ground if there is no available inventory space.\n\nType ID: `origins:give`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nGives the entity an item stack by inserting it into its inventory or dropping it on the ground if there is no available inventory space.\n\nType ID: `origins:give`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nGives the entity an item stack by inserting it into its inventory or dropping it on the ground if there is no available inventory space.\n\nType ID: `origins:give`\n\n\n"
 		}
 	}
 }

@@ -29,8 +29,8 @@
 			"markdownDescription": "Determines how to select the parent advancement(s) or child(ren) advancement(s) of the specified advancement. Can be one of: `\"only\"`, `\"through\"`, `\"from\"`, `\"until\"`, `\"everything\"`"
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/grant_advancement)\n\nGrants an advancement to the player.\n\nType ID: `origins:grant_advancement`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/grant_advancement)\n\nGrants an advancement to the player.\n\nType ID: `origins:grant_advancement`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nGrants an advancement to the player.\n\nType ID: `origins:grant_advancement`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nGrants an advancement to the player.\n\nType ID: `origins:grant_advancement`\n\n\n"
 		}
 	}
 }

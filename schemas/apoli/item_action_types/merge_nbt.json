@@ -10,8 +10,8 @@
 			"markdownDescription": "The NBT to merge to the item's NBT."
 		},
 		"type": {
-			"description": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/merge_nbt)\n\nMerges the specified NBT to the item's NBT.\n\nType ID: `origins:merge_nbt`\n\n\n",
-			"markdownDescription": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/merge_nbt)\n\nMerges the specified NBT to the item's NBT.\n\nType ID: `origins:merge_nbt`\n\n\n"
+			"description": "\n\n[Item Action Type](../item_action_types.md)\n\nMerges the specified NBT to the item's NBT.\n\nType ID: `origins:merge_nbt`\n\n\n",
+			"markdownDescription": "\n\n[Item Action Type](../item_action_types.md)\n\nMerges the specified NBT to the item's NBT.\n\nType ID: `origins:merge_nbt`\n\n\n"
 		}
 	}
 }

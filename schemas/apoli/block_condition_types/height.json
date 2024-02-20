@@ -16,8 +16,8 @@
 			"markdownDescription": "The value to compare the Y position of the block to."
 		},
 		"type": {
-			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/height)\n\nCompares the Y position of the block to a value.\n\nType ID: `origins:height`\n\n\n",
-			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/height)\n\nCompares the Y position of the block to a value.\n\nType ID: `origins:height`\n\n\n"
+			"description": "\n\n[Block Condition Type](../block_condition_types.md)\n\nCompares the Y position of the block to a value.\n\nType ID: `origins:height`\n\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](../block_condition_types.md)\n\nCompares the Y position of the block to a value.\n\nType ID: `origins:height`\n\n\n"
 		}
 	}
 }

@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/attacker)\n\nChecks if the actor entity has attacked the target entity within the last 5 seconds, and still exists.\n\nType ID: `origins:attacker`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/attacker)\n\nChecks if the actor entity has attacked the target entity within the last 5 seconds, and still exists.\n\nType ID: `origins:attacker`\n\n\n"
+			"description": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks if the actor entity has attacked the target entity within the last 5 seconds, and still exists.\n\nType ID: `origins:attacker`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks if the actor entity has attacked the target entity within the last 5 seconds, and still exists.\n\nType ID: `origins:attacker`\n\n\n"
 		}
 	}
 }

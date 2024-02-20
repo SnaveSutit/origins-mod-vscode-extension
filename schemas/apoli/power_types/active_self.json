@@ -26,8 +26,8 @@
 			"markdownDescription": "Which active key this power should respond to."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/active_self)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power upon pressing the specified [Key](../data_types/key.md).\n\nType ID: `origins:active_self`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/active_self)\n\nExecutes an [Entity Action Type](../entity_action_types.md) on the entity that has the power upon pressing the specified [Key](../data_types/key.md).\n\nType ID: `origins:active_self`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an [Entity Action Type](https://origins.readthedocs.io/en/latest/types/power_types/active_self) on the entity that has the power upon pressing the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/active_self).\n\nType ID: `origins:active_self`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an [Entity Action Type](https://origins.readthedocs.io/en/latest/types/power_types/active_self) on the entity that has the power upon pressing the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/active_self).\n\nType ID: `origins:active_self`\n\n\n"
 		}
 	}
 }

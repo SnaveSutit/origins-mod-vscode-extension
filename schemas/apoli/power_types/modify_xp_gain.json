@@ -15,8 +15,8 @@
 			"markdownDescription": "If specified, these modifiers will apply to the experience gained."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_xp_gain)\n\nModifies how much XP the player gains when they pick up an experience orb.\n\nType ID: `origins:modify_xp_gain`\n\n!!! note\n\n    Be careful not to make this go too high, as then the player would be able to gain more experience from dying.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_xp_gain)\n\nModifies how much XP the player gains when they pick up an experience orb.\n\nType ID: `origins:modify_xp_gain`\n\n!!! note\n\n    Be careful not to make this go too high, as then the player would be able to gain more experience from dying.\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies how much XP the player gains when they pick up an experience orb.\n\nType ID: `origins:modify_xp_gain`\n\n!!! note\n\n    Be careful not to make this go too high, as then the player would be able to gain more experience from dying.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies how much XP the player gains when they pick up an experience orb.\n\nType ID: `origins:modify_xp_gain`\n\n!!! note\n\n    Be careful not to make this go too high, as then the player would be able to gain more experience from dying.\n\n\n"
 		}
 	}
 }

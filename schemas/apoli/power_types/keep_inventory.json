@@ -15,8 +15,8 @@
 			"markdownDescription": "If specified, only make the items that are in the listed inventory slots persist in the entity's inventory. See [Positioned Item Stack Slots](https://origins.readthedocs.io/en/latest/types/power_types/keep_inventory) for possible values."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/keep_inventory)\n\nMakes certain items persist in the entity's inventory.\n\nType ID: `origins:keep_inventory`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/keep_inventory)\n\nMakes certain items persist in the entity's inventory.\n\nType ID: `origins:keep_inventory`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nMakes certain items persist in the entity's inventory.\n\nType ID: `origins:keep_inventory`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nMakes certain items persist in the entity's inventory.\n\nType ID: `origins:keep_inventory`\n\n\n"
 		}
 	}
 }

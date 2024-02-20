@@ -26,8 +26,8 @@
 			"markdownDescription": "If specified, determines how the cooldown of this power is visualized on the HUD."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/attacker_action_when_hit)\n\nExecutes an entity action on the attacker entity when the entity that has the power is hit by another entity.\n\nType ID: `origins:attacker_action_when_hit`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/attacker_action_when_hit)\n\nExecutes an entity action on the attacker entity when the entity that has the power is hit by another entity.\n\nType ID: `origins:attacker_action_when_hit`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an entity action on the attacker entity when the entity that has the power is hit by another entity.\n\nType ID: `origins:attacker_action_when_hit`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an entity action on the attacker entity when the entity that has the power is hit by another entity.\n\nType ID: `origins:attacker_action_when_hit`\n\n\n"
 		}
 	}
 }

@@ -25,8 +25,8 @@
 			"markdownDescription": "If specified, the specified block action will only be executed on blocks that fulfill this block condition."
 		},
 		"type": {
-			"description": "\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/area_of_effect)\n\nExecutes the provided [Block Action Type](../block_action_types.md) on all blocks within the specified radius and shape.\n\nType ID: `origins:area_of_effect`\n\n\n",
-			"markdownDescription": "\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/area_of_effect)\n\nExecutes the provided [Block Action Type](../block_action_types.md) on all blocks within the specified radius and shape.\n\nType ID: `origins:area_of_effect`\n\n\n"
+			"description": "\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/area_of_effect)\n\nExecutes the provided [Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/area_of_effect) on all blocks within the specified radius and shape.\n\nType ID: `origins:area_of_effect`\n\n\n",
+			"markdownDescription": "\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/area_of_effect)\n\nExecutes the provided [Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/area_of_effect) on all blocks within the specified radius and shape.\n\nType ID: `origins:area_of_effect`\n\n\n"
 		}
 	}
 }

@@ -107,8 +107,8 @@
 			"markdownDescription": "Determines if the command specified in the `command_along_ray` field should be executed only if the ray-cast has hit a block/entity."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/raycast)\n\nCasts a ray to the direction where the entity is looking.\n\nType ID: `origins:raycast`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/raycast)\n\nCasts a ray to the direction where the entity is looking.\n\nType ID: `origins:raycast`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nCasts a ray to the direction where the entity is looking.\n\nType ID: `origins:raycast`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nCasts a ray to the direction where the entity is looking.\n\nType ID: `origins:raycast`\n\n\n"
 		}
 	}
 }

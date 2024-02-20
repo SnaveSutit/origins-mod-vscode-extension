@@ -52,8 +52,8 @@
 			"markdownDescription": "Determines whether to execute the actions if the player does a right-click (`0` or `\"primary\"`) or left-click (`1` or `\"secondary\"`) action."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/item_on_item)\n\nExecutes an [Entity Action Type](../entity_action_types.md) or [Item Action Types](../item_action_types.md) when the player uses an item on an item, similar to how you would put items in a bundle.\n\nType ID: `origins:item_on_item`\n\n!!! caution\n\n    This power type currently does not work properly in Creative Mode.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/item_on_item)\n\nExecutes an [Entity Action Type](../entity_action_types.md) or [Item Action Types](../item_action_types.md) when the player uses an item on an item, similar to how you would put items in a bundle.\n\nType ID: `origins:item_on_item`\n\n!!! caution\n\n    This power type currently does not work properly in Creative Mode.\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an [Entity Action Type](../entity_action_types.md) or [Item Action Types](https://origins.readthedocs.io/en/latest/types/power_types/item_on_item) when the player uses an item on an item, similar to how you would put items in a bundle.\n\nType ID: `origins:item_on_item`\n\n!!! caution\n\n    This power type currently does not work properly in Creative Mode.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an [Entity Action Type](../entity_action_types.md) or [Item Action Types](https://origins.readthedocs.io/en/latest/types/power_types/item_on_item) when the player uses an item on an item, similar to how you would put items in a bundle.\n\nType ID: `origins:item_on_item`\n\n!!! caution\n\n    This power type currently does not work properly in Creative Mode.\n\n\n"
 		}
 	}
 }

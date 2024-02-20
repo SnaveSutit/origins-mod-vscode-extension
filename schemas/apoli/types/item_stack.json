@@ -1,5 +1,8 @@
 {
 	"type": "object",
+	"required": [
+		"item"
+	],
 	"properties": {
 		"item": {
 			"$ref": "autocomplete_helpers/item_identifier.json",
@@ -12,7 +15,7 @@
 			"markdownDescription": "Size of the stack."
 		},
 		"tag": {
-			"type": "string",
+			"$ref": "nbt.json",
 			"description": "NBT data of the item.",
 			"markdownDescription": "NBT data of the item."
 		}

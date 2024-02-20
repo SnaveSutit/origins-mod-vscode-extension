@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/creative_flight)\n\nAllows the players to fly as if they were in Creative Mode.\n\nType ID: `origins:creative_flight`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/creative_flight)\n\nAllows the players to fly as if they were in Creative Mode.\n\nType ID: `origins:creative_flight`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nAllows the players to fly as if they were in Creative Mode.\n\nType ID: `origins:creative_flight`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAllows the players to fly as if they were in Creative Mode.\n\nType ID: `origins:creative_flight`\n\n\n"
 		}
 	}
 }

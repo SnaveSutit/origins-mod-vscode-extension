@@ -26,8 +26,8 @@
 			"markdownDescription": "Value by which the alpha (= transparency) component of the texture will be multiplied. Range: 0.0 - 1.0."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/model_color)\n\nMultiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.\n\nType ID: `origins:model_color`\n\n!!! caution\n\n\tThe resulting color will **always** be a darker color. Currently, there is no way to make it bright due to how the power type blends the color.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/model_color)\n\nMultiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.\n\nType ID: `origins:model_color`\n\n!!! caution\n\n\tThe resulting color will **always** be a darker color. Currently, there is no way to make it bright due to how the power type blends the color.\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nMultiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.\n\nType ID: `origins:model_color`\n\n!!! caution\n\n\tThe resulting color will **always** be a darker color. Currently, there is no way to make it bright due to how the power type blends the color.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nMultiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values.\n\nType ID: `origins:model_color`\n\n!!! caution\n\n\tThe resulting color will **always** be a darker color. Currently, there is no way to make it bright due to how the power type blends the color.\n\n\n"
 		}
 	}
 }

@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/grounded)\n\nAn entity with this power counts as being \"on ground\", meaning regular walking mechanics can occur even if the entity isn't physically on a block.\n\nType ID: `origins:grounded`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/grounded)\n\nAn entity with this power counts as being \"on ground\", meaning regular walking mechanics can occur even if the entity isn't physically on a block.\n\nType ID: `origins:grounded`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nAn entity with this power counts as being \"on ground\", meaning regular walking mechanics can occur even if the entity isn't physically on a block.\n\nType ID: `origins:grounded`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAn entity with this power counts as being \"on ground\", meaning regular walking mechanics can occur even if the entity isn't physically on a block.\n\nType ID: `origins:grounded`\n\n\n"
 		}
 	}
 }

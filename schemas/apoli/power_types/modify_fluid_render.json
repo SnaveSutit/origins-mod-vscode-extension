@@ -20,8 +20,8 @@
 			"markdownDescription": "The namespace and ID of the replacement fluid."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_fluid_render)\n\nModifies how a fluid would look like to the player that has the power.\n\nType ID: `origins:modify_fluid_render`\n\n!!! caution\n\n    Currently, this power type does not work properly if you have installed a mod that changes the rendering engine, such as Sodium.\n\n!!! note\n\n    This power type does **not** support a `condition`. If the `condition` field is present, it will be ignored.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_fluid_render)\n\nModifies how a fluid would look like to the player that has the power.\n\nType ID: `origins:modify_fluid_render`\n\n!!! caution\n\n    Currently, this power type does not work properly if you have installed a mod that changes the rendering engine, such as Sodium.\n\n!!! note\n\n    This power type does **not** support a `condition`. If the `condition` field is present, it will be ignored.\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies how a fluid would look like to the player that has the power.\n\nType ID: `origins:modify_fluid_render`\n\n!!! caution\n\n    Currently, this power type does not work properly if you have installed a mod that changes the rendering engine, such as Sodium.\n\n!!! note\n\n    This power type does **not** support a `condition`. If the `condition` field is present, it will be ignored.\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies how a fluid would look like to the player that has the power.\n\nType ID: `origins:modify_fluid_render`\n\n!!! caution\n\n    Currently, this power type does not work properly if you have installed a mod that changes the rendering engine, such as Sodium.\n\n!!! note\n\n    This power type does **not** support a `condition`. If the `condition` field is present, it will be ignored.\n\n\n"
 		}
 	}
 }

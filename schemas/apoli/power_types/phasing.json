@@ -34,8 +34,8 @@
 			"markdownDescription": "If specified, the entity will only be able to \"phase\" (move) downwards if this condition is fulfilled."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/phasing)\n\nAllows the entity that has the power to \"phase\" (move) through blocks.\n\nType ID: `origins:phasing`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/phasing)\n\nAllows the entity that has the power to \"phase\" (move) through blocks.\n\nType ID: `origins:phasing`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nAllows the entity that has the power to \"phase\" (move) through blocks.\n\nType ID: `origins:phasing`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAllows the entity that has the power to \"phase\" (move) through blocks.\n\nType ID: `origins:phasing`\n\n\n"
 		}
 	}
 }

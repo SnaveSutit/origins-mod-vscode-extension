@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_sprinting)\n\nPrevents the player that has the power from sprinting.\n\nType ID: `origins:prevent_sprinting`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_sprinting)\n\nPrevents the player that has the power from sprinting.\n\nType ID: `origins:prevent_sprinting`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents the player that has the power from sprinting.\n\nType ID: `origins:prevent_sprinting`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents the player that has the power from sprinting.\n\nType ID: `origins:prevent_sprinting`\n\n\n"
 		}
 	}
 }

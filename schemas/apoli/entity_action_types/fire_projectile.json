@@ -5,7 +5,7 @@
 	],
 	"properties": {
 		"entity_type": {
-			"$ref": "../types/identifier.json",
+			"$ref": "../types/autocomplete_helpers/entity_identifier.json",
 			"description": "The identifier of the projectile or entity that will be launched.",
 			"markdownDescription": "The identifier of the projectile or entity that will be launched."
 		},
@@ -38,8 +38,8 @@
 			"markdownDescription": "If specified, this entity action will be executed on the projectile or entity that will be launched."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/fire_projectile)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/fire_projectile)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n"
 		}
 	}
 }

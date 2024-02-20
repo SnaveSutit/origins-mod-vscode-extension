@@ -58,8 +58,8 @@
 			"markdownDescription": "If specified, this modifier will be applied to the value of the experience received from removing an enchantment from an item stack."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_grindstone)\n\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n\nType ID: `origins:modify_grindstone`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_grindstone)\n\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n\nType ID: `origins:modify_grindstone`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n\nType ID: `origins:modify_grindstone`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n\nType ID: `origins:modify_grindstone`\n\n\n"
 		}
 	}
 }
