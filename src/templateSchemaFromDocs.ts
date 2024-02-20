@@ -1,7 +1,8 @@
 import * as fs from 'fs'
 import { MDFile } from './schemaGenerator/mdReader'
 import { JSONSchema, SimpleSchemaType } from './schemaGenerator/schema'
-const docsPath = 'D:/github-repos/origins-docs/docs/types'
+// const docsPath = 'D:/github-repos/origins-docs/docs/types'
+const docsPath = 'D:/github-repos/apugli-docs/docs/types'
 const outDir = './debug_out'
 
 function main() {
