@@ -1,0 +1,41 @@
+{
+	"type": "object",
+	"required": [
+		"tag"
+	],
+	"properties": {
+		"tag": {
+			"$ref": "../../apoli/types/identifier.json",
+			"description": "The namespace and ID of the tag to check for.",
+			"markdownDescription": "The namespace and ID of the tag to check for."
+		},
+		"min_amplifier": {
+			"type": "integer",
+			"default": 0,
+			"description": "The minimum amplifier the status effect should have in order to pass the check.",
+			"markdownDescription": "The minimum amplifier the status effect should have in order to pass the check."
+		},
+		"max_amplifier": {
+			"type": "integer",
+			"default": 2147483647,
+			"description": "The maximum amplifier the status effect should have in order to pass the check.",
+			"markdownDescription": "The maximum amplifier the status effect should have in order to pass the check."
+		},
+		"min_duration": {
+			"type": "integer",
+			"default": 0,
+			"description": "The minimum duration in ticks the status effect should have left in order to pass the check.",
+			"markdownDescription": "The minimum duration in ticks the status effect should have left in order to pass the check."
+		},
+		"max_duration": {
+			"type": "integer",
+			"default": 2147483647,
+			"description": "The maximum duration in ticks the status effect should have left in order to pass the check.",
+			"markdownDescription": "The maximum duration in ticks the status effect should have left in order to pass the check."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether an entity has any of the effects within a status effect tag with a specified amplifier and/or duration.\n\nType ID: `apugli:status_effect_tag`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether an entity has any of the effects within a status effect tag with a specified amplifier and/or duration.\n\nType ID: `apugli:status_effect_tag`\n\n"
+		}
+	}
+}

@@ -8,7 +8,7 @@
 			"$ref": "$actionRef"
 		},
 		"side": {
-			"enum": ["client", "server"]
+			"$ref": "$ref(apoli:types/side)"
 		}
 	}
 }

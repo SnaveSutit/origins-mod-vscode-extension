@@ -1,0 +1,56 @@
+{
+	"type": "object",
+	"required": [
+		"min",
+		"max",
+		"hud_render"
+	],
+	"properties": {
+		"min": {
+			"type": "integer",
+			"description": "The minimum value of the resource.",
+			"markdownDescription": "The minimum value of the resource."
+		},
+		"max": {
+			"type": "integer",
+			"description": "The maximum value of the resource.",
+			"markdownDescription": "The maximum value of the resource."
+		},
+		"hud_render": {
+			"$ref": "../../apoli/types/hud_render.json",
+			"description": "Determines how the resource is visualized on the HUD.",
+			"markdownDescription": "Determines how the resource is visualized on the HUD."
+		},
+		"start_value": {
+			"type": "integer",
+			"description": "The value of the resource when the entity first receives the power. If not set, this will be set to the value of the `min` integer field.",
+			"markdownDescription": "The value of the resource when the entity first receives the power. If not set, this will be set to the value of the `min` integer field."
+		},
+		"min_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "If specified, this action will be executed on the entity whenever the minimum value is reached.",
+			"markdownDescription": "If specified, this action will be executed on the entity whenever the minimum value is reached."
+		},
+		"max_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "If specified, this action will be executed on the entity whenever the maximum value is reached.",
+			"markdownDescription": "If specified, this action will be executed on the entity whenever the maximum value is reached."
+		},
+		"increase_per_tick": {
+			"type": "number",
+			"default": 0.000375,
+			"description": "The amount of velocity added to the player depending on the resource's value.",
+			"markdownDescription": "The amount of velocity added to the player depending on the resource's value."
+		},
+		"tick_rate": {
+			"type": "integer",
+			"default": 10,
+			"description": "The frequency (in ticks) in which to add to the resource. Lower values set the component quicker, but this comes at a potentially huge performance cost.",
+			"markdownDescription": "The frequency (in ticks) in which to add to the resource. Lower values set the component quicker, but this comes at a potentially huge performance cost."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nAdds movement velocity to the player whenever they aren't on the ground, in water, in lava, in a vehicle (boat, horse, etc) or fall flying.\n\nType ID: `apugli:bunny_hop`\n\n!!! note\n\n    This power type provides a variable that can be changed with the [Change Resource (Entity Action Type)](https://apugli.readthedocs.io/en/latest/types/power_types/bunny_hop), and check the value of with the [Resource (Entity Condition Type)](https://apugli.readthedocs.io/en/latest/types/power_types/bunny_hop).\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nAdds movement velocity to the player whenever they aren't on the ground, in water, in lava, in a vehicle (boat, horse, etc) or fall flying.\n\nType ID: `apugli:bunny_hop`\n\n!!! note\n\n    This power type provides a variable that can be changed with the [Change Resource (Entity Action Type)](https://apugli.readthedocs.io/en/latest/types/power_types/bunny_hop), and check the value of with the [Resource (Entity Condition Type)](https://apugli.readthedocs.io/en/latest/types/power_types/bunny_hop).\n\n"
+		}
+	}
+}

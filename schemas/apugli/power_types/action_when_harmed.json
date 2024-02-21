@@ -1,0 +1,55 @@
+{
+	"type": "object",
+	"required": [
+		"hud_render"
+	],
+	"properties": {
+		"cooldown": {
+			"type": "integer",
+			"default": 1,
+			"description": "The number of ticks the entity has to wait between uses of this power.",
+			"markdownDescription": "The number of ticks the entity has to wait between uses of this power."
+		},
+		"hud_render": {
+			"$ref": "../../apoli/types/hud_render.json",
+			"description": "Determines how the resource is visualized on the HUD.",
+			"markdownDescription": "Determines how the resource is visualized on the HUD."
+		},
+		"damage_condition": {
+			"$ref": "../../apoli/damage_condition.json",
+			"description": "If specified, a damage condition that must be met by the damage source of the attack for any actions of this power to be run.",
+			"markdownDescription": "If specified, a damage condition that must be met by the damage source of the attack for any actions of this power to be run."
+		},
+		"entity_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "If specified, an entity action that is executed on the power holder each trigger.",
+			"markdownDescription": "If specified, an entity action that is executed on the power holder each trigger."
+		},
+		"bientity_action": {
+			"$ref": "../../apoli/bientity_action.json",
+			"description": "If specified, a bi-entity action that is executed with the attacker as the actor and the power holder as the target each trigger.",
+			"markdownDescription": "If specified, a bi-entity action that is executed with the attacker as the actor and the power holder as the target each trigger."
+		},
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If specified, a bi-entity condition that must be met with the attacker as the actor and the power holder as the target for any actions of this power to be run.",
+			"markdownDescription": "If specified, a bi-entity condition that must be met with the attacker as the actor and the power holder as the target for any actions of this power to be run."
+		},
+		"amount_to_trigger": {
+			"type": "number",
+			"default": 1,
+			"description": "The damage amount required for this power to trigger each individual time.",
+			"markdownDescription": "The damage amount required for this power to trigger each individual time."
+		},
+		"overflow": {
+			"type": "boolean",
+			"default": false,
+			"description": "Whether the power will run the extra actions if the power holder dies and takes more damage than what was required to kill them.",
+			"markdownDescription": "Whether the power will run the extra actions if the power holder dies and takes more damage than what was required to kill them."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecute actions for each bit of damage received from an attacker when compared to a specific value.\n\nType ID: `apugli:action_when_harmed`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute actions for each bit of damage received from an attacker when compared to a specific value.\n\nType ID: `apugli:action_when_harmed`\n\n\n"
+		}
+	}
+}

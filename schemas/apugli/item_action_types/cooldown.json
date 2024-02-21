@@ -1,0 +1,15 @@
+{
+	"type": "object",
+	"properties": {
+		"ticks": {
+			"type": "integer",
+			"default": 20,
+			"description": "The amount of ticks that the cooldown should be active for.",
+			"markdownDescription": "The amount of ticks that the cooldown should be active for."
+		},
+		"type": {
+			"description": "\n\n[Item Action Type](https://apugli.readthedocs.io/en/latest/types/item_action_types/cooldown)\n\nSets the cooldown of the stack's associated item.\n\nType ID: `apugli:cooldown`\n\n",
+			"markdownDescription": "\n\n[Item Action Type](https://apugli.readthedocs.io/en/latest/types/item_action_types/cooldown)\n\nSets the cooldown of the stack's associated item.\n\nType ID: `apugli:cooldown`\n\n"
+		}
+	}
+}

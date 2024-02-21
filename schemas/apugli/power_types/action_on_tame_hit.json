@@ -1,0 +1,48 @@
+{
+	"type": "object",
+	"required": [
+		"hud_render"
+	],
+	"properties": {
+		"cooldown": {
+			"type": "integer",
+			"default": 1,
+			"description": "The number of ticks the entity has to wait between uses of this power.",
+			"markdownDescription": "The number of ticks the entity has to wait between uses of this power."
+		},
+		"hud_render": {
+			"$ref": "../../apoli/types/hud_render.json",
+			"description": "Determines how the resource is visualized on the HUD.",
+			"markdownDescription": "Determines how the resource is visualized on the HUD."
+		},
+		"bientity_action": {
+			"$ref": "../../apoli/bientity_action.json",
+			"description": "If specified, a bi-entity action that applies to the tame as the actor and the harmed target as the target.",
+			"markdownDescription": "If specified, a bi-entity action that applies to the tame as the actor and the harmed target as the target."
+		},
+		"damage_condition": {
+			"$ref": "../../apoli/damage_condition.json",
+			"description": "If specified, a damage condition that must be met for any actions of this power to run.",
+			"markdownDescription": "If specified, a damage condition that must be met for any actions of this power to run."
+		},
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If specified, a bi-entity condition that must be met with the tame as the actor and the harmed target as the target for any actions of this power to run.",
+			"markdownDescription": "If specified, a bi-entity condition that must be met with the tame as the actor and the harmed target as the target for any actions of this power to run."
+		},
+		"owner_bientity_action": {
+			"$ref": "../../apoli/bientity_action.json",
+			"description": "If specified, a bi-entity action that must be met with the owner as the actor and the harmed target as the target.",
+			"markdownDescription": "If specified, a bi-entity action that must be met with the owner as the actor and the harmed target as the target."
+		},
+		"owner_bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If specified, a bi-entity condition that must be met with the owner as the actor and the harmed target as the target for any actions of this power to run.",
+			"markdownDescription": "If specified, a bi-entity condition that must be met with the owner as the actor and the harmed target as the target for any actions of this power to run."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nRuns an action when an owner's `TameableEntity` harms a target.\n\nType ID: `apugli:action_on_tame_hit`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nRuns an action when an owner's `TameableEntity` harms a target.\n\nType ID: `apugli:action_on_tame_hit`\n\n"
+		}
+	}
+}

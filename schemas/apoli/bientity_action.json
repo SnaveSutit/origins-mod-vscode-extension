@@ -488,10 +488,7 @@
 						"markdownDescription": "The action to execute."
 					},
 					"side": {
-						"enum": [
-							"client",
-							"server"
-						],
+						"$ref": "types/side.json",
 						"description": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`",
 						"markdownDescription": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`"
 					},
@@ -500,6 +497,51 @@
 						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/side)\n\nExecutes the specified action type on the specified \"side\".\n\n\n"
 					}
 				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:change_hits_on_target"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/bientity_action_types/change_hits_on_target.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:raycast_between"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/bientity_action_types/raycast_between.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:spawn_custom_effect_cloud"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/bientity_action_types/spawn_custom_effect_cloud.json"
 			}
 		}
 	],

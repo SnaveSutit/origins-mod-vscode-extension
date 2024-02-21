@@ -1,0 +1,22 @@
+{
+	"type": "object",
+	"properties": {
+		"particle": {
+			"$ref": "../../apoli/types/particle_effect.json",
+			"description": "If specified, the specified particle will be forced to render for the player.",
+			"markdownDescription": "If specified, the specified particle will be forced to render for the player."
+		},
+		"particles": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/particle_effect.json"
+			},
+			"description": "If specified, the specified particles will be forced to render for the player.",
+			"markdownDescription": "If specified, the specified particles will be forced to render for the player."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nForces one or multiple particles to render for the player, regardless of their \"Particle Settings\".\n\nType ID: `apugli:force_particle_render`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nForces one or multiple particles to render for the player, regardless of their \"Particle Settings\".\n\nType ID: `apugli:force_particle_render`\n\n\n"
+		}
+	}
+}

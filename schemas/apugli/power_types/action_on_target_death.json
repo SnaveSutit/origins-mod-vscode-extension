@@ -1,0 +1,44 @@
+{
+	"type": "object",
+	"required": [
+		"bientity_action"
+	],
+	"properties": {
+		"cooldown": {
+			"type": "integer",
+			"default": 1,
+			"description": "The number of ticks the entity has to wait between uses of this power.",
+			"markdownDescription": "The number of ticks the entity has to wait between uses of this power."
+		},
+		"hud_render": {
+			"$ref": "../../apoli/types/hud_render.json",
+			"description": "Determines how the resource is visualized on the HUD.",
+			"markdownDescription": "Determines how the resource is visualized on the HUD."
+		},
+		"bientity_action": {
+			"$ref": "../../apoli/bientity_action.json",
+			"description": "A bi-entity action that applies to the power holder as the actor and the entity that died as the target.",
+			"markdownDescription": "A bi-entity action that applies to the power holder as the actor and the entity that died as the target."
+		},
+		"damage_condition": {
+			"$ref": "../../apoli/damage_condition.json",
+			"description": "If specified, a damage condition that must be met for any actions of this power to run.",
+			"markdownDescription": "If specified, a damage condition that must be met for any actions of this power to run."
+		},
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If specified, a bi-entity condition that must be met for any actions of this power to run.",
+			"markdownDescription": "If specified, a bi-entity condition that must be met for any actions of this power to run."
+		},
+		"includes_prime_adversary": {
+			"type": "boolean",
+			"default": true,
+			"description": "Whether this power will run if the power holder is the most recent attacker.",
+			"markdownDescription": "Whether this power will run if the power holder is the most recent attacker."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an action upon a target's death.\n\nType ID: `apugli:action_on_target_death`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an action upon a target's death.\n\nType ID: `apugli:action_on_target_death`\n\n\n"
+		}
+	}
+}

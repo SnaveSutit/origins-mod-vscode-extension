@@ -1,0 +1,17 @@
+{
+	"type": "object",
+	"required": [
+		"key"
+	],
+	"properties": {
+		"key": {
+			"$ref": "../../apoli/types/key.json",
+			"description": "The key to check.",
+			"markdownDescription": "The key to check."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks if the entity is actively using a keybind on their client.\n\nType ID: `apugli:key_pressed`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks if the entity is actively using a keybind on their client.\n\nType ID: `apugli:key_pressed`\n\n"
+		}
+	}
+}

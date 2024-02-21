@@ -1,0 +1,21 @@
+{
+	"type": "object",
+	"properties": {
+		"comparison": {
+			"default": ">=",
+			"$ref": "../../apoli/types/comparison.json",
+			"description": "How the amount of times the actor has hit the target should be compared to the specified value.",
+			"markdownDescription": "How the amount of times the actor has hit the target should be compared to the specified value."
+		},
+		"compare_to": {
+			"type": "integer",
+			"default": 1,
+			"description": "The value to compare the amount to.",
+			"markdownDescription": "The value to compare the amount to."
+		},
+		"type": {
+			"description": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md).\n\nChecks the amount of times a target has been hit within a time interval.\n\nType ID: `apugli:hits_on_target`\n\n!!! note\n    The interval at which this bi-entity condition's hits reset depends on the Apugli config's resetTimerTicks value.\n\n",
+			"markdownDescription": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md).\n\nChecks the amount of times a target has been hit within a time interval.\n\nType ID: `apugli:hits_on_target`\n\n!!! note\n    The interval at which this bi-entity condition's hits reset depends on the Apugli config's resetTimerTicks value.\n\n"
+		}
+	}
+}

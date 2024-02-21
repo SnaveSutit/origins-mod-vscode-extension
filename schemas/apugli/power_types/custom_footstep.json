@@ -1,0 +1,40 @@
+{
+	"type": "object",
+	"properties": {
+		"muted": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines whether the footstep should be muted.",
+			"markdownDescription": "Determines whether the footstep should be muted."
+		},
+		"sound": {
+			"$ref": "../types/weighted_sound_event.json",
+			"description": "If specified, this sound event is played.",
+			"markdownDescription": "If specified, this sound event is played."
+		},
+		"sounds": {
+			"type": "array",
+			"items": {
+				"$ref": "../types/weighted_sound_event.json"
+			},
+			"description": "If specified, these sound events are played in a random fashion.",
+			"markdownDescription": "If specified, these sound events are played in a random fashion."
+		},
+		"volume": {
+			"type": "number",
+			"default": 1,
+			"description": "Determines the volume of the sound event(s) being played.",
+			"markdownDescription": "Determines the volume of the sound event(s) being played."
+		},
+		"pitch": {
+			"type": "number",
+			"default": 1,
+			"description": "Determines the pitch of the sound event(s) being played.",
+			"markdownDescription": "Determines the pitch of the sound event(s) being played."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the footstep sound of the entity that has the power.\n\nType ID: `apugli:custom_footstep`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the footstep sound of the entity that has the power.\n\nType ID: `apugli:custom_footstep`\n\n\n"
+		}
+	}
+}

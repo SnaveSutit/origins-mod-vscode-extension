@@ -1,0 +1,27 @@
+{
+	"type": "object",
+	"properties": {
+		"modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the entity's amount of Soul Speed.",
+			"markdownDescription": "If set, this modifier will apply to the entity's amount of Soul Speed."
+		},
+		"modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the entity's amount of Soul Speed.",
+			"markdownDescription": "If set, these modifiers will apply to the entity's amount of Soul Speed."
+		},
+		"block_condition": {
+			"$ref": "../../apoli/block_condition.json",
+			"description": "If set, this will determine what blocks the soul speed effect will activate on.",
+			"markdownDescription": "If set, this will determine what blocks the soul speed effect will activate on."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nModifies the amount of Soul Speed levels of an entity.\n\nType ID: `apugli:modify_soul_speed`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nModifies the amount of Soul Speed levels of an entity.\n\nType ID: `apugli:modify_soul_speed`\n\n"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/step_height/",
+	"type": "object",
+	"properties": {
+		"lower_height": {
+			"type": "number",
+			"default": 0
+		},
+		"upper_height": {
+			"type": "number",
+			"default": 0
+		},
+		"allow_jump_after": {
+			"default": "false",
+			"$ref": "$ref(apoli:types/identifier)"
+		}
+	}
+}

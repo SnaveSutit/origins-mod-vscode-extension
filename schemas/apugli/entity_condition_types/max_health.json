@@ -1,0 +1,23 @@
+{
+	"type": "object",
+	"required": [
+		"compare_to"
+	],
+	"properties": {
+		"comparison": {
+			"default": ">=",
+			"$ref": "../../apoli/types/comparison.json",
+			"description": "How the max health of the entity should be compared to the specified value.",
+			"markdownDescription": "How the max health of the entity should be compared to the specified value."
+		},
+		"compare_to": {
+			"type": "number",
+			"description": "The value to compare the value to.",
+			"markdownDescription": "The value to compare the value to."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nApplies a check towards the max health attribute value of an entity.\n\nType ID: `apugli:max_health`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nApplies a check towards the max health attribute value of an entity.\n\nType ID: `apugli:max_health`\n\n"
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"type": "object",
+	"oneOf": [
+		{
+			"required": [
+				"sound"
+			]
+		},
+		{
+			"required": [
+				"sounds"
+			]
+		}
+	],
+	"properties": {
+		"sound": {
+			"$ref": "sound_event_with_volume_and_pitch.json",
+			"description": "The namespace and ID of the sound to play along with pitch and volume.",
+			"markdownDescription": "The namespace and ID of the sound to play along with pitch and volume."
+		},
+		"sounds": {
+			"type": "array",
+			"items": {
+				"$ref": "sound_event_with_volume_and_pitch.json"
+			},
+			"description": "The namespace and ID of the sounds to play along with pitch and volume.",
+			"markdownDescription": "The namespace and ID of the sounds to play along with pitch and volume."
+		},
+		"weight": {
+			"type": "number",
+			"default": 1,
+			"description": "The weight for the sound effect to play in a randomiser. The higher this is, the more likely it'll be selected.",
+			"markdownDescription": "The weight for the sound effect to play in a randomiser. The higher this is, the more likely it'll be selected."
+		}
+	}
+}

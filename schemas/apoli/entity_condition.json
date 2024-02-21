@@ -1397,6 +1397,366 @@
 					}
 				}
 			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:attacker_condition"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/attacker_condition.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:attack_target_condition"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/attack_target_condition.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:base_enchantment"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/base_enchantment.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:cached_block_in_radius"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/cached_block_in_radius.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:can_have_effect"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/can_have_effect.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:can_take_damage"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/can_take_damage.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:compare_resource"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/compare_resource.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:custom_entity_id"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/custom_entity_id.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:entity_in_radius"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/entity_in_radius.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:grounded"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/grounded.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:hostile"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/hostile.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:join_invulnerability_ticks"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/join_invulnerability_ticks.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:key_pressed"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/key_pressed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:max_health"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/max_health.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:moving"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/moving.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:particle_in_radius"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/particle_in_radius.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:player_model_type"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/player_model_type.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:raining"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/raining.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:raycast"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/raycast.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:status_effect_tag"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/status_effect_tag.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:structure"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/structure.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:thundering"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/thundering.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:trident_enchantment"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/trident_enchantment.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:velocity"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_condition_types/velocity.json"
+			}
 		}
 	],
 	"properties": {

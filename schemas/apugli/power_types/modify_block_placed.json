@@ -1,0 +1,50 @@
+{
+	"type": "object",
+	"required": [
+		"item_condition"
+	],
+	"properties": {
+		"block": {
+			"$ref": "../../apoli/types/identifier.json",
+			"description": "If specified, replaces the placed block with the block that has the specified namespace and ID.",
+			"markdownDescription": "If specified, replaces the placed block with the block that has the specified namespace and ID."
+		},
+		"block_state": {
+			"type": "string",
+			"enum": [],
+			"description": "If specified, replaces the placed block with the block that has the specified namespace, ID and block state.",
+			"markdownDescription": "If specified, replaces the placed block with the block that has the specified namespace, ID and block state."
+		},
+		"blocks": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/identifier.json"
+			},
+			"description": "If specified, replaces the placed block with the blocks that has the specified namespace and IDs in a random fashion.",
+			"markdownDescription": "If specified, replaces the placed block with the blocks that has the specified namespace and IDs in a random fashion."
+		},
+		"block_states": {
+			"type": "array",
+			"items": {
+				"type": "array",
+				"enum": []
+			},
+			"description": "If specified, replaces the placed block with the blocks that has the specified namespace, ID and block state in a random fashion.",
+			"markdownDescription": "If specified, replaces the placed block with the blocks that has the specified namespace, ID and block state in a random fashion."
+		},
+		"block_action": {
+			"$ref": "../../apoli/block_action.json",
+			"description": "If specified, executes the specified action at the placed block.",
+			"markdownDescription": "If specified, executes the specified action at the placed block."
+		},
+		"item_condition": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The block item used for placing a block.",
+			"markdownDescription": "The block item used for placing a block."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the placed block upon placing one.\n\nType ID: `apugli:modify_block_placed`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the placed block upon placing one.\n\nType ID: `apugli:modify_block_placed`\n\n\n"
+		}
+	}
+}

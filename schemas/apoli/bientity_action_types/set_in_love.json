@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/set_in_love)\n\nSets the target entity into \"love mode\", where they will seek out other animals to breed with. Note that this only works on animals that can breed, such as Cows or Pigs.\n\nType ID: `origins:set_in_love`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/set_in_love)\n\nSets the target entity into \"love mode\", where they will seek out other animals to breed with. Note that this only works on animals that can breed, such as Cows or Pigs.\n\nType ID: `origins:set_in_love`\n\n\n"
+			"description": "\n\n[Bi-entity Action Type](../bientity_action_types.md)\n\nSets the target entity into \"love mode\", where they will seek out other animals to breed with. Note that this only works on animals that can breed, such as Cows or Pigs.\n\nType ID: `origins:set_in_love`\n\n\n",
+			"markdownDescription": "\n\n[Bi-entity Action Type](../bientity_action_types.md)\n\nSets the target entity into \"love mode\", where they will seek out other animals to breed with. Note that this only works on animals that can breed, such as Cows or Pigs.\n\nType ID: `origins:set_in_love`\n\n\n"
 		}
 	}
 }

@@ -443,6 +443,36 @@
 					}
 				}
 			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:hits_on_target"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/bientity_condition_types/hits_on_target.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:owner"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/bientity_condition_types/owner.json"
+			}
 		}
 	],
 	"properties": {

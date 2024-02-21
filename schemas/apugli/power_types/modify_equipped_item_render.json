@@ -1,0 +1,41 @@
+{
+	"type": "object",
+	"required": [
+		"slot",
+		"stack"
+	],
+	"properties": {
+		"slot": {
+			"$ref": "../../apoli/types/slot.json",
+			"description": "Which equipment slot to render the item at. One of: `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`.",
+			"markdownDescription": "Which equipment slot to render the item at. One of: `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`."
+		},
+		"stack": {
+			"$ref": "../../apoli/types/item_stack.json",
+			"description": "The item stack to render on the entity's head.",
+			"markdownDescription": "The item stack to render on the entity's head."
+		},
+		"scale": {
+			"type": "number",
+			"default": 1,
+			"description": "The scale to render the item stack if this is rendering on the player's head. (This does not effect helmets)",
+			"markdownDescription": "The scale to render the item stack if this is rendering on the player's head. (This does not effect helmets)"
+		},
+		"override": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines whether the power overrides existing equipment from rendering.",
+			"markdownDescription": "Determines whether the power overrides existing equipment from rendering."
+		},
+		"merge_with_held": {
+			"type": "boolean",
+			"default": false,
+			"description": "If the equipment slot is set to the mainhand or offhand, this determines whether the power merges with the held item in the third person view.",
+			"markdownDescription": "If the equipment slot is set to the mainhand or offhand, this determines whether the power merges with the held item in the third person view."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nRenders an item on an entity as if it were worn by them.\n\nType ID: `apugli:modify_equipped_item_render`\n\n!!! note\n\n    This power type only works if said entity can visibly carry an item in that slot. For example villagers are only allowed head slot powers whereas players can use any slot with this power.\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nRenders an item on an entity as if it were worn by them.\n\nType ID: `apugli:modify_equipped_item_render`\n\n!!! note\n\n    This power type only works if said entity can visibly carry an item in that slot. For example villagers are only allowed head slot powers whereas players can use any slot with this power.\n\n"
+		}
+	}
+}

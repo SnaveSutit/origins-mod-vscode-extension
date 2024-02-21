@@ -1,0 +1,35 @@
+{
+	"type": "object",
+	"required": [
+		"enchantment"
+	],
+	"properties": {
+		"enchantment": {
+			"$ref": "../../apoli/types/identifier.json",
+			"description": "The enchantment to apply to the entity.",
+			"markdownDescription": "The enchantment to apply to the entity."
+		},
+		"item_condition": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "If set, the modifier(s) will only apply to items that meet this condition.",
+			"markdownDescription": "If set, the modifier(s) will only apply to items that meet this condition."
+		},
+		"modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the entity's enchantment levels for the enchantment specified by the `enchantment` field.",
+			"markdownDescription": "If set, this modifier will apply to the entity's enchantment levels for the enchantment specified by the `enchantment` field."
+		},
+		"modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the entity's enchantment levels for the enchantment specified by the `enchantment` field.",
+			"markdownDescription": "If set, these modifiers will apply to the entity's enchantment levels for the enchantment specified by the `enchantment` field."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the entity's enchantment levels.\n\nType ID: `apugli:modify_enchantment_level`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the entity's enchantment levels.\n\nType ID: `apugli:modify_enchantment_level`\n\n"
+		}
+	}
+}

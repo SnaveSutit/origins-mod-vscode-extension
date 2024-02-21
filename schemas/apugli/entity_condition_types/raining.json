@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether it's currently raining in the world that the entity is in.\n\nType ID: `apugli:raining`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether it's currently raining in the world that the entity is in.\n\nType ID: `apugli:raining`\n\n"
+		}
+	}
+}

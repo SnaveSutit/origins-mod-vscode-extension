@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/modify_enchantment_damage_dealt/",
+	"type": "object",
+	"required": [
+		"enchantment",
+		"base_value"
+	],
+	"properties": {
+		"enchantment": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"base_value": {
+			"type": "number"
+		},
+		"damage_condition": {
+			"$ref": "$ref(apoli:damage_condition)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"target_condition": {
+			"$ref": "$ref(apoli:entity_condition)"
+		},
+		"modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
+		},
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		}
+	}
+}

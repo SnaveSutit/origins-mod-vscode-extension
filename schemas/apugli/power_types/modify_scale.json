@@ -1,0 +1,41 @@
+{
+	"type": "object",
+	"properties": {
+		"scale_type": {
+			"$ref": "../../apoli/types/identifier.json",
+			"description": "If set, this scale type will be modified.",
+			"markdownDescription": "If set, this scale type will be modified."
+		},
+		"scale_types": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/identifier.json"
+			},
+			"description": "If set, these scale types will be modified.",
+			"markdownDescription": "If set, these scale types will be modified."
+		},
+		"modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier that will apply to the scale value.",
+			"markdownDescription": "If set, this modifier that will apply to the scale value."
+		},
+		"modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers that will apply to the scale value.",
+			"markdownDescription": "If set, these modifiers that will apply to the scale value."
+		},
+		"delay": {
+			"type": "number",
+			"default": 0,
+			"description": "If set, this delay will be applied to scale changes.",
+			"markdownDescription": "If set, this delay will be applied to scale changes."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nModifies the entity's Pehkui scale(s).\n\nType ID: `apugli:modify_scale`\n\n!!! caution\n\n    This power will only work if the [Pehkui](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) mod is installed.\n\n    Please don't use Apugli exclusively for this power type. Scale changes are perfectly viable by just using commands and the sort. More information on scale changing in Apoli can be found [here](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale).\n\n\nField | Type | Default | Description\n------|------|---------|------------\n`scale_type` | [Identifier](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | *optional* | If set, this scale type will be modified.\n`scale_types` | [Array](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) of [Identifiers](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | *optional* | If set, these scale types will be modified.\n`modifier` | [Attribute Modifier](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | *optional* | If set, this modifier that will apply to the scale value.\n`modifiers` | [Array](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) of [Attribute Modifiers](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | *optional* | If set, these modifiers that will apply to the scale value.\n`delay` | [Float](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | `0` | If set, this delay will be applied to scale changes.\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nModifies the entity's Pehkui scale(s).\n\nType ID: `apugli:modify_scale`\n\n!!! caution\n\n    This power will only work if the [Pehkui](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) mod is installed.\n\n    Please don't use Apugli exclusively for this power type. Scale changes are perfectly viable by just using commands and the sort. More information on scale changing in Apoli can be found [here](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale).\n\n\nField | Type | Default | Description\n------|------|---------|------------\n`scale_type` | [Identifier](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | *optional* | If set, this scale type will be modified.\n`scale_types` | [Array](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) of [Identifiers](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | *optional* | If set, these scale types will be modified.\n`modifier` | [Attribute Modifier](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | *optional* | If set, this modifier that will apply to the scale value.\n`modifiers` | [Array](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) of [Attribute Modifiers](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | *optional* | If set, these modifiers that will apply to the scale value.\n`delay` | [Float](https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale) | `0` | If set, this delay will be applied to scale changes.\n\n"
+		}
+	}
+}

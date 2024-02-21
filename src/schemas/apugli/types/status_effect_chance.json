@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/data_types/status_effect_chance/",
+	"type": "object",
+	"required": ["effect"],
+	"properties": {
+		"effect": {
+			"$ref": "$ref(apoli:types/autocomplete_helpers/status_effect_identifier)"
+		},
+		"chance": {
+			"description": "### Requires Apugli mod to be installed!\n\n",
+			"markdownDescription": "### Requires Apugli mod to be installed!\n\n",
+			"type": "number",
+			"minimum": 0,
+			"default": 1.0
+		}
+	}
+}

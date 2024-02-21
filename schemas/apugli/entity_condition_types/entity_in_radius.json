@@ -1,0 +1,39 @@
+{
+	"type": "object",
+	"required": [
+		"radius"
+	],
+	"properties": {
+		"condition": {
+			"$ref": "../../apoli/entity_condition.json",
+			"description": "The entity condition type to check for.",
+			"markdownDescription": "The entity condition type to check for."
+		},
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "The bi-entity condition type to check for with the entity with this condition as the actor and the entities in the radius as the targets.",
+			"markdownDescription": "The bi-entity condition type to check for with the entity with this condition as the actor and the entities in the radius as the targets."
+		},
+		"radius": {
+			"type": "number",
+			"description": "The radius to check the entities that fulfill the specified entity condition type within.",
+			"markdownDescription": "The radius to check the entities that fulfill the specified entity condition type within."
+		},
+		"comparison": {
+			"default": ">=",
+			"$ref": "../../apoli/types/comparison.json",
+			"description": "How the amount of entities within the specified radius which fulfills the specified entity/bi-entity condition type(s) should be compared to the specified value.",
+			"markdownDescription": "How the amount of entities within the specified radius which fulfills the specified entity/bi-entity condition type(s) should be compared to the specified value."
+		},
+		"compare_to": {
+			"type": "integer",
+			"default": 1,
+			"description": "The value to compare the amount to.",
+			"markdownDescription": "The value to compare the amount to."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether the player has a specified number of entities that match a specified entity condition in a specified radius. The radius originates at the center of the entity with this condition.\n\nType ID: `apugli:entity_in_radius`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether the player has a specified number of entities that match a specified entity condition in a specified radius. The radius originates at the center of the entity with this condition.\n\nType ID: `apugli:entity_in_radius`\n\n"
+		}
+	}
+}

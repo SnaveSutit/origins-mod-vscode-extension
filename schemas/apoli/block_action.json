@@ -470,10 +470,7 @@
 						"markdownDescription": "The action to execute."
 					},
 					"side": {
-						"enum": [
-							"client",
-							"server"
-						],
+						"$ref": "types/side.json",
 						"description": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`",
 						"markdownDescription": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`"
 					},
@@ -482,6 +479,51 @@
 						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/side)\n\nExecutes the specified action type on the specified \"side\".\n\n\n"
 					}
 				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:destroy"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/block_action_types/destroy.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:light_up"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/block_action_types/light_up.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:schedule_tick"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/block_action_types/schedule_tick.json"
 			}
 		}
 	],

@@ -10,8 +10,8 @@
 			"markdownDescription": "The ingredient this item must match to pass the check."
 		},
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/ingredient)\n\nChecks whether the item matches the specified [ingredient](https://origins.readthedocs.io/en/latest/types/item_condition_types/ingredient). Essentially, checking either for the item ID or whether the item is in a specified tag.\n\nType ID: `origins:ingredient`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/ingredient)\n\nChecks whether the item matches the specified [ingredient](https://origins.readthedocs.io/en/latest/types/item_condition_types/ingredient). Essentially, checking either for the item ID or whether the item is in a specified tag.\n\nType ID: `origins:ingredient`\n\n\n"
+			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks whether the item matches the specified [ingredient](https://origins.readthedocs.io/en/latest/types/item_condition_types/ingredient). Essentially, checking either for the item ID or whether the item is in a specified tag.\n\nType ID: `origins:ingredient`\n\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks whether the item matches the specified [ingredient](https://origins.readthedocs.io/en/latest/types/item_condition_types/ingredient). Essentially, checking either for the item ID or whether the item is in a specified tag.\n\nType ID: `origins:ingredient`\n\n\n"
 		}
 	}
 }

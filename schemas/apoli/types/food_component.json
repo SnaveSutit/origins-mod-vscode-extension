@@ -1,5 +1,60 @@
 {
 	"type": "object",
+	"definitions": {
+		"effect": {
+			"type": "object",
+			"allOf": [
+				{
+					"if": {
+						"not": {
+							"required": [
+								"chance"
+							]
+						}
+					},
+					"then": {
+						"$ref": "status_effect_instance.json"
+					}
+				},
+				{
+					"if": {
+						"not": {
+							"anyOf": [
+								{
+									"required": [
+										"duration"
+									]
+								},
+								{
+									"required": [
+										"amplifier"
+									]
+								},
+								{
+									"required": [
+										"is_ambient"
+									]
+								},
+								{
+									"required": [
+										"show_particles"
+									]
+								},
+								{
+									"required": [
+										"show_icon"
+									]
+								}
+							]
+						}
+					},
+					"then": {
+						"$ref": "../../apugli/types/status_effect_chance.json"
+					}
+				}
+			]
+		}
+	},
 	"required": [
 		"hunger",
 		"saturation"
@@ -34,14 +89,14 @@
 			"markdownDescription": "Whether this food component takes as long as dried kelp to eat (16 ticks) or not (32 ticks)."
 		},
 		"effect": {
-			"$ref": "status_effect_instance.json",
+			"$ref": "#/definitions/effect",
 			"description": "A status effect and the chance of it triggering upon consuming something with this food component.",
 			"markdownDescription": "A status effect and the chance of it triggering upon consuming something with this food component."
 		},
 		"effects": {
 			"type": "array",
 			"items": {
-				"$ref": "status_effect_instance.json"
+				"$ref": "#/definitions/effect"
 			},
 			"description": "A status effect and the chance of it triggering upon consuming something with this food component.",
 			"markdownDescription": "A status effect and the chance of it triggering upon consuming something with this food component."

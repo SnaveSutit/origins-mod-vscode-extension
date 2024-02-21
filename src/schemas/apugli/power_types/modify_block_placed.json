@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/modify_block_placed/",
+	"type": "object",
+	"required": [
+		"item_condition"
+	],
+	"properties": {
+		"block": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"block_state": {
+			"type": "string",
+			"enum": []
+		},
+		"blocks": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/identifier)"
+			}
+		},
+		"block_states": {
+			"type": "array",
+			"items": {
+				"type": "array",
+				"enum": []
+			}
+		},
+		"block_action": {
+			"$ref": "$ref(apoli:block_action)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		}
+	}
+}

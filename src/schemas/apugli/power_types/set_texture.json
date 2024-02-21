@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/set_texture/",
+	"type": "object",
+	"required": [
+		"texture_location",
+		"player_model"
+	],
+	"properties": {
+		"texture_location": {
+			"$ref": "$ref(apoli:types/autocomplete_helpers/texture_location)"
+		},
+		"player_model": {
+			"type": "string",
+			"enum": [
+				"default",
+				"slim"
+			]
+		}
+	}
+}

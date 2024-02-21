@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/action_on_tame_hit/",
+	"type": "object",
+	"required": [
+		"hud_render"
+	],
+	"properties": {
+		"cooldown": {
+			"type": "integer",
+			"default": 1
+		},
+		"hud_render": {
+			"$ref": "$ref(apoli:types/hud_render)"
+		},
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"damage_condition": {
+			"$ref": "$ref(apoli:damage_condition)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"owner_bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"owner_bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		}
+	}
+}

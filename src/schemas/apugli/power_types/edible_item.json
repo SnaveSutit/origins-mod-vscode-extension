@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/edible_item/",
+	"type": "object",
+	"required": [
+		"item_condition",
+		"food_component"
+	],
+	"properties": {
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		},
+		"food_component": {
+			"$ref": "$ref(apoli:types/food_component)"
+		},
+		"use_action": {
+			"type": "string",
+			"enum": [
+				"eat",
+				"drink"
+			]
+		},
+		"return_stack": {
+			"$ref": "$ref(apoli:types/item_stack)"
+		},
+		"sound": {
+			"$ref": "$ref(apoli:types/autocomplete_helpers/sound_identifier)"
+		},
+		"entity_action": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"item_action": {
+			"$ref": "$ref(apoli:item_action)"
+		}
+	}
+}

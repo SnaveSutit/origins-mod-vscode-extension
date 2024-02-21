@@ -1,0 +1,52 @@
+{
+	"type": "object",
+	"required": [
+		"item_condition",
+		"food_component"
+	],
+	"properties": {
+		"item_condition": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The item condition that items must satisfy to be affected by this power.",
+			"markdownDescription": "The item condition that items must satisfy to be affected by this power."
+		},
+		"food_component": {
+			"$ref": "../../apoli/types/food_component.json",
+			"description": "The food component that the item grants upon eating it.",
+			"markdownDescription": "The food component that the item grants upon eating it."
+		},
+		"use_action": {
+			"type": "string",
+			"enum": [
+				"eat",
+				"drink"
+			],
+			"description": "The action to associate with the player. One of `eat` or `drink`. Defaults to eat when null.",
+			"markdownDescription": "The action to associate with the player. One of `eat` or `drink`. Defaults to eat when null."
+		},
+		"return_stack": {
+			"$ref": "../../apoli/types/item_stack.json",
+			"description": "The item stack to replace the item with upon consumption.",
+			"markdownDescription": "The item stack to replace the item with upon consumption."
+		},
+		"sound": {
+			"$ref": "../../apoli/types/autocomplete_helpers/sound_identifier.json",
+			"description": "ID of the sound to play while eating an item affected by this power. If not set this will be the default eating/drinking sound.",
+			"markdownDescription": "ID of the sound to play while eating an item affected by this power. If not set this will be the default eating/drinking sound."
+		},
+		"entity_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "If set, these action(s) will be executed on the entity eating this item.",
+			"markdownDescription": "If set, these action(s) will be executed on the entity eating this item."
+		},
+		"item_action": {
+			"$ref": "../../apoli/item_action.json",
+			"description": "If set, these action(s) will be executed on the item that the entity ate.",
+			"markdownDescription": "If set, these action(s) will be executed on the item that the entity ate."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nA power that makes any item that matches an item condition edible.\n\nType ID: `apugli:edible_item`\n\n!!! NOTE\n    The actual food saturation level is determined by the `food * saturation * 2` formula.\n\n!!! NOTE\n    This power type will only work on players.\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nA power that makes any item that matches an item condition edible.\n\nType ID: `apugli:edible_item`\n\n!!! NOTE\n    The actual food saturation level is determined by the `food * saturation * 2` formula.\n\n!!! NOTE\n    This power type will only work on players.\n\n"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nAllows a `PlayerEntity` to break blocks at a normal speed whilst in the air.\n\nType ID: `apugli:aerial_affinity`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nAllows a `PlayerEntity` to break blocks at a normal speed whilst in the air.\n\nType ID: `apugli:aerial_affinity`\n\n"
+		}
+	}
+}

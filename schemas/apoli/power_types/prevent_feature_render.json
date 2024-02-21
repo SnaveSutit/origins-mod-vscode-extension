@@ -15,8 +15,8 @@
 			"markdownDescription": "If specified, these feature renderers will not be rendered."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents certain [Feature Renderers](../../misc/extras/feature_renderers.md) (like the wool coat of a Sheep, the worn armor of a mob, etc.) from rendering on the entity that has the power.\n\nType ID: `origins:prevent_feature_render`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents certain [Feature Renderers](../../misc/extras/feature_renderers.md) (like the wool coat of a Sheep, the worn armor of a mob, etc.) from rendering on the entity that has the power.\n\nType ID: `origins:prevent_feature_render`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents certain [Feature Renderers](https://origins.readthedocs.io/en/latest/types/power_types/prevent_feature_render) (like the wool coat of a Sheep, the worn armor of a mob, etc.) from rendering on the entity that has the power.\n\nType ID: `origins:prevent_feature_render`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents certain [Feature Renderers](https://origins.readthedocs.io/en/latest/types/power_types/prevent_feature_render) (like the wool coat of a Sheep, the worn armor of a mob, etc.) from rendering on the entity that has the power.\n\nType ID: `origins:prevent_feature_render`\n\n\n"
 		}
 	}
 }

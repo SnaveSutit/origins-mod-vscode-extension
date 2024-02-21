@@ -1,0 +1,51 @@
+{
+	"type": "object",
+	"required": [
+		"enchantment",
+		"base_value"
+	],
+	"properties": {
+		"enchantment": {
+			"$ref": "../../apoli/types/identifier.json",
+			"description": "The enchantment required to activate this power.",
+			"markdownDescription": "The enchantment required to activate this power."
+		},
+		"base_value": {
+			"type": "number",
+			"description": "The base value of the extra damage.",
+			"markdownDescription": "The base value of the extra damage."
+		},
+		"damage_condition": {
+			"$ref": "../../apoli/damage_condition.json",
+			"description": "If specified, the specified base value with the modifier(s) applied and/or action(s) will only apply if the taken damage fulfills this condition.",
+			"markdownDescription": "If specified, the specified base value with the modifier(s) applied and/or action(s) will only apply if the taken damage fulfills this condition."
+		},
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If specified, the specified modifier(s) and/or action(s) will only apply if either or both 'actor' (the attacker) and 'target' (the entity that has the power) fulfills this bi-entity condition type.",
+			"markdownDescription": "If specified, the specified modifier(s) and/or action(s) will only apply if either or both 'actor' (the attacker) and 'target' (the entity that has the power) fulfills this bi-entity condition type."
+		},
+		"modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the base value. Modifiers will be applied as many times as `enchantment_level - 1`",
+			"markdownDescription": "If set, this modifier will apply to the base value. Modifiers will be applied as many times as `enchantment_level - 1`"
+		},
+		"modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the base value. Modifiers will be applied as many times as `enchantment_level - 1` the attacker has of the specified enchantment.",
+			"markdownDescription": "If set, these modifiers will apply to the base value. Modifiers will be applied as many times as `enchantment_level - 1` the attacker has of the specified enchantment."
+		},
+		"bientity_action": {
+			"$ref": "../../apoli/bientity_action.json",
+			"description": "If specified, this bi-entity action type will be executed on either or both 'actor' (the attacker) and 'target' (the entity that has the power).",
+			"markdownDescription": "If specified, this bi-entity action type will be executed on either or both 'actor' (the attacker) and 'target' (the entity that has the power)."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nModifies how much melee damage the entity that has the power takes based on how many levels of enchantments the attacker has.\n\nType ID: `apugli:modify_enchantment_damage_taken`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nModifies how much melee damage the entity that has the power takes based on how many levels of enchantments the attacker has.\n\nType ID: `apugli:modify_enchantment_damage_taken`\n\n"
+		}
+	}
+}

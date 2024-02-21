@@ -8,8 +8,8 @@
 			"markdownDescription": "The amount of items to remove."
 		},
 		"type": {
-			"description": "\n\n[Item Action Type](../item_action_types.md)\n\nRemoves a provided amount of items from the item stack.\n\nType ID: `origins:consume`\n\n\n",
-			"markdownDescription": "\n\n[Item Action Type](../item_action_types.md)\n\nRemoves a provided amount of items from the item stack.\n\nType ID: `origins:consume`\n\n\n"
+			"description": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/consume)\n\nRemoves a provided amount of items from the item stack.\n\nType ID: `origins:consume`\n\n\n",
+			"markdownDescription": "\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/consume)\n\nRemoves a provided amount of items from the item stack.\n\nType ID: `origins:consume`\n\n\n"
 		}
 	}
 }

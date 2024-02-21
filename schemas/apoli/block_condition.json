@@ -515,6 +515,66 @@
 					}
 				}
 			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:air"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/block_condition_types/air.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:in_rain"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/block_condition_types/in_rain.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:raining"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/block_condition_types/raining.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:thundering"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/block_condition_types/thundering.json"
+			}
 		}
 	],
 	"properties": {

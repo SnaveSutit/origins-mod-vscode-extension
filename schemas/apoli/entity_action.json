@@ -1190,10 +1190,7 @@
 						"markdownDescription": "The action to execute."
 					},
 					"side": {
-						"enum": [
-							"client",
-							"server"
-						],
+						"$ref": "types/side.json",
 						"description": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`",
 						"markdownDescription": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`"
 					},
@@ -1202,6 +1199,201 @@
 						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/side)\n\nExecutes the specified action type on the specified \"side\".\n\n\n"
 					}
 				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:add_velocity"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/add_velocity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:custom_projectile"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/custom_projectile.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:explode"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/explode.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:explosion_raycast"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/explosion_raycast.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:fire_projectile"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/fire_projectile.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:item_cooldown"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/item_cooldown.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:raycast"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/raycast.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:resource_transfer"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/resource_transfer.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:set_no_gravity"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/set_no_gravity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:spawn_custom_effect_cloud"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/spawn_custom_effect_cloud.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:spawn_item"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/spawn_item.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:spawn_particles"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/spawn_particles.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:zombify_villager"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/entity_action_types/zombify_villager.json"
 			}
 		}
 	],

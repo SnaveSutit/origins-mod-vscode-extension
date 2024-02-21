@@ -1,0 +1,117 @@
+{
+	"type": "object",
+	"required": [
+		"hud_render",
+		"damage_type",
+		"key"
+	],
+	"properties": {
+		"cooldown": {
+			"type": "integer",
+			"default": 1,
+			"description": "The number of ticks the player has to wait between uses of this power.",
+			"markdownDescription": "The number of ticks the player has to wait between uses of this power."
+		},
+		"hud_render": {
+			"$ref": "../../apoli/types/hud_render.json",
+			"description": "Specifies how and if a cooldown bar is rendered.",
+			"markdownDescription": "Specifies how and if a cooldown bar is rendered."
+		},
+		"damage_type": {
+			"$ref": "../../apoli/types/damage_source.json",
+			"description": "If set, this is the damage type that will be used to deal damage to the entity upon using this ability.",
+			"markdownDescription": "If set, this is the damage type that will be used to deal damage to the entity upon using this ability."
+		},
+		"amount": {
+			"type": "number",
+			"description": "How much damage will be dealt upon using this ability.",
+			"markdownDescription": "How much damage will be dealt upon using this ability."
+		},
+		"velocity": {
+			"type": "number",
+			"default": 1,
+			"description": "The velocity applied to the player in the opposite direction they are facing when using this power.",
+			"markdownDescription": "The velocity applied to the player in the opposite direction they are facing when using this power."
+		},
+		"horizontal_velocity": {
+			"type": "number",
+			"description": "The velocity applied to the player in the opposite direction they are facing on horizontal axes when using this power. If not set, this will be set to the value of the `velocity` float field.",
+			"markdownDescription": "The velocity applied to the player in the opposite direction they are facing on horizontal axes when using this power. If not set, this will be set to the value of the `velocity` float field."
+		},
+		"vertical_velocity": {
+			"type": "number",
+			"description": "The velocity applied to the player in the opposite direction on the vertical axis they are facing when using this power. If not set, this will be set to the value of the `velocity` float field.",
+			"markdownDescription": "The velocity applied to the player in the opposite direction on the vertical axis they are facing when using this power. If not set, this will be set to the value of the `velocity` float field."
+		},
+		"velocity_clamp_multiplier": {
+			"type": "number",
+			"default": 1.8,
+			"description": "The amount to multiply by the current base amount to clamp the velocity gained from this power to.",
+			"markdownDescription": "The amount to multiply by the current base amount to clamp the velocity gained from this power to."
+		},
+		"use_charged": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines if the power should use a status effect inside the tag `apugli:charged_effects` to increase the velocity of the jump and explosion radius of this power.",
+			"markdownDescription": "Determines if the power should use a status effect inside the tag `apugli:charged_effects` to increase the velocity of the jump and explosion radius of this power."
+		},
+		"charged_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the velocity of the rocket jump when the entity is charged (See `use_charged` field description for charged criteria).",
+			"markdownDescription": "If set, this modifier will apply to the velocity of the rocket jump when the entity is charged (See `use_charged` field description for charged criteria)."
+		},
+		"charged_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the velocity of the rocket jump when the entity is charged (See `use_charged` field description for charged criteria).",
+			"markdownDescription": "If set, these modifiers will apply to the velocity of the rocket jump when the entity is charged (See `use_charged` field description for charged criteria)."
+		},
+		"water_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the velocity of the rocket jump when the entity is touching water.",
+			"markdownDescription": "If set, this modifier will apply to the velocity of the rocket jump when the entity is touching water."
+		},
+		"water_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the velocity of the rocket jump when the entity is touching water.",
+			"markdownDescription": "If set, these modifiers will apply to the velocity of the rocket jump when the entity is touching water."
+		},
+		"damage_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the damage of the explosion caused by the rocket jump.",
+			"markdownDescription": "If set, this modifier will apply to the damage of the explosion caused by the rocket jump."
+		},
+		"damage_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the damage of the explosion caused by the rocket jump.",
+			"markdownDescription": "If set, these modifiers will apply to the damage of the explosion caused by the rocket jump."
+		},
+		"targetable_bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If set, a bi-entity condition to check for with the power holder as the actor and the target as the target for the rocket jump to successfully land.",
+			"markdownDescription": "If set, a bi-entity condition to check for with the power holder as the actor and the target as the target for the rocket jump to successfully land."
+		},
+		"damage_bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If set, a bi-entity condition that will be applied to any entities damaged by the rocket jump with the power holder as the actor and the target as the target.",
+			"markdownDescription": "If set, a bi-entity condition that will be applied to any entities damaged by the rocket jump with the power holder as the actor and the target as the target."
+		},
+		"key": {
+			"$ref": "../../apoli/types/key.json",
+			"description": "Which active key this power should respond to.",
+			"markdownDescription": "Which active key this power should respond to."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nAn active power that launches the player through the air while leaving an explosion at their crosshair location.\n\nType ID: `apugli:rocket_jump`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nAn active power that launches the player through the air while leaving an explosion at their crosshair location.\n\nType ID: `apugli:rocket_jump`\n\n"
+		}
+	}
+}

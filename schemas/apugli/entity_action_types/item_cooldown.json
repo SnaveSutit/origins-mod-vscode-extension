@@ -1,0 +1,31 @@
+{
+	"type": "object",
+	"properties": {
+		"items": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/autocomplete_helpers/item_identifier.json"
+			},
+			"description": "The type of items to add a cooldown to if it is present in the inventory.",
+			"markdownDescription": "The type of items to add a cooldown to if it is present in the inventory."
+		},
+		"item_tags": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/identifier.json"
+			},
+			"description": "A tag of items to add a cooldown to if they are present in the inventory.",
+			"markdownDescription": "A tag of items to add a cooldown to if they are present in the inventory."
+		},
+		"ticks": {
+			"type": "integer",
+			"default": 20,
+			"description": "The amount of ticks that the cooldown should be active for.",
+			"markdownDescription": "The amount of ticks that the cooldown should be active for."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](../entity_action_types.md).\n\nSets the cooldown of a specific item. (Does not operate on specific stacks).\n\nType ID: `apugli:item_cooldown`\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md).\n\nSets the cooldown of a specific item. (Does not operate on specific stacks).\n\nType ID: `apugli:item_cooldown`\n\n"
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"type": "object",
+	"properties": {
+		"modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the cooldown that entities have before they may breed again.",
+			"markdownDescription": "If set, this modifier will apply to the cooldown that entities have before they may breed again."
+		},
+		"modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the cooldown that entities have before they may breed again.",
+			"markdownDescription": "If set, these modifiers will apply to the cooldown that entities have before they may breed again."
+		},
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If set, the bi-entity condition(s) that must be met with the power holder as the actor and the breedable entity as the target.",
+			"markdownDescription": "If set, the bi-entity condition(s) that must be met with the power holder as the actor and the breedable entity as the target."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the breeding cooldown for entities bred by the power holder.\n\nType ID: `apugli:modify_breeding_cooldown`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the breeding cooldown for entities bred by the power holder.\n\nType ID: `apugli:modify_breeding_cooldown`\n\n\n"
+		}
+	}
+}

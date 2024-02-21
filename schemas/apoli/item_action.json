@@ -141,8 +141,8 @@
 						"markdownDescription": "These actions will be executed one after the other (but in the same tick)."
 					},
 					"type": {
-						"description": "\n\n[Meta Action Type](../meta_action_types.md)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n",
-						"markdownDescription": "\n\n[Meta Action Type](../meta_action_types.md)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n"
+						"description": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/and)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n",
+						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/and)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n"
 					}
 				}
 			}
@@ -416,10 +416,7 @@
 						"markdownDescription": "The action to execute."
 					},
 					"side": {
-						"enum": [
-							"client",
-							"server"
-						],
+						"$ref": "types/side.json",
 						"description": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`",
 						"markdownDescription": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`"
 					},
@@ -428,6 +425,36 @@
 						"markdownDescription": "\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/side)\n\nExecutes the specified action type on the specified \"side\".\n\n\n"
 					}
 				}
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:cooldown"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/item_action_types/cooldown.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:damage"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/item_action_types/damage.json"
 			}
 		}
 	],

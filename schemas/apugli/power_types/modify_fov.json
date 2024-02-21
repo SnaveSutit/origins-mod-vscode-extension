@@ -1,0 +1,28 @@
+{
+	"type": "object",
+	"properties": {
+		"modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to any time that an item meets the item condition's has a change in durability.",
+			"markdownDescription": "If set, this modifier will apply to any time that an item meets the item condition's has a change in durability."
+		},
+		"modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to any time that an item meets the item condition's has a change in durability.",
+			"markdownDescription": "If set, these modifiers will apply to any time that an item meets the item condition's has a change in durability."
+		},
+		"change_divisor": {
+			"type": "number",
+			"default": 1,
+			"description": "The divisor at which the FoV will smooth into the next value. A higher value will make it slower.",
+			"markdownDescription": "The divisor at which the FoV will smooth into the next value. A higher value will make it slower."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nChanges the FoV of a player on their client.\n\nType ID: `apugli:modify_fov`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nChanges the FoV of a player on their client.\n\nType ID: `apugli:modify_fov`\n\n"
+		}
+	}
+}

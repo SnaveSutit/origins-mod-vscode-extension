@@ -19,8 +19,8 @@
 			"markdownDescription": "If specified, the '**target**' will only be invisible to '**actors**' (either the player or mobs that may see the target) if the bi-entity condition is fulfilled by either or both of them."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/invisibility)\n\nGrants the entity that has the power invisibility; may or may not affect their worn armor.\n\nType ID: `origins:invisibility`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/invisibility)\n\nGrants the entity that has the power invisibility; may or may not affect their worn armor.\n\nType ID: `origins:invisibility`\n\n\n"
+			"description": "\n\n[Power Type](../power_types.md)\n\nGrants the entity that has the power invisibility; may or may not affect their worn armor.\n\nType ID: `origins:invisibility`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nGrants the entity that has the power invisibility; may or may not affect their worn armor.\n\nType ID: `origins:invisibility`\n\n\n"
 		}
 	}
 }

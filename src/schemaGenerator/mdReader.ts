@@ -4,13 +4,19 @@ import * as fs from 'fs'
 import * as terminalkit from 'terminal-kit'
 const term = terminalkit.terminal
 
-export const rawGithubUrl = 'https://raw.githubusercontent.com/apace100/origins-docs/latest/docs/'
+export const originsRawGithubUrl =
+	'https://raw.githubusercontent.com/apace100/origins-docs/latest/docs/'
+export const apugliRawGithubUrl =
+	'https://raw.githubusercontent.com/MerchantPug/apugli-docs/1.20/docs/'
+export const epoliRawGithubUrl = ''
+export const eggolibRawGithubUrl = ''
+export const skillfulRawGithubUrl = ''
+
 export const originsDocsUrl = 'https://origins.readthedocs.io/en/latest/'
 export const apugliDocsUrl = 'https://apugli.readthedocs.io/en/latest/'
 export const epoliDocsUrl = 'https://epoli-docs.readthedocs.io/en/latest/'
 export const eggolibDocsUrl = 'https://eggolib.github.io/latest/'
 export const skillfulDocsUrl = 'https://skillful-docs.readthedocs.io/en/latest/'
-// export const extraoriginsDocsUrl = ''
 
 const linkText = /\[(?<name>[^\n\[]+?)\]\((?<target>[^\n ]+?)\)/g
 
@@ -22,7 +28,8 @@ const fieldCaptureRegex =
 const valuesTitleRegex = /Value\s+?\| Description\n-+\|-+\n/gm
 const valueCaptureRegex = /^(?<value>[^|]+?)\s*\|\s*(?<description>[^|\n]+?)$/gm
 
-export function parseMDUrl(url: string): { name: string; target: string } | undefined {
+export function parseMDLink(url: string): { name: string; target: string } | undefined {
+	linkText.lastIndex = 0
 	const match = linkText.exec(url)
 	if (!match) return
 	return match.groups as { name: string; target: string }
@@ -44,9 +51,6 @@ function processDescriptionLinks(description: string, mdFile: MDFile) {
 		link = linkText.exec(description)
 	}
 
-	// term(description)(`\n`)
-	// process.exit(0)
-
 	return description
 }
 
@@ -56,7 +60,9 @@ export class Field {
 	public type: string = ''
 	public typePath: string = ''
 	public defaultValue: undefined | string = undefined
+	public depreciated: boolean = false
 	public mdFile: MDFile
+	public subTypes: Array<{ name: string; target: string }> = []
 
 	constructor(
 		name: string,
@@ -73,33 +79,21 @@ export class Field {
 	}
 
 	private parseType(type: string) {
-		if (type.startsWith('[Array')) {
-			const type2 = type.split(' of ')[1].trim()
-			this.type = 'Array'
-			const url = parseMDUrl(type2)
-			if (!url) throw new Error(`Failed to parse type '${type2}' for Array field '${this.name}'`)
-			this.typePath = url.target
-			return
-		} else if (type.startsWith('[Object')) {
-			this.type = 'Object'
-			this.typePath = 'types/data_types/object.md'
-			return
-		} else if (type === '[Bi-entity Condition Type]') {
-			// There is a typo in power_type/particle.md...😔
-			this.type = 'bi entity condition type'
-			this.typePath = 'types/bientity_condition_types.md'
-			return
-		} else if (type.includes(' or ')) {
-			const types = type.split(' or ')
-			if (types.length > 2)
-				throw new Error(`Failed to parse type '${type}' for field '${this.name}'`)
-			this.type = 'Union'
-			this.typePath = types.map(type => parseMDUrl(type)?.target).join(', ')
+		const url = parseMDLink(type)
+		if (!url) {
+			term.brightRed('Failed to parse type ')(type).brightRed(' for field ')(this.name)('\n')
+			this.type = type.trim().replaceAll(/(?:^[\"\[]|[\"\]]$)/g, '')
 			return
 		}
-		const url = parseMDUrl(type)
-		if (!url) throw new Error(`Failed to parse type '${type}' for field '${this.name}'`)
-		this.type = url.name
+		this.type = url.name.trim().replaceAll(/(?:^\"|\"$)/g, '')
+		if (url.name.toLowerCase() === 'array') {
+			for (const subType of type.matchAll(linkText)) {
+				const subTypeUrl = parseMDLink(subType[0])
+				if (!subTypeUrl)
+					throw new Error(`Failed to parse sub type '${subType[0]}' for Array field '${this.name}'`)
+				this.subTypes.push({ name: subTypeUrl.name, target: subTypeUrl.target })
+			}
+		}
 		this.typePath = url.target
 	}
 
@@ -109,12 +103,21 @@ export class Field {
 			this.optional = true
 			return
 		}
-		this.defaultValue = defaultValue.replaceAll('`', '')
+		if (defaultValue?.toLowerCase().includes('deprecated')) {
+			this.depreciated = true
+			return
+		}
+		this.defaultValue = defaultValue
+			.replaceAll('`', '')
+			.trim()
+			.replaceAll(/(?:^\"|\"$)/g, '')
+			.trim()
+		// console.log(this.defaultValue)
 	}
 
-	get ref() {
-		return './' + this.typePath.replace('.md', '.json')
-	}
+	// get ref() {
+	// 	return './' + this.typePath.replace('.md', '.json')
+	// }
 }
 
 export class MDFile {
@@ -126,25 +129,51 @@ export class MDFile {
 	public values: { value: string; description: string }[] = []
 	public url: string
 	private _docsUrl: string = ''
+	private _rawUrl: string = ''
 
-	constructor(public path: string, docsUrl?: string) {
-		this.url = pathToUrl(rawGithubUrl, path)
+	constructor(public path: string, docsUrl?: string, rawUrl?: string) {
+		this._rawUrl = rawUrl || pathToUrl(originsRawGithubUrl, path)
+		this.url = pathToUrl(this._rawUrl, path)
 		this._docsUrl = docsUrl || pathToUrl(originsDocsUrl, path)
 	}
 
 	public static fromRawURL(url: string) {
-		const path = url.replace(rawGithubUrl, '')
-		return new MDFile(path)
+		if (url.startsWith(originsRawGithubUrl)) {
+			const path = url.replace(originsRawGithubUrl, '')
+			return new MDFile(path, originsDocsUrl, originsRawGithubUrl)
+		} else if (url.startsWith(apugliRawGithubUrl)) {
+			const path = url.replace(apugliRawGithubUrl, '')
+			return new MDFile(path, apugliDocsUrl, apugliRawGithubUrl)
+		} else if (url.startsWith(epoliRawGithubUrl)) {
+			const path = url.replace(epoliRawGithubUrl, '')
+			return new MDFile(path, epoliDocsUrl, epoliRawGithubUrl)
+		} else if (url.startsWith(eggolibRawGithubUrl)) {
+			const path = url.replace(eggolibRawGithubUrl, '')
+			return new MDFile(path, eggolibDocsUrl, eggolibRawGithubUrl)
+		} else if (url.startsWith(skillfulRawGithubUrl)) {
+			const path = url.replace(skillfulRawGithubUrl, '')
+			return new MDFile(path, skillfulDocsUrl, skillfulRawGithubUrl)
+		} else throw new Error(`Failed to parse raw url '${url}'`)
 	}
 
 	public static fromDocsURL(url: string) {
-		let docsUrl: string
-		if (url.includes(originsDocsUrl)) docsUrl = originsDocsUrl
-		else if (url.includes(apugliDocsUrl)) docsUrl = apugliDocsUrl
-		else if (url.includes(epoliDocsUrl)) docsUrl = epoliDocsUrl
-		else if (url.includes(eggolibDocsUrl)) docsUrl = eggolibDocsUrl
-		else if (url.includes(skillfulDocsUrl)) docsUrl = skillfulDocsUrl
-		else throw new Error(`Failed to parse docs url '${url}'`)
+		let docsUrl, rawUrl: string
+		if (url.includes(originsDocsUrl)) {
+			docsUrl = originsDocsUrl
+			rawUrl = originsRawGithubUrl
+		} else if (url.includes(apugliDocsUrl)) {
+			docsUrl = apugliDocsUrl
+			rawUrl = apugliRawGithubUrl
+		} else if (url.includes(epoliDocsUrl)) {
+			docsUrl = epoliDocsUrl
+			rawUrl = epoliRawGithubUrl
+		} else if (url.includes(eggolibDocsUrl)) {
+			docsUrl = eggolibDocsUrl
+			rawUrl = eggolibRawGithubUrl
+		} else if (url.includes(skillfulDocsUrl)) {
+			docsUrl = skillfulDocsUrl
+			rawUrl = skillfulRawGithubUrl
+		} else throw new Error(`Failed to parse docs url '${url}'`)
 		let path = url
 			.replace(originsDocsUrl, '')
 			.replace(apugliDocsUrl, '')
@@ -153,7 +182,7 @@ export class MDFile {
 			.replace(skillfulDocsUrl, '')
 
 		if (path.endsWith('/')) path = path.slice(0, -1) + '.md'
-		return new MDFile(path, docsUrl)
+		return new MDFile(path, docsUrl, rawUrl)
 	}
 
 	public static fromFile(path: string) {
@@ -179,7 +208,7 @@ export class MDFile {
 	}
 
 	public async fetchContent(): Promise<MDFile> {
-		const url = rawGithubUrl + this.path
+		const url = this._rawUrl + this.path
 		// term.gray(`Reading Markdown File `).brightBlue(url).gray('...\n')
 
 		this.content = await fetch(url).then(res => res.text())
@@ -201,7 +230,7 @@ export class MDFile {
 
 	public getField(name: string) {
 		const field = this.fields.find(field => field.name === name)
-		if (!field) throw new Error(`No field called '${name}' in '${this.id}' (${this.path})`)
+		// if (!field) throw new Error(`No field called '${name}' in '${this.id}' (${this.path})`)
 		return field
 	}
 

@@ -1,0 +1,132 @@
+{
+	"type": "object",
+	"required": [
+		"power"
+	],
+	"properties": {
+		"power": {
+			"type": "number",
+			"description": "Determines the power of the explosion.",
+			"markdownDescription": "Determines the power of the explosion."
+		},
+		"destruction_type": {
+			"type": "string",
+			"default": "break",
+			"enum": [
+				"destroy",
+				"break",
+				"none"
+			],
+			"description": "Determines if the explosion should destroy the terrain, destroy the terrain and drop the loot of the blocks, or none (`\"destroy\"`, `\"break\"` or `\"none\"` respectively).",
+			"markdownDescription": "Determines if the explosion should destroy the terrain, destroy the terrain and drop the loot of the blocks, or none (`\"destroy\"`, `\"break\"` or `\"none\"` respectively)."
+		},
+		"damage_self": {
+			"type": "boolean",
+			"default": true,
+			"description": "Determines if the player should take damage from the summoned explosion.",
+			"markdownDescription": "Determines if the player should take damage from the summoned explosion."
+		},
+		"indestructible": {
+			"$ref": "../../apoli/block_condition.json",
+			"description": "If specified, the blocks that fulfills the specified block condition type is not destroyed by the summoned explosion.",
+			"markdownDescription": "If specified, the blocks that fulfills the specified block condition type is not destroyed by the summoned explosion."
+		},
+		"destructible": {
+			"$ref": "../../apoli/block_condition.json",
+			"description": "If specified, the blocks that fulfills this specified block condition type are the **only** blocks that are destroyed by the summoned explosion.",
+			"markdownDescription": "If specified, the blocks that fulfills this specified block condition type are the **only** blocks that are destroyed by the summoned explosion."
+		},
+		"create_fire": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines if the explosion should create fire.",
+			"markdownDescription": "Determines if the explosion should create fire."
+		},
+		"use_charged": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines if the power should use either the `toomanyorigins:charged` or `cursedorigins:charged` status effects to increase the poewr of the summoned explosion (This requires either of the two mods to use this but this power will function normally without either mod).",
+			"markdownDescription": "Determines if the power should use either the `toomanyorigins:charged` or `cursedorigins:charged` status effects to increase the poewr of the summoned explosion (This requires either of the two mods to use this but this power will function normally without either mod)."
+		},
+		"damage_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the damage value towards other entities from this explosion.",
+			"markdownDescription": "If set, this modifier will apply to the damage value towards other entities from this explosion."
+		},
+		"damage_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the damage value towards other entities from this explosion.",
+			"markdownDescription": "If set, these modifiers will apply to the damage value towards other entities from this explosion."
+		},
+		"knockback_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the knockback towards other entities from this explosion.",
+			"markdownDescription": "If set, this modifier will apply to the knockback towards other entities from this explosion."
+		},
+		"knockback_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the knockback towards other entities from this explosion.",
+			"markdownDescription": "If set, these modifiers will apply to the knockback towards other entities from this explosion."
+		},
+		"volume_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the volume of the sound event from this explosion.",
+			"markdownDescription": "If set, this modifier will apply to the volume of the sound event from this explosion."
+		},
+		"volume_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the volume of the sound event from this explosion.",
+			"markdownDescription": "If set, these modifiers will apply to the volume of the sound event from this explosion."
+		},
+		"pitch_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the pitch of the sound event from this explosion.",
+			"markdownDescription": "If set, this modifier will apply to the pitch of the sound event from this explosion."
+		},
+		"pitch_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the pitch of the sound event from this explosion.",
+			"markdownDescription": "If set, these modifiers will apply to the pitch of the sound event from this explosion."
+		},
+		"damage_bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If set, determines if an entity will be damaged by the explosion with the entity who ran this action as the actor and the entity in the explosion radius as the target.",
+			"markdownDescription": "If set, determines if an entity will be damaged by the explosion with the entity who ran this action as the actor and the entity in the explosion radius as the target."
+		},
+		"charged_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, this modifier will apply to the power of the explosion when the entity is charged (See `use_charged` field description for charged criteria).",
+			"markdownDescription": "If set, this modifier will apply to the power of the explosion when the entity is charged (See `use_charged` field description for charged criteria)."
+		},
+		"charged_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, these modifiers will apply to the power of the explosion when the entity is charged (See `use_charged` field description for charged criteria).",
+			"markdownDescription": "If set, these modifiers will apply to the power of the explosion when the entity is charged (See `use_charged` field description for charged criteria)."
+		},
+		"spawn_effect_cloud": {
+			"type": "boolean",
+			"default": false,
+			"description": "Determines if the power holder should lose all of their current status effects to create lingering effect clouds with these effects upon exploding.",
+			"markdownDescription": "Determines if the power holder should lose all of their current status effects to create lingering effect clouds with these effects upon exploding."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSummons an explosion at the position of the entity.\n\nType ID: `apugli:explode`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSummons an explosion at the position of the entity.\n\nType ID: `apugli:explode`\n\n\n"
+		}
+	}
+}

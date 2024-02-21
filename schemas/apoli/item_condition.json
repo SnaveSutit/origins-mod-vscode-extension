@@ -479,6 +479,36 @@
 					}
 				}
 			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:base_enchantment"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/item_condition_types/base_enchantment.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:on_cooldown"
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/item_condition_types/on_cooldown.json"
+			}
 		}
 	],
 	"properties": {

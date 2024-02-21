@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/modify_dragon_fireball/",
+	"type": "object",
+	"required": [
+		"duration"
+	],
+	"properties": {
+		"damage_modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"damage_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
+		},
+		"min_radius": {
+			"type": "number"
+		},
+		"max_radius": {
+			"type": "number"
+		},
+		"duration": {
+			"type": "integer"
+		}
+	}
+}

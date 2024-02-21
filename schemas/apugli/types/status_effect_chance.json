@@ -1,0 +1,20 @@
+{
+	"type": "object",
+	"required": [
+		"effect"
+	],
+	"properties": {
+		"effect": {
+			"$ref": "../../apoli/types/autocomplete_helpers/status_effect_identifier.json",
+			"description": "The status effect instance which is used when the chance is successful.",
+			"markdownDescription": "The status effect instance which is used when the chance is successful."
+		},
+		"chance": {
+			"description": "### Requires Apugli mod to be installed!\n\nThe chance for the status effect to trigger.",
+			"markdownDescription": "### Requires Apugli mod to be installed!\n\nThe chance for the status effect to trigger.",
+			"type": "number",
+			"minimum": 0,
+			"default": 1
+		}
+	}
+}

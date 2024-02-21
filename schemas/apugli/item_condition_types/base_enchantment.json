@@ -1,0 +1,29 @@
+{
+	"type": "object",
+	"required": [
+		"enchantment",
+		"compare_to"
+	],
+	"properties": {
+		"enchantment": {
+			"$ref": "../../apoli/types/identifier.json",
+			"description": "The namespace and ID of the enchantment of interest, e.g. `minecraft:protection`.",
+			"markdownDescription": "The namespace and ID of the enchantment of interest, e.g. `minecraft:protection`."
+		},
+		"comparison": {
+			"default": ">=",
+			"$ref": "../../apoli/types/comparison.json",
+			"description": "How to compare the enchantment level to the specified value.",
+			"markdownDescription": "How to compare the enchantment level to the specified value."
+		},
+		"compare_to": {
+			"type": "integer",
+			"description": "The value to compare the enchantment level against.",
+			"markdownDescription": "The value to compare the enchantment level against."
+		},
+		"type": {
+			"description": "\n\n[Item Condition Type](../item_condition_types.md).\n\nChecks the level of an enchantment on an item based purely on item nbt.\n\nType ID: `apugli:base_enchantment`\n\n",
+			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md).\n\nChecks the level of an enchantment on an item based purely on item nbt.\n\nType ID: `apugli:base_enchantment`\n\n"
+		}
+	}
+}

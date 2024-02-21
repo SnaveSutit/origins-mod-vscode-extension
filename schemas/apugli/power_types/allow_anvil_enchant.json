@@ -1,0 +1,40 @@
+{
+	"type": "object",
+	"required": [
+		"item_condition"
+	],
+	"properties": {
+		"enchantment": {
+			"$ref": "../../apoli/types/identifier.json",
+			"description": "If set, this will determine a new enchantment that can be put on an item that meets conditions.If set, this will determine the new enchantments that can be put on an item that meets conditions.",
+			"markdownDescription": "If set, this will determine a new enchantment that can be put on an item that meets conditions.If set, this will determine the new enchantments that can be put on an item that meets conditions."
+		},
+		"enchantments": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/identifier.json"
+			}
+		},
+		"compare_to": {
+			"type": "integer",
+			"default": 0,
+			"description": "The enchantment level of the item in the middle slot of the anvil to check for.",
+			"markdownDescription": "The enchantment level of the item in the middle slot of the anvil to check for."
+		},
+		"comparison": {
+			"default": ">=",
+			"$ref": "../../apoli/types/comparison.json",
+			"description": "The comparison applied the the enchantment level of the item in the middle. If this comparison isn't met, you are unable to enchant the item.",
+			"markdownDescription": "The comparison applied the the enchantment level of the item in the middle. If this comparison isn't met, you are unable to enchant the item."
+		},
+		"item_condition": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The item condition that an item must meet to be able to be enchanted through this power.",
+			"markdownDescription": "The item condition that an item must meet to be able to be enchanted through this power."
+		},
+		"type": {
+			"description": "\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/allow_anvil_enchant)\n\nAllows a `PlayerEntity` to enchant an item with specified enchants that may not have been accessible to an item before.\n\nType ID: `apugli:allow_anvil_enchant`\n\n",
+			"markdownDescription": "\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/allow_anvil_enchant)\n\nAllows a `PlayerEntity` to enchant an item with specified enchants that may not have been accessible to an item before.\n\nType ID: `apugli:allow_anvil_enchant`\n\n"
+		}
+	}
+}

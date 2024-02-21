@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/entity_condition_types/cached_block_in_radius/",
+	"type": "object",
+	"required": [
+		"block_condition",
+		"radius"
+	],
+	"properties": {
+		"block_condition": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"radius": {
+			"type": "integer"
+		},
+		"shape": {
+			"default": "cube",
+			"$ref": "$ref(apoli:types/shape)"
+		},
+		"comparison": {
+			"default": ">=",
+			"$ref": "$ref(apoli:types/comparison)"
+		},
+		"compare_to": {
+			"type": "integer",
+			"default": 1
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"type": "object",
+	"required": [
+		"model"
+	],
+	"properties": {
+		"model": {
+			"type": "string",
+			"enum": [
+				"default",
+				"slim"
+			],
+			"description": "The player model to associate with a player entity. One of `default` or `slim`.",
+			"markdownDescription": "The player model to associate with a player entity. One of `default` or `slim`."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nA power type that sets a player's model type.\n\nType ID: `apugli:player_model_type`\n\n!!! note\n\n    This power will not update the player's texture, so you may be left with transparent pixels as a result of this.\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nA power type that sets a player's model type.\n\nType ID: `apugli:player_model_type`\n\n!!! note\n\n    This power will not update the player's texture, so you may be left with transparent pixels as a result of this.\n\n"
+		}
+	}
+}

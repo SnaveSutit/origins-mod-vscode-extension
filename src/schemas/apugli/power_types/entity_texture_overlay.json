@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/entity_texture_overlay/",
+	"type": "object",
+	"required": [
+		"texture_location"
+	],
+	"properties": {
+		"texture_location": {
+			"$ref": "$ref(apoli:types/autocomplete_helpers/texture_location)"
+		},
+		"texture_url": {
+			"type": "string",
+			"enum": [
+				"texture_location"
+			]
+		},
+		"show_first_person": {
+			"type": "boolean",
+			"default": false
+		},
+		"use_rendering_powers": {
+			"type": "boolean",
+			"default": false
+		},
+		"render_original_model": {
+			"type": "boolean",
+			"default": true
+		},
+		"render_player_outer_layer": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

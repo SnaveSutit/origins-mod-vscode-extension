@@ -1,0 +1,19 @@
+{
+	"type": "object",
+	"properties": {
+		"entity_condition": {
+			"$ref": "../../apoli/entity_condition.json",
+			"description": "If specified, only entities that fulfills this entity condition type will **not** see the name tag label of the entity that has the power.",
+			"markdownDescription": "If specified, only entities that fulfills this entity condition type will **not** see the name tag label of the entity that has the power."
+		},
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "If specified, only entities which fulfills this bi-entity condition type in relation to the entity that has the power will **not** see the name tag label of the entity that has the power.",
+			"markdownDescription": "If specified, only entities which fulfills this bi-entity condition type in relation to the entity that has the power will **not** see the name tag label of the entity that has the power."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents the name tag label of the entity that has the power from rendering.\n\nType ID: `apugli:prevent_label_render`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents the name tag label of the entity that has the power from rendering.\n\nType ID: `apugli:prevent_label_render`\n\n\n"
+		}
+	}
+}

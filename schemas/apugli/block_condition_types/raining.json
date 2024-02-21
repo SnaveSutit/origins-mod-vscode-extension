@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"type": {
+			"description": "\n\n[Block Condition Type](https://apugli.readthedocs.io/en/latest/types/block_condition_types/raining).\n\nChecks whether it's currently raining in the world that the block is ins.\n\nType ID: `apugli:raining`\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](https://apugli.readthedocs.io/en/latest/types/block_condition_types/raining).\n\nChecks whether it's currently raining in the world that the block is ins.\n\nType ID: `apugli:raining`\n\n"
+		}
+	}
+}

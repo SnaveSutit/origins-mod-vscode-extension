@@ -1,0 +1,22 @@
+{
+	"type": "object",
+	"required": [
+		"item_condition"
+	],
+	"properties": {
+		"block_action": {
+			"$ref": "../../apoli/block_action.json",
+			"description": "If specified, this action type will be executed upon placing a block using a certain block item.",
+			"markdownDescription": "If specified, this action type will be executed upon placing a block using a certain block item."
+		},
+		"item_condition": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The block item used for placing a block.",
+			"markdownDescription": "The block item used for placing a block."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an action upon placing a block.\n\nType ID: `apugli:action_on_block_placed`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an action upon placing a block.\n\nType ID: `apugli:action_on_block_placed`\n\n\n"
+		}
+	}
+}

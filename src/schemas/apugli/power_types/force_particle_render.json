@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/force_particle_render/",
+	"type": "object",
+	"properties": {
+		"particle": {
+			"$ref": "$ref(apoli:types/particle_effect)"
+		},
+		"particles": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/particle_effect)"
+			}
+		}
+	}
+}

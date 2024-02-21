@@ -1,4 +1,4 @@
-import { MDFile, pathToUrl, rawGithubUrl } from './mdReader'
+import { MDFile, pathToUrl, originsRawGithubUrl } from './mdReader'
 
 type IDataTypes =
 	| 'Array'
@@ -47,7 +47,7 @@ export class DataType {
 	public url: string
 	private _mdFile: MDFile | undefined
 	constructor(public path: string) {
-		this.url = pathToUrl(rawGithubUrl, path)
+		this.url = pathToUrl(originsRawGithubUrl, path)
 	}
 
 	async getMDFile(): Promise<MDFile> {

@@ -1,0 +1,17 @@
+{
+	"type": "object",
+	"required": [
+		"bientity_condition"
+	],
+	"properties": {
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "The bi-entity condition to test for with the entity as the actor and its attack target as the target.",
+			"markdownDescription": "The bi-entity condition to test for with the entity as the actor and its attack target as the target."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nApplies a bi-entity condition check with an entity as the actor and the attack target of that entity as the target.\n\nType ID: `apugli:attack_target_condition`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nApplies a bi-entity condition check with an entity as the actor and the attack target of that entity as the target.\n\nType ID: `apugli:attack_target_condition`\n\n"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether the entity has moved this tick.\n\nType ID: `apugli:moving`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether the entity has moved this tick.\n\nType ID: `apugli:moving`\n\n"
+		}
+	}
+}

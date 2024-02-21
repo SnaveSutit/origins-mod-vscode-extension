@@ -1,0 +1,40 @@
+{
+	"type": "object",
+	"properties": {
+		"x": {
+			"type": "number",
+			"description": "The x velocity value to use for the comparison.",
+			"markdownDescription": "The x velocity value to use for the comparison."
+		},
+		"y": {
+			"type": "number",
+			"description": "The y velocity value to use for the comparison.",
+			"markdownDescription": "The y velocity value to use for the comparison."
+		},
+		"z": {
+			"type": "number",
+			"description": "The z velocity value to use for the comparison.",
+			"markdownDescription": "The z velocity value to use for the comparison."
+		},
+		"axes": {
+			"type": "array",
+			"description": "The axes that should be used for the comparison.",
+			"markdownDescription": "The axes that should be used for the comparison."
+		},
+		"comparison": {
+			"default": ">=",
+			"$ref": "../../apoli/types/comparison.json",
+			"description": "How the `axes`' velocity should be compared to the specified value.",
+			"markdownDescription": "How the `axes`' velocity should be compared to the specified value."
+		},
+		"compare_to": {
+			"type": "number",
+			"description": "The value for the axes specified in `axes` to compare to.",
+			"markdownDescription": "The value for the axes specified in `axes` to compare to."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks the entity's velocity values.\n\nType ID: `apugli:velocity`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks the entity's velocity values.\n\nType ID: `apugli:velocity`\n\n"
+		}
+	}
+}

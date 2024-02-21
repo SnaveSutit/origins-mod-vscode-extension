@@ -23,6 +23,7 @@
 				}
 			}
 		},
+
 		{
 			"type": "import_file_contents_into_array",
 			"path": "$ref(apoli:meta_condition_types)",
@@ -40,6 +41,25 @@
 					}
 				},
 				"then": "$fileRef"
+			}
+		},
+
+		{
+			"type": "import_files_into_array",
+			"path": "$ref(apugli:damage_condition_types)",
+			"output_key": "allOf",
+			"schema_structure": {
+				"if": {
+					"required": ["type"],
+					"properties": {
+						"type": {
+							"const": "apugli:$fileName"
+						}
+					}
+				},
+				"then": {
+					"$ref": "$fileRef"
+				}
 			}
 		}
 	],

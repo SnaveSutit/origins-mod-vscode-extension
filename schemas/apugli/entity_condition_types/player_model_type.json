@@ -1,0 +1,21 @@
+{
+	"type": "object",
+	"required": [
+		"model_type"
+	],
+	"properties": {
+		"model_type": {
+			"type": "string",
+			"enum": [
+				"default",
+				"slim"
+			],
+			"description": "The model type to check for. Can be either `\"default\"` OR `\"slim`.",
+			"markdownDescription": "The model type to check for. Can be either `\"default\"` OR `\"slim`."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nCheck whether an `AbstractClientPlayerEntity` uses the `DEFAULT` or `SLIM` model type.\n\nType ID: `apugli:player_model_type`\n\n!!! caution\n\n    This condition is only effective client-side. That means any server-sided power types will not work as intended.\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nCheck whether an `AbstractClientPlayerEntity` uses the `DEFAULT` or `SLIM` model type.\n\nType ID: `apugli:player_model_type`\n\n!!! caution\n\n    This condition is only effective client-side. That means any server-sided power types will not work as intended.\n\n"
+		}
+	}
+}

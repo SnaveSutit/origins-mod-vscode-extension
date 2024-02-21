@@ -11,10 +11,7 @@
 			"markdownDescription": "The action to execute."
 		},
 		"side": {
-			"enum": [
-				"client",
-				"server"
-			],
+			"$ref": "../types/side.json",
 			"description": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`",
 			"markdownDescription": "Determines where to execute the specified action type. Accepts `\"client\"` or `\"server\"`"
 		},

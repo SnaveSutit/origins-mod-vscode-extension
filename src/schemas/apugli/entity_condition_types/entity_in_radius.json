@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/entity_condition_types/entity_in_radius/",
+	"type": "object",
+	"required": [
+		"radius"
+	],
+	"properties": {
+		"condition": {
+			"$ref": "$ref(apoli:entity_condition)"
+		},
+		"bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"radius": {
+			"type": "number"
+		},
+		"comparison": {
+			"default": ">=",
+			"$ref": "$ref(apoli:types/comparison)"
+		},
+		"compare_to": {
+			"type": "integer",
+			"default": 1
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"properties": {
+			"comparison": {
+				"default": ">=",
+				"$ref": "../../apoli/types/comparison.json",
+				"description": "How the value should be compared.",
+				"markdownDescription": "How the value should be compared."
+			},
+			"compare_to": {
+				"type": "number",
+				"default": -2147483648,
+				"description": "The value that is compared.",
+				"markdownDescription": "The value that is compared."
+			}
+		}
+	}
+}

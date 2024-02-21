@@ -35,8 +35,8 @@
 			"markdownDescription": "Which active key this power should respond to."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nProvides an inventory that can be opened with the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/inventory); may or may not persist on death.\n\nType ID: `origins:inventory`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nProvides an inventory that can be opened with the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/inventory); may or may not persist on death.\n\nType ID: `origins:inventory`\n\n\n"
+			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/inventory)\n\nProvides an inventory that can be opened with the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/inventory); may or may not persist on death.\n\nType ID: `origins:inventory`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/inventory)\n\nProvides an inventory that can be opened with the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/inventory); may or may not persist on death.\n\nType ID: `origins:inventory`\n\n\n"
 		}
 	}
 }

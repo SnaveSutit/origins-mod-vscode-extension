@@ -1512,6 +1512,26 @@
 				"properties": {
 					"type": {
 						"enum": [
+							"apoli:multiple",
+							"origins:multiple"
+						],
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "power_types/multiple.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"enum": [
 							"apoli:night_vision",
 							"origins:night_vision"
 						],
@@ -2282,6 +2302,975 @@
 			},
 			"then": {
 				"$ref": "power_types/walk_on_fluid.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_attacker_hurt",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_attacker_hurt.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_block_placed",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_block_placed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_bonemeal",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_bonemeal.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_durability_change",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_durability_change.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_equip",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_equip.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_harm",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_harm.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_jump",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_jump.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_projectile_hit",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_projectile_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_tame_hit",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_tame_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_target_death",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_target_death.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_on_target_hurt",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_on_target_hurt.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_when_harmed",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_when_harmed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_when_lightning_struck",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_when_lightning_struck.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_when_projectile_hit",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_when_projectile_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:action_when_tame_hit",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/action_when_tame_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:aerial_affinity",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/aerial_affinity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:allow_anvil_enchant",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/allow_anvil_enchant.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:bunny_hop",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/bunny_hop.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:client_action_over_time",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/client_action_over_time.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:custom_death_sound",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/custom_death_sound.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:custom_footstep",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/custom_footstep.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:custom_hurt_sound",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/custom_hurt_sound.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:custom_projectile",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/custom_projectile.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:damage_nearby_on_hit",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/damage_nearby_on_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:damage_nearby_when_hit",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/damage_nearby_when_hit.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:edible_item",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/edible_item.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:energy_swirl",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/energy_swirl.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:entity_texture_overlay",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/entity_texture_overlay.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:force_particle_render",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/force_particle_render.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:freeze",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/freeze.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:hover",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/hover.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:instant_effect_immunity",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/instant_effect_immunity.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:invert_instant_effects",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/invert_instant_effects.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:mobs_ignore",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/mobs_ignore.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_block_placed",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_block_placed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_breeding_cooldown",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_breeding_cooldown.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_dragon_fireball",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_dragon_fireball.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_durability_change",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_durability_change.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_enchantment_damage_dealt",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_enchantment_damage_dealt.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_enchantment_damage_taken",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_enchantment_damage_taken.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_enchantment_level",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_enchantment_level.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_equipped_item_render",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_equipped_item_render.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_fov",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_fov.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_scale",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_scale.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:modify_soul_speed",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/modify_soul_speed.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:player_model_type",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/player_model_type.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:prevent_bee_anger",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/prevent_bee_anger.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:prevent_breeding",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/prevent_breeding.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:prevent_label_render",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/prevent_label_render.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:prevent_movement_checks",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/prevent_movement_checks.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:prevent_sound",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/prevent_sound.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:projectile_action_over_time",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/projectile_action_over_time.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:redirect_lightning",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/redirect_lightning.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:rocket_jump",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/rocket_jump.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:set_texture",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/set_texture.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:sprinting",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/sprinting.json"
+			}
+		},
+		{
+			"if": {
+				"required": [
+					"type"
+				],
+				"properties": {
+					"type": {
+						"const": "apugli:step_height",
+						"description": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power).",
+						"markdownDescription": "The namespace and ID of the desired [Power Type](https://origins.readthedocs.io/en/latest/json/power)."
+					}
+				}
+			},
+			"then": {
+				"$ref": "../apugli/power_types/step_height.json"
 			}
 		}
 	]

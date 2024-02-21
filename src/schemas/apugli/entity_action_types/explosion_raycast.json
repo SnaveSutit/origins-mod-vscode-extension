@@ -1,0 +1,113 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/entity_action_types/explosion_raycast/",
+	"type": "object",
+	"required": [
+		"power"
+	],
+	"properties": {
+		"particle": {
+			"$ref": "$ref(apoli:types/particle_effect)"
+		},
+		"spacing": {
+			"type": "number",
+			"default": 0.5
+		},
+		"direction": {
+			"$ref": "$ref(apoli:types/vector)"
+		},
+		"space": {
+			"default": "world",
+			"$ref": "$ref(apoli:types/space)"
+		},
+		"power": {
+			"type": "number"
+		},
+		"block_action": {
+			"$ref": "$ref(apoli:block_action)"
+		},
+		"bientity_action": {
+			"$ref": "$ref(apoli:bientity_action)"
+		},
+		"action_on_hit": {
+			"$ref": "$ref(apoli:entity_action)"
+		},
+		"destruction_type": {
+			"type": "string",
+			"default": "break",
+			"enum": [
+				"destroy",
+				"break",
+				"none"
+			]
+		},
+		"damage_self": {
+			"type": "boolean",
+			"default": true
+		},
+		"indestructible": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"destructible": {
+			"$ref": "$ref(apoli:block_condition)"
+		},
+		"create_fire": {
+			"type": "boolean",
+			"default": false
+		},
+		"damage_modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"damage_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
+		},
+		"knockback_modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"knockback_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
+		},
+		"volume_modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"volume_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
+		},
+		"pitch_modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"pitch_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
+		},
+		"targetable_bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"explosion_damage_bientity_condition": {
+			"$ref": "$ref(apoli:bientity_condition)"
+		},
+		"charged_condition": {
+			"$ref": "$ref(apoli:entity_condition)"
+		},
+		"charged_modifier": {
+			"$ref": "$ref(apoli:types/attribute_modifier)"
+		},
+		"charged_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/attribute_modifier)"
+			}
+		}
+	}
+}

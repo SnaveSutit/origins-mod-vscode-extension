@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/entity_action_types/resource_transfer/",
+	"type": "object",
+	"required": [
+		"resource",
+		"provider"
+	],
+	"properties": {
+		"resource": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"provider": {
+			"$ref": "$ref(apoli:types/identifier)"
+		}
+	}
+}

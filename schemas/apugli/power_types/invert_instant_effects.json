@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nInverts the effects of the Instant Health and Instant Damage status effects.\n\nType ID: `apugli:invert_instant_effects`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nInverts the effects of the Instant Health and Instant Damage status effects.\n\nType ID: `apugli:invert_instant_effects`\n\n"
+		}
+	}
+}

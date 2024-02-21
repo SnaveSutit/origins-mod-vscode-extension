@@ -69,8 +69,12 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 				for (const field of mdFile.fields) {
 					if (!propObj[field.name]) continue
 					foundFields.push(field.name)
-					propObj[field.name].markdownDescription = propObj[field.name].description =
-						field.description
+					propObj[field.name].description
+						? (propObj[field.name].description += field.description)
+						: (propObj[field.name].description = field.description)
+					propObj[field.name].markdownDescription
+						? (propObj[field.name].markdownDescription += field.description)
+						: (propObj[field.name].markdownDescription = field.description)
 				}
 			}
 			for (const field of mdFile.fields) {
@@ -278,6 +282,10 @@ async function build(schemasToBuild: string[]) {
 
 	for (const schemaPath of schemasToBuild) {
 		buildProgress?.startItem(schemaPath)
+		if (!fsSync.existsSync(schemaPath)) {
+			buildProgress?.itemDone(schemaPath)
+			continue
+		}
 		const outPath = schemaPath.replace(SRC_DIR, OUT_DIR)
 		const fileName = pathjs.basename(outPath)
 		// term.brightCyan(`\nProcessing `).brightBlue(fileName).gray(` (${outPath})`)('\n')
@@ -411,11 +419,13 @@ async function main() {
 			await build(paths)
 				.then(() => {
 					term.brightGreen('Watching for changes...\n')
-					working = false
 				})
 				.catch(e => {
 					term.brightRed('Failed to build schemas:\n  ').brightRed(e)('\n').brightRed(e.stack)('\n')
 					lastBuildErrored = true
+				})
+				.finally(() => {
+					working = false
 				})
 		}
 	}, 250)

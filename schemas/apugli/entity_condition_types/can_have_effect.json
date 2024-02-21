@@ -1,0 +1,17 @@
+{
+	"type": "object",
+	"required": [
+		"effect"
+	],
+	"properties": {
+		"effect": {
+			"$ref": "../../apoli/types/autocomplete_helpers/status_effect_identifier.json",
+			"description": "ID of the status effect the condition should check.",
+			"markdownDescription": "ID of the status effect the condition should check."
+		},
+		"type": {
+			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether the entity isn't immune to the specified status effect.\n\nType ID: `apugli:can_have_effect`\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether the entity isn't immune to the specified status effect.\n\nType ID: `apugli:can_have_effect`\n\n"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"type": "object",
+	"properties": {
+		"block_action": {
+			"$ref": "../../apoli/block_action.json",
+			"description": "If specified, execute this action at the block the Bonemeal is applied on.",
+			"markdownDescription": "If specified, execute this action at the block the Bonemeal is applied on."
+		},
+		"self_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "If specified, execute this action on the entity that applied the Bonemeal on a block.",
+			"markdownDescription": "If specified, execute this action on the entity that applied the Bonemeal on a block."
+		},
+		"block_condition": {
+			"$ref": "../../apoli/block_condition.json",
+			"description": "If specified, only execute the specified action(s) if the block the Bonemeal is applied on fulfills this condition.",
+			"markdownDescription": "If specified, only execute the specified action(s) if the block the Bonemeal is applied on fulfills this condition."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecute actions upon applying a Bonemeal to a block.\n\nType ID: `apugli:action_on_bonemeal`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute actions upon applying a Bonemeal to a block.\n\nType ID: `apugli:action_on_bonemeal`\n\n\n"
+		}
+	}
+}

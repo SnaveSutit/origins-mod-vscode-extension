@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/data_types/comparison_map/",
+	"type": "array",
+	"items": {
+		"type": "object",
+		"properties": {
+			"comparison": {
+				"default": ">=",
+				"$ref": "$ref(apoli:types/comparison)"
+			},
+			"compare_to": {
+				"type": "number",
+				"default": -2147483648
+			}
+		}
+	}
+}

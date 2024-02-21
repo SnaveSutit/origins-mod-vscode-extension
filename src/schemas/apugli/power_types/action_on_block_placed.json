@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/action_on_block_placed/",
+	"type": "object",
+	"required": [
+		"item_condition"
+	],
+	"properties": {
+		"block_action": {
+			"$ref": "$ref(apoli:block_action)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		}
+	}
+}

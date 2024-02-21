@@ -1,0 +1,49 @@
+{
+	"type": "object",
+	"properties": {
+		"slot": {
+			"$ref": "../../apoli/types/slot.json",
+			"description": "If specified, the action will only execute on this equipment slot. One of: `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`.",
+			"markdownDescription": "If specified, the action will only execute on this equipment slot. One of: `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`."
+		},
+		"item_condition": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "If set, the item condition to check for before executing the action on the damaged item. If not set this is true all the time.",
+			"markdownDescription": "If set, the item condition to check for before executing the action on the damaged item. If not set this is true all the time."
+		},
+		"increase_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "If set, these action(s) will be executed on the power holder when an item that meets the condition's durability increases.",
+			"markdownDescription": "If set, these action(s) will be executed on the power holder when an item that meets the condition's durability increases."
+		},
+		"decrease_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "If set, these action(s) will be executed on the power holder when an item that meets the condition's durability decreases.",
+			"markdownDescription": "If set, these action(s) will be executed on the power holder when an item that meets the condition's durability decreases."
+		},
+		"break_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "If set, these action(s) will be executed on the power holder when an item that meets the condition breaks.",
+			"markdownDescription": "If set, these action(s) will be executed on the power holder when an item that meets the condition breaks."
+		},
+		"increase_item_action": {
+			"$ref": "../../apoli/item_action.json",
+			"description": "If set, these action(s) will be executed on a condition meeting item when its durability increases.",
+			"markdownDescription": "If set, these action(s) will be executed on a condition meeting item when its durability increases."
+		},
+		"decrease_item_action": {
+			"$ref": "../../apoli/item_action.json",
+			"description": "If set, these action(s) will be executed on a condition meeting item when its durability decreases.",
+			"markdownDescription": "If set, these action(s) will be executed on a condition meeting item when its durability decreases."
+		},
+		"break_item_action": {
+			"$ref": "../../apoli/item_action.json",
+			"description": "If set, these action(s) will be executed on a condition meeting item when its durability decreases.",
+			"markdownDescription": "If set, these action(s) will be executed on a condition meeting item when its durability decreases."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nExecutes entity actions whenever an item either gains durability, loses durability or breaks.\n\nType ID: `apugli:action_on_durability_change`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nExecutes entity actions whenever an item either gains durability, loses durability or breaks.\n\nType ID: `apugli:action_on_durability_change`\n\n"
+		}
+	}
+}

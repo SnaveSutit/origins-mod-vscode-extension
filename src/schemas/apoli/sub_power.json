@@ -12,25 +12,45 @@
 		"badges"
 	],
 
-	"$IMPORT": {
-		"type": "import_files_into_array",
-		"path": "$ref(apoli:power_types)",
-		"output_key": "allOf",
-		"exclude": ["multiple"],
-		"schema_structure": {
-			"if": {
-				"required": ["type"],
-				"properties": {
-					"type": {
-						"enum": ["apoli:$fileName", "origins:$fileName"]
+	"$IMPORT": [
+		{
+			"type": "import_files_into_array",
+			"path": "$ref(apoli:power_types)",
+			"output_key": "allOf",
+			"schema_structure": {
+				"if": {
+					"required": ["type"],
+					"properties": {
+						"type": {
+							"enum": ["apoli:$fileName", "origins:$fileName"]
+						}
 					}
+				},
+				"then": {
+					"$ref": "$fileRef"
 				}
-			},
-			"then": {
-				"$ref": "$fileRef"
+			}
+		},
+
+		{
+			"type": "import_files_into_array",
+			"path": "$ref(apugli:power_types)",
+			"output_key": "allOf",
+			"schema_structure": {
+				"if": {
+					"required": ["type"],
+					"properties": {
+						"type": {
+							"const": "apugli:$fileName"
+						}
+					}
+				},
+				"then": {
+					"$ref": "$fileRef"
+				}
 			}
 		}
-	},
+	],
 
 	"allOf": []
 }

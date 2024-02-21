@@ -1,0 +1,42 @@
+{
+	"type": "object",
+	"required": [
+		"action"
+	],
+	"properties": {
+		"head": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The condition that the `head` slot item must meet to run the action.",
+			"markdownDescription": "The condition that the `head` slot item must meet to run the action."
+		},
+		"chest": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The condition that the `chest` slot item must meet to run the action.",
+			"markdownDescription": "The condition that the `chest` slot item must meet to run the action."
+		},
+		"legs": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The condition that the `legs` slot item must meet to run the action.",
+			"markdownDescription": "The condition that the `legs` slot item must meet to run the action."
+		},
+		"feet": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The condition that the `feet` slot item must meet to run the action.",
+			"markdownDescription": "The condition that the `feet` slot item must meet to run the action."
+		},
+		"offhand": {
+			"$ref": "../../apoli/item_condition.json",
+			"description": "The condition that the `offhand` slot item must meet to run the action.",
+			"markdownDescription": "The condition that the `offhand` slot item must meet to run the action."
+		},
+		"action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "Action to apply when an item that meets any stated conditions are met.",
+			"markdownDescription": "Action to apply when an item that meets any stated conditions are met."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md).\n\nExecutes an action when an item is equipped.\n\nType ID: `apugli:action_on_equip`\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nExecutes an action when an item is equipped.\n\nType ID: `apugli:action_on_equip`\n\n"
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"type": "object",
+	"properties": {
+		"interval": {
+			"type": "integer",
+			"default": 20,
+			"description": "The interval at which the power's action(s) trigger.",
+			"markdownDescription": "The interval at which the power's action(s) trigger."
+		},
+		"bientity_action": {
+			"$ref": "../../apoli/bientity_action.json",
+			"description": "A bi-entity action that is run with the power holder as the actor and the projectile as the target each interval.",
+			"markdownDescription": "A bi-entity action that is run with the power holder as the actor and the projectile as the target each interval."
+		},
+		"rising_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "A bi-entity action that is run with the power holder as the actor and the projectile as the target as soon as the power's bi-entity condition becomes true.",
+			"markdownDescription": "A bi-entity action that is run with the power holder as the actor and the projectile as the target as soon as the power's bi-entity condition becomes true."
+		},
+		"falling_action": {
+			"$ref": "../../apoli/entity_action.json",
+			"description": "A bi-entity action that is run with the power holder as the actor and the projectile as the target as soon as the power's bi-entity condition becomes false.",
+			"markdownDescription": "A bi-entity action that is run with the power holder as the actor and the projectile as the target as soon as the power's bi-entity condition becomes false."
+		},
+		"bientity_condition": {
+			"$ref": "../../apoli/bientity_condition.json",
+			"description": "A bi-entity condition that must be met with the power holder as the actor and the projectile as the target for this power to be run.",
+			"markdownDescription": "A bi-entity condition that must be met with the power holder as the actor and the projectile as the target for this power to be run."
+		},
+		"type": {
+			"description": "\n\n[Power Type](../power_types.md)\n\nExecute actions upon landing a projectile on a target.\n\nType ID: `apugli:projectile_action_over_time`\n\n\n",
+			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute actions upon landing a projectile on a target.\n\nType ID: `apugli:projectile_action_over_time`\n\n\n"
+		}
+	}
+}

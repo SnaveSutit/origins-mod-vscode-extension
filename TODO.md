@@ -7,5 +7,3 @@
 - [x] Add autocompletion for particles, sounds, entities, blocks, and items.
 - [x] Add more autocompletion for string enums.
 - [ ] Add caching to the mdreader to speed up the build process.
-
-

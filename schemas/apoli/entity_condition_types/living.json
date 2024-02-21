@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks if the entity is an instance of [`LivingEntity`](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living), or in simple terms, a mob or a player.\n\nType ID: `origins:living`\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks if the entity is an instance of [`LivingEntity`](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living), or in simple terms, a mob or a player.\n\nType ID: `origins:living`\n\n\n"
+			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living)\n\nChecks if the entity is an instance of [`LivingEntity`](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living), or in simple terms, a mob or a player.\n\nType ID: `origins:living`\n\n\n",
+			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living)\n\nChecks if the entity is an instance of [`LivingEntity`](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living), or in simple terms, a mob or a player.\n\nType ID: `origins:living`\n\n\n"
 		}
 	}
 }

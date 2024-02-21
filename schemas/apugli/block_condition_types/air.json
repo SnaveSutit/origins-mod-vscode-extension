@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"type": {
+			"description": "\n\n[Block Condition Type](https://apugli.readthedocs.io/en/latest/types/block_condition_types/air).\n\nChecks whether the block is a type of air (`minecraft:air`, `minecraft:cave_air`, etc). \n\nType ID: `apugli:air`\n\n",
+			"markdownDescription": "\n\n[Block Condition Type](https://apugli.readthedocs.io/en/latest/types/block_condition_types/air).\n\nChecks whether the block is a type of air (`minecraft:air`, `minecraft:cave_air`, etc). \n\nType ID: `apugli:air`\n\n"
+		}
+	}
+}

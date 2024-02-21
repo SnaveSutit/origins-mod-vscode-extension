@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/allow_anvil_enchant/",
+	"type": "object",
+	"required": [
+		"item_condition"
+	],
+	"properties": {
+		"enchantment": {
+			"$ref": "$ref(apoli:types/identifier)"
+		},
+		"enchantments": {
+			"type": "array",
+			"items": {
+				"$ref": "$ref(apoli:types/identifier)"
+			}
+		},
+		"compare_to": {
+			"type": "integer",
+			"default": 0
+		},
+		"comparison": {
+			"default": ">=",
+			"$ref": "$ref(apoli:types/comparison)"
+		},
+		"item_condition": {
+			"$ref": "$ref(apoli:item_condition)"
+		}
+	}
+}

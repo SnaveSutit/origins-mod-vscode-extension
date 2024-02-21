@@ -10,8 +10,8 @@
 			"markdownDescription": "The command to execute on the entity."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/execute_command)\n\nExecutes a command with the entity as the source (i.e. `@s` will select the entity itself).\n\nType ID: `origins:execute_command`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/execute_command)\n\nExecutes a command with the entity as the source (i.e. `@s` will select the entity itself).\n\nType ID: `origins:execute_command`\n\n\n"
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExecutes a command with the entity as the source (i.e. `@s` will select the entity itself).\n\nType ID: `origins:execute_command`\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nExecutes a command with the entity as the source (i.e. `@s` will select the entity itself).\n\nType ID: `origins:execute_command`\n\n\n"
 		}
 	}
 }

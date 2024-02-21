@@ -1,0 +1,33 @@
+{
+	"type": "object",
+	"required": [
+		"particle"
+	],
+	"properties": {
+		"block_action": {
+			"$ref": "../../apoli/block_action.json",
+			"description": "If set, the block action to be executed on blocks targeted by this raycast.",
+			"markdownDescription": "If set, the block action to be executed on blocks targeted by this raycast."
+		},
+		"block_condition": {
+			"$ref": "../../apoli/block_condition.json",
+			"description": "If set, the block condition that must be met by any block that is targeted in order to do actions on it.",
+			"markdownDescription": "If set, the block condition that must be met by any block that is targeted in order to do actions on it."
+		},
+		"particle": {
+			"$ref": "../../apoli/types/particle_effect.json",
+			"description": "The particle effect that is displayed on the ray.",
+			"markdownDescription": "The particle effect that is displayed on the ray."
+		},
+		"spacing": {
+			"type": "number",
+			"default": 0.5,
+			"description": "If there is a particle effect, the spacing between the particles displayed on the ray.",
+			"markdownDescription": "If there is a particle effect, the spacing between the particles displayed on the ray."
+		},
+		"type": {
+			"description": "\n\n[Bi-entity Action Type](../bientity_action_types.md).\n\nRaycasts to the target entity from the actor entity.\n\nType ID: `apugli:raycast_between`\n\n",
+			"markdownDescription": "\n\n[Bi-entity Action Type](../bientity_action_types.md).\n\nRaycasts to the target entity from the actor entity.\n\nType ID: `apugli:raycast_between`\n\n"
+		}
+	}
+}

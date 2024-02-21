@@ -1,0 +1,52 @@
+{
+	"type": "object",
+	"required": [
+		"particle",
+		"count"
+	],
+	"properties": {
+		"particle": {
+			"$ref": "../../apoli/types/particle_effect.json",
+			"description": "The particle type that will be spawned.",
+			"markdownDescription": "The particle type that will be spawned."
+		},
+		"count": {
+			"type": "integer",
+			"description": "How much of the specified particle type will be spawned.",
+			"markdownDescription": "How much of the specified particle type will be spawned."
+		},
+		"speed": {
+			"type": "number",
+			"default": 0,
+			"description": "Determines the speed of the specified particle type.",
+			"markdownDescription": "Determines the speed of the specified particle type."
+		},
+		"force": {
+			"type": "boolean",
+			"default": false,
+			"description": "If set to `true`, the specified particle type that will be spawned can be seen from a far distance.",
+			"markdownDescription": "If set to `true`, the specified particle type that will be spawned can be seen from a far distance."
+		},
+		"velocity": {
+			"$ref": "../../apoli/types/vector.json",
+			"description": "If set, determines the velocity of the particle. Overrides the `speed` field if set.",
+			"markdownDescription": "If set, determines the velocity of the particle. Overrides the `speed` field if set."
+		},
+		"spread": {
+			"default": "{\"x\": 0.5, \"y\": 0.25, \"z\": 0.5}",
+			"$ref": "../../apoli/types/vector.json",
+			"description": "Determines the size of the three-dimensional cuboid volume to spawn the specified particle type in.",
+			"markdownDescription": "Determines the size of the three-dimensional cuboid volume to spawn the specified particle type in."
+		},
+		"offset_y": {
+			"type": "number",
+			"default": 0.5,
+			"description": "The offset of where the particle will be centered in the Y axis.",
+			"markdownDescription": "The offset of where the particle will be centered in the Y axis."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](../entity_action_types.md).\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `apugli:spawn_particles`\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md).\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `apugli:spawn_particles`\n\n"
+		}
+	}
+}

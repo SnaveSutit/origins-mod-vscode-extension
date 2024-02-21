@@ -1,0 +1,103 @@
+{
+	"type": "object",
+	"properties": {
+		"x": {
+			"type": "number",
+			"default": 0,
+			"description": "The amount of velocity to add on the x-axis.",
+			"markdownDescription": "The amount of velocity to add on the x-axis."
+		},
+		"y": {
+			"type": "number",
+			"default": 0,
+			"description": "The amount of velocity to add on the y-axis.",
+			"markdownDescription": "The amount of velocity to add on the y-axis."
+		},
+		"z": {
+			"type": "number",
+			"default": 0,
+			"description": "The amount of velocity to add on the z-axis.",
+			"markdownDescription": "The amount of velocity to add on the z-axis."
+		},
+		"horizontal_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, a modifier to apply to the horizontal velocity of this actio prior to adding the velocity of the entity.",
+			"markdownDescription": "If set, a modifier to apply to the horizontal velocity of this actio prior to adding the velocity of the entity."
+		},
+		"horizontal_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, modifiers to apply to the horizontal velocity of this action prior to adding the velocity of the entity..",
+			"markdownDescription": "If set, modifiers to apply to the horizontal velocity of this action prior to adding the velocity of the entity.."
+		},
+		"vertical_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, a modifier to apply to the vertical velocity of this action prior to adding the velocity of the entity.",
+			"markdownDescription": "If set, a modifier to apply to the vertical velocity of this action prior to adding the velocity of the entity."
+		},
+		"vertical_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, modifiers to apply to the vertical velocity of this action prior to adding the velocity of the entity.",
+			"markdownDescription": "If set, modifiers to apply to the vertical velocity of this action prior to adding the velocity of the entity."
+		},
+		"horizontal_post_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, a modifier to apply to the horizontal velocity of this action after adding the velocity of the entity.",
+			"markdownDescription": "If set, a modifier to apply to the horizontal velocity of this action after adding the velocity of the entity."
+		},
+		"horizontal_post_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, modifiers to apply to the horizontal velocity of this action after adding the velocity of the entity..",
+			"markdownDescription": "If set, modifiers to apply to the horizontal velocity of this action after adding the velocity of the entity.."
+		},
+		"vertical_post_modifier": {
+			"$ref": "../../apoli/types/attribute_modifier.json",
+			"description": "If set, a modifier to apply to the vertical velocity of this action after adding the velocity of the entity.",
+			"markdownDescription": "If set, a modifier to apply to the vertical velocity of this action after adding the velocity of the entity."
+		},
+		"vertical_post_modifiers": {
+			"type": "array",
+			"items": {
+				"$ref": "../../apoli/types/attribute_modifier.json"
+			},
+			"description": "If set, modifiers to apply to the vertical velocity of this action after adding the velocity of the entity.",
+			"markdownDescription": "If set, modifiers to apply to the vertical velocity of this action after adding the velocity of the entity."
+		},
+		"space": {
+			"type": "space",
+			"default": "world",
+			"description": "The space to perform the addition/setting of velocity in.",
+			"markdownDescription": "The space to perform the addition/setting of velocity in."
+		},
+		"client": {
+			"type": "boolean",
+			"default": true,
+			"description": "If this is false, the action will not execute on the client.",
+			"markdownDescription": "If this is false, the action will not execute on the client."
+		},
+		"server": {
+			"type": "boolean",
+			"default": true,
+			"description": "If this is false, the action will not execute on the server.",
+			"markdownDescription": "If this is false, the action will not execute on the server."
+		},
+		"set": {
+			"type": "boolean",
+			"default": false,
+			"description": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it.",
+			"markdownDescription": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it."
+		},
+		"type": {
+			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nAdds or sets velocity towards a specific direction and also allows you to modify said velocity using modifiers.\n\nType ID: `apugli:add_velocity`\n\n!!! note\n\n    If the entity action type behaves unexpectedly, try setting either the `client` (should always work) or `server` (might not work) boolean fields to `false`. [Here are some examples.](https://apugli.readthedocs.io/en/latest/types/entity_action_types/add_velocity)\n\n\n",
+			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nAdds or sets velocity towards a specific direction and also allows you to modify said velocity using modifiers.\n\nType ID: `apugli:add_velocity`\n\n!!! note\n\n    If the entity action type behaves unexpectedly, try setting either the `client` (should always work) or `server` (might not work) boolean fields to `false`. [Here are some examples.](https://apugli.readthedocs.io/en/latest/types/entity_action_types/add_velocity)\n\n\n"
+		}
+	}
+}

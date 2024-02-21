@@ -1,0 +1,42 @@
+{
+	"type": "object",
+	"properties": {
+		"burn_time": {
+			"type": "integer",
+			"default": 1600,
+			"description": "The number of ticks that a furnace is lit for.",
+			"markdownDescription": "The number of ticks that a furnace is lit for."
+		},
+		"brew_time": {
+			"type": "integer",
+			"default": 20,
+			"description": "The amount of fuel given to a brewing stand upon use.",
+			"markdownDescription": "The amount of fuel given to a brewing stand upon use."
+		},
+		"light_campfire": {
+			"type": "boolean",
+			"default": true,
+			"description": "Whether this action should light up campfires.",
+			"markdownDescription": "Whether this action should light up campfires."
+		},
+		"particle": {
+			"$ref": "../../apoli/types/autocomplete_helpers/particle_identifier.json",
+			"description": "ID of the particle type to use.",
+			"markdownDescription": "ID of the particle type to use."
+		},
+		"particle_count": {
+			"type": "integer",
+			"description": "The amount of particles to spawn when the block lights up.",
+			"markdownDescription": "The amount of particles to spawn when the block lights up."
+		},
+		"sound": {
+			"$ref": "../../apoli/types/autocomplete_helpers/sound_identifier.json",
+			"description": "ID of the sound to play when the block lights up.",
+			"markdownDescription": "ID of the sound to play when the block lights up."
+		},
+		"type": {
+			"description": "\n\n[Block Action Type](../block_action_types.md).\n\nA block action that lights up furnaces, campfires and brewing stands.\n\nType ID: `apugli:light_up`\n\n",
+			"markdownDescription": "\n\n[Block Action Type](../block_action_types.md).\n\nA block action that lights up furnaces, campfires and brewing stands.\n\nType ID: `apugli:light_up`\n\n"
+		}
+	}
+}

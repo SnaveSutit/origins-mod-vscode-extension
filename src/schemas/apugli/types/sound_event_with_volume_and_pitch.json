@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema#",
+	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/data_types/sound_event_with_volume_and_pitch/",
+	"type": "object",
+	"properties": {
+		"sound": {
+			"$ref": "$ref(apoli:types/autocomplete_helpers/sound_identifier)"
+		},
+		"volume": {
+			"type": "number",
+			"minimum": 0,
+			"default": 1
+		},
+		"pitch": {
+			"type": "number",
+			"minimum": 0,
+			"maximum": 2,
+			"default": 1
+		}
+	}
+}
