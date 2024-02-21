@@ -8,6 +8,7 @@
 				"output_key": "enum",
 				"schema_structure": "minecraft:$item"
 			},
+			"type": "string",
 			"enum": []
 		},
 		{

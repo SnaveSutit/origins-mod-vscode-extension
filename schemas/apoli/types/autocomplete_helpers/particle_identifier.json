@@ -1,6 +1,7 @@
 {
 	"anyOf": [
 		{
+			"type": "string",
 			"enum": [
 				"minecraft:ambient_entity_effect",
 				"minecraft:angry_villager",

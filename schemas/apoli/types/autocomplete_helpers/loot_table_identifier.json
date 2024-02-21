@@ -1,6 +1,7 @@
 {
 	"anyOf": [
 		{
+			"type": "string",
 			"enum": [
 				"minecraft:archaeology/desert_pyramid",
 				"minecraft:archaeology/desert_well",

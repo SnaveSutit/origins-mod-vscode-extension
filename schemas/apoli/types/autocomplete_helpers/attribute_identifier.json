@@ -1,6 +1,7 @@
 {
 	"anyOf": [
 		{
+			"type": "string",
 			"enum": [
 				"minecraft:generic.armor",
 				"minecraft:generic.armor_toughness",

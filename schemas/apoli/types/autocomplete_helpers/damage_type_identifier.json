@@ -1,6 +1,7 @@
 {
 	"anyOf": [
 		{
+			"type": "string",
 			"enum": [
 				"minecraft:arrow",
 				"minecraft:bad_respawn_point",

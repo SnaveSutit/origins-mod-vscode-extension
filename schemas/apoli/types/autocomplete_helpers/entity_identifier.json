@@ -1,6 +1,7 @@
 {
 	"anyOf": [
 		{
+			"type": "string",
 			"enum": [
 				"minecraft:allay",
 				"minecraft:area_effect_cloud",

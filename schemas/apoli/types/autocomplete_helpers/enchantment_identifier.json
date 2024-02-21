@@ -1,6 +1,7 @@
 {
 	"anyOf": [
 		{
+			"type": "string",
 			"enum": [
 				"minecraft:aqua_affinity",
 				"minecraft:bane_of_arthropods",

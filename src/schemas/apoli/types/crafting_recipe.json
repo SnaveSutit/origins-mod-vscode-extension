@@ -9,6 +9,7 @@
 		},
 		"result": {
 			"type": "object",
+			"required": ["item"],
 			"properties": {
 				"item": {
 					"$ref": "$ref(apoli:types/autocomplete_helpers/item_identifier)"

@@ -1,6 +1,7 @@
 {
 	"anyOf": [
 		{
+			"type": "string",
 			"enum": [
 				"minecraft:ambient.basalt_deltas.additions",
 				"minecraft:ambient.basalt_deltas.loop",

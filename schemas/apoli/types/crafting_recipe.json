@@ -13,6 +13,9 @@
 		},
 		"result": {
 			"type": "object",
+			"required": [
+				"item"
+			],
 			"properties": {
 				"item": {
 					"$ref": "autocomplete_helpers/item_identifier.json"
