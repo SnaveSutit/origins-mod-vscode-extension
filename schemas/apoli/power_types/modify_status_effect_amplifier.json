@@ -28,8 +28,8 @@
 			"markdownDescription": "If specified, these modifiers will be applied to the amplifier of the specified status effect(s)."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the amplifier of the specified status effect upon receiving the specified status effect.\n\nType ID: `origins:modify_status_effect_amplifier`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the amplifier of the specified status effect upon receiving the specified status effect.\n\nType ID: `origins:modify_status_effect_amplifier`\n\n\n"
+			"description": "## Modify Status Effect Amplifier\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_status_effect_amplifier)\n\nModifies the amplifier of the specified status effect upon receiving the specified status effect.\n\nType ID: `origins:modify_status_effect_amplifier`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_status_effect_amplifier\",\n    \"status_effect\": \"minecraft:speed\",\n    \"modifier\": {\n        \"operation\": \"add_base_early\",\n        \"value\": 1\n    }\n}\n```\n\nThis example will modify the amplifier of the Speed status effect to have a 1 level increase, making the entity that has the power receive Speed II if the entity were to receive Speed I, etc.\n",
+			"markdownDescription": "undefined## Modify Status Effect Amplifier\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_status_effect_amplifier)\n\nModifies the amplifier of the specified status effect upon receiving the specified status effect.\n\nType ID: `origins:modify_status_effect_amplifier`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_status_effect_amplifier\",\n    \"status_effect\": \"minecraft:speed\",\n    \"modifier\": {\n        \"operation\": \"add_base_early\",\n        \"value\": 1\n    }\n}\n```\n\nThis example will modify the amplifier of the Speed status effect to have a 1 level increase, making the entity that has the power receive Speed II if the entity were to receive Speed I, etc.\n"
 		}
 	}
 }

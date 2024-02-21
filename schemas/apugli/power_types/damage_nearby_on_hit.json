@@ -4,6 +4,10 @@
 		"damage_type"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Damage Nearby On Hit\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/damage_nearby_on_hit)\n\nDamages other nearby entities with the initial hit's damage upon damaging a target.\n\nType ID: `apugli:damage_nearby_on_hit`\n\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Damage Nearby On Hit\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/damage_nearby_on_hit)\n\nDamages other nearby entities with the initial hit's damage upon damaging a target.\n\nType ID: `apugli:damage_nearby_on_hit`\n\n\n\n\n---\n\n"
+		},
 		"damage_condition": {
 			"$ref": "../../apoli/damage_condition.json",
 			"description": "If specified, the damage condition required for this power to act upon damaging an entity.",
@@ -47,10 +51,6 @@
 			"default": 16,
 			"description": "The radius in which this power will act.",
 			"markdownDescription": "The radius in which this power will act."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nDamages other nearby entities with the initial hit's damage upon damaging a target.\n\nType ID: `apugli:damage_nearby_on_hit`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nDamages other nearby entities with the initial hit's damage upon damaging a target.\n\nType ID: `apugli:damage_nearby_on_hit`\n\n\n"
 		}
 	}
 }

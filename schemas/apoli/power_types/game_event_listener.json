@@ -24,13 +24,13 @@
 		},
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities.",
-			"markdownDescription": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "If specified, this action will be executed on either or both the '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "If specified, this action will be executed on either or both the '*_actor_*' and '*_target_*' entities."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
-			"markdownDescription": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities."
 		},
 		"block_action": {
 			"$ref": "../block_action.json",
@@ -78,8 +78,8 @@
 			"markdownDescription": "Determines whether the vibration should emit a particle effect."
 		},
 		"type": {
-			"description": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/game_event_listener)\n\nExecutes an action upon listening to a game event or vibration.\n\nType ID: `origins:game_event_listener`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that emmited the game event or vibration while the '**target**' entity is the entity that has the power.\n\n!!! note\n\n    See [Minecraft Wiki: Sculk Sensor (Vibration amplitudes)](https://origins.readthedocs.io/en/latest/types/power_types/game_event_listener) for a list of vanilla game events you can check for.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/game_event_listener)\n\nExecutes an action upon listening to a game event or vibration.\n\nType ID: `origins:game_event_listener`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that emmited the game event or vibration while the '**target**' entity is the entity that has the power.\n\n!!! note\n\n    See [Minecraft Wiki: Sculk Sensor (Vibration amplitudes)](https://origins.readthedocs.io/en/latest/types/power_types/game_event_listener) for a list of vanilla game events you can check for.\n\n\n"
+			"description": "## Game Event Listener\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/game_event_listener)\n\nExecutes an action upon listening to a game event or vibration.\n\nType ID: `origins:game_event_listener`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that emmited the game event or vibration while the '__target__' entity is the entity that has the power.\n\n\n\n\n\n---\n\n### 📝 Note\n\nSee [Minecraft Wiki: Sculk Sensor (Vibration amplitudes)](https://origins.readthedocs.io/en/latest/types/power_types/game_event_listener) for a list of vanilla game events you can check for.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:game_event_listener\",\n    \"bientity_action\": {\n        \"type\": \"origins:target_action\",\n        \"action\": {\n            \"type\": \"origins:set_on_fire\",\n            \"duration\": 5\n        }\n    },\n    \"event\": \"minecraft:hit_ground\"\n}\n```\n\nThis example will set the entity with the power on fire every time the `hit_ground` game event is emmited.\n",
+			"markdownDescription": "undefined## Game Event Listener\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/game_event_listener)\n\nExecutes an action upon listening to a game event or vibration.\n\nType ID: `origins:game_event_listener`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that emmited the game event or vibration while the '__target__' entity is the entity that has the power.\n\n\n\n\n\n---\n\n### 📝 Note\n\nSee [Minecraft Wiki: Sculk Sensor (Vibration amplitudes)](https://origins.readthedocs.io/en/latest/types/power_types/game_event_listener) for a list of vanilla game events you can check for.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:game_event_listener\",\n    \"bientity_action\": {\n        \"type\": \"origins:target_action\",\n        \"action\": {\n            \"type\": \"origins:set_on_fire\",\n            \"duration\": 5\n        }\n    },\n    \"event\": \"minecraft:hit_ground\"\n}\n```\n\nThis example will set the entity with the power on fire every time the `hit_ground` game event is emmited.\n"
 		}
 	}
 }

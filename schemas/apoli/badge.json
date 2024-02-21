@@ -1,125 +1,104 @@
 {
-	"type": "object",
-	"required": [
-		"type"
-	],
 	"allOf": [
 		{
 			"if": {
-				"required": [
-					"type"
-				],
-				"properties": {
-					"type": {
-						"enum": [
-							"apoli:crafting_recipe",
-							"origins:crafting_recipe"
-						]
-					}
-				}
+				"type": "string"
 			},
 			"then": {
-				"required": [
-					"sprite",
-					"recipe"
-				],
-				"properties": {
-					"sprite": {
-						"$ref": "types/identifier.json"
-					},
-					"recipe": {
-						"$ref": "types/crafting_recipe.json"
-					},
-					"suffix": {
-						"$ref": "types/text_component.json"
-					},
-					"prefix": {
-						"$ref": "types/text_component.json"
-					}
-				}
+				"$ref": "types/identifier.json"
 			}
 		},
 		{
 			"if": {
+				"type": "object"
+			},
+			"then": {
+				"type": "object",
 				"required": [
 					"type"
 				],
-				"properties": {
-					"type": {
-						"enum": [
-							"apoli:keybind",
-							"origins:keybind"
-						]
-					}
-				}
-			},
-			"then": {
-				"required": [
-					"sprite",
-					"text"
-				],
-				"properties": {
-					"sprite": {
-						"$ref": "types/identifier.json"
+				"allOf": [
+					{
+						"if": {
+							"required": [
+								"type"
+							],
+							"properties": {
+								"type": {
+									"enum": [
+										"apoli:crafting_recipe",
+										"origins:crafting_recipe"
+									],
+									"description": "The namespace and ID of the desired badge type.",
+									"markdownDescription": "The namespace and ID of the desired badge type."
+								}
+							}
+						},
+						"then": {
+							"$ref": "badge_types/crafting_recipe.json"
+						}
 					},
-					"text": {
-						"$ref": "types/text_component.json"
-					}
-				}
-			}
-		},
-		{
-			"if": {
-				"required": [
-					"type"
-				],
-				"properties": {
-					"type": {
-						"enum": [
-							"apoli:sprite",
-							"origins:sprite"
-						]
-					}
-				}
-			},
-			"then": {
-				"required": [
-					"sprite"
-				],
-				"properties": {
-					"sprite": {
-						"$ref": "types/identifier.json"
-					}
-				}
-			}
-		},
-		{
-			"if": {
-				"required": [
-					"type"
-				],
-				"properties": {
-					"type": {
-						"enum": [
-							"apoli:tooltip",
-							"origins:tooltip"
-						]
-					}
-				}
-			},
-			"then": {
-				"required": [
-					"sprite",
-					"text"
-				],
-				"properties": {
-					"sprite": {
-						"$ref": "types/identifier.json"
+					{
+						"if": {
+							"required": [
+								"type"
+							],
+							"properties": {
+								"type": {
+									"enum": [
+										"apoli:keybind",
+										"origins:keybind"
+									],
+									"description": "The namespace and ID of the desired badge type.",
+									"markdownDescription": "The namespace and ID of the desired badge type."
+								}
+							}
+						},
+						"then": {
+							"$ref": "badge_types/keybind.json"
+						}
 					},
-					"text": {
-						"$ref": "types/text_component.json"
+					{
+						"if": {
+							"required": [
+								"type"
+							],
+							"properties": {
+								"type": {
+									"enum": [
+										"apoli:sprite",
+										"origins:sprite"
+									],
+									"description": "The namespace and ID of the desired badge type.",
+									"markdownDescription": "The namespace and ID of the desired badge type."
+								}
+							}
+						},
+						"then": {
+							"$ref": "badge_types/sprite.json"
+						}
+					},
+					{
+						"if": {
+							"required": [
+								"type"
+							],
+							"properties": {
+								"type": {
+									"enum": [
+										"apoli:tooltip",
+										"origins:tooltip"
+									],
+									"description": "The namespace and ID of the desired badge type.",
+									"markdownDescription": "The namespace and ID of the desired badge type."
+								}
+							}
+						},
+						"then": {
+							"$ref": "badge_types/tooltip.json"
+						}
 					}
-				}
+				]
 			}
 		}
 	]

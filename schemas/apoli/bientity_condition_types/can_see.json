@@ -8,12 +8,12 @@
 		},
 		"fluid_handling": {
 			"$ref": "../types/fluid_handling.json",
-			"description": "Determines how the ray-cast will handle fluids.",
-			"markdownDescription": "Determines how the ray-cast will handle fluids."
+			"description": "Determines how the ray-cast will handle fluids. ",
+			"markdownDescription": "Determines how the ray-cast will handle fluids. "
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n\nType ID: `origins:can_see`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n\nType ID: `origins:can_see`\n\n\n"
+			"description": "## Can See\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/can_see)\n\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n\nType ID: `origins:can_see`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n    \"type\": \"origins:can_see\"\n}\n```\n\nThis example will check if the straight path from the actor entity's eyes to the target entity's eyes is unobstructed. If the actor/target is behind a source/flowing fluid, is submerged in any kind of fluids, or behind a block that is not see-through (like Glass), the condition will return false.\n",
+			"markdownDescription": "undefined## Can See\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/can_see)\n\nChecks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed.\n\nType ID: `origins:can_see`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n    \"type\": \"origins:can_see\"\n}\n```\n\nThis example will check if the straight path from the actor entity's eyes to the target entity's eyes is unobstructed. If the actor/target is behind a source/flowing fluid, is submerged in any kind of fluids, or behind a block that is not see-through (like Glass), the condition will return false.\n"
 		}
 	}
 }

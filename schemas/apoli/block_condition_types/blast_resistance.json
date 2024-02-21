@@ -16,8 +16,8 @@
 			"markdownDescription": "The value to compare the blast resistance of the block to."
 		},
 		"type": {
-			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/blast_resistance)\n\nChecks the blast resistance value of the block.\n\nType ID: `origins:blast_resistance`\n\n\n",
-			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/blast_resistance)\n\nChecks the blast resistance value of the block.\n\nType ID: `origins:blast_resistance`\n\n\n"
+			"description": "## Blast Resistance\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/blast_resistance)\n\nChecks the blast resistance value of the block.\n\nType ID: `origins:blast_resistance`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:blast_resistance\",\n    \"comparison\": \">=\",\n    \"compare_to\": 1200\n}\n```\n\nThis example will check if the blast resistance value of the block is that of an Obsidian block or greater.\n",
+			"markdownDescription": "undefined## Blast Resistance\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/blast_resistance)\n\nChecks the blast resistance value of the block.\n\nType ID: `origins:blast_resistance`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:blast_resistance\",\n    \"comparison\": \">=\",\n    \"compare_to\": 1200\n}\n```\n\nThis example will check if the blast resistance value of the block is that of an Obsidian block or greater.\n"
 		}
 	}
 }

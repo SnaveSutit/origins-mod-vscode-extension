@@ -13,8 +13,8 @@
 			"markdownDescription": "These actions will be executed one after the other (but in the same tick)."
 		},
 		"type": {
-			"description": "\n\n[Meta Action Type](../meta_action_types.md)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n",
-			"markdownDescription": "\n\n[Meta Action Type](../meta_action_types.md)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n"
+			"description": "## And\n\n---\n\n\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/and)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:and\",\n    \"actions\": [\n        {\n            \"type\": \"origins:exhaust\",\n            \"amount\": 0.5\n        },\n        {    \n            \"type\": \"origins:apply_effect\",\n            \"effect\": {\n            \"effect\": \"minecraft:regeneration\",\n            \"amplifier\": 1,\n            \"duration\": 100\n            }\n        }\n    ]\n}\n```\n\nThis example will apply exhaustion with a value of 0.5 to the player, and apply a Regeneration II status effect that would last for 5 seconds.\n",
+			"markdownDescription": "undefined## And\n\n---\n\n\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/and)\n\nExecutes all provided actions in order.\n\nType ID: `origins:and`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:and\",\n    \"actions\": [\n        {\n            \"type\": \"origins:exhaust\",\n            \"amount\": 0.5\n        },\n        {    \n            \"type\": \"origins:apply_effect\",\n            \"effect\": {\n            \"effect\": \"minecraft:regeneration\",\n            \"amplifier\": 1,\n            \"duration\": 100\n            }\n        }\n    ]\n}\n```\n\nThis example will apply exhaustion with a value of 0.5 to the player, and apply a Regeneration II status effect that would last for 5 seconds.\n"
 		}
 	}
 }

@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"sound": {
 			"$ref": "../../apoli/types/autocomplete_helpers/sound_identifier.json",
 			"description": "The namespace and ID of the sound to play.",
@@ -9,7 +13,9 @@
 		"volume": {
 			"type": "number",
 			"minimum": 0,
-			"default": 1
+			"default": 1,
+			"description": "The volume at which the sound will play.",
+			"markdownDescription": "The volume at which the sound will play."
 		},
 		"pitch": {
 			"type": "number",

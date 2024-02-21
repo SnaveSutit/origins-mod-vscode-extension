@@ -3,33 +3,33 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities whenever the modifier(s) is/are applied.",
-			"markdownDescription": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on either or both the '*_actor_*' and '*_target_*' entities whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on either or both the '*_actor_*' and '*_target_*' entities whenever the modifier(s) is/are applied."
 		},
 		"self_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the '**target**' entity whenever the modifier(s) is/are applied.",
-			"markdownDescription": "If specified, this action will be executed on the '**target**' entity whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on the '*_target_*' entity whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on the '*_target_*' entity whenever the modifier(s) is/are applied."
 		},
 		"attacker_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the '**actor**' entity whenever the modifier(s) is/are applied.",
-			"markdownDescription": "If specified, this action will be executed on the '**actor**' entity whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on the '*_actor_*' entity whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on the '*_actor_*' entity whenever the modifier(s) is/are applied."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
-			"markdownDescription": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities."
 		},
 		"apply_armor_condition": {
 			"$ref": "../entity_condition.json",
-			"description": "If specified, armor will only be applied to the damage taken if this condition is fulfilled by the '**target**' entity.",
-			"markdownDescription": "If specified, armor will only be applied to the damage taken if this condition is fulfilled by the '**target**' entity."
+			"description": "If specified, armor will only be applied to the damage taken if this condition is fulfilled by the '*_target_*' entity.",
+			"markdownDescription": "If specified, armor will only be applied to the damage taken if this condition is fulfilled by the '*_target_*' entity."
 		},
 		"damage_armor_condition": {
 			"$ref": "../entity_condition.json",
-			"description": "If specified, worn armor will only be damaged if this condition is fulfilled by the '**target**' entity.",
-			"markdownDescription": "If specified, worn armor will only be damaged if this condition is fulfilled by the '**target**' entity."
+			"description": "If specified, worn armor will only be damaged if this condition is fulfilled by the '*_target_*' entity.",
+			"markdownDescription": "If specified, worn armor will only be damaged if this condition is fulfilled by the '*_target_*' entity."
 		},
 		"damage_condition": {
 			"$ref": "../damage_condition.json",
@@ -38,20 +38,20 @@
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier_arrayable.json",
-			"description": "If specified, this modifier will be applied to the damage taken by the '**target**' entity.",
-			"markdownDescription": "If specified, this modifier will be applied to the damage taken by the '**target**' entity."
+			"description": "If specified, this modifier will be applied to the damage taken by the '*_target_*' entity.",
+			"markdownDescription": "If specified, this modifier will be applied to the damage taken by the '*_target_*' entity."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
 				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
-			"description": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity.",
-			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '**target**' entity."
+			"description": "If specified, these modifiers will be applied to the damage taken by the '*_target_*' entity.",
+			"markdownDescription": "If specified, these modifiers will be applied to the damage taken by the '*_target_*' entity."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies how much damage the entity that has the power takes.\n\nType ID: `origins:modify_damage_taken`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that did the attacking whilst the '**target**' entity is the entity that has the power.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies how much damage the entity that has the power takes.\n\nType ID: `origins:modify_damage_taken`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that did the attacking whilst the '**target**' entity is the entity that has the power.\n\n\n"
+			"description": "## Modify Damage Taken\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_taken)\n\nModifies how much damage the entity that has the power takes.\n\nType ID: `origins:modify_damage_taken`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that did the attacking whilst the '__target__' entity is the entity that has the power.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_damage_taken\",\n    \"damage_condition\": {\n        \"type\": \"origins:attacker\",\n        \"entity_condition\": {\n            \"type\": \"origins:equipped_item\",\n            \"equipment_slot\": \"mainhand\",\n            \"item_condition\": {\n                \"type\": \"origins:or\",\n                \"conditions\": [\n                    {\n                        \"type\": \"origins:enchantment\",\n                        \"enchantment\": \"minecraft:binding_curse\",\n                        \"comparison\": \">=\",\n                        \"compare_to\": 1\n                    },\n                    {\n                        \"type\": \"origins:enchantment\",\n                        \"enchantment\": \"minecraft:vanishing_curse\",\n                        \"comparison\": \">=\",\n                        \"compare_to\": 1\n                    }\n                ]\n            }\n        }\n    },\n    \"modifier\": {\n        \"name\": \"Weak to cursed items\",\n        \"operation\": \"addition\",\n        \"value\": 5.5\n    }\n}\n```\n\nThis example will make the entity that has the power take 2 and a half additional hearts of damage if the attacker is holding an item with either the Curse of Binding, or Curse of Vanishing enchantments.\n<br>\n\n```json\n{\n    \"type\": \"origins:modify_damage_taken\",\n    \"bientity_condition\": {\n        \"type\": \"origins:actor_condition\",\n        \"condition\": {\n            \"type\": \"origins:equipped_item\",\n            \"equipment_slot\": \"mainhand\",\n            \"item_condition\": {\n                \"type\": \"origins:or\",\n                \"conditions\": [\n                    {\n                        \"type\": \"origins:enchantment\",\n                        \"enchantment\": \"minecraft:binding_curse\",\n                        \"comparison\": \">=\",\n                        \"compare_to\": 1\n                    },\n                    {\n                        \"type\": \"origins:enchantment\",\n                        \"enchantment\": \"minecraft:vanishing_curse\",\n                        \"comparison\": \">=\",\n                        \"compare_to\": 1\n                    }\n                ]\n            }\n        }\n    },\n    \"modifier\": {\n        \"name\": \"Weak to cursed items\",\n        \"operation\": \"addition\",\n        \"value\": 5.5\n    }\n}\n```\n\nThis example is an updated version of the first example.\n",
+			"markdownDescription": "undefined## Modify Damage Taken\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_taken)\n\nModifies how much damage the entity that has the power takes.\n\nType ID: `origins:modify_damage_taken`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that did the attacking whilst the '__target__' entity is the entity that has the power.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_damage_taken\",\n    \"damage_condition\": {\n        \"type\": \"origins:attacker\",\n        \"entity_condition\": {\n            \"type\": \"origins:equipped_item\",\n            \"equipment_slot\": \"mainhand\",\n            \"item_condition\": {\n                \"type\": \"origins:or\",\n                \"conditions\": [\n                    {\n                        \"type\": \"origins:enchantment\",\n                        \"enchantment\": \"minecraft:binding_curse\",\n                        \"comparison\": \">=\",\n                        \"compare_to\": 1\n                    },\n                    {\n                        \"type\": \"origins:enchantment\",\n                        \"enchantment\": \"minecraft:vanishing_curse\",\n                        \"comparison\": \">=\",\n                        \"compare_to\": 1\n                    }\n                ]\n            }\n        }\n    },\n    \"modifier\": {\n        \"name\": \"Weak to cursed items\",\n        \"operation\": \"addition\",\n        \"value\": 5.5\n    }\n}\n```\n\nThis example will make the entity that has the power take 2 and a half additional hearts of damage if the attacker is holding an item with either the Curse of Binding, or Curse of Vanishing enchantments.\n<br>\n\n```json\n{\n    \"type\": \"origins:modify_damage_taken\",\n    \"bientity_condition\": {\n        \"type\": \"origins:actor_condition\",\n        \"condition\": {\n            \"type\": \"origins:equipped_item\",\n            \"equipment_slot\": \"mainhand\",\n            \"item_condition\": {\n                \"type\": \"origins:or\",\n                \"conditions\": [\n                    {\n                        \"type\": \"origins:enchantment\",\n                        \"enchantment\": \"minecraft:binding_curse\",\n                        \"comparison\": \">=\",\n                        \"compare_to\": 1\n                    },\n                    {\n                        \"type\": \"origins:enchantment\",\n                        \"enchantment\": \"minecraft:vanishing_curse\",\n                        \"comparison\": \">=\",\n                        \"compare_to\": 1\n                    }\n                ]\n            }\n        }\n    },\n    \"modifier\": {\n        \"name\": \"Weak to cursed items\",\n        \"operation\": \"addition\",\n        \"value\": 5.5\n    }\n}\n```\n\nThis example is an updated version of the first example.\n"
 		}
 	}
 }

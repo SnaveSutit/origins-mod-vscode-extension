@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Client Action Over Time\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/client_action_over_time)\n\nAn [Action Over Time (Power Type)](https://apugli.readthedocs.io/en/latest/types/power_types/client_action_over_time) that runs on the client instead of the server.\n\nType ID: `apugli:client_action_over_time`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"apugli:client_action_over_time\",\n  \t\"entity_action\": {\n        \"type\": \"apoli:add_velocity\",\n        \"y\": 2,\n        \"server\": false\n  \t},\n  \t\"interval\": 20\n}\n```\nThis example will launch the entity upwards on the client every 20 ticks.\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Client Action Over Time\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/client_action_over_time)\n\nAn [Action Over Time (Power Type)](https://apugli.readthedocs.io/en/latest/types/power_types/client_action_over_time) that runs on the client instead of the server.\n\nType ID: `apugli:client_action_over_time`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"apugli:client_action_over_time\",\n  \t\"entity_action\": {\n        \"type\": \"apoli:add_velocity\",\n        \"y\": 2,\n        \"server\": false\n  \t},\n  \t\"interval\": 20\n}\n```\nThis example will launch the entity upwards on the client every 20 ticks.\n"
+		},
 		"interval": {
 			"type": "integer",
 			"default": 20,
@@ -21,10 +25,6 @@
 			"$ref": "../../apoli/entity_action.json",
 			"description": "The action to execute on the first interval tick in which the condition became false.",
 			"markdownDescription": "The action to execute on the first interval tick in which the condition became false."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nAn [Action Over Time (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/action_over_time/) that runs on the client instead of the server.\n\nType ID: `apugli:client_action_over_time`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAn [Action Over Time (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/action_over_time/) that runs on the client instead of the server.\n\nType ID: `apugli:client_action_over_time`\n\n\n"
 		}
 	}
 }

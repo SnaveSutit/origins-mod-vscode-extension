@@ -10,8 +10,8 @@
 			"markdownDescription": "The namespace and ID of the ability to check for."
 		},
 		"type": {
-			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/ability)\n\nChecks if the player has the specified ability enabled.\n\nType ID: `origins:ability`\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/ability)\n\nChecks if the player has the specified ability enabled.\n\nType ID: `origins:ability`\n\n\n"
+			"description": "## Ability\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/ability)\n\nChecks if the player has the specified ability enabled.\n\nType ID: `origins:ability`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:ability\",\n    \"ability\": \"minecraft:mayfly\"\n}\n```\n\nThis example will check if the player can fly in a Creative Mode-like fashion.\n",
+			"markdownDescription": "undefined## Ability\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/ability)\n\nChecks if the player has the specified ability enabled.\n\nType ID: `origins:ability`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:ability\",\n    \"ability\": \"minecraft:mayfly\"\n}\n```\n\nThis example will check if the player can fly in a Creative Mode-like fashion.\n"
 		}
 	}
 }

@@ -10,8 +10,8 @@
 			"markdownDescription": "If true, the condition is always fulfilled. If false, the condition is never fulfilled."
 		},
 		"type": {
-			"description": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n",
-			"markdownDescription": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n"
+			"description": "## Constant\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:constant\",\n    \"value\": true\n}\n```\n\nThis example is always true.\n",
+			"markdownDescription": "undefined## Constant\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:constant\",\n    \"value\": true\n}\n```\n\nThis example is always true.\n"
 		}
 	}
 }

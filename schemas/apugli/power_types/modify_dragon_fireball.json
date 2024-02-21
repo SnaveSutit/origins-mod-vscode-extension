@@ -4,6 +4,10 @@
 		"duration"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Dragon Fireball\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_dragon_fireball).\n\nCan modify certain values of any dragon fireball the player uses, whether this be through the item form or the Dragonborn origin.\n\nType ID: `toomanyorigins:modify_dragon_fireball`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Dragon Fireball\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_dragon_fireball).\n\nCan modify certain values of any dragon fireball the player uses, whether this be through the item form or the Dragonborn origin.\n\nType ID: `toomanyorigins:modify_dragon_fireball`\n\n\n\n---\n\n"
+		},
 		"damage_modifier": {
 			"$ref": "../../apoli/types/attribute_modifier.json",
 			"description": "If set, this modifier will apply to the damage amount.",
@@ -31,10 +35,6 @@
 			"type": "integer",
 			"description": "Specifies the duration that the AoE Entity is out for.",
 			"markdownDescription": "Specifies the duration that the AoE Entity is out for."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nCan modify certain values of any dragon fireball the player uses, whether this be through the item form or the Dragonborn origin.\n\nType ID: `toomanyorigins:modify_dragon_fireball`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nCan modify certain values of any dragon fireball the player uses, whether this be through the item form or the Dragonborn origin.\n\nType ID: `toomanyorigins:modify_dragon_fireball`\n\n"
 		}
 	}
 }

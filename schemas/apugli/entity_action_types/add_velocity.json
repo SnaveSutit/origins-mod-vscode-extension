@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Add Velocity\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/add_velocity)\n\nAdds or sets velocity towards a specific direction and also allows you to modify said velocity using modifiers.\n\nType ID: `apugli:add_velocity`\n\n\n\n---\n\n### 📝 Note\n\nIf the entity action type behaves unexpectedly, try setting either the `client` (should always work) or `server` (might not work) boolean fields to `false`. [Here are some examples.](https://apugli.readthedocs.io/en/latest/types/entity_action_types/add_velocity)\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:add_velocity\",\n    \"z\": 2,\n    \"space\": \"LOCAL\",\n    \"horizontal_post_modifiers\": [\n        {\n            \"operation\": \"min_total\",\n            \"value\": -2.2\n        },\n        {\n            \"operation\": \"max_total\",\n            \"value\": 2.2\n        }\n    ]\n}\n```\n\nThis example will add velocity to the entity's positive Z axis in the local space, making the entity go towards the direction they are looking. It is also modified to make sure that the entity is capped between -2.2 and 2.2 on the horizontal axes (x, z).\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Add Velocity\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/add_velocity)\n\nAdds or sets velocity towards a specific direction and also allows you to modify said velocity using modifiers.\n\nType ID: `apugli:add_velocity`\n\n\n\n---\n\n### 📝 Note\n\nIf the entity action type behaves unexpectedly, try setting either the `client` (should always work) or `server` (might not work) boolean fields to `false`. [Here are some examples.](https://apugli.readthedocs.io/en/latest/types/entity_action_types/add_velocity)\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:add_velocity\",\n    \"z\": 2,\n    \"space\": \"LOCAL\",\n    \"horizontal_post_modifiers\": [\n        {\n            \"operation\": \"min_total\",\n            \"value\": -2.2\n        },\n        {\n            \"operation\": \"max_total\",\n            \"value\": 2.2\n        }\n    ]\n}\n```\n\nThis example will add velocity to the entity's positive Z axis in the local space, making the entity go towards the direction they are looking. It is also modified to make sure that the entity is capped between -2.2 and 2.2 on the horizontal axes (x, z).\n"
+		},
 		"x": {
 			"type": "number",
 			"default": 0,
@@ -94,10 +98,6 @@
 			"default": false,
 			"description": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it.",
 			"markdownDescription": "If this is true, the action will act as a \"set\" velocity action, overriding the entity's current velocity instead of adding to it."
-		},
-		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nAdds or sets velocity towards a specific direction and also allows you to modify said velocity using modifiers.\n\nType ID: `apugli:add_velocity`\n\n!!! note\n\n    If the entity action type behaves unexpectedly, try setting either the `client` (should always work) or `server` (might not work) boolean fields to `false`. [Here are some examples.](https://apugli.readthedocs.io/en/latest/types/entity_action_types/add_velocity)\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nAdds or sets velocity towards a specific direction and also allows you to modify said velocity using modifiers.\n\nType ID: `apugli:add_velocity`\n\n!!! note\n\n    If the entity action type behaves unexpectedly, try setting either the `client` (should always work) or `server` (might not work) boolean fields to `false`. [Here are some examples.](https://apugli.readthedocs.io/en/latest/types/entity_action_types/add_velocity)\n\n\n"
 		}
 	}
 }

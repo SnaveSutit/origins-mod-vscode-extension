@@ -3,11 +3,15 @@
 	"items": {
 		"type": "object",
 		"properties": {
+			"type": {
+				"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+				"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+			},
 			"comparison": {
 				"default": ">=",
 				"$ref": "../../apoli/types/comparison.json",
-				"description": "How the value should be compared.",
-				"markdownDescription": "How the value should be compared."
+				"description": "How the value should be compared. ",
+				"markdownDescription": "How the value should be compared. "
 			},
 			"compare_to": {
 				"type": "number",

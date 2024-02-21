@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/exposed_to_sky)\n\nChecks whether the entity is currently exposed to the sky, meaning that the sky is currently visible in the entity's position.\n\nType ID: `origins:exposed_to_sky`\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/exposed_to_sky)\n\nChecks whether the entity is currently exposed to the sky, meaning that the sky is currently visible in the entity's position.\n\nType ID: `origins:exposed_to_sky`\n\n\n"
+			"description": "## Exposed to Sky\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/exposed_to_sky)\n\nChecks whether the entity is currently exposed to the sky, meaning that the sky is currently visible in the entity's position.\n\nType ID: `origins:exposed_to_sky`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:exposed_to_sky\"\n}\n```",
+			"markdownDescription": "undefined## Exposed to Sky\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/exposed_to_sky)\n\nChecks whether the entity is currently exposed to the sky, meaning that the sky is currently visible in the entity's position.\n\nType ID: `origins:exposed_to_sky`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:exposed_to_sky\"\n}\n```"
 		}
 	}
 }

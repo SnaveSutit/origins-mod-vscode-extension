@@ -33,8 +33,8 @@
 			"markdownDescription": "If specified, these status effects will be applied by the cloud to entities inside of it."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns an area effect cloud (as from a lingering potion) at the position of the entity.\n\nType ID: `origins:spawn_effect_cloud`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns an area effect cloud (as from a lingering potion) at the position of the entity.\n\nType ID: `origins:spawn_effect_cloud`\n\n\n"
+			"description": "## Spawn Effect Cloud\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_effect_cloud)\n\nSpawns an area effect cloud (as from a lingering potion) at the position of the entity.\n\nType ID: `origins:spawn_effect_cloud`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:spawn_effect_cloud\",\n    \"radius\": 10.0,\n    \"wait_time\": 40,\n    \"effect\": {\n        \"effect\": \"minecraft:resistance\",\n        \"amplifier\": 3,\n        \"duration\": 100\n    }\n}\n```\n\nThis example will spawn a large Area Effect Cloud, which provides the Resistance IV status effect that will last for 5 seconds at the entity's position.\n",
+			"markdownDescription": "undefined## Spawn Effect Cloud\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_effect_cloud)\n\nSpawns an area effect cloud (as from a lingering potion) at the position of the entity.\n\nType ID: `origins:spawn_effect_cloud`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:spawn_effect_cloud\",\n    \"radius\": 10.0,\n    \"wait_time\": 40,\n    \"effect\": {\n        \"effect\": \"minecraft:resistance\",\n        \"amplifier\": 3,\n        \"duration\": 100\n    }\n}\n```\n\nThis example will spawn a large Area Effect Cloud, which provides the Resistance IV status effect that will last for 5 seconds at the entity's position.\n"
 		}
 	}
 }

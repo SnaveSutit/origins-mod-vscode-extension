@@ -16,8 +16,8 @@
 			"markdownDescription": "The value which the durability value of the item should be compared to."
 		},
 		"type": {
-			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks the current and absolute durability value of the item.\n\nType ID: `origins:durability`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks the current and absolute durability value of the item.\n\nType ID: `origins:durability`\n\n\n"
+			"description": "## Durability\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/durability)\n\nChecks the current and absolute durability value of the item.\n\nType ID: `origins:durability`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:durability\",\n    \"comparison\": \"<=\",\n    \"compare_to\": 100\n}\n```\n\nThis example will check if the item has a durability value of 100 or less.\n",
+			"markdownDescription": "undefined## Durability\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/durability)\n\nChecks the current and absolute durability value of the item.\n\nType ID: `origins:durability`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:durability\",\n    \"comparison\": \"<=\",\n    \"compare_to\": 100\n}\n```\n\nThis example will check if the item has a durability value of 100 or less.\n"
 		}
 	}
 }

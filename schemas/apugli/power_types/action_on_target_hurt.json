@@ -5,6 +5,10 @@
 		"bientity_action"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Attacker Hurt\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_target_hurt)\n\nExecutes a bi-entity action upon an entity's current target getting hurt.\n\nType ID: `apugli:action_on_attacker_hurt`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"toomanyorigins:action_on_target_hurt\",\n    \"bientity_action\": {\n        \"type\": \"origins:actor_action\",\n        \"action\": {\n            \"type\": \"origins:feed\",\n            \"food\": 1,\n            \"saturation\": 2.4\n        }\n    },\n    \"damage_condition\": {\n        \"type\": \"origins:or\",\n        \"conditions\": [\n            {\n              \"type\": \"origins:name\",\n              \"name\": \"wither\"\n            },\n            {\n              \"type\": \"origins:name\",\n              \"name\": \"wither.player\"\n            }\n        ]\n    }\n}\n```\nThis example feeds the player upon having their current target take damage from damage sources named `wither` or `wither.player`.\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Attacker Hurt\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_target_hurt)\n\nExecutes a bi-entity action upon an entity's current target getting hurt.\n\nType ID: `apugli:action_on_attacker_hurt`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"toomanyorigins:action_on_target_hurt\",\n    \"bientity_action\": {\n        \"type\": \"origins:actor_action\",\n        \"action\": {\n            \"type\": \"origins:feed\",\n            \"food\": 1,\n            \"saturation\": 2.4\n        }\n    },\n    \"damage_condition\": {\n        \"type\": \"origins:or\",\n        \"conditions\": [\n            {\n              \"type\": \"origins:name\",\n              \"name\": \"wither\"\n            },\n            {\n              \"type\": \"origins:name\",\n              \"name\": \"wither.player\"\n            }\n        ]\n    }\n}\n```\nThis example feeds the player upon having their current target take damage from damage sources named `wither` or `wither.player`.\n"
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -30,10 +34,6 @@
 			"$ref": "../../apoli/damage_condition.json",
 			"description": "If set, the damage condition that must be met by the source and amount of the damage dealt to the power holder's attacker.",
 			"markdownDescription": "If set, the damage condition that must be met by the source and amount of the damage dealt to the power holder's attacker."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes a bi-entity action upon an entity's current target getting hurt.\n\nType ID: `apugli:action_on_attacker_hurt`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes a bi-entity action upon an entity's current target getting hurt.\n\nType ID: `apugli:action_on_attacker_hurt`\n\n\n"
 		}
 	}
 }

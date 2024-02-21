@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Custom Footstep\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/custom_footstep)\n\nModifies the footstep sound of the entity that has the power.\n\nType ID: `apugli:custom_footstep`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:custom_footstep\",\n    \"sound\": \"minecraft:block.amethyst_block.break\"\n}\n```\n\nThis example will replace the footstep of the entity that has the power with the `minecraft:block.amethyst_block.break` sound event.\n<br>\n\n```json\n{\n    \"type\": \"apugli:custom_footstep\",\n    \"muted\": true,\n    \"condition\": {\n        \"type\": \"apoli:on_block\",\n        \"block_condition\": {\n            \"type\": \"apoli:in_tag\",\n            \"tag\": \"minecraft:wool\"\n        }\n    }\n}\n```\n\nThis example will mute the footstep of the entity that has the power if the said entity is standing on any kind of Wool block.\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Custom Footstep\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/custom_footstep)\n\nModifies the footstep sound of the entity that has the power.\n\nType ID: `apugli:custom_footstep`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:custom_footstep\",\n    \"sound\": \"minecraft:block.amethyst_block.break\"\n}\n```\n\nThis example will replace the footstep of the entity that has the power with the `minecraft:block.amethyst_block.break` sound event.\n<br>\n\n```json\n{\n    \"type\": \"apugli:custom_footstep\",\n    \"muted\": true,\n    \"condition\": {\n        \"type\": \"apoli:on_block\",\n        \"block_condition\": {\n            \"type\": \"apoli:in_tag\",\n            \"tag\": \"minecraft:wool\"\n        }\n    }\n}\n```\n\nThis example will mute the footstep of the entity that has the power if the said entity is standing on any kind of Wool block.\n"
+		},
 		"muted": {
 			"type": "boolean",
 			"default": false,
@@ -31,10 +35,6 @@
 			"default": 1,
 			"description": "Determines the pitch of the sound event(s) being played.",
 			"markdownDescription": "Determines the pitch of the sound event(s) being played."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the footstep sound of the entity that has the power.\n\nType ID: `apugli:custom_footstep`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the footstep sound of the entity that has the power.\n\nType ID: `apugli:custom_footstep`\n\n\n"
 		}
 	}
 }

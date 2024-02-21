@@ -41,8 +41,8 @@
 		"loaded_chunks_only": {
 			"type": "boolean",
 			"default": true,
-			"description": "Determines whether the entity should only be teleported in loaded chunks. **It is recommended to keep this set to `true` for performance reasons.**",
-			"markdownDescription": "Determines whether the entity should only be teleported in loaded chunks. **It is recommended to keep this set to `true` for performance reasons.**"
+			"description": "Determines whether the entity should only be teleported in loaded chunks. __It is recommended to keep this set to `true` for performance reasons.__",
+			"markdownDescription": "Determines whether the entity should only be teleported in loaded chunks. __It is recommended to keep this set to `true` for performance reasons.__"
 		},
 		"success_action": {
 			"$ref": "../entity_action.json",
@@ -55,8 +55,8 @@
 			"markdownDescription": "If specified, this entity action will be executed on the entity upon failing to be teleported on a random location."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nTeleports the entity to a random location within the specified area.\n\nType ID: `origins:random_teleport`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nTeleports the entity to a random location within the specified area.\n\nType ID: `origins:random_teleport`\n\n\n"
+			"description": "## Random Teleport\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/random_teleport)\n\nTeleports the entity to a random location within the specified area.\n\nType ID: `origins:random_teleport`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"entity_action\": {\n\t\"type\": \"origins:random_teleport\",\n\t\"area_width\": 8,\n\t\"area_height\": 8,\n\t\"success_action\": {\n\t\t\"type\": \"origins:spawn_particles\",\n\t\t\"particle\": \"minecraft:poof\",\n\t\t\"count\": 8\n\t},\n\t\"fail_action\": {\n\t\t\"type\": \"origins:execute_command\",\n\t\t\"command\": \"title @s actionbar {\\\"text\\\": \\\"Cannot teleport!\\\", \\\"color\\\": \\\"red\\\"}\"\n\t}\n}\n```\n\nThis example will teleport the entity to a random location within an 8x8x8 area. If the entity has been successfully teleported to a random location, the entity will emit a poof particle, otherwise, a message will pop-up that indicates the entity cannot be teleported.\n<br>\n\n```json\n\"entity_action\": {\n\t\"type\": \"origins:random_teleport\",\n\t\"area_width\": 4,\n\t\"area_height\": 8,\n\t\"landing_block_condition\": {\n\t\t\"type\": \"origins:in_tag\",\n\t\t\"tag\": \"minecraft:wool\"\n\t},\n\t\"landing_offset\": {\n\t\t\"x\": 0.5,\n\t\t\"z\": 0.5\n\t}\n}\n```\n\nThis example will teleport the entity on top of the center of a random block included in the `minecraft:wools` block tag within a 4x8x4 area.\n",
+			"markdownDescription": "undefined## Random Teleport\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/random_teleport)\n\nTeleports the entity to a random location within the specified area.\n\nType ID: `origins:random_teleport`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"entity_action\": {\n\t\"type\": \"origins:random_teleport\",\n\t\"area_width\": 8,\n\t\"area_height\": 8,\n\t\"success_action\": {\n\t\t\"type\": \"origins:spawn_particles\",\n\t\t\"particle\": \"minecraft:poof\",\n\t\t\"count\": 8\n\t},\n\t\"fail_action\": {\n\t\t\"type\": \"origins:execute_command\",\n\t\t\"command\": \"title @s actionbar {\\\"text\\\": \\\"Cannot teleport!\\\", \\\"color\\\": \\\"red\\\"}\"\n\t}\n}\n```\n\nThis example will teleport the entity to a random location within an 8x8x8 area. If the entity has been successfully teleported to a random location, the entity will emit a poof particle, otherwise, a message will pop-up that indicates the entity cannot be teleported.\n<br>\n\n```json\n\"entity_action\": {\n\t\"type\": \"origins:random_teleport\",\n\t\"area_width\": 4,\n\t\"area_height\": 8,\n\t\"landing_block_condition\": {\n\t\t\"type\": \"origins:in_tag\",\n\t\t\"tag\": \"minecraft:wool\"\n\t},\n\t\"landing_offset\": {\n\t\t\"x\": 0.5,\n\t\t\"z\": 0.5\n\t}\n}\n```\n\nThis example will teleport the entity on top of the center of a random block included in the `minecraft:wools` block tag within a 4x8x4 area.\n"
 		}
 	}
 }

@@ -4,13 +4,13 @@
 		"blacklist": {
 			"type": "boolean",
 			"default": false,
-			"description": "If set to true, the `block_condition` field will define which blocks the player can **NOT** move through.",
-			"markdownDescription": "If set to true, the `block_condition` field will define which blocks the player can **NOT** move through."
+			"description": "If set to true, the `block_condition` field will define which blocks the player can *_NOT_* move through.",
+			"markdownDescription": "If set to true, the `block_condition` field will define which blocks the player can *_NOT_* move through."
 		},
 		"block_condition": {
 			"$ref": "../block_condition.json",
-			"description": "If specified, the entity will only be able to move through these blocks (or **not** be able to move through these, depending on what `blacklist` is set to).",
-			"markdownDescription": "If specified, the entity will only be able to move through these blocks (or **not** be able to move through these, depending on what `blacklist` is set to)."
+			"description": "If specified, the entity will only be able to move through these blocks (or *_not_* be able to move through these, depending on what `blacklist` is set to).",
+			"markdownDescription": "If specified, the entity will only be able to move through these blocks (or *_not_* be able to move through these, depending on what `blacklist` is set to)."
 		},
 		"render_type": {
 			"enum": [
@@ -34,8 +34,8 @@
 			"markdownDescription": "If specified, the entity will only be able to \"phase\" (move) downwards if this condition is fulfilled."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nAllows the entity that has the power to \"phase\" (move) through blocks.\n\nType ID: `origins:phasing`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAllows the entity that has the power to \"phase\" (move) through blocks.\n\nType ID: `origins:phasing`\n\n\n"
+			"description": "## Phasing\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/phasing)\n\nAllows the entity that has the power to \"phase\" (move) through blocks.\n\nType ID: `origins:phasing`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:phasing\",\n  \t\"blacklist\": true,\n  \t\"render_type\": \"blindness\",\n  \t\"view_distance\": 10,\n  \t\"block_condition\": {\n    \t\"type\": \"origins:in_tag\",\n    \t\"tag\": \"origins:unphasable\"\n  \t},\n  \t\"phase_down_condition\": {\n    \t\"type\": \"origins:and\",\n    \t\"conditions\": [\n      \t\t{\n        \t\t\"type\": \"origins:sneaking\"\n      \t\t},\n      \t\t{\n        \t\t\"type\": \"origins:on_block\"\n      \t\t}\n    \t]\n  \t}\n}\n```\n\nThis example will allow the player to phase through all blocks except for those in the `origins:unphasable` (`data/origins/tags/blocks/unphasable.json`) block tag. They can also phase down while sneaking, but will make a short stop at each block so they don't take fall damage.\n",
+			"markdownDescription": "undefined## Phasing\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/phasing)\n\nAllows the entity that has the power to \"phase\" (move) through blocks.\n\nType ID: `origins:phasing`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:phasing\",\n  \t\"blacklist\": true,\n  \t\"render_type\": \"blindness\",\n  \t\"view_distance\": 10,\n  \t\"block_condition\": {\n    \t\"type\": \"origins:in_tag\",\n    \t\"tag\": \"origins:unphasable\"\n  \t},\n  \t\"phase_down_condition\": {\n    \t\"type\": \"origins:and\",\n    \t\"conditions\": [\n      \t\t{\n        \t\t\"type\": \"origins:sneaking\"\n      \t\t},\n      \t\t{\n        \t\t\"type\": \"origins:on_block\"\n      \t\t}\n    \t]\n  \t}\n}\n```\n\nThis example will allow the player to phase through all blocks except for those in the `origins:unphasable` (`data/origins/tags/blocks/unphasable.json`) block tag. They can also phase down while sneaking, but will make a short stop at each block so they don't take fall damage.\n"
 		}
 	}
 }

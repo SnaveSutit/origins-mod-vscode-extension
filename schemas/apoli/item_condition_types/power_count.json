@@ -21,8 +21,8 @@
 			"markdownDescription": "The value to compare the amount of powers embedded in the item to."
 		},
 		"type": {
-			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks how many powers are embedded in the item.\n\nType ID: `origins:power_count`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks how many powers are embedded in the item.\n\nType ID: `origins:power_count`\n\n\n"
+			"description": "## Power Count\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/power_count)\n\nChecks how many powers are embedded in the item.\n\nType ID: `origins:power_count`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:power_count\",\n    \"comparison\": \">\",\n    \"compare_to\": 0\n}\n```\n\nThis example will check if the item has more than 0 powers embedded in it.\n<br>\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:power_count\",\n    \"slot\": \"mainhand\",\n    \"comparison\": \"<\",\n    \"compare_to\": 10\n}\n```\n\nThis example will check if the item has less than 10 powers embedded in it.\n",
+			"markdownDescription": "undefined## Power Count\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/power_count)\n\nChecks how many powers are embedded in the item.\n\nType ID: `origins:power_count`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:power_count\",\n    \"comparison\": \">\",\n    \"compare_to\": 0\n}\n```\n\nThis example will check if the item has more than 0 powers embedded in it.\n<br>\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:power_count\",\n    \"slot\": \"mainhand\",\n    \"comparison\": \"<\",\n    \"compare_to\": 10\n}\n```\n\nThis example will check if the item has less than 10 powers embedded in it.\n"
 		}
 	}
 }

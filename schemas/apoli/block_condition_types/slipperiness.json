@@ -16,8 +16,8 @@
 			"markdownDescription": "The value to compare the slipperiness value of the block to."
 		},
 		"type": {
-			"description": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/slipperiness)\n\nChecks the slipperiness value of the block.\n\nType ID: `origins:slipperiness`\n\n\n",
-			"markdownDescription": "\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/slipperiness)\n\nChecks the slipperiness value of the block.\n\nType ID: `origins:slipperiness`\n\n\n"
+			"description": "## Slipperiness\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/slipperiness)\n\nChecks the slipperiness value of the block.\n\nType ID: `origins:slipperiness`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:slipperiness\",\n    \"comparison\": \"==\",\n    \"compare_to\": 0.98\n}\n```\n\nThis example will check if the block has the same slipperiness of an Ice (or Packed Ice) block.\n",
+			"markdownDescription": "undefined## Slipperiness\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/slipperiness)\n\nChecks the slipperiness value of the block.\n\nType ID: `origins:slipperiness`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:slipperiness\",\n    \"comparison\": \"==\",\n    \"compare_to\": 0.98\n}\n```\n\nThis example will check if the block has the same slipperiness of an Ice (or Packed Ice) block.\n"
 		}
 	}
 }

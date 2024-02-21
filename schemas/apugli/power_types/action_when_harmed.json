@@ -4,6 +4,10 @@
 		"hud_render"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action When Harmed\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_when_harmed)\n\nExecute actions for each bit of damage received from an attacker when compared to a specific value.\n\nType ID: `apugli:action_when_harmed`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_when_harmed\",\n    \"bientity_action\": {\n        \"type\": \"origins:invert\",\n        \"action\": {\n            \"type\": \"apoli:damage\",\n            \"amount\": 2,\n            \"source\": {\n                \"name\": \"thorns\",\n                \"magic\": true\n            }\n        }\n    },\n    \"amount_to_trigger\": 4.0\n}\n```\nThis example causes a power holder to exhaust for every 4 damage points it deals to other entities.",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action When Harmed\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_when_harmed)\n\nExecute actions for each bit of damage received from an attacker when compared to a specific value.\n\nType ID: `apugli:action_when_harmed`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_when_harmed\",\n    \"bientity_action\": {\n        \"type\": \"origins:invert\",\n        \"action\": {\n            \"type\": \"apoli:damage\",\n            \"amount\": 2,\n            \"source\": {\n                \"name\": \"thorns\",\n                \"magic\": true\n            }\n        }\n    },\n    \"amount_to_trigger\": 4.0\n}\n```\nThis example causes a power holder to exhaust for every 4 damage points it deals to other entities."
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -46,10 +50,6 @@
 			"default": false,
 			"description": "Whether the power will run the extra actions if the power holder dies and takes more damage than what was required to kill them.",
 			"markdownDescription": "Whether the power will run the extra actions if the power holder dies and takes more damage than what was required to kill them."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecute actions for each bit of damage received from an attacker when compared to a specific value.\n\nType ID: `apugli:action_when_harmed`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute actions for each bit of damage received from an attacker when compared to a specific value.\n\nType ID: `apugli:action_when_harmed`\n\n\n"
 		}
 	}
 }

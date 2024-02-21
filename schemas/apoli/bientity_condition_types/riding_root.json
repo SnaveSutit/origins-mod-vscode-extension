@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/riding_root)\n\nChecks if the actor entity is riding the target entity from the very end of the riding chain.\n\nType ID: `origins:riding_root`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/riding_root)\n\nChecks if the actor entity is riding the target entity from the very end of the riding chain.\n\nType ID: `origins:riding_root`\n\n\n"
+			"description": "## Riding Root\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/riding_root)\n\nChecks if the actor entity is riding the target entity from the very end of the riding chain.\n\nType ID: `origins:riding_root`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n\t\"type\": \"origins:riding_root\"\n}\n```",
+			"markdownDescription": "undefined## Riding Root\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/riding_root)\n\nChecks if the actor entity is riding the target entity from the very end of the riding chain.\n\nType ID: `origins:riding_root`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n\t\"type\": \"origins:riding_root\"\n}\n```"
 		}
 	}
 }

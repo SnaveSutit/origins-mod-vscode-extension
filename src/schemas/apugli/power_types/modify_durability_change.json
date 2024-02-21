@@ -3,6 +3,10 @@
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/modify_durability_change/",
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"item_condition": {
 			"$ref": "$ref(apoli:item_condition)"
 		},

@@ -16,8 +16,8 @@
 			"markdownDescription": "The distance (in blocks) to compare the distance between the actor and target to."
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks the distance between the target entity and the actor entity.\n\nType ID: `origins:distance`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md)\n\nChecks the distance between the target entity and the actor entity.\n\nType ID: `origins:distance`\n\n\n"
+			"description": "## Distance\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/distance)\n\nChecks the distance between the target entity and the actor entity.\n\nType ID: `origins:distance`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n    \"type\": \"origins:distance\",\n    \"comparison\": \"<=\",\n    \"compare_to\": 30\n}\n```\n\nThis example will check if the target entity is within 30 blocks radius relative from the actor entity.\n",
+			"markdownDescription": "undefined## Distance\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/distance)\n\nChecks the distance between the target entity and the actor entity.\n\nType ID: `origins:distance`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n    \"type\": \"origins:distance\",\n    \"comparison\": \"<=\",\n    \"compare_to\": 30\n}\n```\n\nThis example will check if the target entity is within 30 blocks radius relative from the actor entity.\n"
 		}
 	}
 }

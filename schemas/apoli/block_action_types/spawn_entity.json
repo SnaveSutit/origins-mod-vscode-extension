@@ -27,8 +27,8 @@
 			"markdownDescription": "If specified, this entity action will be executed on the spawned entity."
 		},
 		"type": {
-			"description": "\n\n[Block Action Type](../block_action_types.md)\n\nSpawns an entity at the position of the block.\n\nType ID: `origins:spawn_entity`\n\n\n",
-			"markdownDescription": "\n\n[Block Action Type](../block_action_types.md)\n\nSpawns an entity at the position of the block.\n\nType ID: `origins:spawn_entity`\n\n\n"
+			"description": "## Spawn Entity\n\n---\n\n\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/spawn_entity)\n\nSpawns an entity at the position of the block.\n\nType ID: `origins:spawn_entity`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"block_action\": {\n\t\"type\": \"origins:spawn_entity\",\n\t\"entity_type\": \"minecraft:vex\",\n\t\"entity_action\": {\n\t\t\"type\": \"origins:grant_power\",\n\t\t\"power\": \"origins:arcane_skin\",\n\t\t\"source\": \"*:*\"\n\t}\n}\n```\n\nThis example will summon a Vex with the power `origins:arcane_skin` power with the source as the ID of the example power at the position of the block.\n",
+			"markdownDescription": "undefined## Spawn Entity\n\n---\n\n\n\n[Block Action Type](https://origins.readthedocs.io/en/latest/types/block_action_types/spawn_entity)\n\nSpawns an entity at the position of the block.\n\nType ID: `origins:spawn_entity`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"block_action\": {\n\t\"type\": \"origins:spawn_entity\",\n\t\"entity_type\": \"minecraft:vex\",\n\t\"entity_action\": {\n\t\t\"type\": \"origins:grant_power\",\n\t\t\"power\": \"origins:arcane_skin\",\n\t\t\"source\": \"*:*\"\n\t}\n}\n```\n\nThis example will summon a Vex with the power `origins:arcane_skin` power with the source as the ID of the example power at the position of the block.\n"
 		}
 	}
 }

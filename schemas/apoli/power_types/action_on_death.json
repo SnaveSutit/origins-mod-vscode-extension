@@ -6,22 +6,22 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "The action to be executed on either or both the '**actor**' and '**target**' entities.",
-			"markdownDescription": "The action to be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "The action to be executed on either or both the '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "The action to be executed on either or both the '*_actor_*' and '*_target_*' entities."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
-			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities."
 		},
 		"damage_condition": {
 			"$ref": "../damage_condition.json",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity.",
-			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity."
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '*_actor_*' entity.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '*_actor_*' entity."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an action when the entity that has the power dies.\n\nType ID: `origins:action_on_death`\n\n!!! note\n\n    In the context of this power type, the '**target**' entity is the entity that died while the '**actor**' entity is the one that killed it.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an action when the entity that has the power dies.\n\nType ID: `origins:action_on_death`\n\n!!! note\n\n    In the context of this power type, the '**target**' entity is the entity that died while the '**actor**' entity is the one that killed it.\n\n\n"
+			"description": "## Action On Death\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_death)\n\nExecutes an action when the entity that has the power dies.\n\nType ID: `origins:action_on_death`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__target__' entity is the entity that died while the '__actor__' entity is the one that killed it.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:action_on_death\",\n    \"bientity_action\": {\n        \"type\": \"origins:and\",\n        \"actions\": [\n            {\n                \"type\": \"origins:target_action\",\n                \"action\": {\n                    \"type\": \"origins:explode\",\n                    \"power\": 5,\n                    \"destruction_type\": \"none\",\n                    \"damage_self\": false\n                }\n            }\n        ]\n    }\n}\n```\n\nThis example will make the entity that died explode.\n",
+			"markdownDescription": "undefined## Action On Death\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_death)\n\nExecutes an action when the entity that has the power dies.\n\nType ID: `origins:action_on_death`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__target__' entity is the entity that died while the '__actor__' entity is the one that killed it.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:action_on_death\",\n    \"bientity_action\": {\n        \"type\": \"origins:and\",\n        \"actions\": [\n            {\n                \"type\": \"origins:target_action\",\n                \"action\": {\n                    \"type\": \"origins:explode\",\n                    \"power\": 5,\n                    \"destruction_type\": \"none\",\n                    \"damage_self\": false\n                }\n            }\n        ]\n    }\n}\n```\n\nThis example will make the entity that died explode.\n"
 		}
 	}
 }

@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Block Condition Type](../block_condition_types.md)\n\nChecks whether the block is in a place where a supported block can be attached (i.e. checks whether any of the adjacent blocks' sides towards this block position are solid).\n\nType ID: `origins:attachable`\n\n\n",
-			"markdownDescription": "\n\n[Block Condition Type](../block_condition_types.md)\n\nChecks whether the block is in a place where a supported block can be attached (i.e. checks whether any of the adjacent blocks' sides towards this block position are solid).\n\nType ID: `origins:attachable`\n\n\n"
+			"description": "## Attachable\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/attachable)\n\nChecks whether the block is in a place where a supported block can be attached (i.e. checks whether any of the adjacent blocks' sides towards this block position are solid).\n\nType ID: `origins:attachable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:attachable\"\n}\n```",
+			"markdownDescription": "undefined## Attachable\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/attachable)\n\nChecks whether the block is in a place where a supported block can be attached (i.e. checks whether any of the adjacent blocks' sides towards this block position are solid).\n\nType ID: `origins:attachable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:attachable\"\n}\n```"
 		}
 	}
 }

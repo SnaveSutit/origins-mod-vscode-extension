@@ -4,14 +4,14 @@
 		"stack"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Spawn Item\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/spawn_item).\n\nDrops an item where the action is executed.\n\nType ID: `apugli:spawn_item`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Spawn Item\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/spawn_item).\n\nDrops an item where the action is executed.\n\nType ID: `apugli:spawn_item`\n\n\n\n---\n\n"
+		},
 		"stack": {
 			"$ref": "../../apoli/types/item_stack.json",
 			"description": "The item stack to drop using this power.",
 			"markdownDescription": "The item stack to drop using this power."
-		},
-		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md).\n\nDrops an item where the action is executed.\n\nType ID: `apugli:spawn_item`\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md).\n\nDrops an item where the action is executed.\n\nType ID: `apugli:spawn_item`\n\n"
 		}
 	}
 }

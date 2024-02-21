@@ -4,6 +4,10 @@
 		"bientity_action"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Target Death\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_target_death)\n\nExecutes an action upon a target's death.\n\nType ID: `apugli:action_on_target_death`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_on_target_death\",\n    \"bientity_action\": {\n    \"type\": \"apoli:actor_action\",\n    \"action\": {\n            \"type\": \"apugli:fire_projectile\",\n            \"entity_type\": \"minecraft:small_fireball\"\n        }\n    },\n    \"damage_condition\": {\n        \"type\": \"apugli:magic\"\n    },\n    \"includes_prime_adversary\": false\n}\n```\nThis example will cause the actor to fire a small fireball upon killing a target with a damage source that is specified as magic and if the target is the direct cause of death.",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Target Death\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_target_death)\n\nExecutes an action upon a target's death.\n\nType ID: `apugli:action_on_target_death`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_on_target_death\",\n    \"bientity_action\": {\n    \"type\": \"apoli:actor_action\",\n    \"action\": {\n            \"type\": \"apugli:fire_projectile\",\n            \"entity_type\": \"minecraft:small_fireball\"\n        }\n    },\n    \"damage_condition\": {\n        \"type\": \"apugli:magic\"\n    },\n    \"includes_prime_adversary\": false\n}\n```\nThis example will cause the actor to fire a small fireball upon killing a target with a damage source that is specified as magic and if the target is the direct cause of death."
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -35,10 +39,6 @@
 			"default": true,
 			"description": "Whether this power will run if the power holder is the most recent attacker.",
 			"markdownDescription": "Whether this power will run if the power holder is the most recent attacker."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an action upon a target's death.\n\nType ID: `apugli:action_on_target_death`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an action upon a target's death.\n\nType ID: `apugli:action_on_target_death`\n\n\n"
 		}
 	}
 }

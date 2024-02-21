@@ -1,0 +1,29 @@
+{
+	"type": "object",
+	"required": [
+		"sprite",
+		"recipe"
+	],
+	"properties": {
+		"sprite": {
+			"$ref": "../types/identifier.json",
+			"description": "The namespace, path and ID of the texture to use as the icon of the badge.",
+			"markdownDescription": "The namespace, path and ID of the texture to use as the icon of the badge."
+		},
+		"recipe": {
+			"$ref": "../types/crafting_recipe.json",
+			"description": "The recipe to display, including an `id` field which can be any arbitrary identifier.",
+			"markdownDescription": "The recipe to display, including an `id` field which can be any arbitrary identifier."
+		},
+		"suffix": {
+			"$ref": "../types/text_component.json",
+			"description": "If specified, this text will be used as the suffix for the tooltip.",
+			"markdownDescription": "If specified, this text will be used as the suffix for the tooltip."
+		},
+		"prefix": {
+			"$ref": "../types/text_component.json",
+			"description": "If specified, this text will be used as the prefix for the tooltip.",
+			"markdownDescription": "If specified, this text will be used as the prefix for the tooltip."
+		}
+	}
+}

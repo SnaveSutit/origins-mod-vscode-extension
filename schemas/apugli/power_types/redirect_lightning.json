@@ -4,14 +4,14 @@
 		"chance"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Redirect Lightning\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/redirect_lightning).\n\nRedirects lightning to the power holder if a specified chance happens.\n\nType ID: `apugli:redirect_lightning`\n\n\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Redirect Lightning\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/redirect_lightning).\n\nRedirects lightning to the power holder if a specified chance happens.\n\nType ID: `apugli:redirect_lightning`\n\n\n\n\n\n---\n\n"
+		},
 		"chance": {
 			"type": "number",
 			"description": "The chance at which lightning will be redirected to an entity. (Ranges from 0.0-1.0).",
 			"markdownDescription": "The chance at which lightning will be redirected to an entity. (Ranges from 0.0-1.0)."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nRedirects lightning to the power holder if a specified chance happens.\n\nType ID: `apugli:redirect_lightning`\n\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nRedirects lightning to the power holder if a specified chance happens.\n\nType ID: `apugli:redirect_lightning`\n\n\n\n"
 		}
 	}
 }

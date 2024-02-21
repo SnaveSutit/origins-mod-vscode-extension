@@ -5,6 +5,10 @@
 		"entity_action"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Jump\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_jump)\n\nExecute an entity action upon the power holder jumping.\n\nType ID: `apugli:action_on_jump`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_on_jump\",\n    \"entity_action\": {\n        \"type\": \"apoli:spawn_particles\",\n        \"particle\": \"minecraft:happy_villager\",\n        \"count\": 6,\n        \"speed\": 1.0,\n        \"spread\": {\n            \"x\": 1.0,\n            \"y\": 0.0,\n            \"z\": 1.0\n        }\n    }\n}\n```\nThis example will spawn 6 happy villager particles with a speed of 1 and a x and z spread of 1 whenever the power holder jumps.",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Jump\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_jump)\n\nExecute an entity action upon the power holder jumping.\n\nType ID: `apugli:action_on_jump`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_on_jump\",\n    \"entity_action\": {\n        \"type\": \"apoli:spawn_particles\",\n        \"particle\": \"minecraft:happy_villager\",\n        \"count\": 6,\n        \"speed\": 1.0,\n        \"spread\": {\n            \"x\": 1.0,\n            \"y\": 0.0,\n            \"z\": 1.0\n        }\n    }\n}\n```\nThis example will spawn 6 happy villager particles with a speed of 1 and a x and z spread of 1 whenever the power holder jumps."
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -20,10 +24,6 @@
 			"$ref": "../../apoli/entity_action.json",
 			"description": "The entity action to execute on the power holder whenever they jump.",
 			"markdownDescription": "The entity action to execute on the power holder whenever they jump."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecute an entity action upon the power holder jumping.\n\nType ID: `apugli:action_on_jump`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute an entity action upon the power holder jumping.\n\nType ID: `apugli:action_on_jump`\n\n\n"
 		}
 	}
 }

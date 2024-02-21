@@ -6,18 +6,18 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "The action to be executed on either or both the '**actor**' and '**target**' entities.",
-			"markdownDescription": "The action to be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "The action to be executed on either or both the '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "The action to be executed on either or both the '*_actor_*' and '*_target_*' entities."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
-			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities."
 		},
 		"damage_condition": {
 			"$ref": "../damage_condition.json",
-			"description": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity.",
-			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '**actor**' entity."
+			"description": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '*_actor_*' entity.",
+			"markdownDescription": "If specified, the specified action will only be executed if this condition is fulfilled by the damage dealt by the '*_actor_*' entity."
 		},
 		"cooldown": {
 			"type": "integer",
@@ -31,8 +31,8 @@
 			"markdownDescription": "Determines how the cooldown of this power is visualized on the HUD."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an action if the entity that has the power has been hit by another entity.\n\nType ID: `origins:action_when_hit`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that did the attacking whilst the '**target**' entity is the entity that has the power.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an action if the entity that has the power has been hit by another entity.\n\nType ID: `origins:action_when_hit`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that did the attacking whilst the '**target**' entity is the entity that has the power.\n\n\n"
+			"description": "## Action When Hit\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_when_hit)\n\nExecutes an action if the entity that has the power has been hit by another entity.\n\nType ID: `origins:action_when_hit`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that did the attacking whilst the '__target__' entity is the entity that has the power.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:action_when_hit\",\n    \"bientity_action\": {\n        \"type\": \"origins:damage\",\n        \"amount\": 2,\n        \"damage_type\": \"minecraft:thorns\"\n    }\n}\n```\n\nThis example will deal 1 heart of damage to any entities that attacks the entity that has the power, quite similar to having an armor item that has the Thorns enchantment.\n",
+			"markdownDescription": "undefined## Action When Hit\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_when_hit)\n\nExecutes an action if the entity that has the power has been hit by another entity.\n\nType ID: `origins:action_when_hit`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that did the attacking whilst the '__target__' entity is the entity that has the power.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:action_when_hit\",\n    \"bientity_action\": {\n        \"type\": \"origins:damage\",\n        \"amount\": 2,\n        \"damage_type\": \"minecraft:thorns\"\n    }\n}\n```\n\nThis example will deal 1 heart of damage to any entities that attacks the entity that has the power, quite similar to having an armor item that has the Thorns enchantment.\n"
 		}
 	}
 }

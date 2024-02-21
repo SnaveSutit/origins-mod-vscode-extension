@@ -35,8 +35,8 @@
 			"markdownDescription": "If specified, this action will be executed on the the entity that has been hit whenever the modifier(s) are applied."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies how much damage the projectile of the entity that has the power deals.\n\nType ID: `origins:modify_projectile_damage`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies how much damage the projectile of the entity that has the power deals.\n\nType ID: `origins:modify_projectile_damage`\n\n\n"
+			"description": "## Modify Projectile Damage\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_projectile_damage)\n\nModifies how much damage the projectile of the entity that has the power deals.\n\nType ID: `origins:modify_projectile_damage`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_projectile_damage\",\n    \"damage_condition\": {\n        \"type\": \"origins:projectile\",\n        \"projectile\": \"minecraft:spectral_arrow\"\n    },\n    \"modifier\": {\n        \"operation\": \"addition\",\n        \"value\": 8.0\n    }\n}\n```\n\nThis example will modify the damage of the Spectral Arrow projectile entity shot by the entity that has the power to deal additional 4 hearts of damage.\n",
+			"markdownDescription": "undefined## Modify Projectile Damage\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_projectile_damage)\n\nModifies how much damage the projectile of the entity that has the power deals.\n\nType ID: `origins:modify_projectile_damage`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_projectile_damage\",\n    \"damage_condition\": {\n        \"type\": \"origins:projectile\",\n        \"projectile\": \"minecraft:spectral_arrow\"\n    },\n    \"modifier\": {\n        \"operation\": \"addition\",\n        \"value\": 8.0\n    }\n}\n```\n\nThis example will modify the damage of the Spectral Arrow projectile entity shot by the entity that has the power to deal additional 4 hearts of damage.\n"
 		}
 	}
 }

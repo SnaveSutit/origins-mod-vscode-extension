@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nFreezes the entity that has the power, as if they're in a Powder Snow block.\n\nType ID: `origins:freeze`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nFreezes the entity that has the power, as if they're in a Powder Snow block.\n\nType ID: `origins:freeze`\n\n\n"
+			"description": "## Freeze\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/freeze)\n\nFreezes the entity that has the power, as if they're in a Powder Snow block.\n\nType ID: `origins:freeze`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:freeze\"\n}\n```\n\nThis example will freeze the entity that has the power.\n<br>\n\n```json\n{\n    \"type\": \"origins:freeze\",\n    \"condition\": {\n        \"type\": \"origins:biome\",\n        \"condition\": {\n            \"type\": \"origins:precipitation\",\n            \"precipitation\": \"snow\"\n        }\n    }\n}\n```\n\nThis example will freeze the entity that has the power if the entity is in a biome that snows.\n",
+			"markdownDescription": "undefined## Freeze\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/freeze)\n\nFreezes the entity that has the power, as if they're in a Powder Snow block.\n\nType ID: `origins:freeze`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:freeze\"\n}\n```\n\nThis example will freeze the entity that has the power.\n<br>\n\n```json\n{\n    \"type\": \"origins:freeze\",\n    \"condition\": {\n        \"type\": \"origins:biome\",\n        \"condition\": {\n            \"type\": \"origins:precipitation\",\n            \"precipitation\": \"snow\"\n        }\n    }\n}\n```\n\nThis example will freeze the entity that has the power if the entity is in a biome that snows.\n"
 		}
 	}
 }

@@ -3,50 +3,50 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities whenever the modifier(s) is/are applied.",
-			"markdownDescription": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on either or both the '*_actor_*' and '*_target_*' entities whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on either or both the '*_actor_*' and '*_target_*' entities whenever the modifier(s) is/are applied."
 		},
 		"self_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the '**actor**' entity whenever the modifier(s) is/are applied.",
-			"markdownDescription": "If specified, this action will be executed on the '**actor**' entity whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on the '*_actor_*' entity whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on the '*_actor_*' entity whenever the modifier(s) is/are applied."
 		},
 		"target_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the '**target**' entity whenever the modifier(s) is/are applied.",
-			"markdownDescription": "If specified, this action will be executed on the '**target**' entity whenever the modifier(s) is/are applied."
+			"description": "If specified, this action will be executed on the '*_target_*' entity whenever the modifier(s) is/are applied.",
+			"markdownDescription": "If specified, this action will be executed on the '*_target_*' entity whenever the modifier(s) is/are applied."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
-			"markdownDescription": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "If specified, the specified action(s)/modifier(s) will only be executed/applied if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities."
 		},
 		"target_condition": {
 			"$ref": "../entity_condition.json",
-			"description": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the '**target**' entity.",
-			"markdownDescription": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the '**target**' entity."
+			"description": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the '*_target_*' entity.",
+			"markdownDescription": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the '*_target_*' entity."
 		},
 		"damage_condition": {
 			"$ref": "../damage_condition.json",
-			"description": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the damage dealt by the '**actor**' entity.",
-			"markdownDescription": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the damage dealt by the '**actor**' entity."
+			"description": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the damage dealt by the '*_actor_*' entity.",
+			"markdownDescription": "If specified, the specified actions/modifiers will only be executed/applied if this condition is fulfilled by the damage dealt by the '*_actor_*' entity."
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier_arrayable.json",
-			"description": "If specified, this modifier will be applied to the damage dealt by the '**actor**' entity.",
-			"markdownDescription": "If specified, this modifier will be applied to the damage dealt by the '**actor**' entity."
+			"description": "If specified, this modifier will be applied to the damage dealt by the '*_actor_*' entity.",
+			"markdownDescription": "If specified, this modifier will be applied to the damage dealt by the '*_actor_*' entity."
 		},
 		"modifiers": {
 			"type": "array",
 			"items": {
 				"$ref": "../types/attribute_modifier_arrayable.json"
 			},
-			"description": "If specified, these modifiers will be applied t othe damage dealt by the '**actor**' entity.",
-			"markdownDescription": "If specified, these modifiers will be applied t othe damage dealt by the '**actor**' entity."
+			"description": "If specified, these modifiers will be applied t othe damage dealt by the '*_actor_*' entity.",
+			"markdownDescription": "If specified, these modifiers will be applied t othe damage dealt by the '*_actor_*' entity."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies how much melee damage the entity that has the power deals.\n\nType ID: `origins:modify_damage_dealt`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that has the power whilst the '**target**' entity is the entity that was hit.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies how much melee damage the entity that has the power deals.\n\nType ID: `origins:modify_damage_dealt`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that has the power whilst the '**target**' entity is the entity that was hit.\n\n\n"
+			"description": "## Modify Damage Dealt\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_dealt)\n\nModifies how much melee damage the entity that has the power deals.\n\nType ID: `origins:modify_damage_dealt`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that has the power whilst the '__target__' entity is the entity that was hit.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_damage_dealt\",\n    \"condition\": {\n        \"type\": \"origins:in_block_anywhere\",\n        \"block_condition\": {\n            \"type\": \"origins:block\",\n            \"block\": \"minecraft:water\"\n        },\n        \"comparison\": \">=\",\n        \"compare_to\": 1\n    },\n    \"modifier\": {\n        \"name\": \"Extra damage when submerged\",\n        \"operation\": \"addition\",\n        \"value\": 5.0\n    }\n}\n```\n\nThis example will give the entity that has the power additional 2 and a half hearts of damage if the entity is in Water, regardless of its fluid level.\n<br>\n\n```json\n{\n    \"type\": \"origins:modify_damage_dealt\",\n    \"bientity_condition\": {\n        \"type\": \"origins:owner\"\n    },\n    \"modifier\": {\n        \"operation\": \"multiply_total\",\n        \"value\": -1\n    }\n}\n```\n\nThis example will nullify the damage dealt to an entity if that entity is owned by the entity that has the power. (Essentially, dealing no damage to one's pets and such.)\n",
+			"markdownDescription": "undefined## Modify Damage Dealt\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_damage_dealt)\n\nModifies how much melee damage the entity that has the power deals.\n\nType ID: `origins:modify_damage_dealt`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that has the power whilst the '__target__' entity is the entity that was hit.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_damage_dealt\",\n    \"condition\": {\n        \"type\": \"origins:in_block_anywhere\",\n        \"block_condition\": {\n            \"type\": \"origins:block\",\n            \"block\": \"minecraft:water\"\n        },\n        \"comparison\": \">=\",\n        \"compare_to\": 1\n    },\n    \"modifier\": {\n        \"name\": \"Extra damage when submerged\",\n        \"operation\": \"addition\",\n        \"value\": 5.0\n    }\n}\n```\n\nThis example will give the entity that has the power additional 2 and a half hearts of damage if the entity is in Water, regardless of its fluid level.\n<br>\n\n```json\n{\n    \"type\": \"origins:modify_damage_dealt\",\n    \"bientity_condition\": {\n        \"type\": \"origins:owner\"\n    },\n    \"modifier\": {\n        \"operation\": \"multiply_total\",\n        \"value\": -1\n    }\n}\n```\n\nThis example will nullify the damage dealt to an entity if that entity is owned by the entity that has the power. (Essentially, dealing no damage to one's pets and such.)\n"
 		}
 	}
 }

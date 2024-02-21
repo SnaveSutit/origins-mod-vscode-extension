@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Raycast\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/raycast).\n\nChecks whether a player entity is looking at a specific block or entity within their reach.\n\nEntities are prioritized over blocks.\n\nType ID: `apugli:raycast`\n\n\n\n---\n\n### 📝 Note\n\nIf the `distance` field is not set, the distance of the raycast will be dependent on the entity's reach and attack range for blocks and entities respectively.\n\n\n\n    Reach defaults to 5.0 in creative mode and 4.5 outside of creative mode.\n    Attack Range defaults to 6.0 in creative mode and 3.0 outside of creative mode.\n\n    Any attribute modifiers from Reach Entity Attributes are applied to these initial values.\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Raycast\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/raycast).\n\nChecks whether a player entity is looking at a specific block or entity within their reach.\n\nEntities are prioritized over blocks.\n\nType ID: `apugli:raycast`\n\n\n\n---\n\n### 📝 Note\n\nIf the `distance` field is not set, the distance of the raycast will be dependent on the entity's reach and attack range for blocks and entities respectively.\n\n\n\n    Reach defaults to 5.0 in creative mode and 4.5 outside of creative mode.\n    Attack Range defaults to 6.0 in creative mode and 3.0 outside of creative mode.\n\n    Any attribute modifiers from Reach Entity Attributes are applied to these initial values.\n\n\n\n---\n\n"
+		},
 		"block_condition": {
 			"$ref": "../../apoli/block_condition.json",
 			"description": "If specified, the block condition which must be fulfilled relating to the block that is hit by the raycast.",
@@ -24,12 +28,8 @@
 		"space": {
 			"default": "world",
 			"$ref": "../../apoli/types/space.json",
-			"description": "If `direction` is specified, the [Space](https://origins.readthedocs.io/en/latest/misc/extras/space/) to perform the raycast in.",
-			"markdownDescription": "If `direction` is specified, the [Space](https://origins.readthedocs.io/en/latest/misc/extras/space/) to perform the raycast in."
-		},
-		"type": {
-			"description": "\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/raycast).\n\nChecks whether a player entity is looking at a specific block or entity within their reach.\n\nEntities are prioritized over blocks.\n\nType ID: `apugli:raycast`\n\n!!! note\n\n    If the `distance` field is not set, the distance of the raycast will be dependent on the entity's reach and attack range for blocks and entities respectively.\n\n    Reach defaults to 5.0 in creative mode and 4.5 outside of creative mode.\n    Attack Range defaults to 6.0 in creative mode and 3.0 outside of creative mode.\n\n    Any attribute modifiers from Reach Entity Attributes are applied to these initial values.\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/raycast).\n\nChecks whether a player entity is looking at a specific block or entity within their reach.\n\nEntities are prioritized over blocks.\n\nType ID: `apugli:raycast`\n\n!!! note\n\n    If the `distance` field is not set, the distance of the raycast will be dependent on the entity's reach and attack range for blocks and entities respectively.\n\n    Reach defaults to 5.0 in creative mode and 4.5 outside of creative mode.\n    Attack Range defaults to 6.0 in creative mode and 3.0 outside of creative mode.\n\n    Any attribute modifiers from Reach Entity Attributes are applied to these initial values.\n\n"
+			"description": "If `direction` is specified, the [Space](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/raycast) to perform the raycast in.",
+			"markdownDescription": "If `direction` is specified, the [Space](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/raycast) to perform the raycast in."
 		}
 	}
 }

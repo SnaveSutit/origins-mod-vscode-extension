@@ -4,6 +4,10 @@
 		"radius"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Entity In Radius\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/entity_in_radius).\n\nChecks whether the player has a specified number of entities that match a specified entity condition in a specified radius. The radius originates at the center of the entity with this condition.\n\nType ID: `apugli:entity_in_radius`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Entity In Radius\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/entity_in_radius).\n\nChecks whether the player has a specified number of entities that match a specified entity condition in a specified radius. The radius originates at the center of the entity with this condition.\n\nType ID: `apugli:entity_in_radius`\n\n\n\n---\n\n"
+		},
 		"condition": {
 			"$ref": "../../apoli/entity_condition.json",
 			"description": "The entity condition type to check for.",
@@ -30,10 +34,6 @@
 			"default": 1,
 			"description": "The value to compare the amount to.",
 			"markdownDescription": "The value to compare the amount to."
-		},
-		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether the player has a specified number of entities that match a specified entity condition in a specified radius. The radius originates at the center of the entity with this condition.\n\nType ID: `apugli:entity_in_radius`\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether the player has a specified number of entities that match a specified entity condition in a specified radius. The radius originates at the center of the entity with this condition.\n\nType ID: `apugli:entity_in_radius`\n\n"
 		}
 	}
 }

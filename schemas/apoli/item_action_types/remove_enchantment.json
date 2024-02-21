@@ -26,8 +26,8 @@
 			"markdownDescription": "Determines whether the 'repair cost' of the item should be reset."
 		},
 		"type": {
-			"description": "\n\n[Item Action Type](../item_action_types.md)\n\nRemoves certain enchantments from the item.\n\nType ID: `origins:remove_enchantment`\n\n\n",
-			"markdownDescription": "\n\n[Item Action Type](../item_action_types.md)\n\nRemoves certain enchantments from the item.\n\nType ID: `origins:remove_enchantment`\n\n\n"
+			"description": "## Remove Enchantment\n\n---\n\n\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/remove_enchantment)\n\nRemoves certain enchantments from the item.\n\nType ID: `origins:remove_enchantment`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_action\": {\n    \"type\": \"origins:remove_enchantment\",\n    \"enchantment\": \"minecraft:mending\",\n    \"reset_repair_cost\": true\n}\n```\n\nThis example will remove the Mending enchantment from the item whilst resetting its 'repair cost'.\n",
+			"markdownDescription": "undefined## Remove Enchantment\n\n---\n\n\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/remove_enchantment)\n\nRemoves certain enchantments from the item.\n\nType ID: `origins:remove_enchantment`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_action\": {\n    \"type\": \"origins:remove_enchantment\",\n    \"enchantment\": \"minecraft:mending\",\n    \"reset_repair_cost\": true\n}\n```\n\nThis example will remove the Mending enchantment from the item whilst resetting its 'repair cost'.\n"
 		}
 	}
 }

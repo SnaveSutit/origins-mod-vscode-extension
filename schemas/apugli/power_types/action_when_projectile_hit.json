@@ -4,6 +4,10 @@
 		"hud_render"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Projectile Hit\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_when_projectile_hit)\n\nExecute actions upon having a projectile land on the power holder.\n\nType ID: `apugli:action_on_projectile_hit`\n\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Projectile Hit\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_when_projectile_hit)\n\nExecute actions upon having a projectile land on the power holder.\n\nType ID: `apugli:action_on_projectile_hit`\n\n\n\n\n---\n\n"
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -34,10 +38,6 @@
 			"$ref": "../../apoli/bientity_condition.json",
 			"description": "If specified, a bi-entity condition that must be met with the projectile owner as the actor and the power holder as the target as the target for any actions of this power to run.",
 			"markdownDescription": "If specified, a bi-entity condition that must be met with the projectile owner as the actor and the power holder as the target as the target for any actions of this power to run."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecute actions upon having a projectile land on the power holder.\n\nType ID: `apugli:action_on_projectile_hit`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute actions upon having a projectile land on the power holder.\n\nType ID: `apugli:action_on_projectile_hit`\n\n\n"
 		}
 	}
 }

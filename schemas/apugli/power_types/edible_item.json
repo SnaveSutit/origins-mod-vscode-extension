@@ -5,6 +5,10 @@
 		"food_component"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Edible Item\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/edible_item).\n\nA power that makes any item that matches an item condition edible.\n\nType ID: `apugli:edible_item`\n\n!!! NOTE\n    The actual food saturation level is determined by the `food * saturation * 2` formula.\n\n!!! NOTE\n    This power type will only work on players.\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Edible Item\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/edible_item).\n\nA power that makes any item that matches an item condition edible.\n\nType ID: `apugli:edible_item`\n\n!!! NOTE\n    The actual food saturation level is determined by the `food * saturation * 2` formula.\n\n!!! NOTE\n    This power type will only work on players.\n\n\n\n---\n\n"
+		},
 		"item_condition": {
 			"$ref": "../../apoli/item_condition.json",
 			"description": "The item condition that items must satisfy to be affected by this power.",
@@ -43,10 +47,6 @@
 			"$ref": "../../apoli/item_action.json",
 			"description": "If set, these action(s) will be executed on the item that the entity ate.",
 			"markdownDescription": "If set, these action(s) will be executed on the item that the entity ate."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nA power that makes any item that matches an item condition edible.\n\nType ID: `apugli:edible_item`\n\n!!! NOTE\n    The actual food saturation level is determined by the `food * saturation * 2` formula.\n\n!!! NOTE\n    This power type will only work on players.\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nA power that makes any item that matches an item condition edible.\n\nType ID: `apugli:edible_item`\n\n!!! NOTE\n    The actual food saturation level is determined by the `food * saturation * 2` formula.\n\n!!! NOTE\n    This power type will only work on players.\n\n"
 		}
 	}
 }

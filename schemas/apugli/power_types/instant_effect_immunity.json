@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Instant Effect Immunity\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/instant_effect_immunity).\n\nPrevents instant status effects from being applied to the entity that has the power from direct sources.\n\nType ID: `apugli:instant_effect_immunity`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Instant Effect Immunity\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/instant_effect_immunity).\n\nPrevents instant status effects from being applied to the entity that has the power from direct sources.\n\nType ID: `apugli:instant_effect_immunity`\n\n\n\n---\n\n"
+		},
 		"effect": {
 			"$ref": "../../apoli/types/autocomplete_helpers/status_effect_identifier.json",
 			"description": "If specified, only the instant status effect with this namespace and ID can not be applied to the entity that has the power.",
@@ -19,10 +23,6 @@
 			"default": false,
 			"description": "Determines whether to make the entity immune to the status effect(s) that aren't specified.",
 			"markdownDescription": "Determines whether to make the entity immune to the status effect(s) that aren't specified."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nPrevents instant status effects from being applied to the entity that has the power from direct sources.\n\nType ID: `apugli:instant_effect_immunity`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nPrevents instant status effects from being applied to the entity that has the power from direct sources.\n\nType ID: `apugli:instant_effect_immunity`\n\n"
 		}
 	}
 }

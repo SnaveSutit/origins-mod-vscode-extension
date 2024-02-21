@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks if the item is damageable.\n\nType ID: `origins:is_damageable`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks if the item is damageable.\n\nType ID: `origins:is_damageable`\n\n\n"
+			"description": "## Is Damageable\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/is_damageable)\n\nChecks if the item is damageable.\n\nType ID: `origins:is_damageable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:is_damageable\"\n}\n```",
+			"markdownDescription": "undefined## Is Damageable\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/is_damageable)\n\nChecks if the item is damageable.\n\nType ID: `origins:is_damageable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:is_damageable\"\n}\n```"
 		}
 	}
 }

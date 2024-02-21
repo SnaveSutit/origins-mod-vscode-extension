@@ -3,16 +3,17 @@
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target/",
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"change": {
 			"type": "integer"
 		},
 		"operation": {
 			"type": "string",
 			"default": "add",
-			"enum": [
-				"add",
-				"set"
-			]
+			"enum": ["add", "set"]
 		},
 		"timer_change": {
 			"type": "integer"
@@ -20,10 +21,7 @@
 		"timer_operation": {
 			"type": "string",
 			"default": "add",
-			"enum": [
-				"add",
-				"set"
-			]
+			"enum": ["add", "set"]
 		}
 	}
 }

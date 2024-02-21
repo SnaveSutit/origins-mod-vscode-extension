@@ -1,19 +1,19 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Prevent Label Render\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_label_render)\n\nPrevents the name tag label of the entity that has the power from rendering.\n\nType ID: `apugli:prevent_label_render`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:prevent_label_render\",\n    \"entity_condition\": {\n        \"type\": \"apoli:in_block_anywhere\",\n        \"block_condition\": {\n            \"type\": \"apoli:fluid\",\n            \"fluid_condition\": {\n                \"type\": \"apoli:in_tag\",\n                \"tag\": \"minecraft:water\"\n            }\n        },\n        \"comparison\": \">=\",\n        \"compare_to\": 1\n    }\n}\n```\n\nThis example will prevent the name tag label of the entity that has the power from rendering to entities that has their eyes or feet in water.\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Prevent Label Render\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_label_render)\n\nPrevents the name tag label of the entity that has the power from rendering.\n\nType ID: `apugli:prevent_label_render`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:prevent_label_render\",\n    \"entity_condition\": {\n        \"type\": \"apoli:in_block_anywhere\",\n        \"block_condition\": {\n            \"type\": \"apoli:fluid\",\n            \"fluid_condition\": {\n                \"type\": \"apoli:in_tag\",\n                \"tag\": \"minecraft:water\"\n            }\n        },\n        \"comparison\": \">=\",\n        \"compare_to\": 1\n    }\n}\n```\n\nThis example will prevent the name tag label of the entity that has the power from rendering to entities that has their eyes or feet in water.\n"
+		},
 		"entity_condition": {
 			"$ref": "../../apoli/entity_condition.json",
-			"description": "If specified, only entities that fulfills this entity condition type will **not** see the name tag label of the entity that has the power.",
-			"markdownDescription": "If specified, only entities that fulfills this entity condition type will **not** see the name tag label of the entity that has the power."
+			"description": "If specified, only entities that fulfills this entity condition type will *_not_* see the name tag label of the entity that has the power.",
+			"markdownDescription": "If specified, only entities that fulfills this entity condition type will *_not_* see the name tag label of the entity that has the power."
 		},
 		"bientity_condition": {
 			"$ref": "../../apoli/bientity_condition.json",
-			"description": "If specified, only entities which fulfills this bi-entity condition type in relation to the entity that has the power will **not** see the name tag label of the entity that has the power.",
-			"markdownDescription": "If specified, only entities which fulfills this bi-entity condition type in relation to the entity that has the power will **not** see the name tag label of the entity that has the power."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents the name tag label of the entity that has the power from rendering.\n\nType ID: `apugli:prevent_label_render`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents the name tag label of the entity that has the power from rendering.\n\nType ID: `apugli:prevent_label_render`\n\n\n"
+			"description": "If specified, only entities which fulfills this bi-entity condition type in relation to the entity that has the power will *_not_* see the name tag label of the entity that has the power.",
+			"markdownDescription": "If specified, only entities which fulfills this bi-entity condition type in relation to the entity that has the power will *_not_* see the name tag label of the entity that has the power."
 		}
 	}
 }

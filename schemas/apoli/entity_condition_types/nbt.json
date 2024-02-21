@@ -10,8 +10,8 @@
 			"markdownDescription": "The NBT data to check for."
 		},
 		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks the entity's NBT.\n\nType ID: `origins:nbt`\n\n!!! caution\n\n    Be cautious of using this entity condition type, as some NBT data *(e.g: tags added via `/tag`)* from the server are not synchronized to the client.\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks the entity's NBT.\n\nType ID: `origins:nbt`\n\n!!! caution\n\n    Be cautious of using this entity condition type, as some NBT data *(e.g: tags added via `/tag`)* from the server are not synchronized to the client.\n\n\n"
+			"description": "## NBT\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/nbt)\n\nChecks the entity's NBT.\n\nType ID: `origins:nbt`\n\n\n\n---\n\n### ⚠️ Caution\n\nBe cautious of using this entity condition type, as some NBT data *(e.g: tags added via `/tag`)* from the server are not synchronized to the client.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:nbt\",\n    \"nbt\": \"{Tags: ['example_tag']}\"\n}\n```\n\nThis example will check if the entity has the `example_tag` added via `/tag` or by modifying the entity's `Tags` NBT string list.\n",
+			"markdownDescription": "undefined## NBT\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/nbt)\n\nChecks the entity's NBT.\n\nType ID: `origins:nbt`\n\n\n\n---\n\n### ⚠️ Caution\n\nBe cautious of using this entity condition type, as some NBT data *(e.g: tags added via `/tag`)* from the server are not synchronized to the client.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:nbt\",\n    \"nbt\": \"{Tags: ['example_tag']}\"\n}\n```\n\nThis example will check if the entity has the `example_tag` added via `/tag` or by modifying the entity's `Tags` NBT string list.\n"
 		}
 	}
 }

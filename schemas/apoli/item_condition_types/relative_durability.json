@@ -16,8 +16,8 @@
 			"markdownDescription": "The value which the durability value of the item should be compared to."
 		},
 		"type": {
-			"description": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks the current and the percentage durability value of the item.\n\nType ID: `origins:relative_durability`\n\n!!! note\n\n    The percentage of the durability value can be calculated with the `currentDurability / maxDurability` formula.\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](../item_condition_types.md)\n\nChecks the current and the percentage durability value of the item.\n\nType ID: `origins:relative_durability`\n\n!!! note\n\n    The percentage of the durability value can be calculated with the `currentDurability / maxDurability` formula.\n\n\n"
+			"description": "## Relative Durability\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/relative_durability)\n\nChecks the current and the percentage durability value of the item.\n\nType ID: `origins:relative_durability`\n\n\n\n---\n\n### 📝 Note\n\nThe percentage of the durability value can be calculated with the `currentDurability / maxDurability` formula.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:relative_durability\",\n    \"comparison\": \">=\",\n    \"compare_to\": 0.9\n}\n```\n\nThis example will check if the item has a 90% durability or greater.\n",
+			"markdownDescription": "undefined## Relative Durability\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/relative_durability)\n\nChecks the current and the percentage durability value of the item.\n\nType ID: `origins:relative_durability`\n\n\n\n---\n\n### 📝 Note\n\nThe percentage of the durability value can be calculated with the `currentDurability / maxDurability` formula.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:relative_durability\",\n    \"comparison\": \">=\",\n    \"compare_to\": 0.9\n}\n```\n\nThis example will check if the item has a 90% durability or greater.\n"
 		}
 	}
 }

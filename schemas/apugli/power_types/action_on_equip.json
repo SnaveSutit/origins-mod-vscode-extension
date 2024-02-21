@@ -4,6 +4,10 @@
 		"action"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Equip\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_equip).\n\nExecutes an action when an item is equipped.\n\nType ID: `apugli:action_on_equip`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Equip\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_equip).\n\nExecutes an action when an item is equipped.\n\nType ID: `apugli:action_on_equip`\n\n\n\n---\n\n"
+		},
 		"head": {
 			"$ref": "../../apoli/item_condition.json",
 			"description": "The condition that the `head` slot item must meet to run the action.",
@@ -33,10 +37,6 @@
 			"$ref": "../../apoli/entity_action.json",
 			"description": "Action to apply when an item that meets any stated conditions are met.",
 			"markdownDescription": "Action to apply when an item that meets any stated conditions are met."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nExecutes an action when an item is equipped.\n\nType ID: `apugli:action_on_equip`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nExecutes an action when an item is equipped.\n\nType ID: `apugli:action_on_equip`\n\n"
 		}
 	}
 }

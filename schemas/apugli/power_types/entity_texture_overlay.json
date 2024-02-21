@@ -4,6 +4,10 @@
 		"texture_location"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Entity Texture Overlay\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/entity_texture_overlay).\n\nOverlays a texture over an entity's texture.\n\nType ID: `apugli:entity_texture_overlay`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Entity Texture Overlay\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/entity_texture_overlay).\n\nOverlays a texture over an entity's texture.\n\nType ID: `apugli:entity_texture_overlay`\n\n\n\n---\n\n"
+		},
 		"texture_location": {
 			"$ref": "../../apoli/types/autocomplete_helpers/texture_location.json",
 			"description": "The texture to overlay onto the entity.",
@@ -40,10 +44,6 @@
 			"default": true,
 			"description": "Whether the power will prevent the outer layer of the player from rendering.",
 			"markdownDescription": "Whether the power will prevent the outer layer of the player from rendering."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nOverlays a texture over an entity's texture.\n\nType ID: `apugli:entity_texture_overlay`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nOverlays a texture over an entity's texture.\n\nType ID: `apugli:entity_texture_overlay`\n\n"
 		}
 	}
 }

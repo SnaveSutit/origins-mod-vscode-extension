@@ -24,8 +24,8 @@
 			"markdownDescription": "Determines the priority of which power will prevent the player to sleep, set their spawn and display a message. The power with `set_spawn_point` set to `true` and the highest `priority` value will be prioritized."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents sleeping and sends the player a message about why they can't sleep.\n\nType ID: `origins:prevent_sleep`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents sleeping and sends the player a message about why they can't sleep.\n\nType ID: `origins:prevent_sleep`\n\n\n"
+			"description": "## Prevent Sleep\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_sleep)\n\nPrevents sleeping and sends the player a message about why they can't sleep.\n\nType ID: `origins:prevent_sleep`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:prevent_sleep\",\n\t\"message\": \"It's not hot enough for you to sleep\",\n    \"condition\": {\n\t\t\"type\": \"origins:on_fire\",\n\t\t\"inverted\": true\n\t}\n}\n```\n\nThis example will prevent the player from sleeping unless they are burning.\n",
+			"markdownDescription": "undefined## Prevent Sleep\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_sleep)\n\nPrevents sleeping and sends the player a message about why they can't sleep.\n\nType ID: `origins:prevent_sleep`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:prevent_sleep\",\n\t\"message\": \"It's not hot enough for you to sleep\",\n    \"condition\": {\n\t\t\"type\": \"origins:on_fire\",\n\t\t\"inverted\": true\n\t}\n}\n```\n\nThis example will prevent the player from sleeping unless they are burning.\n"
 		}
 	}
 }

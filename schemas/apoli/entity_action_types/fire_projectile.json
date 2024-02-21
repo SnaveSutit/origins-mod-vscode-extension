@@ -38,8 +38,8 @@
 			"markdownDescription": "If specified, this entity action will be executed on the projectile or entity that will be launched."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n"
+			"description": "## Fire Projectile\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/fire_projectile)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:fire_projectile\",\n    \"entity_type\": \"minecraft:snowball\",\n    \"divergence\": 3.0,\n    \"count\": 3\n}\n```\n\nThis example will fire three snowballs at where the player is facing.\n",
+			"markdownDescription": "undefined## Fire Projectile\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/fire_projectile)\n\nFires one or more projectiles or entities.\n\nType ID: `origins:fire_projectile`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:fire_projectile\",\n    \"entity_type\": \"minecraft:snowball\",\n    \"divergence\": 3.0,\n    \"count\": 3\n}\n```\n\nThis example will fire three snowballs at where the player is facing.\n"
 		}
 	}
 }

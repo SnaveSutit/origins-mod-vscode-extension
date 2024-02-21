@@ -10,8 +10,8 @@
 			"markdownDescription": "If set, the attacker entity must fulfill the provided entity condition type in order for this condition to evaluate to true."
 		},
 		"type": {
-			"description": "\n\n[Damage Condition Type](../damage_condition_types.md)\n\nChecks whether the damage source is from an entity.\n\nType ID: `origins:attacker`\n\n\n",
-			"markdownDescription": "\n\n[Damage Condition Type](../damage_condition_types.md)\n\nChecks whether the damage source is from an entity.\n\nType ID: `origins:attacker`\n\n\n"
+			"description": "## Attacker\n\n---\n\n\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/attacker)\n\nChecks whether the damage source is from an entity.\n\nType ID: `origins:attacker`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"damage_condition\": {\n    \"type\": \"origins:attacker\",\n    \"entity_condition\": {\n        \"type\": \"origins:entity_type\",\n        \"entity_type\": \"minecraft:zombie\"\n    }\n}\n```\n\nThis example will check if the attacker is a Zombie entity, with the [Entity Type (Entity Condition Type)](https://origins.readthedocs.io/en/latest/types/damage_condition_types/attacker)\n",
+			"markdownDescription": "undefined## Attacker\n\n---\n\n\n\n[Damage Condition Type](https://origins.readthedocs.io/en/latest/types/damage_condition_types/attacker)\n\nChecks whether the damage source is from an entity.\n\nType ID: `origins:attacker`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"damage_condition\": {\n    \"type\": \"origins:attacker\",\n    \"entity_condition\": {\n        \"type\": \"origins:entity_type\",\n        \"entity_type\": \"minecraft:zombie\"\n    }\n}\n```\n\nThis example will check if the attacker is a Zombie entity, with the [Entity Type (Entity Condition Type)](https://origins.readthedocs.io/en/latest/types/damage_condition_types/attacker)\n"
 		}
 	}
 }

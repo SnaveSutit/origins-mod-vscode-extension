@@ -1,15 +1,15 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Compare Resource\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/compare_resource).\n\nCompares the value of two powers that use the [Resource (Power Type)](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/compare_resource) or a power type that has a built-in cooldown (using remaining ticks as the value).\n\nType ID: `apugli:compare_resource`\n\n\n\n---\n\n### 📝 Note\n\nThis condition requires the entity it's checking to have both powers. It will return false if this isn't met.\n\n\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Compare Resource\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/compare_resource).\n\nCompares the value of two powers that use the [Resource (Power Type)](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/compare_resource) or a power type that has a built-in cooldown (using remaining ticks as the value).\n\nType ID: `apugli:compare_resource`\n\n\n\n---\n\n### 📝 Note\n\nThis condition requires the entity it's checking to have both powers. It will return false if this isn't met.\n\n\n\n\n\n---\n\n"
+		},
 		"comparison": {
 			"default": ">=",
 			"$ref": "../../apoli/types/comparison.json",
 			"description": "How the `resource` power's value which are the specified should be compared to the `compare_to` power's value.",
 			"markdownDescription": "How the `resource` power's value which are the specified should be compared to the `compare_to` power's value."
-		},
-		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nCompares the value of two powers that use the [Resource (Power Type)](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/compare_resource) or a power type that has a built-in cooldown (using remaining ticks as the value).\n\nType ID: `apugli:compare_resource`\n\n!!! note\n\n    This condition requires the entity it's checking to have both powers. It will return false if this isn't met.\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nCompares the value of two powers that use the [Resource (Power Type)](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/compare_resource) or a power type that has a built-in cooldown (using remaining ticks as the value).\n\nType ID: `apugli:compare_resource`\n\n!!! note\n\n    This condition requires the entity it's checking to have both powers. It will return false if this isn't met.\n\n"
 		}
 	}
 }

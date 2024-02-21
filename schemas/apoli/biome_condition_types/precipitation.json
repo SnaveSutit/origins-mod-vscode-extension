@@ -11,8 +11,8 @@
 			"markdownDescription": "Which precipitation the biome has to have in order to succeed the check. Accepts `\"none\"`, `\"rain\"` or `\"snow\"`. Due to limitations with the system, this will check precipitation at a world height of 64."
 		},
 		"type": {
-			"description": "\n\n[Biome Condition Type](../biome_condition_types.md)\n\nChecks for the precipitation type of the biome the entity is currently in.\n\nType ID: `origins:precipitation`\n\n\n",
-			"markdownDescription": "\n\n[Biome Condition Type](../biome_condition_types.md)\n\nChecks for the precipitation type of the biome the entity is currently in.\n\nType ID: `origins:precipitation`\n\n\n"
+			"description": "## Precipitation\n\n---\n\n\n\n[Biome Condition Type](https://origins.readthedocs.io/en/latest/types/biome_condition_types/precipitation)\n\nChecks for the precipitation type of the biome the entity is currently in.\n\nType ID: `origins:precipitation`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:biome\",\n    \"condition\": {\n        \"type\": \"origins:precipitation\",\n        \"precipitation\": \"snow\"\n    }\n}\n```\n\nThis example will check if the biome the entity is currently in has a snowy precipitation. (e.g: `minecraft:snowy_taiga`, `minecraft:ice_spikes`, etc.)\n",
+			"markdownDescription": "undefined## Precipitation\n\n---\n\n\n\n[Biome Condition Type](https://origins.readthedocs.io/en/latest/types/biome_condition_types/precipitation)\n\nChecks for the precipitation type of the biome the entity is currently in.\n\nType ID: `origins:precipitation`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:biome\",\n    \"condition\": {\n        \"type\": \"origins:precipitation\",\n        \"precipitation\": \"snow\"\n    }\n}\n```\n\nThis example will check if the biome the entity is currently in has a snowy precipitation. (e.g: `minecraft:snowy_taiga`, `minecraft:ice_spikes`, etc.)\n"
 		}
 	}
 }

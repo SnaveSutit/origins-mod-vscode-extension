@@ -3,6 +3,10 @@
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/item_action_types/cooldown/",
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"ticks": {
 			"type": "integer",
 			"default": 20

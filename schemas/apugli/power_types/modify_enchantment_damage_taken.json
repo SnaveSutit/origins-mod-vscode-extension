@@ -5,6 +5,10 @@
 		"base_value"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Enchantment Damage Taken\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_enchantment_damage_taken).\n\nModifies how much melee damage the entity that has the power takes based on how many levels of enchantments the attacker has.\n\nType ID: `apugli:modify_enchantment_damage_taken`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Enchantment Damage Taken\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_enchantment_damage_taken).\n\nModifies how much melee damage the entity that has the power takes based on how many levels of enchantments the attacker has.\n\nType ID: `apugli:modify_enchantment_damage_taken`\n\n\n\n---\n\n"
+		},
 		"enchantment": {
 			"$ref": "../../apoli/types/identifier.json",
 			"description": "The enchantment required to activate this power.",
@@ -42,10 +46,6 @@
 			"$ref": "../../apoli/bientity_action.json",
 			"description": "If specified, this bi-entity action type will be executed on either or both 'actor' (the attacker) and 'target' (the entity that has the power).",
 			"markdownDescription": "If specified, this bi-entity action type will be executed on either or both 'actor' (the attacker) and 'target' (the entity that has the power)."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nModifies how much melee damage the entity that has the power takes based on how many levels of enchantments the attacker has.\n\nType ID: `apugli:modify_enchantment_damage_taken`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nModifies how much melee damage the entity that has the power takes based on how many levels of enchantments the attacker has.\n\nType ID: `apugli:modify_enchantment_damage_taken`\n\n"
 		}
 	}
 }

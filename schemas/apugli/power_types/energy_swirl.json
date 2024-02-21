@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Energy Swirl\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/energy_swirl).\n\nCreates a translucent energy swirl around an entity (Similar to a Charged Creeper or a Wither on 50% health or less).\n\nType ID: `apugli:energy_swirl`\n\n!!! note\n    Any `texture_url` specified files have a size limit of 1MB. You are able to change this through the Apugli config.\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Energy Swirl\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/energy_swirl).\n\nCreates a translucent energy swirl around an entity (Similar to a Charged Creeper or a Wither on 50% health or less).\n\nType ID: `apugli:energy_swirl`\n\n!!! note\n    Any `texture_url` specified files have a size limit of 1MB. You are able to change this through the Apugli config.\n\n\n\n---\n\n"
+		},
 		"texture_location": {
 			"$ref": "../../apoli/types/autocomplete_helpers/texture_location.json",
 			"description": "If specified, the texture used for the energy swirl overlay.",
@@ -25,10 +29,6 @@
 			"default": 0.01,
 			"description": "The speed at which the overlay swirls around the player. You can set this to 0 if you want a static overlay.",
 			"markdownDescription": "The speed at which the overlay swirls around the player. You can set this to 0 if you want a static overlay."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nCreates a translucent energy swirl around an entity (Similar to a Charged Creeper or a Wither on 50% health or less).\n\nType ID: `apugli:energy_swirl`\n\n!!! note\n    Any `texture_url` specified files have a size limit of 1MB. You are able to change this through the Apugli config.\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nCreates a translucent energy swirl around an entity (Similar to a Charged Creeper or a Wither on 50% health or less).\n\nType ID: `apugli:energy_swirl`\n\n!!! note\n    Any `texture_url` specified files have a size limit of 1MB. You are able to change this through the Apugli config.\n\n"
 		}
 	}
 }

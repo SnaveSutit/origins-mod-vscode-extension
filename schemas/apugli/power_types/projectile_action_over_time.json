@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Projectile Action Over Time\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/projectile_action_over_time)\n\nExecute actions upon landing a projectile on a target.\n\nType ID: `apugli:projectile_action_over_time`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:projectile_action_over_time\",\n    \"bientity_action\": {\n        \"type\": \"origins:add_velocity\",\n        \"z\": 0.1\n    },\n    \"bientity_condition\": {\n        \"type\": \"apoli:target_condition\",\n        \"condition\": {\n            \"type\": \"apoli:in_tag\",\n            \"tag\": \"minecraft:arrows\"\n        }\n    }\n}\n```\nThis example will push any arrows that the power holder shot away from them.",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Projectile Action Over Time\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/projectile_action_over_time)\n\nExecute actions upon landing a projectile on a target.\n\nType ID: `apugli:projectile_action_over_time`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:projectile_action_over_time\",\n    \"bientity_action\": {\n        \"type\": \"origins:add_velocity\",\n        \"z\": 0.1\n    },\n    \"bientity_condition\": {\n        \"type\": \"apoli:target_condition\",\n        \"condition\": {\n            \"type\": \"apoli:in_tag\",\n            \"tag\": \"minecraft:arrows\"\n        }\n    }\n}\n```\nThis example will push any arrows that the power holder shot away from them."
+		},
 		"interval": {
 			"type": "integer",
 			"default": 20,
@@ -26,10 +30,6 @@
 			"$ref": "../../apoli/bientity_condition.json",
 			"description": "A bi-entity condition that must be met with the power holder as the actor and the projectile as the target for this power to be run.",
 			"markdownDescription": "A bi-entity condition that must be met with the power holder as the actor and the projectile as the target for this power to be run."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecute actions upon landing a projectile on a target.\n\nType ID: `apugli:projectile_action_over_time`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute actions upon landing a projectile on a target.\n\nType ID: `apugli:projectile_action_over_time`\n\n\n"
 		}
 	}
 }

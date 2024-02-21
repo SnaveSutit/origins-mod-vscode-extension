@@ -11,8 +11,8 @@
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the entity **before** the items are modified.",
-			"markdownDescription": "If specified, this action will be executed on the entity **before** the items are modified."
+			"description": "If specified, this action will be executed on the entity *_before_* the items are modified.",
+			"markdownDescription": "If specified, this action will be executed on the entity *_before_* the items are modified."
 		},
 		"item_action": {
 			"$ref": "../item_action.json",
@@ -54,8 +54,8 @@
 			"markdownDescription": "Determines the max amount of times the action should modify item stacks in the inventory. If the specified value is <= `0`, then there will be no limit."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nModifies the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory).\n\nType ID: `origins:modify_inventory`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nModifies the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory).\n\nType ID: `origins:modify_inventory`\n\n\n"
+			"description": "## Modify Inventory\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory)\n\nModifies the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory).\n\nType ID: `origins:modify_inventory`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:modify_inventory\",\n    \"inventory_type\": \"power\",\n    \"power\": \"origins:extra_inventory\",\n    \"item_action\": {\n        \"type\": \"origins:consume\"\n    }\n}\n```\n\nThis example will consume each item in the inventory of the `origins:extra_inventory` power, decreasing their count by 1.\n<br>\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:modify_inventory\",\n    \"item_condition\": {\n        \"type\": \"origins:armor_value\",\n        \"comparison\": \">\",\n        \"compare_to\": 0\n    },\n    \"item_action\": {\n        \"type\": \"origins:damage\",\n        \"amount\": 1,\n        \"ignore_unbreaking\": true\n    }\n}\n```\n\nThis example will slightly damage all items with an armor value.\n",
+			"markdownDescription": "undefined## Modify Inventory\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory)\n\nModifies the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_inventory).\n\nType ID: `origins:modify_inventory`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:modify_inventory\",\n    \"inventory_type\": \"power\",\n    \"power\": \"origins:extra_inventory\",\n    \"item_action\": {\n        \"type\": \"origins:consume\"\n    }\n}\n```\n\nThis example will consume each item in the inventory of the `origins:extra_inventory` power, decreasing their count by 1.\n<br>\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:modify_inventory\",\n    \"item_condition\": {\n        \"type\": \"origins:armor_value\",\n        \"comparison\": \">\",\n        \"compare_to\": 0\n    },\n    \"item_action\": {\n        \"type\": \"origins:damage\",\n        \"amount\": 1,\n        \"ignore_unbreaking\": true\n    }\n}\n```\n\nThis example will slightly damage all items with an armor value.\n"
 		}
 	}
 }

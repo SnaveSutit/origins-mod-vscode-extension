@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Fire Projectile\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/fire_projectile).\n\nFires a projectile.\n\nType ID: `apugli:fire_projectile`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Fire Projectile\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/fire_projectile).\n\nFires a projectile.\n\nType ID: `apugli:fire_projectile`\n\n\n\n---\n\n"
+		},
 		"count": {
 			"type": "integer",
 			"default": 1,
@@ -33,10 +37,6 @@
 			"$ref": "../../apoli/bientity_action.json",
 			"description": "A bi-entity action to execute with the user as the actor and the projectile as the target upon creating the projectile.",
 			"markdownDescription": "A bi-entity action to execute with the user as the actor and the projectile as the target upon creating the projectile."
-		},
-		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md).\n\nFires a projectile.\n\nType ID: `apugli:fire_projectile`\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md).\n\nFires a projectile.\n\nType ID: `apugli:fire_projectile`\n\n"
 		}
 	}
 }

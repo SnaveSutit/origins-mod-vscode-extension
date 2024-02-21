@@ -2,10 +2,12 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/entity_condition_types/can_have_effect/",
 	"type": "object",
-	"required": [
-		"effect"
-	],
+	"required": ["effect"],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"effect": {
 			"$ref": "$ref(apoli:types/autocomplete_helpers/status_effect_identifier)"
 		}

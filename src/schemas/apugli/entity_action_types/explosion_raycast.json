@@ -2,10 +2,12 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/entity_action_types/explosion_raycast/",
 	"type": "object",
-	"required": [
-		"power"
-	],
+	"required": ["power"],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"particle": {
 			"$ref": "$ref(apoli:types/particle_effect)"
 		},
@@ -35,11 +37,7 @@
 		"destruction_type": {
 			"type": "string",
 			"default": "break",
-			"enum": [
-				"destroy",
-				"break",
-				"none"
-			]
+			"enum": ["destroy", "break", "none"]
 		},
 		"damage_self": {
 			"type": "boolean",

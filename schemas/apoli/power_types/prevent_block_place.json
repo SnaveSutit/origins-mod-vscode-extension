@@ -57,8 +57,8 @@
 			"markdownDescription": "If specified, this item action will be executed on the item that will be given to the player upon trying to place a block."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents the player from placing a block.\n\nType ID: `origins:prevent_block_place`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents the player from placing a block.\n\nType ID: `origins:prevent_block_place`\n\n\n"
+			"description": "## Prevent Block Place\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_block_place)\n\nPrevents the player from placing a block.\n\nType ID: `origins:prevent_block_place`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n{\n\t\"type\": \"origins:prevent_block_place\",\n\t\"entity_action\": {\n\t\t\"type\": \"origins:execute_command\",\n\t\t\"command\": \"tellraw @s {\\\"text\\\": \\\"Cannot place a block here!\\\", \\\"color\\\": \\\"red\\\"}\"\n\t},\n\t\"place_to_condition\": {\n\t\t\"type\": \"origins:fluid\",\n\t\t\"fluid_condition\": {\n\t\t\t\"type\": \"origins:still\",\n\t\t\t\"inverted\": true\n\t\t}\n\t}\n}\n```\n\nThis example will prevent the player from placing blocks in spaces occupied by source fluids.\n",
+			"markdownDescription": "undefined## Prevent Block Place\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_block_place)\n\nPrevents the player from placing a block.\n\nType ID: `origins:prevent_block_place`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n{\n\t\"type\": \"origins:prevent_block_place\",\n\t\"entity_action\": {\n\t\t\"type\": \"origins:execute_command\",\n\t\t\"command\": \"tellraw @s {\\\"text\\\": \\\"Cannot place a block here!\\\", \\\"color\\\": \\\"red\\\"}\"\n\t},\n\t\"place_to_condition\": {\n\t\t\"type\": \"origins:fluid\",\n\t\t\"fluid_condition\": {\n\t\t\t\"type\": \"origins:still\",\n\t\t\t\"inverted\": true\n\t\t}\n\t}\n}\n```\n\nThis example will prevent the player from placing blocks in spaces occupied by source fluids.\n"
 		}
 	}
 }

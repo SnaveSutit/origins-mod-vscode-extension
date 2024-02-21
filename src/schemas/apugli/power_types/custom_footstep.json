@@ -3,6 +3,10 @@
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/custom_footstep/",
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"muted": {
 			"type": "boolean",
 			"default": false

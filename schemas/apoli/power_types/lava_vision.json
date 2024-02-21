@@ -16,8 +16,8 @@
 			"markdownDescription": "Far view. Vanilla default is 1.0, or 3.0 if you are under the effect of Fire Resistance."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nChanges how far the player can see when submerged in lava.\n\nType ID: `origins:lava_vision`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nChanges how far the player can see when submerged in lava.\n\nType ID: `origins:lava_vision`\n\n\n"
+			"description": "## Lava Vision\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/lava_vision)\n\nChanges how far the player can see when submerged in lava.\n\nType ID: `origins:lava_vision`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:lava_vision\",\n  \t\"s\": 0,\n  \t\"v\": 15\n}\n```\n\nThis example will allow the player to see 15 blocks far while submerged in Lava.\n",
+			"markdownDescription": "undefined## Lava Vision\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/lava_vision)\n\nChanges how far the player can see when submerged in lava.\n\nType ID: `origins:lava_vision`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:lava_vision\",\n  \t\"s\": 0,\n  \t\"v\": 15\n}\n```\n\nThis example will allow the player to see 15 blocks far while submerged in Lava.\n"
 		}
 	}
 }

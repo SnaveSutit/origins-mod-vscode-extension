@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nAllows the players to fly as if they were in Creative Mode.\n\nType ID: `origins:creative_flight`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAllows the players to fly as if they were in Creative Mode.\n\nType ID: `origins:creative_flight`\n\n\n"
+			"description": "## Creative Flight\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/creative_flight)\n\nAllows the players to fly as if they were in Creative Mode.\n\nType ID: `origins:creative_flight`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:creative_flight\"\n}\n```",
+			"markdownDescription": "undefined## Creative Flight\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/creative_flight)\n\nAllows the players to fly as if they were in Creative Mode.\n\nType ID: `origins:creative_flight`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:creative_flight\"\n}\n```"
 		}
 	}
 }

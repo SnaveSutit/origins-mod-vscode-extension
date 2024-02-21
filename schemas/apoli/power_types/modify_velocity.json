@@ -11,8 +11,8 @@
 				]
 			},
 			"uniqueItems": true,
-			"description": "Used to specify the axes affected by this modifier.",
-			"markdownDescription": "Used to specify the axes affected by this modifier."
+			"description": "Used to specify the axes affected by this modifier. ",
+			"markdownDescription": "Used to specify the axes affected by this modifier. "
 		},
 		"modifier": {
 			"$ref": "../types/attribute_modifier_arrayable.json",
@@ -28,8 +28,8 @@
 			"markdownDescription": "If specified, these modifiers will apply to the specified axes."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies all velocity in a specified axis.\n\nType ID: `origins:modify_velocity`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies all velocity in a specified axis.\n\nType ID: `origins:modify_velocity`\n\n\n"
+			"description": "## Modify Velocity\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_velocity)\n\nModifies all velocity in a specified axis.\n\nType ID: `origins:modify_velocity`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \"type\": \"origins:modify_velocity\",\n  \"modifier\": {\n    \"value\": -2,\n    \"operation\": \"multiply_total\"\n  },\n  \"axes\": [\n    \"x\",\n    \"y\",\n    \"z\"\n  ]\n}\n```\n\nThis example will make all of the player's velocity reversed. You'll fall upwards, your movement keys will be inverted, etc.\n",
+			"markdownDescription": "undefined## Modify Velocity\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_velocity)\n\nModifies all velocity in a specified axis.\n\nType ID: `origins:modify_velocity`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \"type\": \"origins:modify_velocity\",\n  \"modifier\": {\n    \"value\": -2,\n    \"operation\": \"multiply_total\"\n  },\n  \"axes\": [\n    \"x\",\n    \"y\",\n    \"z\"\n  ]\n}\n```\n\nThis example will make all of the player's velocity reversed. You'll fall upwards, your movement keys will be inverted, etc.\n"
 		}
 	}
 }

@@ -2,13 +2,13 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/damage_nearby_on_hit/",
 	"type": "object",
-	"$IGNORED_PROPERTIES": [
-		"source"
-	],
-	"required": [
-		"damage_type"
-	],
+	"$IGNORED_PROPERTIES": ["source"],
+	"required": ["damage_type"],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"damage_condition": {
 			"$ref": "$ref(apoli:damage_condition)"
 		},

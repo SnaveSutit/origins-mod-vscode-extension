@@ -4,14 +4,14 @@
 		"step_assist"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Hover\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/hover).\n\nMultiplies the Y velocity of the entity by 0, effectively making them stationary on the Y axis.\n\nType ID: `apugli:hover`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Hover\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/hover).\n\nMultiplies the Y velocity of the entity by 0, effectively making them stationary on the Y axis.\n\nType ID: `apugli:hover`\n\n\n\n---\n\n"
+		},
 		"step_assist": {
 			"type": "number",
 			"description": "The range from the top or bottom of a block at which this power will correct the entity's orientation.",
 			"markdownDescription": "The range from the top or bottom of a block at which this power will correct the entity's orientation."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nMultiplies the Y velocity of the entity by 0, effectively making them stationary on the Y axis.\n\nType ID: `apugli:hover`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nMultiplies the Y velocity of the entity by 0, effectively making them stationary on the Y axis.\n\nType ID: `apugli:hover`\n\n"
 		}
 	}
 }

@@ -4,6 +4,10 @@
 		"hud_render"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Harm\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_harm)\n\nExecute actions for each bit of damage dealt to a target when compared to a specific value.\n\nType ID: `apugli:action_on_harm`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_on_harm\",\n    \"bientity_action\": {\n        \"type\": \"apoli:actor_action\",\n        \"action\": {\n            \"type\": \"apoli:exhaust\",\n            \"amount\": 0.5\n        }\n    },\n    \"amount_to_trigger\": 2.0\n}\n```\nThis example causes a power holder to exhaust for every 2 damage points it deals to other entities.",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Harm\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_harm)\n\nExecute actions for each bit of damage dealt to a target when compared to a specific value.\n\nType ID: `apugli:action_on_harm`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_on_harm\",\n    \"bientity_action\": {\n        \"type\": \"apoli:actor_action\",\n        \"action\": {\n            \"type\": \"apoli:exhaust\",\n            \"amount\": 0.5\n        }\n    },\n    \"amount_to_trigger\": 2.0\n}\n```\nThis example causes a power holder to exhaust for every 2 damage points it deals to other entities."
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -46,10 +50,6 @@
 			"default": false,
 			"description": "Whether the power will run the extra actions if a killed entity takes more damage than what was required to kill them.",
 			"markdownDescription": "Whether the power will run the extra actions if a killed entity takes more damage than what was required to kill them."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecute actions for each bit of damage dealt to a target when compared to a specific value.\n\nType ID: `apugli:action_on_harm`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute actions for each bit of damage dealt to a target when compared to a specific value.\n\nType ID: `apugli:action_on_harm`\n\n\n"
 		}
 	}
 }

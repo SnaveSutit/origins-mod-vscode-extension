@@ -25,8 +25,8 @@
 			"markdownDescription": "If specified, this bi-entity action will be executed on either or both the actor (the entity that invoked the entity action) and the target (the spawned entity)."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns another entity at the position of the target entity.\n\nType ID: `origins:spawn_entity`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns another entity at the position of the target entity.\n\nType ID: `origins:spawn_entity`\n\n\n"
+			"description": "## Spawn Entity\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_entity)\n\nSpawns another entity at the position of the target entity.\n\nType ID: `origins:spawn_entity`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:spawn_entity\",\n    \"entity_type\": \"minecraft:zombie\",\n    \"tag\": \"{NoAI:1b,IsBaby:1,HandItems:[{id:\\\"minecraft:gold_block\\\",Count:1},{}]}\"\n}\n```\n\nThis example will spawn a baby Zombie holding a Gold Block that has no AI at the position of the entity.\n",
+			"markdownDescription": "undefined## Spawn Entity\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_entity)\n\nSpawns another entity at the position of the target entity.\n\nType ID: `origins:spawn_entity`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:spawn_entity\",\n    \"entity_type\": \"minecraft:zombie\",\n    \"tag\": \"{NoAI:1b,IsBaby:1,HandItems:[{id:\\\"minecraft:gold_block\\\",Count:1},{}]}\"\n}\n```\n\nThis example will spawn a baby Zombie holding a Gold Block that has no AI at the position of the entity.\n"
 		}
 	}
 }

@@ -11,13 +11,13 @@
 		},
 		"entity_action": {
 			"$ref": "../entity_action.json",
-			"description": "If specified, this action will be executed on the entity **before** the items are replaced.",
-			"markdownDescription": "If specified, this action will be executed on the entity **before** the items are replaced."
+			"description": "If specified, this action will be executed on the entity *_before_* the items are replaced.",
+			"markdownDescription": "If specified, this action will be executed on the entity *_before_* the items are replaced."
 		},
 		"item_action": {
 			"$ref": "../item_action.json",
-			"description": "If specified, this action will be executed on the affected items **after** the affected items are replaced.",
-			"markdownDescription": "If specified, this action will be executed on the affected items **after** the affected items are replaced."
+			"description": "If specified, this action will be executed on the affected items *_after_* the affected items are replaced.",
+			"markdownDescription": "If specified, this action will be executed on the affected items *_after_* the affected items are replaced."
 		},
 		"item_condition": {
 			"$ref": "../item_condition.json",
@@ -54,8 +54,8 @@
 			"markdownDescription": "Determines whether to merge the NBTs of the item that will be replaced and the NBTs of the item that will be used as a replacement."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nReplaces the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory).\n\nType ID: `origins:replace_inventory`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nReplaces the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory).\n\nType ID: `origins:replace_inventory`\n\n\n"
+			"description": "## Replace Inventory\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory)\n\nReplaces the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory).\n\nType ID: `origins:replace_inventory`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:replace_inventory\",\n    \"slot\": \"weapon.offhand\",\n    \"stack\": {\n        \"item\": \"minecraft:barrier\"\n    }\n}\n```\n\nThis example will replace the item in the entity's offhand with a Barrier item.\n<br>\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:replace_inventory\",\n    \"inventory_type\": \"power\",\n    \"power\": \"origins:extra_inventory\",\n    \"stack\": {\n        \"item\": \"minecraft:air\"\n    }\n}\n```\n\nThis example will clear the contents of the `origins:extra_inventory` power by replacing all the items with Air.\n",
+			"markdownDescription": "undefined## Replace Inventory\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory)\n\nReplaces the items from either the entity's inventory or a power that uses the [Inventory (Power Type)](https://origins.readthedocs.io/en/latest/types/entity_action_types/replace_inventory).\n\nType ID: `origins:replace_inventory`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:replace_inventory\",\n    \"slot\": \"weapon.offhand\",\n    \"stack\": {\n        \"item\": \"minecraft:barrier\"\n    }\n}\n```\n\nThis example will replace the item in the entity's offhand with a Barrier item.\n<br>\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:replace_inventory\",\n    \"inventory_type\": \"power\",\n    \"power\": \"origins:extra_inventory\",\n    \"stack\": {\n        \"item\": \"minecraft:air\"\n    }\n}\n```\n\nThis example will clear the contents of the `origins:extra_inventory` power by replacing all the items with Air.\n"
 		}
 	}
 }

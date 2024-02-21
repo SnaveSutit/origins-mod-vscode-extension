@@ -57,8 +57,8 @@
 			"markdownDescription": "The offset of where the particle will be centered in the Z axis."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:spawn_particles`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:spawn_particles`\n\n\n"
+			"description": "## Spawn Particles\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_particles)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:spawn_particles`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:spawn_particles\",\n    \"particle\": {\n        \"type\": \"minecraft:block\",\n        \"params\": \"minecraft:redstone_block\"\n    },\n    \"count\": 16,\n    \"speed\": 0.0,\n    \"force\": true,\n    \"spread\": {\n        \"x\": 3.0,\n        \"y\": 0.0,\n        \"z\": 3.0\n    }\n}\n```\n\nThis example will spawn a particle cuboid that is about 5x0x5 in size that will use the Redstone Block texture.\n",
+			"markdownDescription": "undefined## Spawn Particles\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/spawn_particles)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:spawn_particles`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:spawn_particles\",\n    \"particle\": {\n        \"type\": \"minecraft:block\",\n        \"params\": \"minecraft:redstone_block\"\n    },\n    \"count\": 16,\n    \"speed\": 0.0,\n    \"force\": true,\n    \"spread\": {\n        \"x\": 3.0,\n        \"y\": 0.0,\n        \"z\": 3.0\n    }\n}\n```\n\nThis example will spawn a particle cuboid that is about 5x0x5 in size that will use the Redstone Block texture.\n"
 		}
 	}
 }

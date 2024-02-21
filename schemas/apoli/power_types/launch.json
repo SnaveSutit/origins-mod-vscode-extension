@@ -31,8 +31,8 @@
 			"markdownDescription": "Which active key this power should respond to."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nLaunches the entity that has the power upwards upon pressing the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/launch).\n\nType ID: `origins:launch`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nLaunches the entity that has the power upwards upon pressing the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/launch).\n\nType ID: `origins:launch`\n\n\n"
+			"description": "## Launch\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/launch)\n\nLaunches the entity that has the power upwards upon pressing the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/launch).\n\nType ID: `origins:launch`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:launch\",\n  \t\"cooldown\": 600,\n  \t\"hud_render\": {\n    \t\"bar_index\": 4\n  \t},\n  \t\"sound\": \"minecraft:entity.parrot.fly\",\n  \t\"speed\": 2,\n  \t\"key\": {\n    \t\"key\": \"key.origins.primary_active\",\n    \t\"continuous\": true\n  \t}\n}\n```\n\nThis example will launch the player into the air, with a cooldown of 30 seconds.\n",
+			"markdownDescription": "undefined## Launch\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/launch)\n\nLaunches the entity that has the power upwards upon pressing the specified [Key](https://origins.readthedocs.io/en/latest/types/power_types/launch).\n\nType ID: `origins:launch`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:launch\",\n  \t\"cooldown\": 600,\n  \t\"hud_render\": {\n    \t\"bar_index\": 4\n  \t},\n  \t\"sound\": \"minecraft:entity.parrot.fly\",\n  \t\"speed\": 2,\n  \t\"key\": {\n    \t\"key\": \"key.origins.primary_active\",\n    \t\"continuous\": true\n  \t}\n}\n```\n\nThis example will launch the player into the air, with a cooldown of 30 seconds.\n"
 		}
 	}
 }

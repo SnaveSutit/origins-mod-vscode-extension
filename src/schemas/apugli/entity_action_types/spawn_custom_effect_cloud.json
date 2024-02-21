@@ -2,10 +2,12 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/entity_action_types/spawn_custom_effect_cloud/",
 	"type": "object",
-	"required": [
-		"particle"
-	],
+	"required": ["particle"],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"entity_id": {
 			"$ref": "$ref(apoli:types/autocomplete_helpers/entity_identifier)"
 		},

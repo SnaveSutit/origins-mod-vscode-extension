@@ -3,38 +3,38 @@
 	"properties": {
 		"bientity_action": {
 			"$ref": "../bientity_action.json",
-			"description": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities.",
-			"markdownDescription": "If specified, this action will be executed on either or both the '**actor**' and '**target**' entities."
+			"description": "If specified, this action will be executed on either or both the '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "If specified, this action will be executed on either or both the '*_actor_*' and '*_target_*' entities."
 		},
 		"held_item_action": {
 			"$ref": "../item_action.json",
-			"description": "If specified, this action will be executed on the item used by the '**actor**' entity for right-clicking the '**target**' entity.",
-			"markdownDescription": "If specified, this action will be executed on the item used by the '**actor**' entity for right-clicking the '**target**' entity."
+			"description": "If specified, this action will be executed on the item used by the '*_actor_*' entity for right-clicking the '*_target_*' entity.",
+			"markdownDescription": "If specified, this action will be executed on the item used by the '*_actor_*' entity for right-clicking the '*_target_*' entity."
 		},
 		"result_item_action": {
 			"$ref": "../item_action.json",
-			"description": "If specified, this action will be executed on the item that is given to the '**actor**' entity.",
-			"markdownDescription": "If specified, this action will be executed on the item that is given to the '**actor**' entity."
+			"description": "If specified, this action will be executed on the item that is given to the '*_actor_*' entity.",
+			"markdownDescription": "If specified, this action will be executed on the item that is given to the '*_actor_*' entity."
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities.",
-			"markdownDescription": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '**actor**' and '**target**' entities."
+			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities.",
+			"markdownDescription": "If specified, the specified actions will only be executed if this condition is fulfilled by either or both '*_actor_*' and '*_target_*' entities."
 		},
 		"item_condition": {
 			"$ref": "../item_condition.json",
-			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by the item used by the '**actor**' entity for right-clicking the '**target**' entity.",
-			"markdownDescription": "If specified, the specified actions will only be executed if this condition is fulfilled by the item used by the '**actor**' entity for right-clicking the '**target**' entity."
+			"description": "If specified, the specified actions will only be executed if this condition is fulfilled by the item used by the '*_actor_*' entity for right-clicking the '*_target_*' entity.",
+			"markdownDescription": "If specified, the specified actions will only be executed if this condition is fulfilled by the item used by the '*_actor_*' entity for right-clicking the '*_target_*' entity."
 		},
 		"hands": {
 			"$ref": "../types/hands.json",
-			"description": "Determines if the power should be activated if the '**actor**' entity used the specified hand(s). Accepts `\"off_hand\"`, `\"main_hand\"` or both",
-			"markdownDescription": "Determines if the power should be activated if the '**actor**' entity used the specified hand(s). Accepts `\"off_hand\"`, `\"main_hand\"` or both"
+			"description": "Determines if the power should be activated if the '*_actor_*' entity used the specified hand(s). Accepts `\"off_hand\"`, `\"main_hand\"` or both",
+			"markdownDescription": "Determines if the power should be activated if the '*_actor_*' entity used the specified hand(s). Accepts `\"off_hand\"`, `\"main_hand\"` or both"
 		},
 		"result_stack": {
 			"$ref": "../types/item_stack.json",
-			"description": "If specified, this item stack will be given to the '**actor**' entity.",
-			"markdownDescription": "If specified, this item stack will be given to the '**actor**' entity."
+			"description": "If specified, this item stack will be given to the '*_actor_*' entity.",
+			"markdownDescription": "If specified, this item stack will be given to the '*_actor_*' entity."
 		},
 		"action_result": {
 			"$ref": "../types/action_result.json",
@@ -48,8 +48,8 @@
 			"markdownDescription": "Determines the execution priority of the power."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an action when a player \"uses\" (right-clicks) the entity that has the power.\n\nType ID: `origins:action_on_being_used`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that did the \"usage\" action (right-click) while the '**target**' entity is the entity that has the power.\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an action when a player \"uses\" (right-clicks) the entity that has the power.\n\nType ID: `origins:action_on_being_used`\n\n!!! note\n\n    In the context of this power type, the '**actor**' entity is the entity that did the \"usage\" action (right-click) while the '**target**' entity is the entity that has the power.\n\n\n"
+			"description": "## Action On Being Used\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_being_used)\n\nExecutes an action when a player \"uses\" (right-clicks) the entity that has the power.\n\nType ID: `origins:action_on_being_used`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that did the \"usage\" action (right-click) while the '__target__' entity is the entity that has the power.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:action_on_being_used\",\n    \"bientity_action\": {\n        \"type\": \"origins:mount\"\n    },\n    \"bientity_condition\": {\n        \"type\": \"origins:target_condition\",\n        \"condition\": {\n            \"type\": \"origins:passenger\",\n            \"inverted\": true\n        }\n    }\n}\n```\n\nThis example will grant the players the ability to mount the target entity that has the power upon \"using\" (right-clicking) the said entity, unless the entity that has the power already has a passenger.\n",
+			"markdownDescription": "undefined## Action On Being Used\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/action_on_being_used)\n\nExecutes an action when a player \"uses\" (right-clicks) the entity that has the power.\n\nType ID: `origins:action_on_being_used`\n\n\n\n---\n\n### 📝 Note\n\nIn the context of this power type, the '__actor__' entity is the entity that did the \"usage\" action (right-click) while the '__target__' entity is the entity that has the power.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:action_on_being_used\",\n    \"bientity_action\": {\n        \"type\": \"origins:mount\"\n    },\n    \"bientity_condition\": {\n        \"type\": \"origins:target_condition\",\n        \"condition\": {\n            \"type\": \"origins:passenger\",\n            \"inverted\": true\n        }\n    }\n}\n```\n\nThis example will grant the players the ability to mount the target entity that has the power upon \"using\" (right-clicking) the said entity, unless the entity that has the power already has a passenger.\n"
 		}
 	}
 }

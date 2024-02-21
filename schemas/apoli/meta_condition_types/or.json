@@ -13,8 +13,8 @@
 			"markdownDescription": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled."
 		},
 		"type": {
-			"description": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n",
-			"markdownDescription": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n"
+			"description": "## Or\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/or)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:or\",\n    \"conditions\": [\n        {\n            \"type\": \"origins:status_effect\",\n            \"effect\": \"minecraft:poison\"\n        },\n        {    \n            \"type\": \"origins:status_effect\",\n            \"effect\": \"minecraft:wither\"\n        }\n    ]\n}\n```\n\nThis example will check if the entity has either the Poison or Wither status effects.\n",
+			"markdownDescription": "undefined## Or\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/or)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:or\",\n    \"conditions\": [\n        {\n            \"type\": \"origins:status_effect\",\n            \"effect\": \"minecraft:poison\"\n        },\n        {    \n            \"type\": \"origins:status_effect\",\n            \"effect\": \"minecraft:wither\"\n        }\n    ]\n}\n```\n\nThis example will check if the entity has either the Poison or Wither status effects.\n"
 		}
 	}
 }

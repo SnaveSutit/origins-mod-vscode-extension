@@ -20,8 +20,8 @@
 			"markdownDescription": "If specified, these modifiers will be applied to the entity's slipperiness."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nAdjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions.\n\nType ID: `origins:modify_slipperiness`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nAdjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions.\n\nType ID: `origins:modify_slipperiness`\n\n\n"
+			"description": "## Modify Slipperiness\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_slipperiness)\n\nAdjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions.\n\nType ID: `origins:modify_slipperiness`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_slipperiness\",\n    \"modifier\": {\n        \"operation\": \"multiply_total\",\n        \"value\": 0.5\n    },\n    \"block_condition\": {\n        \"type\": \"origins:block\",\n        \"block\": \"minecraft:dirt\"\n    }\n}\n```\n\nThis example will increase the entity's friction by 50% while standing on dirt blocks.\n",
+			"markdownDescription": "undefined## Modify Slipperiness\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_slipperiness)\n\nAdjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions.\n\nType ID: `origins:modify_slipperiness`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_slipperiness\",\n    \"modifier\": {\n        \"operation\": \"multiply_total\",\n        \"value\": 0.5\n    },\n    \"block_condition\": {\n        \"type\": \"origins:block\",\n        \"block\": \"minecraft:dirt\"\n    }\n}\n```\n\nThis example will increase the entity's friction by 50% while standing on dirt blocks.\n"
 		}
 	}
 }

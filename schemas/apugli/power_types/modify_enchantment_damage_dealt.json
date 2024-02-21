@@ -5,6 +5,10 @@
 		"base_value"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Enchantment Damage Dealt\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_enchantment_damage_dealt).\n\nModifies how much melee damage the entity that has the power deals based on how many levels of enchantments the entity has.\n\nType ID: `apugli:modify_enchantment_damage_dealt`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Enchantment Damage Dealt\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_enchantment_damage_dealt).\n\nModifies how much melee damage the entity that has the power deals based on how many levels of enchantments the entity has.\n\nType ID: `apugli:modify_enchantment_damage_dealt`\n\n\n\n---\n\n"
+		},
 		"enchantment": {
 			"$ref": "../../apoli/types/identifier.json",
 			"description": "The enchantment required to activate this power.",
@@ -47,10 +51,6 @@
 			"$ref": "../../apoli/bientity_action.json",
 			"description": "If specified, this bi-entity action type will be executed on either or both 'actor' (the entity that has the power) and 'target' (the entity that has been hit).",
 			"markdownDescription": "If specified, this bi-entity action type will be executed on either or both 'actor' (the entity that has the power) and 'target' (the entity that has been hit)."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nModifies how much melee damage the entity that has the power deals based on how many levels of enchantments the entity has.\n\nType ID: `apugli:modify_enchantment_damage_dealt`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nModifies how much melee damage the entity that has the power deals based on how many levels of enchantments the entity has.\n\nType ID: `apugli:modify_enchantment_damage_dealt`\n\n"
 		}
 	}
 }

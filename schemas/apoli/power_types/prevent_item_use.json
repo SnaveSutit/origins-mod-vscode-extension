@@ -7,8 +7,8 @@
 			"markdownDescription": "If specified, only items that fulfills this condition will be prevented from being used."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).\n\nType ID: `origins:prevent_item_use`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).\n\nType ID: `origins:prevent_item_use`\n\n\n"
+			"description": "## Prevent Item Use\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_item_use)\n\nPrevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).\n\nType ID: `origins:prevent_item_use`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:prevent_item_use\",\n    \"item_condition\": {\n\t\t\"type\": \"origins:food\"\n\t}\n}\n```\n\nThis example will prevent the player from eating any food items.\n",
+			"markdownDescription": "undefined## Prevent Item Use\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_item_use)\n\nPrevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work).\n\nType ID: `origins:prevent_item_use`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:prevent_item_use\",\n    \"item_condition\": {\n\t\t\"type\": \"origins:food\"\n\t}\n}\n```\n\nThis example will prevent the player from eating any food items.\n"
 		}
 	}
 }

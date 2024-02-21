@@ -20,8 +20,8 @@
 			"markdownDescription": "If specified, this action will be executed on the entity that has the power whenever the entity jumps."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies how high the entity that has the power can jump.\n\nType ID: `origins:modify_jump`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies how high the entity that has the power can jump.\n\nType ID: `origins:modify_jump`\n\n\n"
+			"description": "## Modify Jump\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_jump)\n\nModifies how high the entity that has the power can jump.\n\nType ID: `origins:modify_jump`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_jump\",\n    \"modifier\": {\n        \"operation\": \"addition\",\n        \"value\": 0.4\n    },\n    \"entity_action\": {\n        \"type\": \"origins:execute_command\",\n        \"command\": \"particle cloud ~ ~ ~ 0.3 0.3 0.3 0.01 16 normal @a\"\n    }\n}\n```\n\nThis example will increase the entity that has the power's jump height to 4 blocks and display a cloud particle at the entity's feet upon jumping.\n",
+			"markdownDescription": "undefined## Modify Jump\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_jump)\n\nModifies how high the entity that has the power can jump.\n\nType ID: `origins:modify_jump`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_jump\",\n    \"modifier\": {\n        \"operation\": \"addition\",\n        \"value\": 0.4\n    },\n    \"entity_action\": {\n        \"type\": \"origins:execute_command\",\n        \"command\": \"particle cloud ~ ~ ~ 0.3 0.3 0.3 0.01 16 normal @a\"\n    }\n}\n```\n\nThis example will increase the entity that has the power's jump height to 4 blocks and display a cloud particle at the entity's feet upon jumping.\n"
 		}
 	}
 }

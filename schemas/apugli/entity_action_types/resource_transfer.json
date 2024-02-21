@@ -5,6 +5,10 @@
 		"provider"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Resource Transfer\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/resource_transfer).\n\nTransfers a value from a \"provider\" resource into a resource.\n\nType ID: `apugli:resource_transfer`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Resource Transfer\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/resource_transfer).\n\nTransfers a value from a \"provider\" resource into a resource.\n\nType ID: `apugli:resource_transfer`\n\n\n\n---\n\n"
+		},
 		"resource": {
 			"$ref": "../../apoli/types/identifier.json",
 			"description": "The namespace and ID of the power that uses the [Resource (Power Type)](https://apugli.readthedocs.io/en/latest/types/entity_action_types/resource_transfer) or has a built-in cooldown to transfer the value from `provider` into.",
@@ -12,12 +16,8 @@
 		},
 		"provider": {
 			"$ref": "../../apoli/types/identifier.json",
-			"description": "The namespace and ID of the power that uses the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/) or has a built-in cooldown to use for the value transfer.",
-			"markdownDescription": "The namespace and ID of the power that uses the [Resource (Power Type)](https://origins.readthedocs.io/en/latest/types/power_types/resource/) or has a built-in cooldown to use for the value transfer."
-		},
-		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md).\n\nTransfers a value from a \"provider\" resource into a resource.\n\nType ID: `apugli:resource_transfer`\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md).\n\nTransfers a value from a \"provider\" resource into a resource.\n\nType ID: `apugli:resource_transfer`\n\n"
+			"description": "The namespace and ID of the power that uses the [Resource (Power Type)](https://apugli.readthedocs.io/en/latest/types/entity_action_types/resource_transfer) or has a built-in cooldown to use for the value transfer.",
+			"markdownDescription": "The namespace and ID of the power that uses the [Resource (Power Type)](https://apugli.readthedocs.io/en/latest/types/entity_action_types/resource_transfer) or has a built-in cooldown to use for the value transfer."
 		}
 	}
 }

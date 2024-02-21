@@ -4,6 +4,10 @@
 		"should_damage"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Sprinting\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/freeze).\n\nFreezes the entity as if they were in powder snow.\n\nType ID: `apugli:freeze`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Sprinting\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/freeze).\n\nFreezes the entity as if they were in powder snow.\n\nType ID: `apugli:freeze`\n\n\n\n---\n\n"
+		},
 		"modifier": {
 			"$ref": "../../apoli/types/attribute_modifier.json",
 			"description": "If set, this modifier will apply to the time it takes to fully freeze an entity.",
@@ -19,12 +23,8 @@
 		},
 		"should_damage": {
 			"type": "boolean",
-			"description": "Whether this power type's freeze should damage the power holder.",
-			"markdownDescription": "Whether this power type's freeze should damage the power holder."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nFreezes the entity as if they were in powder snow.\n\nType ID: `apugli:freeze`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nFreezes the entity as if they were in powder snow.\n\nType ID: `apugli:freeze`\n\n"
+			"description": "Whether this power type's freeze should damage the power holder. ",
+			"markdownDescription": "Whether this power type's freeze should damage the power holder. "
 		}
 	}
 }

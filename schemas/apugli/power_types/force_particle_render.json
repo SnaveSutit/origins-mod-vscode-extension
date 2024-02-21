@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Force Particle Render\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/force_particle_render)\n\nForces one or multiple particles to render for the player, regardless of their \"Particle Settings\".\n\nType ID: `apugli:force_particle_render`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:force_particle_render\",\n    \"particles\": [\n        \"minecraft:large_smoke\",\n        \"minecraft:campfire_cosy_smoke\",\n        \"minecraft:campfire_signal_smoke\"\n    ]\n}\n```\n\nThis example will force the `minecraft:large_smoke`, `minecraft:campfire_cosy_smoke` and `minecraft:campfire_signal_smoke` particles to render for the player.\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Force Particle Render\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/force_particle_render)\n\nForces one or multiple particles to render for the player, regardless of their \"Particle Settings\".\n\nType ID: `apugli:force_particle_render`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:force_particle_render\",\n    \"particles\": [\n        \"minecraft:large_smoke\",\n        \"minecraft:campfire_cosy_smoke\",\n        \"minecraft:campfire_signal_smoke\"\n    ]\n}\n```\n\nThis example will force the `minecraft:large_smoke`, `minecraft:campfire_cosy_smoke` and `minecraft:campfire_signal_smoke` particles to render for the player.\n"
+		},
 		"particle": {
 			"$ref": "../../apoli/types/particle_effect.json",
 			"description": "If specified, the specified particle will be forced to render for the player.",
@@ -13,10 +17,6 @@
 			},
 			"description": "If specified, the specified particles will be forced to render for the player.",
 			"markdownDescription": "If specified, the specified particles will be forced to render for the player."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nForces one or multiple particles to render for the player, regardless of their \"Particle Settings\".\n\nType ID: `apugli:force_particle_render`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nForces one or multiple particles to render for the player, regardless of their \"Particle Settings\".\n\nType ID: `apugli:force_particle_render`\n\n\n"
 		}
 	}
 }

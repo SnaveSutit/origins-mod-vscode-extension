@@ -21,8 +21,8 @@
 			"markdownDescription": "Determines whether to make the entity immune to the status effect(s) that aren't specified."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nPrevents status effects from being applied to the entity that has the power.\n\nType ID: `origins:effect_immunity`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nPrevents status effects from being applied to the entity that has the power.\n\nType ID: `origins:effect_immunity`\n\n\n"
+			"description": "## Effect Immunity\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/effect_immunity)\n\nPrevents status effects from being applied to the entity that has the power.\n\nType ID: `origins:effect_immunity`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n\t\"type\": \"origins:effect_immunity\",\n\t\"effects\": [\n\t\t\"minecraft:weakness\",\n\t\t\"minecraft:strength\"\n\t]\n}\n```\n\nThis example will make the entity immune to the Weakness and Strength status effects.\n",
+			"markdownDescription": "undefined## Effect Immunity\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/effect_immunity)\n\nPrevents status effects from being applied to the entity that has the power.\n\nType ID: `origins:effect_immunity`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n\t\"type\": \"origins:effect_immunity\",\n\t\"effects\": [\n\t\t\"minecraft:weakness\",\n\t\t\"minecraft:strength\"\n\t]\n}\n```\n\nThis example will make the entity immune to the Weakness and Strength status effects.\n"
 		}
 	}
 }

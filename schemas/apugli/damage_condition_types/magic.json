@@ -1,8 +1,8 @@
 {
 	"properties": {
 		"type": {
-			"description": "\n\n[Damage Condition Type](../damage_condition_types.md).\n\nChecks whether the damage is magic damage (for example Splash Potions and Dragon Breath).\n\nType ID: `apugli:magic`\n\n",
-			"markdownDescription": "\n\n[Damage Condition Type](../damage_condition_types.md).\n\nChecks whether the damage is magic damage (for example Splash Potions and Dragon Breath).\n\nType ID: `apugli:magic`\n\n"
+			"description": "## Magic\n\n---\n\n\n\n[Damage Condition Type](https://apugli.readthedocs.io/en/latest/types/damage_condition_types/magic).\n\nChecks whether the damage is magic damage (for example Splash Potions and Dragon Breath).\n\nType ID: `apugli:magic`\n\n\n\n---\n\n",
+			"markdownDescription": "undefined## Magic\n\n---\n\n\n\n[Damage Condition Type](https://apugli.readthedocs.io/en/latest/types/damage_condition_types/magic).\n\nChecks whether the damage is magic damage (for example Splash Potions and Dragon Breath).\n\nType ID: `apugli:magic`\n\n\n\n---\n\n"
 		}
 	}
 }

@@ -74,8 +74,8 @@
 			"markdownDescription": "Determines whether the particle type should be visible if the entity is invisible."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:particle`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:particle`\n\n\n"
+			"description": "## Particle\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/particle)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:particle`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:particle\",\n  \t\"particle\": \"minecraft:portal\",\n  \t\"frequency\": 4\n}\n```\n\nThis example will continuously spawn portal particles on the entity that has the power.\n",
+			"markdownDescription": "undefined## Particle\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/particle)\n\nSpawns particles on the body of the entity that has the power for visual effects.\n\nType ID: `origins:particle`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:particle\",\n  \t\"particle\": \"minecraft:portal\",\n  \t\"frequency\": 4\n}\n```\n\nThis example will continuously spawn portal particles on the entity that has the power.\n"
 		}
 	}
 }

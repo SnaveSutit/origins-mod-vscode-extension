@@ -7,8 +7,8 @@
 			"markdownDescription": "If specified, the status effect with this namespace and ID will be cleared. If not specified, all status effects will be cleared."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRemoves one specific type of status effect, or all status effects, from a living entity.\n\nType ID: `origins:clear_effect`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRemoves one specific type of status effect, or all status effects, from a living entity.\n\nType ID: `origins:clear_effect`\n\n\n"
+			"description": "## Clear Effect\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/clear_effect)\n\nRemoves one specific type of status effect, or all status effects, from a living entity.\n\nType ID: `origins:clear_effect`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:clear_effect\",\n    \"effect\": \"minecraft:poison\"\n}\n```\n\nThis example will clear the Poison status effect from the entity.\n",
+			"markdownDescription": "undefined## Clear Effect\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/clear_effect)\n\nRemoves one specific type of status effect, or all status effects, from a living entity.\n\nType ID: `origins:clear_effect`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:clear_effect\",\n    \"effect\": \"minecraft:poison\"\n}\n```\n\nThis example will clear the Poison status effect from the entity.\n"
 		}
 	}
 }

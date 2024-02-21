@@ -6,6 +6,10 @@
 		"entity_action"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action When Lightning Struck\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_when_lightning_struck)\n\nExecute an entity action when the power holder is struck by lightning.\n\nType ID: `apugli:action_when_lightning_struck`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_when_lightning_struck\",\n    \"bientity_condition\": {\n        \"type\": \"apoli:actor_condition\",\n        \"condition\": {\n            \"type\": \"apoli:or\",\n            \"axes\": [\n                \"y\"\n            ],\n            \"compare_to\": 0,\n            \"comparison\": \"<\"\n        }\n    },\n    \"entity_action\": {\n        \"type\": \"apoli:add_velocity\",\n        \"y\": 2\n    }\n}\n```\nThis example will launch the entity up in the air at a velocity of 2 if they have a y velocity lower than 0 whilst being hit by a lightning bolt.",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action When Lightning Struck\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_when_lightning_struck)\n\nExecute an entity action when the power holder is struck by lightning.\n\nType ID: `apugli:action_when_lightning_struck`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_when_lightning_struck\",\n    \"bientity_condition\": {\n        \"type\": \"apoli:actor_condition\",\n        \"condition\": {\n            \"type\": \"apoli:or\",\n            \"axes\": [\n                \"y\"\n            ],\n            \"compare_to\": 0,\n            \"comparison\": \"<\"\n        }\n    },\n    \"entity_action\": {\n        \"type\": \"apoli:add_velocity\",\n        \"y\": 2\n    }\n}\n```\nThis example will launch the entity up in the air at a velocity of 2 if they have a y velocity lower than 0 whilst being hit by a lightning bolt."
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -26,10 +30,6 @@
 			"$ref": "../../apoli/entity_action.json",
 			"description": "The entity action to execute on the power holder whenever they are struck by lightning.",
 			"markdownDescription": "The entity action to execute on the power holder whenever they are struck by lightning."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecute an entity action when the power holder is struck by lightning.\n\nType ID: `apugli:action_when_lightning_struck`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecute an entity action when the power holder is struck by lightning.\n\nType ID: `apugli:action_when_lightning_struck`\n\n\n"
 		}
 	}
 }

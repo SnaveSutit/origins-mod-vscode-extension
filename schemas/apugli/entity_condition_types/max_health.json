@@ -4,6 +4,10 @@
 		"compare_to"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Max Health\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/max_health).\n\nApplies a check towards the max health attribute value of an entity.\n\nType ID: `apugli:max_health`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Max Health\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/max_health).\n\nApplies a check towards the max health attribute value of an entity.\n\nType ID: `apugli:max_health`\n\n\n\n---\n\n"
+		},
 		"comparison": {
 			"default": ">=",
 			"$ref": "../../apoli/types/comparison.json",
@@ -14,10 +18,6 @@
 			"type": "number",
 			"description": "The value to compare the value to.",
 			"markdownDescription": "The value to compare the value to."
-		},
-		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nApplies a check towards the max health attribute value of an entity.\n\nType ID: `apugli:max_health`\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nApplies a check towards the max health attribute value of an entity.\n\nType ID: `apugli:max_health`\n\n"
 		}
 	}
 }

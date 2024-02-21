@@ -4,6 +4,10 @@
 		"power"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Explosion Raycast\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/explosion_raycast)\n\nRaycasts and summons an explosion at the hit location.\n\nType ID: `apugli:explosion_raycast`\n\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Explosion Raycast\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/explosion_raycast)\n\nRaycasts and summons an explosion at the hit location.\n\nType ID: `apugli:explosion_raycast`\n\n\n\n\n---\n\n"
+		},
 		"particle": {
 			"$ref": "../../apoli/types/particle_effect.json",
 			"description": "If set, the particle effect that is displayed on the ray.",
@@ -23,8 +27,8 @@
 		"space": {
 			"default": "world",
 			"$ref": "../../apoli/types/space.json",
-			"description": "If `direction` is specified, the [Space](https://origins.readthedocs.io/en/latest/misc/extras/space/) to perform the raycast in.",
-			"markdownDescription": "If `direction` is specified, the [Space](https://origins.readthedocs.io/en/latest/misc/extras/space/) to perform the raycast in."
+			"description": "If `direction` is specified, the [Space](https://apugli.readthedocs.io/en/latest/types/entity_action_types/explosion_raycast) to perform the raycast in.",
+			"markdownDescription": "If `direction` is specified, the [Space](https://apugli.readthedocs.io/en/latest/types/entity_action_types/explosion_raycast) to perform the raycast in."
 		},
 		"power": {
 			"type": "number",
@@ -43,8 +47,8 @@
 		},
 		"action_on_hit": {
 			"$ref": "../../apoli/entity_action.json",
-			"description": "If set, the entity action(s) to execute upon hitting a block or entity with the raycast.",
-			"markdownDescription": "If set, the entity action(s) to execute upon hitting a block or entity with the raycast."
+			"description": "If set, the entity action(s) to execute upon hitting a block or entity with the raycast. ",
+			"markdownDescription": "If set, the entity action(s) to execute upon hitting a block or entity with the raycast. "
 		},
 		"destruction_type": {
 			"type": "string",
@@ -70,8 +74,8 @@
 		},
 		"destructible": {
 			"$ref": "../../apoli/block_condition.json",
-			"description": "If specified, the blocks that fulfills this specified block condition type are the **only** blocks that are destroyed by the summoned explosion.",
-			"markdownDescription": "If specified, the blocks that fulfills this specified block condition type are the **only** blocks that are destroyed by the summoned explosion."
+			"description": "If specified, the blocks that fulfills this specified block condition type are the *_only_* blocks that are destroyed by the summoned explosion.",
+			"markdownDescription": "If specified, the blocks that fulfills this specified block condition type are the *_only_* blocks that are destroyed by the summoned explosion."
 		},
 		"create_fire": {
 			"type": "boolean",
@@ -143,8 +147,8 @@
 		},
 		"charged_condition": {
 			"$ref": "../../apoli/entity_condition.json",
-			"description": "If set, determined when the `charged_modifier` and `charged_modifiers` fields will be used.",
-			"markdownDescription": "If set, determined when the `charged_modifier` and `charged_modifiers` fields will be used."
+			"description": "If set, determined when the `charged_modifier` and `charged_modifiers` fields will be used. ",
+			"markdownDescription": "If set, determined when the `charged_modifier` and `charged_modifiers` fields will be used. "
 		},
 		"charged_modifier": {
 			"$ref": "../../apoli/types/attribute_modifier.json",
@@ -158,10 +162,6 @@
 			},
 			"description": "If set, these modifiers will apply to the power of the explosion when the `charged_condition` is met.",
 			"markdownDescription": "If set, these modifiers will apply to the power of the explosion when the `charged_condition` is met."
-		},
-		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRaycasts and summons an explosion at the hit location.\n\nType ID: `apugli:explosion_raycast`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRaycasts and summons an explosion at the hit location.\n\nType ID: `apugli:explosion_raycast`\n\n\n"
 		}
 	}
 }

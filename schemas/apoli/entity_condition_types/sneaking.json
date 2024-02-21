@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks whether the entity is currently sneaking.\n\nType ID: `origins:sneaking`\n\n!!! note\n\n    **This entity condition type will only work on players.**\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks whether the entity is currently sneaking.\n\nType ID: `origins:sneaking`\n\n!!! note\n\n    **This entity condition type will only work on players.**\n\n\n"
+			"description": "## Sneaking\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/sneaking)\n\nChecks whether the entity is currently sneaking.\n\nType ID: `origins:sneaking`\n\n\n\n---\n\n### 📝 Note\n\n__This entity condition type will only work on players.__\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:sneaking\"\n}\n```\n",
+			"markdownDescription": "undefined## Sneaking\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/sneaking)\n\nChecks whether the entity is currently sneaking.\n\nType ID: `origins:sneaking`\n\n\n\n---\n\n### 📝 Note\n\n__This entity condition type will only work on players.__\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:sneaking\"\n}\n```\n"
 		}
 	}
 }

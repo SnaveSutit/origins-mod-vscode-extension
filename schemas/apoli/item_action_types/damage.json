@@ -14,8 +14,8 @@
 			"markdownDescription": "Determines if this action should ignore the Unbreaking enchantment."
 		},
 		"type": {
-			"description": "\n\n[Item Action Type](../item_action_types.md)\n\nDamages the item stack with a specified amount.\n\nType ID: `origins:damage`\n\n\n",
-			"markdownDescription": "\n\n[Item Action Type](../item_action_types.md)\n\nDamages the item stack with a specified amount.\n\nType ID: `origins:damage`\n\n\n"
+			"description": "## Damage\n\n---\n\n\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/damage)\n\nDamages the item stack with a specified amount.\n\nType ID: `origins:damage`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_action\": {\n    \"type\": \"origins:damage\",\n    \"amount\": 10,\n    \"ignore_unbreaking\": true\n}\n```\n\nThis example will damage the item stack by 10, ignoring the Unbreaking enchantment.\n",
+			"markdownDescription": "undefined## Damage\n\n---\n\n\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/damage)\n\nDamages the item stack with a specified amount.\n\nType ID: `origins:damage`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_action\": {\n    \"type\": \"origins:damage\",\n    \"amount\": 10,\n    \"ignore_unbreaking\": true\n}\n```\n\nThis example will damage the item stack by 10, ignoring the Unbreaking enchantment.\n"
 		}
 	}
 }

@@ -22,8 +22,8 @@
 					"minimum": 1
 				}
 			},
-			"description": "The result of the crafting. **Note that vanilla does _not_ support NBT tags in the result.**",
-			"markdownDescription": "The result of the crafting. **Note that vanilla does _not_ support NBT tags in the result.**"
+			"description": "The result of the crafting. __Note that vanilla does *not* support NBT tags in the result.__",
+			"markdownDescription": "The result of the crafting. __Note that vanilla does *not* support NBT tags in the result.__"
 		}
 	},
 	"allOf": [

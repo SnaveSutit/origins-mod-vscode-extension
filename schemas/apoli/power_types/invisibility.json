@@ -15,12 +15,12 @@
 		},
 		"bientity_condition": {
 			"$ref": "../bientity_condition.json",
-			"description": "If specified, the '**target**' will only be invisible to '**actors**' (either the player or mobs that may see the target) if the bi-entity condition is fulfilled by either or both of them.",
-			"markdownDescription": "If specified, the '**target**' will only be invisible to '**actors**' (either the player or mobs that may see the target) if the bi-entity condition is fulfilled by either or both of them."
+			"description": "If specified, the '*_target_*' will only be invisible to '*_actors_*' (either the player or mobs that may see the target) if the bi-entity condition is fulfilled by either or both of them.",
+			"markdownDescription": "If specified, the '*_target_*' will only be invisible to '*_actors_*' (either the player or mobs that may see the target) if the bi-entity condition is fulfilled by either or both of them."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nGrants the entity that has the power invisibility; may or may not affect their worn armor.\n\nType ID: `origins:invisibility`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nGrants the entity that has the power invisibility; may or may not affect their worn armor.\n\nType ID: `origins:invisibility`\n\n\n"
+			"description": "## Invisibility\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/invisibility)\n\nGrants the entity that has the power invisibility; may or may not affect their worn armor.\n\nType ID: `origins:invisibility`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:invisibility\",\n\t\"render_armor\": false,\n\t\"condition\": {\n\t\t\"type\": \"origins:on_fire\",\n\t\t\"inverted\": true\n\t}\n}\n```\n\nThis example will make the entity that has the power invisible if the entity is not burning, even hiding the armor.\n",
+			"markdownDescription": "undefined## Invisibility\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/invisibility)\n\nGrants the entity that has the power invisibility; may or may not affect their worn armor.\n\nType ID: `origins:invisibility`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:invisibility\",\n\t\"render_armor\": false,\n\t\"condition\": {\n\t\t\"type\": \"origins:on_fire\",\n\t\t\"inverted\": true\n\t}\n}\n```\n\nThis example will make the entity that has the power invisible if the entity is not burning, even hiding the armor.\n"
 		}
 	}
 }

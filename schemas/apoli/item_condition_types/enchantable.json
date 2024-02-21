@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/enchantable)\n\nChecks if the item is enchantable.\n\nType ID: `origins:enchantable`\n\n\n",
-			"markdownDescription": "\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/enchantable)\n\nChecks if the item is enchantable.\n\nType ID: `origins:enchantable`\n\n\n"
+			"description": "## Enchantable\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/enchantable)\n\nChecks if the item is enchantable.\n\nType ID: `origins:enchantable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:enchantable\"\n}\n```\n",
+			"markdownDescription": "undefined## Enchantable\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/enchantable)\n\nChecks if the item is enchantable.\n\nType ID: `origins:enchantable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:enchantable\"\n}\n```\n"
 		}
 	}
 }

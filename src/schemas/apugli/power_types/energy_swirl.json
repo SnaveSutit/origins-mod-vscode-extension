@@ -3,14 +3,16 @@
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/energy_swirl/",
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"texture_location": {
 			"$ref": "$ref(apoli:types/autocomplete_helpers/texture_location)"
 		},
 		"texture_url": {
 			"type": "string",
-			"enum": [
-				"texture_location"
-			]
+			"enum": ["texture_location"]
 		},
 		"size": {
 			"type": "number",

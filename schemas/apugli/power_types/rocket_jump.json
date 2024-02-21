@@ -6,6 +6,10 @@
 		"key"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Rocket Jump\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/rocket_jump).\n\nAn active power that launches the player through the air while leaving an explosion at their crosshair location.\n\nType ID: `apugli:rocket_jump`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Rocket Jump\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/rocket_jump).\n\nAn active power that launches the player through the air while leaving an explosion at their crosshair location.\n\nType ID: `apugli:rocket_jump`\n\n\n\n---\n\n"
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -108,10 +112,6 @@
 			"$ref": "../../apoli/types/key.json",
 			"description": "Which active key this power should respond to.",
 			"markdownDescription": "Which active key this power should respond to."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nAn active power that launches the player through the air while leaving an explosion at their crosshair location.\n\nType ID: `apugli:rocket_jump`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nAn active power that launches the player through the air while leaving an explosion at their crosshair location.\n\nType ID: `apugli:rocket_jump`\n\n"
 		}
 	}
 }

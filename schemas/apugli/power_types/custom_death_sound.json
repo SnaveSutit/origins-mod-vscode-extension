@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Custom Death Sound\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/custom_death_sound)\n\nModifies the sound being played if the entity that has the power dies.\n\nType ID: `apugli:custom_death_sound`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:custom_death_sound\",\n    \"muted\": true\n}\n```\n\nThis example will mute the death sound of the entity that has the power.\n<br>\n\n```json\n{\n    \"type\": \"apugli:custom_death_sound\",\n    \"sound\": \"minecraft:entity.axolotl.death\"\n}\n```\n\nThis example will replace the death sound of the entity that has the power with the `minecraft:entity.axolotl.death` sound event.\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Custom Death Sound\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/custom_death_sound)\n\nModifies the sound being played if the entity that has the power dies.\n\nType ID: `apugli:custom_death_sound`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:custom_death_sound\",\n    \"muted\": true\n}\n```\n\nThis example will mute the death sound of the entity that has the power.\n<br>\n\n```json\n{\n    \"type\": \"apugli:custom_death_sound\",\n    \"sound\": \"minecraft:entity.axolotl.death\"\n}\n```\n\nThis example will replace the death sound of the entity that has the power with the `minecraft:entity.axolotl.death` sound event.\n"
+		},
 		"muted": {
 			"type": "boolean",
 			"default": false,
@@ -31,10 +35,6 @@
 			"default": 1,
 			"description": "Determines the pitch of the sound event(s) being played.",
 			"markdownDescription": "Determines the pitch of the sound event(s) being played."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the sound being played if the entity that has the power dies.\n\nType ID: `apugli:custom_death_sound`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the sound being played if the entity that has the power dies.\n\nType ID: `apugli:custom_death_sound`\n\n\n"
 		}
 	}
 }

@@ -25,8 +25,8 @@
 			"markdownDescription": "Determines how to select the parent advancement(s) or child(ren) advancement(s) of the specified advancement. Can be one of: `\"only\"`, `\"through\"`, `\"from\"`, `\"until\"`, `\"everything\"`"
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRevokes an advancement from the player.\n\nType ID: `origins:revoke_advancement`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRevokes an advancement from the player.\n\nType ID: `origins:revoke_advancement`\n\n\n"
+			"description": "## Revoke Advancement\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/revoke_advancement)\n\nRevokes an advancement from the player.\n\nType ID: `origins:revoke_advancement`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:revoke_advancement\",\n    \"advancement\": \"minecraft:adventure/arbalistic\"\n}\n```\n\nThis example will revoke the Arbalistic advancement from the player, if they have it.\n",
+			"markdownDescription": "undefined## Revoke Advancement\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/revoke_advancement)\n\nRevokes an advancement from the player.\n\nType ID: `origins:revoke_advancement`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:revoke_advancement\",\n    \"advancement\": \"minecraft:adventure/arbalistic\"\n}\n```\n\nThis example will revoke the Arbalistic advancement from the player, if they have it.\n"
 		}
 	}
 }

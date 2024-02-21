@@ -4,14 +4,14 @@
 		"entity_id"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Custom Entity Id\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/custom_entity_id).\n\nChecks for the Entity ID associated with a Custom Projectile or Custom Area of Effect Cloud.\n\nType ID: `apugli:custom_entity_id`\n\n\n\n---\n\n### 📝 Note\n\nThis condition will always return false if used outside of a Custom Projectile or Custom Area of Effect Cloud.\n\n\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Custom Entity Id\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/custom_entity_id).\n\nChecks for the Entity ID associated with a Custom Projectile or Custom Area of Effect Cloud.\n\nType ID: `apugli:custom_entity_id`\n\n\n\n---\n\n### 📝 Note\n\nThis condition will always return false if used outside of a Custom Projectile or Custom Area of Effect Cloud.\n\n\n\n\n\n---\n\n"
+		},
 		"entity_id": {
 			"$ref": "../../apoli/types/autocomplete_helpers/entity_identifier.json",
-			"description": "The entity id to cehck",
-			"markdownDescription": "The entity id to cehck"
-		},
-		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks for the Entity ID associated with a Custom Projectile or Custom Area of Effect Cloud.\n\nType ID: `apugli:custom_entity_id`\n\n!!! note\n\n    This condition will always return false if used outside of a Custom Projectile or Custom Area of Effect Cloud.\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks for the Entity ID associated with a Custom Projectile or Custom Area of Effect Cloud.\n\nType ID: `apugli:custom_entity_id`\n\n!!! note\n\n    This condition will always return false if used outside of a Custom Projectile or Custom Area of Effect Cloud.\n\n"
+			"description": "The entity id to cehck ",
+			"markdownDescription": "The entity id to cehck "
 		}
 	}
 }

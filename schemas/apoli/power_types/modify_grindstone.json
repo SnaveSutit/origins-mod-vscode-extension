@@ -29,8 +29,8 @@
 		},
 		"item_action_after_grinding": {
 			"$ref": "../item_action.json",
-			"description": "If specified, this action will be executed on the result item stack **after** the grinding process.",
-			"markdownDescription": "If specified, this action will be executed on the result item stack **after** the grinding process."
+			"description": "If specified, this action will be executed on the result item stack *_after_* the grinding process.",
+			"markdownDescription": "If specified, this action will be executed on the result item stack *_after_* the grinding process."
 		},
 		"top_condition": {
 			"$ref": "../item_condition.json",
@@ -58,8 +58,8 @@
 			"markdownDescription": "If specified, this modifier will be applied to the value of the experience received from removing an enchantment from an item stack."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n\nType ID: `origins:modify_grindstone`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n\nType ID: `origins:modify_grindstone`\n\n\n"
+			"description": "## Modify Grindstone\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_grindstone)\n\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n\nType ID: `origins:modify_grindstone`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_grindstone\",\n    \"xp_modifier\": {\n        \"operation\": \"multiply_total_multiplicative\",\n        \"value\": 0.5\n    }\n}\n```\n\nThis example will increase the experience recieved from removing enchantments from an enchanted item to 50%.\n<br>\n\n```json\n{\n    \"type\": \"origins:modify_grindstone\",\n    \"result_type\": \"specified\",\n    \"block_action\": {\n        \"type\": \"origins:set_block\",\n        \"block\": \"minecraft:air\"\n    },\n    \"output_condition\": {\n        \"type\": \"origins:ingredient\",\n        \"ingredient\": {\n            \"item\": \"minecraft:diamond_sword\"\n        }\n    },\n    \"result_stack\": {\n        \"item\": \"minecraft:netherite_sword\"\n    }\n}\n```\n\nThis example will replace the item in the output/result slot of a Grindstone with a Netherite Sword if the initial item is a Diamond Sword. This will also remove the used Grindstone block after taking the said item.\n",
+			"markdownDescription": "undefined## Modify Grindstone\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_grindstone)\n\nModifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone.\n\nType ID: `origins:modify_grindstone`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_grindstone\",\n    \"xp_modifier\": {\n        \"operation\": \"multiply_total_multiplicative\",\n        \"value\": 0.5\n    }\n}\n```\n\nThis example will increase the experience recieved from removing enchantments from an enchanted item to 50%.\n<br>\n\n```json\n{\n    \"type\": \"origins:modify_grindstone\",\n    \"result_type\": \"specified\",\n    \"block_action\": {\n        \"type\": \"origins:set_block\",\n        \"block\": \"minecraft:air\"\n    },\n    \"output_condition\": {\n        \"type\": \"origins:ingredient\",\n        \"ingredient\": {\n            \"item\": \"minecraft:diamond_sword\"\n        }\n    },\n    \"result_stack\": {\n        \"item\": \"minecraft:netherite_sword\"\n    }\n}\n```\n\nThis example will replace the item in the output/result slot of a Grindstone with a Netherite Sword if the initial item is a Diamond Sword. This will also remove the used Grindstone block after taking the said item.\n"
 		}
 	}
 }

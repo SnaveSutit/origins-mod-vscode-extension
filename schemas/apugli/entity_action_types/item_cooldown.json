@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Item Cooldown\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/item_cooldown).\n\nSets the cooldown of a specific item. (Does not operate on specific stacks).\n\nType ID: `apugli:item_cooldown`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Item Cooldown\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/item_cooldown).\n\nSets the cooldown of a specific item. (Does not operate on specific stacks).\n\nType ID: `apugli:item_cooldown`\n\n\n\n---\n\n"
+		},
 		"items": {
 			"type": "array",
 			"items": {
@@ -22,10 +26,6 @@
 			"default": 20,
 			"description": "The amount of ticks that the cooldown should be active for.",
 			"markdownDescription": "The amount of ticks that the cooldown should be active for."
-		},
-		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md).\n\nSets the cooldown of a specific item. (Does not operate on specific stacks).\n\nType ID: `apugli:item_cooldown`\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md).\n\nSets the cooldown of a specific item. (Does not operate on specific stacks).\n\nType ID: `apugli:item_cooldown`\n\n"
 		}
 	}
 }

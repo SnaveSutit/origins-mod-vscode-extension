@@ -16,8 +16,8 @@
 			"markdownDescription": "Which value the health should be compared to."
 		},
 		"type": {
-			"description": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/health)\n\nChecks the current (and absolute) health value of the entity.\n\nType ID: `origins:health`\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/health)\n\nChecks the current (and absolute) health value of the entity.\n\nType ID: `origins:health`\n\n\n"
+			"description": "## Health\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/health)\n\nChecks the current (and absolute) health value of the entity.\n\nType ID: `origins:health`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:health\",\n    \"comparison\": \"<\",\n    \"compare_to\": 20\n}\n```\n\nThis example will check if the entity's health is less than 10 hearts (or 20 health points).\n",
+			"markdownDescription": "undefined## Health\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/health)\n\nChecks the current (and absolute) health value of the entity.\n\nType ID: `origins:health`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:health\",\n    \"comparison\": \"<\",\n    \"compare_to\": 20\n}\n```\n\nThis example will check if the entity's health is less than 10 hearts (or 20 health points).\n"
 		}
 	}
 }

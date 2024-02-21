@@ -10,8 +10,8 @@
 			"markdownDescription": "This modifier will be applied to the current death ticks value of the entity."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nModifies how long the entity has been dead for.\n\nType ID: `origins:modify_death_ticks`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nModifies how long the entity has been dead for.\n\nType ID: `origins:modify_death_ticks`\n\n\n"
+			"description": "## Modify Death Ticks\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_death_ticks)\n\nModifies how long the entity has been dead for.\n\nType ID: `origins:modify_death_ticks`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:modify_death_ticks\",\n    \"modifier\": {\n        \"operation\": \"set_total\",\n        \"value\": 0\n    }\n}\n```\n\nThis example will make the corpse of the entity remain in the world forever.\n",
+			"markdownDescription": "undefined## Modify Death Ticks\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/modify_death_ticks)\n\nModifies how long the entity has been dead for.\n\nType ID: `origins:modify_death_ticks`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:modify_death_ticks\",\n    \"modifier\": {\n        \"operation\": \"set_total\",\n        \"value\": 0\n    }\n}\n```\n\nThis example will make the corpse of the entity remain in the world forever.\n"
 		}
 	}
 }

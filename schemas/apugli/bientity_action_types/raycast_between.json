@@ -4,6 +4,10 @@
 		"particle"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Raycast Between\n\n---\n\n\n\n[Bi-entity Action Type](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/raycast_between).\n\nRaycasts to the target entity from the actor entity.\n\nType ID: `apugli:raycast_between`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Raycast Between\n\n---\n\n\n\n[Bi-entity Action Type](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/raycast_between).\n\nRaycasts to the target entity from the actor entity.\n\nType ID: `apugli:raycast_between`\n\n\n\n---\n\n"
+		},
 		"block_action": {
 			"$ref": "../../apoli/block_action.json",
 			"description": "If set, the block action to be executed on blocks targeted by this raycast.",
@@ -24,10 +28,6 @@
 			"default": 0.5,
 			"description": "If there is a particle effect, the spacing between the particles displayed on the ray.",
 			"markdownDescription": "If there is a particle effect, the spacing between the particles displayed on the ray."
-		},
-		"type": {
-			"description": "\n\n[Bi-entity Action Type](../bientity_action_types.md).\n\nRaycasts to the target entity from the actor entity.\n\nType ID: `apugli:raycast_between`\n\n",
-			"markdownDescription": "\n\n[Bi-entity Action Type](../bientity_action_types.md).\n\nRaycasts to the target entity from the actor entity.\n\nType ID: `apugli:raycast_between`\n\n"
 		}
 	}
 }

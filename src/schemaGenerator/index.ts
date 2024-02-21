@@ -48,12 +48,25 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 			delete schema.$IGNORED_PROPERTIES
 		}
 
-		if (mdFile.description && schema.$docsUrl.match(/.+(?:action|condition|power)_types/)) {
+		if (
+			mdFile.description &&
+			!ignoredProperties.includes('type') &&
+			schema.$docsUrl.match(/.+(?:action|condition|power)_types/)
+		) {
 			schema.properties ??= {}
-			schema.properties.type ??= {
-				description: mdFile.description,
-				markdownDescription: mdFile.description,
-			}
+			schema.properties.type ??= {}
+			schema.properties.type.description ??= ''
+			schema.properties.type.description += [
+				'## ' + mdFile.title,
+				mdFile.description,
+				mdFile.examples,
+			].join('\n\n---\n\n')
+			schema.properties.type.description ??= ''
+			schema.properties.type.markdownDescription += [
+				'## ' + mdFile.title,
+				mdFile.description,
+				mdFile.examples,
+			].join('\n\n---\n\n')
 		}
 
 		if (mdFile.fields.length > 0) {
@@ -67,7 +80,7 @@ async function processSchemaProperties(schema: JSONSchema, path: string) {
 			const foundFields: string[] = [...ignoredProperties]
 			for (const propObj of propertyObjects) {
 				for (const field of mdFile.fields) {
-					if (!propObj[field.name]) continue
+					if (!propObj[field.name] || ignoredProperties.includes(field.name)) continue
 					foundFields.push(field.name)
 					propObj[field.name].description
 						? (propObj[field.name].description += field.description)
@@ -338,6 +351,7 @@ async function build(schemasToBuild: string[]) {
 		writeProgress?.itemDone(path)
 	}
 	writeProgress?.stop()
+	term('\n')
 }
 
 async function main() {

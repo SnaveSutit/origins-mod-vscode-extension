@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Hits on Target\n\n---\n\n\n\n[Bi-entity Condition Type](https://apugli.readthedocs.io/en/latest/types/bientity_condition_types/hits_on_target).\n\nChecks the amount of times a target has been hit within a time interval.\n\nType ID: `apugli:hits_on_target`\n\n!!! note\n    The interval at which this bi-entity condition's hits reset depends on the Apugli config's resetTimerTicks value.\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Hits on Target\n\n---\n\n\n\n[Bi-entity Condition Type](https://apugli.readthedocs.io/en/latest/types/bientity_condition_types/hits_on_target).\n\nChecks the amount of times a target has been hit within a time interval.\n\nType ID: `apugli:hits_on_target`\n\n!!! note\n    The interval at which this bi-entity condition's hits reset depends on the Apugli config's resetTimerTicks value.\n\n\n\n---\n\n"
+		},
 		"comparison": {
 			"default": ">=",
 			"$ref": "../../apoli/types/comparison.json",
@@ -12,10 +16,6 @@
 			"default": 1,
 			"description": "The value to compare the amount to.",
 			"markdownDescription": "The value to compare the amount to."
-		},
-		"type": {
-			"description": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md).\n\nChecks the amount of times a target has been hit within a time interval.\n\nType ID: `apugli:hits_on_target`\n\n!!! note\n    The interval at which this bi-entity condition's hits reset depends on the Apugli config's resetTimerTicks value.\n\n",
-			"markdownDescription": "\n\n[Bi-entity Condition Type](../bientity_condition_types.md).\n\nChecks the amount of times a target has been hit within a time interval.\n\nType ID: `apugli:hits_on_target`\n\n!!! note\n    The interval at which this bi-entity condition's hits reset depends on the Apugli config's resetTimerTicks value.\n\n"
 		}
 	}
 }

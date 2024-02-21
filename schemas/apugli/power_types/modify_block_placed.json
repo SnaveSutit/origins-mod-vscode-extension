@@ -4,6 +4,10 @@
 		"item_condition"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Block Placed\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_block_placed)\n\nModifies the placed block upon placing one.\n\nType ID: `apugli:modify_block_placed`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:modify_block_placed\",\n    \"blocks\": [\n        \"minecraft:white_wool\",\n        \"minecraft:orange_wool\",\n        \"minecraft:magenta_wool\",\n        \"minecraft:light_blue_wool\",\n        \"minecraft:yellow_wool\",\n        \"minecraft:lime_wool\",\n        \"minecraft:pink_wool\",\n        \"minecraft:gray_wool\",\n        \"minecraft:light_gray_wool\",\n        \"minecraft:cyan_wool\",\n        \"minecraft:purple_wool\",\n        \"minecraft:blue_wool\",\n        \"minecraft:brown_wool\",\n        \"minecraft:green_wool\",\n        \"minecraft:red_wool\",\n        \"minecraft:black_wool\"\n    ],\n    \"item_condition\": {\n        \"type\": \"apoli:ingredient\",\n        \"ingredient\": {\n            \"tag\": \"minecraft:wool\"\n        }\n    }\n}\n```\n\nThis example will randomly replace the color of the Wool block that you place.\n<br>\n\n```json\n{\n    \"type\": \"apugli:modify_block_placed\",\n    \"block_states\": [\n        \"minecraft:chest[facing=north]\",\n        \"minecraft:chest[facing=south]\",\n        \"minecraft:chest[facing=east]\",\n        \"minecraft:chest[facing=west]\"\n    ],\n    \"item_condition\": {\n        \"type\": \"apoli:ingredient\",\n        \"ingredient\": {\n            \"item\": \"minecraft:chest\"\n        }\n    }\n}\n```\n\nThis example will randomly \"rotate\" the Chest block that you place.\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Block Placed\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_block_placed)\n\nModifies the placed block upon placing one.\n\nType ID: `apugli:modify_block_placed`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:modify_block_placed\",\n    \"blocks\": [\n        \"minecraft:white_wool\",\n        \"minecraft:orange_wool\",\n        \"minecraft:magenta_wool\",\n        \"minecraft:light_blue_wool\",\n        \"minecraft:yellow_wool\",\n        \"minecraft:lime_wool\",\n        \"minecraft:pink_wool\",\n        \"minecraft:gray_wool\",\n        \"minecraft:light_gray_wool\",\n        \"minecraft:cyan_wool\",\n        \"minecraft:purple_wool\",\n        \"minecraft:blue_wool\",\n        \"minecraft:brown_wool\",\n        \"minecraft:green_wool\",\n        \"minecraft:red_wool\",\n        \"minecraft:black_wool\"\n    ],\n    \"item_condition\": {\n        \"type\": \"apoli:ingredient\",\n        \"ingredient\": {\n            \"tag\": \"minecraft:wool\"\n        }\n    }\n}\n```\n\nThis example will randomly replace the color of the Wool block that you place.\n<br>\n\n```json\n{\n    \"type\": \"apugli:modify_block_placed\",\n    \"block_states\": [\n        \"minecraft:chest[facing=north]\",\n        \"minecraft:chest[facing=south]\",\n        \"minecraft:chest[facing=east]\",\n        \"minecraft:chest[facing=west]\"\n    ],\n    \"item_condition\": {\n        \"type\": \"apoli:ingredient\",\n        \"ingredient\": {\n            \"item\": \"minecraft:chest\"\n        }\n    }\n}\n```\n\nThis example will randomly \"rotate\" the Chest block that you place.\n"
+		},
 		"block": {
 			"$ref": "../../apoli/types/identifier.json",
 			"description": "If specified, replaces the placed block with the block that has the specified namespace and ID.",
@@ -41,10 +45,6 @@
 			"$ref": "../../apoli/item_condition.json",
 			"description": "The block item used for placing a block.",
 			"markdownDescription": "The block item used for placing a block."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the placed block upon placing one.\n\nType ID: `apugli:modify_block_placed`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the placed block upon placing one.\n\nType ID: `apugli:modify_block_placed`\n\n\n"
 		}
 	}
 }

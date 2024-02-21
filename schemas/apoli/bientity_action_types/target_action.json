@@ -10,8 +10,8 @@
 			"markdownDescription": "The entity action type to execute on the target entity."
 		},
 		"type": {
-			"description": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/target_action)\n\nExecutes an [Entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/target_action) on the target entity.\n\nType ID: `origins:target_action`\n\n\n",
-			"markdownDescription": "\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/target_action)\n\nExecutes an [Entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/target_action) on the target entity.\n\nType ID: `origins:target_action`\n\n\n"
+			"description": "## Target Action\n\n---\n\n\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/target_action)\n\nExecutes an [Entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/target_action) on the target entity.\n\nType ID: `origins:target_action`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_action\": {\n    \"type\": \"origins:target_action\",\n    \"action\": {\n        \"type\": \"origins:set_on_fire\",\n        \"duration\": 5\n    }\n}\n```\n\nThis example will set the target entity on fire for 5 seconds.\n",
+			"markdownDescription": "undefined## Target Action\n\n---\n\n\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/target_action)\n\nExecutes an [Entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/target_action) on the target entity.\n\nType ID: `origins:target_action`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_action\": {\n    \"type\": \"origins:target_action\",\n    \"action\": {\n        \"type\": \"origins:set_on_fire\",\n        \"duration\": 5\n    }\n}\n```\n\nThis example will set the target entity on fire for 5 seconds.\n"
 		}
 	}
 }

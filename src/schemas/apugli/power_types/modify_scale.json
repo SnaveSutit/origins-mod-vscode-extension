@@ -3,6 +3,10 @@
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/modify_scale/",
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"scale_type": {
 			"$ref": "$ref(apoli:types/identifier)"
 		},

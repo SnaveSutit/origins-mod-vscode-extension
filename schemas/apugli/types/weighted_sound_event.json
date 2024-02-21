@@ -13,6 +13,10 @@
 		}
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"sound": {
 			"$ref": "sound_event_with_volume_and_pitch.json",
 			"description": "The namespace and ID of the sound to play along with pitch and volume.",

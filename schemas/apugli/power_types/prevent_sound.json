@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Prevent Sound\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_sound)\n\nPrevents sound events from being heard by the entity that has the power.\n\nType ID: `apugli:prevent_sound`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:prevent_sound\",\n    \"categories\": [\n        \"BLOCKS\"\n    ],\n    \"whitelist\": [\n        \"minecraft:block.glass.break\"\n    ]\n}\n```\n\nThis example will prevent sound events from the `BLOCKS` sound category from being heard by the entity that has the power except for the `minecraft:block.glass.break` sound event.\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Prevent Sound\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_sound)\n\nPrevents sound events from being heard by the entity that has the power.\n\nType ID: `apugli:prevent_sound`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:prevent_sound\",\n    \"categories\": [\n        \"BLOCKS\"\n    ],\n    \"whitelist\": [\n        \"minecraft:block.glass.break\"\n    ]\n}\n```\n\nThis example will prevent sound events from the `BLOCKS` sound category from being heard by the entity that has the power except for the `minecraft:block.glass.break` sound event.\n"
+		},
 		"category": {
 			"type": "string",
 			"enum": [
@@ -40,10 +44,6 @@
 			"type": "array",
 			"description": "If specified, these sound events will be exempt from being prevented.",
 			"markdownDescription": "If specified, these sound events will be exempt from being prevented."
-		},
-		"type": {
-			"description": "\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_sound)\n\nPrevents sound events from being heard by the entity that has the power.\n\nType ID: `apugli:prevent_sound`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_sound)\n\nPrevents sound events from being heard by the entity that has the power.\n\nType ID: `apugli:prevent_sound`\n\n\n"
 		}
 	}
 }

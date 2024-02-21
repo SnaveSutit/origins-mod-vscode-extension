@@ -141,8 +141,8 @@
 						"markdownDescription": "All of these condition types have to be fulfilled in order for this condition to be fulfilled."
 					},
 					"type": {
-						"description": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/and)\n\nChecks whether all of the provided conditions are fulfilled.\n\nType ID: `origins:and`\n\n\n",
-						"markdownDescription": "\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/and)\n\nChecks whether all of the provided conditions are fulfilled.\n\nType ID: `origins:and`\n\n\n"
+						"description": "## And\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/and)\n\nChecks whether all of the provided conditions are fulfilled.\n\nType ID: `origins:and`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:and\",\n    \"conditions\": [\n        {\n            \"type\": \"origins:daytime\"\n        },\n        {      \n            \"type\": \"origins:invisible\"\n        }\n    ]\n}\n```\n\nThis example will check if it is both daytime, and the entity is invisible.\n",
+						"markdownDescription": "undefined## And\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/and)\n\nChecks whether all of the provided conditions are fulfilled.\n\nType ID: `origins:and`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:and\",\n    \"conditions\": [\n        {\n            \"type\": \"origins:daytime\"\n        },\n        {      \n            \"type\": \"origins:invisible\"\n        }\n    ]\n}\n```\n\nThis example will check if it is both daytime, and the entity is invisible.\n"
 					}
 				}
 			}
@@ -173,8 +173,8 @@
 						"markdownDescription": "The value to compare the randomly generated number to."
 					},
 					"type": {
-						"description": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n",
-						"markdownDescription": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n"
+						"description": "## Chance\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"condition\": {\n\t\"type\": \"origins:chance\",\n\t\"chance\": 0.5\n}\n```\n\nThis example will evaluate to true 50% of the time.\n",
+						"markdownDescription": "undefined## Chance\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"condition\": {\n\t\"type\": \"origins:chance\",\n\t\"chance\": 0.5\n}\n```\n\nThis example will evaluate to true 50% of the time.\n"
 					}
 				}
 			}
@@ -205,8 +205,8 @@
 						"markdownDescription": "If true, the condition is always fulfilled. If false, the condition is never fulfilled."
 					},
 					"type": {
-						"description": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n",
-						"markdownDescription": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n"
+						"description": "## Constant\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:constant\",\n    \"value\": true\n}\n```\n\nThis example is always true.\n",
+						"markdownDescription": "undefined## Constant\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/constant)\n\nProvides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types.\n\nType ID: `origins:constant`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:constant\",\n    \"value\": true\n}\n```\n\nThis example is always true.\n"
 					}
 				}
 			}
@@ -240,8 +240,8 @@
 						"markdownDescription": "Any of these condition types have to be fulfilled in order for this condition to be fulfilled."
 					},
 					"type": {
-						"description": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n",
-						"markdownDescription": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n"
+						"description": "## Or\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/or)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:or\",\n    \"conditions\": [\n        {\n            \"type\": \"origins:status_effect\",\n            \"effect\": \"minecraft:poison\"\n        },\n        {    \n            \"type\": \"origins:status_effect\",\n            \"effect\": \"minecraft:wither\"\n        }\n    ]\n}\n```\n\nThis example will check if the entity has either the Poison or Wither status effects.\n",
+						"markdownDescription": "undefined## Or\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/or)\n\nChecks whether any (one or more) of the provided conditions are fulfilled.\n\nType ID: `origins:or`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:or\",\n    \"conditions\": [\n        {\n            \"type\": \"origins:status_effect\",\n            \"effect\": \"minecraft:poison\"\n        },\n        {    \n            \"type\": \"origins:status_effect\",\n            \"effect\": \"minecraft:wither\"\n        }\n    ]\n}\n```\n\nThis example will check if the entity has either the Poison or Wither status effects.\n"
 					}
 				}
 			}
@@ -264,8 +264,8 @@
 	],
 	"properties": {
 		"type": {
-			"description": "\n\nDamage Condition Types operate on a combination of `DamageSource` and `Float`, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a `damage_condition` object field.\n\n\n",
-			"markdownDescription": "\n\nDamage Condition Types operate on a combination of `DamageSource` and `Float`, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a `damage_condition` object field.\n\n\n"
+			"description": "## Damage Condition Types\n\n---\n\n\n\nDamage Condition Types operate on a combination of `DamageSource` and `Float`, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a `damage_condition` object field.\n\n\n\n\n---\n\n",
+			"markdownDescription": "undefined## Damage Condition Types\n\n---\n\n\n\nDamage Condition Types operate on a combination of `DamageSource` and `Float`, allowing to check not only the type of damage dealt, but also how much damage was dealt. These are available to power/condition types that provides a `damage_condition` object field.\n\n\n\n\n---\n\n"
 		}
 	}
 }

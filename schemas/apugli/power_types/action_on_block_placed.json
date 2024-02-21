@@ -4,6 +4,10 @@
 		"item_condition"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Block Placed\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_block_placed)\n\nExecutes an action upon placing a block.\n\nType ID: `apugli:action_on_block_placed`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_on_block_placed\",\n    \"block_action\": {\n        \"type\": \"apoli:execute_command\",\n        \"command\": \"summon armor_stand ~ ~ ~ {Marker: 1b, Tags: [\\\"test\\\"]}\"\n    },\n    \"item_condition\": {\n        \"type\": \"apoli:ingredient\",\n        \"ingredient\": {\n            \"item\": \"minecraft:cobblestone\"\n        }\n    }\n}\n```\n\nThis example will summon a marker Armor Stand at the position of the placed Cobblestone block.",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Block Placed\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_block_placed)\n\nExecutes an action upon placing a block.\n\nType ID: `apugli:action_on_block_placed`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:action_on_block_placed\",\n    \"block_action\": {\n        \"type\": \"apoli:execute_command\",\n        \"command\": \"summon armor_stand ~ ~ ~ {Marker: 1b, Tags: [\\\"test\\\"]}\"\n    },\n    \"item_condition\": {\n        \"type\": \"apoli:ingredient\",\n        \"ingredient\": {\n            \"item\": \"minecraft:cobblestone\"\n        }\n    }\n}\n```\n\nThis example will summon a marker Armor Stand at the position of the placed Cobblestone block."
+		},
 		"block_action": {
 			"$ref": "../../apoli/block_action.json",
 			"description": "If specified, this action type will be executed upon placing a block using a certain block item.",
@@ -13,10 +17,6 @@
 			"$ref": "../../apoli/item_condition.json",
 			"description": "The block item used for placing a block.",
 			"markdownDescription": "The block item used for placing a block."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nExecutes an action upon placing a block.\n\nType ID: `apugli:action_on_block_placed`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nExecutes an action upon placing a block.\n\nType ID: `apugli:action_on_block_placed`\n\n\n"
 		}
 	}
 }

@@ -1,93 +1,43 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
-	"required": ["type"],
+	"$docsUrl": "https://origins.readthedocs.io/en/latest/json/badge/",
 	"allOf": [
 		{
 			"if": {
-				"required": ["type"],
-				"properties": {
-					"type": {
-						"enum": ["apoli:crafting_recipe", "origins:crafting_recipe"]
-					}
-				}
+				"type": "string"
 			},
 			"then": {
-				"required": ["sprite", "recipe"],
-				"properties": {
-					"sprite": {
-						"$ref": "$ref(apoli:types/identifier)"
-					},
-					"recipe": {
-						"$ref": "$ref(apoli:types/crafting_recipe)"
-					},
-					"suffix": {
-						"$ref": "$ref(apoli:types/text_component)"
-					},
-					"prefix": {
-						"$ref": "$ref(apoli:types/text_component)"
-					}
-				}
+				"$ref": "$ref(apoli:types/identifier)"
 			}
 		},
 		{
 			"if": {
-				"required": ["type"],
-				"properties": {
-					"type": {
-						"enum": ["apoli:keybind", "origins:keybind"]
-					}
-				}
+				"type": "object"
 			},
 			"then": {
-				"required": ["sprite", "text"],
-				"properties": {
-					"sprite": {
-						"$ref": "$ref(apoli:types/identifier)"
-					},
-					"text": {
-						"$ref": "$ref(apoli:types/text_component)"
-					}
-				}
-			}
-		},
-		{
-			"if": {
+				"type": "object",
 				"required": ["type"],
-				"properties": {
-					"type": {
-						"enum": ["apoli:sprite", "origins:sprite"]
+
+				"$IMPORT": {
+					"type": "import_files_into_array",
+					"path": "$ref(apoli:badge_types)",
+					"output_key": "allOf",
+					"schema_structure": {
+						"if": {
+							"required": ["type"],
+							"properties": {
+								"type": {
+									"enum": ["apoli:$fileName", "origins:$fileName"]
+								}
+							}
+						},
+						"then": {
+							"$ref": "$fileRef"
+						}
 					}
-				}
-			},
-			"then": {
-				"required": ["sprite"],
-				"properties": {
-					"sprite": {
-						"$ref": "$ref(apoli:types/identifier)"
-					}
-				}
-			}
-		},
-		{
-			"if": {
-				"required": ["type"],
-				"properties": {
-					"type": {
-						"enum": ["apoli:tooltip", "origins:tooltip"]
-					}
-				}
-			},
-			"then": {
-				"required": ["sprite", "text"],
-				"properties": {
-					"sprite": {
-						"$ref": "$ref(apoli:types/identifier)"
-					},
-					"text": {
-						"$ref": "$ref(apoli:types/text_component)"
-					}
-				}
+				},
+
+				"allOf": []
 			}
 		}
 	]

@@ -2,10 +2,12 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/meta_action_types/packet/",
 	"type": "object",
-	"required": [
-		"side"
-	],
+	"required": ["side"],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"side": {
 			"$ref": "$ref(apoli:types/side)"
 		}

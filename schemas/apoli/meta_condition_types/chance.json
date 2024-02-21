@@ -10,8 +10,8 @@
 			"markdownDescription": "The value to compare the randomly generated number to."
 		},
 		"type": {
-			"description": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n",
-			"markdownDescription": "\n\n[Meta Condition Type](../meta_condition_types.md)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n"
+			"description": "## Chance\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"condition\": {\n\t\"type\": \"origins:chance\",\n\t\"chance\": 0.5\n}\n```\n\nThis example will evaluate to true 50% of the time.\n",
+			"markdownDescription": "undefined## Chance\n\n---\n\n\n\n[Meta Condition Type](https://origins.readthedocs.io/en/latest/types/meta_condition_types/chance)\n\nGenerates a random number between 0.0 and 1.0 and checks if it's less than a specified value.\n\nType ID: `origins:chance`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"condition\": {\n\t\"type\": \"origins:chance\",\n\t\"chance\": 0.5\n}\n```\n\nThis example will evaluate to true 50% of the time.\n"
 		}
 	}
 }

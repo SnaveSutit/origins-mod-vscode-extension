@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Breeding Cooldown\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_breeding_cooldown)\n\nModifies the breeding cooldown for entities bred by the power holder.\n\nType ID: `apugli:modify_breeding_cooldown`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:modify_breeding_cooldown\",\n    \"modifier\": {\n        \"operation\": \"multiply_total_multiplicative\",\n        \"value\": 2\n    },\n    \"bientity_condition\": {\n       \"type\": \"apoli:owner\",\n       \"inverted\": true\n    }\n}\n```\nThis power doubles the breeding cooldown for entities if they aren't owned by the power holder.",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Modify Breeding Cooldown\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/modify_breeding_cooldown)\n\nModifies the breeding cooldown for entities bred by the power holder.\n\nType ID: `apugli:modify_breeding_cooldown`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"apugli:modify_breeding_cooldown\",\n    \"modifier\": {\n        \"operation\": \"multiply_total_multiplicative\",\n        \"value\": 2\n    },\n    \"bientity_condition\": {\n       \"type\": \"apoli:owner\",\n       \"inverted\": true\n    }\n}\n```\nThis power doubles the breeding cooldown for entities if they aren't owned by the power holder."
+		},
 		"modifier": {
 			"$ref": "../../apoli/types/attribute_modifier.json",
 			"description": "If set, this modifier will apply to the cooldown that entities have before they may breed again.",
@@ -18,10 +22,6 @@
 			"$ref": "../../apoli/bientity_condition.json",
 			"description": "If set, the bi-entity condition(s) that must be met with the power holder as the actor and the breedable entity as the target.",
 			"markdownDescription": "If set, the bi-entity condition(s) that must be met with the power holder as the actor and the breedable entity as the target."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies the breeding cooldown for entities bred by the power holder.\n\nType ID: `apugli:modify_breeding_cooldown`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies the breeding cooldown for entities bred by the power holder.\n\nType ID: `apugli:modify_breeding_cooldown`\n\n\n"
 		}
 	}
 }

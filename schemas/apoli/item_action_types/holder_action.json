@@ -12,8 +12,8 @@
 			"markdownDescription": "The same as the `action` field, but with a different name."
 		},
 		"type": {
-			"description": "\n\n[Item Action Type](../item_action_types.md)\n\nExecutes an entity action on the holder of the item stack.\n\nType ID: `origins:holder_action`\n\nAliases: `origins:holder`\n\n\n",
-			"markdownDescription": "\n\n[Item Action Type](../item_action_types.md)\n\nExecutes an entity action on the holder of the item stack.\n\nType ID: `origins:holder_action`\n\nAliases: `origins:holder`\n\n\n"
+			"description": "## Holder Action\n\n---\n\n\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/holder_action)\n\nExecutes an entity action on the holder of the item stack.\n\nType ID: `origins:holder_action`\n\nAliases: `origins:holder`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"item_action\": {\n\t\"type\": \"origins:holder_action\",\n\t\"action\": {\n\t\t\"type\": \"apoli:heal\",\n\t\t\"amount\": 4.0\n\t}\n}\n```\n\nThis example will recover 2 hearts (4 health points) of the holder of the item stack.\n",
+			"markdownDescription": "undefined## Holder Action\n\n---\n\n\n\n[Item Action Type](https://origins.readthedocs.io/en/latest/types/item_action_types/holder_action)\n\nExecutes an entity action on the holder of the item stack.\n\nType ID: `origins:holder_action`\n\nAliases: `origins:holder`\n\n\n\n\n---\n\n###\tExamples\n\n```json\n\"item_action\": {\n\t\"type\": \"origins:holder_action\",\n\t\"action\": {\n\t\t\"type\": \"apoli:heal\",\n\t\t\"amount\": 4.0\n\t}\n}\n```\n\nThis example will recover 2 hearts (4 health points) of the holder of the item stack.\n"
 		}
 	}
 }

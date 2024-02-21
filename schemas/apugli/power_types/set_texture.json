@@ -5,6 +5,10 @@
 		"player_model"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Set Texture\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/set_texture).\n\nA power that sets an entity's base texture.\n\nType ID: `apugli:set_texture`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Set Texture\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/set_texture).\n\nA power that sets an entity's base texture.\n\nType ID: `apugli:set_texture`\n\n\n\n---\n\n"
+		},
 		"texture_location": {
 			"$ref": "../../apoli/types/autocomplete_helpers/texture_location.json",
 			"description": "Where the new texture is located.",
@@ -18,10 +22,6 @@
 			],
 			"description": "The player model to associate with the player entity. One of `default` or `slim`. This only works for player entities.",
 			"markdownDescription": "The player model to associate with the player entity. One of `default` or `slim`. This only works for player entities."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nA power that sets an entity's base texture.\n\nType ID: `apugli:set_texture`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nA power that sets an entity's base texture.\n\nType ID: `apugli:set_texture`\n\n"
 		}
 	}
 }

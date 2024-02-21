@@ -12,8 +12,8 @@
 			"markdownDescription": "If set, this is the amount experience levels that will be given to the player. Can be negative and thus used to subtract levels."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nAdds experience points and levels to the player, or subtracts levels.\n\nType ID: `origins:add_xp`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nAdds experience points and levels to the player, or subtracts levels.\n\nType ID: `origins:add_xp`\n\n\n"
+			"description": "## Add XP\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/add_xp)\n\nAdds experience points and levels to the player, or subtracts levels.\n\nType ID: `origins:add_xp`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:add_xp\",\n    \"levels\": 2\n}\n```\n\nThis example will add 2 levels to the player.\n",
+			"markdownDescription": "undefined## Add XP\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/add_xp)\n\nAdds experience points and levels to the player, or subtracts levels.\n\nType ID: `origins:add_xp`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:add_xp\",\n    \"levels\": 2\n}\n```\n\nThis example will add 2 levels to the player.\n"
 		}
 	}
 }

@@ -5,6 +5,10 @@
 		"max"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Schedule Tick\n\n---\n\n\n\n[Block Action Type](https://apugli.readthedocs.io/en/latest/types/block_action_types/schedule_tick).\n\nSchedules a block to start ticking after a randomised interval between a min value and a max value.\n\nType ID: `apugli:schedule_tick`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Schedule Tick\n\n---\n\n\n\n[Block Action Type](https://apugli.readthedocs.io/en/latest/types/block_action_types/schedule_tick).\n\nSchedules a block to start ticking after a randomised interval between a min value and a max value.\n\nType ID: `apugli:schedule_tick`\n\n\n\n---\n\n"
+		},
 		"min": {
 			"type": "integer",
 			"description": "The minimum value (inclusive) that the block will start ticking after.",
@@ -14,10 +18,6 @@
 			"type": "integer",
 			"description": "The maximum value (inclusive) that the block will start ticking after.",
 			"markdownDescription": "The maximum value (inclusive) that the block will start ticking after."
-		},
-		"type": {
-			"description": "\n\n[Block Action Type](../block_action_types.md).\n\nSchedules a block to start ticking after a randomised interval between a min value and a max value.\n\nType ID: `apugli:schedule_tick`\n\n",
-			"markdownDescription": "\n\n[Block Action Type](../block_action_types.md).\n\nSchedules a block to start ticking after a randomised interval between a min value and a max value.\n\nType ID: `apugli:schedule_tick`\n\n"
 		}
 	}
 }

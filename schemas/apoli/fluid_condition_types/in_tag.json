@@ -10,8 +10,8 @@
 			"markdownDescription": "ID of the tag which the fluid should be in to pass the check."
 		},
 		"type": {
-			"description": "\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/in_tag)\n\nChecks whether the fluid is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n",
-			"markdownDescription": "\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/in_tag)\n\nChecks whether the fluid is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n"
+			"description": "## In Tag\n\n---\n\n\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/in_tag)\n\nChecks whether the fluid is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"fluid_condition\": {\n    \"type\": \"origins:in_tag\",\n    \"tag\": \"minecraft:water\"\n}\n```\n\nThis example will check if the fluid is included in the `#minecraft:water` (`data\\minecraft\\tags\\fluids`) block tag.\n",
+			"markdownDescription": "undefined## In Tag\n\n---\n\n\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/in_tag)\n\nChecks whether the fluid is in a specified tag.\n\nType ID: `origins:in_tag`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"fluid_condition\": {\n    \"type\": \"origins:in_tag\",\n    \"tag\": \"minecraft:water\"\n}\n```\n\nThis example will check if the fluid is included in the `#minecraft:water` (`data\\minecraft\\tags\\fluids`) block tag.\n"
 		}
 	}
 }

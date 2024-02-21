@@ -4,6 +4,10 @@
 		"hud_render"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action When Tame Hit\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_when_tame_hit).\n\nRuns an action when an owner's `TameableEntity` gets harmed by another entity.\n\nType ID: `apugli:action_when_tame_hit`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action When Tame Hit\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_when_tame_hit).\n\nRuns an action when an owner's `TameableEntity` gets harmed by another entity.\n\nType ID: `apugli:action_when_tame_hit`\n\n\n\n---\n\n"
+		},
 		"cooldown": {
 			"type": "integer",
 			"default": 1,
@@ -39,10 +43,6 @@
 			"$ref": "../../apoli/bientity_condition.json",
 			"description": "If specified, a bi-entity condition that must be met with the attacker as the actor and the owner as the target for any actions of this power to run.",
 			"markdownDescription": "If specified, a bi-entity condition that must be met with the attacker as the actor and the owner as the target for any actions of this power to run."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nRuns an action when an owner's `TameableEntity` gets harmed by another entity.\n\nType ID: `apugli:action_when_tame_hit`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nRuns an action when an owner's `TameableEntity` gets harmed by another entity.\n\nType ID: `apugli:action_when_tame_hit`\n\n"
 		}
 	}
 }

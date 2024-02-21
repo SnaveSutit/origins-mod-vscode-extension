@@ -21,8 +21,8 @@
 			"markdownDescription": "The value to compare the number to."
 		},
 		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks how many blocks are overlapping with the entity's eyes or feet.\n\nType ID: `origins:in_block_anywhere`\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks how many blocks are overlapping with the entity's eyes or feet.\n\nType ID: `origins:in_block_anywhere`\n\n\n"
+			"description": "## In Block Anywhere\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/in_block_anywhere)\n\nChecks how many blocks are overlapping with the entity's eyes or feet.\n\nType ID: `origins:in_block_anywhere`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:in_block_anywhere\",\n    \"block_condition\": {\n        \"type\": \"origins:in_tag\",\n        \"tag\": \"minecraft:flowers\"\n    },\n    \"comparison\": \">\",\n    \"compare_to\": 1\n}\n```\n\nThis example will check if the entity is currently inside a two-block tall foliage block that belongs in the `#minecraft:flowers` (`data\\minecraft\\tags\\blocks\\flowers.json`) block tag. An example is the rose bush block.\n",
+			"markdownDescription": "undefined## In Block Anywhere\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/in_block_anywhere)\n\nChecks how many blocks are overlapping with the entity's eyes or feet.\n\nType ID: `origins:in_block_anywhere`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:in_block_anywhere\",\n    \"block_condition\": {\n        \"type\": \"origins:in_tag\",\n        \"tag\": \"minecraft:flowers\"\n    },\n    \"comparison\": \">\",\n    \"compare_to\": 1\n}\n```\n\nThis example will check if the entity is currently inside a two-block tall foliage block that belongs in the `#minecraft:flowers` (`data\\minecraft\\tags\\blocks\\flowers.json`) block tag. An example is the rose bush block.\n"
 		}
 	}
 }

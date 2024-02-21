@@ -1,8 +1,8 @@
 {
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nPrevents bees from getting angered through interactions with bee nests/beehives from the power holder.\n\nType ID: `apugli:prevent_bee_anger`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nPrevents bees from getting angered through interactions with bee nests/beehives from the power holder.\n\nType ID: `apugli:prevent_bee_anger`\n\n"
+			"description": "## Prevent Bee Anger\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_bee_anger).\n\nPrevents bees from getting angered through interactions with bee nests/beehives from the power holder.\n\nType ID: `apugli:prevent_bee_anger`\n\n\n\n---\n\n",
+			"markdownDescription": "undefined## Prevent Bee Anger\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_bee_anger).\n\nPrevents bees from getting angered through interactions with bee nests/beehives from the power holder.\n\nType ID: `apugli:prevent_bee_anger`\n\n\n\n---\n\n"
 		}
 	}
 }

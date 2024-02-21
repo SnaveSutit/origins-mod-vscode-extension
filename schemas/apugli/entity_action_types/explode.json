@@ -4,6 +4,10 @@
 		"power"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Explode\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/explode)\n\nSummons an explosion at the position of the entity.\n\nType ID: `apugli:explode`\n\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Explode\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/explode)\n\nSummons an explosion at the position of the entity.\n\nType ID: `apugli:explode`\n\n\n\n\n---\n\n"
+		},
 		"power": {
 			"type": "number",
 			"description": "Determines the power of the explosion.",
@@ -33,8 +37,8 @@
 		},
 		"destructible": {
 			"$ref": "../../apoli/block_condition.json",
-			"description": "If specified, the blocks that fulfills this specified block condition type are the **only** blocks that are destroyed by the summoned explosion.",
-			"markdownDescription": "If specified, the blocks that fulfills this specified block condition type are the **only** blocks that are destroyed by the summoned explosion."
+			"description": "If specified, the blocks that fulfills this specified block condition type are the *_only_* blocks that are destroyed by the summoned explosion.",
+			"markdownDescription": "If specified, the blocks that fulfills this specified block condition type are the *_only_* blocks that are destroyed by the summoned explosion."
 		},
 		"create_fire": {
 			"type": "boolean",
@@ -123,10 +127,6 @@
 			"default": false,
 			"description": "Determines if the power holder should lose all of their current status effects to create lingering effect clouds with these effects upon exploding.",
 			"markdownDescription": "Determines if the power holder should lose all of their current status effects to create lingering effect clouds with these effects upon exploding."
-		},
-		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSummons an explosion at the position of the entity.\n\nType ID: `apugli:explode`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nSummons an explosion at the position of the entity.\n\nType ID: `apugli:explode`\n\n\n"
 		}
 	}
 }

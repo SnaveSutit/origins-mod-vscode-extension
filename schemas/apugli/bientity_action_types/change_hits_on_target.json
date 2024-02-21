@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Change Hits on Target\n\n---\n\n\n\n[Bi-entity Action Type](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target).\n\nChanges the value which the [Hits On Target](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target) bi-entity condition checks for.\n\nType ID: `apugli:change_hits_on_target`\n\n!!! note\n    This only effects the [Hits On Target](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target) condition, this does not mess with any base Minecraft stuff involving damage source tracking.\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Change Hits on Target\n\n---\n\n\n\n[Bi-entity Action Type](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target).\n\nChanges the value which the [Hits On Target](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target) bi-entity condition checks for.\n\nType ID: `apugli:change_hits_on_target`\n\n!!! note\n    This only effects the [Hits On Target](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target) condition, this does not mess with any base Minecraft stuff involving damage source tracking.\n\n\n\n---\n\n"
+		},
 		"change": {
 			"type": "integer",
 			"description": "This value will be either added to or set as the hits on target check.",
@@ -30,10 +34,6 @@
 			],
 			"description": "Determines if the action should add or set the value of the timer relating to hits on target. Accepts `\"add\"` or `\"set\"`.",
 			"markdownDescription": "Determines if the action should add or set the value of the timer relating to hits on target. Accepts `\"add\"` or `\"set\"`."
-		},
-		"type": {
-			"description": "\n\n[Bi-entity Action Type](../bientity_action_types.md).\n\nChanges the value which the [Hits On Target](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target) bi-entity condition checks for.\n\nType ID: `apugli:change_hits_on_target`\n\n!!! note\n    This only effects the [Hits On Target](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target) condition, this does not mess with any base Minecraft stuff involving damage source tracking.\n\n",
-			"markdownDescription": "\n\n[Bi-entity Action Type](../bientity_action_types.md).\n\nChanges the value which the [Hits On Target](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target) bi-entity condition checks for.\n\nType ID: `apugli:change_hits_on_target`\n\n!!! note\n    This only effects the [Hits On Target](https://apugli.readthedocs.io/en/latest/types/bientity_action_types/change_hits_on_target) condition, this does not mess with any base Minecraft stuff involving damage source tracking.\n\n"
 		}
 	}
 }

@@ -1,6 +1,10 @@
 {
 	"type": "object",
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Durability Change\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_durability_change).\n\nExecutes entity actions whenever an item either gains durability, loses durability or breaks.\n\nType ID: `apugli:action_on_durability_change`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Action On Durability Change\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/action_on_durability_change).\n\nExecutes entity actions whenever an item either gains durability, loses durability or breaks.\n\nType ID: `apugli:action_on_durability_change`\n\n\n\n---\n\n"
+		},
 		"slot": {
 			"$ref": "../../apoli/types/slot.json",
 			"description": "If specified, the action will only execute on this equipment slot. One of: `\"mainhand\"`, `\"offhand\"`, `\"head\"`, `\"chest\"`, `\"legs\"`, `\"feet\"`.",
@@ -40,10 +44,6 @@
 			"$ref": "../../apoli/item_action.json",
 			"description": "If set, these action(s) will be executed on a condition meeting item when its durability decreases.",
 			"markdownDescription": "If set, these action(s) will be executed on a condition meeting item when its durability decreases."
-		},
-		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nExecutes entity actions whenever an item either gains durability, loses durability or breaks.\n\nType ID: `apugli:action_on_durability_change`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nExecutes entity actions whenever an item either gains durability, loses durability or breaks.\n\nType ID: `apugli:action_on_durability_change`\n\n"
 		}
 	}
 }

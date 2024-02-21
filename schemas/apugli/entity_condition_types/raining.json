@@ -1,8 +1,8 @@
 {
 	"properties": {
 		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether it's currently raining in the world that the entity is in.\n\nType ID: `apugli:raining`\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks whether it's currently raining in the world that the entity is in.\n\nType ID: `apugli:raining`\n\n"
+			"description": "## Raining\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/raining).\n\nChecks whether it's currently raining in the world that the entity is in.\n\nType ID: `apugli:raining`\n\n\n\n---\n\n",
+			"markdownDescription": "undefined## Raining\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/raining).\n\nChecks whether it's currently raining in the world that the entity is in.\n\nType ID: `apugli:raining`\n\n\n\n---\n\n"
 		}
 	}
 }

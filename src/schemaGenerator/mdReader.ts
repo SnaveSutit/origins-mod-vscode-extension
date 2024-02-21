@@ -24,9 +24,9 @@ const descriptionRegex = /^#\s+(?<title>.+)(?<description>[^]+?)###\s+.+?$/gm
 const fieldTitleRegex = /Field\s*\|\s*Type\s*\|\s*Default\s*\|\s*Description\n-+\|-+\|-+\|-+\n/gm
 const fieldCaptureRegex =
 	/^(?<field>[^|\n\s]+?)\s*\|\s*(?<type>[^|\n]+?)\s*\|\s*(?<defaultValue>[^|\n]+?)?\s*\|\s*(?<description>[^|\n]+?)$/gm
-
 const valuesTitleRegex = /Value\s+?\| Description\n-+\|-+\n/gm
 const valueCaptureRegex = /^(?<value>[^|]+?)\s*\|\s*(?<description>[^|\n]+?)$/gm
+const examplesRegex = /###\s*?Examples\n\n([^]+)/
 
 export function parseMDLink(url: string): { name: string; target: string } | undefined {
 	linkText.lastIndex = 0
@@ -40,9 +40,10 @@ export function pathToUrl(from: string, path: string) {
 	return url.href
 }
 
-function processDescriptionLinks(description: string, mdFile: MDFile) {
-	let link = linkText.exec(description)
+const noteRegex = /^!!! (?<type>.+)\n\n(?<content>.+)$/gm
 
+function processDescription(description: string, mdFile: MDFile) {
+	let link = linkText.exec(description)
 	while (link) {
 		// term.brightRed(link[0])('\n')
 		const { name } = link.groups!
@@ -50,6 +51,26 @@ function processDescriptionLinks(description: string, mdFile: MDFile) {
 		description = description.replace(link[0], `[${name}](${mdFile.docsUrl})`)
 		link = linkText.exec(description)
 	}
+
+	let note = noteRegex.exec(description)
+	while (note) {
+		const { type, content } = note.groups!
+		let title = '📝 Note'
+		switch (type) {
+			case 'caution':
+				title = '⚠️ Caution'
+				break
+			case 'danger':
+				title = '💀 Danger'
+				break
+		}
+		description = description.replace(note[0], `\n\n---\n\n### ${title}\n\n${content.trim()}\n\n`)
+		note = noteRegex.exec(description)
+	}
+
+	description = description
+		.replace(/(?<=[^\w_])_(.+?)_(?=[^\w_])/g, '*$1*')
+		.replace(/\*\*(.+?)\*\*/g, '__$1__')
 
 	return description
 }
@@ -75,6 +96,7 @@ export class Field {
 		this.description = description.trim()
 		this.parseType(type)
 		this.parseDefaultValue(defaultValue)
+		this.description = processDescription(description, mdFile)
 		this.mdFile = mdFile
 	}
 
@@ -125,6 +147,7 @@ export class MDFile {
 	public id: string = ''
 	public title: string = ''
 	public description: string = ''
+	public examples: string = ''
 	public fields: Field[] = []
 	public values: { value: string; description: string }[] = []
 	public url: string
@@ -200,6 +223,7 @@ export class MDFile {
 			file.captureDescription()
 			file.captureFields()
 			file.captureValues()
+			file.captureExamples()
 		} catch (e: any) {
 			throw new Error(`Failed to parse content of '${file.path}': ${e.message}`)
 		}
@@ -221,6 +245,7 @@ export class MDFile {
 			this.captureDescription()
 			this.captureFields()
 			this.captureValues()
+			this.captureExamples()
 		} catch (e: any) {
 			throw new Error(`Failed to parse content of '${this.path}': ${e.message}`)
 		}
@@ -240,7 +265,17 @@ export class MDFile {
 		if (!match) throw new Error(`Failed to capture description for '${this.path}'`)
 		const { title, description } = match.groups!
 		this.title = title
-		this.description = processDescriptionLinks(description, this)
+		this.description = processDescription(description, this)
+	}
+
+	private captureExamples() {
+		descriptionRegex.lastIndex = 0
+		const match = examplesRegex.exec(this.content)
+		if (!match) {
+			// term.gray(`No examples found for `).cyan(this.path)('\n')
+			return
+		}
+		this.examples = processDescription(match[0], this)
 	}
 
 	private captureFields() {
@@ -257,7 +292,7 @@ export class MDFile {
 				if (!fieldMatch) break
 				const { field, type, defaultValue, description } = fieldMatch.groups!
 				this.fields.push(
-					new Field(field, type, defaultValue, processDescriptionLinks(description, this), this)
+					new Field(field, type, defaultValue, processDescription(description, this), this)
 				)
 			}
 		}
@@ -276,7 +311,7 @@ export class MDFile {
 			const valueMatch = valueCaptureRegex.exec(match!)
 			if (!valueMatch) break
 			const { value, description } = valueMatch.groups!
-			this.values.push({ value, description: processDescriptionLinks(description, this) })
+			this.values.push({ value, description: processDescription(description, this) })
 		}
 		if (!this.values.length) throw new Error(`Failed to capture values for '${this.path}'`)
 	}

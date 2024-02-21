@@ -1,8 +1,8 @@
 {
 	"properties": {
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md).\n\nSets the entity to sprint if they are moving forward.\n\nType ID: `apugli:sprinting`\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md).\n\nSets the entity to sprint if they are moving forward.\n\nType ID: `apugli:sprinting`\n\n"
+			"description": "## Sprinting\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/sprinting).\n\nSets the entity to sprint if they are moving forward.\n\nType ID: `apugli:sprinting`\n\n\n\n---\n\n",
+			"markdownDescription": "undefined## Sprinting\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/sprinting).\n\nSets the entity to sprint if they are moving forward.\n\nType ID: `apugli:sprinting`\n\n\n\n---\n\n"
 		}
 	}
 }

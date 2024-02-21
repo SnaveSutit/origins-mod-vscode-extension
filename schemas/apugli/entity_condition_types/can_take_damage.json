@@ -4,14 +4,14 @@
 		"damage_type"
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Can Take Damage\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/can_take_damage).\n\nChecks if the entity is immune to a damage source.\n\nType ID: `apugli:can_take_damage`\n\n\n\n---\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Can Take Damage\n\n---\n\n\n\n[Entity Condition Type](https://apugli.readthedocs.io/en/latest/types/entity_condition_types/can_take_damage).\n\nChecks if the entity is immune to a damage source.\n\nType ID: `apugli:can_take_damage`\n\n\n\n---\n\n"
+		},
 		"damage_type": {
 			"$ref": "../../apoli/types/damage_source.json",
 			"description": "The damage type to be tested by this condition.",
 			"markdownDescription": "The damage type to be tested by this condition."
-		},
-		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks if the entity is immune to a damage source.\n\nType ID: `apugli:can_take_damage`\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md).\n\nChecks if the entity is immune to a damage source.\n\nType ID: `apugli:can_take_damage`\n\n"
 		}
 	}
 }

@@ -2,12 +2,12 @@
 	"$schema": "https://json-schema.org/draft-07/schema#",
 	"$docsUrl": "https://apugli.readthedocs.io/en/latest/types/power_types/bunny_hop/",
 	"type": "object",
-	"required": [
-		"min",
-		"max",
-		"hud_render"
-	],
+	"required": ["min", "max", "hud_render"],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"min": {
 			"type": "integer"
 		},

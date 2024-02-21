@@ -16,8 +16,8 @@
 			"markdownDescription": "The namespace and ID of the source of the power."
 		},
 		"type": {
-			"description": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRevokes a power from the entity from a specified power source.\n\nType ID: `origins:revoke_power`\n\n\n",
-			"markdownDescription": "\n\n[Entity Action Type](../entity_action_types.md)\n\nRevokes a power from the entity from a specified power source.\n\nType ID: `origins:revoke_power`\n\n\n"
+			"description": "## Revoke Power\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/revoke_power)\n\nRevokes a power from the entity from a specified power source.\n\nType ID: `origins:revoke_power`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:revoke_power\",\n    \"power\": \"origins:elytra\",\n    \"source\": \"origins:elytrian\"\n}\n```\n\nThis example will revoke the `origins:elytra` power from the `origins:elytrian` source from the entity.\n",
+			"markdownDescription": "undefined## Revoke Power\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/revoke_power)\n\nRevokes a power from the entity from a specified power source.\n\nType ID: `origins:revoke_power`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:revoke_power\",\n    \"power\": \"origins:elytra\",\n    \"source\": \"origins:elytrian\"\n}\n```\n\nThis example will revoke the `origins:elytra` power from the `origins:elytrian` source from the entity.\n"
 		}
 	}
 }

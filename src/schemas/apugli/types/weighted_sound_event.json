@@ -11,6 +11,10 @@
 		}
 	],
 	"properties": {
+		"type": {
+			"description": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+			"markdownDescription": "### ⚠️ Requires [Apugli](https://apugli.readthedocs.io/en/latest/) to be installed! ⚠️\n\n"
+		},
 		"sound": {
 			"$ref": "$ref(apugli:types/sound_event_with_volume_and_pitch)"
 		},

@@ -2,8 +2,8 @@
 	"type": "object",
 	"properties": {
 		"type": {
-			"description": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks if the entity exists.\n\nType ID: `origins:exists`\n\n\n",
-			"markdownDescription": "\n\n[Entity Condition Type](../entity_condition_types.md)\n\nChecks if the entity exists.\n\nType ID: `origins:exists`\n\n\n"
+			"description": "## Exists\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/exists)\n\nChecks if the entity exists.\n\nType ID: `origins:exists`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:exists\"\n}\n```",
+			"markdownDescription": "undefined## Exists\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/exists)\n\nChecks if the entity exists.\n\nType ID: `origins:exists`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:exists\"\n}\n```"
 		}
 	}
 }

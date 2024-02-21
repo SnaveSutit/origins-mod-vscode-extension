@@ -15,8 +15,8 @@
 			"markdownDescription": "If specified, these modifiers will apply to the swim speed."
 		},
 		"type": {
-			"description": "\n\n[Power Type](../power_types.md)\n\nModifies how fast the entity that has the power swims.\n\nType ID: `origins:modify_swim_speed`\n\n\n",
-			"markdownDescription": "\n\n[Power Type](../power_types.md)\n\nModifies how fast the entity that has the power swims.\n\nType ID: `origins:modify_swim_speed`\n\n\n"
+			"description": "## Modify Swim Speed\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_swim_speed)\n\nModifies how fast the entity that has the power swims.\n\nType ID: `origins:modify_swim_speed`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_swim_speed\",\n    \"modifier\": {\n        \"operation\": \"addition\",\n        \"value\": 0.025\n    }\n}\n```\n\nThis power will make the entity that has the power swim/walk significantly faster in water.\n",
+			"markdownDescription": "undefined## Modify Swim Speed\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/modify_swim_speed)\n\nModifies how fast the entity that has the power swims.\n\nType ID: `origins:modify_swim_speed`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:modify_swim_speed\",\n    \"modifier\": {\n        \"operation\": \"addition\",\n        \"value\": 0.025\n    }\n}\n```\n\nThis power will make the entity that has the power swim/walk significantly faster in water.\n"
 		}
 	}
 }
