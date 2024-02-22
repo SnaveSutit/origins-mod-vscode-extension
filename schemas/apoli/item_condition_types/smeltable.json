@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Smeltable\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/smeltable)\n\nChecks if the item stack is an ingredient used in a smelting recipe.\n\nType ID: `origins:smeltable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:smeltable\"\n}\n```\n",
-			"markdownDescription": "undefined## Smeltable\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/smeltable)\n\nChecks if the item stack is an ingredient used in a smelting recipe.\n\nType ID: `origins:smeltable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:smeltable\"\n}\n```\n"
-		}
-	}
-}

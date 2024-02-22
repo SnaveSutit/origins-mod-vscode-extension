@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Ignore Water\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/ignore_water)\n\nPrevents the movement of the entity that has the power from being affected by water.\n\nType ID: `origins:ignore_water`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:ignore_water\"\n}\n```\n\nThis example makes the entity that has the power ignore water. :)\n",
-			"markdownDescription": "undefined## Ignore Water\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/ignore_water)\n\nPrevents the movement of the entity that has the power from being affected by water.\n\nType ID: `origins:ignore_water`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:ignore_water\"\n}\n```\n\nThis example makes the entity that has the power ignore water. :)\n"
-		}
-	}
-}

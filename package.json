@@ -85,12 +85,9 @@
 		"package": "ts-node ./src/schemaGenerator/index.ts --once --workflow && webpack --mode production --devtool hidden-source-map",
 		"lint": "prettier --write .",
 		"test": "node ./out/test/runTest.js",
-		"run-schema-generator": "ts-node ./src/schemaGenerator/index.ts",
-		"docs-to-schema-templates": "ts-node ./src/templateSchemaFromDocs.ts",
 		"version-patch": "yarn version --new-version patch",
 		"version-minor": "yarn version --new-version minor",
-		"version-major": "yarn version --new-version major",
-		"update": "yarn package && vsce publish"
+		"version-major": "yarn version --new-version major"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.2.0",
@@ -115,6 +112,7 @@
 		"@types/sync-fetch": "^0.4.3",
 		"@types/terminal-kit": "^2.5.6",
 		"sync-fetch": "^0.5.2",
-		"terminal-kit": "^3.0.1"
+		"terminal-kit": "^3.0.1",
+		"vscode": "^1.1.37"
 	}
 }

@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Exposed To Sky\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/exposed_to_sky)\n\nChecks whether the block is exposed to the sky.\n\nType ID: `origins:exposed_to_sky`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:exposed_to_sky\"\n}\n```",
-			"markdownDescription": "undefined## Exposed To Sky\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/exposed_to_sky)\n\nChecks whether the block is exposed to the sky.\n\nType ID: `origins:exposed_to_sky`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:exposed_to_sky\"\n}\n```"
-		}
-	}
-}

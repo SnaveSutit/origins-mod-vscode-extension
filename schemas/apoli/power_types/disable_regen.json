@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Disable Regen\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/disable_regen)\n\nDisables the natural health regeneration when on full hunger.\n\nType ID: `origins:disable_regen`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:disable_regen\"\n}\n```\n",
-			"markdownDescription": "undefined## Disable Regen\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/disable_regen)\n\nDisables the natural health regeneration when on full hunger.\n\nType ID: `origins:disable_regen`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:disable_regen\"\n}\n```\n"
-		}
-	}
-}

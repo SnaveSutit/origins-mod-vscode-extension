@@ -1,8 +1,0 @@
-{
-	"properties": {
-		"type": {
-			"description": "## Crafting Table\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/crafting_table)\n\nBrings up the Crafting Table GUI as if the player has interacted with one.\n\nType ID: `origins:crafting_table`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:crafting_table\"\n}\n```\n",
-			"markdownDescription": "undefined## Crafting Table\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/crafting_table)\n\nBrings up the Crafting Table GUI as if the player has interacted with one.\n\nType ID: `origins:crafting_table`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:crafting_table\"\n}\n```\n"
-		}
-	}
-}

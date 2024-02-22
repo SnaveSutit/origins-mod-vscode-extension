@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Food\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/food)\n\nChecks whether the item is a food component.\n\nType ID: `origins:food`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:food\"\n}\n```\n\nThis example will check if the item is considered a food item.\n",
-			"markdownDescription": "undefined## Food\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/food)\n\nChecks whether the item is a food component.\n\nType ID: `origins:food`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:food\"\n}\n```\n\nThis example will check if the item is considered a food item.\n"
-		}
-	}
-}

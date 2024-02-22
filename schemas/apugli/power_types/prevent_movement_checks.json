@@ -1,8 +1,0 @@
-{
-	"properties": {
-		"type": {
-			"description": "## Prevent Movement Checks\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_movement_checks).\n\nPrevents the game from checking for if the power holder has \"moved wrongly\".\n\nType ID: `apugli:prevent_movement_checks`\n\n\n\n---\n\n",
-			"markdownDescription": "undefined## Prevent Movement Checks\n\n---\n\n\n\n[Power Type](https://apugli.readthedocs.io/en/latest/types/power_types/prevent_movement_checks).\n\nPrevents the game from checking for if the power holder has \"moved wrongly\".\n\nType ID: `apugli:prevent_movement_checks`\n\n\n\n---\n\n"
-		}
-	}
-}

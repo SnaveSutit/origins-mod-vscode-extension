@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Prevent Sprinting\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_sprinting)\n\nPrevents the player that has the power from sprinting.\n\nType ID: `origins:prevent_sprinting`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:prevent_sprinting\",\n    \"condition\": {\n        \"type\": \"origins:food_level\",\n        \"compare_to\": 12,\n        \"comparison\": \"<=\"\n    }\n}\n```\n\nThis example will prevent the player from sprinting if their food level is at, or below 6 hunger shanks\n",
-			"markdownDescription": "undefined## Prevent Sprinting\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/prevent_sprinting)\n\nPrevents the player that has the power from sprinting.\n\nType ID: `origins:prevent_sprinting`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:prevent_sprinting\",\n    \"condition\": {\n        \"type\": \"origins:food_level\",\n        \"compare_to\": 12,\n        \"comparison\": \"<=\"\n    }\n}\n```\n\nThis example will prevent the player from sprinting if their food level is at, or below 6 hunger shanks\n"
-		}
-	}
-}

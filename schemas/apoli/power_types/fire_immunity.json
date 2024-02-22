@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Fire Immunity\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/fire_immunity)\n\nGrants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire).\n\nType ID: `origins:fire_immunity`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:fire_immunity\",\n    \"condition\": {\n        \"type\": \"origins:equipped_item\",\n        \"equipment_slot\": \"mainhand\",\n        \"item_condition\": {\n            \"type\": \"origins:ingredient\",\n            \"ingredient\": {\n                \"item\": \"minecraft:magma_block\"\n            }\n        }\n    }\n}\n```\n\nThis example will grant immunity to fire if the entity is holding a Magma Block in their mainhand.\n",
-			"markdownDescription": "undefined## Fire Immunity\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/fire_immunity)\n\nGrants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire).\n\nType ID: `origins:fire_immunity`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:fire_immunity\",\n    \"condition\": {\n        \"type\": \"origins:equipped_item\",\n        \"equipment_slot\": \"mainhand\",\n        \"item_condition\": {\n            \"type\": \"origins:ingredient\",\n            \"ingredient\": {\n                \"item\": \"minecraft:magma_block\"\n            }\n        }\n    }\n}\n```\n\nThis example will grant immunity to fire if the entity is holding a Magma Block in their mainhand.\n"
-		}
-	}
-}

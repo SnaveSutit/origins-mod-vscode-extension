@@ -1,8 +1,0 @@
-{
-	"properties": {
-		"type": {
-			"description": "## On Cooldown\n\n---\n\n\n\n[Item Condition Type](https://apugli.readthedocs.io/en/latest/types/item_condition_types/on_cooldown).\n\nChecks if the item is currently on cooldown (for example; an ender pearl after it has been thrown).\n\nType ID: `apugli:base_enchantment`\n\n\n\n---\n\n",
-			"markdownDescription": "undefined## On Cooldown\n\n---\n\n\n\n[Item Condition Type](https://apugli.readthedocs.io/en/latest/types/item_condition_types/on_cooldown).\n\nChecks if the item is currently on cooldown (for example; an ender pearl after it has been thrown).\n\nType ID: `apugli:base_enchantment`\n\n\n\n---\n\n"
-		}
-	}
-}

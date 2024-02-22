@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Still\n\n---\n\n\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/still)\n\nChecks whether this state describes a still (i.e. not flowing, i.e. source) fluid.\n\nType ID: `origins:still`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"fluid_condition\": {\n    \"type\": \"origins:still\"\n}\n```\n",
-			"markdownDescription": "undefined## Still\n\n---\n\n\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/still)\n\nChecks whether this state describes a still (i.e. not flowing, i.e. source) fluid.\n\nType ID: `origins:still`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"fluid_condition\": {\n    \"type\": \"origins:still\"\n}\n```\n"
-		}
-	}
-}

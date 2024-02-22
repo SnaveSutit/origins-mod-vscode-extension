@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Empty\n\n---\n\n\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/empty)\n\nChecks whether there is no fluid in this state.\n\nType ID: `origins:empty`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"fluid_condition\": {\n    \"type\": \"origins:empty\"\n}\n```\n",
-			"markdownDescription": "undefined## Empty\n\n---\n\n\n\n[Fluid Condition Type](https://origins.readthedocs.io/en/latest/types/fluid_condition_types/empty)\n\nChecks whether there is no fluid in this state.\n\nType ID: `origins:empty`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"fluid_condition\": {\n    \"type\": \"origins:empty\"\n}\n```\n"
-		}
-	}
-}

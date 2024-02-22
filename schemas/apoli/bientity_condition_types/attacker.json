@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Attacker\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/attacker)\n\nChecks if the actor entity has attacked the target entity within the last 5 seconds, and still exists.\n\nType ID: `origins:attacker`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n    \"type\": \"origins:attacker\"\n}\n```\n",
-			"markdownDescription": "undefined## Attacker\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/attacker)\n\nChecks if the actor entity has attacked the target entity within the last 5 seconds, and still exists.\n\nType ID: `origins:attacker`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n    \"type\": \"origins:attacker\"\n}\n```\n"
-		}
-	}
-}

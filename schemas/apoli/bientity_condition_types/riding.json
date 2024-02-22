@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Riding\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/riding)\n\nChecks if the actor entity is currently riding the target entity.\n\nType ID: `origins:riding`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n\t\"type\": \"origins:riding\"\n}\n```",
-			"markdownDescription": "undefined## Riding\n\n---\n\n\n\n[Bi-entity Condition Type](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/riding)\n\nChecks if the actor entity is currently riding the target entity.\n\nType ID: `origins:riding`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_condition\": {\n\t\"type\": \"origins:riding\"\n}\n```"
-		}
-	}
-}

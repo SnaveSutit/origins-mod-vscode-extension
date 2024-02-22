@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Shaking\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/shaking)\n\nMakes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion.\n\nType ID: `origins:shaking`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:shaking\",\n  \t\"condition\": {\n    \t\"type\": \"origins:on_fire\",\n      \"inverted\": true\n  \t}\n}\n```\n\nThis example will make the entity shake if the entity is not burning.\n",
-			"markdownDescription": "undefined## Shaking\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/shaking)\n\nMakes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion.\n\nType ID: `origins:shaking`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n  \t\"type\": \"origins:shaking\",\n  \t\"condition\": {\n    \t\"type\": \"origins:on_fire\",\n      \"inverted\": true\n  \t}\n}\n```\n\nThis example will make the entity shake if the entity is not burning.\n"
-		}
-	}
-}

@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Dismount\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/dismount)\n\nDismounts the entity from their vehicle.\n\nType ID: `origins:dismount`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:dismount\"\n}\n```",
-			"markdownDescription": "undefined## Dismount\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/dismount)\n\nDismounts the entity from their vehicle.\n\nType ID: `origins:dismount`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:dismount\"\n}\n```"
-		}
-	}
-}

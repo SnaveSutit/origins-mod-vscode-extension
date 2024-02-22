@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Meat\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/meat)\n\nChecks whether the item is considered meat by Minecraft (usable for breeding wolves).\n\nType ID: `origins:meat`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:meat\"\n}\n```\n\nThis example will check if the item is considered meat by Minecraft.\n",
-			"markdownDescription": "undefined## Meat\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/meat)\n\nChecks whether the item is considered meat by Minecraft (usable for breeding wolves).\n\nType ID: `origins:meat`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:meat\"\n}\n```\n\nThis example will check if the item is considered meat by Minecraft.\n"
-		}
-	}
-}

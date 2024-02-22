@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Block Entity\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/block_entity)\n\nChecks if the block has a block entity.\n\nType ID: `origins:block_entity`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:block_entity\"\n}\n```\n",
-			"markdownDescription": "undefined## Block Entity\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/block_entity)\n\nChecks if the block has a block entity.\n\nType ID: `origins:block_entity`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:block_entity\"\n}\n```\n"
-		}
-	}
-}

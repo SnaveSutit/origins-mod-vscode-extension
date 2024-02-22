@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Simple\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/simple)\n\nDoes nothing.\n\nType ID: `origins:simple`\n\n\n\n---\n\n### 📝 Note\n\nThis power type can be used by <u>__addon__</u> developers by creating a new `PowerTypeReference` to provide functionality.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:simple\"\n}\n```\n\nThis example will do nothing. However, it's still visible in the origin's power list GUI.\n",
-			"markdownDescription": "undefined## Simple\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/simple)\n\nDoes nothing.\n\nType ID: `origins:simple`\n\n\n\n---\n\n### 📝 Note\n\nThis power type can be used by <u>__addon__</u> developers by creating a new `PowerTypeReference` to provide functionality.\n\n\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:simple\"\n}\n```\n\nThis example will do nothing. However, it's still visible in the origin's power list GUI.\n"
-		}
-	}
-}

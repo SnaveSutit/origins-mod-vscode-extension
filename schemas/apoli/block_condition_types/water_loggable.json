@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Water Loggable\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/water_loggable)\n\nChecks whether the block is waterloggable, meaning that there can be fluid in the same block space (e.g. stairs).\n\nType ID: `origins:water_loggable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:water_loggable\"\n}\n```",
-			"markdownDescription": "undefined## Water Loggable\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/water_loggable)\n\nChecks whether the block is waterloggable, meaning that there can be fluid in the same block space (e.g. stairs).\n\nType ID: `origins:water_loggable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:water_loggable\"\n}\n```"
-		}
-	}
-}

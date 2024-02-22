@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Tame\n\n---\n\n\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/tame)\n\nTames the target entity with the actor entity as the owner. Only works on tameable entities such as wolves or cats.\n\nType ID: `origins:tame`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_action\": {\n    \"type\": \"origins:tame\"\n}\n```\n",
-			"markdownDescription": "undefined## Tame\n\n---\n\n\n\n[Bi-entity Action Type](https://origins.readthedocs.io/en/latest/types/bientity_action_types/tame)\n\nTames the target entity with the actor entity as the owner. Only works on tameable entities such as wolves or cats.\n\nType ID: `origins:tame`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"bientity_action\": {\n    \"type\": \"origins:tame\"\n}\n```\n"
-		}
-	}
-}

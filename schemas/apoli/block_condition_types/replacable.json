@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Replacable\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/replacable)\n\nChecks whether the block is a replaceable material (e.g. tall grass, water, ...).\n\nType ID: `origins:replacable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:replacable\"\n}\n```\n",
-			"markdownDescription": "undefined## Replacable\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/replacable)\n\nChecks whether the block is a replaceable material (e.g. tall grass, water, ...).\n\nType ID: `origins:replacable`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:replacable\"\n}\n```\n"
-		}
-	}
-}

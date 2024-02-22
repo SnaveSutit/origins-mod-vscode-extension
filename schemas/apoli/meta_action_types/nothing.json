@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Nothing\n\n---\n\n\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/nothing)\n\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n\nType ID: `origins:nothing`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:nothing\"\n}\n```\n\nThis example does... nothing.\n<br>\n\n```json\n\"bientity_action\": {\n    \"type\": \"origins:nothing\"\n}\n```\n\nThis example... also does nothing.\n",
-			"markdownDescription": "undefined## Nothing\n\n---\n\n\n\n[Meta Action Type](https://origins.readthedocs.io/en/latest/types/meta_action_types/nothing)\n\nDoes nothing. Can be used as a backup in case an action is not optional in some place.\n\nType ID: `origins:nothing`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:nothing\"\n}\n```\n\nThis example does... nothing.\n<br>\n\n```json\n\"bientity_action\": {\n    \"type\": \"origins:nothing\"\n}\n```\n\nThis example... also does nothing.\n"
-		}
-	}
-}

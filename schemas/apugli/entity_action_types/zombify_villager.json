@@ -1,8 +1,0 @@
-{
-	"properties": {
-		"type": {
-			"description": "## Zombify Villager\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/zombify_villager).\n\nTurns a villager entity into a zombie villager.\n\nType ID: `apugli:zombify_villager`\n\n\n\n---\n\n",
-			"markdownDescription": "undefined## Zombify Villager\n\n---\n\n\n\n[Entity Action Type](https://apugli.readthedocs.io/en/latest/types/entity_action_types/zombify_villager).\n\nTurns a villager entity into a zombie villager.\n\nType ID: `apugli:zombify_villager`\n\n\n\n---\n\n"
-		}
-	}
-}

@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Living\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living)\n\nChecks if the entity is an instance of [`LivingEntity`](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living), or in simple terms, a mob or a player.\n\nType ID: `origins:living`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:living\"\n}\n```\n",
-			"markdownDescription": "undefined## Living\n\n---\n\n\n\n[Entity Condition Type](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living)\n\nChecks if the entity is an instance of [`LivingEntity`](https://origins.readthedocs.io/en/latest/types/entity_condition_types/living), or in simple terms, a mob or a player.\n\nType ID: `origins:living`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"condition\": {\n    \"type\": \"origins:living\"\n}\n```\n"
-		}
-	}
-}

@@ -1,4 +1,4 @@
-# Origins Mod Helper
+# Origins Mod JSON Schemas
 
 Adds JSON schemas to streamline [Origins mod](https://www.curseforge.com/minecraft/mc-mods/origins) Data Pack development.
 

@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Swimming\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/swimming)\n\nAllows the player to swim (outside of water!).\n\nType ID: `origins:swimming`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:swimming\",\n    \"condition\": {\n        \"type\": \"origins:on_block\"\n    }\n}\n```\n\nThis example will make the player swim instead of sprint if the player is on the ground.\n",
-			"markdownDescription": "undefined## Swimming\n\n---\n\n\n\n[Power Type](https://origins.readthedocs.io/en/latest/types/power_types/swimming)\n\nAllows the player to swim (outside of water!).\n\nType ID: `origins:swimming`\n\n\n\n\n---\n\n### Examples\n\n```json\n{\n    \"type\": \"origins:swimming\",\n    \"condition\": {\n        \"type\": \"origins:on_block\"\n    }\n}\n```\n\nThis example will make the player swim instead of sprint if the player is on the ground.\n"
-		}
-	}
-}

@@ -1,8 +1,0 @@
-{
-	"properties": {
-		"type": {
-			"description": "## Owner\n\n---\n\n\n\n[Bi-entity Condition Type](https://apugli.readthedocs.io/en/latest/types/bientity_condition_types/owner).\n\nChecks if the target entity has the actor entity as its owner.\n\nType ID: `apugli:hits_on_target`\n\n!!! note\n    Unlike Apoli's `owner` bi-entity condition. This is additionally able to pick up the owner for projectiles and area effect clouds. If you're just using a Tameable entity, you can use that.\n\n\n\n---\n\n",
-			"markdownDescription": "undefined## Owner\n\n---\n\n\n\n[Bi-entity Condition Type](https://apugli.readthedocs.io/en/latest/types/bientity_condition_types/owner).\n\nChecks if the target entity has the actor entity as its owner.\n\nType ID: `apugli:hits_on_target`\n\n!!! note\n    Unlike Apoli's `owner` bi-entity condition. This is additionally able to pick up the owner for projectiles and area effect clouds. If you're just using a Tameable entity, you can use that.\n\n\n\n---\n\n"
-		}
-	}
-}

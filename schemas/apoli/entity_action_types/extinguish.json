@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Extinguish\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/extinguish)\n\nExtinguishes the fire from the entity, removing the burning effect.\n\nType ID: `origins:extinguish`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:extinguish\"\n}\n```\n",
-			"markdownDescription": "undefined## Extinguish\n\n---\n\n\n\n[Entity Action Type](https://origins.readthedocs.io/en/latest/types/entity_action_types/extinguish)\n\nExtinguishes the fire from the entity, removing the burning effect.\n\nType ID: `origins:extinguish`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"entity_action\": {\n    \"type\": \"origins:extinguish\"\n}\n```\n"
-		}
-	}
-}

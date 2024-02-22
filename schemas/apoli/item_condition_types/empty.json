@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Empty\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/empty)\n\nChecks if there is no item.\n\nType ID: `origins:empty`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:empty\"\n}\n```\n",
-			"markdownDescription": "undefined## Empty\n\n---\n\n\n\n[Item Condition Type](https://origins.readthedocs.io/en/latest/types/item_condition_types/empty)\n\nChecks if there is no item.\n\nType ID: `origins:empty`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"item_condition\": {\n    \"type\": \"origins:empty\"\n}\n```\n"
-		}
-	}
-}

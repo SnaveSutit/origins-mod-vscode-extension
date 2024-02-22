@@ -1,9 +1,0 @@
-{
-	"enum": [
-		"chest",
-		"hopper",
-		"dropper",
-		"dispenser",
-		"double_chest"
-	]
-}

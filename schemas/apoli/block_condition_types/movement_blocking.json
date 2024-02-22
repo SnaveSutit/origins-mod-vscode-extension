@@ -1,9 +1,0 @@
-{
-	"type": "object",
-	"properties": {
-		"type": {
-			"description": "## Movement Blocking\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/movement_blocking)\n\nChecks whether the block is marked in code as blocking movement and doesn't have an empty collision shape.\n\nType ID: `origins:movement_blocking`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:movement_blocking\"\n}\n```",
-			"markdownDescription": "undefined## Movement Blocking\n\n---\n\n\n\n[Block Condition Type](https://origins.readthedocs.io/en/latest/types/block_condition_types/movement_blocking)\n\nChecks whether the block is marked in code as blocking movement and doesn't have an empty collision shape.\n\nType ID: `origins:movement_blocking`\n\n\n\n\n---\n\n### Examples\n\n```json\n\"block_condition\": {\n    \"type\": \"origins:movement_blocking\"\n}\n```"
-		}
-	}
-}
