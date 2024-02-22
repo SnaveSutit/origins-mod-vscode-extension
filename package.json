@@ -17,7 +17,7 @@
 		"url": "https://github.com/SnaveSutit/origins-mod-vscode-extension/issues"
 	},
 	"engines": {
-		"vscode": "^1.65.0"
+		"vscode": "^1.86.0"
 	},
 	"categories": [
 		"Other"
