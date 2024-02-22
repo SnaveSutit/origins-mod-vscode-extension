@@ -36,43 +36,43 @@
 				"fileMatch": [
 					"**/data/*/origin_layers/**/*.json"
 				],
-				"url": "./schemas/apoli/origin_layer.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/origin_layer.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/badges/**/*.json"
 				],
-				"url": "./schemas/apoli/badge.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/badge.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/origins/**/*.json"
 				],
-				"url": "./schemas/apoli/origin.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/origin.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/powers/**/*.json"
 				],
-				"url": "./schemas/apoli/power.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/power.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/global_powers/**/*.json"
 				],
-				"url": "./schemas/apoli/global_power_set.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/global_power.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/skill_trees/**/*.json"
 				],
-				"url": "./schemas/apoli/skill_tree.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/skill_tree.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/keybindings/**/*.json"
 				],
-				"url": "./schemas/apoli/keybinding.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/keybinding.json"
 			}
 		]
 	},
