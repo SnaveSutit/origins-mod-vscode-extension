@@ -2,7 +2,7 @@
 
 Adds JSON schemas to streamline [Origins mod](https://www.curseforge.com/minecraft/mc-mods/origins) Data Pack development.
 
-![An example of auto-completion in action](https://github.com/SnaveSutit/origins-mod-json-schemas/blob/main/assets/example.gif?raw=true)
+![An example of auto-completion in action](https://github.com/SnaveSutit/origins-mod-vscode-extension/blob/main/assets/example.gif?raw=true)
 
 ## Features
 
