@@ -8,9 +8,13 @@ Adds JSON Schemas to streamline [Origins mod](https://www.curseforge.com/minecra
 - Autocomplete suggestions for all Origins mod JSON files.
 - Autocomplete suggestions for vanilla identifiers, like items, blocks and entity types.
 - Full descriptions for all JSON fields.
+- Support for the following Origins Addons:
+    - [Apugli](https://apugli.readthedocs.io/en/latest/)
+    - [Epoli](https://epoli-docs.readthedocs.io/en/latest/)
+    - [Skillful](https://skillful-docs.readthedocs.io/en/latest/)
 
 
-This extension implements the JSON Schemas from [Origins Mod JSON Schemas](https://github.com/SnaveSutit/origins-mod-json-schemas)
+This extension implements the JSON Schemas from [Origins Mod JSON Schemas](https://github.com/SnaveSutit/origins-mod-json-schemas) repository.
 
 ### ⚠️ PLEASE report any issues you find via [Github](https://github.com/SnaveSutit/origins-mod-json-schemas/issues/)! ⚠️
 

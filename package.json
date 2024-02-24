@@ -66,13 +66,13 @@
 				"fileMatch": [
 					"**/data/*/skill_trees/**/*.json"
 				],
-				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/skill_tree.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/skillful/skill_tree_json.json"
 			},
 			{
 				"fileMatch": [
 					"**/data/*/keybindings/**/*.json"
 				],
-				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/keybinding.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/skillful/keybinding.json"
 			}
 		]
 	},
