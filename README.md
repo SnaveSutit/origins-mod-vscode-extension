@@ -11,8 +11,11 @@ Adds JSON Schemas to streamline [Origins mod](https://www.curseforge.com/minecra
 - Support for the following Origins Addons:
     - [Apugli](https://apugli.readthedocs.io/en/latest/)
     - [Epoli](https://epoli-docs.readthedocs.io/en/latest/)
+    - [Extra Origins](https://github.com/MoriyaShiine/extra-origins/wiki)
+    - [Mob Origins](https://moborigins.ultrusmods.me/en/latest/)
+    - [Origins Extra Keybinds](https://www.curseforge.com/minecraft/mc-mods/origins-extra-keybinds)
+    - [Provi's Origins](https://github.com/Provismet/Provi-Origins/wiki)
     - [Skillful](https://skillful-docs.readthedocs.io/en/latest/)
-
 
 This extension implements the JSON Schemas from [Origins Mod JSON Schemas](https://github.com/SnaveSutit/origins-mod-json-schemas) repository.
 
