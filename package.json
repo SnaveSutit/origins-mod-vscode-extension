@@ -27,7 +27,9 @@
 		"workspaceContains:**/data/*/origins/**/*.json",
 		"workspaceContains:**/data/*/origin_layers/**/*.json",
 		"workspaceContains:**/data/*/skill_trees/**/*.json",
-		"workspaceContains:**/data/*/keybindings/**/*.json"
+		"workspaceContains:**/data/*/keybindings/**/*.json",
+		"workspaceContains:**/data/*/global_powers/**/*.json",
+		"workspaceContains:**/data/*/badges/**/*.json"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -60,7 +62,7 @@
 				"fileMatch": [
 					"**/data/*/global_powers/**/*.json"
 				],
-				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/global_power.json"
+				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/global_power_set.json"
 			},
 			{
 				"fileMatch": [
