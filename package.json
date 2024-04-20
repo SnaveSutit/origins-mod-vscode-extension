@@ -23,56 +23,70 @@
 		"Other"
 	],
 	"activationEvents": [
-		"workspaceContains:**/data/*/powers/**/*.json",
-		"workspaceContains:**/data/*/origins/**/*.json",
-		"workspaceContains:**/data/*/origin_layers/**/*.json",
-		"workspaceContains:**/data/*/skill_trees/**/*.json",
-		"workspaceContains:**/data/*/keybindings/**/*.json",
+		"workspaceContains:**/data/*/badges/**/*.json",
+		"workspaceContains:**/data/*/badges/**/*.jsonc",
 		"workspaceContains:**/data/*/global_powers/**/*.json",
-		"workspaceContains:**/data/*/badges/**/*.json"
+		"workspaceContains:**/data/*/global_powers/**/*.jsonc",
+		"workspaceContains:**/data/*/keybindings/**/*.json",
+		"workspaceContains:**/data/*/keybindings/**/*.jsonc",
+		"workspaceContains:**/data/*/origin_layers/**/*.json",
+		"workspaceContains:**/data/*/origin_layers/**/*.jsonc",
+		"workspaceContains:**/data/*/origins/**/*.json",
+		"workspaceContains:**/data/*/origins/**/*.jsonc",
+		"workspaceContains:**/data/*/powers/**/*.json",
+		"workspaceContains:**/data/*/powers/**/*.jsonc",
+		"workspaceContains:**/data/*/skill_trees/**/*.json",
+		"workspaceContains:**/data/*/skill_trees/**/*.jsonc"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"jsonValidation": [
 			{
 				"fileMatch": [
-					"**/data/*/origin_layers/**/*.json"
+					"**/data/*/origin_layers/**/*.json",
+					"**/data/*/origin_layers/**/*.jsonc"
 				],
 				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/origin_layer.json"
 			},
 			{
 				"fileMatch": [
-					"**/data/*/badges/**/*.json"
+					"**/data/*/badges/**/*.json",
+					"**/data/*/badges/**/*.jsonc"
 				],
 				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/badge.json"
 			},
 			{
 				"fileMatch": [
-					"**/data/*/origins/**/*.json"
+					"**/data/*/origins/**/*.json",
+					"**/data/*/origins/**/*.jsonc"
 				],
 				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/origin.json"
 			},
 			{
 				"fileMatch": [
-					"**/data/*/powers/**/*.json"
+					"**/data/*/powers/**/*.json",
+					"**/data/*/powers/**/*.jsonc"
 				],
 				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/power.json"
 			},
 			{
 				"fileMatch": [
-					"**/data/*/global_powers/**/*.json"
+					"**/data/*/global_powers/**/*.json",
+					"**/data/*/global_powers/**/*.jsonc"
 				],
 				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/apoli/global_power_set.json"
 			},
 			{
 				"fileMatch": [
-					"**/data/*/skill_trees/**/*.json"
+					"**/data/*/skill_trees/**/*.json",
+					"**/data/*/skill_trees/**/*.jsonc"
 				],
 				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/skillful/skill_tree_json.json"
 			},
 			{
 				"fileMatch": [
-					"**/data/*/keybindings/**/*.json"
+					"**/data/*/keybindings/**/*.json",
+					"**/data/*/keybindings/**/*.jsonc"
 				],
 				"url": "https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/skillful/keybinding.json"
 			}
