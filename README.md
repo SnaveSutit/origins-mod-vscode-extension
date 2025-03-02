@@ -32,8 +32,8 @@
 
 _This extension uses Schemas from [Origins Mod JSON Schemas](https://github.com/SnaveSutit/origins-mod-json-schemas) repository._
 
-> [!IMPORTANT] Supported Versions
-> This extension officially supports the latest version of Origins. If you are using an older version, some features may not work as expected.
+> [!IMPORTANT]
+> This extension only officially supports the latest version of Origins. If you are using an older version, some features may not work as expected.
 >
 > However, most features should still work as expected.
 >
