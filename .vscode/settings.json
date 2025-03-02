@@ -26,17 +26,6 @@
 		"https://raw.githubusercontent.com/SnaveSutit/origins-mod-json-schemas/main/schemas/keybinding.json": [
 			"**/data/*/keybindings/**/*.yml"
 		],
-		"kubernetes": [
-			"*.yml",
-			"*.yaml"
-		],
-		"http://json-schema.org/draft-07/schema": [
-			"**.yml",
-			"**.yaml",
-			"file:///d%3A/github-repos/origins-mod-json-schemas/src/schemas/bientity_action.yml",
-			"file:///d%3A/github-repos/origins-mod-json-schemas/src/schemas/eggolib/entity_conditions/permission_level.yml"
-		],
-		"https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.22.4-standalone-strict/all.json": "file:///d%3A/github-repos/origins-mod-json-schemas/TODO.yml"
 	},
 	"workbench.iconTheme": "material-icon-theme"
 }
