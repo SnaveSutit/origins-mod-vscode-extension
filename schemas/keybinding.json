@@ -1,0 +1,269 @@
+{
+	"type": "object",
+	"$INCLUDE_MDFILE_DESCRIPTION": true,
+	"description": "### ⚠️ Requires [Skillful](https://skillful-docs.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Keybinding JSON Format\n\n---\n\n\nThis is the format of a JSON file describing a keybinding. They need to be placed inside the `keybinds` folder within your namespace. Keybinds are used to activate active power types, and toggles.\n\n---\n\n### Example\n\n```json\n{\n    \"key\": \"key.keyboard.h\",\n    \"category\": \"key.category.test_category\"\n}\n```\nThis example keybind will create a keybind bound to the \"h\" key, in the category called `key.category.test_category`.",
+	"markdownDescription": "### ⚠️ Requires [Skillful](https://skillful-docs.readthedocs.io/en/latest/) to be installed! ⚠️\n\n## Keybinding JSON Format\n\n---\n\n\nThis is the format of a JSON file describing a keybinding. They need to be placed inside the `keybinds` folder within your namespace. Keybinds are used to activate active power types, and toggles.\n\n---\n\n### Example\n\n```json\n{\n    \"key\": \"key.keyboard.h\",\n    \"category\": \"key.category.test_category\"\n}\n```\nThis example keybind will create a keybind bound to the \"h\" key, in the category called `key.category.test_category`.",
+	"required": [
+		"key",
+		"category"
+	],
+	"properties": {
+		"key": {
+			"description": "A string that defines what key this binding will use.",
+			"markdownDescription": "A string that defines what key this binding will use.",
+			"examples": [
+				"key.origins.primary_active",
+				{
+					"key": "key.origins.primary_active"
+				}
+			],
+			"definitions": {
+				"key": {
+					"anyOf": [
+						{
+							"type": "string",
+							"enum": [
+								"key.origins.primary_active",
+								"key.origins.secondary_active",
+								"key.origins.view_origin",
+								"key.sprint",
+								"key.forward",
+								"key.left",
+								"key.back",
+								"key.right",
+								"key.jump",
+								"key.inventory",
+								"key.drop",
+								"key.swapOffhand",
+								"key.chat",
+								"key.sneak",
+								"key.playerlist",
+								"key.attack",
+								"key.use",
+								"key.pickItem",
+								"key.command",
+								"key.screenshot",
+								"key.togglePerspective",
+								"key.smoothCamera",
+								"key.fullscreen",
+								"key.spectatorOutlines",
+								"key.hotbar.1",
+								"key.hotbar.2",
+								"key.hotbar.3",
+								"key.hotbar.4",
+								"key.hotbar.5",
+								"key.hotbar.6",
+								"key.hotbar.7",
+								"key.hotbar.8",
+								"key.hotbar.9",
+								"key.saveToolbarActivator",
+								"key.loadToolbarActivator",
+								"key.advancements"
+							]
+						},
+						{
+							"type": "string",
+							"description": "### ⚠️ Requires [Skillful](https://skillful-docs.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+							"markdownDescription": "### ⚠️ Requires [Skillful](https://skillful-docs.readthedocs.io/en/latest/) to be installed! ⚠️\n\n",
+							"enum": [
+								"key.keyboard.unknown",
+								"key.mouse.left",
+								"key.mouse.right",
+								"key.mouse.middle",
+								"key.mouse.4",
+								"key.mouse.5",
+								"key.mouse.6",
+								"key.mouse.7",
+								"key.mouse.8",
+								"key.keyboard.0",
+								"key.keyboard.1",
+								"key.keyboard.2",
+								"key.keyboard.3",
+								"key.keyboard.4",
+								"key.keyboard.5",
+								"key.keyboard.6",
+								"key.keyboard.7",
+								"key.keyboard.8",
+								"key.keyboard.9",
+								"key.keyboard.a",
+								"key.keyboard.b",
+								"key.keyboard.c",
+								"key.keyboard.d",
+								"key.keyboard.e",
+								"key.keyboard.f",
+								"key.keyboard.g",
+								"key.keyboard.h",
+								"key.keyboard.i",
+								"key.keyboard.j",
+								"key.keyboard.k",
+								"key.keyboard.l",
+								"key.keyboard.m",
+								"key.keyboard.n",
+								"key.keyboard.o",
+								"key.keyboard.p",
+								"key.keyboard.q",
+								"key.keyboard.r",
+								"key.keyboard.s",
+								"key.keyboard.t",
+								"key.keyboard.u",
+								"key.keyboard.v",
+								"key.keyboard.w",
+								"key.keyboard.x",
+								"key.keyboard.y",
+								"key.keyboard.z",
+								"key.keyboard.f1",
+								"key.keyboard.f2",
+								"key.keyboard.f3",
+								"key.keyboard.f4",
+								"key.keyboard.f5",
+								"key.keyboard.f6",
+								"key.keyboard.f7",
+								"key.keyboard.f8",
+								"key.keyboard.f9",
+								"key.keyboard.f10",
+								"key.keyboard.f11",
+								"key.keyboard.f12",
+								"key.keyboard.f13",
+								"key.keyboard.f14",
+								"key.keyboard.f15",
+								"key.keyboard.f16",
+								"key.keyboard.f17",
+								"key.keyboard.f18",
+								"key.keyboard.f19",
+								"key.keyboard.f20",
+								"key.keyboard.f21",
+								"key.keyboard.f22",
+								"key.keyboard.f23",
+								"key.keyboard.f24",
+								"key.keyboard.f25",
+								"key.keyboard.num.lock",
+								"key.keyboard.keypad.0",
+								"key.keyboard.keypad.1",
+								"key.keyboard.keypad.2",
+								"key.keyboard.keypad.3",
+								"key.keyboard.keypad.4",
+								"key.keyboard.keypad.5",
+								"key.keyboard.keypad.6",
+								"key.keyboard.keypad.7",
+								"key.keyboard.keypad.8",
+								"key.keyboard.keypad.9",
+								"key.keyboard.keypad.add",
+								"key.keyboard.keypad.decimal",
+								"key.keyboard.keypad.enter",
+								"key.keyboard.keypad.equal",
+								"key.keyboard.keypad.multiply",
+								"key.keyboard.keypad.divide",
+								"key.keyboard.keypad.subtract",
+								"key.keyboard.down",
+								"key.keyboard.left",
+								"key.keyboard.right",
+								"key.keyboard.up",
+								"key.keyboard.apostrophe",
+								"key.keyboard.backslash",
+								"key.keyboard.comma",
+								"key.keyboard.equal",
+								"key.keyboard.grave.accent",
+								"key.keyboard.left.bracket",
+								"key.keyboard.minus",
+								"key.keyboard.period",
+								"key.keyboard.right.bracket",
+								"key.keyboard.semicolon",
+								"key.keyboard.slash",
+								"key.keyboard.space",
+								"key.keyboard.tab",
+								"key.keyboard.left.alt",
+								"key.keyboard.left.control",
+								"key.keyboard.left.shift",
+								"key.keyboard.left.win",
+								"key.keyboard.right.alt",
+								"key.keyboard.right.control",
+								"key.keyboard.right.shift",
+								"key.keyboard.right.win",
+								"key.keyboard.enter",
+								"key.keyboard.backspace",
+								"key.keyboard.delete",
+								"key.keyboard.end",
+								"key.keyboard.home",
+								"key.keyboard.insert",
+								"key.keyboard.page.down",
+								"key.keyboard.page.up",
+								"key.keyboard.caps.lock",
+								"key.keyboard.pause",
+								"key.keyboard.scroll.lock",
+								"key.keyboard.menu",
+								"key.keyboard.print.screen",
+								"key.keyboard.world.1",
+								"key.keyboard.world.2"
+							]
+						},
+						{
+							"type": "string",
+							"description": "### ⚠️ Requires Addon Mods! ⚠️\nEither [Origins Extra Keybinds](https://www.curseforge.com/minecraft/mc-mods/origins-extra-keybinds) OR [Forge: Extra Keybinds 1.1](https://www.curseforge.com/minecraft/mc-mods/extra-keybinds) must be installed!\n\n",
+							"markdownDescription": "### ⚠️ Requires Addon Mods! ⚠️\nEither [Origins Extra Keybinds](https://www.curseforge.com/minecraft/mc-mods/origins-extra-keybinds) OR [Forge: Extra Keybinds 1.1](https://www.curseforge.com/minecraft/mc-mods/extra-keybinds) must be installed!\n\n",
+							"enum": [
+								"key.origins.ternary_active",
+								"key.origins.quaternary_active",
+								"key.origins.quinary_active",
+								"key.origins.senary_active",
+								"key.origins.septenary_active",
+								"key.origins.octonary_active",
+								"key.origins.nonary_active",
+								"key.origins.denary_active"
+							]
+						},
+						{
+							"type": "string",
+							"description": "### ⚠️ Requires [Forge: Extra Keybinds 1.0](https://www.curseforge.com/minecraft/mc-mods/extra-keybinds) to be installed! ⚠️\n\n",
+							"markdownDescription": "### ⚠️ Requires [Forge: Extra Keybinds 1.0](https://www.curseforge.com/minecraft/mc-mods/extra-keybinds) to be installed! ⚠️\n\n",
+							"enum": [
+								"key.extra_keybinds.ternary_active",
+								"key.extra_keybinds.quaternary_active",
+								"key.extra_keybinds.quinary_active",
+								"key.extra_keybinds.senary_active",
+								"key.extra_keybinds.septenary_active",
+								"key.extra_keybinds.octonary_active",
+								"key.extra_keybinds.nonary_active",
+								"key.extra_keybinds.denary_active"
+							]
+						},
+						{
+							"type": "string"
+						}
+					]
+				}
+			},
+			"oneOf": [
+				{
+					"$ref": "#/properties/key/definitions/key"
+				},
+				{
+					"type": "object",
+					"required": [
+						"key"
+					],
+					"properties": {
+						"key": {
+							"description": "A string specifying the keybinding. See [Keybindings](https://origins.readthedocs.io/en/latest/types/data_types/key) for possible values.",
+							"markdownDescription": "A string specifying the keybinding. See [Keybindings](https://origins.readthedocs.io/en/latest/types/data_types/key) for possible values.",
+							"anyOf": {
+								"$ref": "#/properties/key/definitions/key/anyOf"
+							}
+						},
+						"continuous": {
+							"type": "boolean",
+							"default": false,
+							"description": "Determines how the keybinding behaves when the key is held down. If set to `false`, the power will activate only once when the key is first pressed. If set to `true`, the power will try to activate continuously as long as the key is held down, accounting for any cooldown or conditions the power may have.",
+							"markdownDescription": "Determines how the keybinding behaves when the key is held down. If set to `false`, the power will activate only once when the key is first pressed. If set to `true`, the power will try to activate continuously as long as the key is held down, accounting for any cooldown or conditions the power may have."
+						}
+					}
+				}
+			]
+		},
+		"category": {
+			"type": "string",
+			"description": "The category this key will fall under.",
+			"markdownDescription": "The category this key will fall under."
+		}
+	},
+	"x-intellij-html-description": "<h1>Keybinding JSON Format</h1>\n<p>This is the format of a JSON file describing a keybinding. They need to be placed inside the <code>keybinds</code> folder within your namespace. Keybinds are used to activate active power types, and toggles.</p>\n<h3>Fields</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>key</code></td>\n<td><a href=\"data_types/key.md\">Key</a></td>\n<td></td>\n<td>A string that defines what key this binding will use.</td>\n</tr>\n<tr>\n<td><code>category</code></td>\n<td><a href=\"data_types/string.md\">String</a></td>\n<td></td>\n<td>The category this key will fall under.</td>\n</tr>\n</tbody></table>\n<h3>Example</h3>\n<pre><code class=\"language-json\">{\n    &quot;key&quot;: &quot;key.keyboard.h&quot;,\n    &quot;category&quot;: &quot;key.category.test_category&quot;\n}\n</code></pre>\n<p>This example keybind will create a keybind bound to the &quot;h&quot; key, in the category called <code>key.category.test_category</code>.</p>\n"
+}
