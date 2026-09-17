@@ -82,6 +82,7 @@ suite('package.json jsonValidation', () => {
 			global_powers: 'data/mypack/global_powers/example.json',
 			global_power: 'data/mypack/global_power/example.json',
 			keybindings: 'data/mypack/keybindings/example.json',
+			keybinds: 'data/mypack/keybinds/example.json',
 			origin_layers: 'data/mypack/origin_layers/example.json',
 			origin_layer: 'data/mypack/origin_layer/example.json',
 			origins: 'data/mypack/origins/example.json',

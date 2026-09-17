@@ -1,0 +1,26 @@
+{
+	"type": "object",
+	"description": "### ⚠️ Requires [Sync](https://modrinth.com/mod/sync) to be installed! ⚠️\n\nDefines a server-side data-driven keybind, registered on the client when they join. Belongs at `data/<namespace>/keybinds/<id>.json`.",
+	"markdownDescription": "### ⚠️ Requires [Sync](https://modrinth.com/mod/sync) to be installed! ⚠️\n\nDefines a server-side data-driven keybind, registered on the client when they join. Belongs at `data/<namespace>/keybinds/<id>.json`.",
+	"required": [
+		"key",
+		"category"
+	],
+	"properties": {
+		"key": {
+			"type": "string",
+			"description": "The default GLFW key translation key (e.g. `key.keyboard.h`).The default GLFW key translation key (e.g. `\"key.keyboard.h\"`). See [Key Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds) below.",
+			"markdownDescription": "The default GLFW key translation key (e.g. `key.keyboard.h`).The default GLFW key translation key (e.g. `\"key.keyboard.h\"`). See [Key Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds) below."
+		},
+		"category": {
+			"type": "string",
+			"description": "The Controls screen category this keybind is grouped under (e.g. `key.categories.misc`).The Controls screen category this keybind is grouped under (e.g. `\"key.categories.misc\"`). Custom category strings are supported and will be registered automatically.",
+			"markdownDescription": "The Controls screen category this keybind is grouped under (e.g. `key.categories.misc`).The Controls screen category this keybind is grouped under (e.g. `\"key.categories.misc\"`). Custom category strings are supported and will be registered automatically."
+		},
+		"name": {
+			"type": "string",
+			"description": "A human-readable label hint. This does *_not_* change what is displayed in the Controls screen — add a lang file entry for that (see [Display Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds)).",
+			"markdownDescription": "A human-readable label hint. This does *_not_* change what is displayed in the Controls screen — add a lang file entry for that (see [Display Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds))."
+		}
+	}
+}

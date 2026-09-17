@@ -29,6 +29,8 @@
 		"workspaceContains:**/data/*/global_powers/**/*.jsonc",
 		"workspaceContains:**/data/*/keybindings/**/*.json",
 		"workspaceContains:**/data/*/keybindings/**/*.jsonc",
+		"workspaceContains:**/data/*/keybinds/**/*.json",
+		"workspaceContains:**/data/*/keybinds/**/*.jsonc",
 		"workspaceContains:**/data/*/origin_layers/**/*.json",
 		"workspaceContains:**/data/*/origin_layers/**/*.jsonc",
 		"workspaceContains:**/data/*/origins/**/*.json",
@@ -101,6 +103,13 @@
 					"**/data/*/keybindings/**/*.jsonc"
 				],
 				"url": "./schemas/keybinding.json"
+			},
+			{
+				"fileMatch": [
+					"**/data/*/keybinds/**/*.json",
+					"**/data/*/keybinds/**/*.jsonc"
+				],
+				"url": "./schemas/sync_keybind.json"
 			},
 			{
 				"fileMatch": [

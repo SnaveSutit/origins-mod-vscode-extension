@@ -9,7 +9,7 @@ window with this folder as its workspace, with the extension loaded from your lo
   open it to confirm the red squiggles show up
 - `data/testpack/origin/second_origin.json` - same schema via the singular folder alias
 - everything else under `data/testpack/` - one valid example per schema type
-  (powers, origin_layers, badges, global_powers, skill_trees, keybindings)
+  (powers, origin_layers, badges, global_powers, skill_trees, keybindings, keybinds)
 
 Edit these files freely, or add new ones under `data/<namespace>/<type>/` to try out
 autocomplete, hover docs, and validation for other fields.

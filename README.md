@@ -23,12 +23,14 @@
 - Full descriptions for all JSON fields.
 - Support for the following Origins Addons:
   - [Apugli](https://apugli.readthedocs.io/en/latest/)
+  - [Eggolib](https://eggolib.github.io/latest/)
   - [Epoli](https://epoli-docs.readthedocs.io/en/latest/)
   - [Extra Origins](https://github.com/MoriyaShiine/extra-origins/wiki)
   - [Mob Origins](https://moborigins.ultrusmods.me/en/latest/)
   - [Origins Extra Keybinds](https://www.curseforge.com/minecraft/mc-mods/origins-extra-keybinds)
   - [Provi's Origins](https://github.com/Provismet/Provi-Origins/wiki)
   - [Skillful](https://skillful-docs.readthedocs.io/en/latest/)
+  - [Sync](https://modrinth.com/mod/sync)
 
 _This extension uses Schemas from [Origins Mod JSON Schemas](https://github.com/SnaveSutit/origins-mod-json-schemas) repository._
 
