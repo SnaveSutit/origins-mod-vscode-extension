@@ -1,6 +1,8 @@
 debug_out
 .minecraftRegistry.json
 .minecraftRegistryVersion.json
+out
+.vscode-test
 
 # Logs
 logs
