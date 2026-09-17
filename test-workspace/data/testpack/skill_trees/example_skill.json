@@ -1,0 +1,7 @@
+{
+	"name": "Parkour Skills",
+	"description": "A skill tree that lets you earn parkour skills",
+	"power": "testpack:example_power",
+	"default_powers": ["testpack:example_power"],
+	"cost": 0
+}

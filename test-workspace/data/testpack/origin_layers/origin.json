@@ -1,0 +1,5 @@
+{
+	"origins": ["testpack:human"],
+	"enabled": true,
+	"name": "Origin"
+}

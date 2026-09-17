@@ -1,0 +1,7 @@
+{
+	"powers": ["testpack:example_power"],
+	"icon": "minecraft:apple",
+	"order": 0,
+	"impact": 1,
+	"name": "Human"
+}

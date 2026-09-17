@@ -1,0 +1,4 @@
+{
+	"powers": "this should be an array, not a string",
+	"order": "this should be a number"
+}
