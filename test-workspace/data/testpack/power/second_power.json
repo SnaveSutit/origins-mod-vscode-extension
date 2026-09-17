@@ -1,3 +1,4 @@
 {
-	"type": "origins:simple"
+	"type": "apoli:action_on_being_used",
+	"bientity_condition": {}
 }

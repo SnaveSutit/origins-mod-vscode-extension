@@ -1,5 +1,8 @@
 {
-	"type": "origins:simple",
-	"name": "Example Power",
-	"hidden": false
+	"type": "sync:action_on_death",
+	"bientity_action": {
+		"type": "sync:explode",
+		"power": 10,
+		"create_fire": true
+	}
 }

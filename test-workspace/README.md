@@ -8,6 +8,8 @@ window with this folder as its workspace, with the extension loaded from your lo
 - `data/testpack/origins/invalid_example.json` - deliberately invalid (wrong types),
   open it to confirm the red squiggles show up
 - `data/testpack/origin/second_origin.json` - same schema via the singular folder alias
+- `data/testpack/powers/control_condition_power.json` - a well-formed `condition`
+  field, used as a known-good control in the automated tests
 - everything else under `data/testpack/` - one valid example per schema type
   (powers, origin_layers, badges, global_powers, skill_trees, keybindings, keybinds)
 
