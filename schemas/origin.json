@@ -1689,12 +1689,13 @@
 					],
 					"properties": {
 						"item": {
+							"allOf": [
+								{
+									"$ref": "#/properties/icon/oneOf/0"
+								}
+							],
 							"description": "ID of a registered item.",
-							"markdownDescription": "ID of a registered item.",
-							"type": "string",
-							"anyOf": {
-								"$ref": "#/properties/icon/oneOf/0/anyOf"
-							}
+							"markdownDescription": "ID of a registered item."
 						},
 						"amount": {
 							"type": "integer",
@@ -1702,16 +1703,20 @@
 							"markdownDescription": "Size of the stack."
 						},
 						"tag": {
-							"description": "NBT data of the item.",
-							"markdownDescription": "NBT data of the item.",
-							"oneOf": [
+							"allOf": [
 								{
-									"type": "string"
-								},
-								{
-									"type": "object"
+									"oneOf": [
+										{
+											"type": "string"
+										},
+										{
+											"type": "object"
+										}
+									]
 								}
-							]
+							],
+							"description": "NBT data of the item.",
+							"markdownDescription": "NBT data of the item."
 						}
 					}
 				}
@@ -1738,364 +1743,369 @@
 			"markdownDescription": "Specifies the impact of this origin with a number from 0 (none) to 3 (high)."
 		},
 		"name": {
-			"description": "The display name of the origin.",
-			"markdownDescription": "The display name of the origin.",
-			"definitions": {
-				"jsonTextArray": {
-					"type": "array",
-					"items": {
-						"definitions": {
-							"$ref": "#/properties/name/definitions"
+			"allOf": [
+				{
+					"definitions": {
+						"jsonTextArray": {
+							"type": "array",
+							"items": {
+								"$ref": "#/properties/name/allOf/0"
+							}
 						},
-						"oneOf": [
-							{
-								"type": "string"
+						"colors": {
+							"oneOf": [
+								{
+									"enum": [
+										"dark_red",
+										"red",
+										"gold",
+										"yellow",
+										"dark_green",
+										"green",
+										"aqua",
+										"dark_aqua",
+										"dark_blue",
+										"blue",
+										"light_purple",
+										"dark_purple",
+										"white",
+										"gray",
+										"dark_gray",
+										"black"
+									]
+								},
+								{
+									"type": "string",
+									"pattern": "#[0-9a-fA-F]{6}"
+								}
+							]
+						}
+					},
+					"oneOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "#/properties/name/allOf/0/definitions/jsonTextArray"
+						},
+						{
+							"dependencies": {
+								"text": {
+									"not": {
+										"anyOf": [
+											{
+												"required": [
+													"tl"
+												]
+											},
+											{
+												"required": [
+													"selector"
+												]
+											},
+											{
+												"required": [
+													"score"
+												]
+											},
+											{
+												"required": [
+													"nbt"
+												]
+											},
+											{
+												"required": [
+													"keybind"
+												]
+											}
+										]
+									}
+								},
+								"selector": {
+									"not": {
+										"anyOf": [
+											{
+												"required": [
+													"text"
+												]
+											},
+											{
+												"required": [
+													"tl"
+												]
+											},
+											{
+												"required": [
+													"score"
+												]
+											},
+											{
+												"required": [
+													"nbt"
+												]
+											},
+											{
+												"required": [
+													"keybind"
+												]
+											}
+										]
+									}
+								},
+								"score": {
+									"not": {
+										"anyOf": [
+											{
+												"required": [
+													"text"
+												]
+											},
+											{
+												"required": [
+													"tl"
+												]
+											},
+											{
+												"required": [
+													"selector"
+												]
+											},
+											{
+												"required": [
+													"nbt"
+												]
+											},
+											{
+												"required": [
+													"keybind"
+												]
+											}
+										]
+									}
+								},
+								"nbt": {
+									"not": {
+										"anyOf": [
+											{
+												"required": [
+													"text"
+												]
+											},
+											{
+												"required": [
+													"tl"
+												]
+											},
+											{
+												"required": [
+													"selector"
+												]
+											},
+											{
+												"required": [
+													"score"
+												]
+											},
+											{
+												"required": [
+													"keybind"
+												]
+											}
+										]
+									}
+								},
+								"keybind": {
+									"not": {
+										"anyOf": [
+											{
+												"required": [
+													"text"
+												]
+											},
+											{
+												"required": [
+													"tl"
+												]
+											},
+											{
+												"required": [
+													"selector"
+												]
+											},
+											{
+												"required": [
+													"score"
+												]
+											},
+											{
+												"required": [
+													"nbt"
+												]
+											}
+										]
+									}
+								}
 							},
-							{
-								"$ref": "#/properties/name/definitions/jsonTextArray"
-							},
-							{
-								"dependencies": {
-									"text": {
-										"not": {
-											"anyOf": [
-												{
-													"required": [
-														"tl"
-													]
-												},
-												{
-													"required": [
-														"selector"
-													]
-												},
-												{
-													"required": [
-														"score"
-													]
-												},
-												{
-													"required": [
-														"nbt"
-													]
-												},
-												{
-													"required": [
-														"keybind"
-													]
-												}
-											]
+							"type": "object",
+							"properties": {
+								"text": {
+									"type": "string"
+								},
+								"color": {
+									"$ref": "#/properties/name/allOf/0/definitions/colors"
+								},
+								"bold": {
+									"type": "boolean"
+								},
+								"italic": {
+									"type": "boolean"
+								},
+								"underlined": {
+									"type": "boolean"
+								},
+								"strikethrough": {
+									"type": "boolean"
+								},
+								"obfuscated": {
+									"type": "boolean"
+								},
+								"insertion": {
+									"type": "string"
+								},
+								"clickEvent": {
+									"type": "object",
+									"properties": {
+										"action": {
+											"type": "string"
+										},
+										"value": {
+											"type": "string"
 										}
-									},
-									"selector": {
-										"not": {
-											"anyOf": [
+									}
+								},
+								"hoverEvent": {
+									"type": "object",
+									"properties": {
+										"action": {
+											"type": "string"
+										},
+										"contents": {
+											"oneOf": [
 												{
-													"required": [
-														"text"
-													]
+													"$ref": "#/properties/name/allOf/0"
 												},
 												{
+													"type": "object",
 													"required": [
-														"tl"
-													]
+														"type",
+														"id"
+													],
+													"properties": {
+														"type": {
+															"type": "string"
+														},
+														"id": {
+															"$ref": "#/properties/powers/items"
+														},
+														"name": {
+															"type": "string"
+														}
+													}
 												},
 												{
+													"type": "object",
 													"required": [
-														"score"
-													]
-												},
-												{
-													"required": [
-														"nbt"
-													]
-												},
-												{
-													"required": [
-														"keybind"
-													]
-												}
-											]
-										}
-									},
-									"score": {
-										"not": {
-											"anyOf": [
-												{
-													"required": [
-														"text"
-													]
-												},
-												{
-													"required": [
-														"tl"
-													]
-												},
-												{
-													"required": [
-														"selector"
-													]
-												},
-												{
-													"required": [
-														"nbt"
-													]
-												},
-												{
-													"required": [
-														"keybind"
-													]
-												}
-											]
-										}
-									},
-									"nbt": {
-										"not": {
-											"anyOf": [
-												{
-													"required": [
-														"text"
-													]
-												},
-												{
-													"required": [
-														"tl"
-													]
-												},
-												{
-													"required": [
-														"selector"
-													]
-												},
-												{
-													"required": [
-														"score"
-													]
-												},
-												{
-													"required": [
-														"keybind"
-													]
-												}
-											]
-										}
-									},
-									"keybind": {
-										"not": {
-											"anyOf": [
-												{
-													"required": [
-														"text"
-													]
-												},
-												{
-													"required": [
-														"tl"
-													]
-												},
-												{
-													"required": [
-														"selector"
-													]
-												},
-												{
-													"required": [
-														"score"
-													]
-												},
-												{
-													"required": [
-														"nbt"
-													]
+														"id"
+													],
+													"properties": {
+														"id": {
+															"$ref": "#/properties/powers/items"
+														},
+														"count": {
+															"type": "string"
+														},
+														"name": {
+															"type": "string"
+														}
+													}
 												}
 											]
 										}
 									}
 								},
-								"type": "object",
-								"properties": {
-									"text": {
-										"type": "string"
-									},
-									"color": {
-										"oneOf": [
-											{
-												"enum": [
-													"dark_red",
-													"red",
-													"gold",
-													"yellow",
-													"dark_green",
-													"green",
-													"aqua",
-													"dark_aqua",
-													"dark_blue",
-													"blue",
-													"light_purple",
-													"dark_purple",
-													"white",
-													"gray",
-													"dark_gray",
-													"black"
-												]
-											},
-											{
-												"type": "string",
-												"pattern": "#[0-9a-fA-F]{6}"
-											}
-										]
-									},
-									"bold": {
-										"type": "boolean"
-									},
-									"italic": {
-										"type": "boolean"
-									},
-									"underlined": {
-										"type": "boolean"
-									},
-									"strikethrough": {
-										"type": "boolean"
-									},
-									"obfuscated": {
-										"type": "boolean"
-									},
-									"insertion": {
-										"type": "string"
-									},
-									"clickEvent": {
-										"type": "object",
-										"properties": {
-											"action": {
-												"type": "string"
-											},
-											"value": {
-												"type": "string"
-											}
-										}
-									},
-									"hoverEvent": {
-										"type": "object",
-										"properties": {
-											"action": {
-												"type": "string"
-											},
-											"contents": {
-												"oneOf": [
-													{
-														"$ref": "#/properties/name/definitions/jsonTextArray/items"
-													},
-													{
-														"type": "object",
-														"required": [
-															"type",
-															"id"
-														],
-														"properties": {
-															"type": {
-																"type": "string"
-															},
-															"id": {
-																"$ref": "#/properties/powers/items"
-															},
-															"name": {
-																"type": "string"
-															}
-														}
-													},
-													{
-														"type": "object",
-														"required": [
-															"id"
-														],
-														"properties": {
-															"id": {
-																"$ref": "#/properties/powers/items"
-															},
-															"count": {
-																"type": "string"
-															},
-															"name": {
-																"type": "string"
-															}
-														}
-													}
-												]
-											}
-										}
-									},
-									"extra": {
-										"type": "array",
-										"items": {
-											"$ref": "#/properties/name/definitions/jsonTextArray/items"
-										}
-									},
-									"font": {
-										"$ref": "#/properties/powers/items"
-									},
-									"tl": {
-										"type": "string"
-									},
-									"with": {
-										"$ref": "#/properties/name/definitions/jsonTextArray"
-									},
-									"score": {
-										"type": "object",
-										"required": [
-											"name",
-											"objective"
-										],
-										"properties": {
-											"name": {
-												"type": "string"
-											},
-											"objective": {
-												"type": "string"
-											},
-											"value": {
-												"type": "string"
-											}
-										}
-									},
-									"selector": {
-										"type": "string"
-									},
-									"separator": {
-										"type": "string"
-									},
-									"keybind": {
-										"type": "string"
-									},
-									"nbt": {
-										"type": "string"
-									},
-									"interpret": {
-										"type": "boolean"
-									},
-									"block": {
-										"type": "string"
-									},
-									"entity": {
-										"type": "string"
-									},
-									"storage": {
-										"type": "string"
+								"extra": {
+									"type": "array",
+									"items": {
+										"$ref": "#/properties/name/allOf/0"
 									}
+								},
+								"font": {
+									"$ref": "#/properties/powers/items"
+								},
+								"tl": {
+									"type": "string"
+								},
+								"with": {
+									"$ref": "#/properties/name/allOf/0/definitions/jsonTextArray"
+								},
+								"score": {
+									"type": "object",
+									"required": [
+										"name",
+										"objective"
+									],
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"objective": {
+											"type": "string"
+										},
+										"value": {
+											"type": "string"
+										}
+									}
+								},
+								"selector": {
+									"type": "string"
+								},
+								"separator": {
+									"type": "string"
+								},
+								"keybind": {
+									"type": "string"
+								},
+								"nbt": {
+									"type": "string"
+								},
+								"interpret": {
+									"type": "boolean"
+								},
+								"block": {
+									"type": "string"
+								},
+								"entity": {
+									"type": "string"
+								},
+								"storage": {
+									"type": "string"
 								}
 							}
-						]
-					}
-				},
-				"colors": {
-					"$ref": "#/properties/name/definitions/jsonTextArray/items/oneOf/2/properties/color"
+						}
+					]
 				}
-			},
-			"oneOf": {
-				"$ref": "#/properties/name/definitions/jsonTextArray/items/oneOf"
-			}
+			],
+			"description": "The display name of the origin.",
+			"markdownDescription": "The display name of the origin."
 		},
 		"description": {
-			"$ref": "#/properties/name/definitions/jsonTextArray/items"
+			"allOf": [
+				{
+					"$ref": "#/properties/name/allOf/0"
+				}
+			],
+			"description": "The description of the origin.",
+			"markdownDescription": "The description of the origin."
 		},
 		"upgrades": {
 			"type": "array",
@@ -2103,16 +2113,22 @@
 				"type": "object",
 				"properties": {
 					"condition": {
+						"allOf": [
+							{
+								"$ref": "#/properties/powers/items"
+							}
+						],
 						"description": "The namespace and ID of an advancement which should trigger this upgrade.",
-						"markdownDescription": "The namespace and ID of an advancement which should trigger this upgrade.",
-						"type": "string",
-						"pattern": "^(([a-z0-9_\\/\\-\\.\\*]+):)?[a-z0-9_\\/\\-\\.\\*]+$"
+						"markdownDescription": "The namespace and ID of an advancement which should trigger this upgrade."
 					},
 					"origin": {
+						"allOf": [
+							{
+								"$ref": "#/properties/powers/items"
+							}
+						],
 						"description": "The namespace and ID of an origin the origin with this upgrade should upgrade to.",
-						"markdownDescription": "The namespace and ID of an origin the origin with this upgrade should upgrade to.",
-						"type": "string",
-						"pattern": "^(([a-z0-9_\\/\\-\\.\\*]+):)?[a-z0-9_\\/\\-\\.\\*]+$"
+						"markdownDescription": "The namespace and ID of an origin the origin with this upgrade should upgrade to."
 					},
 					"announcement": {
 						"type": "string",

@@ -9,8 +9,8 @@
 	"properties": {
 		"key": {
 			"type": "string",
-			"description": "The default GLFW key translation key (e.g. `key.keyboard.h`).The default GLFW key translation key (e.g. `\"key.keyboard.h\"`). See [Key Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds) below.",
-			"markdownDescription": "The default GLFW key translation key (e.g. `key.keyboard.h`).The default GLFW key translation key (e.g. `\"key.keyboard.h\"`). See [Key Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds) below."
+			"description": "The default GLFW key translation key (e.g. `key.keyboard.h`).The default GLFW key translation key (e.g. `\"key.keyboard.h\"`). See [Key Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds#key-names) below.",
+			"markdownDescription": "The default GLFW key translation key (e.g. `key.keyboard.h`).The default GLFW key translation key (e.g. `\"key.keyboard.h\"`). See [Key Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds#key-names) below."
 		},
 		"category": {
 			"type": "string",
@@ -19,8 +19,8 @@
 		},
 		"name": {
 			"type": "string",
-			"description": "A human-readable label hint. This does *_not_* change what is displayed in the Controls screen — add a lang file entry for that (see [Display Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds)).",
-			"markdownDescription": "A human-readable label hint. This does *_not_* change what is displayed in the Controls screen — add a lang file entry for that (see [Display Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds))."
+			"description": "A human-readable label hint. This does *_not_* change what is displayed in the Controls screen — add a lang file entry for that (see [Display Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds#display-names)).",
+			"markdownDescription": "A human-readable label hint. This does *_not_* change what is displayed in the Controls screen — add a lang file entry for that (see [Display Names](https://0vergrown.github.io/Sync-Documentation-Website/?file=data_types/data_driven_keybinds#display-names))."
 		}
 	}
 }
